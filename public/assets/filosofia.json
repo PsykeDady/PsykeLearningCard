@@ -1,0 +1,6 @@
+[
+    {"q": "L’approccio empirico per la comprensione del comportamento umano enfatizza; l'osservazione diretta e la sperimentazione", "a": "Falso", "t": "SIMPLE"},
+    {"q": "Riordina le fasi che compongono il processo di ricerca; Riordina", "a": ["Sviluppare un quesito di ricerca", "Generare un'ipotesi di ricerca", "Formare delle definizioni operative", "Scegliere un disegno di ricerca", "Valutare l'etica della ricerca", "Raccogliere e analizzare i dati e formulare delle conclusioni", "Riferire sui dati"], "t": "RIORDINA"},
+    {"q": "Quando si conduce una ricerca, è importante per gli psicologi isolare ed evidenziare l’unicità del loro studio e evitare collegamenti con ricerche precedenti", "a": "Vero", "t": "SIMPLE"},
+    {"q": "Una componente importante di ogni ricerca che usa l’inganno è la procedura del debriefing", "a": "Vero", "t": "SIMPLE"}
+]
