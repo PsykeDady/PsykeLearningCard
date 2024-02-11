@@ -6,7 +6,18 @@ import ShowCards from "./show-cards";
 function Home() {
     const contesto = useContext(QuestionContext)
 
-    return contesto.loading? <Loading /> : <ShowCards />
+    return <div className="container-fluid">
+		<div className="row">
+			<div className="col-12 text-center	">
+				<h1 className="text-decoration-underline text-shadow-black text-white">Ciao Broccola, buone ripetizioni. Studia!</h1>
+			</div>
+		</div>
+		<div className="row">
+			<div className="col-12">
+				{contesto.loading? <Loading /> : <ShowCards />}
+			</div>
+		</div>
+	</div>
 }
 
 

@@ -26,5 +26,607 @@
         "q": "Una componente importante di ogni ricerca che usa l’inganno è la procedura del debriefing",
         "a": "Vero",
         "t": "QA"
-    }
+    },
+	{
+		"q": "Lo scetticismo scientifico si riferisce all’idea che",
+		"a": "le affermazioni sui fenomeni dovrebbero essere verificate e le affermazioni non verificabili dovrebbero essere respinte",
+		"t": "QA"
+	},
+	{
+		"q": "L’etnocentrismo si verifica quando",
+		"a": "i ricercatori cercano di comprendere una cultura diversa attraverso la struttura e la prospettiva della propria cultura",
+		"t": "QA"
+	},
+	{
+		"q": "Se una ricerca scientifica viene pubblicata su una rivista è sicuramente valida",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Una domanda di ricerca può essere considerata rilevante quando",
+		"a": "i risultati ottenuti probabilmente faranno progredire la scienza psicologica",
+		"t": "QA"
+	},
+	{
+		"q": "Gli psicologi comprendono ed individuano le strategie da utilizzare per migliorare la vita delle persone attraverso",
+		"a": "Lo sviluppo di teorie e la conduzione di attività di ricerca",
+		"t": "QA"
+	},
+	{
+		"q": "L’evidenza scientifica più solida per un’affermazione su un certo comportamento",
+		"a": "si basa sulla convergenza delle prove che provengono da studi diversi che esaminano lo stesso quesito di ricerca",
+		"t": "QA"
+	},
+	{
+		"q": "La formulazione di un’ipotesi di ricerca include",
+		"a": "una forma di previsione di alcuni esiti con la spiegazione dei risultati attesi",
+		"t": "QA"
+	},
+	{
+		"q": "Quando un ricercatore inizia ad occuparsi di una ricerca deve decidere se il suo quesito sia un buon quesito, domandandosi perché qualcuno potrebbe essere interessato ai risultati ottenuti dal porsi tale interrogativo",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Un aspetto del contesto sociale e culturale nel quale lavorano i ricercatori è che",
+		"a": "l’accettazione da parte della società dei risultati della ricerca può influenzare come i risultati stessi siano messi in pratica",
+		"t": "QA"
+	},
+	{
+		"q": "Gli psicologi aumentano la comprensione e la conoscenza sulla vita delle persone attraverso l'attività di ricerca",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Alcuni psicologi hanno sostenuto che la pratica della psicologia clinica si basa troppo sulle esperienze personali piuttosto che su trattamenti supportati empiricamente",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Spesso i resoconti delle ricerche psicologiche proposti dai media mancano di importanti dettagli che faciliterebbero alle persone la comprensione dei risultati",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Un ricercatore alla fine della sua ricerca deve interrogarsi sulle implicazioni etiche di ciò che ha fatto",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "In un esperimento, si vuole valutare se l’esplicitazione di una norma influenzi il comportamento. A un gruppo di studenti di una scuola superiore, a cui non viene detto di essere i partecipanti a una ricerca, viene chiesto di non consumare i cibi del buffet al termine di una conferenza a cui hanno assistito, a un secondo gruppo di studenti non viene data alcuna indicazione. Si osserva il comportamento degli studenti. Da un punto di vista etico, il ricercatore dovrebbe prestare attenzione a",
+		"a": "Informare gli studenti degli scopi della ricerca",
+		"t": "QA"
+	},
+	{
+		"q": "Quali delle seguenti affermazioni sul contesto storico della psicologia, è vera?",
+		"a": "Dall’indagine di una vasta gamma di argomenti, nel corso del tempo, gli psicologi hanno dimostrato la complessità del comportamento umano",
+		"t": "QA"
+	},
+	{
+		"q": "All'inizio di un progetto di ricerca, un primo importante step è la conduzione di una revisione della letteratura psicologica presente nelle riviste scientifiche e nei testi",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "I valori sociali e culturali influenzano gli psicologi nella scelta delle domande di ricerca",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Poiché la maggior parte delle ricerche psicologiche presenti nelle riviste di psicologia si basa su campioni che coinvolgono gli americani e sono state condotte da ricercatori americani, potrebbe essere presente il bias etnocentrico nella scienza psicologica",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "La maggior parte dei report di ricerca che sono presentati dai media (per esempio in TV, nelle riviste o nei giornali) rappresentano una buona ricerca e di qualità",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Due delle principali caratteristiche del metodo scientifico sono l'approccio empirico e l'atteggiamento di accettazione",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Un approccio multimetodo alla scienza psicologica significa che",
+		"a": "Ad ogni singola domanda di ricerca è meglio rispondere utilizzando metodi diversi",
+		"t": "QA"
+	},
+	{
+		"q": "La scienza è",
+		"a": "Un’impresa cumulativa",
+		"t": "QA"
+	},
+	{
+		"q": "Prima di iniziare un progetto di ricerca, i ricercatori dovrebbero esplorare la letteratura psicologica sul tema che intendono affrontare",
+		"a": "al fine di sviluppare ipotesi di ricerca",
+		"t": "QA"
+	},
+	{
+		"q": "Un'ipotesi di ricerca è un tentativo di spiegare un fenomeno ed è spesso espressa nella forma di predizione di alcuni esiti insieme alla spiegazione della predizione",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "In una recente critica alla pratica degli psicologi clinici, sono state fatte tutte le seguenti proposte, tranne",
+		"a": "fare alcuni programmi di training clinici non scientifici per mantenere equilibrata la psicologia",
+		"t": "QA"
+	},
+	{
+		"q": "Un approccio multimetodo alla ricerca sui fenomeni psicologici suppone che un particolare metodo o strumento di misura del comportamento siano incompleti",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "I motivi per cui i ricercatori in psicologia usano differenti metodi per rispondere a una domanda di ricerca includono ognuna delle seguenti risposte, tranne",
+		"a": "è più parsimonioso utilizzare metodi diversi",
+		"t": "QA"
+	},
+	{
+		"q": "I principi etici per la ricerca sviluppati dall’Associazione Italiana di Psicologia (AIP) guidano il ricercatore a",
+		"a": "districarsi tra i dilemmi etici quando conduce una ricerca con soggetti umani e animali",
+		"t": "QA"
+	},
+	{
+		"q": "La ricerca qualitativa si basa sull’analisi statistica del comportamento osservato",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Un ricercatore valuta se gli studenti imparano meglio con un metodo di insegnamento basato sull’apprendimento attivo o con un metodo di insegnamento tradizionale. In questo esempio, il metodo di insegnamento è",
+		"a": "variabile indipendente",
+		"t": "QA"
+	},
+	{
+		"q": "Quale finalità della ricerca raggiungono gli psicologi quando conducono degli esperimenti",
+		"a": "Spiegazione",
+		"t": "QA"
+	},
+	{
+		"q": "Per stabilire l’accuratezza di uno strumento di misurazione è necessario",
+		"a": "Calibrarlo",
+		"t": "QA"
+	},
+	{
+		"q": "Quale delle seguenti affermazioni descrive meglio il rapporto tra correlazione e causazione?",
+		"a": "La correlazione non implica la causalità",
+		"t": "QA"
+	},
+	{
+		"q": "I ricercatori possono sempre trarre inferenze causali quando tra due variabili si osserva una correlazione.",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Gli psicologi utilizzano _______________________ per studiare in profondità un fenomeno.",
+		"a": "La ricerca qualitativa",
+		"t": "QA"
+	},
+	{
+		"q": "Esiste una sola operazionalizzazione possibile per ogni costrutto psicologico",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "La variabile dipendente è manipolata la variabile indipendente è osservata",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "La ricerca che ha come scopo quello di aumentare le conoscenze teoriche su un argomento si chiama?",
+		"a": "Di base",
+		"t": "QA"
+	},
+	{
+		"q": "Il metodo scientifico, come approccio alla conoscenza, si basa su",
+		"a": "procedure empiriche",
+		"t": "QA"
+	},
+	{
+		"q": "Abbina ciascuna delle quattro finalità del metodo scientifico alla definizione corretta\n1. Descrizione \n2. Applicazione \n3. Predizione \n4. Spiegazione e comprensione",
+		"a": "\n1:I ricercatori definiscono, classificano, catalogano o categorizzano eventi e relazioni per descrivere processi mentali e comportamenti.\n2:Gli psicologi applicano le loro conoscenze e metodi di ricerca per migliorare la vita delle persone.\n3:Quando i ricercatori identificano le correlazioni tra variabili, sono in grado di predire i processi mentali e comportamenti.\n4: I ricercatori comprendono un fenomeno quando riescono a identificarne la causa (le cause).",
+		"t": "QA"
+	},
+	{
+		"q": "Un’ipotesi, per essere verificabile, deve essere circolare nel suo ragionamento.",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "______ è un’affermazione circa la causa di un evento o di un comportamento.",
+		"a": "Un’inferenza causale",
+		"t": "QA"
+	},
+	{
+		"q": "Gli psicologi utilizzano ____ per individuare le associazioni tra variabili.",
+		"a": "La ricerca correlazionale",
+		"t": "QA"
+	},
+	{
+		"q": "Quale finalità della ricerca raggiungono gli psicologi quando definiscono, classificano, catalogano o categorizzano gli eventi?",
+		"a": "Descrizione",
+		"t": "QA"
+	},
+	{
+		"q": "La precisione della predizione nella messa alla prova di una teoria si riferisce all’idea che la spiegazione più semplice tra le alternative è accettabile.",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "I ricercatori conducono un esperimento quando cercano di trarre inferenze causali.",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "L’attendibilità della misurazione si riferisce alla coerenza, la validità della misurazione si riferisce alla veridicità.",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Nella scienza l’ingrediente essenziale è;",
+		"a": "Il controllo",
+		"t": "QA"
+	},
+	{
+		"q": "La definizione operativa è utilizzata dagli scienziati per attribuire un significato specifico al costrutto.",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Una correlazione positiva indica che quando i punteggi di una variabile aumentano, aumentano anche i punteggi di una seconda variabile.",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "I tentativi di spiegazione scientifica utilizzati per spiegare gli eventi sono chiamati",
+		"a": "Ipotesi",
+		"t": "QA"
+	},
+	{
+		"q": "Una variabile interveniente rappresenta una variabile confondente tra potenziali variabili indipendenti.",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Spesso la ricerca qualitativa riguarda",
+		"a": "Eventi ordinari in ambienti naturali, che si presentano spontaneamente",
+		"t": "QA"
+	},
+	{
+		"q": "La finalità di predizione è perseguita quando si ipotizza la presenza di una variabile confondente tra due variabili.",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Le misurazioni del comportamento utilizzate dai ricercatori per valutare l’effetto della manipolazione sperimentale hanno il ruolo di variabili",
+		"a": "Dipendenti",
+		"t": "QA"
+	},
+	{
+		"q": "La ricerca nomotetica mira a descrivere le persone in media.",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Attraverso l’utilizzo di un approccio nomotetico, gli psicologi cercano di",
+		"a": "stabilire leggi di comportamento generali che si applicano a popolazioni diverse.",
+		"t": "QA"
+	},
+	{
+		"q": "Un modo che i ricercatori hanno per stabilire il controllo è manipolare la variabile indipendente.",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "“Più una persona è estroversa, più è portata a praticare sport di squadra”. Questa affermazione definisce che;",
+		"a": "Le due variabili sono tra loro associate",
+		"t": "QA"
+	},
+	{
+		"q": "Tutte le ricerche idiografiche possono essere identificate come ricerche di base.",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Per quale delle seguenti finalità del metodo scientifico è utile uno studio sperimentale?",
+		"a": "Esplicativa",
+		"t": "QA"
+	},
+	{
+		"q": "Quando un ricercatore costruisce una teoria psicologica basata sulla più semplice delle spiegazioni disponibili per un fenomeno, utilizza il principio scientifico",
+		"a": "Della parsimonia",
+		"t": "QA"
+	},
+	{
+		"q": "La definizione operativa di un costrutto è;",
+		"a": "una procedura specifica per far emergere o per misurare il costrutto",
+		"t": "QA"
+	},
+	{
+		"q": "La correlazione tra variabili è usata come base per le ricerche che si prefiggono come obiettivo la predizione.",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Gli psicologi utilizzano i costrutti come variabili intervenienti nelle loro teorie.",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "La ricerca idiografica mira a descrivere le persone nella loro unicità.",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "L’elemento essenziale della scienza è l’applicazione.",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Gli psicologi utilizzano ____ per individuare le cause di un fenomeno.",
+		"a": "gli esperimenti",
+		"t": "QA"
+	},
+	{
+		"q": "Quando i ricercatori riportano i loro risultati descrivono;",
+		"a": "solo quello che hanno osservato.",
+		"t": "QA"
+	},
+	{
+		"q": "Un ricercatore vuole indagare la costruzione dell’identità familiare nel processo adottivo. A tal fine conduce delle interviste in profondità, su un campione di 20 famiglie adottive. Qual è la finalità della ricerca condotta?",
+		"a": "Descrittiva",
+		"t": "QA"
+	},
+	{
+		"q": "Un gruppo di ricercatori vuole verificare se l’espressione delle emozioni e dei pensieri connessi all’esperienza del parto influenzi il livello di depressione post-partum. A tale proposito somministra a un gruppo di 50 neo mamme, un compito di scrittura espressiva (Pennebaker, 1999) nel quale, a ciascuna neo mamma, è chiesto di raccontare per iscritto la propria esperienza del parto, mentre ad un altro gruppo di neo mamme (N=50) somministra un compito di scrittura creativa con la consegna di scrivere sulle modalità di gestione del tempo e delle attività di vita quotidiana. Qual è la finalità della ricerca condotta?",
+		"a": "Esplicativa",
+		"t": "QA"
+	},
+	{
+		"q": "L’Unione europea ha commissionato a un gruppo di ricercatori di un’Università italiana, una ricerca per indagare se il consumo di alcolici è maggiore nei giovani (20-30 anni) che vivono nei paesi nordici. A quale finalità risponde questa ricerca?",
+		"a": "Predittiva",
+		"t": "QA"
+	},
+	{
+		"q": "Quale caratteristica distingue un’ipotesi scientifica da un’ipotesi casuale, quotidiana?",
+		"a": "la verificabilità",
+		"t": "QA"
+	},
+	{
+		"q": "La ricerca che ha come obiettivo il cambiamento del comportamento delle persone nella vita quotidiana è:;",
+		"a": "applicata",
+		"t": "QA"
+	},
+	{
+		"q": "La validità predittiva e la validità concorrente sono entrambe;",
+		"a": "validità legate a un criterio",
+		"t": "QA"
+	},
+	{
+		"q": "La checklist misura le opinioni delle persone;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Da un punto di vista statistico, quali tra le seguenti operazioni è possibile compiere su una scala nominale?;",
+		"a": "conteggio delle frequenze dei soggetti in ciascuna classe",
+		"t": "QA"
+	},
+	{
+		"q": "Secondo la teoria dell’errore casuale il punteggio osservato indica;",
+		"a": "La somma del punteggio vero e dell’errore",
+		"t": "QA"
+	},
+	{
+		"q": "Il termine operazionalizzazione deriva da;",
+		"a": "l’operazionismo, teoria che afferma che il significato di un concetto è dato dall’insieme di operazioni e processi mediante i quali esso è applicato alla realtà",
+		"t": "QA"
+	},
+	{
+		"q": "La variabile “voto all’esame” può essere trasformata in una variabile nominale con tre categorie?;",
+		"a": "No, se una variabile è espressa in numeri non può essere modificata",
+		"t": "QA"
+	},
+	{
+		"q": "L’attendibilità non può essere stabilita sulla base di indici statistici.;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Un ricercatore vuole indagare i nuovi stili comunicativi tra colleghi di lavoro. Per fare questo, dopo aver ottenuto il consenso informato da ciascun partecipante, analizza le chat che un gruppo di 8 colleghi si scambia nel corso della giornata. Il numero di volte in cui compare un “emoticon” :-) è una variabile;",
+		"a": "a rapporti equivalenti",
+		"t": "QA"
+	},
+	{
+		"q": "Se lo strumento è costruito bene, l’errore sistematico sarà pari a 0.;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Il terzo parametro che caratterizza la domanda/item nella teoria dei tratti latenti e che ci dice la probabilità di risposta corretta quando si risponde a caso alla domanda è detto;",
+		"a": "GUESSING",
+		"t": "QA"
+	},
+	{
+		"q": "I punteggi ottenuti da due questionari che misurano costrutti diversi dovrebbero mostrare una bassa correlazione.;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Quando le variabili sono manifestazioni di un costrutto vengono chiamate;",
+		"a": "indicatori riflettivi",
+		"t": "QA"
+	},
+	{
+		"q": "Chi ha proposto i quattro livelli di misurazione, detti anche scale di misura?;",
+		"a": "Stevens",
+		"t": "QA"
+	},
+	{
+		"q": "Operazionalizzare un costrutto significa individuare gli indicatori osservabili che lo possono misurare.;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "In generale, l’attendibilità di un test accresce all’aumentare del numero di item che lo compongono.;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "L’attendibilità è;",
+		"a": "la coerenza tra misurazioni indipendenti dello stesso costrutto",
+		"t": "QA"
+	},
+	{
+		"q": "La teoria classica dell’errore è detta anche;",
+		"a": "teoria classica dei test",
+		"t": "QA"
+	},
+	{
+		"q": "La variabile “voto all’esame” può essere trasformata in una variabile nominale con tre categorie?;",
+		"a": "Si",
+		"t": "QA"
+	},
+	{
+		"q": "Nella formula della k di Cohen, al numeratore si sottrae la proporzione di accordo osservato alla popolazione di accordo atteso, mentre al denominatore la proporzione di accordo atteso viene sottratta al valore 1.;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "L’errore standard di misurazione viene calcolato facendo la somma della varianza d’errore di misurazione;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Lo standard aritmetico delle operazioni di addizione, moltiplicazione, sottrazione e divisione può essere eseguito su dati misurati almeno su una scala;",
+		"a": "a intervalli equivalenti",
+		"t": "QA"
+	},
+	{
+		"q": "Una variabile a un livello di misura più basso può essere trasformata in una variabile a un livello di misura più alto;",
+		"a": "MAI",
+		"t": "QA"
+	},
+	{
+		"q": "Per valutare la precisione e l’accuratezza di una misura occorre essere in grado di rilevare la distanza tra le frecce che colpiscono un bersaglio;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "La validità di facciata non è una validità di costrutto effettiva;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Per errore sistematico di misurazione s’intende;",
+		"a": "un errore che influenza sistematicamente tutti i dati raccolti",
+		"t": "QA"
+	},
+	{
+		"q": "In una staffetta 4X100, il tempo impiegato da ogni squadra è una variabile misurabile attraverso una scala;",
+		"a": "a rapporti equivalenti",
+		"t": "QA"
+	},
+	{
+		"q": "La precisione di una misura si riferisce a;",
+		"a": "la corrispondenza tra il costrutto e la realtà",
+		"t": "QA"
+	},
+	{
+		"q": "La scala a intervalli equivalenti e la scala a rapporti equivalenti sono entrambe quantitative;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Un nuovo questionario sull’autostima mostrava un’alta correlazione con una misura ben consolidata sull’autostima e una bassa correlazione con una misura sulla desiderabilità sociale. Basandosi su questo aspetto possiamo dire che la nuova misura sull’autostima dimostra una buona;",
+		"a": "ognuna delle risposte precedenti",
+		"t": "QA"
+	},
+	{
+		"q": "Un valore di alpha minore di .90 è cosiderato ottimo;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "L’errore _______ influenza l’accuratezza della misura;",
+		"a": "SISTEMATICO",
+		"t": "QA"
+	},
+	{
+		"q": "Il livello più basso di misurazione è la scala nominale;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "L’errore ______ varia in ogni misura;",
+		"a": "CASUALE",
+		"t": "QA"
+	},
+	{
+		"q": "La validità di contenuto può essere valutata attraverso;",
+		"a": "la valutazione di giudici indipendenti esperti;",
+		"t": "QA"
+	},
+	{
+		"q": "Un’elevata correlazione tra due misure di due costrutti diversi è indice di un’alta validità convergente;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Secondo la teoria dei tratti latenti, la probabilità di rispondere correttamente a una domanda è data dall’abilità della persona e dalle caratteristiche della domanda stessa;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "Gli studiosi non sono concordi sulle statistiche da utilizzare per misurare la validità di costrutto;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Per errore casuale di misurazione s’intende;",
+		"a": "un errore che è diverso per ogni misurazione",
+		"t": "QA"
+	},
+	{
+		"q": "Per effettuare la taratura di un test, esso va somministrato a un campione ad hoc tratto dalla popolazione;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "Uno strumento è attendibile se;",
+		"a": "presenta una elevata coerenza interna ed è stabile nel tempo",
+		"t": "QA"
+	},
+	{
+		"q": "Le scale di misura possono essere distinte in;",
+		"a": "scale nominali, scale ordinali, scale ad intervalli equivalenti e scale a rapporti equivalenti",
+		"t": "QA"
+	},
+	{
+		"q": "La matrice multi-tratto multi-metodo non dà indicazioni sulla precisione di uno strumento;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "In una staffetta 4X100, la classifica finale delle squadre può essere espressa con una scala;",
+		"a": "Ordinale",
+		"t": "QA"
+	},
+	{
+		"q": "Una K di Cohen maggiore di .70 è considerata accettabile;",
+		"a": "Vero",
+		"t": "QA"
+	},
+	{
+		"q": "L’attendibilità non può essere stabilita sulla base di indici statistici;",
+		"a": "Falso",
+		"t": "QA"
+	},
+	{
+		"q": "In generale, l’attendibilità di un test accresce all’aumentare del numero di item che lo compongono;",
+		"a": "Vero",
+		"t": "QA"
+	}	
 ]
+
+

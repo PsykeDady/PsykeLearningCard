@@ -1,30 +1,36 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import Question from "../../models/question.model"
+import {formatText} from "../../utils/stringutils" 
 
-function Card({title, front, retro}) {
+function Card({question=new Question()}) {
 
     let [flipped, flagFlipped] = useState(false)
+
+	useEffect(()=>{
+		flagFlipped(false)
+	}, [question])
 
     let flip = () => {
         flagFlipped(true)
     }
 
-    let formatText = (testo="") => {
-        console.log(testo)
-        if (! testo instanceof String) {
-            return testo.reduce((p,n)=>p+formatText(n),"")
-        }
-        return testo.replace("\n", "<br/>")
-    }
+	let unSort = () => {
+		let unsorted = question.a.slice();
 
-    let retroC = <span dangerouslySetInnerHTML={{__html: formatText(retro)}}>
-        
+		unsorted.sort(() => Math.random() - 0.5); 
+		
+		return <span dangerouslySetInnerHTML={{__html:formatText(unsorted)}}> 
+		</span>
+	}
+
+    let retroC = <span dangerouslySetInnerHTML={{__html:formatText(question.a)}}> 
     </span>
 
     return <div className="container-fluid rounded bg-white p-3">
         <div className="row">
             <div className="col-12">
                 <h2>
-                    {title}
+                    {question.q}
                 </h2>
             </div>
         </div>
@@ -33,7 +39,9 @@ function Card({title, front, retro}) {
             <div className="col text-center">
                 {flipped? 
                     <strong className="text-success">{retroC}</strong> : 
-                    <span className="small text-muted">{front}</span>
+                    question.t.toUpperCase()==="RIORDINA"?   
+					unSort()
+					:  <span className="small text-muted">{"Clicca qui per mostrare la risposta"}</span>
                 }
             </div>
         </div>
