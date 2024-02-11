@@ -1,0 +1,80 @@
+* {
+	--fg-color: white; 
+	--bg-color: #1b1b1b; 
+
+	--primary-color			: #3f51b5 ; /* 500 Indigo*/
+	--primary-color-light	: #757de8 ;
+	--primary-color-dark	: #002984 ;
+
+	--accent-color 			: #fdd835 ; /* 600 yello */
+	--accent-color-light 	: #ffff6b ;
+	--accent-color-dark 	: #c6a700 ;
+
+	--inactive-color 		: lightgrey ;
+}
+
+.primary-bg{
+	background-color: var(--primary-color);
+}
+
+.accent-bg{
+	background-color: var(--accent-color);
+}
+
+
+.light-primary-bg{
+	background-color: var(--primary-color-light);
+}
+
+.light-accent-bg{
+	background-color: var(--accent-color-light);
+}
+
+.dark-primary-bg{
+	background-color: var(--primary-color-dark);
+}
+
+.dark-accent-bg{
+	background-color: var(--accent-color-dark);
+}
+
+.primary-fg{
+	color: var(--primary-color);
+}
+
+.light-primary-fg{
+	color: var(--primary-color-light);
+}
+
+.accent-fg{
+	color: var(--accent-color);
+}
+
+.light-accent-fg{
+	color: var(--accent-color-light);
+}
+
+
+.background-fg{
+	color:var(--bg-color)
+}
+
+.foreground-fg{
+	color:var(--fg-color)
+}
+
+.background-bg{
+	background-color: var(--bg-color);
+}
+
+.foreground-bg{
+	background-color: var(--fg-color);
+}
+
+.inactive-bg{
+	background-color: var(--inactive-color);	
+}
+
+.inactive-fg {
+	color: var(--inactive-color);
+}
