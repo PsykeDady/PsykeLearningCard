@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Question from "../models/question.model"
+import Question, { MULTIPLA, RIORDINA } from "../models/question.model"
 
 const QuestionContext = React.createContext({
     questions:[new Question()], 
@@ -23,7 +23,7 @@ export function QuestionsProvider (props) {
     const addSuccess = ()=>setCountSuccess(countSuccess+1)
     
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/PsykeDady/PsykeLearningCard/main/public/assets/filosofia.json')
+        fetch('https://raw.githubusercontent.com/PsykeDady/PsykeLearningCard/main/public/assets/psicologia.json')
           .then(results => results.json())
           .then(data => {
             setQuestions(data.map(cj => {
@@ -32,7 +32,9 @@ export function QuestionsProvider (props) {
                 model.a=cj.a
                 model.t=cj.t
                 return model
-            }))
+            })/*.filter( model =>
+				model.t===MULTIPLA || model.t === RIORDINA
+			)*/)
             flagLoading(false)
           });
         }, []);

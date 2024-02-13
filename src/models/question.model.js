@@ -1,3 +1,7 @@
+export const RIORDINA="RIORDINA"
+export const QA="QA"
+export const MULTIPLA="MULTIPLA"
+
 class Question {
     q;
     a;
