@@ -1,20 +1,27 @@
-import { useContext } from "react";
-import Loading from "../components/loading-component/loading";
-import QuestionContext from "../contexts/questions-context";
-import ShowCards from "./show-cards";
+import HeaderComponent from "../components/header-component/header-component";
+import FooterComponent from "../components/footer-components/footer-component";
+
 
 function Home() {
-    const contesto = useContext(QuestionContext)
 
-    return <div className="container-fluid">
-		<div className="row">
-			<div className="col-12 text-center	">
-				<h1 className="text-decoration-underline text-shadow-black text-white">Ciao Broccola, buone ripetizioni. Studia!</h1>
-			</div>
-		</div>
+    return <div className="container-fluid bg-light">
 		<div className="row">
 			<div className="col-12">
-				{contesto.loading? <Loading /> : <ShowCards />}
+				<HeaderComponent />
+			</div>
+		</div>
+		<div className="row overflow-y-scroll">
+			<div className="col-12">
+				<div className="row">
+					<div className="col-12">
+						BODY
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-12">
+						<FooterComponent></FooterComponent>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

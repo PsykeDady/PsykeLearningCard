@@ -1,12 +1,15 @@
 import './App.css';
-import { QuestionsProvider } from './contexts/questions-context';
 import Home from './pages/home';
+import { Provider } from 'react-redux';
+import AppStore from './contexts/app-store';
+
 
 function App() {
-  return <QuestionsProvider> 
-
-    <Home></Home>
-  </QuestionsProvider>
+  return <div className='app-container'> 
+    <Provider store={AppStore}>
+      <Home></Home>
+    </Provider>
+  </div>
 }
 
 export default App;

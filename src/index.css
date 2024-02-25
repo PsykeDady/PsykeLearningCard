@@ -6,8 +6,18 @@
 body{
   margin: 0;
   padding: 0;
-  background-image: url('../public/assets/broccoli.jpg');
+  /* background-image: url('../public/assets/broccoli.jpg'); */
+  background-color: black;
   background-size: auto;
   background-attachment: fixed;
+
+}
+
+.app-container{
+  width: 100vh;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
 }
 
