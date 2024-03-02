@@ -18,8 +18,8 @@ function FooterComponent() {
 
     const contactsRow = Object.keys(contacts).map(i => {
         return <div className="row">
-            <div className="col-10 offset-1">
-               <span className="fw-bolder h3">{i}</span>
+            <div className="col-10 offset-1 text-muted">
+               <span className="fw-bolder h5">{i}</span>
                {contactsDetail(contacts[i])} 
             </div>
         </div>
