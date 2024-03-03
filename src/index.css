@@ -12,11 +12,3 @@ body{
   background-attachment: fixed;
 }
 
-.app-container{
-  width: 100vh;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1%;
-}
-
