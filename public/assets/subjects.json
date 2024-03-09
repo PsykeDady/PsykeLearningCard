@@ -1,3 +1,4 @@
 [
-    {"uni": "UniCZ", "subject":"Metodologia Nelle Scienze Del Comportamento", "qapath":"unicz/psicologia/metodologia.json"}
+    {"institute": "UniCZ", "category":"Psicologia", "subject":"Metodologia Nelle Scienze Del Comportamento", "qapath":"unicz/psicologia/metodologia.json"},
+    {"institute": "Unical", "category":"LT Ingegneria Informatica", "subject":"Algoritmi e Strutture Dati", "qapath":"unical/ltinginf/algstrdati.json"}
 ]
