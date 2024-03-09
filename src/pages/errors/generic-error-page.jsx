@@ -1,3 +1,4 @@
+import { useLocation, useRouteError } from "react-router-dom"
 import NoSubjectErrorPage from "./no-subject-error-page"
 import PageNotFound from "./page-not-found"
 
@@ -8,6 +9,12 @@ import PageNotFound from "./page-not-found"
  */
 function GenericErrorPage({type, payload}) {
 
+    const routerError= useRouteError()
+    const location = useLocation()
+    
+    const page = (payload && payload.page)? payload.page : location.pathname;
+
+
     return <div className="container-fluid">
         <div className="row">
             <div className="col-9">
@@ -16,8 +23,8 @@ function GenericErrorPage({type, payload}) {
             <div className="col-3 text-center d-flex align-items-center">
                 {(type==="NOSUBJECT")?
                     <NoSubjectErrorPage subject={payload}/>
-                :(type==="PAGENOTFOUND")?
-                    <PageNotFound page={payload} />
+                :(type==="PAGENOTFOUND" || routerError.status===404)?
+                    <PageNotFound page={page} />
                 :
                     <span>
                         Generic {type} error {payload&& payload!==null&&<span>with payload: <br></br> {payload}</span>}

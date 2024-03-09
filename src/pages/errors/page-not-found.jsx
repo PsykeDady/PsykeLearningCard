@@ -1,10 +1,7 @@
-import { useParams } from "react-router-dom";
-
-function PageNotFound(page) {
-    const pathParams = useParams()
+function PageNotFound({page}) {
 
     return <div className="container-fluid">
-        404: No page {page} Found!
+        404: No page <span style={{color:"blue"}}>{page}</span> Found!
     </div>
 }
 

@@ -25,7 +25,7 @@ function FooterComponent() {
         </div>
     })
 
-    return <div className="container bg-light-subtle">
+    return <div className="container">
         {contactsRow}
     </div>
 }
