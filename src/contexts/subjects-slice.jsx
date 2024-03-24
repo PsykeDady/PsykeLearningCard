@@ -36,7 +36,12 @@ const getSubjects = () => {
             flagLoading(false); // Dopo aver completato tutte le fetch, imposta il flag Loading a false
         });
     })
+}
 
+const getGithubDirectory = () => {
+    flagLoading(true)
+    const fileList = []
+    fetch(`${API_GITHUB_CONTENT}${ASSETS_PATH}${BRANCH}`)
 }
 
  
