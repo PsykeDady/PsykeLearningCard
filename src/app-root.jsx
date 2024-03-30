@@ -22,6 +22,7 @@ function AppRoot() {
 				</div>
 				<div className="row">
 					<div className="col-12">
+						<hr className="text-secondary" />
 						<FooterComponent></FooterComponent>
 					</div>
 				</div>

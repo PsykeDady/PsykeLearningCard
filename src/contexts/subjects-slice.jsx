@@ -38,22 +38,22 @@ const getSubjects = () => {
     })
 }
 
-const getGithubDirectory = () => {
-    flagLoading(true)
-    const fileList = []
-    fetch(`${API_GITHUB_CONTENT}${ASSETS_PATH}${BRANCH}`)
-}
+
 
  
 const subjectsSlice = createSlice({
 	name:"subjectsSlice",
 	initialState:{
-        subjects:getSubjects(),
+        subjects:[],
         currentSubject:"",
         loading:false
 	}, 
 	reducers:{
-        flagLoading: (state) => {return {...state, loading:true}}
+        flagLoading: (state) => {return {...state, loading:true}},
+        setSubject: (state, {payload}) => {
+            if (payload?.subject?.length!==0)
+                return {...state, subject:payload.subject}
+        }
 	}
 })
 

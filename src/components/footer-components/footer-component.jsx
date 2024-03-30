@@ -5,7 +5,7 @@ function FooterComponent() {
     const contacts = useSelector(store => store.contacts)
 
     const contactsDetail = (details) => {
-        return details.map(detail => <div className="row">
+        return details.map(detail => <div className="row" key={detail.link}>
             <div className="col-11 offset-1">
                 <a
                     className="small link-link-secondary"
@@ -17,7 +17,7 @@ function FooterComponent() {
     }
 
     const contactsRow = Object.keys(contacts).map(i => {
-        return <div className="row">
+        return <div className="row" key={i}>
             <div className="col-10 offset-1 text-muted">
                <span className="fw-bolder h5">{i}</span>
                {contactsDetail(contacts[i])} 
