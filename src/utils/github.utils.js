@@ -6,12 +6,24 @@ const REPOSITORY_BRANCHES = ["refactoring", "main"];
 const SUBJECTS_INDEX_PATH = "subjects.json";
 const SUBJECTS_ROOT_PATH = "subjects";
 
+const buildLocalAssetUrl = (relativePath = "") => {
+    const sanitizedPath = relativePath.replace(/^\/+/, "");
+    const baseUrl = import.meta.env.BASE_URL ?? "/";
+    return `${baseUrl}assets/${sanitizedPath}`;
+};
+
 const buildAssetUrl = (relativePath = "", branch = REPOSITORY_BRANCHES[0]) => {
     const sanitizedPath = relativePath.replace(/^\/+/, "");
     return `https://raw.githubusercontent.com/${REPOSITORY_OWNER}/${REPOSITORY_NAME}/${branch}/public/assets/${sanitizedPath}`;
 };
 
 const fetchJson = async (relativePath) => {
+    const localResponse = await fetch(buildLocalAssetUrl(relativePath));
+
+    if (localResponse.ok) {
+        return localResponse.json();
+    }
+
     let lastError = null;
 
     for (const branch of REPOSITORY_BRANCHES) {
@@ -24,7 +36,7 @@ const fetchJson = async (relativePath) => {
         lastError = new Error(`Unable to fetch ${relativePath} from GitHub branch ${branch} (${response.status})`);
     }
 
-    throw lastError ?? new Error(`Unable to fetch ${relativePath} from GitHub`);
+    throw lastError ?? new Error(`Unable to fetch ${relativePath} from local assets or GitHub`);
 };
 
 export const createSubjectSlug = (...labels) => {

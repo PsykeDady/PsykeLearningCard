@@ -53,36 +53,42 @@ function ShowCards() {
 		</div>
 	}
 
-	const results = <div className="row m-2">
-		<div className="col-12 text-center">
-			<small className="pull-left rounded-pill bg-white text-danger p-3">
-				Sbagliate<br/>{questionsContext.countWrong}
-			</small>
-			<small className="rounded-pill bg-white text-info p-3 align-self-center">
-				Domanda &nbsp;
-				{questions.length}/{questionsContext.questions.length}
-			</small>
-			<small className="pull-right rounded-pill bg-white text-success p-3">
-				Giuste<br/>{questionsContext.countSuccess}
-			</small>
+	const results = <div className="session-results row g-2 m-0 mb-3">
+		<div className="col-4">
+			<div className="session-pill session-pill-wrong rounded-pill bg-white text-danger">
+				<span className="session-pill-label">Sbagliate</span>
+				<span className="session-pill-value">{questionsContext.countWrong}</span>
+			</div>
+		</div>
+		<div className="col-4">
+			<div className="session-pill session-pill-remaining rounded-pill bg-white text-info">
+				<span className="session-pill-label">Rimanenti</span>
+				<span className="session-pill-value">{questions.length}</span>
+			</div>
+		</div>
+		<div className="col-4">
+			<div className="session-pill session-pill-success rounded-pill bg-white text-success">
+				<span className="session-pill-label">Giuste</span>
+				<span className="session-pill-value">{questionsContext.countSuccess}</span>
+			</div>
 		</div>
 	</div>
 	
-	const buttons = <div className="row">
-		<div className="col-10 offset-1">
+	const buttons = <div className="row justify-content-center mt-3">
+		<div className="col-12 col-lg-10">
 			{flipped? <div className="container">
 				<div className="row">
-					<div className="col text-center text-shadow-black text-white fs-3">
+					<div className="col text-center text-shadow-black text-white fs-3 session-answer-title">
 						Hai indovinato? 
 					</div>
 				</div>
-				<div className="row">
-					<div className="col-5 col-lg-3 p-1 offset-0 offset-lg-3">
+				<div className="row g-2 justify-content-center session-answer-actions">
+					<div className="col-12 col-sm-6 col-lg-3 p-1">
 						<button className="col-12 btn btn-danger" onClick={()=>next(false)}>
 							Sbagliata
 						</button>
 					</div>
-					<div className="col-5 col-lg-3 p-1 offset-1 offset-lg-0">
+					<div className="col-12 col-sm-6 col-lg-3 p-1">
 						<button className="col-12 btn btn-success" onClick={()=>next(true)}>
 							Giusta
 						</button>
@@ -92,7 +98,7 @@ function ShowCards() {
 		</div>
 	</div>
 
-	const cardsGame = <div className="container-fluid pt-5">
+	const cardsGame = <div className="container-fluid pt-3 pt-lg-5 session-layout">
 		{results}
 		<div className="row justify-content-center">
 			<div className="col-12 d-flex justify-content-center"> 
