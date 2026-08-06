@@ -14,9 +14,32 @@
 }
 
 
-.text-overflow-btn {  /* FIXME bisogna far si che gli elementi troppo grandi si dividano su più righe*/
+.text-overflow-btn {
 	overflow: hidden;
-	white-space: nowrap;
-	display: inline-block;
-	text-overflow: ellipsis;
+	white-space: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 7rem;
+	padding: 0.85rem 0.75rem;
+	line-height: 1.3;
+	text-align: center;
+	gap: 0.2rem;
+	text-wrap: balance;
+	overflow-wrap: anywhere;
+}
+
+.text-overflow-btn small,
+.text-overflow-btn .fw-semibold {
+	max-width: 100%;
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+
+@media (max-width: 767.98px) {
+	.text-overflow-btn {
+		min-height: 7.5rem;
+		padding: 0.9rem 0.6rem;
+	}
 }
