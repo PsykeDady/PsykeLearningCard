@@ -1,7 +1,50 @@
+import { useEffect, useState } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
 import SubjectListComponent from "../components/subject-list-component/subject-list-component";
-import GithubModelContent from "../models/github-content.model";
+import { getRemoteSubjects } from "../utils/github.utils";
 
-function ChooseApp(params) {
+function ChooseApp() {
+    const navigate = useNavigate();
+    const [subjects, setSubjects] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        let cancelled = false;
+
+        const loadSubjects = async () => {
+            setLoading(true)
+            setError(null)
+
+            try {
+                const remoteSubjects = await getRemoteSubjects()
+
+                if (!cancelled) {
+                    setSubjects(remoteSubjects)
+                }
+            } catch (fetchError) {
+                if (!cancelled) {
+                    console.error(fetchError)
+                    setError(fetchError)
+                }
+            } finally {
+                if (!cancelled) {
+                    setLoading(false)
+                }
+            }
+        };
+
+        loadSubjects();
+
+        return () => {
+            cancelled = true;
+        };
+    }, []);
+
+    const openSubject = ({ slug }) => {
+        navigate(`/learning/${slug}`)
+    }
+
     return <div className="container-fluid">
         <div className="row">
             <div className="col-12">
@@ -12,39 +55,12 @@ function ChooseApp(params) {
                 </div>
             </div>
             <div className="col-12">
-                <SubjectListComponent
-                    subjects={[new GithubModelContent(
-                        "Unical",
-                        "PATH",
-                        "SHA",
-                        123,
-                        "URL",
-                        "HTMLURTL",
-                        "GIT URL",
-                        "downloadURL",
-                        "dir"
-                    ),new GithubModelContent(
-                        "algoritmiestrutturedati.json",
-                        "PATH",
-                        "SHA",
-                        123,
-                        "URL",
-                        "HTMLURTL",
-                        "GIT URL",
-                        "downloadURL",
-                        "file"
-                    ),new GithubModelContent(
-                        "Altro",
-                        "PATH",
-                        "SHA",
-                        123,
-                        "URL",
-                        "HTMLURTL",
-                        "GIT URL",
-                        "downloadURL",
-                        "altro"
-                    )]}
-                />
+                {loading && <div className="text-center text-white">Loading subjects...</div>}
+                {error && <div className="text-center text-danger">Unable to load subjects from GitHub.</div>}
+                {!loading && !error && <SubjectListComponent subjects={subjects} onSelect={openSubject} />}
+            </div>
+            <div className="col-12 mt-3">
+                <Outlet />
             </div>
         </div>
     </div>    

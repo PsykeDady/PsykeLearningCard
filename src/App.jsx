@@ -3,7 +3,6 @@ import AppRoot from './app-root';
 import { Provider } from 'react-redux';
 import AppStore from './contexts/app-store';
 
-
 function App() {
   return <div className="container-fluid">
 			<div className="row">

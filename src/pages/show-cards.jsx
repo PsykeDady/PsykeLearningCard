@@ -1,28 +1,36 @@
-import { useCallback, useContext, useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import Card from "../components/card-component/card-component"
 import QuestionContext from "../contexts/questions-context"
 import Question from "../models/question.model"
 
 function ShowCards() {
+	const getRandomIndex = (length) => {
+		const values = new Uint32Array(1)
+		crypto.getRandomValues(values)
+		return values[0] % length
+	}
     
-    let questionsContext = useContext(QuestionContext)
-    let [questions,setQuestions] = useState( [...questionsContext.questions])
-    let [currentIndex, setCurrentIndex] = useState(0)
-    let [current, setCurrent] = useState(new Question())
-	let [flipped, flagFlipped] =useState(false)
+	const questionsContext = useContext(QuestionContext)
+	const [questions,setQuestions] = useState([])
+	const [currentIndex, setCurrentIndex] = useState(0)
+	const [current, setCurrent] = useState(new Question())
+	const [flipped, setFlipped] =useState(false)
 
-    
-    const randomQuestion = useCallback (() => { 
-		console.log("randomQuestion call")
-        const index = Math.floor(Math.random()*questions.length)
-        setCurrentIndex(index)
-        setCurrent(questions[index])
-    },[questions])
-    
     useEffect(()=>{
-		console.log("called useEffect")
-		randomQuestion()
-    },[randomQuestion])
+		setQuestions([...questionsContext.questions])
+		setFlipped(false)
+	},[questionsContext.questions])
+
+	useEffect(() => {
+		if (questions.length === 0) {
+			setCurrent(new Question())
+			return;
+		}
+
+		const index = getRandomIndex(questions.length)
+		setCurrentIndex(index)
+		setCurrent(questions[index])
+	}, [questions])
 
     const next = (success=false)=> {
         if(success){
@@ -31,8 +39,19 @@ function ShowCards() {
             questionsContext.addWrong(current)
         }
         setQuestions(questions.filter((_,i)=>i!==currentIndex))
-        console.log(questions)
     }
+
+	if (questionsContext.loading) {
+		return <div className="container-fluid rounded bg-white text-center p-4">
+			Loading questions...
+		</div>
+	}
+
+	if (questionsContext.error) {
+		return <div className="container-fluid rounded bg-white text-center p-4 text-danger">
+			Unable to load questions from GitHub.
+		</div>
+	}
 
 	const results = <div className="row m-2">
 		<div className="col-12 text-center">
@@ -79,7 +98,7 @@ function ShowCards() {
 			<div className="col-12 col-lg-4 offset-lg-4"> 
 				<Card
 					question={current}
-					outFlagFlip={flagFlipped}
+					outFlagFlip={setFlipped}
 				/>
 			</div>
 		</div>
@@ -107,7 +126,7 @@ function ShowCards() {
 							</div>
 						</div>
                     </div>
-    return questions.length>0 && current? cardsGame : noCards  
+	return questions.length>0 && current.q ? cardsGame : noCards  
 }
 
 export default ShowCards

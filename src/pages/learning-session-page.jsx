@@ -1,15 +1,16 @@
 import { useParams } from "react-router-dom";
+import ShowCards from "./show-cards";
+import { QuestionsProvider } from "../contexts/questions-context";
 
-function LearningSession(params) {
-
-    const pathParams = useParams()
-
-    
+function LearningSession() {
+    const { subject = "" } = useParams()
 
     return <div className="container-fluid">
         <div className="row">
             <div className="col-12">
-                Learning Session Page (subject: )
+                <QuestionsProvider subjectSlug={subject}>
+                    <ShowCards />
+                </QuestionsProvider>
             </div>
         </div>
     </div>    

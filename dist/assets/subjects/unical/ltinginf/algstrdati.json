@@ -1,0 +1,7 @@
+[
+    {
+		"q": "cos'è un grafo planare",
+		"a": "Un grafo planare è un tipo di grafo che può essere disegnato su un piano in modo che le sue linee (o archi) non si intersechino. In altre parole, non ci sono sovrapposizioni tra gli archi quando il grafo è disegnato su una superficie bidimensionale come una carta o un piano.\npiù formalmente, un grafo è planare se può essere disegnato su un piano in modo che nessuna delle sue linee si intersechi. Questo significa che non ci sono incroci tra i percorsi che rappresentano le connessioni tra i nodi del grafo.\nUn esempio di grafo planare può essere il grafo di un poligono, dove i nodi rappresentano i vertici e gli archi rappresentano i lati del poligono. Questo tipo di grafo può essere disegnato su un piano senza che i lati si sovrappongano.\nI grafi planari sono oggetto di studio in teoria dei grafi e hanno molte applicazioni pratiche, ad esempio nella progettazione di circuiti elettrici, nella mappatura di reti di comunicazione e nell'analisi di sistemi di trasporto.",
+		"t": "QA"
+	}
+]

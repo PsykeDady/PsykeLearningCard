@@ -5,8 +5,8 @@ import GenericErrorPage from "../pages/errors/generic-error-page";
 
 const router=createBrowserRouter([
     {path:"/", element:<ChooseApp/>, children:[
-        {path:"/learning/:subject", element:<LearningSession/>},
-        {path:"/error", element:<GenericErrorPage/>},
+        {path:"learning/:subject", element:<LearningSession/>},
+        {path:"error", element:<GenericErrorPage/>},
     ], errorElement:<GenericErrorPage/> },
 ])
 
