@@ -68,9 +68,8 @@ function Card({question=new Question(), outFlagFlip=(flip=false)=>{}}) {
 	return <div className="learning-card rounded bg-white p-3 shadow">
         <div className="row">
             <div className="col-12">
-                <h3>
-                    {question.q}
-                </h3>
+				<h3 dangerouslySetInnerHTML={{__html: formatText(question.q)}}>
+				</h3>
             </div>
         </div>
         <hr className="row"/>
