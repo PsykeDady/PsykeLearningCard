@@ -55,19 +55,19 @@ function ShowCards() {
 
 	const results = <div className="session-results row g-2 m-0 mb-3">
 		<div className="col-4">
-			<div className="session-pill session-pill-wrong rounded-pill bg-white text-danger">
+			<div className="session-pill badge rounded-pill text-danger bg-white border border-danger-subtle w-100">
 				<span className="session-pill-label">Sbagliate</span>
 				<span className="session-pill-value">{questionsContext.countWrong}</span>
 			</div>
 		</div>
 		<div className="col-4">
-			<div className="session-pill session-pill-remaining rounded-pill bg-white text-info">
+			<div className="session-pill badge rounded-pill text-info bg-white border border-info-subtle w-100">
 				<span className="session-pill-label">Rimanenti</span>
 				<span className="session-pill-value">{questions.length}</span>
 			</div>
 		</div>
 		<div className="col-4">
-			<div className="session-pill session-pill-success rounded-pill bg-white text-success">
+			<div className="session-pill badge rounded-pill text-success bg-white border border-success-subtle w-100">
 				<span className="session-pill-label">Giuste</span>
 				<span className="session-pill-value">{questionsContext.countSuccess}</span>
 			</div>

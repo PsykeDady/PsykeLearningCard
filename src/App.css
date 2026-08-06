@@ -37,9 +37,12 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 5rem;
-	padding: 0.75rem 0.5rem;
+	padding: 0.85rem 0.65rem !important;
 	text-align: center;
 	box-shadow: 0 0.35rem 0.9rem rgba(0, 0, 0, 0.08);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1;
 }
 
 .session-pill-label {
@@ -98,7 +101,7 @@
 
 	.session-pill {
 		min-height: 4.6rem;
-		padding: 0.65rem 0.35rem;
+		padding: 0.7rem 0.4rem !important;
 	}
 
 	.session-pill-label {
