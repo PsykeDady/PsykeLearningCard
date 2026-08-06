@@ -1,38 +1,182 @@
 [
-  {"q":"Quali vulnerabilità sono associate all'elaborazione di XML?","a":"Parser configurati in modo insicuro possono consentire XXE, espansione ricorsiva di entità, accesso a risorse esterne e injection in XPath/XSLT. Le difese sono disabilitare DTD ed entità esterne, usare parser aggiornati con limiti di risorse, validare schema e input e applicare privilegi di rete e filesystem minimi.","t":"QA"},
-  {"q":"Che cos'è una XML External Entity vulnerability?","a":"XXE nasce quando un parser accetta una DTD controllata dall'utente e risolve entità SYSTEM verso file o URL. Può causare lettura di file, SSRF o denial of service. Si previene disabilitando DTD/risoluzione esterna e usando configurazioni sicure documentate dal parser.","t":"QA"},
-  {"q":"Che cos'è una Server-Side Template Injection?","a":"Dati utente vengono interpretati come sintassi dal template engine invece di essere trattati come testo. L'impatto varia dalla lettura di dati all'esecuzione sul server. Si evita non costruendo template da input, usando sandbox e allowlist, separando dati e codice e aggiornando il motore.","t":"QA"},
-  {"q":"Che cos'è una Server-Side Request Forgery?","a":"SSRF induce il server a effettuare richieste verso destinazioni scelte dall'attaccante, incluse reti interne o metadata service. Le difese includono allowlist di schema/host/porta, risoluzione e verifica dell'IP dopo i redirect, egress filtering, segmentazione e protezione dei servizi interni.","t":"QA"},
-  {"q":"Che cos'è il Cross-Site Request Forgery e come si previene?","a":"CSRF induce il browser autenticato della vittima a inviare una richiesta di modifica non voluta. Si previene con token anti-CSRF legati alla sessione, cookie SameSite, verifica Origin/Referer e richiesta di riautenticazione per operazioni critiche. GET non dovrebbe modificare stato.","t":"QA"},
-  {"q":"Qual è la differenza tra CSRF e XSS?","a":"CSRF sfrutta l'invio automatico delle credenziali del browser per effettuare azioni non autorizzate; XSS esegue script nel contesto del sito e può leggere o modificare la pagina. Un XSS spesso aggira le protezioni CSRF perché può ottenere token e inviare richieste same-origin.","t":"QA"},
-  {"q":"Quali tipi di Cross-Site Scripting esistono e come si prevengono?","a":"Stored XSS persiste sul server, reflected torna nella risposta e DOM-based nasce nel client. Le difese principali sono output encoding contestuale, template con auto-escaping, sanitizzazione quando si accetta HTML, API DOM sicure, Content Security Policy e cookie HttpOnly come difesa aggiuntiva.","t":"QA"},
-  {"q":"Che cos'è una SQL injection e quali controlli la impediscono?","a":"Input non fidato altera la struttura di una query SQL, permettendo letture o modifiche non previste. La difesa fondamentale sono query parametrizzate/prepared statement; si aggiungono validazione, privilegi minimi, messaggi d'errore non dettagliati e separazione degli account. Escaping manuale non è una soluzione generale.","t":"QA"},
-  {"q":"Che cos'è una format-string vulnerability?","a":"Si verifica quando input controllato viene usato come stringa di formato, per esempio printf(user_input), consentendo letture, crash e in alcuni casi scritture in memoria. Si passa sempre un formato costante, si abilitano warning e hardening del compilatore e si applicano ASLR, PIE e RELRO come mitigazioni.","t":"QA"},
-  {"q":"Che cos'è un buffer overflow e quali mitigazioni moderne lo contrastano?","a":"Una scrittura supera i limiti del buffer e corrompe memoria adiacente, incluso il controllo del flusso. Stack canary, NX/DEP, ASLR, PIE, CFI, librerie fortificate e linguaggi memory-safe riducono rischio e sfruttabilità; servono comunque bounds checking e correzione del difetto.","t":"QA"},
-  {"q":"Quali differenze influenzano lo sfruttamento di memory corruption su x86 e x64?","a":"x64 ha registri e indirizzi più grandi, calling convention diversa, spazio di indirizzi e spesso ASLR con maggiore entropia; i parametri passano più spesso nei registri. L'assenza di gadget o byte nulli e le mitigazioni cambiano la tecnica, ma nessuna architettura rende intrinsecamente sicuro codice senza controlli.","t":"QA"},
-  {"q":"Che cos'è Return-Oriented Programming e quali difese la ostacolano?","a":"ROP concatena brevi sequenze di istruzioni già presenti, terminate da return, per eseguire calcoli senza iniettare codice, aggirando NX. ASLR/PIE, CFI, shadow stack e hardware CET ne riducono l'efficacia; la difesa primaria resta eliminare la vulnerabilità di memory corruption.","t":"QA"},
-  {"q":"Che cosa sono DLL/shared-library hijacking?","a":"Un programma carica una libreria non prevista perché percorso o ordine di ricerca sono controllabili. Si previene usando percorsi assoluti e directory protette, limitando le search path, verificando firme/integrità e correggendo permessi. In audit si controllano dipendenze mancanti e directory scrivibili senza eseguire payload reali.","t":"QA"},
-  {"q":"Che cos'è una loose-comparison vulnerability?","a":"Linguaggi con coercizione implicita possono considerare uguali valori di tipi diversi, alterando controlli di autenticazione, token o hash. Si usano confronti stretti e constant-time quando appropriato, validazione del tipo e parser non ambigui; gli hash delle password vanno verificati con API dedicate.","t":"QA"},
-  {"q":"Che cos'è Active Directory e qual è il ruolo del domain controller?","a":"Active Directory Domain Services centralizza identità, computer, gruppi, policy e autenticazione in un dominio Windows. I domain controller ospitano e replicano la directory e forniscono servizi come Kerberos e LDAP; non esiste un unico “computer principale”, perché possono esserci più DC con ruoli specifici.","t":"QA"},
-  {"q":"Come funziona Kerberos in Active Directory?","a":"Il client ottiene dal KDC un Ticket Granting Ticket, poi richiede un service ticket per il servizio desiderato. Ticket e session key evitano di inviare ripetutamente la password. Tempo sincronizzato, protezione delle chiavi degli account e corretta configurazione degli SPN sono essenziali.","t":"QA"},
-  {"q":"Qual è la differenza tra Kerberoasting e AS-REP Roasting?","a":"Kerberoasting richiede service ticket per account con SPN e tenta offline la chiave derivata dalla password del servizio. AS-REP roasting riguarda account per cui la preautenticazione Kerberos è disabilitata e usa la risposta iniziale. Difese: password lunghe/gMSA per servizi, preautenticazione attiva, cifrature moderne e monitoraggio.","t":"QA"},
-  {"q":"Qual è la differenza tra Pass-the-Hash, Overpass-the-Hash e Pass-the-Ticket?","a":"PtH usa direttamente un hash NTLM per autenticarsi via protocolli compatibili; overpass usa materiale della password per ottenere credenziali Kerberos; PtT riutilizza ticket Kerberos. Si mitigano con Credential Guard, tiering amministrativo, restrizioni NTLM, account protetti, segmentazione e rilevamento degli accessi anomali.","t":"QA"},
-  {"q":"Che cos'è un Golden Ticket?","a":"È un TGT Kerberos contraffatto usando la chiave dell'account krbtgt, possibile dopo una compromissione critica del dominio. Consente ampia impersonificazione finché le chiavi non vengono ruotate. La risposta richiede contenimento dei privilegi, doppio reset controllato di krbtgt, indagine e ricostruzione della fiducia.","t":"QA"},
-  {"q":"Che cosa sono le Group Policy Object e come possono essere abusate?","a":"Le GPO distribuiscono configurazioni a utenti e computer in siti, domini e OU. Chi ottiene permessi di modifica può distribuire impostazioni o codice con privilegi elevati. Si proteggono deleghe, si revisionano ACL e link, si monitora ogni modifica e si separano gli amministratori per tier.","t":"QA"},
-  {"q":"Che cosa indicano le classi ESC1 ed ESC4 in AD CS?","a":"ESC1 descrive template che consentono a richiedenti non privilegiati di specificare un'identità autenticabile con controlli insufficienti. ESC4 indica controllo pericoloso sul template, che può permettere di trasformarlo in una configurazione vulnerabile come ESC1. Le difese sono ACL minime, approvazione, restrizioni sugli EKU e audit dei template.","t":"QA"},
-  {"q":"Quali rischi presentano SeBackupPrivilege e SeImpersonatePrivilege?","a":"SeBackupPrivilege può consentire lettura di dati protetti bypassando ACL per finalità di backup; SeImpersonatePrivilege consente a processi di impersonare token ottenuti legittimamente e diventa critico in servizi esposti. Vanno assegnati soltanto agli account necessari, isolati e monitorati.","t":"QA"},
-  {"q":"Che cos'è AlwaysInstallElevated e perché è pericoloso?","a":"Se le relative policy sono abilitate sia per macchina sia per utente, pacchetti Windows Installer possono essere eseguiti con privilegi elevati da utenti non amministratori. È una configurazione insicura: va disabilitata e monitorata, affidando la distribuzione software a sistemi amministrati.","t":"QA"},
-  {"q":"Dove sono protette le credenziali Windows?","a":"Gli hash degli account locali sono nel database SAM, protetto insieme ai segreti di sistema; quelli di dominio risiedono in AD sui domain controller. LSASS gestisce materiale di autenticazione in memoria. Accesso a tali risorse richiede privilegi elevati e va protetto con Credential Guard, LSA protection e hardening.","t":"QA"},
-  {"q":"Che cos'è Mimikatz e come va inquadrato in un laboratorio etico?","a":"È uno strumento di ricerca e post-exploitation che dimostra l'estrazione o l'uso di materiale di autenticazione Windows. In ambienti autorizzati serve a validare hardening e detection; fuori da essi è abuso. Le difese includono riduzione privilegi, Credential Guard, protezione LSASS, patching e telemetria EDR.","t":"QA"},
-  {"q":"Qual è la differenza tra bind shell e reverse shell?","a":"Una bind shell ascolta sulla macchina compromessa e richiede una connessione in ingresso; una reverse shell avvia dalla macchina bersaglio una connessione verso l'operatore, spesso attraversando più facilmente NAT o firewall egress permissivi. Entrambe sono indicatori da rilevare e vanno usate solo in laboratori autorizzati.","t":"QA"},
-  {"q":"Che cos'è Metasploit?","a":"È un framework modulare per validare vulnerabilità, gestire payload e attività post-exploitation in test autorizzati. Non sostituisce comprensione e verifica manuale; moduli e target vanno controllati per evitare impatti. Le contromisure sono patching, riduzione della superficie, segmentazione e rilevamento comportamentale.","t":"QA"},
-  {"q":"Che cos'è Docker e quali configurazioni causano privilege escalation?","a":"Docker usa namespace e cgroup per isolare processi condividendo il kernel host. Rischi comuni sono socket Docker accessibile, container privileged, capability eccessive, mount sensibili, immagini non fidate e kernel vulnerabile. Si applicano rootless mode, seccomp/AppArmor, filesystem read-only e privilegi minimi.","t":"QA"},
-  {"q":"Come si gestiscono i servizi Linux in modo sicuro?","a":"Con systemd si consultano stato e log e si avviano/arrestano unità tramite strumenti amministrativi autorizzati. I servizi devono usare account dedicati, capability minime, configurazioni e segreti protetti, sandbox systemd quando possibile e porte limitate dal firewall.","t":"QA"},
-  {"q":"Che cosa mostra sudo -l durante una verifica autorizzata?","a":"Elenca i comandi che l'utente può eseguire tramite sudo e le relative condizioni, come target user, host e richiesta password. Regole con wildcard, editor, interpreti o binari capaci di eseguire comandi possono ampliare i privilegi; vanno sostituite con allowlist strette e percorsi/argomenti controllati.","t":"QA"},
-  {"q":"Che cos'è una restricted shell e perché non è un confine di sicurezza sufficiente?","a":"Limita comandi, directory o variabili disponibili all'utente, ma programmi consentiti possono offrire shell escape o accesso a interpreti. Va considerata difesa aggiuntiva, non sandbox: servono privilegi OS minimi, container/VM, filesystem e rete limitati e allowlist verificata.","t":"QA"},
-  {"q":"Qual è il ruolo di LDAP e quali rischi presenta?","a":"LDAP interroga e modifica directory gerarchiche; in AD è usato per oggetti di dominio. Rischi includono anonymous bind, simple bind non cifrato, LDAP injection, ACL eccessive e assenza di signing/channel binding. Si usano TLS, autenticazione forte, query parametrizzate, minimi privilegi e logging.","t":"QA"},
-  {"q":"Quali controlli seguono l'ottenimento autorizzato di una shell Linux?","a":"Si documentano identità e privilegi, host e rete, processi/servizi, configurazioni, mount, credenziali esposte e meccanismi di persistenza, limitando l'impatto. Si raccolgono prove, si evita di alterare dati, si verifica la segmentazione e si seguono scope e stop condition concordati.","t":"QA"},
-  {"q":"A cosa serve tcpdump durante una diagnosi o un penetration test autorizzato?","a":"Cattura pacchetti sulle interfacce selezionate con filtri BPF per analizzare protocolli e flussi visibili a quell'host. Non mostra automaticamente tutto il traffico della rete commutata; vede traffico locale, broadcast/multicast e ciò che viene instradato o mirrorato. Le catture possono contenere dati sensibili.","t":"QA"},
-  {"q":"Come si progetta un laboratorio di sicurezza isolato con VM e container?","a":"Si usano rete host-only o interna senza route verso produzione, snapshot, immagini controllate, account e segreti fittizi e regole egress restrittive. NAT va aggiunto solo quando necessario; clipboard, cartelle condivise e bridge verso LAN vanno evitati. Si definiscono scope e procedura di ripristino.","t":"QA"},
-  {"q":"Qual è la differenza tra post-exploitation, privilege escalation e lateral movement?","a":"Post-exploitation comprende analisi e obiettivi dopo l'accesso; privilege escalation aumenta i privilegi sul sistema o dominio; lateral movement usa accessi ottenuti per raggiungere altri host. In un test vanno autorizzati separatamente perché rischio e impatto sono diversi.","t":"QA"}
+  {
+    "q": "Quali vulnerabilità sono associate all'elaborazione di XML?",
+    "a": "Parser configurati in modo insicuro possono consentire XXE, espansione ricorsiva di entità, accesso a risorse esterne e injection in XPath/XSLT.\n\nLe difese sono disabilitare DTD ed entità esterne, usare parser aggiornati con limiti di risorse, validare schema e input e applicare privilegi di rete e filesystem minimi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una XML External Entity vulnerability?",
+    "a": "XXE nasce quando un parser accetta una DTD controllata dall'utente e risolve entità SYSTEM verso file o URL.\n\nPuò causare lettura di file, SSRF o denial of service.\n\nSi previene disabilitando DTD/risoluzione esterna e usando configurazioni sicure documentate dal parser.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una Server-Side Template Injection?",
+    "a": "Dati utente vengono interpretati come sintassi dal template engine invece di essere trattati come testo.\n\nL'impatto varia dalla lettura di dati all'esecuzione sul server.\n\nSi evita non costruendo template da input, usando sandbox e allowlist, separando dati e codice e aggiornando il motore.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una Server-Side Request Forgery?",
+    "a": "SSRF induce il server a effettuare richieste verso destinazioni scelte dall'attaccante, incluse reti interne o metadata service.\n\nLe difese includono allowlist di schema/host/porta, risoluzione e verifica dell'IP dopo i redirect, egress filtering, segmentazione e protezione dei servizi interni.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il Cross-Site Request Forgery e come si previene?",
+    "a": "CSRF induce il browser autenticato della vittima a inviare una richiesta di modifica non voluta.\n\nSi previene con token anti-CSRF legati alla sessione, cookie SameSite, verifica Origin/Referer e richiesta di riautenticazione per operazioni critiche.\n\nGET non dovrebbe modificare stato.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra CSRF e XSS?",
+    "a": "CSRF sfrutta l'invio automatico delle credenziali del browser per effettuare azioni non autorizzate; XSS esegue script nel contesto del sito e può leggere o modificare la pagina.\n\nUn XSS spesso aggira le protezioni CSRF perché può ottenere token e inviare richieste same-origin.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali tipi di Cross-Site Scripting esistono e come si prevengono?",
+    "a": "Stored XSS persiste sul server, reflected torna nella risposta e DOM-based nasce nel client.\n\nLe difese principali sono output encoding contestuale, template con auto-escaping, sanitizzazione quando si accetta HTML, API DOM sicure, Content Security Policy e cookie HttpOnly come difesa aggiuntiva.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una SQL injection e quali controlli la impediscono?",
+    "a": "Input non fidato altera la struttura di una query SQL, permettendo letture o modifiche non previste.\n\nLa difesa fondamentale sono query parametrizzate/prepared statement; si aggiungono validazione, privilegi minimi, messaggi d'errore non dettagliati e separazione degli account.\n\nEscaping manuale non è una soluzione generale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una format-string vulnerability?",
+    "a": "Si verifica quando input controllato viene usato come stringa di formato, per esempio printf(user_input), consentendo letture, crash e in alcuni casi scritture in memoria.\n\nSi passa sempre un formato costante, si abilitano warning e hardening del compilatore e si applicano ASLR, PIE e RELRO come mitigazioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un buffer overflow e quali mitigazioni moderne lo contrastano?",
+    "a": "Una scrittura supera i limiti del buffer e corrompe memoria adiacente, incluso il controllo del flusso.\n\nStack canary, NX/DEP, ASLR, PIE, CFI, librerie fortificate e linguaggi memory-safe riducono rischio e sfruttabilità; servono comunque bounds checking e correzione del difetto.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali differenze influenzano lo sfruttamento di memory corruption su x86 e x64?",
+    "a": "x64 ha registri e indirizzi più grandi, calling convention diversa, spazio di indirizzi e spesso ASLR con maggiore entropia; i parametri passano più spesso nei registri.\n\nL'assenza di gadget o byte nulli e le mitigazioni cambiano la tecnica, ma nessuna architettura rende intrinsecamente sicuro codice senza controlli.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Return-Oriented Programming e quali difese la ostacolano?",
+    "a": "ROP concatena brevi sequenze di istruzioni già presenti, terminate da return, per eseguire calcoli senza iniettare codice, aggirando NX.\n\nASLR/PIE, CFI, shadow stack e hardware CET ne riducono l'efficacia; la difesa primaria resta eliminare la vulnerabilità di memory corruption.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono DLL/shared-library hijacking?",
+    "a": "Un programma carica una libreria non prevista perché percorso o ordine di ricerca sono controllabili.\n\nSi previene usando percorsi assoluti e directory protette, limitando le search path, verificando firme/integrità e correggendo permessi.\n\nIn audit si controllano dipendenze mancanti e directory scrivibili senza eseguire payload reali.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una loose-comparison vulnerability?",
+    "a": "Linguaggi con coercizione implicita possono considerare uguali valori di tipi diversi, alterando controlli di autenticazione, token o hash.\n\nSi usano confronti stretti e constant-time quando appropriato, validazione del tipo e parser non ambigui; gli hash delle password vanno verificati con API dedicate.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Active Directory e qual è il ruolo del domain controller?",
+    "a": "Active Directory Domain Services centralizza identità, computer, gruppi, policy e autenticazione in un dominio Windows.\n\nI domain controller ospitano e replicano la directory e forniscono servizi come Kerberos e LDAP; non esiste un unico “computer principale”, perché possono esserci più DC con ruoli specifici.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona Kerberos in Active Directory?",
+    "a": "Il client ottiene dal KDC un Ticket Granting Ticket, poi richiede un service ticket per il servizio desiderato.\n\nTicket e session key evitano di inviare ripetutamente la password.\n\nTempo sincronizzato, protezione delle chiavi degli account e corretta configurazione degli SPN sono essenziali.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra Kerberoasting e AS-REP Roasting?",
+    "a": "Kerberoasting richiede service ticket per account con SPN e tenta offline la chiave derivata dalla password del servizio.\n\nAS-REP roasting riguarda account per cui la preautenticazione Kerberos è disabilitata e usa la risposta iniziale.\n\nDifese: password lunghe/gMSA per servizi, preautenticazione attiva, cifrature moderne e monitoraggio.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra Pass-the-Hash, Overpass-the-Hash e Pass-the-Ticket?",
+    "a": "PtH usa direttamente un hash NTLM per autenticarsi via protocolli compatibili; overpass usa materiale della password per ottenere credenziali Kerberos; PtT riutilizza ticket Kerberos.\n\nSi mitigano con Credential Guard, tiering amministrativo, restrizioni NTLM, account protetti, segmentazione e rilevamento degli accessi anomali.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un Golden Ticket?",
+    "a": "È un TGT Kerberos contraffatto usando la chiave dell'account krbtgt, possibile dopo una compromissione critica del dominio.\n\nConsente ampia impersonificazione finché le chiavi non vengono ruotate.\n\nLa risposta richiede contenimento dei privilegi, doppio reset controllato di krbtgt, indagine e ricostruzione della fiducia.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono le Group Policy Object e come possono essere abusate?",
+    "a": "Le GPO distribuiscono configurazioni a utenti e computer in siti, domini e OU.\n\nChi ottiene permessi di modifica può distribuire impostazioni o codice con privilegi elevati.\n\nSi proteggono deleghe, si revisionano ACL e link, si monitora ogni modifica e si separano gli amministratori per tier.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa indicano le classi ESC1 ed ESC4 in AD CS?",
+    "a": "ESC1 descrive template che consentono a richiedenti non privilegiati di specificare un'identità autenticabile con controlli insufficienti.\n\nESC4 indica controllo pericoloso sul template, che può permettere di trasformarlo in una configurazione vulnerabile come ESC1.\n\nLe difese sono ACL minime, approvazione, restrizioni sugli EKU e audit dei template.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali rischi presentano SeBackupPrivilege e SeImpersonatePrivilege?",
+    "a": "SeBackupPrivilege può consentire lettura di dati protetti bypassando ACL per finalità di backup; SeImpersonatePrivilege consente a processi di impersonare token ottenuti legittimamente e diventa critico in servizi esposti.\n\nVanno assegnati soltanto agli account necessari, isolati e monitorati.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è AlwaysInstallElevated e perché è pericoloso?",
+    "a": "Se le relative policy sono abilitate sia per macchina sia per utente, pacchetti Windows Installer possono essere eseguiti con privilegi elevati da utenti non amministratori.\n\nÈ una configurazione insicura: va disabilitata e monitorata, affidando la distribuzione software a sistemi amministrati.",
+    "t": "QA"
+  },
+  {
+    "q": "Dove sono protette le credenziali Windows?",
+    "a": "Gli hash degli account locali sono nel database SAM, protetto insieme ai segreti di sistema; quelli di dominio risiedono in AD sui domain controller.\n\nLSASS gestisce materiale di autenticazione in memoria.\n\nAccesso a tali risorse richiede privilegi elevati e va protetto con Credential Guard, LSA protection e hardening.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Mimikatz e come va inquadrato in un laboratorio etico?",
+    "a": "È uno strumento di ricerca e post-exploitation che dimostra l'estrazione o l'uso di materiale di autenticazione Windows.\n\nIn ambienti autorizzati serve a validare hardening e detection; fuori da essi è abuso.\n\nLe difese includono riduzione privilegi, Credential Guard, protezione LSASS, patching e telemetria EDR.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra bind shell e reverse shell?",
+    "a": "Una bind shell ascolta sulla macchina compromessa e richiede una connessione in ingresso; una reverse shell avvia dalla macchina bersaglio una connessione verso l'operatore, spesso attraversando più facilmente NAT o firewall egress permissivi.\n\nEntrambe sono indicatori da rilevare e vanno usate solo in laboratori autorizzati.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Metasploit?",
+    "a": "È un framework modulare per validare vulnerabilità, gestire payload e attività post-exploitation in test autorizzati.\n\nNon sostituisce comprensione e verifica manuale; moduli e target vanno controllati per evitare impatti.\n\nLe contromisure sono patching, riduzione della superficie, segmentazione e rilevamento comportamentale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Docker e quali configurazioni causano privilege escalation?",
+    "a": "Docker usa namespace e cgroup per isolare processi condividendo il kernel host.\n\nRischi comuni sono socket Docker accessibile, container privileged, capability eccessive, mount sensibili, immagini non fidate e kernel vulnerabile.\n\nSi applicano rootless mode, seccomp/AppArmor, filesystem read-only e privilegi minimi.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si gestiscono i servizi Linux in modo sicuro?",
+    "a": "Con systemd si consultano stato e log e si avviano/arrestano unità tramite strumenti amministrativi autorizzati.\n\nI servizi devono usare account dedicati, capability minime, configurazioni e segreti protetti, sandbox systemd quando possibile e porte limitate dal firewall.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa mostra sudo -l durante una verifica autorizzata?",
+    "a": "Elenca i comandi che l'utente può eseguire tramite sudo e le relative condizioni, come target user, host e richiesta password.\n\nRegole con wildcard, editor, interpreti o binari capaci di eseguire comandi possono ampliare i privilegi; vanno sostituite con allowlist strette e percorsi/argomenti controllati.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una restricted shell e perché non è un confine di sicurezza sufficiente?",
+    "a": "Limita comandi, directory o variabili disponibili all'utente, ma programmi consentiti possono offrire shell escape o accesso a interpreti.\n\nVa considerata difesa aggiuntiva, non sandbox: servono privilegi OS minimi, container/VM, filesystem e rete limitati e allowlist verificata.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è il ruolo di LDAP e quali rischi presenta?",
+    "a": "LDAP interroga e modifica directory gerarchiche; in AD è usato per oggetti di dominio.\n\nRischi includono anonymous bind, simple bind non cifrato, LDAP injection, ACL eccessive e assenza di signing/channel binding.\n\nSi usano TLS, autenticazione forte, query parametrizzate, minimi privilegi e logging.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali controlli seguono l'ottenimento autorizzato di una shell Linux?",
+    "a": "Si documentano identità e privilegi, host e rete, processi/servizi, configurazioni, mount, credenziali esposte e meccanismi di persistenza, limitando l'impatto.\n\nSi raccolgono prove, si evita di alterare dati, si verifica la segmentazione e si seguono scope e stop condition concordati.",
+    "t": "QA"
+  },
+  {
+    "q": "A cosa serve tcpdump durante una diagnosi o un penetration test autorizzato?",
+    "a": "Cattura pacchetti sulle interfacce selezionate con filtri BPF per analizzare protocolli e flussi visibili a quell'host.\n\nNon mostra automaticamente tutto il traffico della rete commutata; vede traffico locale, broadcast/multicast e ciò che viene instradato o mirrorato.\n\nLe catture possono contenere dati sensibili.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si progetta un laboratorio di sicurezza isolato con VM e container?",
+    "a": "Si usano rete host-only o interna senza route verso produzione, snapshot, immagini controllate, account e segreti fittizi e regole egress restrittive.\n\nNAT va aggiunto solo quando necessario; clipboard, cartelle condivise e bridge verso LAN vanno evitati.\n\nSi definiscono scope e procedura di ripristino.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra post-exploitation, privilege escalation e lateral movement?",
+    "a": "Post-exploitation comprende analisi e obiettivi dopo l'accesso; privilege escalation aumenta i privilegi sul sistema o dominio; lateral movement usa accessi ottenuti per raggiungere altri host.\n\nIn un test vanno autorizzati separatamente perché rischio e impatto sono diversi.",
+    "t": "QA"
+  }
 ]

@@ -1,42 +1,42 @@
 [
   {
     "q": "Che cos'è un protocollo zero-knowledge e quali proprietà deve soddisfare?",
-    "a": "Permette a un prover di convincere un verifier che un'affermazione è vera senza rivelare altro oltre alla sua verità. Deve garantire completezza, soundness (un prover disonesto convince il verifier solo con probabilità trascurabile) e zero knowledge, cioè una vista del verifier simulabile senza conoscere il segreto.",
+    "a": "Permette a un prover di convincere un verifier che un'affermazione è vera senza rivelare altro oltre alla sua verità.\n\nDeve garantire completezza, soundness (un prover disonesto convince il verifier solo con probabilità trascurabile) e zero knowledge, cioè una vista del verifier simulabile senza conoscere il segreto.",
     "t": "QA"
   },
   {
     "q": "Come funziona il protocollo di identificazione Fiat–Shamir?",
-    "a": "Il prover pubblica v=s² mod n e mantiene segreto s. Per ogni round invia x=r² mod n, riceve una sfida casuale e∈{0,1} e risponde y=r·s^e mod n. Il verifier controlla y²≡x·v^e mod n. Ripetere i round riduce la probabilità di impersonificazione; la sicurezza si basa sulla difficoltà di estrarre radici quadrate modulo un composto di fattorizzazione ignota.",
+    "a": "Il prover pubblica v=s² mod n e mantiene segreto s.\n\nPer ogni round invia x=r² mod n, riceve una sfida casuale e∈{0,1} e risponde y=r·s^e mod n.\n\nIl verifier controlla y²≡x·v^e mod n.\n\nRipetere i round riduce la probabilità di impersonificazione; la sicurezza si basa sulla difficoltà di estrarre radici quadrate modulo un composto di fattorizzazione ignota.",
     "t": "QA"
   },
   {
     "q": "Quali proprietà deve avere una funzione hash crittografica usata nelle firme digitali?",
-    "a": "Deve essere deterministica ed efficiente, produrre un digest di lunghezza fissa e resistere a preimmagini, seconde preimmagini e collisioni. Nella firma si firma il digest del messaggio: la resistenza alle collisioni impedisce di sostituire il messaggio con un altro avente lo stesso hash.",
+    "a": "Deve essere deterministica ed efficiente, produrre un digest di lunghezza fissa e resistere a preimmagini, seconde preimmagini e collisioni.\n\nNella firma si firma il digest del messaggio: la resistenza alle collisioni impedisce di sostituire il messaggio con un altro avente lo stesso hash.",
     "t": "QA"
   },
   {
     "q": "Che cosa afferma il paradosso del compleanno e perché è rilevante per gli hash?",
-    "a": "In uno spazio di N valori, una collisione tra valori casuali diventa probabile dopo circa √N tentativi. Per un hash di n bit servono quindi circa 2^(n/2) valutazioni per trovare una collisione generica, non 2^n; per una sicurezza di 128 bit contro collisioni occorre tipicamente un digest di 256 bit.",
+    "a": "In uno spazio di N valori, una collisione tra valori casuali diventa probabile dopo circa √N tentativi.\n\nPer un hash di n bit servono quindi circa 2^(n/2) valutazioni per trovare una collisione generica, non 2^n; per una sicurezza di 128 bit contro collisioni occorre tipicamente un digest di 256 bit.",
     "t": "QA"
   },
   {
     "q": "Che cos'è il calcolo relazionale e quando una sua espressione è indipendente dal dominio di valutazione?",
-    "a": "Il calcolo relazionale è un linguaggio dichiarativo basato sulla logica del primo ordine, nelle varianti su tuple o domini. Un'espressione è indipendente dal dominio se il risultato non cambia ampliando il dominio con valori assenti dal database. Le espressioni sicure, o domain independent, restituiscono risultati finiti determinati dai dati presenti.",
+    "a": "Il calcolo relazionale è un linguaggio dichiarativo basato sulla logica del primo ordine, nelle varianti su tuple o domini.\n\nUn'espressione è indipendente dal dominio se il risultato non cambia ampliando il dominio con valori assenti dal database.\n\nLe espressioni sicure, o domain independent, restituiscono risultati finiti determinati dai dati presenti.",
     "t": "QA"
   },
   {
     "q": "Come viene gestito il locking in un database distribuito?",
-    "a": "Il controllo di concorrenza coordina lock condivisi ed esclusivi su dati collocati in nodi diversi, spesso mediante 2PL distribuito. La transazione acquisisce i lock necessari prima di rilasciarne uno; per commit atomico può essere affiancato da protocolli come two-phase commit. L'obiettivo è ottenere esecuzioni globalmente serializzabili.",
+    "a": "Il controllo di concorrenza coordina lock condivisi ed esclusivi su dati collocati in nodi diversi, spesso mediante 2PL distribuito.\n\nLa transazione acquisisce i lock necessari prima di rilasciarne uno; per commit atomico può essere affiancato da protocolli come two-phase commit.\n\nL'obiettivo è ottenere esecuzioni globalmente serializzabili.",
     "t": "QA"
   },
   {
     "q": "Quali sono le principali tecniche di assegnazione dei lock in un database distribuito?",
-    "a": "Con un lock manager centralizzato tutte le richieste passano da un coordinatore; con copia primaria ogni dato ha un nodo responsabile; con lock manager distribuiti ogni sito gestisce i dati locali. Le alternative scambiano semplicità e facilità di rilevare deadlock con disponibilità, scalabilità e costo dei messaggi.",
+    "a": "Con un lock manager centralizzato tutte le richieste passano da un coordinatore; con copia primaria ogni dato ha un nodo responsabile; con lock manager distribuiti ogni sito gestisce i dati locali.\n\nLe alternative scambiano semplicità e facilità di rilevare deadlock con disponibilità, scalabilità e costo dei messaggi.",
     "t": "QA"
   },
   {
     "q": "Come nasce e come si rileva un deadlock distribuito?",
-    "a": "Nasce quando transazioni su nodi diversi attendono circolarmente lock detenuti dalle altre. I ritardi di rete, da soli, non costituiscono un deadlock: deve esistere un ciclo nel wait-for graph globale. Lo si rileva raccogliendo centralmente le dipendenze oppure costruendo il grafo in modo distribuito; si risolve abortendo e riavviando una transazione vittima.",
+    "a": "Nasce quando transazioni su nodi diversi attendono circolarmente lock detenuti dalle altre.\n\nI ritardi di rete, da soli, non costituiscono un deadlock: deve esistere un ciclo nel wait-for graph globale.\n\nLo si rileva raccogliendo centralmente le dipendenze oppure costruendo il grafo in modo distribuito; si risolve abortendo e riavviando una transazione vittima.",
     "t": "QA"
   }
 ]

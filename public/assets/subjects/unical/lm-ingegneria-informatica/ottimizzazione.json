@@ -1,36 +1,172 @@
 [
-  {"q":"Che cos'è una formulazione valida per un problema di ottimizzazione combinatoria?","a":"Un modello è valido se i suoi punti interi ammissibili corrispondono esattamente alle soluzioni del problema e l'obiettivo ne rappresenta correttamente il costo. Formulazioni diverse possono essere valide ma avere rilassamenti lineari più o meno forti.","t":"QA"},
-  {"q":"Quando una formulazione lineare intera è ideale?","a":"È ideale se tutti i punti estremi del rilassamento lineare sono interi, quindi l'inviluppo convesso del feasible set intero coincide col poliedro della formulazione. In tal caso un LP restituisce un ottimo intero, anche se separazione o descrizione possono essere grandi.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Minkowski–Weyl?","a":"Ogni poliedro è rappresentabile come somma convessa dei suoi punti estremi più combinazione conica dei raggi estremi del cono di recessione; viceversa ogni insieme finitamente generato così è un poliedro. Per politopi limitati bastano combinazioni convesse di vertici.","t":"QA"},
-  {"q":"Che ruolo ha la totale unimodularità?","a":"Se A è totalmente unimodulare e b è intero, ogni vertice di {x|Ax≤b} è intero. Quindi il rilassamento LP risolve il problema intero. È una condizione sufficiente, non necessaria: alcuni poliedri integrali, come matching generale con descrizione completa, non derivano da una matrice TUM semplice.","t":"QA"},
-  {"q":"Che cos'è Set Cover e qual è l'approssimazione greedy di Chvátal?","a":"Si scelgono insiemi di costo minimo che coprano tutti gli elementi. Il greedy seleziona l'insieme col minimo rapporto costo/nuovi elementi coperti; garantisce fattore H_n≤ln n+1. La variante non pesata sceglie il massimo numero di elementi nuovi.","t":"QA"},
-  {"q":"Che cos'è un problema di localizzazione di impianti?","a":"Decide quali facility aprire e come assegnare clienti minimizzando costi fissi e di servizio, con eventuali capacità. Variabili binarie y_j indicano aperture e x_ij assegnazioni; vincoli x_ij≤y_j collegano servizio e apertura.","t":"QA"},
-  {"q":"Che cos'è un rilassamento di un problema?","a":"Rimuove o indebolisce vincoli, oppure amplia il dominio, ottenendo un problema più facile. Per minimizzazione il valore rilassato è un lower bound; per massimizzazione un upper bound. Un buon rilassamento combina bound stretto e basso costo.","t":"QA"},
-  {"q":"Come funziona il rilassamento lagrangiano?","a":"Vincoli difficili Ax≤b vengono penalizzati nell'obiettivo con moltiplicatori λ≥0. Per minimizzazione, L(λ)=min_{x∈X}[c(x)+λᵀ(Ax−b)] fornisce lower bound. Si massimizza L(λ) sui moltiplicatori ottenendo il duale lagrangiano.","t":"QA"},
-  {"q":"Perché si risolve il duale lagrangiano?","a":"Produce il migliore bound ottenibile dalla famiglia di rilassamenti, guida branch-and-bound e può decomporre il problema. Le soluzioni del sottoproblema possono essere infeasible per l'originale e vanno trasformate con euristiche; subgradient methods ottimizzano la funzione duale concava non liscia.","t":"QA"},
-  {"q":"Come si valuta un'euristica usando bound?","a":"Per minimizzazione, se H è il costo della soluzione feasible e LB un lower bound, gap=(H−LB)/|H| o rispetto a |LB| secondo convenzione. Un gap piccolo certifica vicinanza all'ottimo; confronti empirici richiedono istanze, tempi e baseline comuni.","t":"QA"},
-  {"q":"Come funziona branch-and-bound?","a":"Divide il feasible set in sottoproblemi, calcola bound da rilassamenti, conserva la migliore soluzione feasible incumbent e pota nodi infeasible o con bound non migliore dell'incumbent. Se l'albero è esaurito, certifica ottimalità.","t":"QA"},
-  {"q":"Che cosa sono cut e branch-and-cut?","a":"Un cutting plane è una disuguaglianza valida per tutte le soluzioni intere ma violata dalla soluzione frazionaria corrente. Branch-and-cut genera tagli dentro branch-and-bound per rafforzare i rilassamenti e ramifica quando i tagli non bastano.","t":"QA"},
-  {"q":"Come si costruisce un taglio frazionario di Gomory?","a":"Da una riga del tableau ottimo con termine noto frazionario si separano parti intere e frazionarie e si deriva una disuguaglianza valida per le soluzioni intere, violata dalla soluzione LP corrente. Si aggiunge il taglio e si riottimizza; numericamente si preferiscono varianti robuste.","t":"QA"},
-  {"q":"Come si formula il TSP simmetrico con cutset constraints?","a":"Variabili x_e∈{0,1}, grado Σ_{e∈δ(v)}x_e=2 per ogni v e subtour elimination Σ_{e∈δ(S)}x_e≥2 per ogni insieme non vuoto proprio S. Si minimizza Σc_ex_e. I vincoli esponenziali vengono separati dinamicamente.","t":"QA"},
-  {"q":"Che cos'è un oracolo di separazione per il TSP?","a":"Dato un punto frazionario, trova una cutset constraint violata oppure certifica che non ce ne sono. Per i tagli di sottotour simmetrici si calcola un global minimum cut sulle capacità x_e: se il valore è sotto 2, il relativo insieme produce un taglio violato.","t":"QA"},
-  {"q":"Come si ottiene un lower bound per il TSP?","a":"Si può usare il rilassamento LP, un minimum 1-tree, MST dopo rimozione di un nodo con due archi incidenti, oppure il duale lagrangiano dei vincoli di grado. Bound più forti costano di più ma potano maggiormente.","t":"QA"},
-  {"q":"Qual è la differenza tra ciclo hamiltoniano ed euleriano?","a":"Un ciclo hamiltoniano visita ogni vertice una volta; trovarlo è NP-completo. Un ciclo euleriano usa ogni arco una volta ed esiste in un grafo connesso non orientato se tutti i gradi sono pari, verificabile e costruibile in tempo lineare.","t":"QA"},
-  {"q":"Quale approssimazione basata su MST esiste per metric TSP?","a":"Il double-tree algorithm calcola un MST, raddoppia gli archi ottenendo un tour euleriano e fa shortcut usando la disuguaglianza triangolare. Produce un tour di costo ≤2·OPT. Senza metrica il shortcut non preserva il bound.","t":"QA"},
-  {"q":"Che cos'è il Vehicle Routing Problem?","a":"Generalizza il TSP con più veicoli, deposito, capacità e richieste, minimizzando costo delle rotte che servono ogni cliente. Formulazioni usano variabili sugli archi e vincoli di grado, capacità e connettività/subtour; varianti aggiungono time window e pickup-delivery.","t":"QA"},
-  {"q":"Come funziona l'euristica dei risparmi Clarke–Wright?","a":"Parte da una rotta deposito-cliente-deposito per ogni cliente. Il risparmio nel collegare i e j è s_ij=c_0i+c_0j−c_ij; si elaborano risparmi decrescenti e si fondono rotte se i,j sono estremi compatibili e capacità/vincoli restano soddisfatti.","t":"QA"},
-  {"q":"Che cos'è un ε-approssimazione?","a":"Per minimizzazione, una soluzione è entro fattore 1+ε se ALG≤(1+ε)OPT; per massimizzazione si usa ALG≥(1−ε)OPT o una convenzione equivalente. Un PTAS produce tale soluzione per ogni ε fissato in tempo polinomiale nella dimensione.","t":"QA"},
-  {"q":"Che cos'è l'ottimizzazione unidimensionale non vincolata?","a":"Cerca il minimo di f(x) su un intervallo o sulla retta. Se f è unimodale si usano golden-section o Fibonacci senza derivate; con derivate, bisezione su f', Newton o secanti. Convessità garantisce che un minimo locale sia globale.","t":"QA"},
-  {"q":"Qual è la differenza tra ricerca lineare esatta e inesatta?","a":"L'esatta minimizza f(x+αd) rispetto ad α, spesso costosa. L'inesatta sceglie rapidamente un passo che soddisfa condizioni di sufficiente diminuzione e curvatura, come Armijo o Wolfe, garantendo progresso senza risolvere un sottoproblema preciso.","t":"QA"},
-  {"q":"Che cosa esprimono le condizioni di Armijo e Wolfe/Goldstein?","a":"Armijo richiede f(x+αd)≤f(x)+c₁α∇f(x)ᵀd. Wolfe aggiunge una condizione sulla derivata direzionale che evita passi troppo corti; Goldstein pone limiti superiore e inferiore sulla diminuzione. I parametri sono scelti tra 0 e 1 con relazioni appropriate.","t":"QA"},
-  {"q":"Come funziona il metodo del gradiente?","a":"Sceglie d_k=−∇f(x_k) e x_{k+1}=x_k+α_kd_k. Con passo o line search appropriati converge a punti stazionari; su funzioni fortemente convesse converge al minimo unico ma può essere lento in valli mal condizionate.","t":"QA"},
-  {"q":"Come funziona il metodo di Newton per ottimizzazione?","a":"Risolve ∇²f(x_k)d_k=−∇f(x_k) e aggiorna x+αd. Vicino a un minimo con Hessiana positiva definita ha convergenza quadratica; lontano può non essere direzione di discesa, perciò si usano damping, trust region o Hessiane modificate.","t":"QA"},
-  {"q":"Che cosa sono i metodi quasi-Newton?","a":"Approssimano Hessiana o inversa usando differenze di gradienti, evitando seconde derivate. BFGS mantiene una matrice positiva definita se sᵀy>0 e, con line search, offre rapida convergenza; L-BFGS conserva poche coppie per problemi grandi.","t":"QA"},
-  {"q":"Che cosa sono le condizioni KKT?","a":"Per problemi differenziabili vincolati comprendono primal feasibility, dual feasibility, complementary slackness e stationarity. Sotto constraint qualification sono necessarie per un ottimo locale; in problemi convessi sono anche sufficienti.","t":"QA"},
-  {"q":"Qual è la formulazione hard-margin di una SVM?","a":"Minimizza 1/2||w||² soggetto a y_i(w·x_i+b)≥1. È applicabile se i dati sono linearmente separabili. Le KKT mostrano che i punti sul margine hanno moltiplicatori positivi e determinano l'iperpiano.","t":"QA"},
-  {"q":"Come cambia la SVM soft-margin?","a":"Introduce slack ξ_i≥0 e minimizza 1/2||w||²+CΣξ_i con y_i(w·x_i+b)≥1−ξ_i. C bilancia margine ampio e violazioni. Il duale limita 0≤α_i≤C.","t":"QA"},
-  {"q":"Come funziona Sequential Minimal Optimization?","a":"SMO risolve il duale SVM aggiornando due moltiplicatori alla volta, il minimo necessario per rispettare il vincolo Σα_iy_i=0. Ogni sottoproblema ha soluzione analitica; euristiche scelgono coppie che violano maggiormente le KKT.","t":"QA"},
-  {"q":"Come si formula Support Vector Regression?","a":"Minimizza 1/2||w||²+CΣ(ξ_i+ξ_i*) imponendo |y_i−(w·x_i+b)|≤ε salvo slack. La ε-insensitive loss ignora errori nella fascia ε; nel duale solo punti fuori o sul tubo diventano support vector.","t":"QA"},
-  {"q":"Che cos'è l'effetto orizzonte nella ricerca?","a":"Una valutazione a profondità limitata può rimandare un evento negativo appena oltre il cutoff e giudicare bene una posizione. Quiescence search ed estensioni selettive approfondiscono nodi tattici, ma aumentano il costo.","t":"QA"},
-  {"q":"Che cos'è l'anomalia di Sussman?","a":"Mostra che sottogoal di planning possono interferire: risolverli uno per volta in ordine fisso può distruggere risultati già ottenuti. Richiede pianificazione non lineare o ricerca nello spazio degli stati/piani che consideri le interazioni.","t":"QA"}
+  {
+    "q": "Che cos'è una formulazione valida per un problema di ottimizzazione combinatoria?",
+    "a": "Un modello è valido se i suoi punti interi ammissibili corrispondono esattamente alle soluzioni del problema e l'obiettivo ne rappresenta correttamente il costo.\n\nFormulazioni diverse possono essere valide ma avere rilassamenti lineari più o meno forti.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando una formulazione lineare intera è ideale?",
+    "a": "È ideale se tutti i punti estremi del rilassamento lineare sono interi, quindi l'inviluppo convesso del feasible set intero coincide col poliedro della formulazione.\n\nIn tal caso un LP restituisce un ottimo intero, anche se separazione o descrizione possono essere grandi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Minkowski–Weyl?",
+    "a": "Ogni poliedro è rappresentabile come somma convessa dei suoi punti estremi più combinazione conica dei raggi estremi del cono di recessione; viceversa ogni insieme finitamente generato così è un poliedro.\n\nPer politopi limitati bastano combinazioni convesse di vertici.",
+    "t": "QA"
+  },
+  {
+    "q": "Che ruolo ha la totale unimodularità?",
+    "a": "Se A è totalmente unimodulare e b è intero, ogni vertice di {x|Ax≤b} è intero.\n\nQuindi il rilassamento LP risolve il problema intero.\n\nÈ una condizione sufficiente, non necessaria: alcuni poliedri integrali, come matching generale con descrizione completa, non derivano da una matrice TUM semplice.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Set Cover e qual è l'approssimazione greedy di Chvátal?",
+    "a": "Si scelgono insiemi di costo minimo che coprano tutti gli elementi.\n\nIl greedy seleziona l'insieme col minimo rapporto costo/nuovi elementi coperti; garantisce fattore H_n≤ln n+1.\n\nLa variante non pesata sceglie il massimo numero di elementi nuovi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un problema di localizzazione di impianti?",
+    "a": "Decide quali facility aprire e come assegnare clienti minimizzando costi fissi e di servizio, con eventuali capacità.\n\nVariabili binarie y_j indicano aperture e x_ij assegnazioni; vincoli x_ij≤y_j collegano servizio e apertura.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un rilassamento di un problema?",
+    "a": "Rimuove o indebolisce vincoli, oppure amplia il dominio, ottenendo un problema più facile.\n\nPer minimizzazione il valore rilassato è un lower bound; per massimizzazione un upper bound.\n\nUn buon rilassamento combina bound stretto e basso costo.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il rilassamento lagrangiano?",
+    "a": "Vincoli difficili Ax≤b vengono penalizzati nell'obiettivo con moltiplicatori λ≥0.\n\nPer minimizzazione, L(λ)=min_{x∈X}[c(x)+λᵀ(Ax−b)] fornisce lower bound.\n\nSi massimizza L(λ) sui moltiplicatori ottenendo il duale lagrangiano.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché si risolve il duale lagrangiano?",
+    "a": "Produce il migliore bound ottenibile dalla famiglia di rilassamenti, guida branch-and-bound e può decomporre il problema.\n\nLe soluzioni del sottoproblema possono essere infeasible per l'originale e vanno trasformate con euristiche; subgradient methods ottimizzano la funzione duale concava non liscia.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si valuta un'euristica usando bound?",
+    "a": "Per minimizzazione, se H è il costo della soluzione feasible e LB un lower bound, gap=(H−LB)/|H| o rispetto a |LB| secondo convenzione.\n\nUn gap piccolo certifica vicinanza all'ottimo; confronti empirici richiedono istanze, tempi e baseline comuni.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona branch-and-bound?",
+    "a": "Divide il feasible set in sottoproblemi, calcola bound da rilassamenti, conserva la migliore soluzione feasible incumbent e pota nodi infeasible o con bound non migliore dell'incumbent.\n\nSe l'albero è esaurito, certifica ottimalità.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono cut e branch-and-cut?",
+    "a": "Un cutting plane è una disuguaglianza valida per tutte le soluzioni intere ma violata dalla soluzione frazionaria corrente.\n\nBranch-and-cut genera tagli dentro branch-and-bound per rafforzare i rilassamenti e ramifica quando i tagli non bastano.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si costruisce un taglio frazionario di Gomory?",
+    "a": "Da una riga del tableau ottimo con termine noto frazionario si separano parti intere e frazionarie e si deriva una disuguaglianza valida per le soluzioni intere, violata dalla soluzione LP corrente.\n\nSi aggiunge il taglio e si riottimizza; numericamente si preferiscono varianti robuste.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si formula il TSP simmetrico con cutset constraints?",
+    "a": "Variabili x_e∈{0,1}, grado Σ_{e∈δ(v)}x_e=2 per ogni v e subtour elimination Σ_{e∈δ(S)}x_e≥2 per ogni insieme non vuoto proprio S.\n\nSi minimizza Σc_ex_e.\n\nI vincoli esponenziali vengono separati dinamicamente.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un oracolo di separazione per il TSP?",
+    "a": "Dato un punto frazionario, trova una cutset constraint violata oppure certifica che non ce ne sono.\n\nPer i tagli di sottotour simmetrici si calcola un global minimum cut sulle capacità x_e: se il valore è sotto 2, il relativo insieme produce un taglio violato.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si ottiene un lower bound per il TSP?",
+    "a": "Si può usare il rilassamento LP, un minimum 1-tree, MST dopo rimozione di un nodo con due archi incidenti, oppure il duale lagrangiano dei vincoli di grado.\n\nBound più forti costano di più ma potano maggiormente.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra ciclo hamiltoniano ed euleriano?",
+    "a": "Un ciclo hamiltoniano visita ogni vertice una volta; trovarlo è NP-completo.\n\nUn ciclo euleriano usa ogni arco una volta ed esiste in un grafo connesso non orientato se tutti i gradi sono pari, verificabile e costruibile in tempo lineare.",
+    "t": "QA"
+  },
+  {
+    "q": "Quale approssimazione basata su MST esiste per metric TSP?",
+    "a": "Il double-tree algorithm calcola un MST, raddoppia gli archi ottenendo un tour euleriano e fa shortcut usando la disuguaglianza triangolare.\n\nProduce un tour di costo ≤2·OPT.\n\nSenza metrica il shortcut non preserva il bound.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il Vehicle Routing Problem?",
+    "a": "Generalizza il TSP con più veicoli, deposito, capacità e richieste, minimizzando costo delle rotte che servono ogni cliente.\n\nFormulazioni usano variabili sugli archi e vincoli di grado, capacità e connettività/subtour; varianti aggiungono time window e pickup-delivery.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona l'euristica dei risparmi Clarke–Wright?",
+    "a": "Parte da una rotta deposito-cliente-deposito per ogni cliente.\n\nIl risparmio nel collegare i e j è s_ij=c_0i+c_0j−c_ij; si elaborano risparmi decrescenti e si fondono rotte se i,j sono estremi compatibili e capacità/vincoli restano soddisfatti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un ε-approssimazione?",
+    "a": "Per minimizzazione, una soluzione è entro fattore 1+ε se ALG≤(1+ε)OPT; per massimizzazione si usa ALG≥(1−ε)OPT o una convenzione equivalente.\n\nUn PTAS produce tale soluzione per ogni ε fissato in tempo polinomiale nella dimensione.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è l'ottimizzazione unidimensionale non vincolata?",
+    "a": "Cerca il minimo di f(x) su un intervallo o sulla retta.\n\nSe f è unimodale si usano golden-section o Fibonacci senza derivate; con derivate, bisezione su f', Newton o secanti.\n\nConvessità garantisce che un minimo locale sia globale.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra ricerca lineare esatta e inesatta?",
+    "a": "L'esatta minimizza f(x+αd) rispetto ad α, spesso costosa.\n\nL'inesatta sceglie rapidamente un passo che soddisfa condizioni di sufficiente diminuzione e curvatura, come Armijo o Wolfe, garantendo progresso senza risolvere un sottoproblema preciso.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa esprimono le condizioni di Armijo e Wolfe/Goldstein?",
+    "a": "Armijo richiede f(x+αd)≤f(x)+c₁α∇f(x)ᵀd.\n\nWolfe aggiunge una condizione sulla derivata direzionale che evita passi troppo corti; Goldstein pone limiti superiore e inferiore sulla diminuzione.\n\nI parametri sono scelti tra 0 e 1 con relazioni appropriate.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il metodo del gradiente?",
+    "a": "Sceglie d_k=−∇f(x_k) e x_{k+1}=x_k+α_kd_k.\n\nCon passo o line search appropriati converge a punti stazionari; su funzioni fortemente convesse converge al minimo unico ma può essere lento in valli mal condizionate.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il metodo di Newton per ottimizzazione?",
+    "a": "Risolve ∇²f(x_k)d_k=−∇f(x_k) e aggiorna x+αd.\n\nVicino a un minimo con Hessiana positiva definita ha convergenza quadratica; lontano può non essere direzione di discesa, perciò si usano damping, trust region o Hessiane modificate.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono i metodi quasi-Newton?",
+    "a": "Approssimano Hessiana o inversa usando differenze di gradienti, evitando seconde derivate.\n\nBFGS mantiene una matrice positiva definita se sᵀy>0 e, con line search, offre rapida convergenza; L-BFGS conserva poche coppie per problemi grandi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono le condizioni KKT?",
+    "a": "Per problemi differenziabili vincolati comprendono primal feasibility, dual feasibility, complementary slackness e stationarity.\n\nSotto constraint qualification sono necessarie per un ottimo locale; in problemi convessi sono anche sufficienti.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la formulazione hard-margin di una SVM?",
+    "a": "Minimizza 1/2||w||² soggetto a y_i(w·x_i+b)≥1.\n\nÈ applicabile se i dati sono linearmente separabili.\n\nLe KKT mostrano che i punti sul margine hanno moltiplicatori positivi e determinano l'iperpiano.",
+    "t": "QA"
+  },
+  {
+    "q": "Come cambia la SVM soft-margin?",
+    "a": "Introduce slack ξ_i≥0 e minimizza 1/2||w||²+CΣξ_i con y_i(w·x_i+b)≥1−ξ_i.\n\nC bilancia margine ampio e violazioni.\n\nIl duale limita 0≤α_i≤C.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona Sequential Minimal Optimization?",
+    "a": "SMO risolve il duale SVM aggiornando due moltiplicatori alla volta, il minimo necessario per rispettare il vincolo Σα_iy_i=0.\n\nOgni sottoproblema ha soluzione analitica; euristiche scelgono coppie che violano maggiormente le KKT.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si formula Support Vector Regression?",
+    "a": "Minimizza 1/2||w||²+CΣ(ξ_i+ξ_i*) imponendo |y_i−(w·x_i+b)|≤ε salvo slack.\n\nLa ε-insensitive loss ignora errori nella fascia ε; nel duale solo punti fuori o sul tubo diventano support vector.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è l'effetto orizzonte nella ricerca?",
+    "a": "Una valutazione a profondità limitata può rimandare un evento negativo appena oltre il cutoff e giudicare bene una posizione.\n\nQuiescence search ed estensioni selettive approfondiscono nodi tattici, ma aumentano il costo.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è l'anomalia di Sussman?",
+    "a": "Mostra che sottogoal di planning possono interferire: risolverli uno per volta in ordine fisso può distruggere risultati già ottenuti.\n\nRichiede pianificazione non lineare o ricerca nello spazio degli stati/piani che consideri le interazioni.",
+    "t": "QA"
+  }
 ]

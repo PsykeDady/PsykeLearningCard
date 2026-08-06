@@ -1,32 +1,152 @@
 [
-  {"q":"Quali formulazioni equivalenti descrivono la sicurezza di un PRG?","a":"Un PRG è sicuro se il suo output è computazionalmente indistinguibile dall'uniforme; equivalentemente nessun test efficiente ha vantaggio non trascurabile e nessun algoritmo efficiente predice il bit successivo dal prefisso con vantaggio non trascurabile. La nozione va parametrizzata rispetto alla lunghezza del seme.","t":"QA"},
-  {"q":"Come funzionano i puzzle di Merkle e quale sicurezza offrono?","a":"Alice pubblica molti puzzle cifrati con chiavi deboli, ciascuno contenente identificatore e segreto. Bob ne risolve uno e comunica l'identificatore; Alice recupera il segreto. Gli utenti svolgono circa N lavoro, un intercettatore circa N²: è una separazione quadratica, vulnerabile anche ad attaccanti attivi.","t":"QA"},
-  {"q":"Perché un hash di n bit offre circa n/2 bit di sicurezza contro collisioni?","a":"Per l'effetto compleanno, dopo circa 2^(n/2) digest casuali una collisione diventa probabile. L'attacco memorizza e confronta hash di messaggi distinti. Preimmagini e seconde preimmagini generiche richiedono invece circa 2^n tentativi.","t":"QA"},
-  {"q":"Come si costruisce un cifrario a flusso da un PRG?","a":"Il PRG espande chiave e, normalmente, un nonce in un keystream che viene combinato con il testo in chiaro tramite XOR. Il destinatario rigenera lo stesso flusso. La stessa coppia chiave-nonce non deve essere riutilizzata, altrimenti XORando due cifrati si elimina il keystream.","t":"QA"},
-  {"q":"Quali condizioni rendono sicuro il One-Time Pad?","a":"C=M⊕K offre segretezza perfetta se K è uniforme, segreta, lunga quanto M e usata una sola volta. La chiave è difficile da distribuire su larga scala e il sistema non autentica: modificare un bit del cifrato modifica lo stesso bit del messaggio.","t":"QA"},
-  {"q":"Che cosa stabilisce la teoria di Shannon sulla segretezza perfetta?","a":"Un cifrario ha segretezza perfetta se la distribuzione del messaggio non cambia osservando il cifrato, cioè P(M=m|C=c)=P(M=m). Per ottenerla in generale l'entropia della chiave deve essere almeno quella del messaggio; il One-Time Pad soddisfa il requisito.","t":"QA"},
-  {"q":"Che cos'è un cifrario a blocchi e che cosa non garantisce da solo?","a":"È una famiglia di permutazioni indicizzate dalla chiave su blocchi di lunghezza fissa, come AES. Cifra un solo blocco in modo deterministico; per messaggi lunghi servono modalità operative. Da solo non garantisce randomizzazione, autenticità né sicurezza per più blocchi.","t":"QA"},
-  {"q":"Che differenza c'è tra PRP e PRF?","a":"Una PRP è una permutazione pseudocasuale efficiente e invertibile su un dominio fisso; una PRF è una funzione pseudocasuale e non deve essere invertibile. Un block cipher sicuro modella una PRP. Per un numero di query molto inferiore alla radice del dominio, una PRP casuale è difficilmente distinguibile da una funzione casuale.","t":"QA"},
-  {"q":"Che cos'è la sicurezza semantica o IND-CPA?","a":"Impone che un avversario efficiente non ricavi dal cifrato informazione utile sul messaggio. Nel gioco IND-CPA sceglie due messaggi della stessa lunghezza, riceve la cifratura di uno scelto a caso e non deve riconoscerlo con vantaggio non trascurabile.","t":"QA"},
-  {"q":"Come funziona ECB e perché non è semanticamente sicuro?","a":"ECB cifra ogni blocco indipendentemente: Cᵢ=E_K(Mᵢ). Blocchi uguali producono cifrati uguali e rivelano pattern e struttura; inoltre consente riordinamenti. Va evitato per dati strutturati o messaggi di più blocchi.","t":"QA"},
-  {"q":"Come funziona CBC e quale IV richiede?","a":"C₀=IV e Cᵢ=E_K(Mᵢ⊕Cᵢ₋₁); Mᵢ=D_K(Cᵢ)⊕Cᵢ₋₁. Per IND-CPA l'IV deve essere nuovo e imprevedibile e il padding non ambiguo. CBC non autentica, perciò deve essere abbinato correttamente a un MAC.","t":"QA"},
-  {"q":"Come funziona CTR e quale requisito ha il nonce?","a":"Genera blocchi di keystream E_K(nonce||counterᵢ) e calcola Cᵢ=Mᵢ⊕keystreamᵢ. È parallelizzabile e non richiede padding. Il nonce deve essere unico per chiave: riutilizzarlo riusa il keystream e compromette la confidenzialità.","t":"QA"},
-  {"q":"Che cos'è un MAC e come si definisce la sua sicurezza?","a":"Un Message Authentication Code usa una chiave condivisa per produrre un tag di integrità e autenticità. Nel gioco EUF-CMA l'avversario può richiedere tag per messaggi scelti e vince se produce un tag valido per un nuovo messaggio; la probabilità di successo deve essere trascurabile.","t":"QA"},
-  {"q":"Come funzionano NMAC e HMAC?","a":"NMAC applica un hash iterato interno con una chiave e poi un hash esterno con un'altra. HMAC deriva i due domini da una chiave e usa H((K⊕opad)||H((K⊕ipad)||M)). La doppia struttura evita length-extension e consente MAC sicuri da hash iterati appropriati.","t":"QA"},
-  {"q":"Che cos'è PMAC?","a":"È un MAC parallelizzabile basato su block cipher. Maschera ciascun blocco con offset distinti, cifra i blocchi in parallelo, combina i risultati e applica una cifratura finale. Gli offset impediscono che riordinamenti o cancellazioni di blocchi producano lo stesso tag.","t":"QA"},
-  {"q":"Come funziona ECBC-MAC e perché serve una chiave finale distinta?","a":"Si calcola CBC-MAC sui blocchi con una chiave K₁ e si cifra il risultato con K₂. La separazione finale rende sicura la costruzione anche per messaggi di lunghezza variabile se la codifica è prefissa/non ambigua; il CBC-MAC semplice è sicuro soltanto per lunghezza fissa.","t":"QA"},
-  {"q":"Come funziona la costruzione Merkle–Damgård?","a":"Dopo un padding che include la lunghezza, una funzione di compressione elabora i blocchi concatenando lo stato: hᵢ=f(hᵢ₋₁,mᵢ). Se la compressione è collision resistant, lo è anche l'hash costruito. La struttura base è soggetta a length-extension e richiede domini appropriati per l'uso come MAC.","t":"QA"},
-  {"q":"Quali proprietà definiscono la sicurezza di una funzione hash?","a":"Resistenza a preimmagine, seconda preimmagine e collisioni. I relativi giochi chiedono di invertire un digest, trovare un secondo messaggio per uno dato o trovare una qualsiasi coppia collidente. Per n bit, i costi generici sono circa 2^n, 2^n e 2^(n/2).","t":"QA"},
-  {"q":"Qual è l'ordine sicuro per combinare cifratura e MAC?","a":"Encrypt-then-MAC cifra e autentica il cifrato ed è la composizione genericamente più robusta: si verifica il tag prima di decifrare. Encrypt-and-MAC può rivelare proprietà del messaggio tramite il tag; MAC-then-encrypt richiede condizioni più delicate e ha favorito padding oracle. Oggi si preferiscono modalità AEAD standard.","t":"QA"},
-  {"q":"Che sicurezza deve offrire uno schema di authenticated encryption?","a":"Deve garantire confidenzialità e integrità del cifrato anche sotto attacchi scelti, normalmente IND-CCA e INT-CTXT o una nozione AEAD equivalente. L'avversario non deve distinguere messaggi né creare un nuovo cifrato accettato. Nonce e associated data devono seguire le regole dello schema.","t":"QA"},
-  {"q":"Qual è la differenza tra crittografia simmetrica e asimmetrica?","a":"La simmetrica usa la stessa chiave segreta, o chiavi facilmente derivabili, ed è molto efficiente ma richiede distribuzione sicura. L'asimmetrica usa una coppia pubblica/privata e abilita cifratura, scambio di chiavi e firme, con costo maggiore e necessità di autenticare le chiavi pubbliche.","t":"QA"},
-  {"q":"Quali principi rendono utilizzabile la crittografia a chiave pubblica?","a":"Deve essere facile generare coppie di chiavi ed eseguire l'operazione pubblica, ma computazionalmente difficile invertire senza la trapdoor privata. La sicurezza dipende da problemi matematici ben studiati, parametri adeguati, padding sicuro e autenticazione delle chiavi tramite certificati o altri canali fidati.","t":"QA"},
-  {"q":"Come si generano le chiavi RSA e come avvengono cifratura e decifratura?","a":"Si scelgono primi p,q, n=pq e un e coprimo con φ(n) o λ(n); si calcola d=e⁻¹ modulo tale valore. La chiave pubblica è (n,e), quella privata d e spesso p,q. Nel modello elementare c=m^e mod n e m=c^d mod n, ma nella pratica servono OAEP per cifrare e PSS per firmare.","t":"QA"},
-  {"q":"Qual è la relazione tra attaccare la chiave RSA e invertire un singolo cifrato?","a":"Fattorizzare n consente di calcolare la chiave privata e decifrare tutti i cifrati. Invertire un singolo c significa calcolare una radice e-esima modulo n; non è noto in generale se questo sia equivalente alla fattorizzazione per RSA. Attacchi pratici spesso sfruttano padding, implementazione o parametri, non il brute force diretto.","t":"QA"},
-  {"q":"Quali errori e attacchi pratici possono compromettere RSA?","a":"Moduli troppo piccoli o fattorizzabili, primi condivisi o deboli, esponenti e messaggi usati senza padding, broadcast con piccolo e, attacchi timing/fault, padding oracle e cattiva generazione casuale. Le difese sono parametri standard, OAEP/PSS, blinding, controlli CRT e librerie validate.","t":"QA"},
-  {"q":"Come funziona il crittosistema di Rabin e perché produce quattro candidati?","a":"La chiave pubblica è n=pq e si cifra c=m² mod n. Con p e q si calcolano due radici modulo ciascun primo e il teorema cinese le combina in quattro radici modulo n. Ridondanza e padding identificano il messaggio corretto; senza di essi la decifratura è ambigua e il sistema è malleabile.","t":"QA"},
-  {"q":"Perché invertire Rabin è collegato alla fattorizzazione?","a":"Calcolare radici quadrate modulo un composto di Blum conoscendo p e q è facile. Un algoritmo capace di restituire radici appropriate per valori casuali permette, con probabilità significativa, di ottenere due radici non opposte dello stesso quadrato e fattorizzare n tramite un massimo comune divisore.","t":"QA"},
-  {"q":"Come funziona la cifratura ElGamal?","a":"In un gruppo con generatore g, la chiave privata è x e la pubblica y=g^x. Per cifrare m si sceglie r casuale e si invia (g^r, m·y^r); si decifra dividendo il secondo elemento per (g^r)^x. La sicurezza si basa su Diffie–Hellman e ogni cifratura richiede casualità nuova.","t":"QA"},
-  {"q":"Che ruolo hanno firma digitale e autorità di certificazione?","a":"La firma lega un documento alla chiave privata e permette di verificarne integrità e origine con la pubblica. Una CA firma certificati che associano identità e chiavi pubbliche; la fiducia deriva dalla catena fino a una root fidata e richiede controlli di scadenza, hostname e revoca.","t":"QA"},
-  {"q":"Come si usa RSA nel key management moderno?","a":"Si usa per trasportare o incapsulare una chiave simmetrica casuale, non per cifrare direttamente grandi payload. Il mittente valida il certificato, incapsula la chiave con RSA-OAEP e cifra i dati con AEAD. Nei protocolli moderni si preferisce spesso Diffie–Hellman effimero per ottenere forward secrecy.","t":"QA"}
+  {
+    "q": "Quali formulazioni equivalenti descrivono la sicurezza di un PRG?",
+    "a": "Un PRG è sicuro se il suo output è computazionalmente indistinguibile dall'uniforme; equivalentemente nessun test efficiente ha vantaggio non trascurabile e nessun algoritmo efficiente predice il bit successivo dal prefisso con vantaggio non trascurabile.\n\nLa nozione va parametrizzata rispetto alla lunghezza del seme.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano i puzzle di Merkle e quale sicurezza offrono?",
+    "a": "Alice pubblica molti puzzle cifrati con chiavi deboli, ciascuno contenente identificatore e segreto.\n\nBob ne risolve uno e comunica l'identificatore; Alice recupera il segreto.\n\nGli utenti svolgono circa N lavoro, un intercettatore circa N²: è una separazione quadratica, vulnerabile anche ad attaccanti attivi.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché un hash di n bit offre circa n/2 bit di sicurezza contro collisioni?",
+    "a": "Per l'effetto compleanno, dopo circa 2^(n/2) digest casuali una collisione diventa probabile.\n\nL'attacco memorizza e confronta hash di messaggi distinti.\n\nPreimmagini e seconde preimmagini generiche richiedono invece circa 2^n tentativi.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si costruisce un cifrario a flusso da un PRG?",
+    "a": "Il PRG espande chiave e, normalmente, un nonce in un keystream che viene combinato con il testo in chiaro tramite XOR.\n\nIl destinatario rigenera lo stesso flusso.\n\nLa stessa coppia chiave-nonce non deve essere riutilizzata, altrimenti XORando due cifrati si elimina il keystream.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali condizioni rendono sicuro il One-Time Pad?",
+    "a": "C=M⊕K offre segretezza perfetta se K è uniforme, segreta, lunga quanto M e usata una sola volta.\n\nLa chiave è difficile da distribuire su larga scala e il sistema non autentica: modificare un bit del cifrato modifica lo stesso bit del messaggio.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa stabilisce la teoria di Shannon sulla segretezza perfetta?",
+    "a": "Un cifrario ha segretezza perfetta se la distribuzione del messaggio non cambia osservando il cifrato, cioè P(M=m|C=c)=P(M=m).\n\nPer ottenerla in generale l'entropia della chiave deve essere almeno quella del messaggio; il One-Time Pad soddisfa il requisito.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un cifrario a blocchi e che cosa non garantisce da solo?",
+    "a": "È una famiglia di permutazioni indicizzate dalla chiave su blocchi di lunghezza fissa, come AES.\n\nCifra un solo blocco in modo deterministico; per messaggi lunghi servono modalità operative.\n\nDa solo non garantisce randomizzazione, autenticità né sicurezza per più blocchi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che differenza c'è tra PRP e PRF?",
+    "a": "Una PRP è una permutazione pseudocasuale efficiente e invertibile su un dominio fisso; una PRF è una funzione pseudocasuale e non deve essere invertibile.\n\nUn block cipher sicuro modella una PRP.\n\nPer un numero di query molto inferiore alla radice del dominio, una PRP casuale è difficilmente distinguibile da una funzione casuale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la sicurezza semantica o IND-CPA?",
+    "a": "Impone che un avversario efficiente non ricavi dal cifrato informazione utile sul messaggio.\n\nNel gioco IND-CPA sceglie due messaggi della stessa lunghezza, riceve la cifratura di uno scelto a caso e non deve riconoscerlo con vantaggio non trascurabile.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona ECB e perché non è semanticamente sicuro?",
+    "a": "ECB cifra ogni blocco indipendentemente: Cᵢ=E_K(Mᵢ).\n\nBlocchi uguali producono cifrati uguali e rivelano pattern e struttura; inoltre consente riordinamenti.\n\nVa evitato per dati strutturati o messaggi di più blocchi.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona CBC e quale IV richiede?",
+    "a": "C₀=IV e Cᵢ=E_K(Mᵢ⊕Cᵢ₋₁); Mᵢ=D_K(Cᵢ)⊕Cᵢ₋₁.\n\nPer IND-CPA l'IV deve essere nuovo e imprevedibile e il padding non ambiguo.\n\nCBC non autentica, perciò deve essere abbinato correttamente a un MAC.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona CTR e quale requisito ha il nonce?",
+    "a": "Genera blocchi di keystream E_K(nonce||counterᵢ) e calcola Cᵢ=Mᵢ⊕keystreamᵢ.\n\nÈ parallelizzabile e non richiede padding.\n\nIl nonce deve essere unico per chiave: riutilizzarlo riusa il keystream e compromette la confidenzialità.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un MAC e come si definisce la sua sicurezza?",
+    "a": "Un Message Authentication Code usa una chiave condivisa per produrre un tag di integrità e autenticità.\n\nNel gioco EUF-CMA l'avversario può richiedere tag per messaggi scelti e vince se produce un tag valido per un nuovo messaggio; la probabilità di successo deve essere trascurabile.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano NMAC e HMAC?",
+    "a": "NMAC applica un hash iterato interno con una chiave e poi un hash esterno con un'altra.\n\nHMAC deriva i due domini da una chiave e usa H((K⊕opad)||H((K⊕ipad)||M)).\n\nLa doppia struttura evita length-extension e consente MAC sicuri da hash iterati appropriati.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è PMAC?",
+    "a": "È un MAC parallelizzabile basato su block cipher.\n\nMaschera ciascun blocco con offset distinti, cifra i blocchi in parallelo, combina i risultati e applica una cifratura finale.\n\nGli offset impediscono che riordinamenti o cancellazioni di blocchi producano lo stesso tag.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona ECBC-MAC e perché serve una chiave finale distinta?",
+    "a": "Si calcola CBC-MAC sui blocchi con una chiave K₁ e si cifra il risultato con K₂.\n\nLa separazione finale rende sicura la costruzione anche per messaggi di lunghezza variabile se la codifica è prefissa/non ambigua; il CBC-MAC semplice è sicuro soltanto per lunghezza fissa.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona la costruzione Merkle–Damgård?",
+    "a": "Dopo un padding che include la lunghezza, una funzione di compressione elabora i blocchi concatenando lo stato: hᵢ=f(hᵢ₋₁,mᵢ).\n\nSe la compressione è collision resistant, lo è anche l'hash costruito.\n\nLa struttura base è soggetta a length-extension e richiede domini appropriati per l'uso come MAC.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali proprietà definiscono la sicurezza di una funzione hash?",
+    "a": "Resistenza a preimmagine, seconda preimmagine e collisioni.\n\nI relativi giochi chiedono di invertire un digest, trovare un secondo messaggio per uno dato o trovare una qualsiasi coppia collidente.\n\nPer n bit, i costi generici sono circa 2^n, 2^n e 2^(n/2).",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è l'ordine sicuro per combinare cifratura e MAC?",
+    "a": "Encrypt-then-MAC cifra e autentica il cifrato ed è la composizione genericamente più robusta: si verifica il tag prima di decifrare.\n\nEncrypt-and-MAC può rivelare proprietà del messaggio tramite il tag; MAC-then-encrypt richiede condizioni più delicate e ha favorito padding oracle.\n\nOggi si preferiscono modalità AEAD standard.",
+    "t": "QA"
+  },
+  {
+    "q": "Che sicurezza deve offrire uno schema di authenticated encryption?",
+    "a": "Deve garantire confidenzialità e integrità del cifrato anche sotto attacchi scelti, normalmente IND-CCA e INT-CTXT o una nozione AEAD equivalente.\n\nL'avversario non deve distinguere messaggi né creare un nuovo cifrato accettato.\n\nNonce e associated data devono seguire le regole dello schema.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra crittografia simmetrica e asimmetrica?",
+    "a": "La simmetrica usa la stessa chiave segreta, o chiavi facilmente derivabili, ed è molto efficiente ma richiede distribuzione sicura.\n\nL'asimmetrica usa una coppia pubblica/privata e abilita cifratura, scambio di chiavi e firme, con costo maggiore e necessità di autenticare le chiavi pubbliche.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali principi rendono utilizzabile la crittografia a chiave pubblica?",
+    "a": "Deve essere facile generare coppie di chiavi ed eseguire l'operazione pubblica, ma computazionalmente difficile invertire senza la trapdoor privata.\n\nLa sicurezza dipende da problemi matematici ben studiati, parametri adeguati, padding sicuro e autenticazione delle chiavi tramite certificati o altri canali fidati.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si generano le chiavi RSA e come avvengono cifratura e decifratura?",
+    "a": "Si scelgono primi p,q, n=pq e un e coprimo con φ(n) o λ(n); si calcola d=e⁻¹ modulo tale valore.\n\nLa chiave pubblica è (n,e), quella privata d e spesso p,q.\n\nNel modello elementare c=m^e mod n e m=c^d mod n, ma nella pratica servono OAEP per cifrare e PSS per firmare.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la relazione tra attaccare la chiave RSA e invertire un singolo cifrato?",
+    "a": "Fattorizzare n consente di calcolare la chiave privata e decifrare tutti i cifrati.\n\nInvertire un singolo c significa calcolare una radice e-esima modulo n; non è noto in generale se questo sia equivalente alla fattorizzazione per RSA.\n\nAttacchi pratici spesso sfruttano padding, implementazione o parametri, non il brute force diretto.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali errori e attacchi pratici possono compromettere RSA?",
+    "a": "Moduli troppo piccoli o fattorizzabili, primi condivisi o deboli, esponenti e messaggi usati senza padding, broadcast con piccolo e, attacchi timing/fault, padding oracle e cattiva generazione casuale.\n\nLe difese sono parametri standard, OAEP/PSS, blinding, controlli CRT e librerie validate.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il crittosistema di Rabin e perché produce quattro candidati?",
+    "a": "La chiave pubblica è n=pq e si cifra c=m² mod n.\n\nCon p e q si calcolano due radici modulo ciascun primo e il teorema cinese le combina in quattro radici modulo n.\n\nRidondanza e padding identificano il messaggio corretto; senza di essi la decifratura è ambigua e il sistema è malleabile.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché invertire Rabin è collegato alla fattorizzazione?",
+    "a": "Calcolare radici quadrate modulo un composto di Blum conoscendo p e q è facile.\n\nUn algoritmo capace di restituire radici appropriate per valori casuali permette, con probabilità significativa, di ottenere due radici non opposte dello stesso quadrato e fattorizzare n tramite un massimo comune divisore.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona la cifratura ElGamal?",
+    "a": "In un gruppo con generatore g, la chiave privata è x e la pubblica y=g^x.\n\nPer cifrare m si sceglie r casuale e si invia (g^r, m·y^r); si decifra dividendo il secondo elemento per (g^r)^x.\n\nLa sicurezza si basa su Diffie–Hellman e ogni cifratura richiede casualità nuova.",
+    "t": "QA"
+  },
+  {
+    "q": "Che ruolo hanno firma digitale e autorità di certificazione?",
+    "a": "La firma lega un documento alla chiave privata e permette di verificarne integrità e origine con la pubblica.\n\nUna CA firma certificati che associano identità e chiavi pubbliche; la fiducia deriva dalla catena fino a una root fidata e richiede controlli di scadenza, hostname e revoca.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si usa RSA nel key management moderno?",
+    "a": "Si usa per trasportare o incapsulare una chiave simmetrica casuale, non per cifrare direttamente grandi payload.\n\nIl mittente valida il certificato, incapsula la chiave con RSA-OAEP e cifra i dati con AEAD.\n\nNei protocolli moderni si preferisce spesso Diffie–Hellman effimero per ottenere forward secrecy.",
+    "t": "QA"
+  }
 ]

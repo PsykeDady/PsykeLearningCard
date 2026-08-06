@@ -1,13 +1,57 @@
 [
-  {"q":"Che cos'è il tempo di blocco nell'analisi di schedulabilità FPS?","a":"Nel Fixed-Priority Scheduling, B_i è il massimo tempo per cui il task τ_i può essere bloccato da task a priorità inferiore che trattengono una risorsa condivisa. Entra nella response-time analysis: R_i=C_i+B_i+Σ_{j∈hp(i)}⌈R_i/T_j⌉C_j, con eventuali termini aggiuntivi per jitter e overhead.","t":"QA"},
-  {"q":"Come si rappresenta conservativamente un processo sporadico come periodico?","a":"Un task sporadico con minimo tempo inter-arrivo T si analizza come un task periodico di periodo T e stesso worst-case execution time e deadline. È conservativo perché assume arrivi alla massima frequenza consentita; non significa che gli arrivi reali siano periodici.","t":"QA"},
-  {"q":"Come si realizza un protocollo ping-pong tra agenti JADE?","a":"Un agente invia un ACLMessage PING indicando destinatario, conversation-id e reply-with; il ricevente filtra il messaggio con un MessageTemplate e risponde PONG tramite createReply. Comportamenti ciclici e block() evitano busy waiting; conversation-id/in-reply-to separano conversazioni concorrenti.","t":"QA"},
-  {"q":"Che cosa rappresenta il grafo degli stati generato da UPPAAL?","a":"I nodi sono stati simbolici formati da locazioni correnti, valori delle variabili discrete e una zona di valutazioni dei clock. Gli archi corrispondono a ritardi temporali o transizioni discrete sincronizzate. Zone rappresentate con DBM comprimono infiniti stati temporali concreti.","t":"QA"},
-  {"q":"Quali tipi di query supporta UPPAAL?","a":"A[] p verifica che p valga in tutti gli stati raggiungibili; E<> p che esista un cammino verso p; A<> p che ogni cammino raggiunga p; E[] p che esista un cammino che mantenga p. p --> q esprime leads-to. Deadlock si verifica tipicamente con A[] not deadlock.","t":"QA"},
-  {"q":"Come si modella un parcheggio con una rete di Petri?","a":"Place rappresentano posti liberi/occupati, auto in attesa e disponibilità di ingresso/uscita; token rappresentano quantità o stati. Transizioni di entrata e uscita consumano e producono token preservando l'invariante posti_liberi+posti_occupati=capacità, impedendo ingressi quando non ci sono token liberi.","t":"QA"},
-  {"q":"Qual è il ruolo dei template tTransaction e pTransaction nelle PTPN?","a":"Una transizione temporizzata descrive durata o intervallo temporale dell'attività; una place-timed transaction associa il vincolo temporale alla permanenza nel place. I template traducono questi costrutti in strutture analizzabili preservando abilitazione, completamento e scadenze. I dettagli dei nomi dipendono dalla libreria PTPN usata nel corso.","t":"QA"},
-  {"q":"Come funzionano i clock in UPPAAL?","a":"Sono variabili reali non negative che avanzano tutte alla stessa velocità. Possono essere confrontate con costanti in guardie e invarianti e azzerate sugli archi, ma non assegnate arbitrariamente. Gli invarianti limitano quanto si può restare in una locazione.","t":"QA"},
-  {"q":"Come si rappresenta uno stato di un timed automaton in UPPAAL?","a":"Uno stato concreto è una tripla composta dal vettore delle locazioni dei processi, dalla valutazione delle variabili discrete e dalla valutazione di tutti i clock. Nel model checking insiemi di valutazioni dei clock vengono raggruppati in stati simbolici mediante zone.","t":"QA"},
-  {"q":"Che cos'è JSemaphore e quali operazioni offre?","a":"È un semaforo per coordinare thread Java tramite un numero di permessi. acquire/P diminuisce i permessi o blocca se nessuno è disponibile; release/V ne restituisce uno. Un semaforo binario può proteggere una sezione critica, uno contatore limita l'accesso concorrente a N risorse.","t":"QA"},
-  {"q":"Che cosa rappresenta il parametro λ nelle simulazioni ad attori?","a":"Tipicamente λ è il tasso di arrivo di un processo di Poisson: gli inter-arrivi sono esponenziali con media 1/λ. Aumentare λ aumenta il carico offerto. Il significato esatto va comunque verificato nel modello, perché λ può parametrizzare altre distribuzioni o transizioni.","t":"QA"}
+  {
+    "q": "Che cos'è il tempo di blocco nell'analisi di schedulabilità FPS?",
+    "a": "Nel Fixed-Priority Scheduling, B_i è il massimo tempo per cui il task τ_i può essere bloccato da task a priorità inferiore che trattengono una risorsa condivisa.\n\nEntra nella response-time analysis: R_i=C_i+B_i+Σ_{j∈hp(i)}⌈R_i/T_j⌉C_j, con eventuali termini aggiuntivi per jitter e overhead.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si rappresenta conservativamente un processo sporadico come periodico?",
+    "a": "Un task sporadico con minimo tempo inter-arrivo T si analizza come un task periodico di periodo T e stesso worst-case execution time e deadline.\n\nÈ conservativo perché assume arrivi alla massima frequenza consentita; non significa che gli arrivi reali siano periodici.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si realizza un protocollo ping-pong tra agenti JADE?",
+    "a": "Un agente invia un ACLMessage PING indicando destinatario, conversation-id e reply-with; il ricevente filtra il messaggio con un MessageTemplate e risponde PONG tramite createReply.\n\nComportamenti ciclici e block() evitano busy waiting; conversation-id/in-reply-to separano conversazioni concorrenti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa rappresenta il grafo degli stati generato da UPPAAL?",
+    "a": "I nodi sono stati simbolici formati da locazioni correnti, valori delle variabili discrete e una zona di valutazioni dei clock.\n\nGli archi corrispondono a ritardi temporali o transizioni discrete sincronizzate.\n\nZone rappresentate con DBM comprimono infiniti stati temporali concreti.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali tipi di query supporta UPPAAL?",
+    "a": "A[] p verifica che p valga in tutti gli stati raggiungibili; E<> p che esista un cammino verso p; A<> p che ogni cammino raggiunga p; E[] p che esista un cammino che mantenga p. p --> q esprime leads-to.\n\nDeadlock si verifica tipicamente con A[] not deadlock.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si modella un parcheggio con una rete di Petri?",
+    "a": "Place rappresentano posti liberi/occupati, auto in attesa e disponibilità di ingresso/uscita; token rappresentano quantità o stati.\n\nTransizioni di entrata e uscita consumano e producono token preservando l'invariante posti_liberi+posti_occupati=capacità, impedendo ingressi quando non ci sono token liberi.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è il ruolo dei template tTransaction e pTransaction nelle PTPN?",
+    "a": "Una transizione temporizzata descrive durata o intervallo temporale dell'attività; una place-timed transaction associa il vincolo temporale alla permanenza nel place.\n\nI template traducono questi costrutti in strutture analizzabili preservando abilitazione, completamento e scadenze.\n\nI dettagli dei nomi dipendono dalla libreria PTPN usata nel corso.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano i clock in UPPAAL?",
+    "a": "Sono variabili reali non negative che avanzano tutte alla stessa velocità.\n\nPossono essere confrontate con costanti in guardie e invarianti e azzerate sugli archi, ma non assegnate arbitrariamente.\n\nGli invarianti limitano quanto si può restare in una locazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si rappresenta uno stato di un timed automaton in UPPAAL?",
+    "a": "Uno stato concreto è una tripla composta dal vettore delle locazioni dei processi, dalla valutazione delle variabili discrete e dalla valutazione di tutti i clock.\n\nNel model checking insiemi di valutazioni dei clock vengono raggruppati in stati simbolici mediante zone.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è JSemaphore e quali operazioni offre?",
+    "a": "È un semaforo per coordinare thread Java tramite un numero di permessi. acquire/P diminuisce i permessi o blocca se nessuno è disponibile; release/V ne restituisce uno.\n\nUn semaforo binario può proteggere una sezione critica, uno contatore limita l'accesso concorrente a N risorse.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa rappresenta il parametro λ nelle simulazioni ad attori?",
+    "a": "Tipicamente λ è il tasso di arrivo di un processo di Poisson: gli inter-arrivi sono esponenziali con media 1/λ.\n\nAumentare λ aumenta il carico offerto.\n\nIl significato esatto va comunque verificato nel modello, perché λ può parametrizzare altre distribuzioni o transizioni.",
+    "t": "QA"
+  }
 ]

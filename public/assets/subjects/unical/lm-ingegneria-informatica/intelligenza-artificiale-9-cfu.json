@@ -1,29 +1,137 @@
 [
-  {"q":"Come funziona A* e che cosa rappresenta f(n)?","a":"A* espande dalla frontiera il nodo con f(n)=g(n)+h(n) minimo, dove g è il costo già sostenuto e h una stima del costo restante. È una best-first search che bilancia costo reale ed euristica; con h=0 coincide con uniform-cost search.","t":"QA"},
-  {"q":"Quando un'euristica è ammissibile e quando è consistente?","a":"È ammissibile se 0≤h(n)≤h*(n), quindi non sovrastima mai il costo ottimo residuo. È consistente se h(n)≤c(n,n')+h(n') per ogni arco e h(goal)=0. La consistenza implica ammissibilità, assumendo costi e goal standard.","t":"QA"},
-  {"q":"Perché la consistenza implica che f non diminuisce lungo un cammino?","a":"Da h(n)≤c(n,n')+h(n') e g(n')=g(n)+c(n,n') segue g(n)+h(n)≤g(n')+h(n'), cioè f(n)≤f(n'). Questa monotonia consente alla graph-search di chiudere un nodo quando viene espanso senza doverlo riaprire.","t":"QA"},
-  {"q":"Perché A* tree-search è ottimo con un'euristica ammissibile?","a":"Prima di estrarre un goal subottimo di costo C, sulla frontiera esiste un nodo del cammino ottimo con f≤C*. Il goal subottimo ha f=C>C*, quindi non può essere scelto prima. Con fattore finito e costi positivi A* è anche completo.","t":"QA"},
-  {"q":"Quali condizioni servono per l'ottimalità di A* graph-search?","a":"La versione che non riapre nodi richiede normalmente un'euristica consistente: quando un nodo viene chiuso, il suo g è ottimo. Con euristica soltanto ammissibile A* resta ottimo se permette di riaprire un nodo quando trova un cammino con g minore.","t":"QA"},
-  {"q":"Qual è la differenza tra tree-search e graph-search?","a":"Tree-search tratta ogni cammino come nodo distinto e può riespandere stati o entrare in cicli. Graph-search mantiene explored set e costi migliori, evitando duplicati e riducendo lavoro, ma deve gestire correttamente la riapertura quando l'euristica non è consistente.","t":"QA"},
-  {"q":"Come funziona minimax nei giochi a somma zero?","a":"Ai nodi MAX sceglie il massimo valore dei figli e ai nodi MIN il minimo, assumendo avversari razionali. A profondità limitata applica una funzione euristica alle foglie. Restituisce una strategia ottima contro il miglior gioco dell'avversario.","t":"QA"},
-  {"q":"Come funziona alpha–beta pruning e preserva l'ottimalità?","a":"α è il miglior valore già garantito a MAX, β quello garantito a MIN. Un ramo viene potato quando α≥β perché non può influenzare la decisione dell'antenato. Produce lo stesso risultato di minimax; con ordinamento ideale visita O(b^(d/2)) nodi anziché O(b^d).","t":"QA"},
-  {"q":"Che cos'è un CSP?","a":"È definito da variabili X, domini D e vincoli C che specificano combinazioni ammesse. Una soluzione assegna un valore a ogni variabile soddisfacendo tutti i vincoli. Backtracking, propagazione, consistency e buone euristiche sfruttano la struttura oltre la ricerca esaustiva.","t":"QA"},
-  {"q":"Come funziona il forward checking in un CSP?","a":"Dopo ogni assegnazione elimina dai domini delle variabili non assegnate i valori incompatibili con essa. Se un dominio diventa vuoto effettua backtracking. Individua fallimenti prima del backtracking puro ma propaga meno dell'arc consistency.","t":"QA"},
-  {"q":"Che vantaggio offre l'aciclicità di un CSP?","a":"Se l'ipergrafo dei vincoli è aciclico secondo la nozione appropriata, una procedura di semijoin o propagazione lungo un join tree può decidere la consistenza e costruire una soluzione in tempo polinomiale. Dopo la riduzione, domini/relazioni non vuoti garantiscono una soluzione globale.","t":"QA"},
-  {"q":"Che cos'è la treewidth di una struttura di vincoli?","a":"È il minimo, su tutte le tree decomposition, della dimensione massima di una bag meno uno. Misura quanto il grafo è simile a un albero: CSP con domini limitati e treewidth k possono essere risolti con programmazione dinamica esponenziale in k ma polinomiale nella dimensione dell'istanza.","t":"QA"},
-  {"q":"Che cos'è una hypertree decomposition?","a":"Decompone un ipergrafo in un albero di bag di variabili coperte da insiemi di iperarchi, rispettando copertura e connessione. La hypertree width generalizza la treewidth e consente algoritmi trattabili per query con vincoli di arità elevata quando la width è limitata.","t":"QA"},
-  {"q":"Come funziona l'algoritmo di Yannakakis per join aciclici?","a":"Costruisce un join tree, esegue semijoin dal basso verso l'alto e poi dall'alto verso il basso per eliminare tuple senza supporto, infine calcola i join. Per query acicliche ha complessità sostanzialmente lineare nella dimensione di input più output, a fattori di implementazione vicini.","t":"QA"},
-  {"q":"Che cosa collega il teorema di Grohe alla tractability dei CSP?","a":"Per classi di strutture di arità limitata, sotto assunzioni standard di complessità, la valutazione omomorfica/CSP è trattabile esattamente quando i core delle strutture hanno treewidth limitata, a equivalenza omomorfica. Il core elimina ridondanze strutturali prima di misurare la width.","t":"QA"},
-  {"q":"Che cos'è un modello di un programma logico?","a":"È un'interpretazione che rende vere tutte le regole. Per una regola a←b,not c, se il corpo è vero allora deve esserlo la testa. Essere modello non basta per essere answer set: la stable-model semantics richiede anche una giustificazione minimale tramite il ridotto.","t":"QA"},
-  {"q":"Come si verifica se un insieme è un answer set?","a":"Dato candidato M, si costruisce il ridotto di Gelfond–Lifschitz eliminando le regole con not a nel corpo e a∈M, poi rimuovendo le negazioni rimanenti. M è answer set se coincide con il modello minimo del programma positivo risultante.","t":"QA"},
-  {"q":"Che cos'è un gioco strategico e un equilibrio di Nash?","a":"Un gioco specifica giocatori, strategie e utilità. Un profilo s è equilibrio di Nash se nessun giocatore può aumentare unilateralmente l'utilità: uᵢ(sᵢ,s₋ᵢ)≥uᵢ(s'ᵢ,s₋ᵢ) per ogni deviazione s'ᵢ.","t":"QA"},
-  {"q":"Che cosa si può dire sull'esistenza degli equilibri di Nash?","a":"Un gioco finito può non avere equilibri in strategie pure, ma ha sempre almeno un equilibrio in strategie miste. L'esistenza segue da un teorema di punto fisso; una strategia mista è una distribuzione di probabilità sulle strategie pure.","t":"QA"},
-  {"q":"Perché l'asta di Vickrey induce offerte veritiere?","a":"Nell'asta sigillata al secondo prezzo vince l'offerta maggiore ma si paga la seconda. Per un partecipante con valore privato, dichiarare il valore reale è debolmente dominante: l'offerta determina se vince, mentre il prezzo, quando vince, è fissato dalla migliore offerta altrui.","t":"QA"},
-  {"q":"Che cos'è un gioco cooperativo a utilità trasferibile?","a":"È una coppia (N,v) in cui v(S) assegna a ogni coalizione S il valore totale ottenibile e l'utilità può essere redistribuita tra i membri. I concetti di soluzione stabiliscono come dividere v(N), valutando stabilità, equità o potere negoziale.","t":"QA"},
-  {"q":"Che cos'è il contributo marginale di un giocatore?","a":"Rispetto a una coalizione S che non contiene i, è v(S∪{i})−v(S). Il contributo singolo è spesso v({i})−v(∅), normalmente v({i}) se v(∅)=0. I contributi dipendono dall'ordine o dalla coalizione di ingresso.","t":"QA"},
-  {"q":"Che cos'è lo Shapley value?","a":"Assegna a ogni giocatore il contributo marginale medio su tutti gli ordini di ingresso: φᵢ(v)=Σ_{S⊆N\\{i}} |S|!(n−|S|−1)!/n! ·[v(S∪{i})−v(S)]. Esiste ed è unico rispetto agli assiomi di efficienza, simmetria, dummy e additività.","t":"QA"},
-  {"q":"Che cos'è un dummy player?","a":"È un giocatore i il cui contributo a ogni coalizione è sempre v({i}), cioè v(S∪{i})=v(S)+v({i}). Lo Shapley value gli assegna esattamente v({i}); un null player è il caso particolare con contributo sempre zero.","t":"QA"},
-  {"q":"Che cos'è il core di un gioco cooperativo?","a":"È l'insieme delle allocazioni efficienti x, con Σ_i xᵢ=v(N), che nessuna coalizione può migliorare: Σ_{i∈S}xᵢ≥v(S) per ogni S. Può essere vuoto; se non lo è, le allocazioni sono stabili rispetto a deviazioni coalizionali.","t":"QA"},
-  {"q":"Che cos'è il nucleolo e come si calcola?","a":"Ordina in senso decrescente gli eccessi e(S,x)=v(S)−x(S) e li minimizza lessicograficamente. Si calcola con una sequenza di programmi lineari: si minimizza il massimo eccesso, si fissano i vincoli diventati stretti e si procede sui successivi. È unico e, se il core è non vuoto, vi appartiene.","t":"QA"},
-  {"q":"Qual è la differenza tra core e nucleolo?","a":"Il core è un insieme, forse vuoto, di allocazioni che nessuna coalizione blocca. Il nucleolo è una singola allocazione sempre ben definita quando esistono imputazioni e minimizza gerarchicamente le lamentele. Se il core non è vuoto, il nucleolo seleziona un suo punto.","t":"QA"}
+  {
+    "q": "Come funziona A* e che cosa rappresenta f(n)?",
+    "a": "A* espande dalla frontiera il nodo con f(n)=g(n)+h(n) minimo, dove g è il costo già sostenuto e h una stima del costo restante.\n\nÈ una best-first search che bilancia costo reale ed euristica; con h=0 coincide con uniform-cost search.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando un'euristica è ammissibile e quando è consistente?",
+    "a": "È ammissibile se 0≤h(n)≤h*(n), quindi non sovrastima mai il costo ottimo residuo.\n\nÈ consistente se h(n)≤c(n,n')+h(n') per ogni arco e h(goal)=0.\n\nLa consistenza implica ammissibilità, assumendo costi e goal standard.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché la consistenza implica che f non diminuisce lungo un cammino?",
+    "a": "Da h(n)≤c(n,n')+h(n') e g(n')=g(n)+c(n,n') segue g(n)+h(n)≤g(n')+h(n'), cioè f(n)≤f(n').\n\nQuesta monotonia consente alla graph-search di chiudere un nodo quando viene espanso senza doverlo riaprire.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché A* tree-search è ottimo con un'euristica ammissibile?",
+    "a": "Prima di estrarre un goal subottimo di costo C, sulla frontiera esiste un nodo del cammino ottimo con f≤C*.\n\nIl goal subottimo ha f=C>C*, quindi non può essere scelto prima.\n\nCon fattore finito e costi positivi A* è anche completo.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali condizioni servono per l'ottimalità di A* graph-search?",
+    "a": "La versione che non riapre nodi richiede normalmente un'euristica consistente: quando un nodo viene chiuso, il suo g è ottimo.\n\nCon euristica soltanto ammissibile A* resta ottimo se permette di riaprire un nodo quando trova un cammino con g minore.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra tree-search e graph-search?",
+    "a": "Tree-search tratta ogni cammino come nodo distinto e può riespandere stati o entrare in cicli.\n\nGraph-search mantiene explored set e costi migliori, evitando duplicati e riducendo lavoro, ma deve gestire correttamente la riapertura quando l'euristica non è consistente.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona minimax nei giochi a somma zero?",
+    "a": "Ai nodi MAX sceglie il massimo valore dei figli e ai nodi MIN il minimo, assumendo avversari razionali.\n\nA profondità limitata applica una funzione euristica alle foglie.\n\nRestituisce una strategia ottima contro il miglior gioco dell'avversario.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona alpha–beta pruning e preserva l'ottimalità?",
+    "a": "α è il miglior valore già garantito a MAX, β quello garantito a MIN.\n\nUn ramo viene potato quando α≥β perché non può influenzare la decisione dell'antenato.\n\nProduce lo stesso risultato di minimax; con ordinamento ideale visita O(b^(d/2)) nodi anziché O(b^d).",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un CSP?",
+    "a": "È definito da variabili X, domini D e vincoli C che specificano combinazioni ammesse.\n\nUna soluzione assegna un valore a ogni variabile soddisfacendo tutti i vincoli.\n\nBacktracking, propagazione, consistency e buone euristiche sfruttano la struttura oltre la ricerca esaustiva.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il forward checking in un CSP?",
+    "a": "Dopo ogni assegnazione elimina dai domini delle variabili non assegnate i valori incompatibili con essa.\n\nSe un dominio diventa vuoto effettua backtracking.\n\nIndividua fallimenti prima del backtracking puro ma propaga meno dell'arc consistency.",
+    "t": "QA"
+  },
+  {
+    "q": "Che vantaggio offre l'aciclicità di un CSP?",
+    "a": "Se l'ipergrafo dei vincoli è aciclico secondo la nozione appropriata, una procedura di semijoin o propagazione lungo un join tree può decidere la consistenza e costruire una soluzione in tempo polinomiale.\n\nDopo la riduzione, domini/relazioni non vuoti garantiscono una soluzione globale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la treewidth di una struttura di vincoli?",
+    "a": "È il minimo, su tutte le tree decomposition, della dimensione massima di una bag meno uno.\n\nMisura quanto il grafo è simile a un albero: CSP con domini limitati e treewidth k possono essere risolti con programmazione dinamica esponenziale in k ma polinomiale nella dimensione dell'istanza.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una hypertree decomposition?",
+    "a": "Decompone un ipergrafo in un albero di bag di variabili coperte da insiemi di iperarchi, rispettando copertura e connessione.\n\nLa hypertree width generalizza la treewidth e consente algoritmi trattabili per query con vincoli di arità elevata quando la width è limitata.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona l'algoritmo di Yannakakis per join aciclici?",
+    "a": "Costruisce un join tree, esegue semijoin dal basso verso l'alto e poi dall'alto verso il basso per eliminare tuple senza supporto, infine calcola i join.\n\nPer query acicliche ha complessità sostanzialmente lineare nella dimensione di input più output, a fattori di implementazione vicini.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa collega il teorema di Grohe alla tractability dei CSP?",
+    "a": "Per classi di strutture di arità limitata, sotto assunzioni standard di complessità, la valutazione omomorfica/CSP è trattabile esattamente quando i core delle strutture hanno treewidth limitata, a equivalenza omomorfica.\n\nIl core elimina ridondanze strutturali prima di misurare la width.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un modello di un programma logico?",
+    "a": "È un'interpretazione che rende vere tutte le regole.\n\nPer una regola a←b,not c, se il corpo è vero allora deve esserlo la testa.\n\nEssere modello non basta per essere answer set: la stable-model semantics richiede anche una giustificazione minimale tramite il ridotto.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si verifica se un insieme è un answer set?",
+    "a": "Dato candidato M, si costruisce il ridotto di Gelfond–Lifschitz eliminando le regole con not a nel corpo e a∈M, poi rimuovendo le negazioni rimanenti.\n\nM è answer set se coincide con il modello minimo del programma positivo risultante.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un gioco strategico e un equilibrio di Nash?",
+    "a": "Un gioco specifica giocatori, strategie e utilità.\n\nUn profilo s è equilibrio di Nash se nessun giocatore può aumentare unilateralmente l'utilità: uᵢ(sᵢ,s₋ᵢ)≥uᵢ(s'ᵢ,s₋ᵢ) per ogni deviazione s'ᵢ.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa si può dire sull'esistenza degli equilibri di Nash?",
+    "a": "Un gioco finito può non avere equilibri in strategie pure, ma ha sempre almeno un equilibrio in strategie miste.\n\nL'esistenza segue da un teorema di punto fisso; una strategia mista è una distribuzione di probabilità sulle strategie pure.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché l'asta di Vickrey induce offerte veritiere?",
+    "a": "Nell'asta sigillata al secondo prezzo vince l'offerta maggiore ma si paga la seconda.\n\nPer un partecipante con valore privato, dichiarare il valore reale è debolmente dominante: l'offerta determina se vince, mentre il prezzo, quando vince, è fissato dalla migliore offerta altrui.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un gioco cooperativo a utilità trasferibile?",
+    "a": "È una coppia (N,v) in cui v(S) assegna a ogni coalizione S il valore totale ottenibile e l'utilità può essere redistribuita tra i membri.\n\nI concetti di soluzione stabiliscono come dividere v(N), valutando stabilità, equità o potere negoziale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il contributo marginale di un giocatore?",
+    "a": "Rispetto a una coalizione S che non contiene i, è v(S∪{i})−v(S).\n\nIl contributo singolo è spesso v({i})−v(∅), normalmente v({i}) se v(∅)=0.\n\nI contributi dipendono dall'ordine o dalla coalizione di ingresso.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è lo Shapley value?",
+    "a": "Assegna a ogni giocatore il contributo marginale medio su tutti gli ordini di ingresso: φᵢ(v)=Σ_{S⊆N\\{i}} |S|!(\n\nn−|S|−1)!\n\n/n!\n\n·[v(S∪{i})−v(S)].\n\nEsiste ed è unico rispetto agli assiomi di efficienza, simmetria, dummy e additività.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un dummy player?",
+    "a": "È un giocatore i il cui contributo a ogni coalizione è sempre v({i}), cioè v(S∪{i})=v(S)+v({i}).\n\nLo Shapley value gli assegna esattamente v({i}); un null player è il caso particolare con contributo sempre zero.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il core di un gioco cooperativo?",
+    "a": "È l'insieme delle allocazioni efficienti x, con Σ_i xᵢ=v(N), che nessuna coalizione può migliorare: Σ_{i∈S}xᵢ≥v(S) per ogni S.\n\nPuò essere vuoto; se non lo è, le allocazioni sono stabili rispetto a deviazioni coalizionali.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il nucleolo e come si calcola?",
+    "a": "Ordina in senso decrescente gli eccessi e(S,x)=v(S)−x(S) e li minimizza lessicograficamente.\n\nSi calcola con una sequenza di programmi lineari: si minimizza il massimo eccesso, si fissano i vincoli diventati stretti e si procede sui successivi.\n\nÈ unico e, se il core è non vuoto, vi appartiene.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra core e nucleolo?",
+    "a": "Il core è un insieme, forse vuoto, di allocazioni che nessuna coalizione blocca.\n\nIl nucleolo è una singola allocazione sempre ben definita quando esistono imputazioni e minimizza gerarchicamente le lamentele.\n\nSe il core non è vuoto, il nucleolo seleziona un suo punto.",
+    "t": "QA"
+  }
 ]

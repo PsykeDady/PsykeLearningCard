@@ -1,48 +1,232 @@
 [
-  {"q":"Come vengono rappresentati i numeri floating point sul calcolatore?","a":"Un numero normalizzato ha forma ±m·β^e, con base β, mantissa di precisione finita ed esponente limitato; IEEE 754 usa segno, esponente con bias e frazione. La rappresentazione include anche subnormal, ±∞ e NaN. Arrotondamento e intervallo finito introducono errori, overflow e underflow.","t":"QA"},
-  {"q":"Che cos'è la precisione macchina?","a":"L'unit roundoff u è il massimo errore relativo introdotto arrotondando un reale normalizzato al floating point più vicino; in base 2 con p bit significativi vale circa 2^−p. L'epsilon macchina è spesso definito come la distanza tra 1 e il successivo rappresentabile e vale 2u, a seconda della convenzione.","t":"QA"},
-  {"q":"Qual è la differenza tra errore assoluto e relativo?","a":"Per valore esatto x e approssimazione x̃, l'errore assoluto è |x−x̃|; quello relativo è |x−x̃|/|x|, se x≠0. L'assoluto misura lo scarto nella scala originale, il relativo lo rapporta alla grandezza del valore ed è più utile per confrontare scale diverse.","t":"QA"},
-  {"q":"Che cos'è la cancellazione numerica e come si limita?","a":"È la perdita di cifre significative sottraendo numeri quasi uguali, che amplifica gli errori già presenti. Si limita riformulando le espressioni, per esempio razionalizzando √(x²+1)−x, usando algoritmi stabili, maggiore precisione o evitando differenze tra quantità molto vicine.","t":"QA"},
-  {"q":"Che cos'è la perdita di assorbimento nella somma floating point?","a":"Se si somma un numero molto piccolo a uno molto grande, il piccolo può cadere oltre la precisione della mantissa e non modificare il risultato. Per numeri positivi conviene sommare in ordine crescente o con pairwise/Kahan summation; con segni misti bisogna anche controllare la cancellazione.","t":"QA"},
-  {"q":"Come si somma accuratamente una lunga sequenza di numeri floating point?","a":"La pairwise summation usa un albero bilanciato e riduce la crescita dell'errore; Kahan conserva una compensazione per i bit persi. Ordinare per modulo crescente aiuta soprattutto con numeri dello stesso segno, ma costa un ordinamento e non è sempre ottimale con cancellazioni.","t":"QA"},
-  {"q":"Che cos'è una norma vettoriale e quali sono le norme p più comuni?","a":"È una funzione ||x||≥0, nulla solo per x=0, omogenea e subadditiva. ||x||₁=Σ|xᵢ|, ||x||₂=(Σ|xᵢ|²)^(1/2), ||x||∞=max|xᵢ|; in generale ||x||p=(Σ|xᵢ|^p)^(1/p). In dimensione finita tutte le norme sono equivalenti.","t":"QA"},
-  {"q":"Che cos'è una norma matriciale indotta?","a":"È ||A||=max_{x≠0}||Ax||/||x|| ed è compatibile con la norma vettoriale. ||A||₁ è la massima somma assoluta di colonna, ||A||∞ la massima somma di riga e ||A||₂ il massimo valore singolare. Soddisfa ||AB||≤||A||||B||.","t":"QA"},
-  {"q":"Che cosa misura il numero di condizionamento di un sistema lineare?","a":"κ(A)=||A||||A⁻¹|| misura quanto perturbazioni relative in dati e arrotondamenti possono amplificarsi nella soluzione di Ax=b. κ vicino a 1 indica buon condizionamento; grande indica sensibilità. Dipende dal problema e dalla norma, non dall'algoritmo usato per risolverlo.","t":"QA"},
-  {"q":"Come si può stimare o migliorare il condizionamento di un sistema lineare?","a":"κ₂ è il rapporto tra massimo e minimo valore singolare; per matrici generali si usano stimatori senza formare A⁻¹. Scaling/equilibrazione di righe e colonne può migliorare il problema rappresentato e la stabilità numerica; il precondizionamento trasforma il sistema per accelerare metodi iterativi, ma non cambia arbitrariamente la sensibilità del problema originale.","t":"QA"},
-  {"q":"Che cosa indica il residuo di una soluzione approssimata di Ax=b?","a":"r=b−Ax̃ misura quanto x̃ soddisfa le equazioni. Un residuo piccolo implica piccolo backward error, ma non necessariamente piccolo forward error: ||x−x̃||/||x|| può essere dell'ordine di κ(A)·||r||/(||A||||x̃||). In un sistema mal condizionato una piccola perturbazione può causare grande errore.","t":"QA"},
-  {"q":"Quali tecniche di pivoting si usano nell'eliminazione di Gauss?","a":"Il pivoting parziale scambia righe scegliendo il massimo modulo nella colonna corrente; il totale scambia righe e colonne scegliendo il massimo nella sottomatrice. Il parziale è il compromesso standard tra stabilità e costo; scaling o pivoting parziale scalato aiutano quando righe hanno grandezze molto diverse.","t":"QA"},
-  {"q":"Che cos'è una matrice di permutazione?","a":"Si ottiene permutando righe dell'identità. Moltiplicare P a sinistra permuta le righe, a destra le colonne; P è ortogonale, quindi P⁻¹=Pᵀ e |det P|=1. Nella fattorizzazione con pivoting si scrive PA=LU.","t":"QA"},
-  {"q":"Come funziona la fattorizzazione LU e quando esiste senza pivoting?","a":"Scompone A=LU con L triangolare inferiore e U superiore; poi risolve Ly=b e Ux=y in O(n²), dopo O(n³) di fattorizzazione. Senza pivoting esiste un'LU con pivot non nulli se tutti i minori principali iniziali sono non nulli; in pratica si usa PA=LU per stabilità.","t":"QA"},
-  {"q":"Che cos'è la fattorizzazione di Cholesky?","a":"Per una matrice simmetrica definita positiva A esiste un'unica fattorizzazione A=LLᵀ con diagonale di L positiva. Richiede circa metà del lavoro e memoria della LU, preserva la struttura e consente due sostituzioni triangolari.","t":"QA"},
-  {"q":"Perché l'eliminazione di Gauss è generalmente più efficiente di Gauss–Jordan?","a":"Gauss azzera solo sotto i pivot e completa con sostituzione all'indietro, per circa 2n³/3 operazioni. Gauss–Jordan azzera sopra e sotto ogni pivot e riduce fino all'identità, svolgendo più lavoro. Gauss–Jordan è utile per forma ridotta o didattica, non come metodo standard per un singolo sistema.","t":"QA"},
-  {"q":"Come si calcola numericamente l'inversa di una matrice?","a":"Si fattorizza A una volta, per esempio PA=LU, e si risolvono AX=I per le n colonne di X. Gauss–Jordan su [A|I] è un'alternativa. Per risolvere Ax=b non conviene formare A⁻¹: le sostituzioni con la fattorizzazione sono più economiche e stabili.","t":"QA"},
-  {"q":"Quali vantaggi hanno metodi diretti e iterativi per sistemi lineari?","a":"I diretti producono in aritmetica esatta la soluzione in un numero finito di passi e sono robusti per matrici dense moderate. Gli iterativi usano prodotti matrice-vettore, sfruttano sparsità e parallelismo e sono adatti a sistemi enormi, ma richiedono criteri di arresto e condizioni di convergenza, spesso un precondizionatore.","t":"QA"},
-  {"q":"Come sono definiti i metodi di Jacobi e Gauss–Seidel?","a":"Con A=D−L−U, Jacobi usa x^(k+1)=D⁻¹[(L+U)x^k+b] e aggiorna tutte le componenti dai valori vecchi. Gauss–Seidel usa x^(k+1)=(D−L)⁻¹[Ux^k+b] e riutilizza subito i nuovi valori. Jacobi è più direttamente parallelizzabile.","t":"QA"},
-  {"q":"Qual è la condizione generale di convergenza di un metodo iterativo stazionario?","a":"Per x^(k+1)=Bx^k+c converge da ogni stato iniziale se e solo se il raggio spettrale ρ(B)<1. Dominanza diagonale stretta o simmetria definita positiva forniscono condizioni sufficienti per alcuni metodi, ma non sostituiscono il criterio generale.","t":"QA"},
-  {"q":"Può Jacobi convergere mentre Gauss–Seidel diverge, o viceversa?","a":"Per matrici generali sì, perché hanno matrici d'iterazione diverse e quindi raggi spettrali diversi. Per classi particolari, come matrici simmetriche definite positive, Gauss–Seidel converge; la dominanza diagonale stretta garantisce la convergenza di entrambi.","t":"QA"},
-  {"q":"Che cos'è un problema diretto, inverso o di identificazione?","a":"Nel diretto modello e parametri sono noti e si calcola l'uscita; nell'inverso si risale a cause o ingressi da osservazioni, spesso con instabilità; nell'identificazione si stima il modello o i suoi parametri da dati ingresso-uscita. I problemi inversi richiedono spesso regolarizzazione.","t":"QA"},
-  {"q":"Quando esiste un unico polinomio interpolante?","a":"Dati n+1 nodi distinti x₀,…,xₙ e relativi valori, esiste ed è unico un polinomio di grado al più n che li interpola. L'unicità segue perché la differenza di due soluzioni avrebbe n+1 zeri ma grado al più n.","t":"QA"},
-  {"q":"Come si costruisce il polinomio interpolante di Lagrange?","a":"p(x)=Σᵢ yᵢLᵢ(x), con Lᵢ(x)=∏_{j≠i}(x−xⱼ)/(xᵢ−xⱼ). La formula è esplicita ma aggiungere un nodo richiede rielaborazione; per valutazioni stabili si preferisce la forma baricentrica.","t":"QA"},
-  {"q":"Come si costruisce il polinomio interpolante nella forma di Newton?","a":"p_n(x)=f[x₀]+f[x₀,x₁](x−x₀)+…+f[x₀,…,xₙ]∏_{j=0}^{n−1}(x−xⱼ). I coefficienti sono differenze divise; aggiungere un nodo richiede soltanto il nuovo coefficiente e consente valutazione annidata.","t":"QA"},
-  {"q":"Qual è l'errore dell'interpolazione polinomiale?","a":"Se f ha n+1 derivate, f(x)−p_n(x)=f^(n+1)(ξ)/(n+1)! ∏ᵢ(x−xᵢ) per qualche ξ nell'intervallo. L'errore dipende sia dalla regolarità di f sia dalla disposizione dei nodi, non soltanto dal grado.","t":"QA"},
-  {"q":"Che cos'è il fenomeno di Runge e come si evita?","a":"Con nodi equidistanti, polinomi interpolanti di grado crescente possono oscillare fortemente vicino agli estremi per alcune funzioni. Non esiste un limite universale come grado sette. Nodi di Chebyshev riducono il massimo prodotto nodale; spline a basso grado offrono un'alternativa locale stabile.","t":"QA"},
-  {"q":"Perché i nodi di Chebyshev sono favorevoli nell'interpolazione?","a":"Sono più densi presso gli estremi e minimizzano, a fattore costante, il massimo di |∏(x−xᵢ)| sull'intervallo. Limitano quindi l'amplificazione dell'errore e la crescita della costante di Lebesgue rispetto ai nodi equidistanti.","t":"QA"},
-  {"q":"Che cosa sono le spline e quali vantaggi hanno?","a":"Sono polinomi a tratti raccordati ai nodi con continuità prescritta. Le spline cubiche sono tipicamente C² e determinate da condizioni al bordo; evitano oscillazioni globali, hanno supporto locale e consentono aggiornamenti più locali di un unico polinomio di alto grado. Spline lineari sono C⁰; quadratiche tipicamente C¹.","t":"QA"},
-  {"q":"Che cos'è un polinomio osculatore?","a":"È un polinomio che interpola non soltanto valori della funzione ma anche una o più derivate nei nodi. L'interpolazione di Hermite ne è l'esempio classico; con molteplicità complessiva N esiste un unico polinomio di grado inferiore a N sotto condizioni appropriate.","t":"QA"},
-  {"q":"Come funziona il metodo del punto fisso e quando converge localmente?","a":"Si riscrive f(x)=0 come x=g(x) e si itera x_{k+1}=g(x_k). Se g mappa un intervallo chiuso in sé ed è una contrazione, cioè |g'(x)|≤L<1, esiste un unico punto fisso e l'iterazione converge. Localmente basta |g'(x*)|<1.","t":"QA"},
-  {"q":"Che cos'è la condizione di Lipschitz e dove viene usata?","a":"f è Lipschitz se ||f(x)−f(y)||≤L||x−y||. Con L<1 una mappa è una contrazione. La condizione garantisce unicità e convergenza nel teorema del punto fisso ed è usata anche per esistenza/unicità del problema di Cauchy e stime di stabilità.","t":"QA"},
-  {"q":"Come si ottengono formule di derivazione numerica?","a":"Si interpola localmente f e si deriva il polinomio, oppure si combinano sviluppi di Taylor. Le differenze in avanti e indietro hanno errore di troncamento O(h), la centrale O(h²). Ridurre h diminuisce il troncamento ma amplifica arrotondamento e cancellazione, quindi esiste un passo ottimale.","t":"QA"},
-  {"q":"Come migliora una formula l'estrapolazione di Richardson?","a":"Se A(h)=A+c h^p+O(h^(p+q)), si combinano A(h) e A(h/r) eliminando il termine principale: A_R=[r^pA(h/r)−A(h)]/(r^p−1). Aumenta l'ordine quando l'espansione asintotica è valida e gli errori di arrotondamento non dominano.","t":"QA"},
-  {"q":"Che cos'è una formula di quadratura interpolatoria?","a":"Approssima ∫_a^b f(x)dx integrando il polinomio interpolante: Σᵢwᵢf(xᵢ). Newton–Cotes usa nodi equidistanti; Gauss sceglie nodi e pesi per massimizzare il grado di esattezza. Formule composite dividono l'intervallo in sottointervalli.","t":"QA"},
-  {"q":"Come funziona la formula composita di Cavalieri–Simpson?","a":"Su coppie di sottointervalli di passo h integra la parabola per tre nodi: (h/3)[f(x₀)+4f(x₁)+2f(x₂)+…+4f(x_{n−1})+f(x_n)], con n pari. Per f∈C⁴ l'errore globale è O(h⁴) ed è proporzionale a una quarta derivata in un punto dell'intervallo.","t":"QA"},
-  {"q":"Come funziona Simpson adattivo e come stima l'errore?","a":"Confronta Simpson sull'intervallo S_h con la somma sui due semiintervalli S_{h/2}. Poiché l'errore scala come h⁴, una stima è |S_{h/2}−S_h|/15; si accetta eventualmente la correzione S_{h/2}+(S_{h/2}−S_h)/15 o si suddivide ancora. L'ipotesi è che il regime asintotico e la regolarità siano validi.","t":"QA"},
-  {"q":"Che cos'è il metodo di Romberg?","a":"Applica ripetutamente Richardson alle regole trapezoidali composite con passi dimezzati. La tabella R_{k,j}=R_{k,j−1}+[R_{k,j−1}−R_{k−1,j−1}]/(4^j−1) elimina successivi termini pari dell'errore, ottenendo alta accuratezza per integrande regolari.","t":"QA"},
-  {"q":"Come si trattano integrali multidimensionali?","a":"Su domini prodotto e con ipotesi di Fubini si possono usare quadrature tensoriali o integrali iterati. Domini non rettangolari richiedono limiti dipendenti, trasformazioni o suddivisioni; in dimensione alta i prodotti di regole soffrono la maledizione della dimensionalità e si preferiscono cubature sparse, Monte Carlo o quasi-Monte Carlo.","t":"QA"},
-  {"q":"Che cos'è un problema di Cauchy per un'equazione differenziale?","a":"Consiste nel trovare y(t) tale che y'=f(t,y) e y(t₀)=y₀. Continuità di f garantisce esistenza locale; una condizione di Lipschitz rispetto a y garantisce unicità locale. I metodi numerici approssimano la soluzione su una griglia temporale.","t":"QA"},
-  {"q":"Qual è la differenza tra errore locale e globale nei metodi per ODE?","a":"L'errore locale di troncamento è l'errore di un singolo passo assumendo esatto il valore iniziale del passo; il globale è l'errore accumulato rispetto alla soluzione esatta. Per un metodo stabile di ordine p, l'errore locale per passo è tipicamente O(h^(p+1)) e quello globale O(h^p).","t":"QA"},
-  {"q":"Qual è la differenza tra metodi espliciti e impliciti per ODE?","a":"Un esplicito calcola y_{n+1} direttamente da valori noti, come Eulero avanti e Runge–Kutta espliciti. Un implicito contiene y_{n+1} nell'equazione e richiede risolvere un sistema, come Eulero indietro o Crank–Nicolson; costa di più ma offre regioni di stabilità adatte a problemi stiff.","t":"QA"},
-  {"q":"Come funzionano i metodi Runge–Kutta?","a":"Combinano più valutazioni della pendenza nello stesso passo per ottenere ordine elevato senza derivate di f. Il classico RK4 usa quattro stadi e ha errore globale O(h⁴). Metodi embedded, come coppie di ordini diversi, stimano l'errore e adattano il passo.","t":"QA"},
-  {"q":"Che cos'è il metodo di Crank–Nicolson?","a":"È il metodo trapezoidale implicito y_{n+1}=y_n+h/2[f(t_n,y_n)+f(t_{n+1},y_{n+1})]. Ha ordine globale due ed è A-stabile, ma non L-stabile: su componenti stiff molto rapide può produrre oscillazioni numeriche invece di smorzarle subito.","t":"QA"},
-  {"q":"Come funzionano i metodi adattivi per integrazione e ODE?","a":"Stimano localmente l'errore confrontando approssimazioni di ordine o passo diverso, accettano il risultato se rispetta la tolleranza e scelgono un nuovo passo con un fattore proporzionale a (tol/err)^(1/(p+1)), limitato da margini di sicurezza. Concentrano il lavoro dove la funzione varia maggiormente.","t":"QA"},
-  {"q":"Che cosa garantisce il teorema di Weierstrass sull'approssimazione polinomiale?","a":"Ogni funzione continua su un intervallo chiuso e limitato può essere approssimata uniformemente, con precisione arbitraria, da polinomi. È un teorema di esistenza di approssimanti, non afferma che l'interpolazione su nodi arbitrari converga né che esista sempre un unico polinomio di migliore approssimazione per qualunque norma.","t":"QA"}
+  {
+    "q": "Come vengono rappresentati i numeri floating point sul calcolatore?",
+    "a": "Un numero normalizzato ha forma ±m·β^e, con base β, mantissa di precisione finita ed esponente limitato; IEEE 754 usa segno, esponente con bias e frazione.\n\nLa rappresentazione include anche subnormal, ±∞ e NaN.\n\nArrotondamento e intervallo finito introducono errori, overflow e underflow.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la precisione macchina?",
+    "a": "L'unit roundoff u è il massimo errore relativo introdotto arrotondando un reale normalizzato al floating point più vicino; in base 2 con p bit significativi vale circa 2^−p.\n\nL'epsilon macchina è spesso definito come la distanza tra 1 e il successivo rappresentabile e vale 2u, a seconda della convenzione.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra errore assoluto e relativo?",
+    "a": "Per valore esatto x e approssimazione x̃, l'errore assoluto è |x−x̃|; quello relativo è |x−x̃|/|x|, se x≠0.\n\nL'assoluto misura lo scarto nella scala originale, il relativo lo rapporta alla grandezza del valore ed è più utile per confrontare scale diverse.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la cancellazione numerica e come si limita?",
+    "a": "È la perdita di cifre significative sottraendo numeri quasi uguali, che amplifica gli errori già presenti.\n\nSi limita riformulando le espressioni, per esempio razionalizzando √(x²+1)−x, usando algoritmi stabili, maggiore precisione o evitando differenze tra quantità molto vicine.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la perdita di assorbimento nella somma floating point?",
+    "a": "Se si somma un numero molto piccolo a uno molto grande, il piccolo può cadere oltre la precisione della mantissa e non modificare il risultato.\n\nPer numeri positivi conviene sommare in ordine crescente o con pairwise/Kahan summation; con segni misti bisogna anche controllare la cancellazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si somma accuratamente una lunga sequenza di numeri floating point?",
+    "a": "La pairwise summation usa un albero bilanciato e riduce la crescita dell'errore; Kahan conserva una compensazione per i bit persi.\n\nOrdinare per modulo crescente aiuta soprattutto con numeri dello stesso segno, ma costa un ordinamento e non è sempre ottimale con cancellazioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una norma vettoriale e quali sono le norme p più comuni?",
+    "a": "È una funzione ||x||≥0, nulla solo per x=0, omogenea e subadditiva. ||x||₁=Σ|xᵢ|, ||x||₂=(Σ|xᵢ|²)^(1/2), ||x||∞=max|xᵢ|; in generale ||x||p=(Σ|xᵢ|^p)^(1/p).\n\nIn dimensione finita tutte le norme sono equivalenti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una norma matriciale indotta?",
+    "a": "È ||A||=max_{x≠0}||Ax||/||x|| ed è compatibile con la norma vettoriale.\n\n||A||₁ è la massima somma assoluta di colonna, ||A||∞ la massima somma di riga e ||A||₂ il massimo valore singolare.\n\nSoddisfa ||AB||≤||A||||B||.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa misura il numero di condizionamento di un sistema lineare?",
+    "a": "κ(A)=||A||||A⁻¹|| misura quanto perturbazioni relative in dati e arrotondamenti possono amplificarsi nella soluzione di Ax=b. κ vicino a 1 indica buon condizionamento; grande indica sensibilità.\n\nDipende dal problema e dalla norma, non dall'algoritmo usato per risolverlo.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si può stimare o migliorare il condizionamento di un sistema lineare?",
+    "a": "κ₂ è il rapporto tra massimo e minimo valore singolare; per matrici generali si usano stimatori senza formare A⁻¹.\n\nScaling/equilibrazione di righe e colonne può migliorare il problema rappresentato e la stabilità numerica; il precondizionamento trasforma il sistema per accelerare metodi iterativi, ma non cambia arbitrariamente la sensibilità del problema originale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa indica il residuo di una soluzione approssimata di Ax=b?",
+    "a": "r=b−Ax̃ misura quanto x̃ soddisfa le equazioni.\n\nUn residuo piccolo implica piccolo backward error, ma non necessariamente piccolo forward error: ||x−x̃||/||x|| può essere dell'ordine di κ(A)·||r||/(||A||||x̃||).\n\nIn un sistema mal condizionato una piccola perturbazione può causare grande errore.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali tecniche di pivoting si usano nell'eliminazione di Gauss?",
+    "a": "Il pivoting parziale scambia righe scegliendo il massimo modulo nella colonna corrente; il totale scambia righe e colonne scegliendo il massimo nella sottomatrice.\n\nIl parziale è il compromesso standard tra stabilità e costo; scaling o pivoting parziale scalato aiutano quando righe hanno grandezze molto diverse.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una matrice di permutazione?",
+    "a": "Si ottiene permutando righe dell'identità.\n\nMoltiplicare P a sinistra permuta le righe, a destra le colonne; P è ortogonale, quindi P⁻¹=Pᵀ e |det P|=1.\n\nNella fattorizzazione con pivoting si scrive PA=LU.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona la fattorizzazione LU e quando esiste senza pivoting?",
+    "a": "Scompone A=LU con L triangolare inferiore e U superiore; poi risolve Ly=b e Ux=y in O(n²), dopo O(n³) di fattorizzazione.\n\nSenza pivoting esiste un'LU con pivot non nulli se tutti i minori principali iniziali sono non nulli; in pratica si usa PA=LU per stabilità.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la fattorizzazione di Cholesky?",
+    "a": "Per una matrice simmetrica definita positiva A esiste un'unica fattorizzazione A=LLᵀ con diagonale di L positiva.\n\nRichiede circa metà del lavoro e memoria della LU, preserva la struttura e consente due sostituzioni triangolari.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché l'eliminazione di Gauss è generalmente più efficiente di Gauss–Jordan?",
+    "a": "Gauss azzera solo sotto i pivot e completa con sostituzione all'indietro, per circa 2n³/3 operazioni.\n\nGauss–Jordan azzera sopra e sotto ogni pivot e riduce fino all'identità, svolgendo più lavoro.\n\nGauss–Jordan è utile per forma ridotta o didattica, non come metodo standard per un singolo sistema.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si calcola numericamente l'inversa di una matrice?",
+    "a": "Si fattorizza A una volta, per esempio PA=LU, e si risolvono AX=I per le n colonne di X.\n\nGauss–Jordan su [A|I] è un'alternativa.\n\nPer risolvere Ax=b non conviene formare A⁻¹: le sostituzioni con la fattorizzazione sono più economiche e stabili.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali vantaggi hanno metodi diretti e iterativi per sistemi lineari?",
+    "a": "I diretti producono in aritmetica esatta la soluzione in un numero finito di passi e sono robusti per matrici dense moderate.\n\nGli iterativi usano prodotti matrice-vettore, sfruttano sparsità e parallelismo e sono adatti a sistemi enormi, ma richiedono criteri di arresto e condizioni di convergenza, spesso un precondizionatore.",
+    "t": "QA"
+  },
+  {
+    "q": "Come sono definiti i metodi di Jacobi e Gauss–Seidel?",
+    "a": "Con A=D−L−U, Jacobi usa x^(k+1)=D⁻¹[(L+U)x^k+b] e aggiorna tutte le componenti dai valori vecchi.\n\nGauss–Seidel usa x^(k+1)=(D−L)⁻¹[Ux^k+b] e riutilizza subito i nuovi valori.\n\nJacobi è più direttamente parallelizzabile.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la condizione generale di convergenza di un metodo iterativo stazionario?",
+    "a": "Per x^(k+1)=Bx^k+c converge da ogni stato iniziale se e solo se il raggio spettrale ρ(B)<1.\n\nDominanza diagonale stretta o simmetria definita positiva forniscono condizioni sufficienti per alcuni metodi, ma non sostituiscono il criterio generale.",
+    "t": "QA"
+  },
+  {
+    "q": "Può Jacobi convergere mentre Gauss–Seidel diverge, o viceversa?",
+    "a": "Per matrici generali sì, perché hanno matrici d'iterazione diverse e quindi raggi spettrali diversi.\n\nPer classi particolari, come matrici simmetriche definite positive, Gauss–Seidel converge; la dominanza diagonale stretta garantisce la convergenza di entrambi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un problema diretto, inverso o di identificazione?",
+    "a": "Nel diretto modello e parametri sono noti e si calcola l'uscita; nell'inverso si risale a cause o ingressi da osservazioni, spesso con instabilità; nell'identificazione si stima il modello o i suoi parametri da dati ingresso-uscita.\n\nI problemi inversi richiedono spesso regolarizzazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando esiste un unico polinomio interpolante?",
+    "a": "Dati n+1 nodi distinti x₀,…,xₙ e relativi valori, esiste ed è unico un polinomio di grado al più n che li interpola.\n\nL'unicità segue perché la differenza di due soluzioni avrebbe n+1 zeri ma grado al più n.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si costruisce il polinomio interpolante di Lagrange?",
+    "a": "p(x)=Σᵢ yᵢLᵢ(x), con Lᵢ(x)=∏_{j≠i}(x−xⱼ)/(xᵢ−xⱼ).\n\nLa formula è esplicita ma aggiungere un nodo richiede rielaborazione; per valutazioni stabili si preferisce la forma baricentrica.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si costruisce il polinomio interpolante nella forma di Newton?",
+    "a": "p_n(x)=f[x₀]+f[x₀,x₁](x−x₀)+…+f[x₀,…,xₙ]∏_{j=0}^{n−1}(x−xⱼ).\n\nI coefficienti sono differenze divise; aggiungere un nodo richiede soltanto il nuovo coefficiente e consente valutazione annidata.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è l'errore dell'interpolazione polinomiale?",
+    "a": "Se f ha n+1 derivate, f(x)−p_n(x)=f^(n+1)(ξ)/(n+1)!\n\n∏ᵢ(x−xᵢ) per qualche ξ nell'intervallo.\n\nL'errore dipende sia dalla regolarità di f sia dalla disposizione dei nodi, non soltanto dal grado.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il fenomeno di Runge e come si evita?",
+    "a": "Con nodi equidistanti, polinomi interpolanti di grado crescente possono oscillare fortemente vicino agli estremi per alcune funzioni.\n\nNon esiste un limite universale come grado sette.\n\nNodi di Chebyshev riducono il massimo prodotto nodale; spline a basso grado offrono un'alternativa locale stabile.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché i nodi di Chebyshev sono favorevoli nell'interpolazione?",
+    "a": "Sono più densi presso gli estremi e minimizzano, a fattore costante, il massimo di |∏(x−xᵢ)| sull'intervallo.\n\nLimitano quindi l'amplificazione dell'errore e la crescita della costante di Lebesgue rispetto ai nodi equidistanti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono le spline e quali vantaggi hanno?",
+    "a": "Sono polinomi a tratti raccordati ai nodi con continuità prescritta.\n\nLe spline cubiche sono tipicamente C² e determinate da condizioni al bordo; evitano oscillazioni globali, hanno supporto locale e consentono aggiornamenti più locali di un unico polinomio di alto grado.\n\nSpline lineari sono C⁰; quadratiche tipicamente C¹.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un polinomio osculatore?",
+    "a": "È un polinomio che interpola non soltanto valori della funzione ma anche una o più derivate nei nodi.\n\nL'interpolazione di Hermite ne è l'esempio classico; con molteplicità complessiva N esiste un unico polinomio di grado inferiore a N sotto condizioni appropriate.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il metodo del punto fisso e quando converge localmente?",
+    "a": "Si riscrive f(x)=0 come x=g(x) e si itera x_{k+1}=g(x_k).\n\nSe g mappa un intervallo chiuso in sé ed è una contrazione, cioè |g'(x)|≤L<1, esiste un unico punto fisso e l'iterazione converge.\n\nLocalmente basta |g'(x*)|<1.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la condizione di Lipschitz e dove viene usata?",
+    "a": "f è Lipschitz se ||f(x)−f(y)||≤L||x−y||.\n\nCon L<1 una mappa è una contrazione.\n\nLa condizione garantisce unicità e convergenza nel teorema del punto fisso ed è usata anche per esistenza/unicità del problema di Cauchy e stime di stabilità.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si ottengono formule di derivazione numerica?",
+    "a": "Si interpola localmente f e si deriva il polinomio, oppure si combinano sviluppi di Taylor.\n\nLe differenze in avanti e indietro hanno errore di troncamento O(h), la centrale O(h²).\n\nRidurre h diminuisce il troncamento ma amplifica arrotondamento e cancellazione, quindi esiste un passo ottimale.",
+    "t": "QA"
+  },
+  {
+    "q": "Come migliora una formula l'estrapolazione di Richardson?",
+    "a": "Se A(h)=A+c h^p+O(h^(p+q)), si combinano A(h) e A(h/r) eliminando il termine principale: A_R=[r^pA(h/r)−A(h)]/(r^p−1).\n\nAumenta l'ordine quando l'espansione asintotica è valida e gli errori di arrotondamento non dominano.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una formula di quadratura interpolatoria?",
+    "a": "Approssima ∫_a^b f(x)dx integrando il polinomio interpolante: Σᵢwᵢf(xᵢ).\n\nNewton–Cotes usa nodi equidistanti; Gauss sceglie nodi e pesi per massimizzare il grado di esattezza.\n\nFormule composite dividono l'intervallo in sottointervalli.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona la formula composita di Cavalieri–Simpson?",
+    "a": "Su coppie di sottointervalli di passo h integra la parabola per tre nodi: (h/3)[f(x₀)+4f(x₁)+2f(x₂)+…+4f(x_{n−1})+f(x_n)], con n pari.\n\nPer f∈C⁴ l'errore globale è O(h⁴) ed è proporzionale a una quarta derivata in un punto dell'intervallo.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona Simpson adattivo e come stima l'errore?",
+    "a": "Confronta Simpson sull'intervallo S_h con la somma sui due semiintervalli S_{h/2}.\n\nPoiché l'errore scala come h⁴, una stima è |S_{h/2}−S_h|/15; si accetta eventualmente la correzione S_{h/2}+(S_{h/2}−S_h)/15 o si suddivide ancora.\n\nL'ipotesi è che il regime asintotico e la regolarità siano validi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il metodo di Romberg?",
+    "a": "Applica ripetutamente Richardson alle regole trapezoidali composite con passi dimezzati.\n\nLa tabella R_{k,j}=R_{k,j−1}+[R_{k,j−1}−R_{k−1,j−1}]/(4^j−1) elimina successivi termini pari dell'errore, ottenendo alta accuratezza per integrande regolari.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si trattano integrali multidimensionali?",
+    "a": "Su domini prodotto e con ipotesi di Fubini si possono usare quadrature tensoriali o integrali iterati.\n\nDomini non rettangolari richiedono limiti dipendenti, trasformazioni o suddivisioni; in dimensione alta i prodotti di regole soffrono la maledizione della dimensionalità e si preferiscono cubature sparse, Monte Carlo o quasi-Monte Carlo.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un problema di Cauchy per un'equazione differenziale?",
+    "a": "Consiste nel trovare y(t) tale che y'=f(t,y) e y(t₀)=y₀.\n\nContinuità di f garantisce esistenza locale; una condizione di Lipschitz rispetto a y garantisce unicità locale.\n\nI metodi numerici approssimano la soluzione su una griglia temporale.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra errore locale e globale nei metodi per ODE?",
+    "a": "L'errore locale di troncamento è l'errore di un singolo passo assumendo esatto il valore iniziale del passo; il globale è l'errore accumulato rispetto alla soluzione esatta.\n\nPer un metodo stabile di ordine p, l'errore locale per passo è tipicamente O(h^(p+1)) e quello globale O(h^p).",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra metodi espliciti e impliciti per ODE?",
+    "a": "Un esplicito calcola y_{n+1} direttamente da valori noti, come Eulero avanti e Runge–Kutta espliciti.\n\nUn implicito contiene y_{n+1} nell'equazione e richiede risolvere un sistema, come Eulero indietro o Crank–Nicolson; costa di più ma offre regioni di stabilità adatte a problemi stiff.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano i metodi Runge–Kutta?",
+    "a": "Combinano più valutazioni della pendenza nello stesso passo per ottenere ordine elevato senza derivate di f.\n\nIl classico RK4 usa quattro stadi e ha errore globale O(h⁴).\n\nMetodi embedded, come coppie di ordini diversi, stimano l'errore e adattano il passo.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il metodo di Crank–Nicolson?",
+    "a": "È il metodo trapezoidale implicito y_{n+1}=y_n+h/2[f(t_n,y_n)+f(t_{n+1},y_{n+1})].\n\nHa ordine globale due ed è A-stabile, ma non L-stabile: su componenti stiff molto rapide può produrre oscillazioni numeriche invece di smorzarle subito.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano i metodi adattivi per integrazione e ODE?",
+    "a": "Stimano localmente l'errore confrontando approssimazioni di ordine o passo diverso, accettano il risultato se rispetta la tolleranza e scelgono un nuovo passo con un fattore proporzionale a (tol/err)^(1/(p+1)), limitato da margini di sicurezza.\n\nConcentrano il lavoro dove la funzione varia maggiormente.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa garantisce il teorema di Weierstrass sull'approssimazione polinomiale?",
+    "a": "Ogni funzione continua su un intervallo chiuso e limitato può essere approssimata uniformemente, con precisione arbitraria, da polinomi.\n\nÈ un teorema di esistenza di approssimanti, non afferma che l'interpolazione su nodi arbitrari converga né che esista sempre un unico polinomio di migliore approssimazione per qualunque norma.",
+    "t": "QA"
+  }
 ]

@@ -1,36 +1,172 @@
 [
-  {"q":"Qual è la differenza tra correttezza e completezza di un sistema di inferenza?","a":"È corretto, o sound, se tutto ciò che deriva sintatticamente è conseguenza semantica: Γ⊢φ implica Γ⊨φ. È completo se ogni conseguenza semantica è derivabile: Γ⊨φ implica Γ⊢φ. Correttezza evita conclusioni false; completezza evita di perdere conclusioni valide.","t":"QA"},
-  {"q":"Il modus ponens è una regola corretta e completa?","a":"Da P e P→Q dedurre Q è corretto. Come unica regola sul linguaggio proposizionale generale non è completa, perché molte conseguenze richiedono altre trasformazioni o regole. Per programmi Horn, una versione generalizzata tramite immediate consequence operator è completa per le conseguenze atomiche.","t":"QA"},
-  {"q":"Che cos'è la semantica operazionale di una description logic?","a":"È una procedura di ragionamento, spesso tableau, che espande concetti complessi secondo regole per congiunzione, disgiunzione, quantificazioni esistenziali e universali. Se ogni ramo chiude la conoscenza è inconsistente; un ramo aperto costruisce un modello. Blocking assicura terminazione nelle DL appropriate.","t":"QA"},
-  {"q":"Qual è il rapporto tra espressività e complessità nei formalismi di conoscenza?","a":"Costrutti più espressivi descrivono più fenomeni ma possono aumentare il costo del reasoning o renderlo indecidibile. Si scelgono quindi frammenti che bilanciano modellazione e proprietà computazionali, come Horn, Datalog o specifiche description logic.","t":"QA"},
-  {"q":"Che cos'è l'abduzione?","a":"Dato background T e osservazione O, cerca un'ipotesi H tale che T∪H sia coerente e implichi O. Le spiegazioni vengono spesso richieste minime o preferite secondo un costo. A differenza della deduzione, risale da un effetto possibile a cause plausibili e non necessariamente uniche.","t":"QA"},
-  {"q":"Come funziona breadth-first search?","a":"Espande i nodi per profondità crescente tramite una coda. È completa con branching finito e ottima con costi unitari, ma richiede tempo e memoria O(b^d). Non usa informazioni euristiche.","t":"QA"},
-  {"q":"Come funziona iterative deepening e quando termina senza goal?","a":"Ripete depth-limited DFS aumentando il limite. Per uno spazio finito può terminare quando un'iterazione non incontra cutoff, segnalando che non esistono nodi oltre il limite e quindi nessun goal raggiungibile. Conserva memoria O(bd) e ottimalità per costi unitari.","t":"QA"},
-  {"q":"Che cos'è iterative broadening?","a":"Ripete una ricerca limitando il numero di successori esplorati per nodo e aumenta progressivamente tale limite. Controlla l'esplosione del branching quando l'ordine dei successori è informativo, ma può riespandere molto e non sostituisce iterative deepening quando il problema principale è la profondità.","t":"QA"},
-  {"q":"Come funziona IDA*?","a":"Esegue DFS con soglia su f=g+h. In ogni iterazione la soglia successiva è il minimo valore f che ha superato quella corrente, così include almeno un nuovo nodo. Usa memoria lineare nella profondità ed è ottimo con euristica ammissibile, ma può riespandere molti stati.","t":"QA"},
-  {"q":"Qual è la differenza tra A* e greedy best-first search?","a":"A* ordina per f=g+h e considera costo già sostenuto e stimato; greedy ordina soltanto per h. Greedy può raggiungere rapidamente un goal ma non è in generale ottimo; A* è ottimo con le condizioni appropriate sull'euristica e sulla gestione dei duplicati.","t":"QA"},
-  {"q":"Come funzionano hill climbing e simulated annealing?","a":"Hill climbing accetta soltanto mosse migliorative e può bloccarsi in ottimi locali o plateau. Simulated annealing accetta anche peggioramenti con probabilità e^(−Δ/T); una temperatura inizialmente alta favorisce esplorazione e viene poi ridotta per stabilizzare la ricerca.","t":"QA"},
-  {"q":"Come funzionano GSAT e WalkSAT?","a":"GSAT parte da un'assegnazione casuale e cambia la variabile che massimizza il numero di clausole soddisfatte, con restart. WalkSAT sceglie una clausola insoddisfatta e, con una certa probabilità, effettua una mossa casuale invece della migliore locale. Sono metodi incompleti ma efficaci per molte istanze SAT.","t":"QA"},
-  {"q":"Perché minimax si usa nei giochi invece di A*?","a":"A* cerca un cammino di costo minimo in un ambiente controllato; nei giochi il valore dipende dalle scelte antagoniste dell'avversario. Minimax alterna massimo e minimo per calcolare una strategia robusta. A* sarebbe applicabile solo dopo una trasformazione che rappresenti correttamente decisioni avversarie e utilità.","t":"QA"},
-  {"q":"Che cosa sono effetto orizzonte, quiescence search e singular extension?","a":"L'effetto orizzonte nasconde un evento importante appena oltre il cutoff. La quiescence search prolunga nodi tatticamente instabili finché raggiunge posizioni quiete. La singular extension approfondisce selettivamente una mossa nettamente superiore alle alternative, riducendo errori da profondità uniforme.","t":"QA"},
-  {"q":"Quando alpha–beta può potare un ramo?","a":"Quando il bound del nodo dimostra che non può migliorare la scelta dell'antenato: in forma standard si pota se α≥β. I valori assoluti, come 0,001 o −0,001, non bastano; occorre confrontarli con i bound accumulati lungo il cammino.","t":"QA"},
-  {"q":"Come rappresenta azioni e stati STRIPS?","a":"Uno stato è un insieme di fatti. Un'azione ha precondizioni, add list e delete list; applicandola si ottiene (S−Del)∪Add. STRIPS usa inerzia implicita per i fatti non menzionati, risolvendo pragmaticamente il frame problem nel dominio rappresentato.","t":"QA"},
-  {"q":"Quali sono le principali assunzioni di STRIPS classico?","a":"Mondo chiuso, stato completamente osservabile, azioni deterministiche e istantanee, fatti proposizionali e assenza di effetti non dichiarati. Le precondizioni stabiliscono applicabilità; add/delete list descrivono esattamente i cambiamenti.","t":"QA"},
-  {"q":"Perché una delete list vuota rende un problema di planning più semplice?","a":"Le azioni diventano monotone: i fatti acquisiti non vengono mai persi e i sottogoal non si distruggono a vicenda. La delete relaxation è usata per euristiche di planning; non significa però che ogni sequenza sia ottima né che tutti i goal siano raggiungibili.","t":"QA"},
-  {"q":"STRIPS può rappresentare uno stato contenente p e not_p?","a":"Nel STRIPS proposizionale classico la negazione è normalmente rappresentata per assenza di p, non come fatto not_p indipendente. Se il dominio introduce due simboli distinti p e not_p senza vincoli, entrambi possono comparire sintatticamente: l'inconsistenza nasce dalla semantica aggiunta, non dal motore STRIPS da solo.","t":"QA"},
-  {"q":"Come funziona l'algoritmo di Waltz nella computer vision?","a":"Propaga vincoli sulle etichette dei segmenti in disegni di poliedri. Assegna a ogni giunzione le etichette localmente compatibili e rimuove iterativamente quelle incompatibili con le giunzioni adiacenti. È un esempio di constraint propagation, ma può lasciare più interpretazioni globali.","t":"QA"},
-  {"q":"Quali sono approcci olistici al riconoscimento di ambienti?","a":"Descrivono la scena globalmente invece di riconoscere prima ogni oggetto, usando statistiche d'insieme, gist, texture o embedding appresi. Sono robusti per classificare rapidamente tipi di ambiente, ma possono perdere dettagli locali e relazioni esplicite tra oggetti.","t":"QA"},
-  {"q":"Che cos'è un modello stabile di un programma con negazione?","a":"Dato un insieme candidato M, il ridotto di Gelfond–Lifschitz elimina regole il cui corpo contiene not a con a∈M e rimuove le negazioni restanti. M è stabile se è un modello minimale del ridotto; per programmi normali positivi coincide con il minimo modello.","t":"QA"},
-  {"q":"Che cos'è un programma Datalog stratificato e perché ha un modello perfetto unico?","a":"Le dipendenze negative non formano cicli e i predicati possono essere ordinati in strati. Si valuta ogni strato usando i risultati dei precedenti; questa costruzione determina un unico modello perfetto, che coincide con il modello stabile per i programmi stratificati.","t":"QA"},
-  {"q":"L'intersezione di modelli stabili è sempre un modello stabile?","a":"No. I modelli stabili non sono in generale chiusi rispetto all'intersezione. La proprietà di minimo modello e chiusura per intersezione appartiene ai programmi positivi/Horn; con negazione non monotona possono esistere modelli stabili alternativi la cui intersezione non è stabile.","t":"QA"},
-  {"q":"Che cos'è un'estensione di Reiter?","a":"È un punto fisso deduttivamente chiuso che contiene i fatti W e le conclusioni dei default i cui prerequisiti sono derivabili e le cui giustificazioni restano coerenti con l'estensione stessa. Una teoria può avere nessuna, una o più estensioni.","t":"QA"},
-  {"q":"Qual è la differenza tra reasoning brave e cautious nella default logic?","a":"Una formula è conseguenza brave se appartiene ad almeno un'estensione; è cautious se appartiene a tutte le estensioni. Brave esprime possibilità compatibile con una visione, cautious ciò che è condiviso da ogni conclusione non monotona ammissibile.","t":"QA"},
-  {"q":"Che cosa sono processi successful e closed nella semantica operazionale dei default?","a":"Un processo è una sequenza di default applicati. È successful se le giustificazioni dei default restano coerenti con la teoria finale; è closed se nessun altro default applicabile può essere aggiunto. Nei frammenti in cui la caratterizzazione vale, processi successful e closed generano estensioni.","t":"QA"},
-  {"q":"Perché una teoria di default può non avere estensioni?","a":"L'auto-riferimento e la non monotonicità possono rendere impossibile un punto fisso coerente. Per esempio un default che conclude ¬a proprio quando a è coerente crea un conflitto con la giustificazione. L'incoerenza di W è un caso degenere, ma non è l'unica causa.","t":"QA"},
-  {"q":"Che cos'è la compilazione della conoscenza?","a":"È il preprocessing di una base di conoscenza in una rappresentazione che rende successive query più rapide, come OBDD, d-DNNF o tabelle compilate. Si paga una possibile crescita, anche esponenziale, una volta sola per ridurre il costo online di entailment, model counting o aggiornamenti.","t":"QA"},
-  {"q":"Che cosa sono lower bound, upper bound, GLB e LUB?","a":"In un ordine parziale, un lower bound è minore o uguale a tutti gli elementi dell'insieme e il greatest lower bound è il maggiore tra essi; dualmente, il least upper bound è il minore degli upper bound. Se esistono sono unici, ma un insieme può avere molti bound non massimi.","t":"QA"},
-  {"q":"Che cos'è lo Shapley value?","a":"È il contributo marginale atteso di un giocatore quando l'ordine di ingresso nella coalizione è uniforme. È l'unica ripartizione che soddisfa efficienza, simmetria, dummy e additività, e fornisce un criterio di equità più che di stabilità.","t":"QA"},
-  {"q":"Qual è la differenza tra core, nucleolo, kernel e bargaining set?","a":"Il core contiene allocazioni non bloccate da coalizioni; il nucleolo minimizza lessicograficamente gli eccessi; il kernel bilancia le massime obiezioni tra coppie; il bargaining set ammette obiezioni purché esistano contro-obiezioni. Sono nozioni diverse di stabilità o equità e hanno relazioni d'inclusione solo sotto ipotesi specifiche.","t":"QA"},
-  {"q":"Che cos'è uno stable set nei giochi cooperativi?","a":"Un insieme di imputazioni è internamente stabile se nessun suo punto domina un altro ed esternamente stabile se ogni imputazione esterna è dominata da almeno un punto dell'insieme. Può non esistere o non essere unico; per stabilirlo servono funzione caratteristica e relazione di dominanza complete.","t":"QA"},
-  {"q":"Che cosa valuta il test di Turing?","a":"Valuta se, in una conversazione testuale, un giudice non riesce a distinguere affidabilmente una macchina da una persona. Misura comportamento linguistico osservabile, non definisce coscienza, comprensione generale o correttezza delle risposte.","t":"QA"}
+  {
+    "q": "Qual è la differenza tra correttezza e completezza di un sistema di inferenza?",
+    "a": "È corretto, o sound, se tutto ciò che deriva sintatticamente è conseguenza semantica: Γ⊢φ implica Γ⊨φ.\n\nÈ completo se ogni conseguenza semantica è derivabile: Γ⊨φ implica Γ⊢φ.\n\nCorrettezza evita conclusioni false; completezza evita di perdere conclusioni valide.",
+    "t": "QA"
+  },
+  {
+    "q": "Il modus ponens è una regola corretta e completa?",
+    "a": "Da P e P→Q dedurre Q è corretto.\n\nCome unica regola sul linguaggio proposizionale generale non è completa, perché molte conseguenze richiedono altre trasformazioni o regole.\n\nPer programmi Horn, una versione generalizzata tramite immediate consequence operator è completa per le conseguenze atomiche.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la semantica operazionale di una description logic?",
+    "a": "È una procedura di ragionamento, spesso tableau, che espande concetti complessi secondo regole per congiunzione, disgiunzione, quantificazioni esistenziali e universali.\n\nSe ogni ramo chiude la conoscenza è inconsistente; un ramo aperto costruisce un modello.\n\nBlocking assicura terminazione nelle DL appropriate.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è il rapporto tra espressività e complessità nei formalismi di conoscenza?",
+    "a": "Costrutti più espressivi descrivono più fenomeni ma possono aumentare il costo del reasoning o renderlo indecidibile.\n\nSi scelgono quindi frammenti che bilanciano modellazione e proprietà computazionali, come Horn, Datalog o specifiche description logic.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è l'abduzione?",
+    "a": "Dato background T e osservazione O, cerca un'ipotesi H tale che T∪H sia coerente e implichi O.\n\nLe spiegazioni vengono spesso richieste minime o preferite secondo un costo.\n\nA differenza della deduzione, risale da un effetto possibile a cause plausibili e non necessariamente uniche.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona breadth-first search?",
+    "a": "Espande i nodi per profondità crescente tramite una coda.\n\nÈ completa con branching finito e ottima con costi unitari, ma richiede tempo e memoria O(b^d).\n\nNon usa informazioni euristiche.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona iterative deepening e quando termina senza goal?",
+    "a": "Ripete depth-limited DFS aumentando il limite.\n\nPer uno spazio finito può terminare quando un'iterazione non incontra cutoff, segnalando che non esistono nodi oltre il limite e quindi nessun goal raggiungibile.\n\nConserva memoria O(bd) e ottimalità per costi unitari.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è iterative broadening?",
+    "a": "Ripete una ricerca limitando il numero di successori esplorati per nodo e aumenta progressivamente tale limite.\n\nControlla l'esplosione del branching quando l'ordine dei successori è informativo, ma può riespandere molto e non sostituisce iterative deepening quando il problema principale è la profondità.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona IDA*?",
+    "a": "Esegue DFS con soglia su f=g+h.\n\nIn ogni iterazione la soglia successiva è il minimo valore f che ha superato quella corrente, così include almeno un nuovo nodo.\n\nUsa memoria lineare nella profondità ed è ottimo con euristica ammissibile, ma può riespandere molti stati.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra A* e greedy best-first search?",
+    "a": "A* ordina per f=g+h e considera costo già sostenuto e stimato; greedy ordina soltanto per h.\n\nGreedy può raggiungere rapidamente un goal ma non è in generale ottimo; A* è ottimo con le condizioni appropriate sull'euristica e sulla gestione dei duplicati.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano hill climbing e simulated annealing?",
+    "a": "Hill climbing accetta soltanto mosse migliorative e può bloccarsi in ottimi locali o plateau.\n\nSimulated annealing accetta anche peggioramenti con probabilità e^(−Δ/T); una temperatura inizialmente alta favorisce esplorazione e viene poi ridotta per stabilizzare la ricerca.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano GSAT e WalkSAT?",
+    "a": "GSAT parte da un'assegnazione casuale e cambia la variabile che massimizza il numero di clausole soddisfatte, con restart.\n\nWalkSAT sceglie una clausola insoddisfatta e, con una certa probabilità, effettua una mossa casuale invece della migliore locale.\n\nSono metodi incompleti ma efficaci per molte istanze SAT.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché minimax si usa nei giochi invece di A*?",
+    "a": "A* cerca un cammino di costo minimo in un ambiente controllato; nei giochi il valore dipende dalle scelte antagoniste dell'avversario.\n\nMinimax alterna massimo e minimo per calcolare una strategia robusta.\n\nA* sarebbe applicabile solo dopo una trasformazione che rappresenti correttamente decisioni avversarie e utilità.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono effetto orizzonte, quiescence search e singular extension?",
+    "a": "L'effetto orizzonte nasconde un evento importante appena oltre il cutoff.\n\nLa quiescence search prolunga nodi tatticamente instabili finché raggiunge posizioni quiete.\n\nLa singular extension approfondisce selettivamente una mossa nettamente superiore alle alternative, riducendo errori da profondità uniforme.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando alpha–beta può potare un ramo?",
+    "a": "Quando il bound del nodo dimostra che non può migliorare la scelta dell'antenato: in forma standard si pota se α≥β.\n\nI valori assoluti, come 0,001 o −0,001, non bastano; occorre confrontarli con i bound accumulati lungo il cammino.",
+    "t": "QA"
+  },
+  {
+    "q": "Come rappresenta azioni e stati STRIPS?",
+    "a": "Uno stato è un insieme di fatti.\n\nUn'azione ha precondizioni, add list e delete list; applicandola si ottiene (S−Del)∪Add.\n\nSTRIPS usa inerzia implicita per i fatti non menzionati, risolvendo pragmaticamente il frame problem nel dominio rappresentato.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le principali assunzioni di STRIPS classico?",
+    "a": "Mondo chiuso, stato completamente osservabile, azioni deterministiche e istantanee, fatti proposizionali e assenza di effetti non dichiarati.\n\nLe precondizioni stabiliscono applicabilità; add/delete list descrivono esattamente i cambiamenti.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché una delete list vuota rende un problema di planning più semplice?",
+    "a": "Le azioni diventano monotone: i fatti acquisiti non vengono mai persi e i sottogoal non si distruggono a vicenda.\n\nLa delete relaxation è usata per euristiche di planning; non significa però che ogni sequenza sia ottima né che tutti i goal siano raggiungibili.",
+    "t": "QA"
+  },
+  {
+    "q": "STRIPS può rappresentare uno stato contenente p e not_p?",
+    "a": "Nel STRIPS proposizionale classico la negazione è normalmente rappresentata per assenza di p, non come fatto not_p indipendente.\n\nSe il dominio introduce due simboli distinti p e not_p senza vincoli, entrambi possono comparire sintatticamente: l'inconsistenza nasce dalla semantica aggiunta, non dal motore STRIPS da solo.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona l'algoritmo di Waltz nella computer vision?",
+    "a": "Propaga vincoli sulle etichette dei segmenti in disegni di poliedri.\n\nAssegna a ogni giunzione le etichette localmente compatibili e rimuove iterativamente quelle incompatibili con le giunzioni adiacenti.\n\nÈ un esempio di constraint propagation, ma può lasciare più interpretazioni globali.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono approcci olistici al riconoscimento di ambienti?",
+    "a": "Descrivono la scena globalmente invece di riconoscere prima ogni oggetto, usando statistiche d'insieme, gist, texture o embedding appresi.\n\nSono robusti per classificare rapidamente tipi di ambiente, ma possono perdere dettagli locali e relazioni esplicite tra oggetti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un modello stabile di un programma con negazione?",
+    "a": "Dato un insieme candidato M, il ridotto di Gelfond–Lifschitz elimina regole il cui corpo contiene not a con a∈M e rimuove le negazioni restanti.\n\nM è stabile se è un modello minimale del ridotto; per programmi normali positivi coincide con il minimo modello.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un programma Datalog stratificato e perché ha un modello perfetto unico?",
+    "a": "Le dipendenze negative non formano cicli e i predicati possono essere ordinati in strati.\n\nSi valuta ogni strato usando i risultati dei precedenti; questa costruzione determina un unico modello perfetto, che coincide con il modello stabile per i programmi stratificati.",
+    "t": "QA"
+  },
+  {
+    "q": "L'intersezione di modelli stabili è sempre un modello stabile?",
+    "a": "No.\n\nI modelli stabili non sono in generale chiusi rispetto all'intersezione.\n\nLa proprietà di minimo modello e chiusura per intersezione appartiene ai programmi positivi/Horn; con negazione non monotona possono esistere modelli stabili alternativi la cui intersezione non è stabile.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un'estensione di Reiter?",
+    "a": "È un punto fisso deduttivamente chiuso che contiene i fatti W e le conclusioni dei default i cui prerequisiti sono derivabili e le cui giustificazioni restano coerenti con l'estensione stessa.\n\nUna teoria può avere nessuna, una o più estensioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra reasoning brave e cautious nella default logic?",
+    "a": "Una formula è conseguenza brave se appartiene ad almeno un'estensione; è cautious se appartiene a tutte le estensioni.\n\nBrave esprime possibilità compatibile con una visione, cautious ciò che è condiviso da ogni conclusione non monotona ammissibile.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono processi successful e closed nella semantica operazionale dei default?",
+    "a": "Un processo è una sequenza di default applicati.\n\nÈ successful se le giustificazioni dei default restano coerenti con la teoria finale; è closed se nessun altro default applicabile può essere aggiunto.\n\nNei frammenti in cui la caratterizzazione vale, processi successful e closed generano estensioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché una teoria di default può non avere estensioni?",
+    "a": "L'auto-riferimento e la non monotonicità possono rendere impossibile un punto fisso coerente.\n\nPer esempio un default che conclude ¬a proprio quando a è coerente crea un conflitto con la giustificazione.\n\nL'incoerenza di W è un caso degenere, ma non è l'unica causa.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la compilazione della conoscenza?",
+    "a": "È il preprocessing di una base di conoscenza in una rappresentazione che rende successive query più rapide, come OBDD, d-DNNF o tabelle compilate.\n\nSi paga una possibile crescita, anche esponenziale, una volta sola per ridurre il costo online di entailment, model counting o aggiornamenti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono lower bound, upper bound, GLB e LUB?",
+    "a": "In un ordine parziale, un lower bound è minore o uguale a tutti gli elementi dell'insieme e il greatest lower bound è il maggiore tra essi; dualmente, il least upper bound è il minore degli upper bound.\n\nSe esistono sono unici, ma un insieme può avere molti bound non massimi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è lo Shapley value?",
+    "a": "È il contributo marginale atteso di un giocatore quando l'ordine di ingresso nella coalizione è uniforme.\n\nÈ l'unica ripartizione che soddisfa efficienza, simmetria, dummy e additività, e fornisce un criterio di equità più che di stabilità.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra core, nucleolo, kernel e bargaining set?",
+    "a": "Il core contiene allocazioni non bloccate da coalizioni; il nucleolo minimizza lessicograficamente gli eccessi; il kernel bilancia le massime obiezioni tra coppie; il bargaining set ammette obiezioni purché esistano contro-obiezioni.\n\nSono nozioni diverse di stabilità o equità e hanno relazioni d'inclusione solo sotto ipotesi specifiche.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è uno stable set nei giochi cooperativi?",
+    "a": "Un insieme di imputazioni è internamente stabile se nessun suo punto domina un altro ed esternamente stabile se ogni imputazione esterna è dominata da almeno un punto dell'insieme.\n\nPuò non esistere o non essere unico; per stabilirlo servono funzione caratteristica e relazione di dominanza complete.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa valuta il test di Turing?",
+    "a": "Valuta se, in una conversazione testuale, un giudice non riesce a distinguere affidabilmente una macchina da una persona.\n\nMisura comportamento linguistico osservabile, non definisce coscienza, comprensione generale o correttezza delle risposte.",
+    "t": "QA"
+  }
 ]

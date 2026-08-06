@@ -1,31 +1,147 @@
 [
-  {"q":"Che cos'è una funzione di ordine superiore?","a":"È una funzione che riceve funzioni come argomenti o restituisce una funzione. Map, filter e fold sono esempi. Le lambda permettono di costruire funzioni anonime e le closure catturano l'ambiente lessicale necessario dopo il ritorno della funzione esterna.","t":"QA"},
-  {"q":"Come si valuta una funzione curried come g(molt,3)(4)?","a":"La prima chiamata g(molt,3) restituisce una funzione che cattura molt e 3; la seconda la applica a 4. Il risultato dipende dalla definizione di g e molt: senza il corpo delle funzioni la sola espressione non determina un valore numerico univoco.","t":"QA"},
-  {"q":"Che cosa sono universo e base di Herbrand?","a":"L'universo è l'insieme dei termini ground costruibili da costanti e function symbol; la base è l'insieme degli atomi ground ottenibili dai predicati. Un'interpretazione di Herbrand è un sottoinsieme della base e un modello minimo non contiene un sottoinsieme proprio che sia ancora modello.","t":"QA"},
-  {"q":"Quanti modelli minimi ha un programma logico positivo?","a":"Un programma Horn positivo ha un unico modello minimo di Herbrand, ottenuto come minimo punto fisso dell'operatore delle conseguenze immediate. Può avere molti modelli non minimi. Con negazione o disgiunzione possono comparire più modelli minimali/stabili.","t":"QA"},
-  {"q":"Come si trovano gli answer set del programma u(1), u(2), p(1), r(X):-u(X),not p(X), rc(X):-u(X),not r(X)?","a":"L'unico modello stabile contiene u(1),u(2),p(1),r(2),rc(1). r(1) è escluso perché p(1) è vero; r(2) è derivato; rc(1) deriva dall'assenza di r(1), mentre rc(2) no. La negazione non implica automaticamente più modelli.","t":"QA"},
-  {"q":"Che cos'è l'unificazione e che cos'è un most general unifier?","a":"L'unificazione cerca una sostituzione che renda uguali due termini. Un MGU è più generale di ogni altro unificatore: gli altri si ottengono componendolo con ulteriori sostituzioni. L'occurs check rifiuta equazioni cicliche come X=f(X).","t":"QA"},
-  {"q":"Che cosa sono espressioni regolari e automi finiti?","a":"Le regex formali costruiscono linguaggi da simboli, unione, concatenazione e stella. Per il teorema di Kleene descrivono esattamente i linguaggi riconosciuti da DFA/NFA. Le regex dei linguaggi di programmazione possono includere estensioni non regolari come backreference.","t":"QA"},
-  {"q":"Quali classi comprende la gerarchia di Chomsky?","a":"Tipo 3: regolari e automi finiti; tipo 2: context-free e pushdown automata; tipo 1: context-sensitive e automi linearmente limitati; tipo 0: grammatiche non ristrette e macchine di Turing. Ogni livello include il precedente.","t":"QA"},
-  {"q":"Ha senso classificare Java, HTML o XML come linguaggi di tipo 2 o 3?","a":"Solo rispetto a una grammatica formale precisamente definita. XML ben formato ha una struttura essenzialmente context-free con vincoli lessicali, mentre validazione e namespace aggiungono condizioni; HTML reale ha parsing standardizzato e recupero errori; Java combina lessico regolare, sintassi quasi context-free e vincoli semantici context-sensitive. Un'etichetta unica è una semplificazione.","t":"QA"},
-  {"q":"Che cos'è un automa a pila?","a":"È un automa finito dotato di stack. Un NPDA riconosce esattamente i linguaggi context-free; lo stack consente memoria non limitata LIFO, utile per parentesi annidate. I PDA deterministici riconoscono un sottoinsieme proprio dei CFL.","t":"QA"},
-  {"q":"Che differenza c'è tra tautologia e contraddizione?","a":"Una formula è tautologia se è vera per ogni interpretazione; è contraddizione se è falsa per ogni interpretazione. Una formula soddisfacibile è vera in almeno un'interpretazione e contingente se è vera in alcune e falsa in altre.","t":"QA"},
-  {"q":"Come si rappresenta concettualmente JSON in memoria?","a":"Oggetti come mappe da stringhe a valori, array come sequenze ordinate e valori primitivi come stringhe, numeri, booleani o null. L'implementazione concreta di Calculist dipende dal runtime: senza specifica non si può affermare un layout fisico preciso.","t":"QA"},
-  {"q":"Come si verifica in Prolog se una lista è palindroma?","a":"Una definizione dichiarativa è `palindroma(L) :- reverse(L,L).` Se non si usa reverse predefinito, lo si implementa con accumulatore. Il predicato confronta struttura ed elementi e non modifica la lista.","t":"QA"},
-  {"q":"Come si uniscono due liste ordinate in Prolog mantenendo ordine e occorrenze?","a":"`merge([],L,L). merge(L,[],L). merge([X|Xs],[Y|Ys],[X|Z]):-X=<Y,!,merge(Xs,[Y|Ys],Z). merge([X|Xs],[Y|Ys],[Y|Z]):-merge([X|Xs],Ys,Z).` Il cut rende mutuamente esclusivi i casi numerici.","t":"QA"},
-  {"q":"Come si calcola una lista di somme prefisse in Prolog?","a":"Si usa un accumulatore: `adduplist(L,K):-prefix(L,0,K). prefix([],_,[]). prefix([X|Xs],A,[S|Ss]):-S is A+X,prefix(Xs,S,Ss).` Per `[1,2,3,4]` produce `[1,3,6,10]`.","t":"QA"},
-  {"q":"Come si definisce Fibonacci in Prolog secondo f(0)=f(1)=1?","a":"`fib(0,1). fib(1,1). fib(N,F):-N>1,N1 is N-1,N2 is N-2,fib(N1,F1),fib(N2,F2),F is F1+F2.` È corretta ma esponenziale; accumulazione o tabling evitano ricalcoli.","t":"QA"},
-  {"q":"Come si sostituiscono tutte le occorrenze di T con T1 in una lista Prolog?","a":"`subst(_,_,[],[]). subst(T,T1,[X|Xs],[Y|Ys]):- (X==T -> Y=T1 ; Y=X), subst(T,T1,Xs,Ys).` `==` confronta i termini senza istanziarli; `=` avrebbe semantica di unificazione e potrebbe sostituire elementi non identici.","t":"QA"},
-  {"q":"Come si separano gli elementi di L1 presenti e assenti da L2 in Prolog?","a":"`split([],_,[],[]). split([X|Xs],L2,[X|In],Out):-memberchk(X,L2),!,split(Xs,L2,In,Out). split([X|Xs],L2,In,[X|Out]):-split(Xs,L2,In,Out).` Mantiene ordine e occorrenze di L1; per semantica insiemistica occorre anche rimuovere duplicati.","t":"QA"},
-  {"q":"Come si verifica che due liste contengano gli stessi elementi con le stesse molteplicità?","a":"Si possono ordinare entrambe con msort e confrontarle: `stesso_multinsieme(A,B):-msort(A,SA),msort(B,SB),SA==SB.` `sort` invece elimina duplicati e verifica soltanto l'uguaglianza degli insiemi di elementi.","t":"QA"},
-  {"q":"Come si definisce il numero di occorrenze di X in una lista Prolog?","a":"`occurrences(_,[],0). occurrences(X,[Y|Ys],N):-occurrences(X,Ys,N0),(X==Y->N is N0+1;N=N0).` Il confronto scelto determina se si vogliono identità, unificazione o uguaglianza aritmetica.","t":"QA"},
-  {"q":"Come si ottiene l'elemento in posizione N di una lista Prolog?","a":"Con indici da uno: `occurs([X|_],1,X). occurs([_|Xs],N,X):-N>1,N1 is N-1,occurs(Xs,N1,X).` Il predicato fallisce per indice non positivo o oltre la lunghezza.","t":"QA"},
-  {"q":"Come si trova il successore di X in una lista Prolog?","a":"`successivo(X,[X,Y|_],Y). successivo(X,[_|Xs],Y):-successivo(X,Xs,Y).` In backtracking restituisce i successori di tutte le occorrenze di X che non siano l'ultimo elemento.","t":"QA"},
-  {"q":"Come si rimuovono gli elementi in posizione pari da una lista Prolog?","a":"`dispari([],[]). dispari([X],[X]). dispari([X,_|Xs],[X|Ys]):-dispari(Xs,Ys).` Conserva le posizioni 1,3,5,… assumendo indicizzazione da uno.","t":"QA"},
-  {"q":"Come si cerca un elemento in una lista ordinata in Prolog?","a":"Su una normale lista concatenata, accedere al punto medio costa O(n), quindi una “ricerca binaria” ricorsiva perde il vantaggio O(log n). Conviene usare alberi bilanciati o array indicizzabili; su lista, una scansione ordinata può arrestarsi quando supera il target.","t":"QA"},
-  {"q":"Che cosa significa compilare un linguaggio con tipizzazione dinamica?","a":"Il compilatore genera codice che conserva tag di tipo a runtime e inserisce controlli/dispatch nelle operazioni, oppure usa specializzazione e JIT con guardie e deottimizzazione. “Dinamicamente tipizzato” non corrisponde a un livello della gerarchia di Chomsky.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Rice sui programmi?","a":"Ogni proprietà semantica non banale della funzione parziale calcolata da un programma è indecidibile. Proprietà sintattiche del testo non rientrano nel teorema; alcune approssimazioni conservative restano analizzabili staticamente.","t":"QA"},
-  {"q":"Come si costruisce un DFA per una espressione regolare?","a":"Si applica Thompson per ottenere un ε-NFA, subset construction per il DFA e opzionalmente minimizzazione. Per verificare una regex ambigua come `(a+b+)+bc` bisogna prima fissare la notazione: `+` può significare unione nel formalismo teorico o “una o più ripetizioni” nelle regex pratiche.","t":"QA"},
-  {"q":"Che cos'è un modello logico e quando è minimale?","a":"Un modello è un'interpretazione che soddisfa tutte le formule o regole. È minimale rispetto all'inclusione se nessun sottoinsieme proprio degli atomi veri è ancora modello. Minimo significa invece contenuto in ogni modello ed è più forte di minimale.","t":"QA"},
-  {"q":"Come si definiscono unione, intersezione e differenza di liste intese come insiemi?","a":"Si usa appartenenza per includere ogni elemento una sola volta: unione contiene elementi in almeno una lista, intersezione quelli in entrambe, differenza L1−L2 quelli solo in L1. Prima o durante il calcolo si eliminano duplicati; se si preservano occorrenze si sta operando su multinsiemi.","t":"QA"}
+  {
+    "q": "Che cos'è una funzione di ordine superiore?",
+    "a": "È una funzione che riceve funzioni come argomenti o restituisce una funzione.\n\nMap, filter e fold sono esempi.\n\nLe lambda permettono di costruire funzioni anonime e le closure catturano l'ambiente lessicale necessario dopo il ritorno della funzione esterna.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si valuta una funzione curried come g(molt,3)(4)?",
+    "a": "La prima chiamata g(molt,3) restituisce una funzione che cattura molt e 3; la seconda la applica a 4.\n\nIl risultato dipende dalla definizione di g e molt: senza il corpo delle funzioni la sola espressione non determina un valore numerico univoco.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono universo e base di Herbrand?",
+    "a": "L'universo è l'insieme dei termini ground costruibili da costanti e function symbol; la base è l'insieme degli atomi ground ottenibili dai predicati.\n\nUn'interpretazione di Herbrand è un sottoinsieme della base e un modello minimo non contiene un sottoinsieme proprio che sia ancora modello.",
+    "t": "QA"
+  },
+  {
+    "q": "Quanti modelli minimi ha un programma logico positivo?",
+    "a": "Un programma Horn positivo ha un unico modello minimo di Herbrand, ottenuto come minimo punto fisso dell'operatore delle conseguenze immediate.\n\nPuò avere molti modelli non minimi.\n\nCon negazione o disgiunzione possono comparire più modelli minimali/stabili.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si trovano gli answer set del programma u(1), u(2), p(1), r(X):-u(X),not p(X), rc(X):-u(X),not r(X)?",
+    "a": "L'unico modello stabile contiene u(1),u(2),p(1),r(2),rc(1). r(1) è escluso perché p(1) è vero; r(2) è derivato; rc(1) deriva dall'assenza di r(1), mentre rc(2) no.\n\nLa negazione non implica automaticamente più modelli.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è l'unificazione e che cos'è un most general unifier?",
+    "a": "L'unificazione cerca una sostituzione che renda uguali due termini.\n\nUn MGU è più generale di ogni altro unificatore: gli altri si ottengono componendolo con ulteriori sostituzioni.\n\nL'occurs check rifiuta equazioni cicliche come X=f(X).",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono espressioni regolari e automi finiti?",
+    "a": "Le regex formali costruiscono linguaggi da simboli, unione, concatenazione e stella.\n\nPer il teorema di Kleene descrivono esattamente i linguaggi riconosciuti da DFA/NFA.\n\nLe regex dei linguaggi di programmazione possono includere estensioni non regolari come backreference.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali classi comprende la gerarchia di Chomsky?",
+    "a": "Tipo 3: regolari e automi finiti; tipo 2: context-free e pushdown automata; tipo 1: context-sensitive e automi linearmente limitati; tipo 0: grammatiche non ristrette e macchine di Turing.\n\nOgni livello include il precedente.",
+    "t": "QA"
+  },
+  {
+    "q": "Ha senso classificare Java, HTML o XML come linguaggi di tipo 2 o 3?",
+    "a": "Solo rispetto a una grammatica formale precisamente definita.\n\nXML ben formato ha una struttura essenzialmente context-free con vincoli lessicali, mentre validazione e namespace aggiungono condizioni; HTML reale ha parsing standardizzato e recupero errori; Java combina lessico regolare, sintassi quasi context-free e vincoli semantici context-sensitive.\n\nUn'etichetta unica è una semplificazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un automa a pila?",
+    "a": "È un automa finito dotato di stack.\n\nUn NPDA riconosce esattamente i linguaggi context-free; lo stack consente memoria non limitata LIFO, utile per parentesi annidate.\n\nI PDA deterministici riconoscono un sottoinsieme proprio dei CFL.",
+    "t": "QA"
+  },
+  {
+    "q": "Che differenza c'è tra tautologia e contraddizione?",
+    "a": "Una formula è tautologia se è vera per ogni interpretazione; è contraddizione se è falsa per ogni interpretazione.\n\nUna formula soddisfacibile è vera in almeno un'interpretazione e contingente se è vera in alcune e falsa in altre.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si rappresenta concettualmente JSON in memoria?",
+    "a": "Oggetti come mappe da stringhe a valori, array come sequenze ordinate e valori primitivi come stringhe, numeri, booleani o null.\n\nL'implementazione concreta di Calculist dipende dal runtime: senza specifica non si può affermare un layout fisico preciso.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si verifica in Prolog se una lista è palindroma?",
+    "a": "Una definizione dichiarativa è `palindroma(L) :- reverse(L,L).\n\n` Se non si usa reverse predefinito, lo si implementa con accumulatore.\n\nIl predicato confronta struttura ed elementi e non modifica la lista.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si uniscono due liste ordinate in Prolog mantenendo ordine e occorrenze?",
+    "a": "`merge([],L,L). merge(L,[],L). merge([X|Xs],[Y|Ys],[X|Z]):-X=<Y,!,merge(Xs,[Y|Ys],Z). merge([X|Xs],[Y|Ys],[Y|Z]):-merge([X|Xs],Ys,Z).\n\n` Il cut rende mutuamente esclusivi i casi numerici.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si calcola una lista di somme prefisse in Prolog?",
+    "a": "Si usa un accumulatore: `adduplist(L,K):-prefix(L,0,K). prefix([],_,[]). prefix([X|Xs],A,[S|Ss]):-S is A+X,prefix(Xs,S,Ss).\n\n` Per `[1,2,3,4]` produce `[1,3,6,10]`.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si definisce Fibonacci in Prolog secondo f(0)=f(1)=1?",
+    "a": "`fib(0,1). fib(1,1). fib(N,F):-N>1,N1 is N-1,N2 is N-2,fib(N1,F1),fib(N2,F2),F is F1+F2.\n\n` È corretta ma esponenziale; accumulazione o tabling evitano ricalcoli.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si sostituiscono tutte le occorrenze di T con T1 in una lista Prolog?",
+    "a": "`subst(_,_,[],[]). subst(T,T1,[X|Xs],[Y|Ys]):- (X==T -> Y=T1 ; Y=X), subst(T,T1,Xs,Ys).` `==` confronta i termini senza istanziarli; `=` avrebbe semantica di unificazione e potrebbe sostituire elementi non identici.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si separano gli elementi di L1 presenti e assenti da L2 in Prolog?",
+    "a": "`split([],_,[],[]). split([X|Xs],L2,[X|In],Out):-memberchk(X,L2),!,split(Xs,L2,In,Out). split([X|Xs],L2,In,[X|Out]):-split(Xs,L2,In,Out).\n\n` Mantiene ordine e occorrenze di L1; per semantica insiemistica occorre anche rimuovere duplicati.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si verifica che due liste contengano gli stessi elementi con le stesse molteplicità?",
+    "a": "Si possono ordinare entrambe con msort e confrontarle: `stesso_multinsieme(A,B):-msort(A,SA),msort(B,SB),SA==SB.` `sort` invece elimina duplicati e verifica soltanto l'uguaglianza degli insiemi di elementi.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si definisce il numero di occorrenze di X in una lista Prolog?",
+    "a": "`occurrences(_,[],0). occurrences(X,[Y|Ys],N):-occurrences(X,Ys,N0),(X==Y->N is N0+1;N=N0).\n\n` Il confronto scelto determina se si vogliono identità, unificazione o uguaglianza aritmetica.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si ottiene l'elemento in posizione N di una lista Prolog?",
+    "a": "Con indici da uno: `occurs([X|_],1,X). occurs([_|Xs],N,X):-N>1,N1 is N-1,occurs(Xs,N1,X).\n\n` Il predicato fallisce per indice non positivo o oltre la lunghezza.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si trova il successore di X in una lista Prolog?",
+    "a": "`successivo(X,[X,Y|_],Y). successivo(X,[_|Xs],Y):-successivo(X,Xs,Y).\n\n` In backtracking restituisce i successori di tutte le occorrenze di X che non siano l'ultimo elemento.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si rimuovono gli elementi in posizione pari da una lista Prolog?",
+    "a": "`dispari([],[]). dispari([X],[X]). dispari([X,_|Xs],[X|Ys]):-dispari(Xs,Ys).\n\n` Conserva le posizioni 1,3,5,… assumendo indicizzazione da uno.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si cerca un elemento in una lista ordinata in Prolog?",
+    "a": "Su una normale lista concatenata, accedere al punto medio costa O(n), quindi una “ricerca binaria” ricorsiva perde il vantaggio O(log n).\n\nConviene usare alberi bilanciati o array indicizzabili; su lista, una scansione ordinata può arrestarsi quando supera il target.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa significa compilare un linguaggio con tipizzazione dinamica?",
+    "a": "Il compilatore genera codice che conserva tag di tipo a runtime e inserisce controlli/dispatch nelle operazioni, oppure usa specializzazione e JIT con guardie e deottimizzazione.\n\n“Dinamicamente tipizzato” non corrisponde a un livello della gerarchia di Chomsky.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Rice sui programmi?",
+    "a": "Ogni proprietà semantica non banale della funzione parziale calcolata da un programma è indecidibile.\n\nProprietà sintattiche del testo non rientrano nel teorema; alcune approssimazioni conservative restano analizzabili staticamente.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si costruisce un DFA per una espressione regolare?",
+    "a": "Si applica Thompson per ottenere un ε-NFA, subset construction per il DFA e opzionalmente minimizzazione.\n\nPer verificare una regex ambigua come `(a+b+)+bc` bisogna prima fissare la notazione: `+` può significare unione nel formalismo teorico o “una o più ripetizioni” nelle regex pratiche.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un modello logico e quando è minimale?",
+    "a": "Un modello è un'interpretazione che soddisfa tutte le formule o regole.\n\nÈ minimale rispetto all'inclusione se nessun sottoinsieme proprio degli atomi veri è ancora modello.\n\nMinimo significa invece contenuto in ogni modello ed è più forte di minimale.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si definiscono unione, intersezione e differenza di liste intese come insiemi?",
+    "a": "Si usa appartenenza per includere ogni elemento una sola volta: unione contiene elementi in almeno una lista, intersezione quelli in entrambe, differenza L1−L2 quelli solo in L1.\n\nPrima o durante il calcolo si eliminano duplicati; se si preservano occorrenze si sta operando su multinsiemi.",
+    "t": "QA"
+  }
 ]

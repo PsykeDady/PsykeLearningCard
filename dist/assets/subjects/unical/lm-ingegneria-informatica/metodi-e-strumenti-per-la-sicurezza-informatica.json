@@ -1,23 +1,107 @@
 [
-  {"q":"Quali tipi di XSS esistono e come si prevengono?","a":"Stored persiste lato server, reflected torna nella risposta e DOM-based nasce da source e sink insicuri nel browser. Si prevengono con encoding contestuale, template auto-escaping, sanitizzazione dell'HTML ammesso, API DOM sicure e CSP come difesa aggiuntiva.","t":"QA"},
-  {"q":"Che cos'è CSRF e chi genera il token anti-CSRF?","a":"CSRF induce un browser autenticato a eseguire un'azione non voluta. Il server genera un token imprevedibile, lo lega alla sessione o lo verifica con un segreto e il client lo restituisce fuori dai cookie automatici. SameSite e verifica Origin completano la protezione.","t":"QA"},
-  {"q":"Che cos'è il port scanning e quali limiti etici ha?","a":"È l'invio controllato di probe per identificare porte e servizi raggiungibili. Va eseguito soltanto su sistemi autorizzati perché può attivare log, causare carico o violare policy. Risultati open, closed e filtered dipendono da risposte e firewall e non provano da soli una vulnerabilità.","t":"QA"},
-  {"q":"Come si distinguono TCP connect, SYN, FIN, NULL e XMAS scan?","a":"Connect completa l'handshake; SYN osserva SYN/ACK o RST senza completarlo; FIN invia FIN, NULL nessun flag, XMAS FIN/PSH/URG. Secondo RFC, porte chiuse rispondono RST mentre open possono non rispondere, ma firewall e stack diversi rendono questi scan meno affidabili.","t":"QA"},
-  {"q":"Come funziona un UDP scan?","a":"Invia datagrammi specifici o vuoti: una risposta indica open, ICMP port unreachable indica closed, assenza di risposta può significare open o filtered. Rate limiting e natura connectionless lo rendono lento e ambiguo; probe applicativi migliorano l'identificazione.","t":"QA"},
-  {"q":"Che cos'è ASLR e che cosa serve per aggirarlo?","a":"Randomizza le basi di stack, heap, eseguibile e librerie. Una disclosure di un indirizzo può rivelare la base del singolo modulo perché gli offset interni sono fissi per quella build, ma non necessariamente derandomizza moduli indipendenti. PIE, entropia e prevenzione delle leak ne rafforzano l'efficacia.","t":"QA"},
-  {"q":"Qual è la differenza tra Partial RELRO e Full RELRO?","a":"RELRO rende read-only sezioni di relocation dopo il caricamento. Partial protegge alcune aree ma lascia la GOT delle funzioni scrivibile per lazy binding; Full risolve tutte le relocation all'avvio e rende l'intera GOT read-only. Full costa un po' di startup ma impedisce GOT overwrite.","t":"QA"},
-  {"q":"Qual è il ruolo di PLT e GOT nel linking dinamico ELF?","a":"La PLT contiene stub di chiamata nel codice; la GOT contiene indirizzi risolti di simboli e dati. Al primo uso il dynamic linker può risolvere la funzione e aggiornare la GOT, poi lo stub salta direttamente all'indirizzo. Due strutture separano codice eseguibile e puntatori rilocabili.","t":"QA"},
-  {"q":"Che cos'è GOT patching e come lo contrasta Full RELRO?","a":"Una scrittura arbitraria può sostituire una entry GOT per deviare una successiva chiamata. Full RELRO rende la GOT non scrivibile dopo il caricamento, eliminando questo target; restano da correggere la primitive di scrittura e altri possibili control data.","t":"QA"},
-  {"q":"Che cos'è uno stack canary e perché può contenere un byte nullo?","a":"È un valore posto tra buffer locali e dati di controllo e verificato prima del ritorno. Un byte nullo iniziale ostacola overflow basati su funzioni di stringa terminate da NUL, ma non ferma scritture binarie o disclosure. Canary, ASLR e NX sono mitigazioni complementari.","t":"QA"},
-  {"q":"Che cos'è ret2libc?","a":"Devia il controllo verso funzioni già presenti in libc, evitando codice in stack non eseguibile. Richiede conoscere indirizzi e predisporre argomenti secondo la calling convention. È una forma limitata di code reuse; ROP generalizza concatenando gadget e può effettuare chiamate multiple.","t":"QA"},
-  {"q":"Che cos'è Return-Oriented Programming?","a":"Concatena sequenze di istruzioni esistenti terminate da ret per eseguire operazioni arbitrarie senza iniettare codice. Tool come Ropper cercano anche gadget da offset non allineati nei byte x86, perciò ne trovano più di una lettura manuale del disassembly lineare.","t":"QA"},
-  {"q":"Che cos'è una format-string vulnerability?","a":"Input controllato viene passato come formato a funzioni variadiche, consentendo letture tramite specificatori e talvolta scritture. Si usa sempre un formato costante, si abilitano warning e hardening e si corregge il codice; ASLR e RELRO riducono soltanto alcuni impatti.","t":"QA"},
-  {"q":"Che cos'è un buffer overflow e quali mitigazioni lo limitano?","a":"Una scrittura oltre il buffer corrompe memoria adiacente. Bounds checking e linguaggi memory-safe eliminano la causa; canary, NX, ASLR/PIE, RELRO, CFI e shadow stack rendono più difficile lo sfruttamento ma non correggono il bug.","t":"QA"},
-  {"q":"Può verificarsi un buffer overflow senza chiamare funzioni considerate vulnerabili?","a":"Sì. Qualunque indice, lunghezza o aritmetica dei puntatori errata può causare una scrittura fuori limite, anche in cicli o copie manuali. Blacklist di funzioni non basta: servono validazione delle dimensioni, analisi, fuzzing, sanitizers e API memory-safe.","t":"QA"},
-  {"q":"Che cos'è ARP poisoning e come si mitiga?","a":"Messaggi ARP falsi associano l'IP di un host, spesso il gateway, al MAC dell'attaccante nella LAN, consentendo intercettazione o DoS. Dynamic ARP Inspection con DHCP snooping, segmentazione, associazioni statiche critiche e protocolli cifrati limitano impatto e opportunità.","t":"QA"},
-  {"q":"Come si previene SQL injection?","a":"Con query parametrizzate/prepared statement che separano codice e dati. Si aggiungono validazione, account DB con privilegi minimi, stored procedure sicure e gestione prudente degli errori. Escaping manuale e blacklist non sono difese generali.","t":"QA"},
-  {"q":"Che cos'è una blind SQL injection?","a":"L'applicazione non mostra direttamente il risultato, ma differenze booleane, temporali o di errore rivelano informazione un bit alla volta. Le difese sono le stesse della SQL injection; uniformare risposte o timeout può ridurre il canale ma non sostituisce parametrizzazione.","t":"QA"},
-  {"q":"A cosa serve GDB in un laboratorio di sicurezza?","a":"Permette di eseguire un processo sotto debugger, ispezionare registri e memoria, porre breakpoint e analizzare crash. È utile per comprendere difetti e verificare mitigazioni su binari autorizzati; simboli, core dump e build con sanitizers facilitano l'analisi.","t":"QA"},
-  {"q":"Che cos'è code reuse e perché aggira NX?","a":"Riutilizza codice già marcato eseguibile nel processo invece di inserire nuovo codice in memoria dati. ret2libc, ROP e JOP sono esempi. NX resta utile contro code injection; ASLR, CFI, CET/shadow stack e rimozione del bug contrastano il reuse.","t":"QA"},
-  {"q":"Un singolo indirizzo di libc basta sempre a neutralizzare ASLR?","a":"Può bastare a calcolare la base della stessa libc se versione e offset sono noti: base=leak−offset. Non rivela necessariamente base dell'eseguibile, stack, heap o altre librerie randomizzate indipendentemente e può essere insufficiente con versioni ignote o pointer mangling.","t":"QA"}
+  {
+    "q": "Quali tipi di XSS esistono e come si prevengono?",
+    "a": "Stored persiste lato server, reflected torna nella risposta e DOM-based nasce da source e sink insicuri nel browser.\n\nSi prevengono con encoding contestuale, template auto-escaping, sanitizzazione dell'HTML ammesso, API DOM sicure e CSP come difesa aggiuntiva.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è CSRF e chi genera il token anti-CSRF?",
+    "a": "CSRF induce un browser autenticato a eseguire un'azione non voluta.\n\nIl server genera un token imprevedibile, lo lega alla sessione o lo verifica con un segreto e il client lo restituisce fuori dai cookie automatici.\n\nSameSite e verifica Origin completano la protezione.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il port scanning e quali limiti etici ha?",
+    "a": "È l'invio controllato di probe per identificare porte e servizi raggiungibili.\n\nVa eseguito soltanto su sistemi autorizzati perché può attivare log, causare carico o violare policy.\n\nRisultati open, closed e filtered dipendono da risposte e firewall e non provano da soli una vulnerabilità.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si distinguono TCP connect, SYN, FIN, NULL e XMAS scan?",
+    "a": "Connect completa l'handshake; SYN osserva SYN/ACK o RST senza completarlo; FIN invia FIN, NULL nessun flag, XMAS FIN/PSH/URG.\n\nSecondo RFC, porte chiuse rispondono RST mentre open possono non rispondere, ma firewall e stack diversi rendono questi scan meno affidabili.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona un UDP scan?",
+    "a": "Invia datagrammi specifici o vuoti: una risposta indica open, ICMP port unreachable indica closed, assenza di risposta può significare open o filtered.\n\nRate limiting e natura connectionless lo rendono lento e ambiguo; probe applicativi migliorano l'identificazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è ASLR e che cosa serve per aggirarlo?",
+    "a": "Randomizza le basi di stack, heap, eseguibile e librerie.\n\nUna disclosure di un indirizzo può rivelare la base del singolo modulo perché gli offset interni sono fissi per quella build, ma non necessariamente derandomizza moduli indipendenti.\n\nPIE, entropia e prevenzione delle leak ne rafforzano l'efficacia.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra Partial RELRO e Full RELRO?",
+    "a": "RELRO rende read-only sezioni di relocation dopo il caricamento.\n\nPartial protegge alcune aree ma lascia la GOT delle funzioni scrivibile per lazy binding; Full risolve tutte le relocation all'avvio e rende l'intera GOT read-only.\n\nFull costa un po' di startup ma impedisce GOT overwrite.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è il ruolo di PLT e GOT nel linking dinamico ELF?",
+    "a": "La PLT contiene stub di chiamata nel codice; la GOT contiene indirizzi risolti di simboli e dati.\n\nAl primo uso il dynamic linker può risolvere la funzione e aggiornare la GOT, poi lo stub salta direttamente all'indirizzo.\n\nDue strutture separano codice eseguibile e puntatori rilocabili.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è GOT patching e come lo contrasta Full RELRO?",
+    "a": "Una scrittura arbitraria può sostituire una entry GOT per deviare una successiva chiamata.\n\nFull RELRO rende la GOT non scrivibile dopo il caricamento, eliminando questo target; restano da correggere la primitive di scrittura e altri possibili control data.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è uno stack canary e perché può contenere un byte nullo?",
+    "a": "È un valore posto tra buffer locali e dati di controllo e verificato prima del ritorno.\n\nUn byte nullo iniziale ostacola overflow basati su funzioni di stringa terminate da NUL, ma non ferma scritture binarie o disclosure.\n\nCanary, ASLR e NX sono mitigazioni complementari.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è ret2libc?",
+    "a": "Devia il controllo verso funzioni già presenti in libc, evitando codice in stack non eseguibile.\n\nRichiede conoscere indirizzi e predisporre argomenti secondo la calling convention.\n\nÈ una forma limitata di code reuse; ROP generalizza concatenando gadget e può effettuare chiamate multiple.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Return-Oriented Programming?",
+    "a": "Concatena sequenze di istruzioni esistenti terminate da ret per eseguire operazioni arbitrarie senza iniettare codice.\n\nTool come Ropper cercano anche gadget da offset non allineati nei byte x86, perciò ne trovano più di una lettura manuale del disassembly lineare.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una format-string vulnerability?",
+    "a": "Input controllato viene passato come formato a funzioni variadiche, consentendo letture tramite specificatori e talvolta scritture.\n\nSi usa sempre un formato costante, si abilitano warning e hardening e si corregge il codice; ASLR e RELRO riducono soltanto alcuni impatti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un buffer overflow e quali mitigazioni lo limitano?",
+    "a": "Una scrittura oltre il buffer corrompe memoria adiacente.\n\nBounds checking e linguaggi memory-safe eliminano la causa; canary, NX, ASLR/PIE, RELRO, CFI e shadow stack rendono più difficile lo sfruttamento ma non correggono il bug.",
+    "t": "QA"
+  },
+  {
+    "q": "Può verificarsi un buffer overflow senza chiamare funzioni considerate vulnerabili?",
+    "a": "Sì.\n\nQualunque indice, lunghezza o aritmetica dei puntatori errata può causare una scrittura fuori limite, anche in cicli o copie manuali.\n\nBlacklist di funzioni non basta: servono validazione delle dimensioni, analisi, fuzzing, sanitizers e API memory-safe.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è ARP poisoning e come si mitiga?",
+    "a": "Messaggi ARP falsi associano l'IP di un host, spesso il gateway, al MAC dell'attaccante nella LAN, consentendo intercettazione o DoS.\n\nDynamic ARP Inspection con DHCP snooping, segmentazione, associazioni statiche critiche e protocolli cifrati limitano impatto e opportunità.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si previene SQL injection?",
+    "a": "Con query parametrizzate/prepared statement che separano codice e dati.\n\nSi aggiungono validazione, account DB con privilegi minimi, stored procedure sicure e gestione prudente degli errori.\n\nEscaping manuale e blacklist non sono difese generali.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una blind SQL injection?",
+    "a": "L'applicazione non mostra direttamente il risultato, ma differenze booleane, temporali o di errore rivelano informazione un bit alla volta.\n\nLe difese sono le stesse della SQL injection; uniformare risposte o timeout può ridurre il canale ma non sostituisce parametrizzazione.",
+    "t": "QA"
+  },
+  {
+    "q": "A cosa serve GDB in un laboratorio di sicurezza?",
+    "a": "Permette di eseguire un processo sotto debugger, ispezionare registri e memoria, porre breakpoint e analizzare crash.\n\nÈ utile per comprendere difetti e verificare mitigazioni su binari autorizzati; simboli, core dump e build con sanitizers facilitano l'analisi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è code reuse e perché aggira NX?",
+    "a": "Riutilizza codice già marcato eseguibile nel processo invece di inserire nuovo codice in memoria dati. ret2libc, ROP e JOP sono esempi.\n\nNX resta utile contro code injection; ASLR, CFI, CET/shadow stack e rimozione del bug contrastano il reuse.",
+    "t": "QA"
+  },
+  {
+    "q": "Un singolo indirizzo di libc basta sempre a neutralizzare ASLR?",
+    "a": "Può bastare a calcolare la base della stessa libc se versione e offset sono noti: base=leak−offset.\n\nNon rivela necessariamente base dell'eseguibile, stack, heap o altre librerie randomizzate indipendentemente e può essere insufficiente con versioni ignote o pointer mangling.",
+    "t": "QA"
+  }
 ]

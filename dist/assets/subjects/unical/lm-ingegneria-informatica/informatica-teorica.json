@@ -1,54 +1,262 @@
 [
-  {"q":"Qual è la differenza tra P e NP?","a":"P contiene problemi decisionali risolvibili in tempo polinomiale da una macchina deterministica. NP contiene quelli risolvibili in tempo polinomiale da una macchina non deterministica, equivalentemente con certificati polinomiali verificabili in tempo polinomiale. È noto P⊆NP; non è noto se P=NP.","t":"QA"},
-  {"q":"Come si caratterizza NP mediante certificati e relazioni bilanciate?","a":"L∈NP se esiste una relazione R(x,y) decidibile in tempo polinomiale e un polinomio p tali che x∈L se e solo se esiste y, |y|≤p(|x|), con R(x,y). Da una computazione accettante si ricava y; viceversa una NTM indovina y e verifica R.","t":"QA"},
-  {"q":"Che cosa sono problemi NP-hard e NP-completi?","a":"H è NP-hard se ogni L∈NP si riduce a H in tempo polinomiale. È NP-completo se inoltre H∈NP. Un algoritmo polinomiale per un NP-completo implicherebbe P=NP; la definizione non afferma che problemi NP-hard siano necessariamente decisionali o in NP.","t":"QA"},
-  {"q":"Che cos'è una riduzione many-one polinomiale?","a":"È una funzione f calcolabile in tempo polinomiale tale che x∈A se e solo se f(x)∈B. Se A≤pB e B∈P allora A∈P; se A è NP-hard e A≤pB, allora B è NP-hard. Preserva la difficoltà senza nasconderla in una trasformazione costosa.","t":"QA"},
-  {"q":"Perché le riduzioni per NP-hardness devono essere efficienti?","a":"Una riduzione polinomiale garantisce che risolvere il target efficientemente risolverebbe efficientemente anche la sorgente. Consentire riduzioni esponenziali renderebbe la nozione troppo debole: la riduzione potrebbe risolvere essa stessa l'istanza e codificare banalmente la risposta, distruggendo il significato comparativo.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Cook–Levin?","a":"SAT è NP-completo. SAT appartiene a NP perché un'assegnazione si verifica rapidamente; ogni computazione non deterministica polinomiale viene codificata con una formula che descrive tableau, configurazione iniziale, transizioni valide e accettazione.","t":"QA"},
-  {"q":"Come si dimostra che Hamiltonian Cycle è NP-completo?","a":"Appartiene a NP perché un ciclo proposto si verifica in tempo polinomiale. Per la durezza si costruisce una riduzione polinomiale da un problema NP-completo, come 3SAT o Hamiltonian Path, usando gadget che obbligano il ciclo a rappresentare una scelta consistente. La sola appartenenza non basta.","t":"QA"},
-  {"q":"Qual è la relazione tra Vertex Cover e Independent Set?","a":"In un grafo G=(V,E), C è vertex cover se e solo se V\\C è independent set. Quindi esiste una cover di taglia ≤k se e solo se esiste un independent set di taglia ≥|V|−k. Questa trasformazione trasferisce NP-completezza tra le versioni decisionali.","t":"QA"},
-  {"q":"Come si dimostra che Subset Sum è NP-completo?","a":"È in NP perché una sotto-collezione si somma e verifica in tempo polinomiale. La NP-hardness si ottiene con una riduzione, per esempio da 3SAT, costruendo numeri a cifre posizionali in cui scegliere numeri codifica assegnamenti e clausole senza riporti indesiderati.","t":"QA"},
-  {"q":"Qual è la differenza tra knapsack 0–1 e knapsack frazionario?","a":"Nel 0–1 ogni oggetto si prende interamente o no ed è NP-hard; il greedy per rapporto valore/peso non è sempre ottimo. Nel frazionario si possono prendere frazioni e il greedy per rapporto decrescente è ottimo in tempo polinomiale.","t":"QA"},
-  {"q":"Perché la programmazione dinamica per knapsack è pseudo-polinomiale?","a":"La tabella richiede tempo O(nW), dove W è la capacità numerica. La dimensione binaria di W è log W, quindi O(nW) può essere esponenziale nella lunghezza dell'input. È polinomiale rispetto al valore numerico, non alla sua codifica.","t":"QA"},
-  {"q":"Che differenza c'è tra PTAS e FPTAS?","a":"Un PTAS produce per ogni ε>0 una soluzione entro 1±ε in tempo polinomiale nella dimensione dell'input, ma l'esponente può dipendere da 1/ε. Un FPTAS è polinomiale anche in 1/ε, quindi ha dipendenza più controllata dalla precisione.","t":"QA"},
-  {"q":"Come si ottiene un FPTAS per knapsack?","a":"Si scala e arrotonda i valori con fattore K proporzionale a ε·v_max/n, poi si esegue una DP pseudo-polinomiale sui valori scalati. La tabella diventa polinomiale in n e 1/ε e la perdita totale dovuta all'arrotondamento è al più una frazione ε dell'ottimo.","t":"QA"},
-  {"q":"Come si classificano algoritmi di approssimazione per problemi di massimo?","a":"Un algoritmo ha rapporto α≤1 se restituisce valore ALG≥α·OPT; equivalentemente si usa talvolta un fattore ρ≥1 con OPT/ALG≤ρ. La convenzione va dichiarata. Non tutti i problemi ammettono approssimazioni non banali salvo collassi di classi di complessità.","t":"QA"},
-  {"q":"Che cosa sono FPT e XP nella complessità parametrizzata?","a":"Un problema con parametro k è FPT se si risolve in f(k)·n^c, con c costante indipendente da k. È in XP se si risolve in n^{f(k)}. FPT separa l'esplosione nel solo parametro; XP è polinomiale per ogni k fissato ma può avere esponente crescente.","t":"QA"},
-  {"q":"Qual è un algoritmo FPT per Vertex Cover parametrizzato da k?","a":"Si sceglie un arco {u,v}: ogni cover deve contenere u oppure v. Si ramifica rimuovendo u o v e decrementando k, ottenendo O(2^k·poly(n)); si accetta quando non restano archi e si rifiuta se k<0. Kernelization può prima ridurre l'istanza.","t":"QA"},
-  {"q":"Perché NP è contenuta in PSPACE?","a":"Una NTM polinomiale ha un albero di computazione di profondità polinomiale. Una DTM può esplorarlo depth-first mantenendo una sola configurazione e lo stack del cammino, quindi spazio polinomiale, anche se tempo esponenziale. Non segue da “NP appartiene a Ptime”, che sarebbe falso salvo P=NP.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Savitch?","a":"Per s(n)≥log n, NSPACE(s(n))⊆DSPACE(s(n)²). Decide la raggiungibilità tra configurazioni dividendo ricorsivamente un cammino in due metà e provando configurazioni intermedie. Ne segue PSPACE=NPSPACE.","t":"QA"},
-  {"q":"Perché PSPACE è contenuta in EXPTIME?","a":"Una macchina che usa p(n) celle ha al più esponenzialmente molte configurazioni distinte. Se decide, non deve ripetere indefinitamente configurazioni; simulandone la computazione o esplorando il grafo delle configurazioni si ottiene tempo 2^{poly(n)}.","t":"QA"},
-  {"q":"Qual è un problema PSPACE-completo?","a":"TQBF, l'insieme delle formule booleane totalmente quantificate vere, è PSPACE-completo. Si valuta ricorsivamente usando spazio polinomiale; una computazione in spazio polinomiale si codifica mediante raggiungibilità tra configurazioni e quantificatori alternati.","t":"QA"},
-  {"q":"Quali inclusioni fondamentali collegano L, NL, P, NP, PSPACE ed EXP?","a":"L⊆NL⊆P⊆NP⊆PSPACE⊆EXP. È noto P⊊EXP per il teorema di gerarchia temporale. Molte altre uguaglianze o separazioni, come L vs NL, P vs NP e NP vs PSPACE, restano aperte.","t":"QA"},
-  {"q":"Che cos'è la gerarchia polinomiale?","a":"Σ₀^P=Π₀^P=P; Σ_{k+1}^P=NP^{Σ_k^P} e Π_{k+1}^P=coNP^{Σ_k^P}. Equivalentemente usa k alternanze di quantificatori polinomialmente limitati. PH è l'unione dei livelli; Δ₂^P=P^NP.","t":"QA"},
-  {"q":"Qual è la relazione tra NP e coNP?","a":"coNP contiene i complementi dei linguaggi in NP; UNSAT è coNP-completo. Non è noto se NP=coNP. P è chiusa per complemento, quindi coP=P. PSPACE è anch'essa chiusa per complemento.","t":"QA"},
-  {"q":"Che cos'è la classe DP?","a":"DP={L₁∩L₂ | L₁∈NP e L₂∈coNP}, primo livello della gerarchia booleana su NP. Non significa deterministic polynomial time. Un problema canonico è SAT-UNSAT: una formula è soddisfacibile e un'altra è insoddisfacibile.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Toda?","a":"L'intera gerarchia polinomiale è contenuta in P^#P. Significa che un algoritmo polinomiale con oracolo capace di contare soluzioni NP può risolvere tutti i livelli di PH, mostrando la grande potenza del counting.","t":"QA"},
-  {"q":"Che cos'è #P?","a":"È la classe di funzioni che contano i cammini accettanti di una NTM polinomiale, equivalenti al numero di certificati validi. #SAT è #P-completo. È una classe di funzioni, non di linguaggi decisionali, e può essere più difficile della sola domanda di esistenza.","t":"QA"},
-  {"q":"Che cosa sono circuiti NC e AC?","a":"NC^i usa famiglie uniformi di circuiti di profondità O(log^i n), dimensione polinomiale e fan-in limitato. AC^i consente fan-in illimitato per AND/OR con profondità O(log^i n). NC è l'unione degli NC^i e formalizza calcolo efficientemente parallelizzabile.","t":"QA"},
-  {"q":"Che cos'è l'uniformità di una famiglia di circuiti?","a":"Richiede che i circuiti C_n non siano scelti arbitrariamente ma generabili in modo efficiente da 1^n, per esempio in spazio logaritmico nella L-uniformità. Senza uniformità la famiglia può incorporare informazione non computabile come advice.","t":"QA"},
-  {"q":"Che cos'è P/poly e perché contiene linguaggi indecidibili?","a":"P/poly contiene linguaggi decisi da circuiti di dimensione polinomiale, equivalentemente da macchine polinomiali con advice polinomiale dipendente solo dalla lunghezza. Per un linguaggio unario, un bit di advice per lunghezza può codificare l'appartenenza, anche se la sequenza è indecidibile; quindi P/poly non è uniforme.","t":"QA"},
-  {"q":"Che cos'è una macchina di Turing con oracolo?","a":"È una TM con una query tape e un'operazione che decide in un passo l'appartenenza a un linguaggio oracolo. Classi come P^NP misurano la potenza di algoritmi polinomiali che possono fare query adattive a problemi NP.","t":"QA"},
-  {"q":"Che cos'è la classe IP e a quale classe equivale?","a":"IP contiene linguaggi con protocolli interattivi tra un prover illimitato e un verifier probabilistico polinomiale, con completezza alta e soundness bassa. Il teorema IP=PSPACE, dovuto a Shamir, mostra che l'interazione e la casualità verificano ogni problema PSPACE.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Rice?","a":"Ogni proprietà semantica non banale del linguaggio riconosciuto, o della funzione parziale calcolata, da una macchina di Turing è indecidibile. “Semantica” significa dipendere soltanto dal comportamento, non dalla sintassi del programma; non banale significa vera per alcune funzioni e falsa per altre.","t":"QA"},
-  {"q":"Qual è l'idea della dimostrazione del teorema di Rice?","a":"Si assume un decisore per la proprietà e si riduce il problema di accettazione/halting costruendo una macchina che, a seconda della simulazione, calcola una funzione con o senza la proprietà. Il decisore distinguerebbe i due casi e risolverebbe un problema indecidibile.","t":"QA"},
-  {"q":"Che differenza c'è tra insieme ricorsivo e ricorsivamente enumerabile?","a":"Un insieme ricorsivo ha un decisore che termina sempre. Un insieme r.e. ha un riconoscitore che termina e accetta i membri ma può divergere sui non membri, equivalentemente è il dominio o l'immagine di una funzione computabile appropriata. Ogni ricorsivo è r.e., non viceversa.","t":"QA"},
-  {"q":"Quando un insieme è ricorsivo usando il suo complementare?","a":"A è ricorsivo se e solo se sia A sia il complementare Ā sono r.e. Se entrambi hanno riconoscitori, li si esegue in dovetailing: uno dei due accetterà e decide l'input. L'altra direzione segue chiudendo i decidibili per complemento.","t":"QA"},
-  {"q":"Che cosa sono il linguaggio universale Lᵤ e il linguaggio diagonale?","a":"Lᵤ={⟨M,x⟩ | M accetta x} è r.e. ma indecidibile: una macchina universale simula M. Il complemento non è r.e. La notazione L_d varia nei corsi; per il linguaggio diagonale standard {x | M_x non accetta x}, esso non è r.e., mentre il suo complemento è r.e.","t":"QA"},
-  {"q":"Che cos'è l'insieme TOT?","a":"TOT={e | φ_e è definita su ogni input}. Non è ricorsivo né r.e.; si trova al livello Π₂ della gerarchia aritmetica. La totalità richiede una condizione universale sugli input seguita dall'esistenza di un tempo di arresto.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di ricorsione di Kleene?","a":"Per ogni trasformazione computabile di programmi esiste un programma che ha lo stesso comportamento della propria trasformazione. Formalizza programmi capaci di riferirsi al proprio codice e permette quine, autoreplicazione e costruzioni di punto fisso.","t":"QA"},
-  {"q":"Qual è la differenza tra funzione calcolabile e programma?","a":"Un programma è una descrizione sintattica con un indice; la funzione parziale è il comportamento semantico che calcola. Ogni programma determina una sola funzione parziale, ma la stessa funzione è calcolata da infiniti programmi, per esempio aggiungendo istruzioni irrilevanti.","t":"QA"},
-  {"q":"Che cos'è la funzione di Ackermann e perché è importante?","a":"È una funzione totale computabile che cresce più rapidamente di ogni funzione primitiva ricorsiva. Dimostra che le funzioni primitive ricorsive sono un sottoinsieme proprio delle funzioni ricorsive totali.","t":"QA"},
-  {"q":"Che cosa sono linguaggi regolari, DFA, NFA ed espressioni regolari?","a":"I linguaggi regolari sono riconosciuti da automi finiti e descritti da espressioni regolari. DFA e NFA hanno uguale potenza espressiva; un NFA può essere esponenzialmente più compatto. Ogni transizione consuma un simbolo, salvo ε-transizioni negli ε-NFA.","t":"QA"},
-  {"q":"Come si dimostra la chiusura dei linguaggi regolari per unione e stella?","a":"Per l'unione si usa un prodotto di DFA con stati accettanti quando almeno una componente accetta, oppure un ε-NFA con nuovo stato iniziale. Per L* si aggiunge un nuovo stato iniziale/accettante e transizioni ε che permettono zero o più esecuzioni dell'automa di L.","t":"QA"},
-  {"q":"Che cosa afferma il pumping lemma per linguaggi regolari?","a":"Se L è regolare, esiste p tale che ogni w∈L con |w|≥p si scrive xyz con |xy|≤p, |y|>0 e xy^iz∈L per ogni i≥0. È una condizione necessaria, usata per provare non regolarità; soddisfarla non basta a provare regolarità.","t":"QA"},
-  {"q":"Quali sono i tipi della gerarchia di Chomsky?","a":"Tipo 3: grammatiche regolari e automi finiti; tipo 2: context-free e pushdown automata non deterministici; tipo 1: context-sensitive e automi linearmente limitati; tipo 0: grammatiche non ristrette e macchine di Turing. Salendo aumenta l'espressività.","t":"QA"},
-  {"q":"Che cosa sono forma normale di Chomsky e di Greibach?","a":"In CNF le produzioni sono A→BC o A→a, più eventualmente S→ε; in GNF sono A→aα con α sequenza di nonterminali. Ogni CFL, con le usuali eccezioni per ε, ammette forme equivalenti; servono in prove e algoritmi di parsing.","t":"QA"},
-  {"q":"Che cos'è una grammatica ambigua e quando un linguaggio è intrinsecamente ambiguo?","a":"Una grammatica è ambigua se una stringa ha due distinti parse tree o derivazioni sinistre. Un linguaggio CFL è intrinsecamente ambiguo se ogni grammatica context-free che lo genera è ambigua. L'ambiguità della grammatica è indecidibile in generale.","t":"QA"},
-  {"q":"Che cosa afferma il pumping lemma per linguaggi context-free?","a":"Esiste p tale che ogni z abbastanza lunga in L si scrive uvwxy con |vwx|≤p, |vx|>0 e uv^iwx^iy∈L per ogni i≥0. La ripetizione deriva da un nonterminale ripetuto lungo un cammino sufficientemente alto del parse tree.","t":"QA"},
-  {"q":"Qual è la differenza di potenza tra PDA deterministici e non deterministici?","a":"I DPDA riconoscono i deterministic CFL, sottoinsieme proprio dei CFL riconosciuti dagli NPDA. Un esempio di separazione è {ww^R | w∈{0,1}*}: senza marcatore centrale un DPDA non sa determinare deterministicamente dove iniziare il confronto, mentre un NPDA può indovinarlo.","t":"QA"},
-  {"q":"Accettazione per stato finale e per pila vuota sono equivalenti per i PDA?","a":"Per i PDA non deterministici entrambe caratterizzano i CFL e si trasformano aggiungendo stati e simboli di fondo pila. Per i PDA deterministici le due modalità non sono equivalenti senza condizioni aggiuntive, perché l'accettazione per pila vuota interagisce con prefissi e determinismo.","t":"QA"},
-  {"q":"Si può decidere se due grammatiche context-free generano lo stesso linguaggio?","a":"No, l'equivalenza di CFG è indecidibile. Anche universalità, inclusione e ambiguità sono indecidibili in generale, mentre l'appartenenza di una stringa a un CFL è decidibile, per esempio con CYK dopo conversione in CNF.","t":"QA"},
-  {"q":"Una macchina di Turing multinastro è più potente di una mononastro?","a":"No, riconosce gli stessi linguaggi. Una TM mononastro può simulare i nastri con più tracce o zone delimitate, memorizzando le posizioni delle testine; la simulazione può aumentare il tempo, ma non la computabilità.","t":"QA"},
-  {"q":"Qual è il principio generale delle riduzioni per dimostrare indecidibilità?","a":"Si parte da un problema indecidibile A e si trasforma computabilmente ogni istanza x in f(x) tale che x∈A se e solo se f(x)∈B. Se B fosse decidibile, lo sarebbe A: contraddizione. La direzione della riduzione è quindi A≤B, dal problema noto al nuovo.","t":"QA"}
+  {
+    "q": "Qual è la differenza tra P e NP?",
+    "a": "P contiene problemi decisionali risolvibili in tempo polinomiale da una macchina deterministica.\n\nNP contiene quelli risolvibili in tempo polinomiale da una macchina non deterministica, equivalentemente con certificati polinomiali verificabili in tempo polinomiale.\n\nÈ noto P⊆NP; non è noto se P=NP.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si caratterizza NP mediante certificati e relazioni bilanciate?",
+    "a": "L∈NP se esiste una relazione R(x,y) decidibile in tempo polinomiale e un polinomio p tali che x∈L se e solo se esiste y, |y|≤p(|x|), con R(x,y).\n\nDa una computazione accettante si ricava y; viceversa una NTM indovina y e verifica R.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono problemi NP-hard e NP-completi?",
+    "a": "H è NP-hard se ogni L∈NP si riduce a H in tempo polinomiale.\n\nÈ NP-completo se inoltre H∈NP.\n\nUn algoritmo polinomiale per un NP-completo implicherebbe P=NP; la definizione non afferma che problemi NP-hard siano necessariamente decisionali o in NP.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una riduzione many-one polinomiale?",
+    "a": "È una funzione f calcolabile in tempo polinomiale tale che x∈A se e solo se f(x)∈B.\n\nSe A≤pB e B∈P allora A∈P; se A è NP-hard e A≤pB, allora B è NP-hard.\n\nPreserva la difficoltà senza nasconderla in una trasformazione costosa.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché le riduzioni per NP-hardness devono essere efficienti?",
+    "a": "Una riduzione polinomiale garantisce che risolvere il target efficientemente risolverebbe efficientemente anche la sorgente.\n\nConsentire riduzioni esponenziali renderebbe la nozione troppo debole: la riduzione potrebbe risolvere essa stessa l'istanza e codificare banalmente la risposta, distruggendo il significato comparativo.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Cook–Levin?",
+    "a": "SAT è NP-completo.\n\nSAT appartiene a NP perché un'assegnazione si verifica rapidamente; ogni computazione non deterministica polinomiale viene codificata con una formula che descrive tableau, configurazione iniziale, transizioni valide e accettazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si dimostra che Hamiltonian Cycle è NP-completo?",
+    "a": "Appartiene a NP perché un ciclo proposto si verifica in tempo polinomiale.\n\nPer la durezza si costruisce una riduzione polinomiale da un problema NP-completo, come 3SAT o Hamiltonian Path, usando gadget che obbligano il ciclo a rappresentare una scelta consistente.\n\nLa sola appartenenza non basta.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la relazione tra Vertex Cover e Independent Set?",
+    "a": "In un grafo G=(V,E), C è vertex cover se e solo se V\\C è independent set.\n\nQuindi esiste una cover di taglia ≤k se e solo se esiste un independent set di taglia ≥|V|−k.\n\nQuesta trasformazione trasferisce NP-completezza tra le versioni decisionali.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si dimostra che Subset Sum è NP-completo?",
+    "a": "È in NP perché una sotto-collezione si somma e verifica in tempo polinomiale.\n\nLa NP-hardness si ottiene con una riduzione, per esempio da 3SAT, costruendo numeri a cifre posizionali in cui scegliere numeri codifica assegnamenti e clausole senza riporti indesiderati.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra knapsack 0–1 e knapsack frazionario?",
+    "a": "Nel 0–1 ogni oggetto si prende interamente o no ed è NP-hard; il greedy per rapporto valore/peso non è sempre ottimo.\n\nNel frazionario si possono prendere frazioni e il greedy per rapporto decrescente è ottimo in tempo polinomiale.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché la programmazione dinamica per knapsack è pseudo-polinomiale?",
+    "a": "La tabella richiede tempo O(nW), dove W è la capacità numerica.\n\nLa dimensione binaria di W è log W, quindi O(nW) può essere esponenziale nella lunghezza dell'input.\n\nÈ polinomiale rispetto al valore numerico, non alla sua codifica.",
+    "t": "QA"
+  },
+  {
+    "q": "Che differenza c'è tra PTAS e FPTAS?",
+    "a": "Un PTAS produce per ogni ε>0 una soluzione entro 1±ε in tempo polinomiale nella dimensione dell'input, ma l'esponente può dipendere da 1/ε.\n\nUn FPTAS è polinomiale anche in 1/ε, quindi ha dipendenza più controllata dalla precisione.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si ottiene un FPTAS per knapsack?",
+    "a": "Si scala e arrotonda i valori con fattore K proporzionale a ε·v_max/n, poi si esegue una DP pseudo-polinomiale sui valori scalati.\n\nLa tabella diventa polinomiale in n e 1/ε e la perdita totale dovuta all'arrotondamento è al più una frazione ε dell'ottimo.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si classificano algoritmi di approssimazione per problemi di massimo?",
+    "a": "Un algoritmo ha rapporto α≤1 se restituisce valore ALG≥α·OPT; equivalentemente si usa talvolta un fattore ρ≥1 con OPT/ALG≤ρ.\n\nLa convenzione va dichiarata.\n\nNon tutti i problemi ammettono approssimazioni non banali salvo collassi di classi di complessità.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono FPT e XP nella complessità parametrizzata?",
+    "a": "Un problema con parametro k è FPT se si risolve in f(k)·n^c, con c costante indipendente da k.\n\nÈ in XP se si risolve in n^{f(k)}.\n\nFPT separa l'esplosione nel solo parametro; XP è polinomiale per ogni k fissato ma può avere esponente crescente.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è un algoritmo FPT per Vertex Cover parametrizzato da k?",
+    "a": "Si sceglie un arco {u,v}: ogni cover deve contenere u oppure v.\n\nSi ramifica rimuovendo u o v e decrementando k, ottenendo O(2^k·poly(n)); si accetta quando non restano archi e si rifiuta se k<0.\n\nKernelization può prima ridurre l'istanza.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché NP è contenuta in PSPACE?",
+    "a": "Una NTM polinomiale ha un albero di computazione di profondità polinomiale.\n\nUna DTM può esplorarlo depth-first mantenendo una sola configurazione e lo stack del cammino, quindi spazio polinomiale, anche se tempo esponenziale.\n\nNon segue da “NP appartiene a Ptime”, che sarebbe falso salvo P=NP.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Savitch?",
+    "a": "Per s(n)≥log n, NSPACE(s(n))⊆DSPACE(s(n)²).\n\nDecide la raggiungibilità tra configurazioni dividendo ricorsivamente un cammino in due metà e provando configurazioni intermedie.\n\nNe segue PSPACE=NPSPACE.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché PSPACE è contenuta in EXPTIME?",
+    "a": "Una macchina che usa p(n) celle ha al più esponenzialmente molte configurazioni distinte.\n\nSe decide, non deve ripetere indefinitamente configurazioni; simulandone la computazione o esplorando il grafo delle configurazioni si ottiene tempo 2^{poly(n)}.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è un problema PSPACE-completo?",
+    "a": "TQBF, l'insieme delle formule booleane totalmente quantificate vere, è PSPACE-completo.\n\nSi valuta ricorsivamente usando spazio polinomiale; una computazione in spazio polinomiale si codifica mediante raggiungibilità tra configurazioni e quantificatori alternati.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali inclusioni fondamentali collegano L, NL, P, NP, PSPACE ed EXP?",
+    "a": "L⊆NL⊆P⊆NP⊆PSPACE⊆EXP.\n\nÈ noto P⊊EXP per il teorema di gerarchia temporale.\n\nMolte altre uguaglianze o separazioni, come L vs NL, P vs NP e NP vs PSPACE, restano aperte.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la gerarchia polinomiale?",
+    "a": "Σ₀^P=Π₀^P=P; Σ_{k+1}^P=NP^{Σ_k^P} e Π_{k+1}^P=coNP^{Σ_k^P}.\n\nEquivalentemente usa k alternanze di quantificatori polinomialmente limitati.\n\nPH è l'unione dei livelli; Δ₂^P=P^NP.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la relazione tra NP e coNP?",
+    "a": "coNP contiene i complementi dei linguaggi in NP; UNSAT è coNP-completo.\n\nNon è noto se NP=coNP.\n\nP è chiusa per complemento, quindi coP=P.\n\nPSPACE è anch'essa chiusa per complemento.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la classe DP?",
+    "a": "DP={L₁∩L₂ | L₁∈NP e L₂∈coNP}, primo livello della gerarchia booleana su NP.\n\nNon significa deterministic polynomial time.\n\nUn problema canonico è SAT-UNSAT: una formula è soddisfacibile e un'altra è insoddisfacibile.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Toda?",
+    "a": "L'intera gerarchia polinomiale è contenuta in P^#P.\n\nSignifica che un algoritmo polinomiale con oracolo capace di contare soluzioni NP può risolvere tutti i livelli di PH, mostrando la grande potenza del counting.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è #P?",
+    "a": "È la classe di funzioni che contano i cammini accettanti di una NTM polinomiale, equivalenti al numero di certificati validi.\n\n#SAT è #P-completo.\n\nÈ una classe di funzioni, non di linguaggi decisionali, e può essere più difficile della sola domanda di esistenza.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono circuiti NC e AC?",
+    "a": "NC^i usa famiglie uniformi di circuiti di profondità O(log^i n), dimensione polinomiale e fan-in limitato.\n\nAC^i consente fan-in illimitato per AND/OR con profondità O(log^i n).\n\nNC è l'unione degli NC^i e formalizza calcolo efficientemente parallelizzabile.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è l'uniformità di una famiglia di circuiti?",
+    "a": "Richiede che i circuiti C_n non siano scelti arbitrariamente ma generabili in modo efficiente da 1^n, per esempio in spazio logaritmico nella L-uniformità.\n\nSenza uniformità la famiglia può incorporare informazione non computabile come advice.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è P/poly e perché contiene linguaggi indecidibili?",
+    "a": "P/poly contiene linguaggi decisi da circuiti di dimensione polinomiale, equivalentemente da macchine polinomiali con advice polinomiale dipendente solo dalla lunghezza.\n\nPer un linguaggio unario, un bit di advice per lunghezza può codificare l'appartenenza, anche se la sequenza è indecidibile; quindi P/poly non è uniforme.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una macchina di Turing con oracolo?",
+    "a": "È una TM con una query tape e un'operazione che decide in un passo l'appartenenza a un linguaggio oracolo.\n\nClassi come P^NP misurano la potenza di algoritmi polinomiali che possono fare query adattive a problemi NP.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la classe IP e a quale classe equivale?",
+    "a": "IP contiene linguaggi con protocolli interattivi tra un prover illimitato e un verifier probabilistico polinomiale, con completezza alta e soundness bassa.\n\nIl teorema IP=PSPACE, dovuto a Shamir, mostra che l'interazione e la casualità verificano ogni problema PSPACE.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Rice?",
+    "a": "Ogni proprietà semantica non banale del linguaggio riconosciuto, o della funzione parziale calcolata, da una macchina di Turing è indecidibile.\n\n“Semantica” significa dipendere soltanto dal comportamento, non dalla sintassi del programma; non banale significa vera per alcune funzioni e falsa per altre.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è l'idea della dimostrazione del teorema di Rice?",
+    "a": "Si assume un decisore per la proprietà e si riduce il problema di accettazione/halting costruendo una macchina che, a seconda della simulazione, calcola una funzione con o senza la proprietà.\n\nIl decisore distinguerebbe i due casi e risolverebbe un problema indecidibile.",
+    "t": "QA"
+  },
+  {
+    "q": "Che differenza c'è tra insieme ricorsivo e ricorsivamente enumerabile?",
+    "a": "Un insieme ricorsivo ha un decisore che termina sempre.\n\nUn insieme r.e. ha un riconoscitore che termina e accetta i membri ma può divergere sui non membri, equivalentemente è il dominio o l'immagine di una funzione computabile appropriata.\n\nOgni ricorsivo è r.e., non viceversa.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando un insieme è ricorsivo usando il suo complementare?",
+    "a": "A è ricorsivo se e solo se sia A sia il complementare Ā sono r.e.\n\nSe entrambi hanno riconoscitori, li si esegue in dovetailing: uno dei due accetterà e decide l'input.\n\nL'altra direzione segue chiudendo i decidibili per complemento.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono il linguaggio universale Lᵤ e il linguaggio diagonale?",
+    "a": "Lᵤ={⟨M,x⟩ | M accetta x} è r.e. ma indecidibile: una macchina universale simula M.\n\nIl complemento non è r.e.\n\nLa notazione L_d varia nei corsi; per il linguaggio diagonale standard {x | M_x non accetta x}, esso non è r.e., mentre il suo complemento è r.e.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è l'insieme TOT?",
+    "a": "TOT={e | φ_e è definita su ogni input}.\n\nNon è ricorsivo né r.e.; si trova al livello Π₂ della gerarchia aritmetica.\n\nLa totalità richiede una condizione universale sugli input seguita dall'esistenza di un tempo di arresto.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di ricorsione di Kleene?",
+    "a": "Per ogni trasformazione computabile di programmi esiste un programma che ha lo stesso comportamento della propria trasformazione.\n\nFormalizza programmi capaci di riferirsi al proprio codice e permette quine, autoreplicazione e costruzioni di punto fisso.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra funzione calcolabile e programma?",
+    "a": "Un programma è una descrizione sintattica con un indice; la funzione parziale è il comportamento semantico che calcola.\n\nOgni programma determina una sola funzione parziale, ma la stessa funzione è calcolata da infiniti programmi, per esempio aggiungendo istruzioni irrilevanti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la funzione di Ackermann e perché è importante?",
+    "a": "È una funzione totale computabile che cresce più rapidamente di ogni funzione primitiva ricorsiva.\n\nDimostra che le funzioni primitive ricorsive sono un sottoinsieme proprio delle funzioni ricorsive totali.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono linguaggi regolari, DFA, NFA ed espressioni regolari?",
+    "a": "I linguaggi regolari sono riconosciuti da automi finiti e descritti da espressioni regolari.\n\nDFA e NFA hanno uguale potenza espressiva; un NFA può essere esponenzialmente più compatto.\n\nOgni transizione consuma un simbolo, salvo ε-transizioni negli ε-NFA.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si dimostra la chiusura dei linguaggi regolari per unione e stella?",
+    "a": "Per l'unione si usa un prodotto di DFA con stati accettanti quando almeno una componente accetta, oppure un ε-NFA con nuovo stato iniziale.\n\nPer L* si aggiunge un nuovo stato iniziale/accettante e transizioni ε che permettono zero o più esecuzioni dell'automa di L.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il pumping lemma per linguaggi regolari?",
+    "a": "Se L è regolare, esiste p tale che ogni w∈L con |w|≥p si scrive xyz con |xy|≤p, |y|>0 e xy^iz∈L per ogni i≥0.\n\nÈ una condizione necessaria, usata per provare non regolarità; soddisfarla non basta a provare regolarità.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono i tipi della gerarchia di Chomsky?",
+    "a": "Tipo 3: grammatiche regolari e automi finiti; tipo 2: context-free e pushdown automata non deterministici; tipo 1: context-sensitive e automi linearmente limitati; tipo 0: grammatiche non ristrette e macchine di Turing.\n\nSalendo aumenta l'espressività.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono forma normale di Chomsky e di Greibach?",
+    "a": "In CNF le produzioni sono A→BC o A→a, più eventualmente S→ε; in GNF sono A→aα con α sequenza di nonterminali.\n\nOgni CFL, con le usuali eccezioni per ε, ammette forme equivalenti; servono in prove e algoritmi di parsing.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una grammatica ambigua e quando un linguaggio è intrinsecamente ambiguo?",
+    "a": "Una grammatica è ambigua se una stringa ha due distinti parse tree o derivazioni sinistre.\n\nUn linguaggio CFL è intrinsecamente ambiguo se ogni grammatica context-free che lo genera è ambigua.\n\nL'ambiguità della grammatica è indecidibile in generale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il pumping lemma per linguaggi context-free?",
+    "a": "Esiste p tale che ogni z abbastanza lunga in L si scrive uvwxy con |vwx|≤p, |vx|>0 e uv^iwx^iy∈L per ogni i≥0.\n\nLa ripetizione deriva da un nonterminale ripetuto lungo un cammino sufficientemente alto del parse tree.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza di potenza tra PDA deterministici e non deterministici?",
+    "a": "I DPDA riconoscono i deterministic CFL, sottoinsieme proprio dei CFL riconosciuti dagli NPDA.\n\nUn esempio di separazione è {ww^R | w∈{0,1}*}: senza marcatore centrale un DPDA non sa determinare deterministicamente dove iniziare il confronto, mentre un NPDA può indovinarlo.",
+    "t": "QA"
+  },
+  {
+    "q": "Accettazione per stato finale e per pila vuota sono equivalenti per i PDA?",
+    "a": "Per i PDA non deterministici entrambe caratterizzano i CFL e si trasformano aggiungendo stati e simboli di fondo pila.\n\nPer i PDA deterministici le due modalità non sono equivalenti senza condizioni aggiuntive, perché l'accettazione per pila vuota interagisce con prefissi e determinismo.",
+    "t": "QA"
+  },
+  {
+    "q": "Si può decidere se due grammatiche context-free generano lo stesso linguaggio?",
+    "a": "No, l'equivalenza di CFG è indecidibile.\n\nAnche universalità, inclusione e ambiguità sono indecidibili in generale, mentre l'appartenenza di una stringa a un CFL è decidibile, per esempio con CYK dopo conversione in CNF.",
+    "t": "QA"
+  },
+  {
+    "q": "Una macchina di Turing multinastro è più potente di una mononastro?",
+    "a": "No, riconosce gli stessi linguaggi.\n\nUna TM mononastro può simulare i nastri con più tracce o zone delimitate, memorizzando le posizioni delle testine; la simulazione può aumentare il tempo, ma non la computabilità.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è il principio generale delle riduzioni per dimostrare indecidibilità?",
+    "a": "Si parte da un problema indecidibile A e si trasforma computabilmente ogni istanza x in f(x) tale che x∈A se e solo se f(x)∈B.\n\nSe B fosse decidibile, lo sarebbe A: contraddizione.\n\nLa direzione della riduzione è quindi A≤B, dal problema noto al nuovo.",
+    "t": "QA"
+  }
 ]

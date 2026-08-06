@@ -1,47 +1,227 @@
 [
-  {"q":"Quali proprietà caratterizzano un sistema distribuito?","a":"Componenti su nodi autonomi comunicano via rete e cooperano offrendo un sistema coerente agli utenti. Concorrenza, assenza di clock globale, guasti parziali, latenza variabile, eterogeneità, trasparenza e scalabilità ne distinguono progettazione e failure model.","t":"QA"},
-  {"q":"Qual è la differenza tra tempo fisico e logico?","a":"Il tempo fisico approssima l'orario reale e richiede sincronizzazione con errore limitato. Il tempo logico ordina eventi secondo causalità senza misurare secondi: clock di Lamport e vector clock rappresentano relazioni happens-before.","t":"QA"},
-  {"q":"Che cosa afferma la relazione happens-before di Lamport?","a":"a→b se sono nello stesso processo e a precede b, se a è send e b la receive corrispondente, o per transitività. Se a→b allora L(a)<L(b) per un clock di Lamport; il contrario non vale, quindi timestamp scalari non rilevano concorrenza.","t":"QA"},
-  {"q":"Come funziona un clock logico di Lamport?","a":"Ogni processo incrementa il contatore prima di un evento; un messaggio porta il timestamp; alla ricezione si pone C=max(C,t_msg)+1. La coppia timestamp-id processo fornisce un ordine totale compatibile con happens-before, ma non identifica eventi concorrenti.","t":"QA"},
-  {"q":"Qual è la differenza tra consistenza sequenziale e causale?","a":"Sequenziale richiede che tutte le operazioni appaiano in un unico ordine che preserva l'ordine di ciascun processo, senza vincolo sul tempo reale. Causale ordina ugualmente solo operazioni causalmente collegate; scritture concorrenti possono essere viste in ordini diversi.","t":"QA"},
-  {"q":"Che cosa sono weak, release ed eventual consistency?","a":"Weak consistency garantisce coerenza solo attorno a sincronizzazioni; release distingue acquire e release e rende visibili le scritture prima del rilascio. Eventual consistency garantisce convergenza delle repliche se cessano gli aggiornamenti, non un ordine immediato comune.","t":"QA"},
-  {"q":"Quali garanzie client-centric completano l'eventual consistency?","a":"Read-your-writes, monotonic reads, monotonic writes e writes-follow-reads. Forniscono coerenza alla sessione di un singolo client anche quando repliche diverse sono temporaneamente divergenti; richiedono routing, versioni o metadata di sessione.","t":"QA"},
-  {"q":"Come si ottiene scalabilità in un sistema distribuito?","a":"Distribuzione e partizionamento, caching, replicazione, asincronia, gerarchie e decentralizzazione. Ogni tecnica ha costi: la replicazione aumenta letture/disponibilità ma rende costosi aggiornamenti e consistenza; caching introduce invalidazione e partizionamento può creare skew.","t":"QA"},
-  {"q":"Come funzionano gli algoritmi di elezione Bully e Ring?","a":"Bully elegge il processo attivo con ID massimo tramite messaggi ai nodi superiori; può generare molti messaggi. Ring inoltra un messaggio lungo un anello logico raccogliendo il massimo e poi annuncia il leader; richiede mantenere l'anello e gestire guasti.","t":"QA"},
-  {"q":"Quali famiglie di algoritmi di mutua esclusione distribuita esistono?","a":"Centralizzato: un coordinatore concede il lock; permission-based: Lamport/Ricart–Agrawala ordinano richieste e raccolgono permessi; token-based: solo chi possiede il token entra. Si confrontano messaggi, latenza, fault tolerance e fairness.","t":"QA"},
-  {"q":"Come funziona il challenge–response e che cos'è un reflection attack?","a":"Il verifier invia un nonce e il claimant restituisce una funzione autenticata del nonce con una chiave. Nonce unici impediscono replay. Protocolli simmetrici bidirezionali devono distinguere ruoli/direzioni: altrimenti una sfida può essere riflessa all'altra sessione per ottenere la risposta valida.","t":"QA"},
-  {"q":"Che ruolo hanno KDC e Kerberos?","a":"Il Key Distribution Center con Authentication Server e Ticket Granting Server rilascia TGT e service ticket. Il client usa chiavi di sessione senza inviare la password ai servizi. Ticket, timestamp, autenticators e clock sincronizzati contrastano replay.","t":"QA"},
-  {"q":"Qual è il problema del protocollo Needham–Schroeder simmetrico originale?","a":"Una vecchia session key compromessa può consentire replay del ticket e impersonificazione perché il server non prova la freschezza al responder. Timestamp e ticket lifetime in Kerberos, o nonce aggiuntivi, mitigano il problema di Denning–Sacco.","t":"QA"},
-  {"q":"Che cos'è RPC e che cosa significa one-way RPC?","a":"RPC fa apparire una chiamata remota come locale tramite stub, serializzazione, trasporto e dispatcher, ma rete e guasti impediscono trasparenza completa. One-way invia la richiesta senza risposta applicativa; non garantisce che l'operazione sia stata eseguita.","t":"QA"},
-  {"q":"Quali semantiche di invocazione può offrire RPC?","a":"Maybe, at-least-once e at-most-once. Retry può causare duplicati; request ID e cache delle risposte danno at-most-once entro i limiti dello stato conservato. Exactly-once generale non è garantibile attraverso guasti arbitrari senza assunzioni/transazioni.","t":"QA"},
-  {"q":"Come funziona Java RMI?","a":"Un'interfaccia estende Remote e dichiara RemoteException; l'oggetto viene esportato, registrato con bind/rebind e ottenuto con lookup. Lo stub inoltra le chiamate e serializza parametri/risultati. UnicastRemoteObject può essere esteso o usato tramite exportObject.","t":"QA"},
-  {"q":"Come vengono passati oggetti e riferimenti in Java RMI?","a":"Oggetti serializzabili non remoti sono passati per valore tramite copia; oggetti Remote esportati sono passati per riferimento come stub. Modifiche alla copia non aggiornano l'originale; chiamate sullo stub raggiungono l'oggetto remoto.","t":"QA"},
-  {"q":"Quali problemi presentano equals e hashCode con oggetti remoti RMI?","a":"Stub diversi possono riferire lo stesso endpoint remoto, mentre implementazioni remote non vanno confrontate come oggetti locali. equals/hashCode devono seguire il contratto dello stub e non basarsi su chiamate remote instabili; per identità applicativa conviene usare ID espliciti.","t":"QA"},
-  {"q":"Che cos'è il dynamic class downloading in RMI?","a":"Storicamente permetteva scaricare bytecode di classi non locali da codebase dichiarate. Introduce forti rischi di supply chain ed esecuzione; nelle Java moderne è limitato/deprecato in vari contesti e si preferiscono classpath controllati, serializzazione filtrata e nessun download non fidato.","t":"QA"},
-  {"q":"Come funziona il distributed garbage collection di RMI?","a":"Il server mantiene riferimenti remoti sulla base di lease rinnovati dai client e notifiche dirty/clean. Se un client scompare, la scadenza del lease permette liberare l'oggetto. È orientato alle remote interface/stub e deve tollerare messaggi persi e crash.","t":"QA"},
-  {"q":"Che cos'è una Distributed Hash Table?","a":"Distribuisce coppie chiave-valore su nodi tramite hashing consistente e overlay, offrendo lookup tipicamente O(log n) hop in sistemi come Chord. Stabilization e replica gestiscono join/leave e guasti; le query range sono meno naturali dell'accesso per chiave.","t":"QA"},
-  {"q":"Quali problemi affronta il naming distribuito?","a":"Associa nomi a entità/indirizzi con lookup, caching, replica, alias e mobilità. I nomi possono essere flat, gerarchici o attribute-based; cache e replica richiedono invalidazione/TTL, mentre DHT e DNS scambiano flessibilità, locality e consistenza.","t":"QA"},
-  {"q":"Qual è la differenza tra NFS e HDFS?","a":"NFS offre file system remoto general-purpose con semantica simile POSIX, aggiornamenti e accesso client-server. HDFS distribuisce grandi file in blocchi replicati, ottimizzato per throughput batch e write-once/append, con NameNode e DataNode. Non è un sostituto POSIX generale.","t":"QA"},
-  {"q":"Come funzionano cache, callback e delegation in NFS?","a":"I client cacheano dati/attributi e verificano freschezza. NFSv4 può usare callback e delegation: il server concede temporaneamente al client diritti di lettura/scrittura e li richiama in caso di conflitto, riducendo round trip ma richiedendo recovery.","t":"QA"},
-  {"q":"Come funziona il file locking in NFS?","a":"NFSv4 integra lock stateful, lease e recovery nel protocollo; versioni precedenti usavano servizi separati come NLM. I client rinnovano lease e il server coordina lock byte-range. Partizioni e reboot richiedono grace period e reclaim.","t":"QA"},
-  {"q":"Come funziona HDFS?","a":"Il NameNode conserva namespace e posizione dei blocchi; i DataNode conservano e replicano i blocchi e inviano heartbeat/report. Il client chiede metadata al NameNode ma trasferisce dati direttamente coi DataNode. La replica considera rack e failure domain.","t":"QA"},
-  {"q":"Che cos'è Coda e come gestisce disconnessioni e repliche?","a":"È un file system distribuito derivato da AFS che usa cache persistente client, replica sui server e optimistic replication. In disconnessione opera su un hoard set locale e al reintegro reintegra modifiche, rilevando conflitti da risolvere.","t":"QA"},
-  {"q":"Che differenza c'è tra grid computing e cloud computing?","a":"La grid federava risorse eterogenee tra domini amministrativi per job scientifici, con middleware e virtual organization. Il cloud offre risorse virtualizzate on-demand, elasticità, self-service e metering sotto un provider. Modelli e tecnologie possono sovrapporsi.","t":"QA"},
-  {"q":"Che cos'è Globus GRAM?","a":"Il Grid Resource Allocation and Management riceve richieste di job, autentica/autorizza, traduce la richiesta verso lo scheduler locale e monitora lo stato. Non alloca direttamente hardware: media tra middleware grid e resource manager del sito.","t":"QA"},
-  {"q":"Come funziona HTCondor e che cosa sono le ClassAds?","a":"HTCondor gestisce high-throughput jobs. Submitter e risorse pubblicano ClassAds, record di attributi ed espressioni; il negotiator/matchmaker abbina Requirements e Rank, poi lo schedd avvia il job sullo startd selezionato.","t":"QA"},
-  {"q":"Come si integrano HTCondor e Globus?","a":"Condor-G usava Globus come protocollo di accesso a risorse grid remote: HTCondor gestiva coda, retry e dipendenze, mentre GRAM inoltrava il job allo scheduler remoto. L'architettura separava gestione high-throughput e accesso federato.","t":"QA"},
-  {"q":"Qual è la differenza tra IaaS, PaaS e SaaS?","a":"IaaS espone compute, rete e storage virtuali e il cliente gestisce OS/app; PaaS gestisce runtime e piattaforma e il cliente distribuisce codice/dati; SaaS offre l'applicazione completa. Salendo aumenta la gestione del provider e diminuisce il controllo del cliente.","t":"QA"},
-  {"q":"Che cos'è Eucalyptus?","a":"È una piattaforma storica per cloud IaaS privati compatibile con API AWS, con componenti per cloud, cluster, nodi, storage e immagini. Orchestra VM e rete su infrastruttura locale; va inquadrata nel programma del corso più che come architettura cloud moderna dominante.","t":"QA"},
-  {"q":"Qual è la differenza tra EC2, S3 e DNS/Route 53?","a":"EC2 offre macchine virtuali/compute; S3 object storage tramite bucket e key; Route 53 è DNS gestito e health checking/routing. Risolvono rispettivamente esecuzione, persistenza di oggetti e naming/routing, e vengono combinati in architetture cloud.","t":"QA"},
-  {"q":"Qual è la differenza tra object, block e file storage?","a":"Object storage usa oggetti completi indirizzati da key e metadata, scalabile ma non POSIX; block storage espone volumi a blocchi da formattare e montare, adatto a dischi VM/database; file storage espone gerarchie e condivisione con protocolli come NFS/SMB.","t":"QA"},
-  {"q":"Come sono strutturate le Azure Table?","a":"Sono key-value/NoSQL con entità raggruppate per PartitionKey e identificate da RowKey; la coppia è unica. Le entità hanno proprietà tipizzate e Timestamp di sistema. Query sulla stessa partition sono efficienti e alcune operazioni batch sono atomiche entro partizione.","t":"QA"},
-  {"q":"Quali meccanismi offre Azure Queue Storage?","a":"Un producer inserisce messaggi e un consumer li riceve rendendoli invisibili per un visibility timeout, poi li cancella dopo successo. Se non vengono cancellati riappaiono, quindi la consegna è almeno una volta e i consumer devono essere idempotenti. Metadata includono ID, receipt e tempi.","t":"QA"},
-  {"q":"Che cos'è una CDN?","a":"Replica/cache contenuti in edge location vicine agli utenti, riducendo latenza e carico sull'origine. DNS o anycast indirizzano verso un edge; TTL, cache key e invalidazione governano freschezza. HTTPS e protezione dell'origine restano necessari.","t":"QA"},
-  {"q":"Qual è la differenza tra container Docker e macchine virtuali?","a":"I container condividono il kernel host e isolano processi con namespace/cgroup, quindi avvio e immagini sono leggeri. Le VM eseguono kernel separati sopra hypervisor e offrono isolamento più forte. Container Windows richiedono kernel Windows compatibile; non eseguono un kernel Linux nativamente senza VM.","t":"QA"},
-  {"q":"Come funzionano layer, volumi e bind mount in Docker?","a":"Un Dockerfile crea layer immutabili dell'immagine e il container aggiunge un layer scrivibile effimero. I volume sono gestiti dal motore, portabili e indipendenti dal path host; bind mount espongono un path host preciso, con maggiore accoppiamento e rischio.","t":"QA"},
-  {"q":"Come funziona MapReduce e che ruolo ha il combiner?","a":"Map emette coppie; partition/shuffle raggruppa per chiave; Reduce aggrega. Il combiner può preaggregare localmente per ridurre rete, ma è opzionale e ripetibile: è corretto solo se la funzione preserva il risultato sotto composizione.","t":"QA"},
-  {"q":"Quali primitive fondamentali offre MPI?","a":"Point-to-point send/receive bloccanti e non bloccanti, collective come broadcast, scatter/gather, reduce/allreduce e barrier, communicator e datatype. MPI definisce semantica di messaggi tra processi, non memoria condivisa automatica.","t":"QA"},
-  {"q":"Che cos'è un agente mobile e che differenza c'è tra mobilità forte e debole?","a":"Un agente mobile sposta codice e stato tra nodi. La mobilità debole riparte da un entry point con dati trasferiti; quella forte conserva anche stack e punto di esecuzione. Quest'ultima è più trasparente ma difficile per portabilità, sicurezza e runtime.","t":"QA"},
-  {"q":"Che cos'è un JSON Web Token e quali verifiche richiede?","a":"È un contenitore header.payload.signature codificato base64url, firmato o autenticato ma non cifrato per default. Il verifier deve fissare algoritmi consentiti, verificare firma, issuer, audience, scadenza/not-before e proteggere chiavi; dati sensibili non vanno nel payload in chiaro.","t":"QA"},
-  {"q":"Che cos'è una Java Card?","a":"È una piattaforma per eseguire applet Java ristrette su smart card e secure element. Offre isolamento, memoria persistente limitata e API crittografiche; installazione e comunicazione avvengono tramite protocolli specifici come APDU/GlobalPlatform.","t":"QA"}
+  {
+    "q": "Quali proprietà caratterizzano un sistema distribuito?",
+    "a": "Componenti su nodi autonomi comunicano via rete e cooperano offrendo un sistema coerente agli utenti.\n\nConcorrenza, assenza di clock globale, guasti parziali, latenza variabile, eterogeneità, trasparenza e scalabilità ne distinguono progettazione e failure model.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra tempo fisico e logico?",
+    "a": "Il tempo fisico approssima l'orario reale e richiede sincronizzazione con errore limitato.\n\nIl tempo logico ordina eventi secondo causalità senza misurare secondi: clock di Lamport e vector clock rappresentano relazioni happens-before.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma la relazione happens-before di Lamport?",
+    "a": "a→b se sono nello stesso processo e a precede b, se a è send e b la receive corrispondente, o per transitività.\n\nSe a→b allora L(a)<L(b) per un clock di Lamport; il contrario non vale, quindi timestamp scalari non rilevano concorrenza.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona un clock logico di Lamport?",
+    "a": "Ogni processo incrementa il contatore prima di un evento; un messaggio porta il timestamp; alla ricezione si pone C=max(C,t_msg)+1.\n\nLa coppia timestamp-id processo fornisce un ordine totale compatibile con happens-before, ma non identifica eventi concorrenti.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra consistenza sequenziale e causale?",
+    "a": "Sequenziale richiede che tutte le operazioni appaiano in un unico ordine che preserva l'ordine di ciascun processo, senza vincolo sul tempo reale.\n\nCausale ordina ugualmente solo operazioni causalmente collegate; scritture concorrenti possono essere viste in ordini diversi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono weak, release ed eventual consistency?",
+    "a": "Weak consistency garantisce coerenza solo attorno a sincronizzazioni; release distingue acquire e release e rende visibili le scritture prima del rilascio.\n\nEventual consistency garantisce convergenza delle repliche se cessano gli aggiornamenti, non un ordine immediato comune.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali garanzie client-centric completano l'eventual consistency?",
+    "a": "Read-your-writes, monotonic reads, monotonic writes e writes-follow-reads.\n\nForniscono coerenza alla sessione di un singolo client anche quando repliche diverse sono temporaneamente divergenti; richiedono routing, versioni o metadata di sessione.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si ottiene scalabilità in un sistema distribuito?",
+    "a": "Distribuzione e partizionamento, caching, replicazione, asincronia, gerarchie e decentralizzazione.\n\nOgni tecnica ha costi: la replicazione aumenta letture/disponibilità ma rende costosi aggiornamenti e consistenza; caching introduce invalidazione e partizionamento può creare skew.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano gli algoritmi di elezione Bully e Ring?",
+    "a": "Bully elegge il processo attivo con ID massimo tramite messaggi ai nodi superiori; può generare molti messaggi.\n\nRing inoltra un messaggio lungo un anello logico raccogliendo il massimo e poi annuncia il leader; richiede mantenere l'anello e gestire guasti.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali famiglie di algoritmi di mutua esclusione distribuita esistono?",
+    "a": "Centralizzato: un coordinatore concede il lock; permission-based: Lamport/Ricart–Agrawala ordinano richieste e raccolgono permessi; token-based: solo chi possiede il token entra.\n\nSi confrontano messaggi, latenza, fault tolerance e fairness.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il challenge–response e che cos'è un reflection attack?",
+    "a": "Il verifier invia un nonce e il claimant restituisce una funzione autenticata del nonce con una chiave.\n\nNonce unici impediscono replay.\n\nProtocolli simmetrici bidirezionali devono distinguere ruoli/direzioni: altrimenti una sfida può essere riflessa all'altra sessione per ottenere la risposta valida.",
+    "t": "QA"
+  },
+  {
+    "q": "Che ruolo hanno KDC e Kerberos?",
+    "a": "Il Key Distribution Center con Authentication Server e Ticket Granting Server rilascia TGT e service ticket.\n\nIl client usa chiavi di sessione senza inviare la password ai servizi.\n\nTicket, timestamp, autenticators e clock sincronizzati contrastano replay.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è il problema del protocollo Needham–Schroeder simmetrico originale?",
+    "a": "Una vecchia session key compromessa può consentire replay del ticket e impersonificazione perché il server non prova la freschezza al responder.\n\nTimestamp e ticket lifetime in Kerberos, o nonce aggiuntivi, mitigano il problema di Denning–Sacco.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è RPC e che cosa significa one-way RPC?",
+    "a": "RPC fa apparire una chiamata remota come locale tramite stub, serializzazione, trasporto e dispatcher, ma rete e guasti impediscono trasparenza completa.\n\nOne-way invia la richiesta senza risposta applicativa; non garantisce che l'operazione sia stata eseguita.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali semantiche di invocazione può offrire RPC?",
+    "a": "Maybe, at-least-once e at-most-once.\n\nRetry può causare duplicati; request ID e cache delle risposte danno at-most-once entro i limiti dello stato conservato.\n\nExactly-once generale non è garantibile attraverso guasti arbitrari senza assunzioni/transazioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona Java RMI?",
+    "a": "Un'interfaccia estende Remote e dichiara RemoteException; l'oggetto viene esportato, registrato con bind/rebind e ottenuto con lookup.\n\nLo stub inoltra le chiamate e serializza parametri/risultati.\n\nUnicastRemoteObject può essere esteso o usato tramite exportObject.",
+    "t": "QA"
+  },
+  {
+    "q": "Come vengono passati oggetti e riferimenti in Java RMI?",
+    "a": "Oggetti serializzabili non remoti sono passati per valore tramite copia; oggetti Remote esportati sono passati per riferimento come stub.\n\nModifiche alla copia non aggiornano l'originale; chiamate sullo stub raggiungono l'oggetto remoto.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali problemi presentano equals e hashCode con oggetti remoti RMI?",
+    "a": "Stub diversi possono riferire lo stesso endpoint remoto, mentre implementazioni remote non vanno confrontate come oggetti locali. equals/hashCode devono seguire il contratto dello stub e non basarsi su chiamate remote instabili; per identità applicativa conviene usare ID espliciti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il dynamic class downloading in RMI?",
+    "a": "Storicamente permetteva scaricare bytecode di classi non locali da codebase dichiarate.\n\nIntroduce forti rischi di supply chain ed esecuzione; nelle Java moderne è limitato/deprecato in vari contesti e si preferiscono classpath controllati, serializzazione filtrata e nessun download non fidato.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il distributed garbage collection di RMI?",
+    "a": "Il server mantiene riferimenti remoti sulla base di lease rinnovati dai client e notifiche dirty/clean.\n\nSe un client scompare, la scadenza del lease permette liberare l'oggetto.\n\nÈ orientato alle remote interface/stub e deve tollerare messaggi persi e crash.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una Distributed Hash Table?",
+    "a": "Distribuisce coppie chiave-valore su nodi tramite hashing consistente e overlay, offrendo lookup tipicamente O(log n) hop in sistemi come Chord.\n\nStabilization e replica gestiscono join/leave e guasti; le query range sono meno naturali dell'accesso per chiave.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali problemi affronta il naming distribuito?",
+    "a": "Associa nomi a entità/indirizzi con lookup, caching, replica, alias e mobilità.\n\nI nomi possono essere flat, gerarchici o attribute-based; cache e replica richiedono invalidazione/TTL, mentre DHT e DNS scambiano flessibilità, locality e consistenza.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra NFS e HDFS?",
+    "a": "NFS offre file system remoto general-purpose con semantica simile POSIX, aggiornamenti e accesso client-server.\n\nHDFS distribuisce grandi file in blocchi replicati, ottimizzato per throughput batch e write-once/append, con NameNode e DataNode.\n\nNon è un sostituto POSIX generale.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano cache, callback e delegation in NFS?",
+    "a": "I client cacheano dati/attributi e verificano freschezza.\n\nNFSv4 può usare callback e delegation: il server concede temporaneamente al client diritti di lettura/scrittura e li richiama in caso di conflitto, riducendo round trip ma richiedendo recovery.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il file locking in NFS?",
+    "a": "NFSv4 integra lock stateful, lease e recovery nel protocollo; versioni precedenti usavano servizi separati come NLM.\n\nI client rinnovano lease e il server coordina lock byte-range.\n\nPartizioni e reboot richiedono grace period e reclaim.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona HDFS?",
+    "a": "Il NameNode conserva namespace e posizione dei blocchi; i DataNode conservano e replicano i blocchi e inviano heartbeat/report.\n\nIl client chiede metadata al NameNode ma trasferisce dati direttamente coi DataNode.\n\nLa replica considera rack e failure domain.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Coda e come gestisce disconnessioni e repliche?",
+    "a": "È un file system distribuito derivato da AFS che usa cache persistente client, replica sui server e optimistic replication.\n\nIn disconnessione opera su un hoard set locale e al reintegro reintegra modifiche, rilevando conflitti da risolvere.",
+    "t": "QA"
+  },
+  {
+    "q": "Che differenza c'è tra grid computing e cloud computing?",
+    "a": "La grid federava risorse eterogenee tra domini amministrativi per job scientifici, con middleware e virtual organization.\n\nIl cloud offre risorse virtualizzate on-demand, elasticità, self-service e metering sotto un provider.\n\nModelli e tecnologie possono sovrapporsi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Globus GRAM?",
+    "a": "Il Grid Resource Allocation and Management riceve richieste di job, autentica/autorizza, traduce la richiesta verso lo scheduler locale e monitora lo stato.\n\nNon alloca direttamente hardware: media tra middleware grid e resource manager del sito.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona HTCondor e che cosa sono le ClassAds?",
+    "a": "HTCondor gestisce high-throughput jobs.\n\nSubmitter e risorse pubblicano ClassAds, record di attributi ed espressioni; il negotiator/matchmaker abbina Requirements e Rank, poi lo schedd avvia il job sullo startd selezionato.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si integrano HTCondor e Globus?",
+    "a": "Condor-G usava Globus come protocollo di accesso a risorse grid remote: HTCondor gestiva coda, retry e dipendenze, mentre GRAM inoltrava il job allo scheduler remoto.\n\nL'architettura separava gestione high-throughput e accesso federato.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra IaaS, PaaS e SaaS?",
+    "a": "IaaS espone compute, rete e storage virtuali e il cliente gestisce OS/app; PaaS gestisce runtime e piattaforma e il cliente distribuisce codice/dati; SaaS offre l'applicazione completa.\n\nSalendo aumenta la gestione del provider e diminuisce il controllo del cliente.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è Eucalyptus?",
+    "a": "È una piattaforma storica per cloud IaaS privati compatibile con API AWS, con componenti per cloud, cluster, nodi, storage e immagini.\n\nOrchestra VM e rete su infrastruttura locale; va inquadrata nel programma del corso più che come architettura cloud moderna dominante.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra EC2, S3 e DNS/Route 53?",
+    "a": "EC2 offre macchine virtuali/compute; S3 object storage tramite bucket e key; Route 53 è DNS gestito e health checking/routing.\n\nRisolvono rispettivamente esecuzione, persistenza di oggetti e naming/routing, e vengono combinati in architetture cloud.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra object, block e file storage?",
+    "a": "Object storage usa oggetti completi indirizzati da key e metadata, scalabile ma non POSIX; block storage espone volumi a blocchi da formattare e montare, adatto a dischi VM/database; file storage espone gerarchie e condivisione con protocolli come NFS/SMB.",
+    "t": "QA"
+  },
+  {
+    "q": "Come sono strutturate le Azure Table?",
+    "a": "Sono key-value/NoSQL con entità raggruppate per PartitionKey e identificate da RowKey; la coppia è unica.\n\nLe entità hanno proprietà tipizzate e Timestamp di sistema.\n\nQuery sulla stessa partition sono efficienti e alcune operazioni batch sono atomiche entro partizione.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali meccanismi offre Azure Queue Storage?",
+    "a": "Un producer inserisce messaggi e un consumer li riceve rendendoli invisibili per un visibility timeout, poi li cancella dopo successo.\n\nSe non vengono cancellati riappaiono, quindi la consegna è almeno una volta e i consumer devono essere idempotenti.\n\nMetadata includono ID, receipt e tempi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una CDN?",
+    "a": "Replica/cache contenuti in edge location vicine agli utenti, riducendo latenza e carico sull'origine.\n\nDNS o anycast indirizzano verso un edge; TTL, cache key e invalidazione governano freschezza.\n\nHTTPS e protezione dell'origine restano necessari.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra container Docker e macchine virtuali?",
+    "a": "I container condividono il kernel host e isolano processi con namespace/cgroup, quindi avvio e immagini sono leggeri.\n\nLe VM eseguono kernel separati sopra hypervisor e offrono isolamento più forte.\n\nContainer Windows richiedono kernel Windows compatibile; non eseguono un kernel Linux nativamente senza VM.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano layer, volumi e bind mount in Docker?",
+    "a": "Un Dockerfile crea layer immutabili dell'immagine e il container aggiunge un layer scrivibile effimero.\n\nI volume sono gestiti dal motore, portabili e indipendenti dal path host; bind mount espongono un path host preciso, con maggiore accoppiamento e rischio.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona MapReduce e che ruolo ha il combiner?",
+    "a": "Map emette coppie; partition/shuffle raggruppa per chiave; Reduce aggrega.\n\nIl combiner può preaggregare localmente per ridurre rete, ma è opzionale e ripetibile: è corretto solo se la funzione preserva il risultato sotto composizione.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali primitive fondamentali offre MPI?",
+    "a": "Point-to-point send/receive bloccanti e non bloccanti, collective come broadcast, scatter/gather, reduce/allreduce e barrier, communicator e datatype.\n\nMPI definisce semantica di messaggi tra processi, non memoria condivisa automatica.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un agente mobile e che differenza c'è tra mobilità forte e debole?",
+    "a": "Un agente mobile sposta codice e stato tra nodi.\n\nLa mobilità debole riparte da un entry point con dati trasferiti; quella forte conserva anche stack e punto di esecuzione.\n\nQuest'ultima è più trasparente ma difficile per portabilità, sicurezza e runtime.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un JSON Web Token e quali verifiche richiede?",
+    "a": "È un contenitore header.payload.signature codificato base64url, firmato o autenticato ma non cifrato per default.\n\nIl verifier deve fissare algoritmi consentiti, verificare firma, issuer, audience, scadenza/not-before e proteggere chiavi; dati sensibili non vanno nel payload in chiaro.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una Java Card?",
+    "a": "È una piattaforma per eseguire applet Java ristrette su smart card e secure element.\n\nOffre isolamento, memoria persistente limitata e API crittografiche; installazione e comunicazione avvengono tramite protocolli specifici come APDU/GlobalPlatform.",
+    "t": "QA"
+  }
 ]

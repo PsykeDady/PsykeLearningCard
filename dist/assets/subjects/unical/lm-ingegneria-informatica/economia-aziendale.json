@@ -1,9 +1,37 @@
 [
-  {"q":"Qual è la differenza tra gruppo economico e gruppo finanziario?","a":"Nel gruppo economico più aziende, pur giuridicamente autonome, sono sottoposte a una direzione unitaria e perseguono un disegno imprenditoriale comune. Nel gruppo finanziario il legame nasce soprattutto da partecipazioni e controllo del capitale, senza che vi sia necessariamente una forte integrazione tecnico-economica delle attività.","t":"QA"},
-  {"q":"Qual è la differenza tra aziende di produzione e aziende di erogazione?","a":"Le aziende di produzione realizzano beni o servizi destinati allo scambio sul mercato e mirano a remunerare durevolmente i fattori impiegati. Le aziende di erogazione raccolgono e impiegano risorse per soddisfare direttamente bisogni di membri o beneficiari; l'equilibrio economico resta necessario anche se il profitto non è il fine principale.","t":"QA"},
-  {"q":"Che cosa si intende per concezione circolare del finalismo d'impresa?","a":"Sopravvivenza, equilibrio economico, soddisfazione degli stakeholder e sviluppo non formano una catena con un unico fine ultimo, ma si alimentano reciprocamente. La creazione di valore sostiene continuità e crescita; queste permettono nuovi investimenti e una migliore risposta agli stakeholder.","t":"QA"},
-  {"q":"Che cosa significa produzione dal punto di vista economico?","a":"È la creazione o l'accrescimento di utilità attraverso trasformazioni fisiche, spaziali, temporali o di servizio. Comprende quindi non soltanto la fabbricazione di beni, ma anche trasporto, conservazione, distribuzione e prestazioni che rendono risorse più adatte a soddisfare bisogni.","t":"QA"},
-  {"q":"Come si confrontano struttura plurifunzionale, multidivisionale e a matrice?","a":"La plurifunzionale raggruppa per funzioni: favorisce specializzazione ed efficienza ma crea silos. La multidivisionale raggruppa per prodotto, mercato o area: aumenta responsabilità e adattamento ma duplica risorse. La matrice incrocia due criteri e migliora integrazione e flessibilità, ma introduce doppia autorità, conflitti e costi di coordinamento.","t":"QA"},
-  {"q":"Che cosa rappresentano le dimensioni verticale e orizzontale di un organigramma?","a":"La dimensione verticale mostra livelli gerarchici, autorità e responsabilità; quella orizzontale mostra specializzazione e raggruppamento delle unità allo stesso livello. Più verticalità rafforza controllo ma allunga le decisioni; più coordinamento orizzontale facilita integrazione tra funzioni.","t":"QA"},
-  {"q":"Qual è la differenza tra efficienza ed efficacia aziendale?","a":"L'efficacia misura il grado di raggiungimento degli obiettivi: fare le cose giuste. L'efficienza confronta risultati e risorse consumate: fare le cose con il minor impiego possibile. Un'organizzazione può essere efficiente rispetto a un'attività che non contribuisce agli obiettivi e quindi non essere efficace.","t":"QA"}
+  {
+    "q": "Qual è la differenza tra gruppo economico e gruppo finanziario?",
+    "a": "Nel gruppo economico più aziende, pur giuridicamente autonome, sono sottoposte a una direzione unitaria e perseguono un disegno imprenditoriale comune.\n\nNel gruppo finanziario il legame nasce soprattutto da partecipazioni e controllo del capitale, senza che vi sia necessariamente una forte integrazione tecnico-economica delle attività.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra aziende di produzione e aziende di erogazione?",
+    "a": "Le aziende di produzione realizzano beni o servizi destinati allo scambio sul mercato e mirano a remunerare durevolmente i fattori impiegati.\n\nLe aziende di erogazione raccolgono e impiegano risorse per soddisfare direttamente bisogni di membri o beneficiari; l'equilibrio economico resta necessario anche se il profitto non è il fine principale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa si intende per concezione circolare del finalismo d'impresa?",
+    "a": "Sopravvivenza, equilibrio economico, soddisfazione degli stakeholder e sviluppo non formano una catena con un unico fine ultimo, ma si alimentano reciprocamente.\n\nLa creazione di valore sostiene continuità e crescita; queste permettono nuovi investimenti e una migliore risposta agli stakeholder.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa significa produzione dal punto di vista economico?",
+    "a": "È la creazione o l'accrescimento di utilità attraverso trasformazioni fisiche, spaziali, temporali o di servizio.\n\nComprende quindi non soltanto la fabbricazione di beni, ma anche trasporto, conservazione, distribuzione e prestazioni che rendono risorse più adatte a soddisfare bisogni.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si confrontano struttura plurifunzionale, multidivisionale e a matrice?",
+    "a": "La plurifunzionale raggruppa per funzioni: favorisce specializzazione ed efficienza ma crea silos.\n\nLa multidivisionale raggruppa per prodotto, mercato o area: aumenta responsabilità e adattamento ma duplica risorse.\n\nLa matrice incrocia due criteri e migliora integrazione e flessibilità, ma introduce doppia autorità, conflitti e costi di coordinamento.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa rappresentano le dimensioni verticale e orizzontale di un organigramma?",
+    "a": "La dimensione verticale mostra livelli gerarchici, autorità e responsabilità; quella orizzontale mostra specializzazione e raggruppamento delle unità allo stesso livello.\n\nPiù verticalità rafforza controllo ma allunga le decisioni; più coordinamento orizzontale facilita integrazione tra funzioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra efficienza ed efficacia aziendale?",
+    "a": "L'efficacia misura il grado di raggiungimento degli obiettivi: fare le cose giuste.\n\nL'efficienza confronta risultati e risorse consumate: fare le cose con il minor impiego possibile.\n\nUn'organizzazione può essere efficiente rispetto a un'attività che non contribuisce agli obiettivi e quindi non essere efficace.",
+    "t": "QA"
+  }
 ]

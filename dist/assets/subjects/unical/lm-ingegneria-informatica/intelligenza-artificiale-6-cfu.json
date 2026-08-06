@@ -1,17 +1,77 @@
 [
-  {"q":"Che cos'è un'estensione nella default logic di Reiter?","a":"Per una teoria Δ=(W,D), un'estensione E è un insieme deduttivamente chiuso che contiene W e le conclusioni dei default α:β₁,…,βₙ/γ applicabili: α è derivabile in E e nessun ¬βᵢ appartiene a E. È un punto fisso e rappresenta un insieme coerente di credenze ottenuto applicando i default.","t":"QA"},
-  {"q":"Come si calcolano le estensioni di una teoria di default?","a":"Si ipotizza un insieme di default generatori, si costruisce la chiusura di W con le loro conclusioni e si verifica che ogni prerequisito sia derivabile e ogni giustificazione coerente con l'estensione candidata. Poiché applicabilità e risultato dipendono dall'insieme finale, possono esistere zero, una o più estensioni.","t":"QA"},
-  {"q":"Che cos'è l'anomalia di Sussman nel planning?","a":"È un problema in cui due sotto-obiettivi interagiscono: raggiungerli separatamente in un ordine fisso può distruggere quello già ottenuto. Nel mondo dei blocchi, mettere A su B e B su C richiede intercalare le azioni. Mostra il limite del planning lineare basato su sottogoal indipendenti.","t":"QA"},
-  {"q":"Come funziona breadth-first search e quando è preferibile a depth-first?","a":"BFS espande la frontiera per profondità crescente usando una coda. È completo con fattore di diramazione finito e ottimo se i costi degli archi sono uguali, ma usa O(b^d) memoria. DFS usa poca memoria ma può perdersi in rami infiniti e non trova necessariamente la soluzione più corta.","t":"QA"},
-  {"q":"Come funziona iterative deepening search?","a":"Esegue ripetutamente depth-limited search con limite 0,1,2,… fino a trovare un goal. Conserva completezza e ottimalità di BFS per costi unitari usando memoria O(bd); la riespansione dei livelli alti incide poco perché la maggior parte dei nodi è al livello più profondo.","t":"QA"},
-  {"q":"Come funziona IDA* e perché usa il minimo dei valori oltre soglia?","a":"IDA* esegue DFS limitate dal valore f=g+h. Se non trova il goal, la nuova soglia è il minimo f che ha superato quella corrente: è il più piccolo limite capace di includere almeno un nodo nuovo, evitando iterazioni inutili. Con euristica ammissibile mantiene l'ottimalità e usa memoria lineare nella profondità.","t":"QA"},
-  {"q":"Come rappresenta un problema il formalismo STRIPS?","a":"Uno stato è un insieme di fatti veri secondo closed-world assumption. Un'azione ha precondizioni, add list e delete list; è applicabile se le precondizioni valgono e produce (S−Del)∪Add. Un piano è una sequenza di azioni che porta dallo stato iniziale a uno che soddisfa il goal.","t":"QA"},
-  {"q":"Che cos'è il frame problem e come lo gestisce STRIPS?","a":"Il frame problem consiste nel rappresentare efficientemente ciò che non cambia dopo un'azione. STRIPS elenca soltanto fatti aggiunti e cancellati e lascia invariati tutti gli altri, evitando frame axiom espliciti per ogni fluente. Restano però limiti nel descrivere effetti indiretti e ramificazioni.","t":"QA"},
-  {"q":"Quali limiti espressivi ha STRIPS classico?","a":"Usa fatti sostanzialmente proposizionali, closed-world assumption ed effetti deterministici istantanei; quantificatori, disgiunzioni, tempo, risorse, incertezza ed effetti condizionali non sono nativi. Inoltre nomi come p e not_p sono simboli distinti se non viene imposta una semantica logica.","t":"QA"},
-  {"q":"Che cos'è il deep learning?","a":"È l'apprendimento tramite modelli composti da molti livelli di rappresentazione, tipicamente reti neurali addestrate con backpropagation. I livelli trasformano progressivamente dati grezzi in feature utili al compito, riducendo la necessità di progettarle manualmente ma richiedendo dati, calcolo e regolarizzazione.","t":"QA"},
-  {"q":"Come funziona un neurone artificiale?","a":"Calcola z=w·x+b e applica una funzione di attivazione y=φ(z), come ReLU, sigmoid o tanh. I pesi controllano l'importanza degli ingressi, il bias sposta la soglia e l'attivazione non lineare permette a reti multilivello di rappresentare funzioni complesse.","t":"QA"},
-  {"q":"Che cosa significa feature extraction nel deep learning?","a":"I livelli intermedi apprendono automaticamente rappresentazioni rilevanti: bordi e forme nelle immagini, pattern locali nelle sequenze o relazioni nei grafi. Le feature possono essere apprese end-to-end per il compito o trasferite da un modello preaddestrato.","t":"QA"},
-  {"q":"Come funzionano hill climbing e simulated annealing?","a":"Hill climbing passa a un vicino migliore e si arresta in un ottimo locale, plateau o ridge. Simulated annealing accetta sempre miglioramenti e talvolta peggioramenti con probabilità legata a e^(−Δ/T); abbassando gradualmente T esplora all'inizio e converge verso comportamento greedy.","t":"QA"},
-  {"q":"Che cosa studia il PAC learning?","a":"Formalizza quante osservazioni servono affinché, con probabilità almeno 1−δ, l'ipotesi appresa abbia errore al più ε. Una classe è PAC-apprendibile se campioni e tempo sono polinomiali in 1/ε, 1/δ e nella dimensione della rappresentazione, sotto assunzioni dichiarate sui dati.","t":"QA"},
-  {"q":"Che cos'è il nucleolo di un gioco cooperativo?","a":"È l'imputazione che minimizza lessicograficamente i massimi eccessi e(S,x)=v(S)−Σ_{i∈S}xᵢ delle coalizioni. Cerca la distribuzione che rende minime, in ordine di gravità, le insoddisfazioni. Esiste ed è unico per ogni gioco TU con insieme delle imputazioni non vuoto.","t":"QA"}
+  {
+    "q": "Che cos'è un'estensione nella default logic di Reiter?",
+    "a": "Per una teoria Δ=(W,D), un'estensione E è un insieme deduttivamente chiuso che contiene W e le conclusioni dei default α:β₁,…,βₙ/γ applicabili: α è derivabile in E e nessun ¬βᵢ appartiene a E.\n\nÈ un punto fisso e rappresenta un insieme coerente di credenze ottenuto applicando i default.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si calcolano le estensioni di una teoria di default?",
+    "a": "Si ipotizza un insieme di default generatori, si costruisce la chiusura di W con le loro conclusioni e si verifica che ogni prerequisito sia derivabile e ogni giustificazione coerente con l'estensione candidata.\n\nPoiché applicabilità e risultato dipendono dall'insieme finale, possono esistere zero, una o più estensioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è l'anomalia di Sussman nel planning?",
+    "a": "È un problema in cui due sotto-obiettivi interagiscono: raggiungerli separatamente in un ordine fisso può distruggere quello già ottenuto.\n\nNel mondo dei blocchi, mettere A su B e B su C richiede intercalare le azioni.\n\nMostra il limite del planning lineare basato su sottogoal indipendenti.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona breadth-first search e quando è preferibile a depth-first?",
+    "a": "BFS espande la frontiera per profondità crescente usando una coda.\n\nÈ completo con fattore di diramazione finito e ottimo se i costi degli archi sono uguali, ma usa O(b^d) memoria.\n\nDFS usa poca memoria ma può perdersi in rami infiniti e non trova necessariamente la soluzione più corta.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona iterative deepening search?",
+    "a": "Esegue ripetutamente depth-limited search con limite 0,1,2,… fino a trovare un goal.\n\nConserva completezza e ottimalità di BFS per costi unitari usando memoria O(bd); la riespansione dei livelli alti incide poco perché la maggior parte dei nodi è al livello più profondo.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona IDA* e perché usa il minimo dei valori oltre soglia?",
+    "a": "IDA* esegue DFS limitate dal valore f=g+h.\n\nSe non trova il goal, la nuova soglia è il minimo f che ha superato quella corrente: è il più piccolo limite capace di includere almeno un nodo nuovo, evitando iterazioni inutili.\n\nCon euristica ammissibile mantiene l'ottimalità e usa memoria lineare nella profondità.",
+    "t": "QA"
+  },
+  {
+    "q": "Come rappresenta un problema il formalismo STRIPS?",
+    "a": "Uno stato è un insieme di fatti veri secondo closed-world assumption.\n\nUn'azione ha precondizioni, add list e delete list; è applicabile se le precondizioni valgono e produce (S−Del)∪Add.\n\nUn piano è una sequenza di azioni che porta dallo stato iniziale a uno che soddisfa il goal.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il frame problem e come lo gestisce STRIPS?",
+    "a": "Il frame problem consiste nel rappresentare efficientemente ciò che non cambia dopo un'azione.\n\nSTRIPS elenca soltanto fatti aggiunti e cancellati e lascia invariati tutti gli altri, evitando frame axiom espliciti per ogni fluente.\n\nRestano però limiti nel descrivere effetti indiretti e ramificazioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali limiti espressivi ha STRIPS classico?",
+    "a": "Usa fatti sostanzialmente proposizionali, closed-world assumption ed effetti deterministici istantanei; quantificatori, disgiunzioni, tempo, risorse, incertezza ed effetti condizionali non sono nativi.\n\nInoltre nomi come p e not_p sono simboli distinti se non viene imposta una semantica logica.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il deep learning?",
+    "a": "È l'apprendimento tramite modelli composti da molti livelli di rappresentazione, tipicamente reti neurali addestrate con backpropagation.\n\nI livelli trasformano progressivamente dati grezzi in feature utili al compito, riducendo la necessità di progettarle manualmente ma richiedendo dati, calcolo e regolarizzazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona un neurone artificiale?",
+    "a": "Calcola z=w·x+b e applica una funzione di attivazione y=φ(z), come ReLU, sigmoid o tanh.\n\nI pesi controllano l'importanza degli ingressi, il bias sposta la soglia e l'attivazione non lineare permette a reti multilivello di rappresentare funzioni complesse.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa significa feature extraction nel deep learning?",
+    "a": "I livelli intermedi apprendono automaticamente rappresentazioni rilevanti: bordi e forme nelle immagini, pattern locali nelle sequenze o relazioni nei grafi.\n\nLe feature possono essere apprese end-to-end per il compito o trasferite da un modello preaddestrato.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano hill climbing e simulated annealing?",
+    "a": "Hill climbing passa a un vicino migliore e si arresta in un ottimo locale, plateau o ridge.\n\nSimulated annealing accetta sempre miglioramenti e talvolta peggioramenti con probabilità legata a e^(−Δ/T); abbassando gradualmente T esplora all'inizio e converge verso comportamento greedy.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa studia il PAC learning?",
+    "a": "Formalizza quante osservazioni servono affinché, con probabilità almeno 1−δ, l'ipotesi appresa abbia errore al più ε.\n\nUna classe è PAC-apprendibile se campioni e tempo sono polinomiali in 1/ε, 1/δ e nella dimensione della rappresentazione, sotto assunzioni dichiarate sui dati.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il nucleolo di un gioco cooperativo?",
+    "a": "È l'imputazione che minimizza lessicograficamente i massimi eccessi e(S,x)=v(S)−Σ_{i∈S}xᵢ delle coalizioni.\n\nCerca la distribuzione che rende minime, in ordine di gravità, le insoddisfazioni.\n\nEsiste ed è unico per ogni gioco TU con insieme delle imputazioni non vuoto.",
+    "t": "QA"
+  }
 ]
