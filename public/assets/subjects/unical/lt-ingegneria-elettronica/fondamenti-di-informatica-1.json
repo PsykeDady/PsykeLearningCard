@@ -1,17 +1,5 @@
 [
-  {
-    "q": "Somma complemento a 2",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "puntatore",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "kernel",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come si esegue una somma in complemento a due?","a":"Si sommano i bit, incluso quello di segno, scartando il riporto oltre la larghezza. Il risultato è corretto se non c'è overflow.\n\nL'overflow avviene sommando operandi dello stesso segno e ottenendo un risultato di segno opposto; il carry finale da solo non lo determina.","t":"QA"},
+  {"q":"Che cos'è un puntatore?","a":"È una variabile che contiene l'indirizzo di un oggetto o funzione secondo il modello del linguaggio. Dereferenziare accede all'oggetto puntato.\n\nNull, dangling pointer, accessi fuori limite e aritmetica errata causano comportamento indefinito e vulnerabilità nei linguaggi non memory-safe.","t":"QA"},
+  {"q":"Che cos'è il kernel di un sistema operativo?","a":"È il nucleo privilegiato che gestisce processi e scheduling, memoria virtuale, interrupt, dispositivi, filesystem, rete e isolamento.\n\nLe applicazioni richiedono servizi mediante system call; architetture monolitiche e microkernel distribuiscono diversamente le funzioni tra kernel e user space.","t":"QA"}
 ]

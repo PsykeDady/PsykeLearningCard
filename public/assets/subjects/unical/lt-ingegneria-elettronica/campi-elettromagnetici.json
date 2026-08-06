@@ -1,22 +1,6 @@
 [
-  {
-    "q": "Incidenza normale su un buon conduttore",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dimostrazione angolo di totale trasmissione di un'onda obliqua",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "potenza onda obliqua",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "densità di potenza",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come si comporta un'onda piana a incidenza normale su un buon conduttore?","a":"Nel conduttore il campo decade come e^{−αz} e accumula fase con βz; per σ≫ωε, α≈β≈√(ωμσ/2) e la profondità di penetrazione è δ=1/α.\n\nLa forte differenza di impedenza produce riflessione quasi totale e la potenza penetrata viene dissipata per effetto Joule.","t":"QA"},
+  {"q":"Qual è l'angolo di Brewster per la trasmissione senza riflessione?","a":"Per mezzi dielettrici non magnetici e polarizzazione TM, il coefficiente di riflessione si annulla quando tan θ_B=n₂/n₁.\n\nSegue dalle condizioni al contorno e dalla legge di Snell; per polarizzazione TE non esiste in generale un angolo di Brewster se le permeabilità sono uguali.","t":"QA"},
+  {"q":"Come si calcola la potenza trasportata da un'onda piana obliqua?","a":"La densità media è ⟨S⟩=(1/2)Re(E×H*). La potenza che attraversa una superficie dipende dalla componente normale: ⟨S⟩·n=|⟨S⟩|cos θ.\n\nAlle interfacce i coefficienti di potenza includono impedenze e angoli, non soltanto il quadrato dei coefficienti di campo.","t":"QA"},
+  {"q":"Che cos'è la densità di potenza elettromagnetica?","a":"Il vettore di Poynting istantaneo S=E×H misura flusso di energia per unità di area in W/m².\n\nIn regime sinusoidale la media temporale è (1/2)Re(E×H*); direzione e modulo descrivono propagazione e intensità energetica.","t":"QA"}
 ]

@@ -1,27 +1,7 @@
 [
-  {
-    "q": "Commitment",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Teorema del Pollo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dilemma prigionieri",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "alcuni casi di cooperazione e tradimento (per esempio perché 4-1 e 1-4 non sono equilibri?)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "equilibrio di nash",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cos'è un commitment nella teoria dei giochi?","a":"È un impegno credibile che limita le azioni future di un giocatore e modifica le aspettative degli altri.\n\nDeve essere osservabile e costoso o impossibile da revocare; altrimenti non cambia l'equilibrio perché gli avversari prevedono che verrà abbandonato.","t":"QA"},
+  {"q":"Che cosa mostra il Chicken Game?","a":"Due giocatori scelgono se cedere o restare aggressivi. Esistono due equilibri di Nash puri asimmetrici, nei quali uno cede e l'altro no, e un equilibrio misto.\n\nLa mutua aggressività è l'esito peggiore, ma ciascuno preferisce non cedere se l'altro cede.","t":"QA"},
+  {"q":"Che cosa mostra il dilemma del prigioniero?","a":"Defezionare domina individualmente cooperare, quindi l'unico equilibrio one-shot è la mutua defezione, pur essendo peggiore per entrambi della mutua cooperazione.\n\nNei giochi ripetuti, reputazione e punizioni future possono sostenere la cooperazione.","t":"QA"},
+  {"q":"Perché esiti come cooperazione-tradimento e tradimento-cooperazione possono non essere equilibri?","a":"Un profilo è equilibrio solo se nessun giocatore migliora deviando unilateralmente. Se nell'esito asimmetrico chi coopera ottiene 1 e può ottenere di più tradendo, ha una deviazione profittevole: il profilo non è Nash.\n\nLa conclusione dipende dalla matrice completa dei payoff.","t":"QA"},
+  {"q":"Che cos'è un equilibrio di Nash?","a":"È un profilo di strategie in cui ogni strategia è una best response alle strategie altrui. Formalmente, uᵢ(sᵢ,s₋ᵢ)≥uᵢ(s'ᵢ,s₋ᵢ) per ogni giocatore i e deviazione s'ᵢ.\n\nNon implica efficienza, equità o unicità.","t":"QA"}
 ]

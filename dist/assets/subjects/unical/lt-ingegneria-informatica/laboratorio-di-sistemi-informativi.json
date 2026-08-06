@@ -1,182 +1,19 @@
 [
-  {
-    "q": "Esercizio ricorsivo: calcolare I percorsi di un grafo sorgente a destinazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Trigger: trigger fatti durante le lezioni",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "prima chiede ad uno del team di condividere lo schermo con il progetto, poi chiede di vedere anche magari qualche tabella del database quando l'acquisto va a buon fine.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "tecniche PERT e CPM differenze tra PERT e CPM",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione (la vuole scritta) di t-late e t-early",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ricorsione: cos'è una CTE? ha fatto scrivere anche una query ricorsiva (ha chiesto sia quella del fattoriale sia quella della chiusa del grafo; vedi slide)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "trigger (ne fa anche scrivere uno semplice)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "operatori olap: pivot",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "slice",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dice",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "drill through",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "roll up",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "drill down etc",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "di pivot può chiedere in quale database si può fare direttamente (oracle) e se non si può fare direttamente come fare a mano (in realtà era domanda per la lode credo)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "poi chiede le metodologie di sviluppo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "xml",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "xml-schema",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Insomma può chiedere veramente di tutto ma è molto buono fa tante domande finché non sai qualcosa",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "l'importante è fare il sito(o altro progetto) che rispetta la parte che hai deciso di implementare",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ha chiesto a tutti inoltre se avevamo messo controlli sui campi di inserimento quindi controlli per vedere se un'email è ben formata durante la registrazione etc",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "l'unica cosa è vedere bene sql perché ti fa fare in diretta query ricorsive e trigger",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Schema a stella e fiocco di neve",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Schema a stella e fiocco di neve > come suddividere gli attributi in quello a fiocco di neve",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Fase di assestment",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Fase di assestment > cos'è il project management (visto che quando ho risposto ho detto che ne fa parte)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Cosa é il Work breakdown structure",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Cosa é il DFM dimensional fact model",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Costruisci una query ricorsiva che calcoli il fattoriale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Costruisci una query ricorsiva che percorre un grafo a partire dal nodo iniziale(applicato a diversi contesti, città, treni etc)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Operatori OLAP dice e slice",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Operatori OLAP dice e slice > se io faccio k operazioni di slice le mie dimensioni dell'ipercubo di quanto variano?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Operatori OLAP dice e slice > La risposta é che se si effettuano k slice allora se la dimensione era n poi sará n-k",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Operatori OLAP drill through",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Operatori OLAP drill through > quali sono i requisiti per poterlo usare nel 2o livello?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Operatori OLAP drill through > perché nel 3o livello si puó fare invece a prescindere?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Operatori OLAP drill through > La risposta é che nel 2o livello vi é bisogno di operatori di reverse mapping rispetto a quelli ETL mentre nel 3o livello sono presenti i dati riconciliati e quindi non vi é bisogno di effettuare nessuna operazione per tornare ai dati operazionali.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cos'è una CTE ricorsiva e da quali parti è composta?","a":"Una Common Table Expression ricorsiva è una query temporanea che richiama se stessa. Comprende un membro àncora, che produce le righe iniziali, e un membro ricorsivo uniti di solito da UNION ALL.\n\nL'esecuzione termina quando il membro ricorsivo non genera più righe; occorre prevenire cicli o limitare la profondità.","t":"QA"},
+  {"q":"Come si calcola il fattoriale con una CTE ricorsiva?","a":"Si parte dalla riga àncora (n=1, fattoriale=1) e nel membro ricorsivo si produce (n+1, fattoriale·(n+1)) finché n raggiunge il valore richiesto.\n\nEsempio concettuale: WITH RECURSIVE f(n,val) AS (SELECT 1,1 UNION ALL SELECT n+1,val*(n+1) FROM f WHERE n<N) SELECT val FROM f WHERE n=N.","t":"QA"},
+  {"q":"Come si percorre un grafo con una CTE ricorsiva?","a":"L'àncora seleziona il nodo iniziale; il passo ricorsivo unisce i nodi già raggiunti alla tabella degli archi per trovare i successori. Si possono accumulare cammino e profondità.\n\nCon grafi ciclici bisogna memorizzare i nodi visitati o usare UNION per evitare visite infinite.","t":"QA"},
+  {"q":"Che cos'è un trigger di database?","a":"È codice eseguito automaticamente in risposta a eventi come INSERT, UPDATE o DELETE. Può scattare BEFORE, AFTER o INSTEAD OF e operare per riga o per istruzione, secondo il DBMS.\n\nÈ utile per vincoli e audit, ma va mantenuto semplice perché effetti impliciti e ricorsioni rendono difficile il debug.","t":"QA"},
+  {"q":"Qual è la differenza tra PERT e CPM?","a":"Entrambi modellano attività, precedenze e cammino critico. CPM usa durate deterministiche; PERT usa tre stime — ottimistica, più probabile e pessimistica — e calcola spesso la durata attesa (o+4m+p)/6.\n\nPERT gestisce meglio l'incertezza, CPM è adatto quando durate e costi sono più noti.","t":"QA"},
+  {"q":"Che cosa sono i tempi early e late in una rete di progetto?","a":"Il tempo early è il primo istante in cui un evento o un'attività può iniziare/finire, calcolato con una passata in avanti. Il tempo late è l'ultimo istante consentito senza ritardare il progetto, calcolato all'indietro.\n\nLa differenza tra late ed early determina il margine; attività con margine totale nullo sono critiche.","t":"QA"},
+  {"q":"Che cosa fanno gli operatori OLAP slice e dice?","a":"Slice fissa una dimensione a un valore, ottenendo una sezione dell'ipercubo e riducendo di uno il numero di dimensioni; k slice su dimensioni distinte portano da n a n-k.\n\nDice seleziona sottoinsiemi o intervalli su più dimensioni e produce un sotto-cubo, senza necessariamente ridurne il numero.","t":"QA"},
+  {"q":"Che cosa fanno roll-up e drill-down in OLAP?","a":"Roll-up aggrega i dati salendo una gerarchia o eliminando dettaglio, per esempio da città a regione. Drill-down compie l'operazione inversa e mostra dati più granulari, per esempio da anno a trimestre.\n\nLe gerarchie devono essere coerenti per evitare aggregazioni scorrette.","t":"QA"},
+  {"q":"Che cos'è il pivot in OLAP?","a":"Il pivot ruota la vista multidimensionale, scambiando le dimensioni poste su righe, colonne o filtri senza cambiare i dati sottostanti.\n\nSe il DBMS non offre PIVOT, si può simulare con aggregazione condizionale, per esempio SUM(CASE WHEN categoria=... THEN misura END) e GROUP BY.","t":"QA"},
+  {"q":"Che cos'è il drill-through e quali dati richiede?","a":"Il drill-through passa da una cella aggregata del cubo ai record dettagliati che l'hanno generata. Al livello riconciliato i dettagli sono già integrati; per tornare alle sorgenti operative servono metadati e mapping inversi delle trasformazioni ETL.\n\nDeve inoltre rispettare autorizzazioni e protezione dei dati di dettaglio.","t":"QA"},
+  {"q":"Qual è la differenza tra schema a stella e schema a fiocco di neve?","a":"Nello schema a stella una fact table centrale si collega direttamente a dimensioni denormalizzate: le query sono semplici ma c'è ridondanza.\n\nNel fiocco di neve le dimensioni sono normalizzate in più tabelle secondo le gerarchie, riducendo ridondanza ma aumentando join e complessità.","t":"QA"},
+  {"q":"Che cosa sono XML e XML Schema?","a":"XML è un formato testuale gerarchico con elementi, attributi e un unico elemento radice; deve essere ben formato. XML Schema (XSD) definisce struttura valida, tipi, cardinalità, ordine e vincoli dei documenti XML.\n\nUn documento può quindi essere ben formato ma non valido rispetto allo schema.","t":"QA"},
+  {"q":"Che cos'è una Work Breakdown Structure?","a":"La WBS scompone gerarchicamente l'ambito del progetto in deliverable e pacchetti di lavoro gestibili. La regola del 100% richiede che includa tutto e soltanto il lavoro necessario.\n\nÈ una base per stime, responsabilità, calendario, costi e controllo dell'avanzamento.","t":"QA"},
+  {"q":"Che cos'è il project management?","a":"È l'applicazione di metodi, competenze e strumenti per raggiungere gli obiettivi del progetto entro vincoli di ambito, tempo, costo, qualità, risorse e rischio.\n\nComprende avvio, pianificazione, esecuzione, monitoraggio e chiusura, con gestione degli stakeholder e dei cambiamenti.","t":"QA"},
+  {"q":"Che cosa comprende la fase di assessment di un sistema informativo?","a":"Analizza situazione attuale, processi, dati, applicazioni, infrastruttura, stakeholder, vincoli e criticità. Confronta lo stato corrente con quello desiderato, valuta rischi e fattibilità e produce priorità e roadmap.\n\nLe conclusioni devono poggiare su evidenze, interviste, metriche e requisiti verificabili.","t":"QA"},
+  {"q":"Che cos'è il Dimensional Fact Model (DFM)?","a":"È un modello concettuale per data warehouse centrato sui fatti. Rappresenta un fatto con misure, dimensioni e gerarchie di attributi lungo cui aggregare.\n\nAiuta a tradurre i requisiti decisionali in uno schema multidimensionale, prima della progettazione logica a stella o a fiocco di neve.","t":"QA"},
+  {"q":"Perché la validazione degli input va eseguita anche lato server?","a":"La validazione client migliora l'esperienza ma può essere aggirata. Il server deve controllare formato, tipo, lunghezza, intervalli, obbligatorietà e regole di dominio, usando query parametrizzate e autorizzazioni.\n\nPer esempio un'email va verificata sintatticamente e, se necessario, confermata mediante un link inviato all'indirizzo.","t":"QA"}
 ]

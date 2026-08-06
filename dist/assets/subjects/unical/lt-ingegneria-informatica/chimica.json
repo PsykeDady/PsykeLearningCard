@@ -1,22 +1,5 @@
 [
-  {
-    "q": "definizione di acido e base",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione di acido e base > Arrenius",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione di acido e base > Bronsted e Lawry",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione di acido e base > Lewis",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come definisce acidi e basi la teoria di Arrhenius?","a":"In soluzione acquosa un acido aumenta la concentrazione di H₃O⁺ e una base quella di OH⁻.\n\nÈ utile per reazioni in acqua ma più limitata delle definizioni di Brønsted–Lowry e Lewis.","t":"QA"},
+  {"q":"Come definisce acidi e basi la teoria di Brønsted–Lowry?","a":"Un acido dona un protone e una base lo accetta. Ogni trasferimento produce coppie coniugate che differiscono per H⁺.\n\nSostanze come l'acqua possono essere anfiprotiche e comportarsi in entrambi i modi.","t":"QA"},
+  {"q":"Come definisce acidi e basi la teoria di Lewis?","a":"Un acido di Lewis accetta una coppia elettronica e una base la dona, formando spesso un legame coordinativo.\n\nÈ la definizione più generale e include reazioni senza trasferimento di protoni, come BF₃ con NH₃.","t":"QA"}
 ]

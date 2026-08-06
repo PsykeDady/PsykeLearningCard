@@ -1,37 +1,8 @@
 [
-  {
-    "q": "argomento a piacere",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "validità del secondo e primo corollario del teorema della dualità nella rete di flusso",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "parlare del problema di branch and bound",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ottimizzazioni applicate nel branch and bound (taglio di un ramo)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Enunciato e dimostrazione dualità debole, dualità forte e le differenze tra i due",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Risoluzione problema su knapsack multiplo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Risoluzione problema di OPL",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cosa affermano la dualità debole e la dualità forte nella programmazione lineare?","a":"Dualità debole: per ogni soluzione ammissibile primale e duale, il valore del duale è un limite al valore del primale; in forma max/min, cᵀx ≤ bᵀy.\n\nDualità forte: se esiste una soluzione ottima finita, anche il duale ha un ottimo e i due valori coincidono. La seconda implica assenza di duality gap all'ottimo.","t":"QA"},
+  {"q":"Quali conseguenze della dualità si usano nei problemi di flusso?","a":"Una soluzione primale ammissibile e una duale ammissibile con lo stesso valore sono entrambe ottime. Inoltre, se il primale è illimitato il duale è inammissibile; se uno è inammissibile, l'altro può essere inammissibile oppure illimitato.\n\nNel massimo flusso, la dualità forte conduce al teorema max-flow/min-cut: valore del massimo flusso e capacità del minimo taglio coincidono.","t":"QA"},
+  {"q":"Come funziona il branch and bound?","a":"Divide il problema in sottoproblemi fissando decisioni di branching. Per ciascun nodo calcola un bound tramite un rilassamento e mantiene la migliore soluzione intera nota, detta incumbent.\n\nEsplora l'albero finché ogni nodo è stato risolto o potato; a quel punto l'incumbent è ottimo.","t":"QA"},
+  {"q":"Quando si può potare un nodo nel branch and bound?","a":"Un nodo si pota se il sottoproblema è inammissibile, se il rilassamento produce già una soluzione intera, oppure se il suo bound non può migliorare l'incumbent.\n\nBound più stretti riducono l'albero, ma possono essere più costosi da calcolare.","t":"QA"},
+  {"q":"Come si formula il problema dello zaino multiplo?","a":"Con xᵢⱼ binaria, uguale a 1 se l'oggetto i è assegnato allo zaino j, si massimizza ΣᵢΣⱼ pᵢⱼxᵢⱼ.\n\nPer ogni zaino j: Σᵢ wᵢxᵢⱼ ≤ Cⱼ. Per ogni oggetto i: Σⱼxᵢⱼ ≤ 1. Eventuali incompatibilità o obblighi si aggiungono come ulteriori vincoli.","t":"QA"},
+  {"q":"Quali elementi contiene un modello di ottimizzazione in OPL?","a":"Un modello OPL separa dati, variabili decisionali, funzione obiettivo e vincoli. Si dichiarano insiemi e parametri, quindi dvar, maximize/minimize e subject to.\n\nDopo l'esecuzione vanno controllati stato della soluzione, valore obiettivo e valori delle variabili, non soltanto l'assenza di errori sintattici.","t":"QA"}
 ]

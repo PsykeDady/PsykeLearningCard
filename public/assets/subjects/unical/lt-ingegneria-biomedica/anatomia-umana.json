@@ -1,97 +1,17 @@
 [
-  {
-    "q": "apparato respiratorio",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "apparato digerente",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "apparato urinario",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenza tra membrana sierosa e membrana mucosa",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "circolazione sistemica",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "articolazioni",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "diartrosi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "vari tipi di legamenti",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "tessuto muscolare",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "miocardio endocardio ed epicardio",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "le valvole",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "i setti",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "aorta ascendente",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "arco aortico",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "arterie coronarie",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "pareti muscolari",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "vene cardiache",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "legamenti del ginocchio",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "apparato scheletrico assile",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Quali organi compongono l'apparato respiratorio e quale funzione svolgono?","a":"Vie superiori e inferiori conducono, filtrano, riscaldano e umidificano l'aria; bronchi e bronchioli la distribuiscono; negli alveoli avvengono gli scambi tra aria e sangue.\n\nDiaframma e muscoli respiratori generano le variazioni di pressione che ventilano i polmoni.","t":"QA"},
+  {"q":"Quali organi compongono l'apparato digerente?","a":"Il canale alimentare comprende bocca, faringe, esofago, stomaco, intestino tenue e crasso, retto e ano.\n\nGhiandole salivari, fegato, colecisti e pancreas sono organi accessori. Digestione e assorbimento avvengono soprattutto nello stomaco e nell'intestino tenue.","t":"QA"},
+  {"q":"Quali organi compongono l'apparato urinario?","a":"Reni, ureteri, vescica e uretra. I nefroni filtrano il plasma, riassorbono e secernono sostanze formando urina.\n\nI reni regolano inoltre volume, elettroliti, equilibrio acido-base, pressione, eritropoiesi e attivazione della vitamina D.","t":"QA"},
+  {"q":"Qual è la differenza tra membrana mucosa e sierosa?","a":"La mucosa riveste cavità che comunicano con l'esterno ed è formata da epitelio, lamina propria e talvolta muscolaris mucosae; protegge, secerne o assorbe.\n\nLa sierosa riveste cavità chiuse e organi, con mesotelio e connettivo, e produce liquido che riduce l'attrito.","t":"QA"},
+  {"q":"Come funziona la circolazione sistemica?","a":"Il ventricolo sinistro invia sangue ossigenato nell'aorta e nelle arterie; nei capillari avvengono gli scambi con i tessuti.\n\nVene e vene cave riportano sangue deossigenato all'atrio destro. È distinta dalla circolazione polmonare.","t":"QA"},
+  {"q":"Come si classificano le articolazioni?","a":"Strutturalmente sono fibrose, cartilaginee o sinoviali; funzionalmente sinartrosi, anfiartrosi o diartrosi secondo la mobilità.\n\nLe diartrosi hanno cavità articolare, cartilagine ialina, capsula, membrana e liquido sinoviale e spesso legamenti o menischi.","t":"QA"},
+  {"q":"Quali tipi di legamenti esistono e quale funzione hanno?","a":"Sono fasci di connettivo denso che stabilizzano articolazioni guidando e limitando il movimento. Possono essere capsulari, extracapsulari o intracapsulari e contenere fibre prevalentemente collagene o più elastiche.\n\nUniscono soprattutto osso a osso, diversamente dai tendini.","t":"QA"},
+  {"q":"Quali sono i tre tipi di tessuto muscolare?","a":"Scheletrico: striato, volontario e multinucleato; cardiaco: striato, involontario, ramificato e unito da dischi intercalari; liscio: non striato, involontario e presente nelle pareti viscerali e vascolari.\n\nDifferiscono per controllo, organizzazione e modalità di contrazione.","t":"QA"},
+  {"q":"Qual è la differenza tra endocardio, miocardio ed epicardio?","a":"L'endocardio riveste cavità e valvole; il miocardio è lo strato muscolare responsabile della contrazione; l'epicardio è lo strato esterno della parete cardiaca e coincide col foglietto viscerale del pericardio sieroso.\n\nEsternamente si trova la cavità pericardica e il pericardio parietale.","t":"QA"},
+  {"q":"Quali sono le valvole cardiache e come funzionano?","a":"Tricuspide e mitrale separano atri e ventricoli; polmonare e aortica separano ventricoli e grandi arterie.\n\nSi aprono e chiudono passivamente per differenze di pressione. Corde tendinee e muscoli papillari impediscono il prolasso delle valvole atrioventricolari.","t":"QA"},
+  {"q":"Quale funzione hanno i setti e perché le pareti ventricolari hanno spessore diverso?","a":"I setti interatriale e interventricolare separano le sezioni destra e sinistra, evitando la mescolanza del sangue.\n\nIl ventricolo sinistro ha miocardio più spesso perché genera la pressione della circolazione sistemica; il destro pompa nel circuito polmonare a pressione minore.","t":"QA"},
+  {"q":"Quali sono decorso e rami principali dell'aorta ascendente e dell'arco aortico?","a":"L'aorta ascendente nasce dal ventricolo sinistro e dà origine alle coronarie. Prosegue nell'arco, dal quale originano tronco brachiocefalico, carotide comune sinistra e succlavia sinistra.\n\nContinua poi come aorta toracica discendente.","t":"QA"},
+  {"q":"Come sono organizzate arterie e vene coronarie?","a":"Le coronarie destra e sinistra originano dai seni aortici e irrorano il miocardio; la sinistra si divide principalmente in interventricolare anteriore e circonflessa.\n\nLa maggior parte del sangue venoso confluisce nel seno coronario, che sbocca nell'atrio destro.","t":"QA"},
+  {"q":"Quali sono i principali legamenti del ginocchio?","a":"Crociato anteriore e posteriore limitano rispettivamente traslazione anteriore e posteriore della tibia e contribuiscono alla stabilità rotatoria.\n\nCollaterali mediale e laterale contrastano stress in valgo e varo; legamenti capsulari e patellare completano la stabilizzazione.","t":"QA"},
+  {"q":"Quali strutture compongono lo scheletro assile?","a":"Cranio, ossicini dell'udito, osso ioide, colonna vertebrale, coste e sterno.\n\nSostiene l'asse del corpo e protegge encefalo, midollo spinale e organi toracici; lo scheletro appendicolare comprende cinture e arti.","t":"QA"}
 ]

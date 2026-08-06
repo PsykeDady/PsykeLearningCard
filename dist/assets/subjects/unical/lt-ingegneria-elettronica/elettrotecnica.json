@@ -1,17 +1,5 @@
 [
-  {
-    "q": "condensatore e conduttori in forma fasoriale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "teorema di Norton",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "teorema di Thévenin",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come si rappresentano condensatore e induttore in regime sinusoidale fasoriale?","a":"Con convenzione e^{jωt}, Z_C=1/(jωC) e Z_L=jωL; quindi I_C=jωC V_C e V_L=jωL I_L.\n\nIl condensatore anticipa la corrente rispetto alla tensione di 90°, l'induttore la ritarda.","t":"QA"},
+  {"q":"Che cosa afferma il teorema di Norton?","a":"Una rete lineare vista da due morsetti equivale a un generatore di corrente I_N in parallelo con Z_N.\n\nI_N è la corrente di cortocircuito; Z_N è l'impedenza vista spegnendo le sorgenti indipendenti o usando V_oc/I_sc, mantenendo attive le sorgenti dipendenti.","t":"QA"},
+  {"q":"Che cosa afferma il teorema di Thévenin?","a":"Una rete lineare vista da due morsetti equivale a un generatore di tensione V_Th in serie con Z_Th.\n\nV_Th è la tensione a vuoto e Z_Th coincide con l'impedenza di Norton; vale I_N=V_Th/Z_Th.","t":"QA"}
 ]

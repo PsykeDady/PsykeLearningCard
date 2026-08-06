@@ -1,52 +1,10 @@
 [
-  {
-    "q": "partita dal compito rifacendo gli errori",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "domande su sql e algebra relazionale partendo dagli esercizi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ICD",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "SNOMED",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "firme elettroniche",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "firma digitale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "XML",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "CDA",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "HL7",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Dicom",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Qual è la relazione tra SQL e algebra relazionale?","a":"L'algebra relazionale definisce operatori come selezione, proiezione, join, unione e differenza su relazioni; SQL li esprime in forma dichiarativa e aggiunge aggregazioni, null, duplicati e aggiornamenti.\n\nL'ottimizzatore trasforma la query in un piano di operatori equivalenti.","t":"QA"},
+  {"q":"Che cos'è ICD?","a":"L'International Classification of Diseases dell'OMS classifica malattie, condizioni e cause di morte mediante codici gerarchici.\n\nServe a statistiche, reporting e rimborso; è una classificazione, non una terminologia clinica dettagliata come SNOMED CT.","t":"QA"},
+  {"q":"Che cos'è SNOMED CT?","a":"È una terminologia clinica composizionale con concetti, descrizioni e relazioni formalizzate. Consente rappresentazioni granulari e interoperabilità semantica dei dati sanitari.\n\nLe mappe verso ICD supportano finalità statistiche, ma le due risorse non sono intercambiabili.","t":"QA"},
+  {"q":"Qual è la differenza tra firma elettronica e firma digitale?","a":"Firma elettronica è una categoria giuridica ampia di dati usati per firmare; livelli e requisiti dipendono dalla normativa.\n\nLa firma digitale è una realizzazione crittografica a chiave pubblica che lega documento e firmatario e consente verificare autenticità e integrità tramite certificato.","t":"QA"},
+  {"q":"Qual è il ruolo di XML nei sistemi sanitari?","a":"Rappresenta documenti e messaggi strutturati, estensibili e validabili con schema. È usato, tra l'altro, in HL7 v3 e CDA.\n\nNamespace, schema e vocabolari controllati sono necessari per interoperabilità semantica; XML da solo garantisce soltanto struttura sintattica.","t":"QA"},
+  {"q":"Che cos'è HL7 CDA?","a":"Clinical Document Architecture è uno standard HL7 basato su XML per documenti clinici persistenti, autenticabili e contestualizzati.\n\nOgni documento ha header con paziente, autore e contesto e body narrativo/strutturato; profili e template ne limitano l'uso concreto.","t":"QA"},
+  {"q":"Che cos'è HL7 e quali famiglie principali comprende?","a":"È un insieme di standard per scambio e interoperabilità sanitaria. HL7 v2 usa messaggi delimitati e trigger event; v3 usa modelli e XML; CDA rappresenta documenti; FHIR usa risorse e API moderne.\n\nLa compatibilità richiede profili, terminologie e workflow condivisi.","t":"QA"},
+  {"q":"Che cos'è DICOM?","a":"È lo standard per immagini mediche e informazioni associate. Definisce formato dei file, data element/tag, oggetti informativi e servizi di rete per acquisizione, archiviazione, query/retrieve e trasferimento.\n\nPACS e modalità diagnostiche comunicano tipicamente attraverso DICOM.","t":"QA"}
 ]

@@ -1,122 +1,16 @@
 [
-  {
-    "q": "cos'è una formula soddisfacibile?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è una tautologia?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "modus ponens, tollendo tollens",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "A implica B or C or D implica Z, cos'è?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "A implica B che implica C, cos'è?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è una formula ambigua? +esempio",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "precedenza tra connettivi logici",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "A f, B v, C f... com'è questa formula sotto l'interpretazione?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "A and B or C, com'è questa formula?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è una contraddizione?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "A implica B implica Z",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "A and B or C",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "(P and not Q) and not P (applicare la distributiva)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è una formula valida?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è un'interpretazione in logica del primo ordine?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dimostrazione di calcolo proposizionale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizioni di logica del primo ordine",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "proprietà trigonometriche",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dimostrazioni trigonometriche",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "proprietà equazioni logaritmiche esponenziali",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "proprietà dei logaritmi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ellisse",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dimostrazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "formule chiuse e aperte",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Quando una formula proposizionale è soddisfacibile?","a":"È soddisfacibile se esiste almeno un'interpretazione delle variabili che la rende vera. È insoddisfacibile, o una contraddizione, se risulta falsa per ogni interpretazione.","t":"QA"},
+  {"q":"Qual è la differenza tra tautologia e formula valida?","a":"Nel calcolo proposizionale una tautologia è vera per ogni assegnazione di verità. Più in generale, una formula è valida se è vera in ogni interpretazione della logica considerata. Si scrive ⊨φ.","t":"QA"},
+  {"q":"Che cosa sono modus ponens e modus tollens?","a":"Modus ponens: da P e P→Q si deduce Q. Modus tollens: da P→Q e ¬Q si deduce ¬P. Sono regole d'inferenza valide; il secondo usa la contrapposizione.","t":"QA"},
+  {"q":"Come si associa una catena di implicazioni come A→B→C?","a":"Per convenzione l'implicazione è associativa a destra: A→(B→C), equivalente a (A∧B)→C. Non coincide in generale con (A→B)→C, quindi le parentesi eliminano ambiguità.","t":"QA"},
+  {"q":"Qual è la precedenza usuale dei connettivi logici?","a":"Dalla più alta alla più bassa: negazione ¬, congiunzione ∧, disgiunzione ∨, implicazione →, equivalenza ↔. Le convenzioni possono variare: conviene usare parentesi quando la lettura non è immediata.","t":"QA"},
+  {"q":"Quando una formula è sintatticamente ambigua?","a":"È ambigua quando la sua scrittura ammette più alberi sintattici e quindi più letture. Per esempio P∧Q∨R può indicare (P∧Q)∨R oppure P∧(Q∨R) senza convenzioni di precedenza.","t":"QA"},
+  {"q":"Come si valuta una formula sotto un'interpretazione?","a":"Si assegnano valori di verità alle proposizioni atomiche e si calcola dal sottoalbero più interno verso l'esterno usando le tavole dei connettivi. P→Q è falsa soltanto quando P è vera e Q falsa.","t":"QA"},
+  {"q":"Come si dimostra semanticamente una formula proposizionale?","a":"Per dimostrare validità si può costruire la tavola di verità e verificare che l'ultima colonna sia sempre vera, oppure mostrare che la negazione è insoddisfacibile. Una dimostrazione sintattica usa invece assiomi e regole di inferenza.","t":"QA"},
+  {"q":"Che cos'è un'interpretazione nella logica del primo ordine?","a":"È composta da un dominio non vuoto e da un'assegnazione di significato: elementi alle costanti, funzioni alle lettere funzionali e relazioni ai predicati. Un ambiente assegna inoltre elementi alle variabili libere.","t":"QA"},
+  {"q":"Qual è la differenza tra variabile libera e vincolata, formula aperta e chiusa?","a":"Un'occorrenza è vincolata se cade nel campo di un quantificatore che lega quella variabile; altrimenti è libera. Una formula senza variabili libere è chiusa o enunciato e ha un valore di verità nell'interpretazione; una formula aperta dipende anche dall'assegnazione.","t":"QA"},
+  {"q":"Quali sono le principali identità trigonometriche?","a":"sin²x+cos²x=1; tan x=sin x/cos x; sin(a±b)=sin a cos b±cos a sin b; cos(a±b)=cos a cos b∓sin a sin b. Da queste derivano formule di duplicazione e bisezione.","t":"QA"},
+  {"q":"Quali proprietà si usano con logaritmi ed esponenziali?","a":"Per basi a>0, a≠1: logₐ(xy)=logₐx+logₐy, logₐ(x/y)=logₐx-logₐy, logₐ(x^r)=r logₐx e a^{logₐx}=x. Il dominio del logaritmo richiede argomento positivo.","t":"QA"},
+  {"q":"Come si risolvono equazioni esponenziali e logaritmiche?","a":"Si tenta di ricondurre i membri alla stessa base o si applica un logaritmo, che è iniettivo sul dominio. Nelle equazioni logaritmiche si impongono prima argomenti positivi e si scartano le soluzioni estranee.","t":"QA"},
+  {"q":"Qual è l'equazione canonica di un'ellisse e quali sono i suoi elementi?","a":"Con centro nell'origine e a≥b>0: x²/a²+y²/b²=1. I semiassi sono a e b; i fuochi sono (±c,0), con c²=a²-b²; l'eccentricità e=c/a è compresa tra 0 e 1.","t":"QA"}
 ]

@@ -1,52 +1,12 @@
 [
-  {
-    "q": "Wildcard",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "PECS lower bound upper bound",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Wrapper class",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Generics",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Implementare dei metodi con una interfacca che ha l’iteratore",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Differenze tra inheritance Python e java",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Interfacce e classi astratte",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Collection in python",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Dynamic binding e static binding",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Method resolution order",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"A cosa servono i generics in Java?","a":"Permettono di parametrizzare classi e metodi con tipi, offrendo controlli in compilazione e riducendo cast. Per esempio List<String> accetta soltanto stringhe. In Java sono implementati principalmente tramite type erasure.","t":"QA"},
+  {"q":"Che cosa sono le wildcard nei generics Java?","a":"? indica un tipo sconosciuto. ? extends T accetta T o sottotipi ed è adatta alla lettura; ? super T accetta T o supertipi ed è adatta alla scrittura di T. List<?> consente letture come Object, ma non aggiunte diverse da null.","t":"QA"},
+  {"q":"Che cosa significa la regola PECS?","a":"Producer Extends, Consumer Super: se una struttura produce valori T si usa ? extends T; se consuma valori T si usa ? super T. Un parametro che deve sia leggere sia scrivere lo stesso tipo richiede spesso un parametro di tipo preciso.","t":"QA"},
+  {"q":"Che cosa sono le wrapper class Java?","a":"Integer, Double, Boolean e simili rappresentano i primitivi come oggetti. Consentono l'uso nelle collezioni generiche e offrono metodi di conversione. Autoboxing e unboxing sono automatici, ma l'unboxing di null genera NullPointerException.","t":"QA"},
+  {"q":"Qual è la differenza tra interfaccia e classe astratta in Java?","a":"Un'interfaccia definisce un contratto e consente implementazione multipla; può avere metodi default e statici. Una classe astratta può possedere stato d'istanza, costruttori e implementazioni protette, ma una classe può estenderne una sola.","t":"QA"},
+  {"q":"Qual è la differenza tra ereditarietà in Java e Python?","a":"Java ha ereditarietà singola tra classi e multipla tramite interfacce, con tipi dichiarati staticamente. Python consente ereditarietà multipla tra classi e risolve i metodi tramite MRO; i tipi sono dinamici e prevale spesso il duck typing.","t":"QA"},
+  {"q":"Che cos'è il Method Resolution Order di Python?","a":"È l'ordine in cui Python cerca attributi e metodi nelle classi base. Usa la linearizzazione C3, consultabile con Classe.__mro__, che preserva ordine locale, monotonicità e precedenza delle superclassi. super() segue questo ordine cooperativo.","t":"QA"},
+  {"q":"Qual è la differenza tra binding statico e dinamico?","a":"Il binding statico decide il metodo in compilazione, per esempio nell'overloading in Java in base ai tipi dichiarati. Il binding dinamico sceglie a runtime l'override in base alla classe effettiva dell'oggetto e realizza il polimorfismo.","t":"QA"},
+  {"q":"Quali sono le principali collezioni integrate di Python?","a":"list è una sequenza mutabile ordinata; tuple è immutabile; set contiene elementi unici hashable; dict associa chiavi hashable a valori. La scelta dipende da ordine, mutabilità, unicità e operazioni richieste.","t":"QA"},
+  {"q":"Come si implementa una struttura iterabile tramite un'interfaccia?","a":"In Java si implementa Iterable<T> e iterator() restituisce un Iterator<T> con hasNext() e next(), ed eventualmente remove(). Ogni iteratore conserva uno stato di visita indipendente e next() deve lanciare NoSuchElementException quando gli elementi finiscono.","t":"QA"}
 ]

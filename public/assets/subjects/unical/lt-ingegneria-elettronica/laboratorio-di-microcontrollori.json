@@ -1,12 +1,4 @@
 [
-  {
-    "q": "teorema di Nyquist",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "digitalizzazione controllore",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cosa stabilisce il teorema del campionamento di Nyquist–Shannon?","a":"Un segnale limitato in banda a f_max può essere ricostruito idealmente se f_s>2f_max.\n\nLa frequenza di Nyquist è f_s/2; componenti superiori producono aliasing. In pratica si usa un filtro anti-alias e un margine oltre il limite teorico.","t":"QA"},
+  {"q":"Come si digitalizza un controllore continuo?","a":"Si sceglie un periodo di campionamento, si discretizza il modello o il regolatore con metodi come zero-order hold, Tustin o Euler e si implementa un'equazione alle differenze.\n\nVanno considerati quantizzazione, ritardi di calcolo, saturazione, anti-windup e stabilità nel dominio z.","t":"QA"}
 ]

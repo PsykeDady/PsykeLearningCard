@@ -1,17 +1,5 @@
 [
-  {
-    "q": "Esercizi con liste normali",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Esercizi liste concatenate",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Esercizi albero di ricerca binaria",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Quali operazioni fondamentali bisogna saper implementare sulle liste sequenziali?","a":"Scansione, ricerca, inserimento/rimozione, aggregazione, filtro, inversione e ordinamento.\n\nSu array accesso per indice è O(1), ma inserimenti interni richiedono O(n); vanno gestiti indici, lista vuota e duplicati.","t":"QA"},
+  {"q":"Quali operazioni fondamentali bisogna saper implementare sulle liste concatenate?","a":"Visita, ricerca, inserimento e rimozione in testa/coda o dopo un nodo, inversione e fusione.\n\nAccesso per posizione è O(n); aggiornamenti sono O(1) quando si possiede il riferimento corretto, con attenzione a testa, coda e null.","t":"QA"},
+  {"q":"Quali operazioni fondamentali bisogna saper implementare su un albero binario di ricerca?","a":"Search, insert e delete preservano chiavi minori a sinistra e maggiori a destra; la visita inorder restituisce ordine.\n\nIl costo è O(h): O(log n) se bilanciato, O(n) nel caso degenerato. La rimozione distingue zero, uno o due figli.","t":"QA"}
 ]

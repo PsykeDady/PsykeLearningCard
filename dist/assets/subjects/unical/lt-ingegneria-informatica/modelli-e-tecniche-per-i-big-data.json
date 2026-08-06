@@ -1,42 +1,9 @@
 [
-  {
-    "q": "BSP in generale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Esempi pratici di BSP (GraphX)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è una EdgeTriplet",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "UPC++ e il metodo Monte Carlo per piGreco",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "PGAS",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "PGAS > APGAS",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Efficienza e Speedup",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Efficienza Sovralineare (A volte l'efficienza può superare il 100% grazie a metodi come il caching)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come funziona il modello Bulk Synchronous Parallel?","a":"BSP alterna superstep composti da calcolo locale, comunicazione e barriera globale. Il costo dipende dal massimo lavoro locale, dai dati comunicati e dal costo di sincronizzazione. Il modello semplifica il ragionamento, ma straggler e barriere possono limitarne le prestazioni.","t":"QA"},
+  {"q":"Come applicano BSP i sistemi di elaborazione di grafi?","a":"In modelli vertex-centric ogni vertice elabora lo stato e i messaggi ricevuti, invia messaggi ai vicini e poi sincronizza. Algoritmi come PageRank o propagazione delle distanze iterano superstep finché convergono o non restano vertici attivi.","t":"QA"},
+  {"q":"Che cos'è una EdgeTriplet in GraphX?","a":"È una vista che riunisce un arco con gli attributi del vertice sorgente e di quello destinazione: srcAttr, dstAttr e attr dell'arco. Consente di calcolare messaggi o proprietà usando in una sola struttura entrambi gli estremi.","t":"QA"},
+  {"q":"Che cos'è il modello PGAS?","a":"Partitioned Global Address Space presenta uno spazio di indirizzi globale logicamente condiviso ma fisicamente partizionato. Un programma può riferirsi a dati remoti distinguendo località e costo, combinando programmabilità della memoria condivisa e controllo del calcolo distribuito.","t":"QA"},
+  {"q":"Che cosa aggiunge APGAS a PGAS?","a":"Asynchronous PGAS esprime attività asincrone collocate in place differenti, con costrutti come async, at e finish. Permette di sovrapporre calcolo e comunicazione e di strutturare il parallelismo, mantenendo esplicita la località dei dati.","t":"QA"},
+  {"q":"Come si può stimare π con Monte Carlo in UPC++?","a":"Ogni rank genera punti casuali indipendenti nel quadrato [-1,1]² e conta quelli con x²+y²≤1. Una riduzione globale somma successi e campioni; π è stimato come 4·successi/totale. Occorrono seed distinti e abbastanza campioni.","t":"QA"},
+  {"q":"Come si definiscono speedup ed efficienza parallela?","a":"Lo speedup su p processori è Sₚ=T₁/Tₚ; l'efficienza è Eₚ=Sₚ/p. Idealmente Sₚ=p ed Eₚ=1. Uno speedup sovralineare può apparire per effetti di cache, memoria aggregata o confronto con un algoritmo sequenziale non equivalente, non perché si superi gratuitamente il lavoro ideale.","t":"QA"}
 ]

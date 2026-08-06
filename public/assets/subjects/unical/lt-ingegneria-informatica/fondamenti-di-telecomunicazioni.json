@@ -1,52 +1,10 @@
 [
-  {
-    "q": "Teo di parseval",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "shannon",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "algoritmo di Gram-Schmidt",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "interferenze",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "intersimbolo con criterio di nyquist",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "criteri di decisione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "struttura ricevitore",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "matched filter",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "convoluzione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "correlazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cosa afferma il teorema di Parseval?","a":"L'energia di un segnale è uguale nel dominio del tempo e della frequenza: ∫|x(t)|²dt=(1/2π)∫|X(ω)|²dω secondo convenzione.\n\nPer serie di Fourier, la potenza media è la somma dei quadrati dei coefficienti.","t":"QA"},
+  {"q":"Che cosa afferma il teorema di Shannon sul campionamento?","a":"Un segnale limitato in banda a B Hz si ricostruisce idealmente da campioni uniformi se f_s>2B.\n\nSotto tale frequenza si ha aliasing; nella pratica servono filtro anti-alias e margine di transizione.","t":"QA"},
+  {"q":"Come funziona l'algoritmo di Gram–Schmidt?","a":"Da vettori indipendenti costruisce una base ortogonale sottraendo a ogni vettore le proiezioni sui precedenti; normalizzando si ottiene una base ortonormale.\n\nLa versione modificata è numericamente più stabile.","t":"QA"},
+  {"q":"Che cosa sono interferenza e interferenza intersimbolica?","a":"Interferenza è energia indesiderata sovrapposta al segnale. L'ISI nasce quando gli impulsi di simboli diversi si sovrappongono al tempo di decisione per banda limitata o multipath.\n\nEqualizzazione e pulse shaping la mitigano.","t":"QA"},
+  {"q":"Che cosa afferma il criterio di Nyquist per zero ISI?","a":"La risposta complessiva p(t) deve soddisfare p(kT)=0 per k≠0 e p(0)=1.\n\nIn frequenza, le repliche traslate dello spettro devono sommare a una costante; i filtri raised-cosine soddisfano il criterio con banda controllata.","t":"QA"},
+  {"q":"Come è strutturato un ricevitore digitale ottimo in AWGN?","a":"Filtra con matched filter o correlatori rispetto ai segnali base, campiona al tempo di simbolo e applica una regola di decisione.\n\nCon simboli equiprobabili sceglie minima distanza euclidea o massima correlazione; con prior/costi usa MAP o Bayes.","t":"QA"},
+  {"q":"Che cos'è un matched filter?","a":"Ha risposta impulsiva proporzionale alla versione coniugata e ribaltata temporalmente del segnale atteso.\n\nMassimizza il rapporto segnale-rumore all'istante di campionamento in rumore bianco gaussiano ed equivale a un correlatore.","t":"QA"},
+  {"q":"Qual è la differenza tra convoluzione e correlazione?","a":"Convoluzione: (x*h)(t)=∫x(τ)h(t−τ)dτ e descrive l'uscita LTI. Correlazione: R_xy(τ)=∫x*(t)y(t+τ)dt e misura similarità a un ritardo.\n\nLa correlazione equivale a convoluzione con un segnale coniugato e ribaltato.","t":"QA"}
 ]

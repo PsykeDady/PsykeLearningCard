@@ -1,17 +1,5 @@
 [
-  {
-    "q": "Potenziali ritardati",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "polarizzazione lineare e circolare",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "teorema di poynting",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cosa sono i potenziali ritardati?","a":"Sono i potenziali elettromagnetici calcolati usando sorgenti al tempo ritardato t_r=t−|r−r'|/c, perché le perturbazioni propagano a velocità finita.\n\nIn gauge di Lorenz, φ e A sono integrali di densità di carica e corrente valutate a t_r.","t":"QA"},
+  {"q":"Qual è la differenza tra polarizzazione lineare e circolare?","a":"È lineare quando la punta di E oscilla lungo una retta, cioè le componenti ortogonali sono in fase o opposizione.\n\nÈ circolare quando hanno uguale ampiezza e sfasamento ±π/2; nel caso generale la polarizzazione è ellittica. Il verso dipende dalla convenzione e dalla direzione di osservazione.","t":"QA"},
+  {"q":"Che cosa afferma il teorema di Poynting?","a":"Esprime la conservazione dell'energia elettromagnetica: ∂u/∂t+∇·S+J·E=0, con u densità di energia e S=E×H.\n\nLa diminuzione dell'energia nel volume equivale al flusso uscente più il lavoro compiuto sui portatori di carica.","t":"QA"}
 ]

@@ -1,7 +1,4 @@
 [
-  {
-    "q": "Per quello che ho potuto constatare io si concentra molto sulla seconda parte cioè dai condensatori-induttori in poi ...a me ha chiesto la risposta forza di un circuito rl e la potenza media",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Qual è la risposta forzata di un circuito RL serie alimentato in continua?","a":"Per V applicata a t=0, L di/dt+Ri=V e i(t)=V/R+[i(0)−V/R]e^{−t/τ}, con τ=L/R.\n\nLa risposta forzata a regime è V/R; il termine esponenziale è la risposta naturale.","t":"QA"},
+  {"q":"Come si calcola la potenza media in regime sinusoidale?","a":"Con valori RMS, P=VI cosφ=Re{VI*}; Q=VI sinφ e |S|=VI.\n\nInduttori e condensatori ideali hanno potenza media nulla perché restituiscono nel ciclo l'energia immagazzinata.","t":"QA"}
 ]

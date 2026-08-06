@@ -1,22 +1,22 @@
 [
   {
-    "q": "format string",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è una format-string vulnerability?",
+    "a": "Si verifica quando dati controllati dall'utente vengono usati come stringa di formato in una funzione variadica, per esempio `printf(input)`.\n\nGli specificatori possono causare letture, crash e talvolta scritture in memoria. La correzione è usare un formato costante, come `printf(\"%s\", input)`, insieme a warning e hardening del compilatore.",
     "t": "QA"
   },
   {
-    "q": "fasi di compilazione",
-    "a": "Risposta non disponibile",
+    "q": "Quali sono le principali fasi che trasformano un sorgente in un eseguibile?",
+    "a": "Il preprocessore espande direttive e macro; il compilatore traduce e ottimizza producendo assembly; l'assembler genera file oggetto; il linker risolve simboli e relocation e combina oggetti e librerie.\n\nAl caricamento, loader e dynamic linker mappano segmenti e dipendenze necessarie al processo.",
     "t": "QA"
   },
   {
-    "q": "il binario",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è un file binario eseguibile?",
+    "a": "È un file strutturato contenente codice macchina, dati, metadati, entry point, informazioni di linking e indicazioni per il loader.\n\nNon è soltanto una sequenza di istruzioni: formato, architettura, ABI, permessi dei segmenti e dipendenze determinano come il sistema può caricarlo ed eseguirlo.",
     "t": "QA"
   },
   {
-    "q": "il binario > formato Elf",
-    "a": "Risposta non disponibile",
+    "q": "Come è strutturato un file ELF?",
+    "a": "L'ELF header identifica classe, endianness, architettura, tipo ed entry point.\n\nI program header descrivono i segmenti usati dal loader; i section header descrivono sezioni utili a linking e analisi, come `.text`, `.data`, `.bss`, tabelle dei simboli, relocation, GOT e PLT. Le sezioni possono essere assenti in un binario stripped senza impedirne il caricamento.",
     "t": "QA"
   }
 ]

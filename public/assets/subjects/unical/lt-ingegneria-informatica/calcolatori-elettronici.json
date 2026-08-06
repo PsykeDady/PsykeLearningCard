@@ -1,42 +1,8 @@
 [
-  {
-    "q": "Busy waiting con codice",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione di cache e metodi di uso",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione di cache e metodi di uso > LRU",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione di cache e metodi di uso > MRU",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione di cache e metodi di uso > RRU",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione di coder/encoder",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "karnaugh e implicante",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "esercizio di assembly, operazione su numeri a 64 bit usando registri per numero",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cos'è il busy waiting?","a":"È l'attesa attiva in cui un thread controlla ripetutamente una condizione, per esempio `while (!ready) {}`.\n\nRiduce latenza per attese brevissime ma consuma CPU; per attese lunghe si usano primitive bloccanti, avendo cura di atomicità e visibilità della memoria.","t":"QA"},
+  {"q":"Che cos'è una cache e quali forme di località sfrutta?","a":"È una memoria piccola e veloce che conserva copie di blocchi del livello successivo.\n\nSfrutta località temporale, riuso recente, e spaziale, uso di indirizzi vicini; hit rate, miss penalty e hit time determinano l'effetto prestazionale.","t":"QA"},
+  {"q":"Come si confrontano LRU, MRU e Random replacement?","a":"LRU sostituisce la linea usata meno recentemente; MRU la più recente, utile in pattern particolari; Random sceglie casualmente e costa poco.\n\nLRU esatto diventa oneroso con alta associatività, quindi si usano spesso approssimazioni pseudo-LRU.","t":"QA"},
+  {"q":"Qual è la differenza tra encoder e decoder combinatorio?","a":"Un encoder traduce una linea attiva tra 2^n in un codice di n bit, spesso con priorità per ingressi multipli.\n\nUn decoder fa l'inverso: da n bit attiva una delle 2^n uscite, eventualmente condizionata da enable.","t":"QA"},
+  {"q":"Che cosa sono implicante e implicante primo nelle mappe di Karnaugh?","a":"Un implicante è un termine prodotto che copre uno o più minterm a 1; un implicante primo non può essere ampliato eliminando un altro letterale.\n\nSi raggruppano celle adiacenti in potenze di due, includendo adiacenza sui bordi e don't-care quando vantaggioso.","t":"QA"},
+  {"q":"Come si eseguono operazioni a 64 bit con registri più piccoli?","a":"Si suddividono gli operandi in parole. Per la somma si somma la parte bassa e si propaga il carry a quella alta con add-with-carry; per la sottrazione si propaga il borrow.\n\nEndianness riguarda la memoria, non l'ordine logico delle parole nei registri.","t":"QA"}
 ]

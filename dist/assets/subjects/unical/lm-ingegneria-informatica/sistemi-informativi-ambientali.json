@@ -1,57 +1,47 @@
 [
   {
-    "q": "cosa è un DEM?",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è un Digital Elevation Model (DEM)?",
+    "a": "È una rappresentazione numerica della quota del terreno rispetto a un riferimento, normalmente organizzata come griglia raster.\n\nOgni cella associa una posizione planimetrica a un'elevazione. Risoluzione, sistema di riferimento, accuratezza verticale e gestione dei valori mancanti determinano gli usi possibili.",
     "t": "QA"
   },
   {
-    "q": "differenza file shape vettoriale e file raster",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la differenza tra dati geografici vettoriali e raster?",
+    "a": "Il formato vettoriale rappresenta entità discrete mediante punti, linee e poligoni con attributi; è adatto, per esempio, a strade e confini.\n\nIl raster divide lo spazio in celle e rappresenta bene fenomeni continui come quota o temperatura. Accuratezza e occupazione dipendono dalla risoluzione della griglia.",
     "t": "QA"
   },
   {
-    "q": "tecniche di geoprocessing",
-    "a": "Risposta non disponibile",
+    "q": "Quali sono le principali tecniche di geoprocessing?",
+    "a": "Tra le operazioni vettoriali: buffer, clip, dissolve, intersection, union, spatial join e overlay.\n\nTra quelle raster: riclassificazione, map algebra, filtri focali, resampling, interpolazione e analisi di terreno. Ogni operazione richiede sistemi di riferimento e scale compatibili.",
     "t": "QA"
   },
   {
-    "q": "tutti i tipi di interpolatori (esatto,non esatto,locale,globale...)",
-    "a": "Risposta non disponibile",
+    "q": "Come si classificano i metodi di interpolazione spaziale?",
+    "a": "Un interpolatore è esatto se conserva i valori osservati nei punti campionati, altrimenti è approssimante; è locale se usa solo un vicinato, globale se usa tutto il campione.\n\nPuò inoltre essere deterministico, come IDW e spline, oppure geostatistico, come kriging, che modella la correlazione spaziale e fornisce anche una stima dell'incertezza.",
     "t": "QA"
   },
   {
-    "q": "cosa vuol dire la media o la varianza in un certo punto?",
-    "a": "Risposta non disponibile",
+    "q": "Che cosa rappresentano media e varianza di una variabile spaziale in un punto?",
+    "a": "La media, o valore atteso, rappresenta il valore centrale previsto della variabile aleatoria Z(s) nella posizione s.\n\nLa varianza misura la dispersione attorno a tale media. Nel kriging, la varianza di stima quantifica invece l'incertezza della previsione e dipende dalla geometria del campionamento e dal variogramma.",
     "t": "QA"
   },
   {
-    "q": "cosa rappresenta Z0? Ponendo Zi come i punti che hanno misura esatta con i>0",
-    "a": "Risposta non disponibile",
+    "q": "Che cosa rappresentano Z(s₀) e Z(sᵢ) nell'interpolazione spaziale?",
+    "a": "Z(sᵢ), con i>0, indica il valore osservato nelle posizioni campionate sᵢ; Z(s₀) è il valore ignoto nella posizione in cui si vuole prevedere il fenomeno.\n\nUna stima lineare assume spesso la forma Ẑ(s₀)=ΣᵢλᵢZ(sᵢ), con pesi determinati dal metodo scelto.",
     "t": "QA"
   },
   {
-    "q": "cosa è una misura?",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è una misura e perché non coincide necessariamente con il valore vero?",
+    "a": "È il risultato dell'osservazione di una grandezza mediante strumento e procedura definiti.\n\nContiene sempre incertezza dovuta a risoluzione, calibrazione, condizioni ambientali, campionamento ed errori casuali o sistematici. Uno strumento non misura quindi “sicuramente bene”: accuratezza e precisione devono essere valutate.",
     "t": "QA"
   },
   {
-    "q": "cosa è una misura? > lo strumento misura sicuramente bene",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è un Ground Control Point (GCP)?",
+    "a": "È un punto chiaramente identificabile sia nell'immagine o nel rilievo sia nel mondo reale, del quale sono note coordinate accurate.\n\nI GCP servono per georeferenziazione, ortorettifica e valutazione dell'errore; devono essere ben distribuiti nello spazio e distinti dai punti usati esclusivamente per il controllo indipendente.",
     "t": "QA"
   },
   {
-    "q": "cosa è un GCP?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come è fatto un file di tipo geografico?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come è fatto un file di tipo geografico? > numero delle righe,colonne,risoluzione,xcornern,ycornern...",
-    "a": "Risposta non disponibile",
+    "q": "Quali informazioni deve contenere un dataset geografico raster?",
+    "a": "Oltre ai valori delle celle servono numero di righe e colonne, dimensione o risoluzione della cella, coordinate dell'origine o degli angoli, valore NoData e sistema di riferimento.\n\nFormati come GeoTIFF incorporano i metadati; altri, come ASCII Grid, li descrivono in un header testuale.",
     "t": "QA"
   }
 ]

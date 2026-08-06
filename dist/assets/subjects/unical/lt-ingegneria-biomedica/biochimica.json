@@ -1,72 +1,13 @@
 [
-  {
-    "q": "glicolisi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ciclo dell'urea",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "struttura secondaria delle proteine",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come si raggruppano gli amminoacidi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "fosforilazione ossidativa",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "spettrofotometro",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "quanti gruppi di amminoacidi ci sono e quali sono",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "visualizzazione della catena amminoacidica",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ciclo di krebs",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "catena respiratoria",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "com'è fatto uno spettrofotometro",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "spettrofotometria",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "formula dell’assorbanza",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cromatografia",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Quali sono fasi e bilancio netto della glicolisi?","a":"Nel citosol una molecola di glucosio viene convertita in due piruvati attraverso una fase di investimento e una di rendimento.\n\nIl bilancio netto è 2 ATP, 2 NADH e 2 piruvati per glucosio; in anaerobiosi il NADH viene riossidato tramite fermentazione.","t":"QA"},
+  {"q":"Qual è la funzione del ciclo dell'urea?","a":"Nel fegato converte l'azoto tossico di ammoniaca e aspartato in urea eliminabile dai reni.\n\nLe prime reazioni avvengono nel mitocondrio e le successive nel citosol; il ciclo consuma quattro legami fosfato ad alta energia per ogni urea.","t":"QA"},
+  {"q":"Quali strutture secondarie assumono le proteine?","a":"Le principali sono α-elica, foglietto β e turn, stabilizzati da legami a idrogeno tra gruppi C=O e N–H dello scheletro peptidico.\n\nLa sequenza e gli ingombri delle catene laterali influenzano quali conformazioni sono favorite.","t":"QA"},
+  {"q":"Come si classificano gli amminoacidi in base alla catena laterale?","a":"Una classificazione comune distingue apolari alifatici, aromatici, polari non carichi, acidi con carica negativa e basici con carica positiva al pH fisiologico.\n\nCategorie e carica possono sovrapporsi o cambiare col pH; il raggruppamento serve a prevedere solubilità e interazioni.","t":"QA"},
+  {"q":"Come si rappresenta una catena polipeptidica?","a":"La sequenza si scrive convenzionalmente dall'estremità N-terminale a quella C-terminale usando codici a una o tre lettere.\n\nGli amminoacidi sono collegati da legami peptidici; diagrammi di struttura mostrano backbone, catene laterali e livelli di ripiegamento.","t":"QA"},
+  {"q":"Come funziona il ciclo di Krebs?","a":"Nella matrice mitocondriale l'acetil-CoA viene ossidato a due CO₂ e l'ossalacetato viene rigenerato.\n\nPer ogni acetil-CoA produce 3 NADH, 1 FADH₂ e 1 GTP/ATP, che alimentano soprattutto la fosforilazione ossidativa.","t":"QA"},
+  {"q":"Come funziona la catena respiratoria?","a":"Gli elettroni di NADH e FADH₂ attraversano complessi della membrana mitocondriale interna fino all'ossigeno, ridotto ad acqua.\n\nI complessi I, III e IV pompano protoni creando una forza proton-motrice; coenzima Q e citocromo c trasportano elettroni tra complessi.","t":"QA"},
+  {"q":"Che cos'è la fosforilazione ossidativa?","a":"È la sintesi di ATP accoppiata all'ossidazione di NADH/FADH₂. Il gradiente protonico generato dalla catena respiratoria spinge l'ATP sintasi a convertire ADP e fosfato in ATP.\n\nDisaccoppianti dissipano il gradiente; inibitori bloccano specifici complessi.","t":"QA"},
+  {"q":"Come è fatto uno spettrofotometro?","a":"Comprende sorgente luminosa, selettore di lunghezza d'onda o monocromatore, cuvetta col campione, rivelatore ed elettronica di elaborazione.\n\nConfronta intensità incidente e trasmessa dopo una misura di riferimento o blank.","t":"QA"},
+  {"q":"Che cosa misura la spettrofotometria e qual è la legge di Beer–Lambert?","a":"Misura assorbimento o trasmissione della luce in funzione della lunghezza d'onda. L'assorbanza è A=−log₁₀(I/I₀)=εbc, con coefficiente di estinzione ε, cammino ottico b e concentrazione c.\n\nLa linearità vale entro condizioni sperimentali appropriate.","t":"QA"},
+  {"q":"Che cos'è la cromatografia?","a":"È una famiglia di tecniche che separa componenti in base alla diversa distribuzione tra fase mobile e fase stazionaria.\n\nAffinità, scambio ionico, esclusione dimensionale e fase inversa sfruttano proprietà diverse; tempo o volume di ritenzione aiutano a identificare i componenti.","t":"QA"}
 ]

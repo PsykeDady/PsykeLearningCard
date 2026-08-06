@@ -1,47 +1,11 @@
 [
-  {
-    "q": "ICN",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "SDN",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "MPLS",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Micro e Macromobilità",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Tipologia di attacchi informatici attivi e passivi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Tecniche di cifratura simmetriche e asimmetriche",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "IPSEC",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Differenza tra IntServ e DiffServ",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "IPv4 e IPv6",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cos'è l'Information-Centric Networking?","a":"È un paradigma che indirizza contenuti nominati anziché host. La rete può memorizzare copie in cache e soddisfare una richiesta dal nodo più opportuno. Favorisce distribuzione e mobilità, ma pone problemi di naming, sicurezza dei contenuti e invalidazione.","t":"QA"},
+  {"q":"Che cos'è il Software-Defined Networking?","a":"Separa piano di controllo e piano di inoltro. Un controller logicamente centralizzato programma gli switch tramite interfacce southbound e offre API alle applicazioni. Rende la rete automatizzabile, ma richiede controller resilienti e canali sicuri.","t":"QA"},
+  {"q":"Come funziona MPLS?","a":"All'ingresso i pacchetti sono classificati in Forwarding Equivalence Classes e ricevono una label. I router intermedi inoltrano scambiando etichette, mentre l'uscita le rimuove. MPLS abilita traffic engineering, VPN e percorsi espliciti senza sostituire necessariamente IP.","t":"QA"},
+  {"q":"Qual è la differenza tra micro-mobilità e macro-mobilità?","a":"La micro-mobilità gestisce spostamenti frequenti entro un dominio con aggiornamenti locali e handover rapidi. La macro-mobilità gestisce il passaggio tra domini o reti, mantenendo raggiungibilità globale mediante meccanismi come Mobile IP.","t":"QA"},
+  {"q":"Qual è la differenza tra attacchi passivi e attivi?","a":"Gli attacchi passivi osservano il traffico, come intercettazione e analisi, minacciando la riservatezza. Gli attivi modificano, iniettano, eliminano o ritrasmettono messaggi e possono negare il servizio. Cifratura protegge il contenuto; autenticazione, integrità e anti-replay contrastano modifiche.","t":"QA"},
+  {"q":"Come si combinano crittografia simmetrica e asimmetrica?","a":"La simmetrica è veloce ma richiede condividere una chiave; l'asimmetrica facilita autenticazione e scambio ma è più costosa. I protocolli ibridi usano l'asimmetrica per autenticare e concordare una chiave di sessione, poi cifrano i dati simmetricamente.","t":"QA"},
+  {"q":"Che cosa offre IPsec?","a":"Protegge pacchetti IP con AH, che autentica senza cifrare, ed ESP, che offre riservatezza e può autenticare. La modalità transport protegge il payload; tunnel incapsula l'intero pacchetto, tipica delle VPN. IKE negozia Security Association e chiavi.","t":"QA"},
+  {"q":"Qual è la differenza tra IntServ e DiffServ?","a":"IntServ riserva risorse per flusso, tipicamente con RSVP, offrendo garanzie fini ma poco scalabili nel core. DiffServ marca classi nel campo DSCP e applica comportamenti aggregati per hop: è più scalabile, ma offre garanzie meno individuali.","t":"QA"},
+  {"q":"Quali differenze principali ci sono tra IPv4 e IPv6?","a":"IPv6 usa indirizzi a 128 bit, header base semplificato, extension header, autoconfigurazione e Neighbor Discovery; non usa broadcast. I router non frammentano. IPv4 usa 32 bit e NAT è comune. La transizione usa dual stack, tunneling o traduzione.","t":"QA"}
 ]

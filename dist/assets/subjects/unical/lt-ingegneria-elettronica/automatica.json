@@ -1,17 +1,5 @@
 [
-  {
-    "q": "Teorema di Nyquist",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione di poli/zeri",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "asintoticità sistemi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cosa stabilisce il criterio di Nyquist per la stabilità in retroazione?","a":"Per la funzione d'anello L(s), il diagramma di Nyquist lega gli avvolgimenti N del punto −1 ai poli instabili P di L e agli zeri instabili Z di 1+L, secondo la convenzione di orientamento adottata.\n\nL'anello chiuso è stabile quando Z=0; il contorno deve gestire poli sull'asse immaginario.","t":"QA"},
+  {"q":"Che cosa sono poli e zeri di una funzione di trasferimento?","a":"Per G(s)=N(s)/D(s), gli zeri annullano il numeratore e i poli annullano il denominatore dopo cancellazioni.\n\nI poli determinano i modi naturali e la stabilità BIBO; gli zeri modellano trasmissione e fase e possono limitare controllo e inversione.","t":"QA"},
+  {"q":"Che cosa significa stabilità asintotica di un sistema?","a":"Un equilibrio è stabile asintoticamente se è stabile secondo Lyapunov e le traiettorie iniziate sufficientemente vicine convergono all'equilibrio.\n\nPer un sistema LTI continuo ẋ=Ax equivale ad avere tutti gli autovalori di A con parte reale strettamente negativa.","t":"QA"}
 ]

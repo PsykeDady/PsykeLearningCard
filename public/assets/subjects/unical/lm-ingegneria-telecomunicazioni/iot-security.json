@@ -1,232 +1,157 @@
 [
   {
-    "q": "a che livelli possiamo fare un attacco e quali sono i costi",
-    "a": "Risposta non disponibile",
+    "q": "A quali livelli può essere attaccato un dispositivo IoT e come cambiano costi e competenze richiesti?",
+    "a": "A livello software si analizzano servizi, firmware e protocolli con costi relativamente bassi e buona scalabilità.\n\nA livello di board si accede a bus, debug port e memorie, richiedendo possesso fisico e strumentazione. A livello di chip si usano decapsulation, probing, fault injection o side channel: sono tecniche più costose, specialistiche e potenzialmente distruttive.",
     "t": "QA"
   },
   {
-    "q": "quali sono gli attacchi a livello software",
-    "a": "Risposta non disponibile",
+    "q": "Quali sono le principali vulnerabilità software dei dispositivi IoT?",
+    "a": "Credenziali predefinite, servizi inutili, autenticazione debole, injection, memory corruption, aggiornamenti non firmati, dipendenze obsolete, segreti incorporati e autorizzazioni insufficienti.\n\nLe difese comprendono secure-by-default, minimo privilegio, hardening, patch firmate, inventario delle dipendenze, logging e un processo di vulnerability disclosure.",
     "t": "QA"
   },
   {
-    "q": "perché è meglio usare protocolli standard rispetto quelli custom",
-    "a": "Risposta non disponibile",
+    "q": "Perché in sicurezza conviene usare protocolli crittografici standard invece di soluzioni personalizzate?",
+    "a": "Gli standard sono analizzati pubblicamente, hanno modelli di sicurezza espliciti, interoperabilità e implementazioni testate.\n\nUn protocollo custom può fallire nella gestione di nonce, autenticazione, downgrade, errori o chiavi anche usando primitive solide. Lo standard non elimina i bug: configurazione e implementazione devono comunque essere verificate.",
     "t": "QA"
   },
   {
-    "q": "parlare della crittografia a curve ellittiche",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la differenza tra crittografia simmetrica e asimmetrica nell'IoT?",
+    "a": "La simmetrica, come AES, usa una chiave condivisa ed è efficiente per cifrare grandi quantità di dati, ma richiede distribuzione sicura delle chiavi.\n\nL'asimmetrica usa coppie pubblica/privata per autenticazione, firme e accordo di chiave; costa di più. I protocolli reali sono ibridi: asimmetrica per stabilire identità e chiave di sessione, simmetrica per i dati.",
     "t": "QA"
   },
   {
-    "q": "differenza curve ellittiche e aes",
-    "a": "Risposta non disponibile",
+    "q": "Perché la crittografia a curve ellittiche è adatta a molti dispositivi IoT?",
+    "a": "Offre sicurezza comparabile a sistemi classici con chiavi più corte, riducendo banda, memoria e spesso costo computazionale.\n\nECDH realizza l'accordo di chiave ed ECDSA/EdDSA le firme. La sicurezza dipende dal problema del logaritmo discreto sulla curva, da curve standard, implementazioni constant-time e casualità corretta.",
     "t": "QA"
   },
   {
-    "q": "algoritmo di hellman",
-    "a": "Risposta non disponibile",
+    "q": "Perché non è corretto confrontare direttamente ECC e AES?",
+    "a": "AES è una cifratura simmetrica a blocchi; ECC è una famiglia di tecniche asimmetriche per accordo di chiavi e firme.\n\nNon sono alternative per lo stesso compito: tipicamente ECDH autentica o concorda una chiave, poi AES in modalità AEAD protegge i messaggi.",
     "t": "QA"
   },
   {
-    "q": "block chain e iot come si possono collegare",
-    "a": "Risposta non disponibile",
+    "q": "Come funziona l'accordo di chiave Diffie–Hellman?",
+    "a": "Alice pubblica g^a e Bob g^b in un gruppo appropriato; entrambi derivano g^(ab) senza inviare il segreto.\n\nLa sicurezza si basa sulla difficoltà dei problemi Diffie–Hellman/logaritmo discreto. Il protocollo base non autentica le parti ed è vulnerabile a man-in-the-middle, quindi va inserito in un protocollo autenticato.",
     "t": "QA"
   },
   {
-    "q": "possono i dispositivi iot tenere la history della block chain",
-    "a": "Risposta non disponibile",
+    "q": "Da quali elementi dipende la sicurezza di un algoritmo asimmetrico?",
+    "a": "Dalla difficoltà del problema matematico rispetto ai parametri scelti, dal modello e dalle prove di sicurezza, e dall'assenza di attacchi più efficienti noti.\n\nDipende anche da padding, generazione delle chiavi, casualità, protezione da side channel e implementazione. La sola dimensione della chiave non è una garanzia sufficiente.",
     "t": "QA"
   },
   {
-    "q": "differenza tra crittografia simmetrica e asimmetrica",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la differenza tra DES, 2DES e 3DES?",
+    "a": "DES usa una chiave effettiva di 56 bit ed è vulnerabile alla ricerca esaustiva. 2DES applica DES due volte ma il meet-in-the-middle riduce drasticamente il guadagno atteso.\n\n3DES usa una sequenza EDE con due o tre chiavi e offre sicurezza maggiore, ma è lento e ha blocchi da 64 bit: nei nuovi sistemi va sostituito con AES.",
     "t": "QA"
   },
   {
-    "q": "che cosa ci dice che la crittografia asimmetrica è sicura",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la differenza tra RSA ed ElGamal?",
+    "a": "RSA usa l'elevamento modulo un composto e richiede padding come OAEP/PSS; la trapdoor è legata alla fattorizzazione.\n\nElGamal opera in un gruppo e si basa su problemi Diffie–Hellman/logaritmo discreto, è randomizzato e produce una coppia di elementi. Entrambi richiedono parametri moderni e protezione dai side channel.",
     "t": "QA"
   },
   {
-    "q": "Diffie-Hellman e algoritmi di crittografia",
-    "a": "Risposta non disponibile",
+    "q": "Come può essere usata una blockchain in un sistema IoT?",
+    "a": "Può registrare audit trail, identità, autorizzazioni o scambi tra organizzazioni che non condividono un unico amministratore.\n\nNon risolve l'affidabilità dei sensori né rende veri i dati inseriti. Consenso, latenza, privacy, costo e governance vanno confrontati con un normale database firmato o replicato.",
     "t": "QA"
   },
   {
-    "q": "tipi di attacchi fisici sulle board e sui chip",
-    "a": "Risposta non disponibile",
+    "q": "Un dispositivo IoT deve conservare l'intera blockchain?",
+    "a": "No. Un nodo leggero può conservare solo header, prove di inclusione o stato necessario e interrogare nodi completi.\n\nQuesto riduce memoria e banda ma introduce dipendenza dai peer e richiede verifiche crittografiche. Dispositivi molto limitati possono usare gateway fidati o protocolli progettati appositamente.",
     "t": "QA"
   },
   {
-    "q": "differenza tra des, 2des, 3des",
-    "a": "Risposta non disponibile",
+    "q": "A cosa serve JTAG e quali segnali fondamentali utilizza?",
+    "a": "JTAG/IEEE 1149.1 serve a boundary scan, test e spesso debug/programmazione del chip.\n\nI segnali tipici sono TCK, TMS, TDI, TDO e l'opzionale TRST. In produzione l'accesso di debug va disabilitato, autenticato o protetto, perché può esporre memoria e controllo del processore.",
     "t": "QA"
   },
   {
-    "q": "differenza tra RSA e ElGamal",
-    "a": "Risposta non disponibile",
+    "q": "Come funziona il bus SPI?",
+    "a": "Un controller genera SCLK e seleziona il dispositivo con CS; MOSI porta dati controller→periferica e MISO nel verso opposto. Il trasferimento è full-duplex e sincronizzato, con modalità definite da CPOL e CPHA.\n\nSPI non include indirizzamento, autenticazione o conferma universale: questi aspetti dipendono dai dispositivi e dal protocollo superiore.",
     "t": "QA"
   },
   {
-    "q": "differenza tra algoritmi simmetrici e asimmetrici per la crittografia",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la differenza tra collegamento SPI con chip-select separati e daisy chain?",
+    "a": "Con chip-select separati i dispositivi condividono clock e dati ma ciascuno ha una propria linea CS, permettendo accesso indipendente.\n\nIn daisy chain l'uscita di un dispositivo alimenta l'ingresso del successivo e i dati scorrono come in un lungo shift register. Il controller sa quando il dato raggiunge un dispositivo contando i bit e rispettando il protocollo della catena.",
     "t": "QA"
   },
   {
-    "q": "spiega i tipi di attacco (chip level, board level, software level)",
-    "a": "Risposta non disponibile",
+    "q": "Come si riconoscono una memoria SPI e l'orientamento di un circuito integrato?",
+    "a": "Sigla e datasheet identificano funzione e pinout; package comuni hanno alimentazione, massa, clock, chip-select e linee dati.\n\nTacca, punto o smusso marcano il lato o il pin 1, dal quale la numerazione procede secondo il package. Non si collegano sonde basandosi solo sull'aspetto: prima si verificano datasheet, tensioni e continuità.",
     "t": "QA"
   },
   {
-    "q": "Blockchain",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la differenza tra flash SPI ed EEPROM?",
+    "a": "Entrambe sono memorie non volatili. La flash cancella tipicamente blocchi o settori e offre alta densità; l'EEPROM permette aggiornamenti più granulari, spesso per byte o piccole pagine, con capacità inferiore.\n\nDurata, tempi, comandi e tensioni dipendono dal componente; “EPROM SPI” viene spesso usato impropriamente per EEPROM o flash seriale.",
     "t": "QA"
   },
   {
-    "q": "crittografia asimmetrica usata in iot",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è UART e come si identificano i suoi collegamenti?",
+    "a": "UART è una comunicazione seriale asincrona con TX, RX e massa, configurata per baud rate, bit dati, parità e stop bit.\n\nSu una board si parte da schema/datasheet e misure non invasive: si identifica GND, si verifica la tensione e si osserva un possibile TX con logic analyzer. Non va collegata direttamente una porta RS-232 a livelli TTL.",
     "t": "QA"
   },
   {
-    "q": "parlare di jtag come funziona quali sono i pin e a cosa serve",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è un firmware e quali componenti può contenere?",
+    "a": "È il software persistente che inizializza e controlla il dispositivo. Un'immagine può contenere bootloader, kernel o RTOS, device tree, filesystem, applicazioni, configurazioni e firme/checksum.\n\nHeader, tabelle delle partizioni, compressione e formato dipendono dal produttore.",
     "t": "QA"
   },
   {
-    "q": "come vengono collegati i chip spi e le due configurazioni",
-    "a": "Risposta non disponibile",
+    "q": "Come si identifica l'architettura di un binario estratto da un firmware?",
+    "a": "Se esiste un header ELF, campi come class, endianness e machine dichiarano l'architettura. Strumenti di identificazione e disassembler possono confermarla osservando opcode, ABI e pattern.\n\nPer binari raw servono contesto, entropia, entry point e tentativi controllati con architetture plausibili; una sola sequenza di byte può essere ambigua.",
     "t": "QA"
   },
   {
-    "q": "come faccio a sapere quando arrivano i dati allo slave in una configurazione daisy chain",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la differenza tra binari staticamente e dinamicamente linkati durante l'emulazione?",
+    "a": "Un binario statico incorpora gran parte delle librerie e richiede soprattutto kernel ABI e syscall compatibili; è quindi più semplice da avviare isolatamente ma più grande.\n\nUn binario dinamico richiede loader e librerie della corretta architettura/versione nel filesystem emulato. Questa dipendenza influenza configurazione di QEMU user mode e chroot.",
     "t": "QA"
   },
   {
-    "q": "binari linkati dinamicamente e staticamente come vengono emulati differentemente con qemu",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la differenza tra QEMU user-mode e system-mode?",
+    "a": "User-mode esegue un singolo processo di un'altra architettura traducendo le istruzioni e inoltrando le syscall al kernel host.\n\nSystem-mode emula una macchina completa con CPU, memoria e periferiche e avvia un kernel guest. Offre maggiore fedeltà ma richiede una board virtuale e dispositivi compatibili col firmware.",
     "t": "QA"
   },
   {
-    "q": "quali sono le soluzioni che posso essere implementate quando vogliamo analizzare un dispositivo e ha un addon che non possiamo emulare",
-    "a": "Risposta non disponibile",
+    "q": "Come si analizza un firmware che dipende da hardware non emulato?",
+    "a": "Si può sostituire o modellare la periferica, intercettare le API hardware con stub, usare hardware-in-the-loop, rehosting parziale o eseguire solo i servizi userspace.\n\nLa scelta dipende dal livello necessario: falsificare risposte può avviare il software ma riduce la fedeltà e deve essere documentato nell'analisi.",
     "t": "QA"
   },
   {
-    "q": "port scanning e vari metodi di farlo e come identifichiamo i servizi",
-    "a": "Risposta non disponibile",
+    "q": "A cosa serve Firmadyne e quale modalità di emulazione usa?",
+    "a": "Firmadyne automatizza estrazione, identificazione, strumentazione e rehosting di firmware Linux embedded per analisi dinamica.\n\nUsa QEMU system-mode con kernel e filesystem preparati, tentando di ricostruire rete e servizi. Il successo dipende dalla compatibilità di architettura, kernel, init e periferiche.",
     "t": "QA"
   },
   {
-    "q": "come capiamo le porte aperte con UDP",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è la cross-compilation?",
+    "a": "È la compilazione eseguita su una piattaforma host per produrre codice destinato a un'altra architettura o sistema.\n\nRichiede cross-compiler, linker, header, librerie e ABI della destinazione, spesso raccolti in un toolchain/sysroot. Architettura corretta non basta se libc o ABI sono incompatibili.",
     "t": "QA"
   },
   {
-    "q": "differenza tra binari linkati dinamicamente e staticamente, e perché ci interessano quando emuliamo",
-    "a": "Risposta non disponibile",
+    "q": "Come si distinguono le principali tecniche di port scanning autorizzato?",
+    "a": "TCP connect completa l'handshake; SYN osserva SYN/ACK o RST; FIN, NULL e XMAS inferiscono lo stato dal comportamento dello stack; UDP usa risposte applicative o ICMP.\n\nVersion detection invia probe specifici dopo aver individuato la porta. Firewall, rate limiting e implementazioni diverse rendono i risultati probabilistici, non certezze.",
     "t": "QA"
   },
   {
-    "q": "quando emuliamo un firmware e ci sono vari sistemi hardware collegati, come emuliamo il firmware in full system mode?",
-    "a": "Risposta non disponibile",
+    "q": "Come si interpreta l'assenza di risposta durante un UDP scan?",
+    "a": "Una risposta applicativa indica normalmente una porta aperta e ICMP port unreachable una porta chiusa.\n\nNessuna risposta è ambigua: la porta può essere aperta senza rispondere al probe, il pacchetto può essere filtrato oppure una risposta ICMP può essere limitata. Servono retry e probe specifici del protocollo.",
     "t": "QA"
   },
   {
-    "q": "quando emuliamo un firmware e ci sono vari sistemi hardware collegati, come emuliamo il firmware in full system mode? > quali sono le opzioni per emulare senza avere tutto l'hardware?",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è ARP spoofing e perché può servire il forwarding dei pacchetti?",
+    "a": "ARP falsificato associa l'IP di un altro host al MAC dell'attaccante nella stessa LAN, deviando traffico.\n\nLa modalità promiscua permette alla scheda di consegnare frame non destinati al proprio MAC, ma non inoltra il traffico: per mantenere un man-in-the-middle serve routing/forwarding. DAI, segmentazione e protocolli cifrati riducono il rischio.",
     "t": "QA"
   },
   {
-    "q": "arp spoofing e come fai a leggere i pacchetti? (perché il tuo PC li droppa e quindi devi metterti in modalità promiscua)",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è MQTT e quali livelli di qualità del servizio offre?",
+    "a": "È un protocollo publish/subscribe leggero: client pubblicano su topic e un broker distribuisce ai subscriber.\n\nQoS 0 offre consegna al massimo una volta, QoS 1 almeno una volta con possibili duplicati, QoS 2 esattamente una volta tra client e broker tramite handshake. TLS e autenticazione non sono impliciti nel protocollo base.",
     "t": "QA"
   },
   {
-    "q": "come riconosci un EPROM, quali sono i pin di un EPROM SPI",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la differenza tra sessione MQTT persistente e non persistente?",
+    "a": "Una sessione persistente conserva sottoscrizioni e messaggi QoS pendenti attraverso le riconnessioni, secondo versione e session expiry.\n\nUna sessione pulita/non persistente riparte senza stato precedente. La persistenza migliora la consegna a client intermittenti ma richiede memoria e identificativi client stabili.",
     "t": "QA"
   },
   {
-    "q": "a cosa serve il marcatore sui chip integrati",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come collegarsi agli spi, mqtt è un protocollo affidabile?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cross compilation cos'è, che cos'è una sessione nel protocollo mqtt",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenza durable session e non durable session in mqtt",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "a che serve firmadyne",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come riconosciamo una uart",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "qemu e le sue modalità (QEMU User Mode Emulation e QEMU System Mode Emulation)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "quale modalità di qemu usa firmadyne",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è quemu e quali sono i suoi modi di esecuzione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è il protocollo mqtt e i modi in cui garantisce il messaggio",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Uart come identifichi i pin e perché è importante come protocollo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è un firmware e quali sono le sue parti",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "se ho un firmware e ha un binario, come capisco la sua architettura?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "protocollo spi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenza tra spi flash ed EPROM",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "protocollo mqtt e cos'è il retain nel protocollo",
-    "a": "Risposta non disponibile",
+    "q": "Che cosa significa il flag retained in MQTT?",
+    "a": "Il broker conserva l'ultimo messaggio pubblicato come retained per un topic e lo invia immediatamente ai nuovi subscriber.\n\nNon è una cronologia completa e non sostituisce la persistenza delle sessioni. Un payload vuoto con retained, secondo la versione e le regole MQTT, elimina normalmente il valore conservato.",
     "t": "QA"
   }
 ]

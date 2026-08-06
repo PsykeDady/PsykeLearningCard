@@ -1,37 +1,7 @@
 [
-  {
-    "q": "PID",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "DFT",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Filtri",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "domanda 1",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "domanda 1 > Precisione statica",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "domanda 2",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "domanda 2 > Ricavare partendo dallo schema del sistema a retroazione generico, le diverse funzioni di sensitività e come le varie uscite si comportano a fronte di ingressi diversi.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cos'è un controllore PID e come agiscono i suoi tre termini?","a":"Il PID genera u(t)=Kp e(t)+Ki∫e(t)dt+Kd de(t)/dt.\n\nIl termine proporzionale rende pronta la risposta, l'integrale elimina l'errore costante e il derivativo anticipa le variazioni aumentando lo smorzamento. In pratica si usano anti-windup e un filtro sul termine derivativo.","t":"QA"},
+  {"q":"Che cos'è la DFT e come si interpreta il suo risultato?","a":"La trasformata discreta di Fourier rappresenta N campioni come somma di sinusoidi complesse: X[k]=Σ x[n]e^{-j2πkn/N}. Il bin k corrisponde alla frequenza k·fs/N.\n\nLa risoluzione è fs/N; finestratura e durata finita causano leakage. La FFT è un algoritmo efficiente per calcolare la DFT in O(N log N).","t":"QA"},
+  {"q":"Come si distinguono i principali filtri in frequenza?","a":"Un passa-basso conserva le basse frequenze, un passa-alto le alte, un passa-banda una banda intermedia e un elimina-banda la attenua.\n\nOrdine e frequenze di taglio determinano pendenza e selettività; il progetto deve considerare anche fase, stabilità e realizzabilità.","t":"QA"},
+  {"q":"Che cosa si intende per precisione statica di un sistema di controllo?","a":"È la capacità di seguire a regime un riferimento o rigettare un disturbo con piccolo errore. Con retroazione unitaria E(s)=R(s)/(1+L(s)); l'errore a regime si ricava con il teorema del valore finale, se il sistema è stabile.\n\nIl numero di integratori nell'anello determina quali ingressi polinomiali possono essere seguiti con errore nullo.","t":"QA"},
+  {"q":"Quali funzioni descrivono la sensitività in un anello a retroazione negativa?","a":"Con funzione d'anello L=PC, la sensitività è S=1/(1+L) e la sensitività complementare è T=L/(1+L), con S+T=1.\n\nS governa errore e rigetto dei disturbi in uscita; T governa inseguimento del riferimento e trasmissione del rumore in alcune configurazioni. Alle basse frequenze si desidera spesso |S| piccolo, alle alte |T| piccolo.","t":"QA"}
 ]

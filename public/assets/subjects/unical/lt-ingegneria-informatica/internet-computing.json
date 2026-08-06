@@ -1,177 +1,27 @@
 [
-  {
-    "q": "Gigafactory",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "SETI@Home",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Grid computing e cloud computing",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Raffreddamento a liquido dei datacenter",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Nat e violazione dell’end to end del livello trasporto",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Chord, operazioni stabilize e fix fingers ( per voti alti sapere anche il codice non sarebbe male )",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Certification authority",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Schema della soap request",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Certification authority con disegno delle slide",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Email sicure-PGP con schema",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "KDC + disegno",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "sap e nap",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "http2",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "chord + disegno",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cache web + formula",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cookie + tipologie",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "email sicura",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "RTT + timer",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Dos + attacchi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Blockchain",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dns",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dns dinamico",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "AWS",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Funzionamento DHT",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenze tra POP3 e IMAP + disegno",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "bittorrent",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "RSA + formule",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Frammentazione di pacchetti con MTU",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Gnutella",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Rdt 3.0",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "calcolo del round trip time (ricorsione) e perché è utile",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "query flooding pro e contro e applicazioni",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "protocolli P2P",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "chord, funzionamento e dimensione delle finger tablet",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Skype, approccio del supernodo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Quali caratteristiche distinguono un data center su scala Gigafactory?","a":"Concentra enormi quantità di calcolo e storage in infrastrutture modulari, automatizzate e distribuite. Progettazione e gestione mirano a scalabilità orizzontale, tolleranza ai guasti, efficienza energetica, rete ad alta capacità e sostituzione economica dei componenti.","t":"QA"},
+  {"q":"Che cosa dimostra il progetto SETI@home sul calcolo distribuito?","a":"Ha usato risorse inutilizzate di moltissimi computer volontari per analizzare unità di lavoro indipendenti. È un esempio di volunteer computing: grande capacità aggregata e basso costo, ma nodi eterogenei e non fidati richiedono ridondanza, verifica e tolleranza a disconnessioni.","t":"QA"},
+  {"q":"Qual è la differenza tra grid computing e cloud computing?","a":"La grid federava risorse di organizzazioni diverse per lavori scientifici, spesso tramite middleware e allocazioni condivise. Il cloud offre risorse virtualizzate on demand come servizio, con elasticità, automazione e pagamento a consumo. I confini possono sovrapporsi, ma differiscono modello operativo ed economico.","t":"QA"},
+  {"q":"In che modo il NAT incide sul principio end-to-end?","a":"Il NAT traduce indirizzi e porte privati in pubblici mantenendo stato. Conserva indirizzi IPv4 ma impedisce normalmente connessioni in ingresso non richieste e rompe la raggiungibilità diretta end-to-end. Port forwarding, STUN, TURN e ICE aiutano l'attraversamento.","t":"QA"},
+  {"q":"Come funziona una Distributed Hash Table e, in particolare, Chord?","a":"Una DHT distribuisce coppie chiave-valore tra nodi usando un hash coerente. Chord dispone nodi e chiavi su un anello: una chiave appartiene al primo nodo con identificatore successivo. Le finger table consentono lookup in O(log N), mentre stabilizzazione e replica gestiscono cambiamenti e guasti.","t":"QA"},
+  {"q":"Che ruolo svolge una Certification Authority?","a":"Una CA firma certificati che associano una chiave pubblica a un'identità. Il client verifica catena di fiducia, firma, validità temporale, nome host e revoca. Il certificato autentica la chiave; non cifra da solo la comunicazione, che viene protetta dal protocollo come TLS.","t":"QA"},
+  {"q":"Che cos'è SOAP?","a":"È un protocollo di messaggistica per web service basato su envelope XML, header e body, trasportabile tipicamente su HTTP. Può usare WSDL e standard WS-* per sicurezza e transazioni. Offre contratti ricchi ma più verbosità rispetto a API REST/JSON.","t":"QA"},
+  {"q":"Come protegge un messaggio PGP?","a":"PGP usa crittografia ibrida: cifra il contenuto con una chiave simmetrica casuale e cifra quella chiave con la chiave pubblica del destinatario. Per autenticità, calcola un hash e lo firma con la chiave privata del mittente. La fiducia può basarsi su una web of trust.","t":"QA"},
+  {"q":"Che cos'è un Key Distribution Center?","a":"È un'entità fidata che condivide chiavi a lungo termine con gli utenti e rilascia chiavi di sessione o ticket per comunicazioni autenticate, come in Kerberos. Semplifica la gestione delle chiavi simmetriche, ma disponibilità e compromissione del KDC sono rischi centrali.","t":"QA"},
+  {"q":"Quali vantaggi introduce HTTP/2 rispetto a HTTP/1.1?","a":"Usa framing binario, multiplexing di più stream sulla stessa connessione, compressione degli header HPACK e prioritizzazione. Riduce molte limitazioni applicative di HTTP/1.1, anche se la perdita TCP può ancora bloccare tutti gli stream della connessione.","t":"QA"},
+  {"q":"Come si stima il tempo medio di risposta con una web cache?","a":"Se h è l'hit rate, il tempo medio è circa h·Tcache+(1-h)·Tmiss. Tmiss deve includere accesso esterno e possibili attese sul collegamento.\n\nLa cache riduce latenza e traffico, ma freschezza, validazione e politiche di sostituzione influenzano il risultato reale.","t":"QA"},
+  {"q":"Come funzionano i cookie HTTP?","a":"Il server invia Set-Cookie e il browser restituisce Cookie nelle richieste compatibili con dominio, percorso e policy. Secure limita l'invio a HTTPS, HttpOnly l'accesso da script e SameSite mitiga alcune richieste cross-site. I cookie mantengono sessioni sopra un protocollo stateless.","t":"QA"},
+  {"q":"Come stima TCP l'RTT e imposta il timeout di ritrasmissione?","a":"Mantiene un RTT smussato: EstimatedRTT=(1-α)EstimatedRTT+α·SampleRTT e una deviazione smussata. Il timeout è circa EstimatedRTT+4·DevRTT. Dopo un timeout applica backoff; l'algoritmo di Karn evita campioni ambigui da segmenti ritrasmessi.","t":"QA"},
+  {"q":"Che cos'è un attacco DoS e come differisce da un DDoS?","a":"Un DoS esaurisce risorse o banda per negare il servizio; un DDoS coordina molte sorgenti, spesso una botnet, rendendo il filtraggio più difficile. Difese includono rate limiting, filtraggio, CDN/Anycast, capacity planning e protezioni specifiche del protocollo.","t":"QA"},
+  {"q":"Quali proprietà offre una blockchain?","a":"Mantiene un registro replicato in blocchi collegati crittograficamente e concordati tramite un meccanismo di consenso. Offre evidenza di manomissione e riduce la necessità di un'autorità unica, ma non garantisce la veridicità dei dati immessi e comporta costi, latenza e limiti di scalabilità.","t":"QA"},
+  {"q":"Come funziona il DNS e che cosa indica DNS dinamico?","a":"Il DNS risolve nomi tramite una gerarchia distribuita di record, resolver ricorsivi e server autoritativi, con caching regolato dal TTL. Il DNS dinamico aggiorna automaticamente i record quando cambia l'indirizzo di un host, utile con IP assegnati dinamicamente.","t":"QA"},
+  {"q":"Quali modelli di servizio offre il cloud AWS?","a":"AWS offre servizi IaaS e gestiti: EC2 per macchine virtuali, S3 per storage a oggetti, RDS per database, Lambda per funzioni serverless e VPC per reti isolate. Responsabilità e controllo variano secondo il servizio nel modello di responsabilità condivisa.","t":"QA"},
+  {"q":"Qual è la differenza tra POP3 e IMAP?","a":"POP3 è orientato al download dei messaggi e offre gestione remota minima. IMAP mantiene caselle, cartelle, flag e stato sul server e sincronizza più dispositivi. L'invio della posta usa invece normalmente SMTP.","t":"QA"},
+  {"q":"Come funziona BitTorrent?","a":"Divide un file in pezzi scambiati tra peer di uno swarm. Il tracker o la DHT aiuta a trovare peer; rarest-first aumenta la disponibilità e tit-for-tat incentiva la reciprocità. L'integrità dei pezzi è verificata con hash descritti nei metadati.","t":"QA"},
+  {"q":"Come funziona RSA e da che cosa dipende la sua sicurezza?","a":"RSA usa una coppia di chiavi costruita da due grandi primi. Operazioni modulari con esponente pubblico e privato permettono cifratura di piccole quantità o firme. La sicurezza pratica dipende dalla difficoltà di fattorizzare il modulo e dall'uso di padding sicuro come OAEP o PSS.","t":"QA"},
+  {"q":"Che relazione c'è tra MTU e frammentazione IP?","a":"La MTU è la dimensione massima del pacchetto trasportabile da un collegamento. In IPv4 un router può frammentare salvo il flag DF; in IPv6 frammenta soltanto la sorgente. Path MTU Discovery cerca la dimensione massima del percorso per evitare frammentazione e perdita inefficiente.","t":"QA"},
+  {"q":"Come funzionano ricerca e flooding in Gnutella?","a":"Nelle prime versioni non strutturate, una query veniva inoltrata ai vicini fino a un TTL, e le risposte tornavano lungo il percorso. Il flooding è semplice e robusto ma genera molto traffico e non garantisce di trovare contenuti rari; i superpeer migliorano la scalabilità.","t":"QA"},
+  {"q":"Come garantisce affidabilità il protocollo rdt3.0?","a":"Su un canale con errori e perdite usa checksum, numeri di sequenza alternati, ACK e timeout. Il mittente ritrasmette se non riceve l'ACK; il ricevente riconosce ed elimina duplicati. È stop-and-wait, quindi su collegamenti con grande bandwidth-delay product utilizza male la capacità.","t":"QA"},
+  {"q":"Quali vantaggi e problemi presenta un'architettura peer-to-peer?","a":"I peer agiscono sia da client sia da server, offrendo scalabilità organica e assenza di un unico punto centrale. In cambio compaiono churn, eterogeneità, sicurezza, incentivazione, scoperta delle risorse e prestazioni imprevedibili. Sistemi ibridi usano server o superpeer per coordinamento.","t":"QA"},
+  {"q":"A cosa servivano i supernodi nelle prime architetture di Skype?","a":"Peer pubblicamente raggiungibili e con risorse adeguate aiutavano utenti dietro NAT nella localizzazione e nel coordinamento delle chiamate. L'architettura combinava elementi P2P e infrastruttura centrale; le versioni moderne si sono spostate maggiormente verso servizi cloud controllati.","t":"QA"}
 ]

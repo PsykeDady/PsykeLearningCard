@@ -1,12 +1,4 @@
 [
-  {
-    "q": "Teorema di Dini",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "serie di Laurent, con dimostrazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cosa afferma il teorema di Dini sulle funzioni implicite?","a":"Se F(x₀,y₀)=0, F è continuamente differenziabile vicino al punto e la derivata parziale Fᵧ(x₀,y₀) è diversa da zero, allora vicino a x₀ esiste un'unica funzione y=f(x) continuamente differenziabile tale che F(x,f(x))=0. Inoltre f'(x)=-Fₓ/Fᵧ.","t":"QA"},
+  {"q":"Che cos'è una serie di Laurent e dove converge?","a":"È uno sviluppo f(z)=Σ da n=-∞ a +∞ di aₙ(z-z₀)^n, composto da parte regolare e principale. Per una funzione olomorfa in un anello r<|z-z₀|<R, lo sviluppo esiste ed è unico; aₙ=(1/2πi)∮f(ζ)/(ζ-z₀)^{n+1}dζ.","t":"QA"}
 ]

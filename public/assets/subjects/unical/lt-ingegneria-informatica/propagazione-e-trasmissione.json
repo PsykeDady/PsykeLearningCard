@@ -1,102 +1,18 @@
 [
-  {
-    "q": "Corrente di conduzione e spostamento",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "modellazione perdite in un cavo coassiale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "relazioni costitutive",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "J nel caso di perdite",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "annullamento riflessione incidenza normale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cosa è un mezzo non magnetico",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "avere indice rifrazione < 1",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "profondità di penetrazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "leggi di snell",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "soluzioni viaggianti e soluzioni stazionarie",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "intervallo di variazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "polarizzazione di un'onda",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "linea adattata comportamenti di tensione e corrente",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "mezzi con perdite",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "derivata temporale della prima equazione di Maxwell e dimostrazione legge di Faraday",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "tipi di adattamento come si collega lo stub",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "circuitazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "fibra ottica",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "linee di trasmissione con fasori",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "equazione telegrafisti",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Qual è la differenza tra corrente di conduzione e corrente di spostamento?","a":"La corrente di conduzione è dovuta al moto di cariche, Jc=σE. La corrente di spostamento è ∂D/∂t e compare nella legge di Ampère-Maxwell: ∇×H=Jc+∂D/∂t. Permette continuità della corrente anche dove non passano cariche libere.","t":"QA"},
+  {"q":"Quali sono le relazioni costitutive di un mezzo lineare isotropo?","a":"D=εE, B=μH e J=σE. Permittività ε, permeabilità μ e conducibilità σ descrivono la risposta del mezzo. In mezzi dispersivi possono dipendere dalla frequenza ed essere complesse.","t":"QA"},
+  {"q":"Come si rappresentano le perdite in un mezzo elettromagnetico?","a":"Con conducibilità σ>0 oppure permittività complessa. La costante di propagazione γ=α+jβ ha α>0, che attenua l'ampiezza come e^{-αz}. Il rapporto σ/(ωε) distingue approssimativamente buon dielettrico e buon conduttore.","t":"QA"},
+  {"q":"Che cos'è la profondità di penetrazione?","a":"È la distanza δ=1/α alla quale l'ampiezza in un mezzo con perdite scende a 1/e. In un buon conduttore δ≈√(2/(ωμσ)); diminuisce aumentando frequenza, permeabilità o conducibilità.","t":"QA"},
+  {"q":"Che cosa significa mezzo non magnetico?","a":"Un mezzo non magnetico ha permeabilità relativa circa unitaria, quindi μ≈μ₀ e magnetizzazione trascurabile. Può comunque essere dielettrico, conduttivo, dispersivo o con perdite.","t":"QA"},
+  {"q":"Può un indice di rifrazione essere minore di uno?","a":"Sì, in regioni dispersive, plasmi o raggi X l'indice di fase può essere inferiore a 1. Ciò rende la velocità di fase maggiore di c, ma non viola la relatività: velocità di segnale e informazione non superano c e dipendono dalla dispersione.","t":"QA"},
+  {"q":"Che cosa affermano le leggi di Snell?","a":"Alla frontiera, angoli di incidenza e riflessione sono uguali e n₁sinθ₁=n₂sinθ₂ per la rifrazione. Derivano dalla continuità della componente tangenziale del vettore d'onda. Da mezzo più rifrangente a meno rifrangente può avvenire riflessione totale.","t":"QA"},
+  {"q":"Quando si annulla la riflessione a incidenza normale?","a":"Il coefficiente Γ=(η₂-η₁)/(η₂+η₁) è zero se le impedenze intrinseche dei due mezzi coincidono. Uno strato di adattamento a quarto d'onda può annullare la riflessione a una frequenza scegliendo impedenza √(η₁η₂).","t":"QA"},
+  {"q":"Come si descrive la polarizzazione di un'onda?","a":"È la traiettoria descritta nel tempo dalla punta del campo elettrico in un punto. È lineare se le componenti sono in fase o opposizione, circolare se hanno uguale ampiezza e sfasamento ±90°, altrimenti ellittica.","t":"QA"},
+  {"q":"Qual è la differenza tra onda viaggiante e onda stazionaria?","a":"Un'onda viaggiante trasporta fase ed energia lungo una direzione. La sovrapposizione di onde opposte coerenti produce un'onda stazionaria con nodi e ventri fissi e, idealmente, potenza media netta nulla.","t":"QA"},
+  {"q":"Quali sono le equazioni dei telegrafisti?","a":"Per unità di lunghezza R,L,G,C: ∂V/∂z=−RI−L∂I/∂t e ∂I/∂z=−GV−C∂V/∂t. In regime sinusoidale γ=√((R+jωL)(G+jωC)) e Z₀=√((R+jωL)/(G+jωC)).","t":"QA"},
+  {"q":"Come si comportano tensione e corrente su una linea adattata?","a":"Se ZL=Z₀, ΓL=0: non esiste onda riflessa, V e I sono solo progressive e il rapporto V/I vale Z₀. L'impedenza d'ingresso è Z₀ a ogni distanza e il ROS vale 1.","t":"QA"},
+  {"q":"Come si modellano le perdite in un cavo coassiale?","a":"R rappresenta perdite ohmiche dei conduttori, crescenti per effetto pelle, e G le perdite del dielettrico; L e C immagazzinano energia. Questi parametri determinano γ e Z₀ e quindi attenuazione e dispersione.","t":"QA"},
+  {"q":"Come realizza l'adattamento uno stub?","a":"Uno stub aperto o cortocircuitato, collegato in serie o più spesso in parallelo a una certa distanza dal carico, fornisce una suscettanza o reattanza che cancella la parte residua. Posizione e lunghezza si scelgono con formule di linea o carta di Smith.","t":"QA"},
+  {"q":"Come guida la luce una fibra ottica?","a":"Un nucleo con indice n₁ maggiore del mantello n₂ confina i modi principalmente per riflessione totale interna. Apertura numerica e parametro V determinano accettazione e numero di modi. Attenuazione e dispersione limitano distanza e banda.","t":"QA"},
+  {"q":"Come si esprime la legge di Faraday in forma locale e integrale?","a":"Forma locale: ∇×E=−∂B/∂t. Applicando Stokes si ottiene ∮C E·dl=−d/dt∫S B·dS. Il segno meno esprime la legge di Lenz: il campo indotto si oppone alla variazione del flusso.","t":"QA"}
 ]

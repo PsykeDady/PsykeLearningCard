@@ -1,22 +1,6 @@
 [
-  {
-    "q": "Dispositivo MOSFET",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "disegno e regione di funzionamento",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dispositivo bjt",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "diodo led",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come funziona un MOSFET?","a":"La tensione gate-source controlla tramite campo elettrico un canale tra drain e source, con corrente di gate idealmente nulla.\n\nIn un NMOS enhancement il canale si forma per V_GS>V_T; il dispositivo opera in interdizione, regione lineare o saturazione secondo V_GS e V_DS.","t":"QA"},
+  {"q":"Quali sono le regioni operative di un NMOS enhancement ideale?","a":"Interdizione: V_GS<V_T. Lineare: V_GS≥V_T e 0≤V_DS<V_GS−V_T, comportamento resistivo controllato.\n\nSaturazione: V_DS≥V_GS−V_T, con I_D≈(k/2)(V_GS−V_T)², trascurando modulazione di canale.","t":"QA"},
+  {"q":"Come funziona un transistor BJT?","a":"È un dispositivo a tre terminali emitter, base e collector, nelle versioni NPN o PNP. In regione attiva una piccola corrente di base controlla una corrente di collettore maggiore, I_C≈βI_B, oppure esponenziale rispetto a V_BE.\n\nInterdizione e saturazione sono usate nella commutazione.","t":"QA"},
+  {"q":"Come funziona un LED?","a":"È un diodo a giunzione che, polarizzato direttamente, emette fotoni per ricombinazione elettrone-lacuna.\n\nColore ed energia dipendono dal band gap; la corrente deve essere limitata e la tensione diretta varia con materiale, corrente e temperatura.","t":"QA"}
 ]

@@ -1,32 +1,8 @@
 [
-  {
-    "q": "problema del differenziale di una funzione in una variabile",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "assioma di continuità del campo r",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenza tra serie e integrali",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "teorema di Weierstrass",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "teorema fondamentale del calcolo integrale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "teorema dell'unicità del limite",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cos'è il differenziale di una funzione reale di una variabile?","a":"Se f è derivabile in x₀, l'incremento soddisfa f(x₀+h)−f(x₀)=f'(x₀)h+o(h).\n\nIl differenziale è l'applicazione lineare df_{x₀}(h)=f'(x₀)h, cioè la migliore approssimazione lineare locale dell'incremento.","t":"QA"},
+  {"q":"Che cosa esprime l'assioma di completezza dei numeri reali?","a":"Ogni sottoinsieme non vuoto di ℝ limitato superiormente possiede un estremo superiore in ℝ.\n\nÈ equivalente ad altre proprietà di completezza, come convergenza delle successioni di Cauchy e teorema degli intervalli annidati, e distingue ℝ da ℚ.","t":"QA"},
+  {"q":"Qual è la differenza tra serie numeriche e integrali impropri?","a":"Una serie somma una successione discreta, Σaₙ; un integrale improprio accumula una funzione su intervallo infinito o con singolarità.\n\nIl criterio integrale collega i due: per f positiva, continua e decrescente, Σf(n) e ∫f(x)dx convergono o divergono insieme.","t":"QA"},
+  {"q":"Che cosa afferma il teorema di Weierstrass per funzioni continue?","a":"Una funzione continua su un insieme compatto, in particolare [a,b], è limitata e raggiunge massimo e minimo assoluti.\n\nCompattezza del dominio e continuità sono essenziali: su intervalli aperti o non limitati gli estremi possono non essere raggiunti.","t":"QA"},
+  {"q":"Che cosa afferma il teorema fondamentale del calcolo integrale?","a":"Se f è continua e F(x)=∫_a^x f(t)dt, allora F è derivabile e F'=f.\n\nSe G è una primitiva di f, allora ∫_a^b f(x)dx=G(b)−G(a), collegando derivazione e integrazione.","t":"QA"},
+  {"q":"Perché il limite di una funzione, se esiste, è unico?","a":"Se esistessero limiti distinti L e M, si sceglierebbero intorni disgiunti, per esempio con raggio |L−M|/3.\n\nSufficientemente vicino al punto la funzione dovrebbe appartenere contemporaneamente a entrambi, impossibile. Quindi L=M.","t":"QA"}
 ]

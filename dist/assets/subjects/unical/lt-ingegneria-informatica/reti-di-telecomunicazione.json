@@ -1,172 +1,18 @@
 [
-  {
-    "q": "slow start e congestion avoidance+ formule della CWND",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "sindrome silly window",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "protocolli arq",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "efficienza protocolli arq",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "distance vector e link state",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "pacchetto TCP e UDP (con differenze)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "multiplexing e demultiplexing",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "tecniche di accesso multiplo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "fast recovery e retransmit",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Protocolli arq con dimostrazione di utilizzazione e efficienza",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Protocolli arq con dimostrazione di utilizzazione e efficienza > con e senza errori",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "funzionalità ipv4 e formato del pacchetto (ihl, tos, total length,...)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Slow start, congestion avoidance, con le formule",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Slow start, congestion avoidance, con le formule > spiegare perché nello slow start esce la formula con la serie geometrica",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ipv4 come funziona e l'unità dati come è fatta",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "header del protocollo TCP com'è fatto",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "slow start, congestion avoidance",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dimostrazione efficienza go-back-n",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Jacobson come si ottiene RTO",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Slow Start",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Congestion Avoidance",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "TCP",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "congestione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "media",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "varianza",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "jacomson",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "karn",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "SRTT",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "fast retransmit",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "fast recovery",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "fast retransmit e fast recovery",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "perché nel calcolo RTT si tiene conto della deviazione media",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Cosa succede ad RTT in caso di reti lente rispetto a veloci",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "partono dalla tesina e esplorano i protocolli usati",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Qual è la differenza tra TCP e UDP?","a":"TCP è orientato alla connessione e offre stream affidabile, ordinato, con controllo di flusso e congestione. UDP invia datagrammi senza garanzie di consegna o ordine e con header ridotto. L'applicazione sceglie in base a affidabilità, latenza e controllo richiesti.","t":"QA"},
+  {"q":"Come funzionano multiplexing e demultiplexing nel livello di trasporto?","a":"Il multiplexing raccoglie dati dai socket applicativi e aggiunge le porte. Il demultiplexing consegna ogni segmento al socket corretto: UDP usa soprattutto porta di destinazione; TCP identifica la connessione con la quadrupla di indirizzi e porte sorgente e destinazione.","t":"QA"},
+  {"q":"Quali campi principali contiene l'header TCP?","a":"Porte, numeri di sequenza e ACK, data offset, flag, finestra di ricezione, checksum, urgent pointer e opzioni. Sequenza e ACK numerano byte; finestra e opzioni come MSS, scaling, timestamp e SACK supportano controllo e prestazioni.","t":"QA"},
+  {"q":"Quali campi contiene l'header IPv4?","a":"Versione, IHL, DSCP/ECN, lunghezza totale, identificazione e flag/offset di frammentazione, TTL, protocollo superiore, checksum dell'header e indirizzi sorgente/destinazione, più opzioni eventuali. IHL misura l'header in parole da 32 bit.","t":"QA"},
+  {"q":"Che cosa sono i protocolli ARQ?","a":"Automatic Repeat reQuest ottiene affidabilità usando rilevazione d'errore, ACK/NAK, numeri di sequenza, timer e ritrasmissioni. Stop-and-Wait mantiene un frame in volo; Go-Back-N e Selective Repeat usano finestre per sfruttare meglio il canale.","t":"QA"},
+  {"q":"Da cosa dipende l'efficienza di Stop-and-Wait ARQ?","a":"Senza errori e trascurando ACK, l'utilizzazione è circa U=Ttx/(Ttx+2Tprop)=1/(1+2a), con a=Tprop/Ttx. Errori e timeout la riducono ulteriormente; una finestra pipelined può tenere occupato il collegamento durante l'RTT.","t":"QA"},
+  {"q":"Come differiscono Go-Back-N e Selective Repeat in efficienza?","a":"Con finestra N, senza errori l'utilizzazione può raggiungere min(1,N/(1+2a)). In presenza di errori GBN ritrasmette anche frame successivi corretti, mentre SR ritrasmette solo quelli persi ma richiede ACK individuali, buffer e timer più complessi.","t":"QA"},
+  {"q":"Quali sono le principali tecniche di accesso multiplo?","a":"Suddivisione del canale: FDMA, TDMA e CDMA/OFDMA; accesso casuale: ALOHA e CSMA; accesso controllato: polling e token passing. Differiscono per collisioni, sincronizzazione, efficienza a basso/alto carico e ritardo.","t":"QA"},
+  {"q":"Qual è la differenza tra routing distance-vector e link-state?","a":"Distance-vector scambia coi vicini stime di distanza e usa Bellman-Ford, con rischio count-to-infinity. Link-state diffonde lo stato dei collegamenti a tutti i router e ciascuno usa Dijkstra. Il secondo converge spesso meglio ma richiede più stato e flooding.","t":"QA"},
+  {"q":"Come cresce la congestion window durante TCP Slow Start?","a":"Per ogni ACK di nuovi dati cwnd aumenta approssimativamente di un MSS; in un RTT arrivano circa cwnd/MSS ACK, quindi cwnd raddoppia per RTT. La crescita 1,2,4,… deriva dalla serie geometrica e termina a ssthresh o quando si rileva congestione.","t":"QA"},
+  {"q":"Come cresce la congestion window durante Congestion Avoidance?","a":"TCP applica Additive Increase: per ACK aumenta cwnd di circa MSS²/cwnd, ottenendo circa un MSS per RTT. Alla congestione applica Multiplicative Decrease secondo la variante, producendo il tipico andamento a dente di sega.","t":"QA"},
+  {"q":"Come funzionano Fast Retransmit e Fast Recovery?","a":"Tre ACK duplicati suggeriscono un segmento perso ma rete ancora attiva: Fast Retransmit lo ritrasmette senza attendere il timeout. Fast Recovery riduce ssthresh, mantiene temporaneamente la finestra per gli ACK duplicati e poi prosegue in congestion avoidance, secondo la variante TCP.","t":"QA"},
+  {"q":"Come calcola Jacobson il Retransmission Timeout TCP?","a":"SRTT=(1-α)SRTT+αR e RTTVAR=(1-β)RTTVAR+β|R-SRTT|; RTO=SRTT+K·RTTVAR, tipicamente K=4, entro limiti stabiliti. La deviazione rende il timer prudente quando l'RTT è variabile.","t":"QA"},
+  {"q":"Che cosa afferma l'algoritmo di Karn?","a":"Non usa per la stima RTT gli ACK di segmenti ritrasmessi, perché non si sa a quale invio si riferiscano. Dopo un timeout aumenta inoltre RTO con backoff esponenziale, finché un campione non ambiguo consente di aggiornare le stime.","t":"QA"},
+  {"q":"Che cos'è la Silly Window Syndrome e come si evita?","a":"È lo scambio inefficiente di segmenti molto piccoli causato da piccole scritture o piccoli incrementi della finestra. Nagle aggrega dati lato mittente; la soluzione di Clark evita che il ricevente annunci incrementi minuscoli. Per applicazioni interattive Nagle può essere disabilitato consapevolmente.","t":"QA"},
+  {"q":"Qual è la differenza tra media e varianza?","a":"La media E[X] descrive il valore centrale atteso. La varianza Var(X)=E[(X-E[X])²]=E[X²]-E[X]² misura la dispersione quadratica ed è espressa nell'unità al quadrato; la deviazione standard ne è la radice.","t":"QA"}
 ]

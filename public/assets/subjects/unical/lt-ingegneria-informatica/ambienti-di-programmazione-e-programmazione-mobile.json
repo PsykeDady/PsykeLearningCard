@@ -1,122 +1,21 @@
 [
-  {
-    "q": "Software libero e open source",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Software libero e open source > Ci sono limitazioni sulla possibilità di vendere il codice modificato?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Software libero e open source > Risposta: no, non è indicato nelle quattro libertà",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Symbolic links (hard e soft)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Symbolic links (hard e soft) > Cos'è un inode?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Parlare del buffer overflow",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Cos'è cron? Parlare pure delle sottocartelle",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Broadcast Receiver",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Ciclo di vita dell' Activity",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "in particolare onCreate() e onStart()",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Spiegazione Intent, espliciti ed Impliciti con esempi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Repository",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Cos'è APT",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Dove si trovano i sorgenti dei pacchetti",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Cosa fanno apt-get Upgrade e apt-get Update",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Domanda sul possibile uso di una callback in una parte dell'applicazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Distinzione tra JIT e AOT",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Distinzione tra JIT e AOT > Risposta: è la stessa differenza che c'è tra l'esecuzione interpretata e compilata",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Package freezed",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Come gestire un file che dobbiamo salvare in locale( tipo invece di firebase in locale)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Riverpod a che serve",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "I widget come funzionano",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Isolates perché lo usiamo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Class extension di dart",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Qual è la differenza tra software libero e open source?","a":"Il software libero enfatizza le libertà di eseguire, studiare, modificare e ridistribuire; open source enfatizza un modello di sviluppo con codice accessibile e licenze conformi.\n\nLe categorie si sovrappongono molto ma motivazioni e criteri formali non sono identici.","t":"QA"},
+  {"q":"Il software libero può essere venduto?","a":"Sì. Le libertà riguardano uso, studio, modifica e redistribuzione, non la gratuità.\n\nLa licenza può imporre condizioni, come offrire il sorgente e mantenere il copyleft nelle distribuzioni GPL; servizi e copie possono essere commerciali.","t":"QA"},
+  {"q":"Qual è la differenza tra hard link e symbolic link?","a":"Un hard link è un altro nome per lo stesso inode e normalmente non attraversa filesystem né punta a directory.\n\nUn symlink è un file che contiene un percorso, può attraversare filesystem e diventare dangling se il target scompare.","t":"QA"},
+  {"q":"Che cos'è un inode?","a":"È la struttura del filesystem che contiene tipo, permessi, proprietario, timestamp, dimensione e riferimenti ai blocchi di un file.\n\nIl nome risiede nella directory e associa una stringa al numero di inode; più hard link possono indicare lo stesso inode.","t":"QA"},
+  {"q":"Che cos'è un buffer overflow?","a":"Una scrittura supera i limiti di un buffer e corrompe memoria adiacente.\n\nSi previene con controlli delle dimensioni e linguaggi memory-safe; canary, NX, ASLR e CFI riducono lo sfruttamento ma non correggono il difetto.","t":"QA"},
+  {"q":"Che cos'è cron e dove sono definite le attività pianificate?","a":"Cron esegue comandi secondo calendari. Crontab di sistema e utenti e directory come `/etc/cron.hourly`, `.daily`, `.weekly` e `.monthly` dipendono dalla distribuzione.\n\nAmbiente, PATH, output, locking e privilegi devono essere gestiti esplicitamente.","t":"QA"},
+  {"q":"Che cos'è un BroadcastReceiver Android?","a":"È un componente che riceve broadcast di sistema o applicazione e svolge lavoro breve in `onReceive`.\n\nPuò essere registrato nel manifest o a runtime secondo i limiti della piattaforma; attività lunghe vanno delegate a WorkManager o servizi appropriati.","t":"QA"},
+  {"q":"Quali sono le fasi principali del ciclo di vita di un'Activity Android?","a":"`onCreate` inizializza stato e UI; `onStart` la rende visibile; `onResume` interattiva; `onPause`, `onStop` e `onDestroy` accompagnano perdita di focus, invisibilità e distruzione.\n\nLo stato essenziale va salvato perché il processo può essere terminato.","t":"QA"},
+  {"q":"Qual è la differenza tra Intent esplicito e implicito?","a":"L'esplicito identifica direttamente un componente, tipico per aprire una Activity interna.\n\nL'implicito descrive azione, dati e categorie e Android sceglie un componente con intent filter; occorre verificare che esista e limitare l'esposizione di dati sensibili.","t":"QA"},
+  {"q":"Che cosa sono repository e APT?","a":"Un repository pubblica pacchetti, metadata e firme. APT risolve dipendenze, autentica metadata e coordina strumenti Debian.\n\nLe sorgenti sono configurate in `/etc/apt/sources.list` e `/etc/apt/sources.list.d/`.","t":"QA"},
+  {"q":"Qual è la differenza tra `apt update` e `apt upgrade`?","a":"`apt update` scarica gli indici dei pacchetti senza aggiornarli; `apt upgrade` installa versioni più recenti dei pacchetti installati secondo i vincoli del resolver.\n\nRepository non fidati possono distribuire codice con privilegi elevati e vanno evitati.","t":"QA"},
+  {"q":"Che cos'è una callback?","a":"È una funzione passata a un'altra componente affinché venga invocata al verificarsi di un evento o al completamento di un'operazione.\n\nPuò essere sincrona o asincrona; lifecycle, errori e cancellazione devono evitare leak e aggiornamenti dopo la distruzione della UI.","t":"QA"},
+  {"q":"Qual è la differenza tra compilazione JIT e AOT?","a":"JIT compila durante l'esecuzione usando profili reali, con warm-up e runtime più complesso; AOT compila prima, migliorando startup e prevedibilità ma avendo meno informazioni dinamiche.\n\nNon coincidono semplicemente con interpretazione e compilazione: un runtime può combinarle.","t":"QA"},
+  {"q":"Che cos'è un package freezed?","a":"È una dipendenza bloccata a una versione esatta in un lockfile o ambiente riproducibile.\n\nEvita aggiornamenti involontari tra build, ma richiede aggiornamenti deliberati per patch di sicurezza e compatibilità.","t":"QA"},
+  {"q":"Come si salvano dati localmente in un'app mobile?","a":"Preferenze sicure per piccoli setting, file per blob/documenti e database SQLite/Room o equivalenti per dati strutturati.\n\nSi considerano cifratura, backup, migrazioni, consistenza e cancellazione; cache e dati persistenti hanno requisiti diversi.","t":"QA"},
+  {"q":"A cosa serve Riverpod in Flutter?","a":"Gestisce stato e dependency injection tramite provider osservabili, testabili e indipendenti dal `BuildContext`.\n\nRicostruisce i widget che osservano lo stato, supporta asincronia e scoping e aiuta a separare UI e logica.","t":"QA"},
+  {"q":"Come funzionano i widget Flutter?","a":"Sono descrizioni immutabili della UI. Il framework confronta le nuove configurazioni con element e render object esistenti e aggiorna solo ciò che serve.\n\nStatefulWidget separa configurazione immutabile e oggetto State persistente tra rebuild.","t":"QA"},
+  {"q":"Perché Dart usa gli isolate?","a":"Ogni isolate ha heap ed event loop separati e comunica tramite messaggi, evitando memoria mutabile condivisa.\n\nServono a spostare calcoli CPU-bound fuori dall'isolate UI; per I/O asincrono spesso basta l'event loop.","t":"QA"},
+  {"q":"Come funziona `extends` in Dart?","a":"Una classe eredita implementazione e interfaccia da una superclasse, può sovrascrivere membri e chiamare `super`.\n\nDart ha ereditarietà singola; `implements` riusa solo il contratto, mentre mixin condividono implementazione in modo compositivo.","t":"QA"}
 ]

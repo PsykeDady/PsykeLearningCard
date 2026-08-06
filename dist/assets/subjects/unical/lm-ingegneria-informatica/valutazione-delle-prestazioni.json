@@ -1,17 +1,17 @@
 [
   {
-    "q": "problema del professore in ritardo (su excel)",
-    "a": "Risposta non disponibile",
+    "q": "Come si può modellare e simulare il ritardo di una risorsa o di un servizio?",
+    "a": "Si definiscono distribuzioni di arrivo e durata, stato della risorsa, disciplina della coda e metriche come attesa, risposta e probabilità di ritardo.\n\nIn un foglio di calcolo si generano campioni casuali, si propagano tempi di inizio e fine e si eseguono molte repliche. Media e intervallo di confidenza, non una singola simulazione, stimano la prestazione.",
     "t": "QA"
   },
   {
-    "q": "produttore consumatore (excel)",
-    "a": "Risposta non disponibile",
+    "q": "Come si modella il problema produttore-consumatore?",
+    "a": "Il produttore genera elementi e li inserisce in un buffer finito; il consumatore li preleva. Lo stato può essere il numero di elementi nel buffer, con blocco del produttore quando è pieno e del consumatore quando è vuoto.\n\nLe metriche principali sono throughput, utilizzo, occupazione media, tempi di attesa e probabilità di blocco.",
     "t": "QA"
   },
   {
-    "q": "modello di markov (slide)",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è una catena di Markov a tempo discreto?",
+    "a": "È un processo in cui la distribuzione dello stato successivo dipende soltanto dallo stato corrente: P(Xₙ₊₁=j|Xₙ=i,storia)=pᵢⱼ.\n\nLa matrice P contiene probabilità di transizione con righe di somma uno. Una distribuzione stazionaria soddisfa π=πP e Σπᵢ=1; esistenza e unicità dipendono dalla struttura della catena.",
     "t": "QA"
   }
 ]

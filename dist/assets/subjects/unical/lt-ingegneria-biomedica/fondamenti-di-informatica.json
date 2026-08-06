@@ -1,72 +1,14 @@
 [
-  {
-    "q": "codice binario",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "selection sort",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "bubble sort",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "insertion sort",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ricerca binaria iterativa e ricorsiva",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "memoria cache",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "memoria in generale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "codifica dei caratteri",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "int e float",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "codifica binaria di int e float",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "tutti i modi in cui si scrivono le matrici in python",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "esercizio: trova la media degli elementi nelle righe pari",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "bit/byte",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "parametri attuali e formali",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come funziona la codifica binaria dei numeri?","a":"In base due ogni posizione pesa una potenza di 2 e usa cifre 0 o 1. Un intero unsigned di n bit rappresenta 0…2^n−1; gli interi signed sono normalmente in complemento a due.\n\nUn bit è una cifra binaria e un byte contiene tipicamente 8 bit.","t":"QA"},
+  {"q":"Come funziona Selection Sort e qual è la sua complessità?","a":"A ogni passo trova il minimo nella parte non ordinata e lo scambia con la prima posizione disponibile.\n\nEsegue Θ(n²) confronti in ogni caso, O(n) scambi, lavora in-place e nella forma comune non è stabile.","t":"QA"},
+  {"q":"Come funziona Bubble Sort e qual è la sua complessità?","a":"Confronta coppie adiacenti e le scambia se fuori ordine; ogni passata porta un massimo verso la fine.\n\nÈ O(n²) medio/peggiore e O(n) nel caso migliore con arresto anticipato, in-place e stabile se si scambiano solo elementi strettamente fuori ordine.","t":"QA"},
+  {"q":"Come funziona Insertion Sort e quando è conveniente?","a":"Inserisce ogni elemento nella posizione corretta del prefisso già ordinato, spostando a destra gli elementi maggiori.\n\nÈ O(n²) nel caso peggiore ma O(n) su dati quasi ordinati, in-place, stabile e adatto a piccoli array.","t":"QA"},
+  {"q":"Come funziona la ricerca binaria iterativa o ricorsiva?","a":"Su una sequenza ordinata confronta il target con l'elemento centrale e conserva soltanto la metà compatibile, fino a trovare il valore o svuotare l'intervallo.\n\nRichiede O(log n) confronti; la versione ricorsiva usa anche O(log n) stack, quella iterativa O(1) spazio.","t":"QA"},
+  {"q":"Come è organizzata la gerarchia di memoria?","a":"Registri, cache, RAM e memoria secondaria scambiano velocità, capacità e costo. I livelli piccoli e veloci conservano copie dei dati usati più di recente.\n\nLocalità temporale e spaziale rendono efficace la gerarchia.","t":"QA"},
+  {"q":"A cosa serve la memoria cache?","a":"Riduce il tempo medio di accesso conservando blocchi vicini alla CPU. Un hit trova il dato in cache; un miss richiede il livello successivo.\n\nDimensione dei blocchi, associatività, sostituzione e politiche di scrittura influenzano prestazioni e coerenza.","t":"QA"},
+  {"q":"Come vengono codificati i caratteri?","a":"Una codifica associa caratteri a numeri. ASCII copre un insieme limitato; Unicode assegna code point e UTF-8 li rappresenta con uno-quattro byte, mantenendo compatibilità ASCII.\n\nCode point, byte ed elemento grafico non sono sempre la stessa cosa.","t":"QA"},
+  {"q":"Come si rappresentano int e float in binario?","a":"Gli interi signed usano normalmente complemento a due. I floating point IEEE 754 separano segno, esponente con bias e frazione, includendo zero, subnormal, infinito e NaN.\n\nMolti reali non sono rappresentabili esattamente e vengono arrotondati.","t":"QA"},
+  {"q":"Come si rappresenta una matrice in Python?","a":"Con liste di liste, assicurando righe indipendenti, oppure con array NumPy per calcolo numerico efficiente.\n\n`[[0]*m for _ in range(n)]` crea righe distinte; `[[0]*m]*n` crea alias della stessa riga e può produrre modifiche inattese.","t":"QA"},
+  {"q":"Come si calcola la media degli elementi nelle righe pari di una matrice Python?","a":"Assumendo righe numerate da zero, si selezionano `M[0], M[2], ...`, si sommano gli elementi e si divide per il loro numero.\n\nPer righe non uniformi: `v=[x for i,r in enumerate(M) if i%2==0 for x in r]`; la media è `sum(v)/len(v)` se `v` non è vuota.","t":"QA"},
+  {"q":"Qual è la differenza tra parametri formali e attuali?","a":"I parametri formali sono i nomi dichiarati nella definizione della funzione; gli argomenti o parametri attuali sono i valori o le espressioni forniti alla chiamata.\n\nIl meccanismo di associazione dipende dal linguaggio e può usare posizione, nome o valori predefiniti.","t":"QA"}
 ]
