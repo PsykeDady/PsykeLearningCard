@@ -1,97 +1,17 @@
 [
-  {
-    "q": "C-Net vs Heuristic net",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Petri net Vs heuristic net",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come viene fatta la classificazione delle attività iniziali e finali su ProM",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "workflow net (definizione)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cos'è la threshold",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "betweeness Nella resource analysis",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenze fra pattern merge e discriminator (bpmn)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "perché scegliere un modello (o un plugin) rispetto ad un altro",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "boundness",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "quando il marking è dead?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "esercizi su boundness e deadlock",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "alpha miner (con i vari punti specifici)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "qualità del modello",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "in cosa consiste la classificazione di un dato",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "perché è costoso l'alpha miner?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "domande sul progetto in generale e nello specifico",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "liveness",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come ottenere un buon modello?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "conformance e tipologie",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Qual è la differenza tra C-net e Heuristics Net?","a":"Una Causal Net rappresenta attività e binding di input/output che descrivono combinazioni causali ammesse, con semantica dichiarativa. Una Heuristics Net usa dipendenze pesate ricavate dal log e soglie per rumore, split e join; è il modello tipico di Heuristics Miner.","t":"QA"},
+  {"q":"Qual è la differenza tra Petri net e Heuristics Net?","a":"Una Petri net ha semantica formale basata su place, transition, token e firing e consente analisi di reachability, boundedness e liveness. Una Heuristics Net è una rappresentazione process-mining più tollerante al rumore, facile da scoprire ma meno direttamente analizzabile formalmente.","t":"QA"},
+  {"q":"Come si identificano attività iniziali e finali da un event log?","a":"Si raggruppano gli eventi per case, si ordinano per timestamp e si contano le prime e ultime attività di ogni trace. In ProM il classificatore scelto, come activity name più lifecycle, determina quando eventi appartengono alla stessa classe e quindi influenza il risultato.","t":"QA"},
+  {"q":"Che cos'è una workflow net?","a":"È una Petri net con un unico place sorgente i, un unico place pozzo o, ogni nodo su un cammino da i a o e marking iniziale con un token in i. È sound se ogni caso può terminare correttamente, la terminazione lascia solo il token in o e nessuna transizione è morta.","t":"QA"},
+  {"q":"A cosa serve una threshold negli algoritmi di process discovery?","a":"Filtra relazioni o comportamenti con frequenza/confidenza sotto una soglia, riducendo rumore e complessità. Una soglia alta produce modelli semplici ma può perdere eccezioni reali; una bassa migliora fitness ma può creare spaghetti model e overfitting.","t":"QA"},
+  {"q":"Che cosa misura la betweenness nella resource analysis?","a":"La betweenness centrality di una risorsa è la quota di cammini minimi tra coppie di nodi che la attraversano. Valori alti indicano un possibile broker o collo di bottiglia nella rete di handover/social network, ma dipendono dalla costruzione e pesatura del grafo.","t":"QA"},
+  {"q":"Qual è la differenza tra pattern merge e discriminator?","a":"Il merge esclusivo prosegue quando arriva uno dei rami alternativi senza sincronizzare. Il discriminator attende il primo completamento tra più rami attivi, prosegue una sola volta e ignora gli altri completamenti finché tutti i rami non si sono resettati. In BPMN la resa dipende dal gateway e dal ciclo.","t":"QA"},
+  {"q":"Quando una Petri net è k-bounded e quando è safe?","a":"È k-bounded se ogni place contiene al massimo k token in tutti i marking raggiungibili. È bounded se esiste un k finito globale; è safe se è 1-bounded. La proprietà si verifica sul reachability/coverability graph o tramite invarianti e analisi strutturale.","t":"QA"},
+  {"q":"Quando un marking è dead e che cos'è un deadlock?","a":"Un marking è dead se nessuna transizione è abilitata. È un deadlock se rappresenta un arresto indesiderato prima della corretta terminazione; il marking finale di una workflow net può essere dead ma desiderato. La distinzione richiede la semantica del processo.","t":"QA"},
+  {"q":"Che cos'è la liveness di una Petri net?","a":"Una transizione è live se da ogni marking raggiungibile resta possibile raggiungere un marking che la abilita. La net è live se tutte le transizioni lo sono. È più forte dell'assenza di deadlock: una net può continuare a funzionare lasciando alcune transizioni permanentemente morte.","t":"QA"},
+  {"q":"Come funziona Alpha Miner?","a":"Ricava dal log relazioni directly-follows, causalità, parallelismo e assenza di relazione; costruisce coppie massimali di insiemi di attività per creare place, poi collega source e sink. Riscopre workflow net strutturate da log completi ma gestisce male rumore, loop corti e dipendenze non locali.","t":"QA"},
+  {"q":"Perché Alpha Miner può essere costoso?","a":"La ricerca delle coppie massimali di insiemi di attività causalmente correlate può essere combinatoria nel numero di attività. Anche la costruzione delle relazioni e l'esplosione dei candidati crescono con varietà del log; varianti e miner euristici riducono o cambiano il problema.","t":"QA"},
+  {"q":"Quali dimensioni misurano la qualità di un modello di processo?","a":"Fitness: riproduce il log; precision: non consente troppo comportamento non osservato; generalization: non overfitta; simplicity: evita complessità inutile. Le dimensioni sono in tensione e vanno valutate insieme, non ottimizzando solo replay fitness.","t":"QA"},
+  {"q":"Che cos'è la conformance checking e quali tecniche usa?","a":"Confronta event log e modello per localizzare deviazioni e misurare conformità. Token-based replay conta token mancanti/rimanenti; alignments cercano il costo minimo di mosse nel log e nel modello; tecniche comportamentali confrontano footprint o linguaggi. Ogni tecnica bilancia accuratezza e costo.","t":"QA"},
+  {"q":"Come si sceglie un algoritmo o plugin di process mining?","a":"In base a obiettivo, qualità e completezza del log, rumore, presenza di concorrenza/loop, formalismo desiderato, scalabilità e necessità di conformance o analisi formale. La scelta si giustifica confrontando metriche e leggibilità sul caso d'uso.","t":"QA"}
 ]

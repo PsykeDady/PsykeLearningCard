@@ -1,222 +1,29 @@
 [
-  {
-    "q": "puzzle di merkle",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "analisi sicurezza puzzle merkle",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "analisi sicurezza puzzle merkle > 3des e perché non usiamo 2des (analisi complessità attacco al 2des e come applicarlo al 3des)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "analisi sicurezza puzzle merkle > cos'è una funzione hash e come attaccarla",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "analisi sicurezza puzzle merkle > padding nel mac",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "analisi sicurezza puzzle merkle > definizione di sicurezza per generatori pseudocasuali e predicibilità con dimostrazione di predicibile=>non sicuro",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione con p1 e p2 computazionalmente indistinguibili",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione con p1 e p2 computazionalmente indistinguibili > AE quale è il più sicuro e quale non lo è (perché non lo è)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione con p1 e p2 computazionalmente indistinguibili > modi operativi MTK con il gioco dell'avversario",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "definizione con p1 e p2 computazionalmente indistinguibili > proof of knowledge",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenza e analogie tra rsa e rabin",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "diffie-helman",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenza tra attaccante attivo e passivo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "sicurezza dei modi operativi many time key",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "cosa può fare l'attaccante attivo che scopre la chiave",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "fiat shamir",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenza tra attacco a forza bruta e attacco a forza bruta del paradosso del compleanno ( la risposta \"dovrebbe essere\" che lo spazio di ricerca è diverso )",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "se l'avversario si aspetta un valore di e ma ne arriva un altro può correggere il tiro? ( la risposta \"dovrebbe essere\" che non può perché il calcolo ha complessità pari a radice modulare n )",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "3des",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come decifrare con 3des ( se E(k1,k2,k3,m)=E(k1,D(k2,E(k3,m))) allora D(k1,k2,k3,m)=D(k3,E(k2,D(k1,c))) )",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "attacco e complessità dell'attacco a 2des",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "dimostra che l'attacco di 2des non si può fare su 3des",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "3 des funzionamento come si cifra e come si decifra",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "che costo ha des con ricerca esaustiva e con altri attacchi (complessità spaziale e temporale)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "funzioni hash e collisioni con l'attacco relativo (paradosso del compleanno)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Modi operativi many time key",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Sicurezza modi operativi many time key",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "zero knowledge",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Algoritmo che è capace di attaccare qualsiasi funzione hash e paradosso del compleanno",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "CBC",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "funzioni hash",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "merkel puzzle",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "merkel puzzle > obiettivo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "merkel puzzle > problemi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "merkel puzzle > algoritmo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "One Time Pad",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "One Time Pad > decifratura e cifratura deterministica",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "One Time Pad > decifratura e cifratura randomizzata",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "One Time Pad > sicurezza per mandare messaggi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "One Time Pad > problemi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "sicurezza Semantica",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "probab adv dice 1 quando EXP1",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "PRG e definizioni sicurezza",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "firma digitale e CA",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Qual è l'obiettivo dei puzzle di Merkle e come funziona il protocollo?","a":"Permettono a due parti prive di un segreto condiviso di concordare una chiave su un canale pubblico. Alice genera molti puzzle, ciascuno cifrato con una chiave deliberatamente debole e contenente identificatore e segreto; Bob ne risolve uno e comunica l'identificatore. Alice recupera il segreto corrispondente. Un partecipante esegue circa N operazioni, mentre un intercettatore deve risolvere circa N puzzle, per un costo complessivo quadratico.","t":"QA"},
+  {"q":"Quali limiti di sicurezza hanno i puzzle di Merkle?","a":"Offrono soltanto una separazione quadratica tra lavoro degli utenti e dell'avversario, non una sicurezza esponenziale nel parametro. Sono inoltre vulnerabili a un attaccante attivo, che può alterare lo scambio, e non sono competitivi con i moderni protocolli a chiave pubblica.","t":"QA"},
+  {"q":"Come funziona 3DES in modalità EDE e come si decifra?","a":"Con tre chiavi, la cifratura è C=E_K3(D_K2(E_K1(M))); la decifratura inverte ordine e operazioni: M=D_K1(E_K2(D_K3(C))). La variante EDE mantiene compatibilità con DES ponendo K1=K2=K3.","t":"QA"},
+  {"q":"Perché il doppio DES non offre una sicurezza di 112 bit?","a":"L'attacco meet-in-the-middle calcola e memorizza E_K1(M) per tutte le 2^56 chiavi e cerca corrispondenze con D_K2(C). Richiede circa 2^57 operazioni e 2^56 valori di memoria; ulteriori coppie noto-chiaro/cifrato eliminano le corrispondenze spurie.","t":"QA"},
+  {"q":"Perché l'attacco meet-in-the-middle elementare a 2DES non si applica direttamente a 3DES con tre chiavi?","a":"In 2DES una singola uguaglianza intermedia separa le due chiavi e consente due tabelle da 2^56. In 3DES rimane una terza chiave ignota: fissarne una e applicare meet-in-the-middle alle altre porta a circa 2^112 lavoro, non 2^57. Ciò non significa che 3DES abbia 168 bit di sicurezza: genericamente è limitato a circa 112 bit ed esistono vincoli pratici sui volumi di dati.","t":"QA"},
+  {"q":"Qual è il costo della ricerca esaustiva contro DES?","a":"DES usa chiavi effettive di 56 bit: nel caso peggiore si provano 2^56 chiavi e in media circa 2^55, con memoria costante se ogni chiave viene verificata subito. Il piccolo spazio delle chiavi rende oggi DES insicuro anche se non si sfruttano debolezze strutturali.","t":"QA"},
+  {"q":"Quali proprietà di sicurezza si richiedono a una funzione hash crittografica?","a":"Resistenza alla preimmagine: dato h è difficile trovare m con H(m)=h; alla seconda preimmagine: dato m è difficile trovare m'≠m con lo stesso hash; alle collisioni: è difficile trovare una qualunque coppia distinta con uguale hash. Per un digest di n bit gli attacchi generici costano circa 2^n per preimmagini e 2^(n/2) per collisioni.","t":"QA"},
+  {"q":"Come trova collisioni l'attacco del compleanno?","a":"Valuta l'hash su messaggi distinti e cerca due digest uguali. In uno spazio di 2^n digest, dopo circa 2^(n/2) campioni la probabilità di collisione diventa significativa. È un attacco generico: non dipende dalla struttura interna della funzione.","t":"QA"},
+  {"q":"Perché il padding è importante nella costruzione di un MAC?","a":"Deve rendere non ambigua la codifica dei messaggi, includendo implicitamente o esplicitamente la lunghezza. Un padding ambiguo può far corrispondere la stessa sequenza di blocchi a messaggi diversi. Inoltre usare direttamente un hash iterato come MAC può consentire length-extension: costruzioni standard come HMAC evitano questo problema.","t":"QA"},
+  {"q":"Che cos'è un generatore pseudocasuale crittograficamente sicuro?","a":"È un algoritmo deterministico che espande un seme uniforme breve in una stringa più lunga computazionalmente indistinguibile da una stringa uniforme per ogni avversario probabilistico efficiente. La sua sicurezza richiede anche imprevedibilità: conoscendo un prefisso, il bit successivo non deve essere predicibile con vantaggio non trascurabile.","t":"QA"},
+  {"q":"Perché un PRG con un bit successivo predicibile non è sicuro?","a":"Se un algoritmo predice il bit successivo dal prefisso con vantaggio non trascurabile, si costruisce un distinguisher: sulla stringa ricevuta usa il prefisso per predire il bit e verifica se coincide. La coincidenza è sensibilmente superiore a 1/2 per l'output del PRG ma vale 1/2 per una stringa uniforme.","t":"QA"},
+  {"q":"Che significa che due distribuzioni sono computazionalmente indistinguibili?","a":"Due ensemble X e Y sono computazionalmente indistinguibili se, per ogni distinguisher probabilistico in tempo polinomiale, |Pr[D(X)=1]−Pr[D(Y)=1]| è trascurabile nel parametro di sicurezza. Non devono essere statisticamente uguali: basta che nessun algoritmo efficiente distingua i due casi con vantaggio significativo.","t":"QA"},
+  {"q":"Che cos'è la sicurezza semantica di uno schema di cifratura?","a":"Esprime che dal cifrato un avversario efficiente non ricava informazione utile sul testo in chiaro oltre a quella già disponibile. Per la cifratura a chiave pubblica è equivalente alla indistinguibilità sotto attacco chosen-plaintext, IND-CPA: il vantaggio nel distinguere la cifratura di due messaggi scelti è trascurabile.","t":"QA"},
+  {"q":"Come si misura il vantaggio di un avversario in un esperimento di indistinguibilità?","a":"Se viene scelto un bit segreto b e l'avversario restituisce b', il vantaggio si può scrivere |Pr[b'=b]−1/2|, oppure con la convenzione equivalente |Pr[A(Exp₁)=1]−Pr[A(Exp₀)=1]|. Uno schema è sicuro quando il vantaggio è trascurabile.","t":"QA"},
+  {"q":"Qual è la differenza tra cifratura deterministica e randomizzata?","a":"La cifratura deterministica produce sempre lo stesso cifrato per la stessa chiave e messaggio, rivelando almeno l'uguaglianza dei messaggi. Quella randomizzata usa nonce o casualità e può produrre cifrati diversi; è necessaria per la sicurezza IND-CPA in domini di messaggi prevedibili.","t":"QA"},
+  {"q":"Come funziona il One-Time Pad e quale sicurezza offre?","a":"Si sceglie una chiave uniforme K lunga quanto il messaggio, si cifra C=M⊕K e si decifra M=C⊕K. Se la chiave è davvero uniforme, segreta e mai riutilizzata, offre segretezza perfetta: il cifrato è compatibile con ogni messaggio della stessa lunghezza.","t":"QA"},
+  {"q":"Quali problemi pratici presenta il One-Time Pad?","a":"Richiede distribuire e conservare in modo sicuro chiavi casuali lunghe quanto tutti i messaggi e non riutilizzarle mai. Riutilizzare la chiave rivela C₁⊕C₂=M₁⊕M₂. Inoltre il protocollo non fornisce autenticità: un attaccante può modificare prevedibilmente bit del testo decifrato.","t":"QA"},
+  {"q":"Come funziona lo scambio di chiavi Diffie–Hellman?","a":"In un gruppo ciclico con generatore g, Alice pubblica g^a e Bob g^b; entrambi calcolano g^(ab). Un osservatore dovrebbe risolvere il problema computazionale Diffie–Hellman per ricavare il segreto. Il protocollo base non autentica le parti ed è vulnerabile a man-in-the-middle.","t":"QA"},
+  {"q":"Quali analogie e differenze ci sono tra RSA e Rabin?","a":"Entrambi operano modulo n=pq e basano la trapdoor sulla fattorizzazione. RSA eleva a un esponente e ha decifratura univoca con l'esponente privato; Rabin usa il quadrato modulo n, è dimostrabilmente legato alla fattorizzazione ma produce quattro radici candidate, da disambiguare con ridondanza e padding sicuro.","t":"QA"},
+  {"q":"Qual è la differenza tra attaccante passivo e attaccante attivo?","a":"Il passivo osserva il traffico senza modificarlo e minaccia la confidenzialità. L'attivo può intercettare, alterare, inserire, eliminare o riordinare messaggi e impersonare parti; per contrastarlo servono autenticazione e integrità, oltre alla cifratura.","t":"QA"},
+  {"q":"Che cosa può fare un attaccante che compromette una chiave crittografica?","a":"Dipende dall'uso della chiave: può decifrare traffico protetto con essa, produrre MAC o firme simmetriche validi e impersonare una parte. La compromissione può estendersi al passato se il protocollo non offre forward secrecy; la chiave va revocata, ruotata e sostituita.","t":"QA"},
+  {"q":"Che differenza c'è tra modalità one-time key e many-time key?","a":"Con una one-time key la chiave protegge un solo messaggio, come nel One-Time Pad. Con una many-time key protegge molti messaggi: cifratura e autenticazione devono usare nonce o IV secondo regole precise e restare sicure anche dopo molte query dell'avversario.","t":"QA"},
+  {"q":"Come funziona CBC e quali condizioni ne garantiscono la sicurezza?","a":"Si pone C₀=IV e Cᵢ=E_K(Mᵢ⊕Cᵢ₋₁); in decifratura Mᵢ=D_K(Cᵢ)⊕Cᵢ₋₁. Per IND-CPA l'IV deve essere nuovo e imprevedibile e il messaggio va paddato senza ambiguità. CBC non autentica: va combinato correttamente con un MAC o sostituito da una modalità AEAD.","t":"QA"},
+  {"q":"Che cos'è una dimostrazione zero-knowledge?","a":"È un protocollo con cui un prover dimostra di conoscere un testimone o che un'affermazione è vera senza rivelare informazione aggiuntiva. Le proprietà sono completezza, soundness e zero knowledge, formalizzata tramite l'esistenza di un simulatore della vista del verifier.","t":"QA"},
+  {"q":"Come funziona il protocollo di identificazione Fiat–Shamir?","a":"Il prover pubblica v=s² mod n. In ogni round invia x=r², riceve e∈{0,1}, risponde y=r·s^e e il verifier controlla y²≡xv^e mod n. Chi prepara risposte valide per entrambe le sfide può rivelare il segreto; ripetere i round rende trascurabile la probabilità di frode.","t":"QA"},
+  {"q":"Che cos'è una proof of knowledge?","a":"È una prova in cui l'accettazione non mostra soltanto che l'enunciato è vero, ma implica che il prover conosca un testimone. Formalmente deve esistere un estrattore efficiente capace di ricavare il testimone interagendo con qualunque prover che convinca il verifier con probabilità sufficiente.","t":"QA"},
+  {"q":"Qual è il ruolo di firma digitale e Certification Authority?","a":"La firma digitale garantisce autenticità, integrità e non ripudio tecnico verificando con la chiave pubblica una firma prodotta con quella privata. Una CA firma un certificato che associa identità e chiave pubblica; chi si fida della CA può così verificare l'associazione, controllando validità e revoca del certificato.","t":"QA"}
 ]

@@ -1,177 +1,30 @@
 [
-  {
-    "q": "community classification con gcn",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "community detection avendo feature dei nodi estratte da una gcn come e cosa modifichiamo delle tecniche che conosciamo?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "quanti tipi di bridge ho? come li uso per la community detection?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "topological overlap?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "in un social media come prestigio uso piu katz o pagerank?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "facebook vuole favorire o sfavorire le eco chambers?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "facebook quindi usa una eco chambers o meno?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "louvain e leiden formule",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "small world, quella creazione degli archi con probab p indipendente tra loro, cosa ricorda? (configuration model)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "louvain + complessità + formula scritta",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "leiden differenza con louvain",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come affronteresti un problema di polarizzazione a due vie? Voglio che mi formalizzi la funzione obiettivo.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "small-word model + formule + differenza con gli altri modelli",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come facciamo a stabilire come approssimare l'average path length? (test di smirnovn, quella della goodness of fit.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come ci mettiamo nel range di valori, tra il grafo regolare e il random graf? (intervallo 1-10%)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "infomap + formule (tutte) (tira fuori più community louvain o infomap?)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come possiamo usare i kg per condizionare quello che è un llm?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Tim (algoritmo sketch based)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Modularità, Louvain con formule",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Infomap con formule",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Katz centrality",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Perché la soluzione di bonacich e loyd differisce da quella di katz di una costante",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "SimRank",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "SimRank > qual è la sua ratio, ossia perché ci piace fare la media dei simRank dei vicini e che legame c’è con la katz centrality",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "simPath",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Cosa introduce il Page Rank rispetto alla Katz Centrality",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "concentrarsi molto sul significato delle formule e anche sulla memorizzazione della formula stessa (di qualsiasi difficoltà)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "RIS di influence maximization",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Metodo Montecarlo per l'influence maximization",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "CNM community detection",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Differenza tra small world e scale free",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Algoritmo di Louvian",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Metodi Girvan Newman",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Small world e come si comporta il modello al variare del parametro beta",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Preferential Attachment model",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come si usa una GCN per classificare i nodi o le comunità di una rete?","a":"Una Graph Convolutional Network aggrega a ogni livello le feature dei vicini, normalmente con H^(l+1)=σ(D̃^−1/2 Ã D̃^−1/2 H^l W^l). Addestrata con etichette su parte dei nodi, produce embedding e probabilità di classe; per classificare comunità si aggregano gli embedding dei nodi oppure si usa un pooling di grafo.","t":"QA"},
+  {"q":"Come si possono usare embedding prodotti da una GCN per la community detection?","a":"Si sostituisce o affianca la similarità puramente topologica con una similarità nello spazio degli embedding. Si può applicare clustering a k-means o spettrale agli embedding, oppure modificare pesi e funzione obiettivo di modularità combinando adiacenza e similarità delle feature. La procedura può diventare semi-supervisionata se sono disponibili etichette.","t":"QA"},
+  {"q":"Quali tipi di bridge sono utili nella community detection?","a":"Un bridge è un arco la cui rimozione aumenta il numero di componenti connesse; un local bridge collega nodi senza vicini comuni e aumenta molto la distanza alternativa. Più in generale gli archi tra comunità tendono ad avere alta edge betweenness e basso overlap: Girvan–Newman li rimuove iterativamente per separare le comunità.","t":"QA"},
+  {"q":"Che cos'è il topological overlap tra due nodi?","a":"Misura quanto si sovrappongono i loro vicinati. Una forma comune è TOM(i,j)=[|N(i)∩N(j)|+aᵢⱼ]/[min(kᵢ,kⱼ)+1−aᵢⱼ]. Valori alti indicano nodi inseriti nello stesso contesto locale ed è quindi utile per clustering e rilevamento di comunità robuste.","t":"QA"},
+  {"q":"Quando PageRank è preferibile a Katz centrality per misurare il prestigio?","a":"PageRank è adatto quando un collegamento trasferisce prestigio e il contributo di un nodo va diviso tra i suoi link uscenti; teleportation garantisce una distribuzione stazionaria. Katz conta invece tutti i cammini attenuandoli con la lunghezza ed è utile quando ogni cammino fornisce influenza additiva. La scelta dipende dal significato degli archi, non dal fatto che la rete sia un social media.","t":"QA"},
+  {"q":"Che relazione c'è tra algoritmi di raccomandazione ed echo chamber?","a":"Ottimizzare engagement e similarità può esporre ripetutamente gli utenti a contenuti e persone affini, rafforzando omofilia e camere dell'eco. Non implica che una piattaforma voglia esplicitamente crearle: il risultato dipende da obiettivo, ranking, moderazione e segnali di diversità. La presenza va misurata empiricamente.","t":"QA"},
+  {"q":"Come definisce la modularità la qualità di una partizione?","a":"Q=(1/2m)Σᵢⱼ[Aᵢⱼ−kᵢkⱼ/(2m)]δ(cᵢ,cⱼ). Confronta gli archi interni osservati con quelli attesi nel configuration model a parità di gradi. Q elevata indica più connessioni interne del previsto, ma la misura soffre di resolution limit.","t":"QA"},
+  {"q":"Come funziona l'algoritmo di Louvain e qual è la sua complessità?","a":"Alterna spostamenti greedy dei nodi nella comunità vicina che massimizza ΔQ e aggregazione delle comunità in supernodi, ripetendo fino a convergenza. È molto veloce e quasi lineare nella pratica su grafi sparsi, ma non ha un limite stretto universalmente lineare e può produrre comunità disconnesse.","t":"QA"},
+  {"q":"In cosa Leiden migliora Louvain?","a":"Aggiunge una fase di raffinamento tra spostamento locale e aggregazione. Garantisce comunità connesse e, alla convergenza, meglio separate internamente, evitando le comunità mal connesse che Louvain può lasciare. In genere raggiunge partizioni di qualità almeno comparabile con buona efficienza.","t":"QA"},
+  {"q":"Come si può formalizzare un intervento contro la polarizzazione tra due gruppi?","a":"Una formulazione sceglie un insieme S di al più k interventi o archi per minimizzare una misura P(G_S), ad esempio distanza tra le medie delle opinioni o controversia random-walk: min_{S⊆C, |S|≤k} P(G_S), eventualmente con vincoli di costo e rilevanza. La funzione va scelta in base al modello di diffusione e al significato desiderato di polarizzazione.","t":"QA"},
+  {"q":"Come funziona il modello small-world di Watts–Strogatz?","a":"Si parte da un anello regolare con n nodi e grado k e si ricabla ciascun arco con probabilità β. Per β=0 si hanno alto clustering e cammini lunghi; per piccoli β i cammini si accorciano molto mantenendo alto clustering; per β≈1 il grafo è quasi casuale. La regione small-world sta tra i due estremi, non in un intervallo percentuale universale.","t":"QA"},
+  {"q":"Come si verifica se un modello approssima bene la distribuzione delle distanze di un grafo?","a":"Si confrontano distribuzione empirica e simulata delle shortest-path length, usando statistiche descrittive e un test di bontà dell'adattamento come Kolmogorov–Smirnov. È opportuno ripetere le simulazioni e riportare intervalli di confidenza; il solo average path length non verifica l'intera distribuzione.","t":"QA"},
+  {"q":"Qual è la differenza tra modello small-world e configuration model?","a":"Watts–Strogatz parte da una struttura regolare e ricabla archi per ottenere clustering alto e cammini brevi. Il configuration model costruisce grafi casuali rispettando una sequenza di gradi; gli archi non sono semplicemente indipendenti con uguale probabilità. Quest'ultima proprietà caratterizza piuttosto Erdős–Rényi.","t":"QA"},
+  {"q":"Come funziona Infomap e qual è la map equation?","a":"Infomap cerca la partizione che comprime meglio la traiettoria di un random walk. Minimizza L(M)=q↷H(Q)+Σᵢ pᵢ↻H(Pᵢ), somma del codice per gli spostamenti tra moduli e dei codici interni. Favorisce gruppi in cui il random walker resta a lungo; non esiste una regola generale secondo cui produca sempre più comunità di Louvain.","t":"QA"},
+  {"q":"Come si possono usare knowledge graph per condizionare un LLM?","a":"Con retrieval-augmented generation si estraggono dal grafo entità, relazioni e sottografi pertinenti e li si inserisce nel contesto del modello. In alternativa gli embedding del KG possono alimentare un adapter o il modello può essere fine-tuned su verbalizzazioni e task del grafo. Vincoli e provenienza aiutano a controllare coerenza e verificabilità.","t":"QA"},
+  {"q":"Che cos'è l'algoritmo TIM per influence maximization?","a":"TIM seleziona k seed con garanzia approssimata sotto modelli come Independent Cascade usando Reverse Reachable sets. Campiona nodi bersaglio e grafi live-edge, costruisce gli insiemi di nodi che possono raggiungere il bersaglio e applica greedy maximum coverage. Il numero di campioni viene stimato per bilanciare garanzia probabilistica e costo.","t":"QA"},
+  {"q":"Come si definisce la Katz centrality?","a":"x=αAx+β1, quindi x=β(I−αA)^−1 1=βΣₗ≥0 α^l A^l1, con α<1/ρ(A). Conta i cammini che terminano in ogni nodo, attenuando quelli più lunghi; β assegna una centralità di base anche ai nodi senza cammini entranti.","t":"QA"},
+  {"q":"Perché alcune formulazioni della centralità di Bonacich differiscono da Katz per una costante?","a":"Le equazioni possono usare un termine esogeno diverso: Katz impiega tipicamente β1, mentre una formulazione di Bonacich può porre x=αAx+βA1 o cambiare normalizzazione. A parità di matrice risolvente, questa scelta moltiplica o trasla i punteggi; per il ranking una costante positiva comune spesso non cambia l'ordine.","t":"QA"},
+  {"q":"Come si definisce SimRank e qual è la sua intuizione?","a":"Due nodi sono simili se sono collegati a nodi simili. Per a≠b, s(a,b)=C/(|I(a)||I(b)|) Σ_{i∈I(a)}Σ_{j∈I(b)}s(i,j), con s(a,a)=1. È interpretabile tramite incontri di random walk inversi; la media evita che nodi di alto grado risultino simili soltanto per il numero di vicini.","t":"QA"},
+  {"q":"Qual è la relazione tra SimRank e Katz centrality?","a":"Entrambi sommano contributi di cammini attenuati, ma Katz assegna un punteggio a un nodo contando cammini, mentre SimRank assegna una similarità a una coppia in base a coppie di cammini inversi che possono incontrarsi. La normalizzazione per i gradi è centrale in SimRank e non nella Katz standard.","t":"QA"},
+  {"q":"Che cos'è SimPath?","a":"È un metodo per stimare lo spread nell'influence maximization, soprattutto nel modello Linear Threshold, enumerando cammini semplici di influenza e potando quelli con probabilità sotto una soglia. Evita simulazioni Monte Carlo complete e viene usato in una selezione greedy dei seed, scambiando accuratezza con velocità.","t":"QA"},
+  {"q":"Che cosa introduce PageRank rispetto a Katz centrality?","a":"Normalizza il contributo di un nodo per il suo grado uscente e interpreta i punteggi come probabilità stazionarie di un random surfer. Il termine di teleportation risolve sink e componenti chiuse e rende la catena irriducibile e aperiodica; Katz usa invece una somma attenuata di cammini non normalizzati.","t":"QA"},
+  {"q":"Che cosa sono i Reverse Influence Sampling sets?","a":"Un RR set si ottiene scegliendo un nodo casuale v, campionando un grafo live-edge e raccogliendo i nodi che possono raggiungere v. La probabilità che un insieme seed intersechi un RR set è uguale alla sua influenza attesa divisa per il numero di nodi. Influence maximization diventa così un problema di maximum coverage campionato.","t":"QA"},
+  {"q":"Come si stima l'influenza di un insieme seed con Monte Carlo?","a":"Si simula molte volte il processo di diffusione dal medesimo insieme seed e si usa come stima la media dei nodi attivati. L'errore diminuisce all'aumentare delle simulazioni e va quantificato con varianza o intervalli di confidenza; inserito nell'algoritmo greedy può essere accurato ma costoso.","t":"QA"},
+  {"q":"Come funziona CNM per la community detection?","a":"Clauset–Newman–Moore è un algoritmo agglomerativo: parte da un nodo per comunità e fonde ripetutamente la coppia adiacente con massimo incremento di modularità ΔQ, aggiornando efficientemente una struttura sparsa. Conserva la partizione con Q massima lungo il dendrogramma.","t":"QA"},
+  {"q":"Come funziona Girvan–Newman?","a":"Calcola la edge betweenness, rimuove l'arco con valore massimo, ricalcola i valori interessati e ripete. Gli archi attraversati da molti cammini minimi tendono a collegare comunità. Il metodo produce un dendrogramma ma è costoso sui grafi grandi.","t":"QA"},
+  {"q":"Qual è la differenza tra reti small-world e scale-free?","a":"Small-world descrive alta clusterizzazione e distanza media piccola; scale-free descrive una distribuzione dei gradi a coda pesante, idealmente una legge di potenza. Le proprietà sono indipendenti: una rete può averle entrambe, una sola o nessuna.","t":"QA"},
+  {"q":"Come funziona il preferential attachment di Barabási–Albert?","a":"Si aggiungono nodi uno alla volta e ciascun nuovo arco sceglie il nodo i con probabilità proporzionale al suo grado, P(i)=kᵢ/Σⱼkⱼ. Il meccanismo rich-get-richer genera hub e una distribuzione dei gradi asintoticamente a legge di potenza, ma il modello base ha clustering e dinamiche meno realistici di molte reti reali.","t":"QA"}
 ]

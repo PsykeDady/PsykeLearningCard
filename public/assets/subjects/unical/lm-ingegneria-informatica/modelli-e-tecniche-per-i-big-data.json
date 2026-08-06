@@ -1,237 +1,26 @@
 [
-  {
-    "q": "UPC++ cos'è e a che modello fa riferimento",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Parlare di APGAS",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Esempio di calcolo del π con UPC++ visto in aula, descriverne in linea di massima il funzionamento",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "HDFS",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Legge di Amdahl cos'è (con la cosa dell'andamento sovralineare)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Come si fa a capire se abbiamo infiniti core quale sarà la prestazione del nostro programma (amdahl)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Upc ++",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Montecarlo con Upc ++",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Apache storm",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Modello BSP",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Costo di BSP",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Pseudocodice funzioni map e reduce",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Topologia Storm",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "nota: da quest'anno il programma è cambiato, non si fa più Hama e si studiano GraphX e Apache Airflow (slide su teams)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "parametri mpi speedrun tempo esecuzione parallelo e sequenziale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "lambda expression",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "benefici java stream",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "differenze spark hadoop",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "RDD",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "hama",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "costo del calcolo bsp",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "ZooKeeper",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "trajectory discovery",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "java stream lazy",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "legge di Amdahl",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "wordcount",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "mapper e reducer",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "spark e hadoop convenienza",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "bsp in generale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "send receive non bloccanti e bloccanti",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "spark lazy execution",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "wordcount reverse (chiave lunghezza parole)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "logica di hive",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "comunicazione in MPI sincrona e asincrona e meccanismi",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "caratteristiche di un programma in parallelo",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "combiner in mapreduce",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "numero di reducer e mapper",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "watermark",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "wordlengthcount",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "codice word count",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "che tipologia di programmi esegue storm",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "possono esserci piu spout?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "quali metodi deve implementare spout e quali bolt",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "combiner di map reduce",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "codice word count reverse",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Superlinear speedup",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "architettura hdfs e file di configurazione delle risorse",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cos'è UPC++ e quale modello di programmazione adotta?","a":"È una libreria C++ per parallelismo PGAS: la memoria è logicamente condivisa ma partizionata e ogni oggetto ha affinity verso un rank. Offre global pointer, RPC, one-sided communication, future e team, lasciando espliciti locality e asincronia.","t":"QA"},
+  {"q":"Che cos'è APGAS?","a":"Asynchronous Partitioned Global Address Space combina memoria globalmente indirizzabile ma partizionata con task asincroni eseguiti vicino ai dati. Costrutti come async/finish e at esprimono parallelismo, terminazione e locality, facilitando algoritmi distribuiti irregolari.","t":"QA"},
+  {"q":"Come si stima π con Monte Carlo in UPC++?","a":"Ogni rank genera punti casuali indipendenti nel quadrato [−1,1]², conta quelli con x²+y²≤1 e riduce i conteggi globalmente. La stima è 4·inside/total. Servono seed indipendenti, riduzione asincrona/sincrona corretta e abbastanza campioni; l'errore cala come O(1/√N).","t":"QA"},
+  {"q":"Qual è l'architettura di HDFS?","a":"Il NameNode gestisce namespace e mapping file-blocchi; i DataNode memorizzano blocchi, inviano heartbeat/block report e replicano tramite pipeline. File grandi sono spezzati e replicati su nodi/rack. HDFS privilegia throughput sequenziale e write-once/read-many.","t":"QA"},
+  {"q":"Che cosa afferma la legge di Amdahl?","a":"Con frazione seriale s e p processori, speedup S(p)≤1/[s+(1−s)/p]; per p→∞ il limite è 1/s. Assume workload fisso e non include overhead. Gustafson descrive meglio workload che cresce con le risorse.","t":"QA"},
+  {"q":"Che cos'è uno speedup superlineare?","a":"Si ha S(p)>p. Può derivare da cache/memoria aggregata che riduce I/O o paging, ricerca che trova prima una soluzione, o confronto con una baseline sfavorevole. Non viola Amdahl: cambiano costi effettivi o quantità di lavoro rispetto alle sue ipotesi.","t":"QA"},
+  {"q":"Come si misurano speedup ed efficienza parallela?","a":"Speedup S_p=T_1/T_p ed efficienza E_p=S_p/p. Si specificano hardware, input, algoritmo seriale di riferimento, tempi wall-clock e variabilità. Strong scaling mantiene fisso il problema; weak scaling mantiene circa fisso il lavoro per processore.","t":"QA"},
+  {"q":"Che cos'è il modello Bulk Synchronous Parallel?","a":"La computazione procede in superstep: calcolo locale, comunicazione e barriera globale. Un costo comune per superstep è w+h·g+l, con lavoro locale massimo w, massimo volume h, costo per parola g e latenza/barriera l; il costo totale somma i superstep.","t":"QA"},
+  {"q":"Qual è la differenza tra send/receive bloccanti e non bloccanti in MPI?","a":"Le primitive bloccanti ritornano quando il buffer può essere riusato, non necessariamente quando il peer ha ricevuto. Isend/Irecv ritornano una request e consentono sovrapporre comunicazione e calcolo, ma buffer e completamento vanno gestiti con Wait/Test. La modalità sincrona richiede handshake col ricevente.","t":"QA"},
+  {"q":"Come funziona MapReduce?","a":"Map trasforma record in coppie chiave-valore; shuffle/partition raggruppa tutte le coppie per chiave presso un reducer; Reduce aggrega i valori di ciascuna chiave. Il framework gestisce distribuzione, retry e data locality.","t":"QA"},
+  {"q":"Come si realizza WordCount con MapReduce?","a":"Mapper: per ogni parola w emette (w,1). Shuffle raggruppa per w. Reducer: emette (w,Σ valori). Un combiner locale può sommare parzialmente perché somma è associativa e commutativa, riducendo traffico.","t":"QA"},
+  {"q":"Come si realizza WordLengthCount con MapReduce?","a":"Il mapper tokenizza e per ogni parola emette (lunghezza(w),1); reducer somma i valori per lunghezza. Se si vogliono invece elenchi di parole, value e aggregazione cambiano e occorre gestire duplicati/volume.","t":"QA"},
+  {"q":"Che ruolo hanno partitioner e combiner in MapReduce?","a":"Il partitioner decide quale reducer riceve una chiave e deve mandare chiavi uguali allo stesso reducer, bilanciando carico. Il combiner è un'ottimizzazione locale opzionale e può essere eseguito zero o più volte, quindi è valido solo per operazioni compatibili.","t":"QA"},
+  {"q":"Da cosa dipende il numero di mapper e reducer?","a":"I mapper dipendono principalmente da input split, dimensione blocchi e formato; i reducer sono configurati in base a volume di shuffle, parallelismo e risorse. Troppi task aumentano overhead, pochi creano colli di bottiglia; skew delle chiavi può dominare.","t":"QA"},
+  {"q":"Qual è la differenza tra Hadoop MapReduce e Apache Spark?","a":"MapReduce materializza spesso ogni fase su storage distribuito ed è robusto per batch lineari. Spark costruisce DAG, conserva dataset in memoria quando utile e supporta iterazione, SQL e streaming, ma richiede gestione della memoria. La convenienza dipende da workload e infrastruttura.","t":"QA"},
+  {"q":"Che cos'è un RDD?","a":"Un Resilient Distributed Dataset è una collezione immutabile partizionata con lineage di trasformazioni. Le trasformazioni sono lazy; un'action avvia il DAG. Partizioni perse possono essere ricalcolate dal lineage, mentre cache/persist riducono ricalcoli.","t":"QA"},
+  {"q":"Che cosa significa lazy evaluation in Spark e Java Streams?","a":"Le operazioni intermedie costruiscono un piano senza elaborare subito i dati; un'operazione terminale/action avvia l'esecuzione. Consente fusione, ottimizzazione e short-circuiting. In Spark comporta un DAG distribuito; negli Stream Java una pipeline locale.","t":"QA"},
+  {"q":"Quali benefici e limiti offrono Java Stream e lambda?","a":"Esprimono pipeline dichiarative, composabili e talvolta parallelizzabili; la lazy evaluation evita lavoro. Side effect, stato condiviso e operazioni non associative rendono difficile parallelizzare; parallelStream non garantisce accelerazione e usa per default il common pool.","t":"QA"},
+  {"q":"Che cos'è Apache Storm?","a":"È un motore di stream processing continuo. Una topology è un grafo di spout, che emettono tuple, e bolt, che trasformano, aggregano o persistono. Possono esserci più spout; parallelism e grouping determinano come le tuple vengono distribuite.","t":"QA"},
+  {"q":"Quali metodi fondamentali implementano spout e bolt in Storm?","a":"Nell'API classica uno spout prepara il contesto, emette con nextTuple e gestisce ack/fail; un bolt si prepara, elabora tuple con execute e dichiara output fields. I dettagli variano con API/versione, ma spout produce e bolt consuma/elabora.","t":"QA"},
+  {"q":"Che cos'è un watermark nello stream processing?","a":"È una stima monotona del tempo evento fino al quale si ritiene improbabile ricevere nuovi eventi. Permette chiudere finestre pur accettando lateness configurata; non è una garanzia assoluta e gli eventi oltre soglia vanno scartati, aggiornati o instradati separatamente.","t":"QA"},
+  {"q":"Che ruolo ha ZooKeeper?","a":"Fornisce coordinamento distribuito tramite uno spazio gerarchico di znode, watch, versioni e primitive per configurazione, membership, election e lock. Replica con consenso per offrire consistenza forte; non è un database per grandi payload.","t":"QA"},
+  {"q":"Qual è la logica di Apache Hive?","a":"Espone dati su storage distribuito tramite schema-on-read e SQL dichiarativo. Il catalogo conserva metadata; il motore traduce query in job Spark/Tez/MapReduce. Partizioni e formati colonnari come Parquet riducono letture, ma Hive non è pensato per transazioni OLTP a bassa latenza.","t":"QA"},
+  {"q":"Che cos'è trajectory discovery nei Big Data?","a":"Estrae pattern da sequenze spazio-temporali, dopo pulizia, map matching e segmentazione. Può cercare traiettorie frequenti, cluster, anomalie o predire spostamenti. Distanza e gestione di campionamenti irregolari e privacy determinano la qualità.","t":"QA"}
 ]

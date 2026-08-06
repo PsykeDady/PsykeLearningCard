@@ -1,62 +1,62 @@
 [
   {
-    "q": "Linearizzazione",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è la linearizzazione di un sistema non lineare attorno a un punto di equilibrio?",
+    "a": "È l'approssimazione locale ottenuta sviluppando le equazioni di stato e di uscita al primo ordine. Se ẋ=f(x,u) e y=h(x,u), attorno a (xₑ,uₑ) si ottiene δẋ=Aδx+Bδu e δy=Cδx+Dδu, dove A, B, C e D sono le rispettive matrici Jacobiane valutate nel punto di equilibrio.",
     "t": "QA"
   },
   {
-    "q": "Taratura modelli ARMA",
-    "a": "Risposta non disponibile",
+    "q": "Come si identificano, o tarano, i parametri di un modello ARMA?",
+    "a": "Si scelgono gli ordini autoregressivo e a media mobile, si stimano i parametri dai dati minimizzando l'errore di predizione o massimizzando la verosimiglianza, quindi si verificano stabilità e invertibilità. I residui devono risultare assimilabili a rumore bianco e non correlati con gli ingressi passati.",
     "t": "QA"
   },
   {
-    "q": "Analisi in frequenza",
-    "a": "Risposta non disponibile",
+    "q": "In cosa consiste l'analisi in frequenza di un sistema LTI?",
+    "a": "Studia la risposta sinusoidale a regime tramite G(jω). Modulo e fase descrivono come ogni frequenza viene amplificata e sfasata; diagrammi di Bode, Nyquist o Nichols permettono inoltre di valutare banda, risonanza e margini di stabilità.",
     "t": "QA"
   },
   {
-    "q": "Risposta Libera",
-    "a": "Risposta non disponibile",
+    "q": "Qual è la risposta libera di un sistema LTI continuo nello spazio di stato?",
+    "a": "Con ingresso nullo e stato iniziale x(0), la risposta di stato è x(t)=e^(At)x(0). L'uscita libera è y(t)=Ce^(At)x(0), assumendo il modello y=Cx+Du.",
     "t": "QA"
   },
   {
-    "q": "Esponenziale di matrice",
-    "a": "Risposta non disponibile",
+    "q": "Come si definisce e come si può calcolare l'esponenziale di una matrice?",
+    "a": "Si definisce e^(At)=Σₖ₌₀∞(At)^k/k!. Si può calcolare mediante diagonalizzazione A=VΛV⁻¹, ottenendo Ve^(Λt)V⁻¹, oppure con forma di Jordan, teorema di Cayley-Hamilton o metodi numerici. È la matrice di transizione dello stato di ẋ=Ax.",
     "t": "QA"
   },
   {
-    "q": "Sylvester",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è l'equazione di Sylvester e quando ammette soluzione unica?",
+    "a": "Nella forma AX+XB=C, ammette un'unica soluzione X per ogni C se e solo se A e −B non hanno autovalori in comune. Equazioni di Lyapunov come AX+XAᵀ=C ne sono un caso particolare.",
     "t": "QA"
   },
   {
-    "q": "Raggiungibilità",
-    "a": "Risposta non disponibile",
+    "q": "Quando un sistema LTI è completamente raggiungibile?",
+    "a": "Il sistema ẋ=Ax+Bu di ordine n è completamente raggiungibile se la matrice [B AB … A^(n−1)B] ha rango n. Equivalentemente, ogni stato può essere raggiunto da qualunque stato iniziale in un tempo finito mediante un ingresso opportuno.",
     "t": "QA"
   },
   {
-    "q": "Osservabilità",
-    "a": "Risposta non disponibile",
+    "q": "Quando un sistema LTI è completamente osservabile?",
+    "a": "Il sistema è completamente osservabile se lo stato iniziale può essere ricostruito dall'ingresso e dall'uscita in un intervallo finito. Per un sistema di ordine n ciò equivale ad avere rango n per [C; CA; …; CA^(n−1)].",
     "t": "QA"
   },
   {
-    "q": "Partizione alla Kalman",
-    "a": "Risposta non disponibile",
+    "q": "Che cosa mette in evidenza la decomposizione di Kalman?",
+    "a": "Un cambiamento di coordinate suddivide lo spazio di stato nelle parti raggiungibile/osservabile, raggiungibile/non osservabile, non raggiungibile/osservabile e non raggiungibile/non osservabile. La funzione di trasferimento dipende soltanto dalla parte sia raggiungibile sia osservabile.",
     "t": "QA"
   },
   {
-    "q": "Trasferimento Energia minima",
-    "a": "Risposta non disponibile",
+    "q": "Qual è il controllo a energia minima per trasferire lo stato di un sistema LTI?",
+    "a": "Per ẋ=Ax+Bu, trasferimento da x₀ a x_f al tempo T e Gramiano W(T)=∫₀ᵀe^(Aτ)BBᵀe^(Aᵀτ)dτ invertibile, il controllo minimo è u*(t)=Bᵀe^(Aᵀ(T−t))W(T)⁻¹[x_f−e^(AT)x₀]. L'energia minima è il corrispondente prodotto quadratico con W(T)⁻¹.",
     "t": "QA"
   },
   {
-    "q": "retroazione",
-    "a": "Risposta non disponibile",
+    "q": "Che effetto ha la retroazione dello stato u=−Kx+r sui poli di un sistema?",
+    "a": "La dinamica in anello chiuso diventa ẋ=(A−BK)x+Br. Se (A,B) è raggiungibile, K può essere scelto per assegnare arbitrariamente i poli di A−BK; il riferimento e un eventuale precompensatore determinano invece il comportamento statico dell'uscita.",
     "t": "QA"
   },
   {
-    "q": "retroazione dead beat",
-    "a": "Risposta non disponibile",
+    "q": "Che cos'è una retroazione deadbeat in un sistema a tempo discreto?",
+    "a": "È una retroazione che porta l'errore esattamente a zero in un numero finito di campioni. Con u[k]=−Kx[k], si scelgono tutti i poli di A−BK nell'origine, rendendo la matrice in anello chiuso nilpotente; è possibile mediante assegnazione dei poli se il sistema è raggiungibile.",
     "t": "QA"
   }
 ]

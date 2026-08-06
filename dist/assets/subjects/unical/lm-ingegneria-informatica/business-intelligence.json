@@ -1,82 +1,17 @@
 [
-  {
-    "q": "gestione delle dimensioni degeneri",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "gerarchie dinamiche",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "a cosa serve attributo master nello scenario di verità storica",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "a cosa servono le chiavi surrogate",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "perché non si usano i btree",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "star index",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "join index",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "quando conviene fare snow flake",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "gerarchie incomplete e soluzioni",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "indici bitmap a confronto con btree",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "molap e rolap",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Tutti i pro e tutti i contro dell'usare Chiavi surrogate",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Star index > quando non è efficiente usare lo star index",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "aggregatori olistici",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "indici di bit-sliced",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "gerarchie ricorsive ( pro e contro delle 2 soluzioni)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Che cos'è una dimensione degenere in un data warehouse e come viene gestita?","a":"È un identificatore descrittivo del processo, come il numero d'ordine, che appartiene concettualmente a una dimensione ma non ha altri attributi. Si conserva direttamente nella fact table, evitando una dimension table composta soltanto dalla chiave.","t":"QA"},
+  {"q":"Come si rappresentano gerarchie dinamiche in un modello dimensionale?","a":"Quando le relazioni gerarchiche cambiano nel tempo, si versionano i membri e i legami con intervalli di validità, oppure si usa una bridge table temporale. Le query devono scegliere la gerarchia valida alla data del fatto o quella corrente, secondo il requisito di analisi.","t":"QA"},
+  {"q":"A cosa serve un attributo master nella gestione della verità storica?","a":"Identifica stabilmente la stessa entità attraverso le sue diverse versioni storiche, mentre ogni versione possiede una surrogate key distinta. Consente di raggruppare tutte le versioni oppure selezionare quella valida in un dato intervallo temporale.","t":"QA"},
+  {"q":"Perché si usano chiavi surrogate nelle dimensioni di un data warehouse?","a":"Sono identificatori interni indipendenti dalle chiavi operative. Permettono di integrare sorgenti con chiavi diverse, conservare più versioni SCD della stessa entità, gestire valori unknown e isolare il warehouse dai cambiamenti dei sistemi sorgente.","t":"QA"},
+  {"q":"Quali svantaggi comportano le chiavi surrogate?","a":"Richiedono lookup durante l'ETL, occupano spazio aggiuntivo, impongono vincoli per evitare duplicati della chiave naturale e rendono meno leggibili dati e join. Non sostituiscono la business key, che va comunque conservata e governata.","t":"QA"},
+  {"q":"Perché gli indici B-tree non sono sempre ideali nei workload OLAP?","a":"Sono efficaci per attributi ad alta cardinalità, range e selezioni molto selettive. In OLAP, colonne a bassa cardinalità e filtri combinati su grandi volumi favoriscono bitmap index, che eseguono rapidamente AND/OR e comprimono bene. I B-tree restano comunque utili in molti casi: non vengono esclusi in assoluto.","t":"QA"},
+  {"q":"Che cos'è uno star index e quando è efficace?","a":"È una struttura o strategia di accesso che accelera star join combinando rapidamente i vincoli sulle dimensioni e individuando le righe della fact table. È efficace con dimensioni selettive e schema a stella; perde vantaggio con filtri poco selettivi, dimensioni molto grandi, aggiornamenti frequenti o query non riconducibili allo star join.","t":"QA"},
+  {"q":"Che cos'è un join index?","a":"Precalcola l'associazione tra righe di tabelle unite, spesso memorizzando per ciascun valore o riga di dimensione gli identificatori delle righe corrispondenti nella fact table. Riduce il costo dei join nelle query, ma richiede spazio e manutenzione durante caricamenti e aggiornamenti.","t":"QA"},
+  {"q":"Quando conviene adottare uno schema snowflake?","a":"Conviene quando normalizzare gerarchie grandi riduce una duplicazione significativa, migliora la manutenzione o consente il riuso di sottodimensioni. Rispetto allo star schema introduce più join e una struttura meno intuitiva, quindi per semplicità e velocità di interrogazione spesso si preferisce denormalizzare.","t":"QA"},
+  {"q":"Che cosa sono le gerarchie incomplete e come si modellano?","a":"Sono gerarchie in cui alcuni membri saltano un livello o non hanno un antenato previsto, come una città senza provincia. Si possono inserire membri placeholder, consentire parent null o modellare esplicitamente relazioni parent-child/bridge. La scelta deve preservare aggregazioni corrette e comprensibili.","t":"QA"},
+  {"q":"Come si confrontano bitmap index e B-tree?","a":"I bitmap index rappresentano i valori con vettori di bit, si comprimono e combinano bene per colonne a bassa o media cardinalità in workload prevalentemente di lettura. I B-tree sono migliori per alta cardinalità, range, lookup puntuali e aggiornamenti concorrenti. Bitmap molto modificati possono causare elevato costo e contesa.","t":"QA"},
+  {"q":"Qual è la differenza tra ROLAP e MOLAP?","a":"ROLAP conserva fatti e dimensioni in tabelle relazionali e calcola con SQL: scala bene e integra dati dettagliati, ma alcune query sono più lente. MOLAP usa cubi multidimensionali e aggregati precomputati: risponde rapidamente, ma richiede elaborazione, spazio e può gestire con difficoltà dimensioni molto grandi o sparse.","t":"QA"},
+  {"q":"Che cos'è un aggregatore olistico?","a":"È una funzione aggregata il cui risultato globale non può essere ricavato da un riepilogo intermedio di dimensione costante. Mediana, moda e quantili esatti sono esempi tipici. Si distingue dagli aggregatori distributivi, come SUM, e algebrici, come AVG ricavabile da SUM e COUNT.","t":"QA"},
+  {"q":"Che cos'è un bit-sliced index?","a":"Rappresenta i bit di un attributo numerico in bitmap separate, una per posizione binaria. Operazioni bitwise consentono confronti, somme e aggregazioni senza leggere ogni valore. È utile in analisi numeriche su grandi tabelle, ma richiede manutenzione e un numero di slice legato alla precisione del dominio.","t":"QA"},
+  {"q":"Come si modellano gerarchie ricorsive o parent-child?","a":"La soluzione adjacency-list salva in ogni membro la chiave del genitore: è compatta e facile da aggiornare, ma le query ricorsive possono costare. Una closure/bridge table salva tutte le coppie antenato-discendente e la profondità: accelera navigazione e aggregazione, ma usa più spazio e va aggiornata quando cambia la gerarchia.","t":"QA"}
 ]

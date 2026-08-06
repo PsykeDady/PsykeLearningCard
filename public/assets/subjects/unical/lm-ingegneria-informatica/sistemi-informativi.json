@@ -1,122 +1,18 @@
 [
-  {
-    "q": "presentazione progetto",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "eseguire su pentaho",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "eseguire su pentaho > drill up",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "eseguire su pentaho > roll down",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "eseguire su pentaho > selection slice",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "fasi di progettazione Data Warehouse",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Schemi di fatto a stella e snowflake",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Proprietà sistemi nosql",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "utilizzo di hbase",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Parte PENTAHO",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "OLAP",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "modellazione concettuale data warehouse",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "realizzare in saiku roll up e roll down",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "document datastore",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "column family",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Creare in saiku l'operazione slice e selezione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "modellazione logica dei data ware house",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "modellazione logica dei data ware house > 4 fasi della modellazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "imputation mismatching",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "schema di HBase",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "schema di HBase > disegnare",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "schema di HBase > nome delle componenti",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "schema di HBase > modi per interfacciarlo con il client",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "teorema CAP",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Quali sono le principali fasi di progettazione di un data warehouse?","a":"Analisi dei requisiti e delle sorgenti; modellazione concettuale di fatti, misure e dimensioni; progettazione logica star/snowflake; progettazione dell'ETL e qualità dati; progettazione fisica di partizioni, indici e aggregati; caricamento, test e gestione operativa.","t":"QA"},
+  {"q":"Qual è la differenza tra star schema e snowflake schema?","a":"Lo star schema usa dimensioni denormalizzate direttamente collegate alla fact table: è semplice e richiede meno join. Lo snowflake normalizza gerarchie dimensionali, riducendo ridondanza ma aumentando join e complessità. Entrambi mantengono il grain dichiarato dei fatti.","t":"QA"},
+  {"q":"Come si modella concettualmente un data warehouse?","a":"Si identificano processi/fatti, grain, misure e loro additività, dimensioni, attributi descrittivi e gerarchie. Il modello deve rappresentare chi, cosa, dove e quando del processo senza dipendere subito dalle tabelle fisiche.","t":"QA"},
+  {"q":"Quali passaggi guidano la modellazione logica dimensionale?","a":"Si sceglie il processo, si dichiara il grain, si identificano le dimensioni e infine le misure/fatti. Si definiscono chiavi surrogate, gestione della storia, dimensioni conformi, relazioni many-to-many e schema fisico star o snowflake.","t":"QA"},
+  {"q":"Che cos'è OLAP?","a":"È l'analisi multidimensionale interattiva di misure per dimensioni e gerarchie. Operazioni tipiche sono roll-up, drill-down, slice, dice e pivot. Può essere implementata su database relazionali ROLAP o cubi MOLAP.","t":"QA"},
+  {"q":"Qual è la differenza tra roll-up e drill-down?","a":"Roll-up aggrega lungo una gerarchia o riduce il dettaglio, per esempio città→regione; drill-down fa l'inverso mostrando livelli più fini. “Drill up” e “roll down” sono denominazioni non standard e vanno ricondotte alla direzione effettiva.","t":"QA"},
+  {"q":"Qual è la differenza tra slice, dice e selection in OLAP?","a":"Slice fissa un valore di una dimensione e riduce la dimensionalità; dice seleziona sottoinsiemi o intervalli su più dimensioni; selection è il filtraggio generale delle celle secondo predicati. Gli strumenti come Saiku traducono queste operazioni in query MDX.","t":"QA"},
+  {"q":"Che ruolo hanno Pentaho e Saiku?","a":"Pentaho è una piattaforma BI con integrazione dati, reporting e analisi; Saiku è un'interfaccia OLAP che esplora cubi mediante drag-and-drop e MDX. Il progetto deve distinguere caricamento/ETL, definizione dello schema e interrogazione del cubo.","t":"QA"},
+  {"q":"Quali proprietà caratterizzano i sistemi NoSQL?","a":"Modelli non relazionali, schema flessibile, distribuzione e scalabilità orizzontale, spesso denormalizzazione e consistenza configurabile. NoSQL include key-value, document, wide-column e graph database; non implica assenza di query, transazioni o schema.","t":"QA"},
+  {"q":"Che cos'è un document datastore?","a":"Memorizza documenti auto-descrittivi, tipicamente JSON/BSON, indicizzabili per campi e nidificazioni. Aggrega dati letti insieme e consente schema flessibile, ma duplicazione e aggiornamenti cross-document richiedono scelte attente.","t":"QA"},
+  {"q":"Che cos'è un database wide-column o column-family?","a":"Organizza righe sparse per row key e colonne raggruppate in famiglie, distribuendo i dati per intervalli o hash della chiave. HBase ne è un esempio: ottimizza accessi per chiave e scansioni ordinate, non join relazionali arbitrari.","t":"QA"},
+  {"q":"Qual è l'architettura logica di HBase?","a":"HMaster coordina metadata e bilanciamento; RegionServer ospitano region, intervalli di row key; ZooKeeper supporta coordinamento; HFiles risiedono su HDFS con WAL e MemStore per scritture. Una tabella ha row key, column family, qualifier, timestamp e value.","t":"QA"},
+  {"q":"Come accede un client a HBase?","a":"Usa API native Java o client supportati, shell, REST/Thrift gateway e motori superiori come Phoenix. Individua la region della row key tramite metadata, poi comunica direttamente col RegionServer e mantiene cache delle locazioni.","t":"QA"},
+  {"q":"Come si progetta una row key HBase?","a":"Deve riflettere i pattern di accesso, distribuire il carico evitando hotspot e consentire scansioni desiderate. Tecniche come salting/hash prefix distribuiscono scritture ma rendono più costose le range query; timestamp decrescente e chiavi composite vanno progettati sul workload.","t":"QA"},
+  {"q":"Che cos'è il data imputation e che cos'è il mismatching?","a":"L'imputation sostituisce valori mancanti con stime semplici o modellistiche, registrando l'incertezza. Il mismatching è l'incoerenza tra record o schemi che rappresentano la stessa entità con formati/codifiche diversi; si affronta con profiling, standardizzazione, entity resolution e regole di qualità.","t":"QA"},
+  {"q":"Che cosa afferma il teorema CAP?","a":"In presenza di una partizione di rete, un sistema distribuito non può garantire simultaneamente consistenza lineare per ogni operazione e disponibilità per ogni richiesta. Deve scegliere il comportamento durante P; fuori dalle partizioni può ottimizzare entrambe. CAP non significa scegliere sempre solo due proprietà su tre.","t":"QA"}
 ]

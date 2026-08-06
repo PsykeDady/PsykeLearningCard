@@ -1,252 +1,29 @@
 [
-  {
-    "q": "Algoritmo Naive e Semi Naive",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Sistemi di argomentazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Linguaggio ALC",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Operatore conseguenze immediate",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Differenza match e unificazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "proprietà safety (domain ind. + genericità, (anche per calcolo relazionale)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "safety anche per operatore disgiunzione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "variabili libere e legate",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "DL lite (definizione, cosa fa e differenza con altri description logics, come viene espresso il concetto e inclusione tra i ruoli)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Tableaux",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Esercizio Abox + Tbox",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Espressività dei modelli stabili (NP)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Sistemi di argomentazione ha voluto tutto",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "nel baf se le definizioni di COMPLETEZZA, ACCEPTED, DEFEATED ECC variano oppure no",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "proof systems definizioni e proprietà",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "logica a tre valori e modelli stabili parziali, determinare se un modello è stabile parziale dato un programma",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "linguaggio delle dipendenze funzionali",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "magic set",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "principio di sostituzione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "significato della conseguenza logica e della derivazione",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Domain Indipendence e se c’è differenza con la safety",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Differenza tra espressività e complessità",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Complessità dei modelli stabili totali",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "esempio di programma stratificato",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Nell'algoritmo tableau se incontriamo tipo >= r.A che succede?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Algoritmo naive/semi-naive",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "complessità ASP",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "sistemi di argomentazione in generale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "sistemi di argomentazione in generale > Linguaggio ALC",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "come si valuta il maggiore o uguale e minore o uguale nel tableau (nota: contatela come domanda fatta, non badate a quale anonimo sia stata fatta)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Algoritmo punto fisso (con esempio di possibile applicazione) Quando può essere applicato questo algoritmo?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Quando un interpretazione è stabile per un programma?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Cosa è un interpretazione? È un sottoinsieme della base di Herbrand.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Qual è la dimensione dell'universo di Herbrand?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Dimensione del ground di un programma.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Semantica della possibilità/Semantica della certezza.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Skeptical reasoning (definizione)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Struttura dei modelli completi.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Argomentazione in generale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "I 3 problemi nell'ambito di argomentazione con le complessità",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Spiegazione delle complessità",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Algoritmo semi-naïve in generale (cosa vogliamo ottenere) cosa abbiamo in input: una base di dati e un insieme di regole. Questo programma calcola il modello minimo per il programma P (insieme di regole)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Esempio di applicazione dell'algoritmo. Con questo esempio dire che cosa fa l'algoritmo naïve e dove interviene quello semi-naïve.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Che cosa fa evalrule()? Dato l'esempio, generare l'espressione in algebra relazionale.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Description logic in generale.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Linguaggio ALC, descrizione.",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Perché utilizziamo la description logic? Non potremmo usare le formule del calcolo dei predicati al suo posto? La domanda scaturisce dal fatto che qualunque formula la possiamo riscrivere con formule del calcolo dei predicati (FOL), e quindi perché utilizzare description logic?",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Tbox e Abox",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Algoritmo naïve (la sua descrizione formale, anche ad alto livello)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come calcola il modello minimo l'algoritmo naïve per Datalog?","a":"Parte dai fatti EDB e applica ripetutamente tutte le regole ai fatti correnti tramite l'operatore T_P, aggiungendo le conseguenze finché raggiunge un punto fisso. Per programmi positivi finiti termina e produce il minimo modello di Herbrand, ma ricalcola molte derivazioni già note.","t":"QA"},
+  {"q":"Come migliora il semi-naïve evaluation l'algoritmo naïve?","a":"A ogni iterazione valuta le regole usando almeno una relazione delta contenente soltanto fatti scoperti nell'iterazione precedente. Evita di rigenerare conseguenze ottenute esclusivamente da tuple vecchie, preservando lo stesso punto fisso con molto meno lavoro.","t":"QA"},
+  {"q":"Che cos'è l'operatore delle conseguenze immediate T_P?","a":"Per un'interpretazione I, T_P(I) contiene le teste delle istanze ground di regole il cui corpo è vero in I. Nei programmi positivi è monotono; iterandolo dal vuoto si raggiunge in un numero finito di passi il minimo punto fisso, uguale al minimo modello.","t":"QA"},
+  {"q":"Quando è applicabile il calcolo iterativo del punto fisso?","a":"È diretto per operatori monotoni su reticoli completi; Knaster–Tarski garantisce punti fissi e, su domini finiti, l'iterazione crescente termina. Datalog positivo senza function symbol ha una base di Herbrand finita. Negazione non stratificata richiede semantiche diverse.","t":"QA"},
+  {"q":"Qual è la differenza tra matching e unificazione?","a":"Il matching cerca una sostituzione per le variabili di un solo termine affinché coincida con un termine target. L'unificazione può sostituire variabili in entrambi i termini e cerca un most general unifier, se esiste; l'occurs check evita sostituzioni cicliche come X=f(X).","t":"QA"},
+  {"q":"Che cosa sono universo e base di Herbrand?","a":"L'universo contiene tutti i termini ground costruibili da costanti e simboli di funzione del programma; la base contiene tutti gli atomi ground ottenuti applicando i predicati a tali termini. Senza function symbol, con arità e costanti finite, entrambi sono finiti e il grounding resta finito.","t":"QA"},
+  {"q":"Che differenza c'è tra variabili libere e legate?","a":"Un'occorrenza è legata se cade nello scope di un quantificatore che dichiara la variabile; altrimenti è libera. Una formula senza variabili libere è una frase e ha valore di verità in una struttura; una formula aperta dipende anche da un assegnamento.","t":"QA"},
+  {"q":"Che cosa significano conseguenza logica e derivazione?","a":"Γ⊨φ è semantico: ogni modello di Γ soddisfa φ. Γ⊢φ è sintattico: φ si ottiene con le regole di un proof system. Correttezza richiede ⊢⇒⊨; completezza richiede ⊨⇒⊢.","t":"QA"},
+  {"q":"Quali proprietà deve avere un proof system?","a":"La correttezza impedisce di derivare formule non conseguenti; la completezza consente di derivare ogni conseguenza; la terminazione è desiderabile per procedure decisionali; efficienza e capacità di produrre prove verificabili sono proprietà operative ulteriori.","t":"QA"},
+  {"q":"Che cosa sono domain independence e safety?","a":"Una query è domain independent se il risultato non cambia estendendo il dominio con elementi assenti dal database. Safety è un criterio sintattico sufficiente che limita valori e variabili al dominio attivo, garantendo risultato finito. Non sono sinonimi: la safety scelta può non catturare ogni query semanticamente domain independent.","t":"QA"},
+  {"q":"Come si rende safe una query con disgiunzione?","a":"Ogni variabile libera di ciascun ramo deve essere limitata positivamente al dominio attivo e i rami devono produrre schemi compatibili. Una variabile presente soltanto in un ramo o soltanto in condizioni negative può spaziare sul dominio esterno e violare la domain independence.","t":"QA"},
+  {"q":"Che cos'è il principio di sostituzione nelle dipendenze funzionali?","a":"Se X→Y e due tuple concordano su X, devono concordare su Y: valori uguali del determinante sono sostituibili senza cambiare i dipendenti. Nella teoria delle FD, riflessività, aumentazione e transitività degli assiomi di Armstrong sono corrette e complete.","t":"QA"},
+  {"q":"Che cos'è una description logic e perché usarla invece della FOL completa?","a":"È un frammento strutturato della logica del primo ordine per concetti, ruoli e individui. Limita l'espressività per ottenere reasoning decidibile, complessità nota, sintassi modellativa e algoritmi ottimizzati. La FOL completa è più espressiva ma l'entailment è indecidibile.","t":"QA"},
+  {"q":"Quali costruttori offre ALC?","a":"Da concetti atomici costruisce ⊤, ⊥, negazione ¬C, congiunzione C⊓D, disgiunzione C⊔D, restrizione esistenziale ∃r.C e universale ∀r.C. Una TBox contiene inclusioni/equivalenze concettuali; una ABox asserzioni su individui e ruoli.","t":"QA"},
+  {"q":"Qual è la differenza tra TBox e ABox?","a":"La TBox descrive lo schema, per esempio Studente⊑Persona; la ABox descrive fatti individuali, come Studente(alice) e conosce(alice,bob). Il reasoning combina entrambe per verificare consistenza, sussunzione e instance checking.","t":"QA"},
+  {"q":"Come funziona un tableau per ALC?","a":"Espande una ABox applicando regole: C⊓D aggiunge entrambi, C⊔D ramifica, ∃r.C crea un successore r con C, ∀r.C propaga C ai successori r. Un clash C e ¬C chiude il ramo; un ramo completo aperto induce un modello.","t":"QA"},
+  {"q":"Come si gestiscono restrizioni numeriche ≥n r.C e ≤n r.C nei tableau estesi?","a":"≥n crea o garantisce n successori r distinti che soddisfano C. ≤n forza identificazioni tra successori appropriati quando sono troppi, ramificando sulle possibili fusioni e controllando clash. Questi costrutti non appartengono ad ALC puro ma a DL più espressive.","t":"QA"},
+  {"q":"Qual è l'obiettivo di DL-Lite?","a":"È una famiglia di description logic leggere progettata per ontology-based data access. Mantiene TBox espressive quanto basta per schemi e ruoli, ma rende molte query conjunctive riscrivibili in SQL/FOL sulla ABox, ottenendo bassa data complexity rispetto a DL più espressive.","t":"QA"},
+  {"q":"Che cosa fa la trasformazione Magic Sets?","a":"Riscrive un programma Datalog usando i binding della query per propagare condizioni rilevanti nelle regole. Simula una valutazione top-down mantenendo un motore bottom-up, evitando di materializzare fatti non utili alla query senza cambiarne le risposte.","t":"QA"},
+  {"q":"Come si verifica se un'interpretazione è un modello stabile?","a":"Per un programma normale ground e candidato M si costruisce il ridotto di Gelfond–Lifschitz: si eliminano regole negate da M e le negazioni residue. M è stabile se coincide con il minimo modello del programma positivo risultante.","t":"QA"},
+  {"q":"Qual è la complessità del reasoning nei programmi ASP normali proposizionali?","a":"L'esistenza di un answer set e il credulous/brave reasoning sono NP-completi; lo skeptical/cautious reasoning è coNP-completo. Verificare un candidato stabile è polinomiale per programmi normali ground, perché il ridotto è positivo. Con teste disgiuntive la complessità sale nella gerarchia polinomiale.","t":"QA"},
+  {"q":"Che differenza c'è tra semantica brave e cautious?","a":"Una formula è brave se vera in almeno un answer set, quindi esprime possibilità; è cautious se vera in tutti gli answer set, quindi certezza rispetto alle soluzioni. Se non esistono answer set, la convenzione sul cautious reasoning va dichiarata.","t":"QA"},
+  {"q":"Che cos'è un modello stabile parziale a tre valori?","a":"Assegna a ogni atomo vero, falso o indefinito e generalizza la stabilità quando non si vuole forzare una scelta totale. Si verifica tramite una trasformazione/operatore a tre valori specifico della semantica adottata; la well-founded semantics produce un unico modello parziale che approssima tutti i modelli stabili.","t":"QA"},
+  {"q":"Che cos'è un sistema di argomentazione astratta di Dung?","a":"È un grafo AF=(A,R) di argomenti e attacchi. Un insieme è conflict-free se non contiene attacchi interni; difende un argomento se attacca ogni suo attaccante; è admissible se conflict-free e difende tutti i propri elementi.","t":"QA"},
+  {"q":"Quali sono le principali semantiche di argomentazione?","a":"Complete: admissible e contiene tutti gli argomenti che difende; grounded: minima complete, unica; preferred: massimale admissible; stable: conflict-free e attacca ogni argomento esterno, può non esistere. Accepted e defeated dipendono dalla semantica scelta e dall'uso credulous o skeptical.","t":"QA"},
+  {"q":"Quali problemi decisionali si studiano nell'argomentazione?","a":"Verifica se un insieme è un'estensione; credulous acceptance se un argomento appartiene ad almeno un'estensione; skeptical acceptance se appartiene a tutte. La complessità dipende dalla semantica: non esiste un'unica risposta per grounded, preferred, stable e complete.","t":"QA"},
+  {"q":"Qual è la differenza tra espressività e complessità?","a":"L'espressività indica quali conoscenze o proprietà un formalismo può rappresentare; la complessità misura le risorse richieste per problemi di reasoning. Aumentare l'espressività spesso alza la complessità o causa indecidibilità, ma il rapporto va analizzato per formalismo e problema specifici.","t":"QA"}
 ]

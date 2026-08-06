@@ -1,87 +1,17 @@
 [
-  {
-    "q": "VAE",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "GAN",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "agnostic PAC",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "learnability",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "svm",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Pac learnability in generale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Derivazione formula Agnostic Pac Learning",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "stima di densità non parametrica, knn e KDE",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Vita, morte e miracoli dell’SVM",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Model selection(sia con validation set, che SRM e MDL)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Problemi di learning convesso",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Discesa del gradiente",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Predittori lineari in generale",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Regressione logistica",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Quale proprietà ha la cross entropy loss? Risposta: è una funzione convessa, si può applicare l'algoritmo di discesa del gradiente)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "Principal Component Analysis (PCA)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "(Di ogni argomento il professore richiede passaggi, formule matematiche ed eventuali grafici)",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come funziona un Variational Autoencoder?","a":"L'encoder approssima qφ(z|x), normalmente gaussiana, e il decoder modella pθ(x|z). Si massimizza l'ELBO: E_q[log pθ(x|z)]−KL(qφ(z|x)||p(z)). Il reparameterization trick z=μ+σ⊙ε permette backpropagation attraverso il campionamento.","t":"QA"},
+  {"q":"Come funziona una Generative Adversarial Network?","a":"Un generatore G trasforma rumore in campioni e un discriminatore D distingue dati reali da generati. Il gioco minimax originale è min_G max_D E_data log D(x)+E_z log(1−D(G(z))). L'addestramento può soffrire instabilità, vanishing gradient e mode collapse.","t":"QA"},
+  {"q":"Che cosa significa PAC-learnability?","a":"Una classe è PAC-apprendibile se, per ogni distribuzione e ogni ε,δ, l'algoritmo produce con probabilità almeno 1−δ un'ipotesi con errore al più ε usando campioni e tempo polinomiali. Nel caso realizable si assume che la classe contenga un predittore senza errore.","t":"QA"},
+  {"q":"Che cos'è l'agnostic PAC learning?","a":"Non assume che il vero predittore appartenga alla classe H. L'algoritmo deve restituire, con probabilità almeno 1−δ, h con rischio R(h)≤inf_{g∈H}R(g)+ε. Per classe finita, uniform convergence richiede un numero di campioni dell'ordine di (log|H|+log(1/δ))/ε².","t":"QA"},
+  {"q":"Che cosa determina la learnability di una classe di ipotesi?","a":"Occorrono controllo della capacità, sufficiente informazione nei dati e un algoritmo computazionalmente praticabile. In classificazione binaria la VC dimension caratterizza la PAC learnability distribution-free: dimensione finita implica uniform convergence, con sample complexity dipendente da VC, ε e δ.","t":"QA"},
+  {"q":"Come funziona una Support Vector Machine lineare?","a":"Cerca l'iperpiano w·x+b=0 con margine massimo. Nel soft margin minimizza 1/2||w||²+CΣξ_i con y_i(w·x_i+b)≥1−ξ_i. Il duale dipende da prodotti scalari e consente kernel; solo i support vector hanno moltiplicatori non nulli.","t":"QA"},
+  {"q":"Che cosa fa il kernel trick nelle SVM?","a":"Sostituisce x·x' con un kernel K(x,x') equivalente a un prodotto scalare in uno spazio di feature, senza costruirlo esplicitamente. Un kernel valido deve essere simmetrico e positivo semidefinito. Scelta e iperparametri controllano la complessità della frontiera.","t":"QA"},
+  {"q":"Come funzionano k-NN density estimation e KDE?","a":"In k-NN si adatta il volume V(x) fino a contenere k campioni e si stima p(x)≈k/(nV(x)); in KDE si fissa una bandwidth h e si sommano kernel centrati sui dati. k o h bilanciano bias e varianza; in alta dimensione entrambe soffrono sparsità.","t":"QA"},
+  {"q":"Qual è la differenza tra validation set, SRM e MDL nella selezione del modello?","a":"Il validation set confronta prestazioni su dati non usati per il fit; Structural Risk Minimization minimizza rischio empirico più un termine di capacità su classi annidate; Minimum Description Length preferisce la codifica più corta di modello e residui. Tutti bilanciano adattamento e complessità.","t":"QA"},
+  {"q":"Quando un problema di apprendimento è convesso?","a":"Quando dominio e funzione obiettivo sono convessi: ogni minimo locale è globale e combinazioni convesse restano ammissibili. Regressione lineare, logistica e SVM lineare con regolarizzazione convessa lo sono; reti neurali profonde in generale no.","t":"QA"},
+  {"q":"Come funziona la discesa del gradiente?","a":"Aggiorna θ_{t+1}=θ_t−η_t∇L(θ_t). Il learning rate controlla stabilità e velocità; batch, stochastic e mini-batch gradient differiscono per il campione usato nella stima. Per funzioni lisce convesse condizioni appropriate su η garantiscono convergenza.","t":"QA"},
+  {"q":"Che cos'è un predittore lineare?","a":"Calcola f(x)=w·x+b; in regressione usa direttamente il valore, in classificazione una soglia o link probabilistico. È interpretabile ed efficiente, ma rappresenta frontiere lineari nelle feature; trasformazioni e kernel ne aumentano l'espressività.","t":"QA"},
+  {"q":"Come funziona la regressione logistica?","a":"Modella P(y=1|x)=σ(w·x+b), con σ(z)=1/(1+e^−z). Si minimizza la negative log-likelihood, equivalente alla binary cross-entropy, spesso con regolarizzazione L1 o L2. La frontiera a probabilità 1/2 è lineare.","t":"QA"},
+  {"q":"La cross-entropy è sempre convessa?","a":"È convessa rispetto ai logits o ai parametri di un modello lineare come la regressione logistica. Non è in generale convessa rispetto a tutti i pesi di una rete neurale profonda. Dire semplicemente che “la cross-entropy è convessa” senza specificare la parametrizzazione è incompleto.","t":"QA"},
+  {"q":"Come funziona Principal Component Analysis?","a":"Centra i dati e trova direzioni ortonormali di massima varianza, autovettori della matrice di covarianza o vettori singolari della matrice dati. Proiettare sulle prime k componenti minimizza l'errore quadratico di ricostruzione tra sottospazi lineari di dimensione k.","t":"QA"}
 ]

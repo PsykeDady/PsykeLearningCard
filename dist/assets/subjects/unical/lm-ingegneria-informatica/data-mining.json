@@ -1,22 +1,6 @@
 [
-  {
-    "q": "clustering gerarchico",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "entropia",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "reti neurali",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  },
-  {
-    "q": "KNN",
-    "a": "Risposta non disponibile",
-    "t": "QA"
-  }
+  {"q":"Come funziona il clustering gerarchico agglomerativo?","a":"Parte con ogni punto in un cluster e fonde iterativamente i due cluster più vicini secondo un linkage: single, complete, average o Ward. Produce un dendrogramma, che si taglia all'altezza desiderata per ottenere i cluster. Non richiede k iniziale, ma distanza e linkage influenzano fortemente il risultato.","t":"QA"},
+  {"q":"Che cos'è l'entropia e come viene usata negli alberi decisionali?","a":"Per una distribuzione di classi pᵢ, H=−Σᵢpᵢlog₂pᵢ misura l'incertezza: vale zero in un nodo puro e cresce con la mescolanza. L'information gain di uno split è l'entropia del padre meno la media pesata di quelle dei figli; l'albero preferisce split che riducono maggiormente l'incertezza.","t":"QA"},
+  {"q":"Come apprende una rete neurale feed-forward?","a":"Ogni livello calcola trasformazioni affini seguite da funzioni di attivazione. La forward pass produce la previsione, la loss misura l'errore e la backpropagation calcola i gradienti con la regola della catena; un ottimizzatore aggiorna pesi e bias. Regolarizzazione e validation limitano l'overfitting.","t":"QA"},
+  {"q":"Come funziona k-nearest neighbors e quali sono i suoi principali limiti?","a":"Per un nuovo esempio trova i k punti di training più vicini e usa voto di maggioranza o media, eventualmente pesati per distanza. È semplice e non parametrico, ma richiede scalatura delle feature, scelta di k e metrica; predizione e memoria sono costose e le distanze diventano poco informative in alta dimensionalità.","t":"QA"}
 ]
