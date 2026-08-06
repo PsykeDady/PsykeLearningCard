@@ -1,22 +1,30 @@
 import Subject from "../models/subject.model";
 
-const REPOSITORY_ASSETS_ROOT = "https://raw.githubusercontent.com/PsykeDady/PsykeLearningCard/main/public/assets";
+const REPOSITORY_OWNER = "PsykeDady";
+const REPOSITORY_NAME = "PsykeLearningCard";
+const REPOSITORY_BRANCHES = ["refactoring", "main"];
 const SUBJECTS_INDEX_PATH = "subjects.json";
 const SUBJECTS_ROOT_PATH = "subjects";
 
-const buildAssetUrl = (relativePath = "") => {
+const buildAssetUrl = (relativePath = "", branch = REPOSITORY_BRANCHES[0]) => {
     const sanitizedPath = relativePath.replace(/^\/+/, "");
-    return `${REPOSITORY_ASSETS_ROOT}/${sanitizedPath}`;
+    return `https://raw.githubusercontent.com/${REPOSITORY_OWNER}/${REPOSITORY_NAME}/${branch}/public/assets/${sanitizedPath}`;
 };
 
 const fetchJson = async (relativePath) => {
-    const response = await fetch(buildAssetUrl(relativePath));
+    let lastError = null;
 
-    if (!response.ok) {
-        throw new Error(`Unable to fetch ${relativePath} from GitHub (${response.status})`);
+    for (const branch of REPOSITORY_BRANCHES) {
+        const response = await fetch(buildAssetUrl(relativePath, branch));
+
+        if (response.ok) {
+            return response.json();
+        }
+
+        lastError = new Error(`Unable to fetch ${relativePath} from GitHub branch ${branch} (${response.status})`);
     }
 
-    return response.json();
+    throw lastError ?? new Error(`Unable to fetch ${relativePath} from GitHub`);
 };
 
 export const createSubjectSlug = (label = "") => {

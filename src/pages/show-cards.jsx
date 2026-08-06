@@ -92,10 +92,10 @@ function ShowCards() {
 		</div>
 	</div>
 
-    const cardsGame = <div className="container-fluid pt-5">
+	const cardsGame = <div className="container-fluid pt-5">
 		{results}
-		<div className="row">
-			<div className="col-12 col-lg-4 offset-lg-4"> 
+		<div className="row justify-content-center">
+			<div className="col-12 d-flex justify-content-center"> 
 				<Card
 					question={current}
 					outFlagFlip={setFlipped}
@@ -119,7 +119,7 @@ function ShowCards() {
 						</div>
 						<div className="row">
 							<div className="col-6 text-success">
-								Giuste<br></br>{questionsContext.countWrong}
+								Giuste<br></br>{questionsContext.countSuccess}
 							</div>
 							<div className="col-6 text-danger">
 								Sbagliate<br></br>{questionsContext.countWrong}

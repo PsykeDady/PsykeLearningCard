@@ -3,23 +3,41 @@ import Question, { MULTIPLA, QA, RIORDINA } from "../../models/question.model"
 import {formatText} from "../../utils/stringutils" 
 
 function Card({question=new Question(), outFlagFlip=(flip=false)=>{}}) {
+	const getRandomValue = () => {
+		const values = new Uint32Array(1)
+		crypto.getRandomValues(values)
+		return values[0]
+	}
 
-    let [flipped, flagFlipped] = useState(false)
+	const shuffleItems = (items) => {
+		const shuffledItems = [...items]
+
+		for (let index = shuffledItems.length - 1; index > 0; index -= 1) {
+			const swapIndex = getRandomValue() % (index + 1)
+			const currentItem = shuffledItems[index]
+			shuffledItems[index] = shuffledItems[swapIndex]
+			shuffledItems[swapIndex] = currentItem
+		}
+
+		return shuffledItems
+	}
+
+    const [flipped, setFlipped] = useState(false)
 
 	useEffect(()=>{
-		flagFlipped(false)
+		setFlipped(false)
 		outFlagFlip(false)
 	}, [question, outFlagFlip])
 
     const flip = () => {
-        flagFlipped(true)
+		setFlipped(true)
 		outFlagFlip(true)
     }
 
 	const unSort = (type=QA) => {
 		let unsorted = type===MULTIPLA ? [...question.a].map(riga => riga.split(";")[1]) : [...question.a];
 
-		unsorted.sort(() => Math.random() - 0.5); 
+		unsorted = shuffleItems(unsorted)
 		
 		return <>
 			<span dangerouslySetInnerHTML={{__html:formatText(unsorted)}}> 
@@ -39,7 +57,15 @@ function Card({question=new Question(), outFlagFlip=(flip=false)=>{}}) {
     let retroC = <span dangerouslySetInnerHTML={{__html:formatText(trueAnswer(question.a))}}> 
     </span>
 
-    return <div className="container-fluid rounded bg-white p-3">
+	let cardContent = <span className="small text-muted">{"Clicca qui per mostrare la risposta"}</span>
+
+	if (flipped) {
+		cardContent = <strong className="text-success">{retroC}</strong>
+	} else if (question.t.toUpperCase()===RIORDINA || question.t.toUpperCase()===MULTIPLA) {
+		cardContent = unSort(question.t)
+	}
+
+	return <div className="learning-card rounded bg-white p-3 shadow">
         <div className="row">
             <div className="col-12">
                 <h3>
@@ -48,18 +74,11 @@ function Card({question=new Question(), outFlagFlip=(flip=false)=>{}}) {
             </div>
         </div>
         <hr className="row"/>
-        <div className="row" onClick={flip}>
-            <div className="col text-center h4">
-                {flipped? 
-                    <strong className="text-success">{retroC}</strong> : 
-                    question.t.toUpperCase()===RIORDINA?   
-					unSort(question.t)
-					:  question.t.toUpperCase()===MULTIPLA? 
-					unSort(question.t)
-					:<span className="small text-muted">{"Clicca qui per mostrare la risposta"}</span>
-                }
-            </div>
-        </div>
+		<button className="row learning-card-body btn btn-link text-decoration-none text-reset m-0" onClick={flip} type="button">
+			<div className="col text-center h4">
+				{cardContent}
+			</div>
+		</button>
     </div>
 }
 

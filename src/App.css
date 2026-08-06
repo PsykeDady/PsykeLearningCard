@@ -1,0 +1,33 @@
+.app-shell {
+	min-height: 100vh;
+}
+
+.app-header-surface,
+.app-content-surface,
+.app-footer-surface {
+	background-color: #f8f9fa;
+}
+
+.app-header-surface,
+.app-footer-surface {
+	padding: 0.75rem 1rem;
+}
+
+.app-content-surface {
+	padding: 1rem;
+}
+
+.learning-card {
+	width: 95vmin;
+	min-height: 94vh;
+	max-height: 94vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.learning-card-body {
+	flex: 1;
+	align-items: center;
+	overflow-y: auto;
+}

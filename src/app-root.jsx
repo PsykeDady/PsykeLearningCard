@@ -5,28 +5,17 @@ import { RouterProvider } from "react-router-dom";
 
 function AppRoot() {
 
-    return <div className="container-fluid bg-light rounded">
-		<div className="row">
-			<div className="col-12">
-				<HeaderComponent />
-			</div>
+    return <div className="app-shell container-fluid px-0">
+		<div className="app-header-surface rounded">
+			<HeaderComponent />
 		</div>
-		<div className="row">
-			<div className="col-12">
-				<div className="row">
-					<div className="col-12">
-						<RouterProvider router={router}>
-						
-						</RouterProvider>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-12">
-						<hr className="text-secondary" />
-						<FooterComponent></FooterComponent>
-					</div>
-				</div>
-			</div>
+		<div className="app-content-surface rounded mt-3">
+			<RouterProvider router={router}>
+				
+			</RouterProvider>
+		</div>
+		<div className="app-footer-surface rounded mt-3">
+			<FooterComponent></FooterComponent>
 		</div>
 	</div>
 }

@@ -6,13 +6,15 @@ function SubjectListComponent({ subjects = [], onSelect = () => {} }) {
     };
 
     const subjectsIcons = subjects?.map(subject => {
-        const label = subject.name ?? subject.subject ?? "Unknown subject";
-        const key = subject.slug ?? subject.name ?? subject.subject;
+        const label = subject.label ?? subject.name ?? subject.subject ?? "Unknown subject";
+        const key = subject.id ?? subject.slug ?? subject.name ?? subject.subject;
+        const description = subject.description ?? "";
 
         return <div className="col-6 col-lg-4" key={key}>
         <button className="btn col-12 border rounded text-overflow-btn" onClick={() => onSelect(subject)}>
             <span className={`m-1 fa fa-${icontype(subject.type)}`}></span> 
-            {label}
+            <span className="d-block fw-semibold">{label}</span>
+            {description !== "" && <small className="d-block text-muted">{description}</small>}
         </button>
     </div>
     })
