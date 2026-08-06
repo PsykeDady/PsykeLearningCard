@@ -1,0 +1,577 @@
+[
+  {
+    "q": "apt",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "repository",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "permessi in android",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "permessi in Linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "storia di Linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "gradi di libertà",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "distribuzioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "intent impliciti ed espliciti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "processo demone/superdemone",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa sono le distribuzioni.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa sono le repository.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parlare del file system structure di linux.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A cosa servono /home e /etc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è apt-get.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa fanno apt-get update, upgrade, install, remove.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si cambiano le repository ad apt.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Storia di linux.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parlare dei processi, stati e processi demone, zombie e orfano.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è l'init system.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è il file in etc/apt/source",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Processi in C",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché bisogna evitare di creare processi orfani",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A cosa serve il file /etc/apt/source",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Demoni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "pipe nel terminale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "permessi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "varie domande sullo scritto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Permessi degli utenti e dei gruppi cosa sono?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che differenza c'è tra un file .txt ed un file .bin",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Processi, cosa sono e come funzionano",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si installano i pacchetti da repository",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Le quote del disco cosa sono ed a cosa servono",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è il protocollo Samba?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "permessi dei file",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "file system linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "apt-get come funziona a che serve",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modalità kernel",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modalità utente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nfs",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lato client fstub",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "samba",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché alcuni pacchetti potrebbero appartenere a repository non ufficiali?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "demoni e super demoni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "permessi (ottale)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "link simbolici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "processi linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lo stato di zombie come avviene?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "segnali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché si dice che la pipe è bloccante (tra processi C, non la shell)?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lseek",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "comando cron",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza union e struct",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quote utenti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "distribuzioni molto leggere",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "software libero",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principi del software libero (più o meno uguale alla domanda di sopra)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "file system (cartelle, gerarchia ecc.) e cartella proc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "configurazione NFS lato server",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Descrizione dei puntatori dinamici in C",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problema del segmentation fault",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Comandi Bash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Amministrazione linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "mount",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa è una system call",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fstab",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quote e comandi correlati",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Il meccanismo dei puntatori in C",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Il meccanismo dei puntatori in C > differenze con java",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Il meccanismo dei puntatori in C > esercizio in C",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "system call di linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "python",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "python > Differenza tra dizionari e set in python",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "python > esercizio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NFS mount ed export",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "permessi degli utenti e quote assegnate",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "visualizzare processi e albero processi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "gentoo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domande generiche sull'implentazione dell'app Android",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domande su come potrebbe essere implementata una funzionalità che per loro avrebbe reso il progetto migliore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domande su come potrebbe essere implementata una funzionalità che per loro avrebbe reso il progetto migliore > se il progetto salvava delle info solo in locale con sharedPreferences come si poteva fare invece con un database locale/remoto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si ferma una comunicazione tramite pipe?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si ferma una comunicazione tramite pipe? > con i tappi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra stack e heap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Implementazione LinkedList in C con funzione di accodamento nuovo nodo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Errore in",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizi su C e puntatori (nello specifico dava del e chiedeva cosa facesse)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stdin stdout stderr",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "qualche directory in / cosa facesse es: /dev /proc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "char (x)(char) cosa è? (puntatore a funzione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "char f(chard, const char s){ charp=d; while(p) p++; while(p++ = s++); return d; }",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Software Libero(licenze, lgpl, gpl, principi, se un software gpl fosse commercializzabile etc)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "storia di linux/unix",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "apt-get",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "installare software da sorgente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modalità kernel modalità utente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nfs e samba (come configurarli)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esempio su mount e qualche esempio su stdin stdout ed stderr",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è una system call",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come funzionano i processi (gerarchia padre figlio e cose così)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizi C",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizi bash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizi errati nel compito",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "string.h",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spiegazione di cosa fanno vari esercizi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "comandi linux (reindirizzamento stdin stdout)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "struct",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Union",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cron",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "typedef",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problemi in un esercizio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gestioni permessi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Software libero e licenze",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "output di un programma C",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "errore in questo programma",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

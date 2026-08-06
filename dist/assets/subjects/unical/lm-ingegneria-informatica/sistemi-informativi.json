@@ -1,0 +1,122 @@
+[
+  {
+    "q": "presentazione progetto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "eseguire su pentaho",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "eseguire su pentaho > drill up",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "eseguire su pentaho > roll down",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "eseguire su pentaho > selection slice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fasi di progettazione Data Warehouse",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Schemi di fatto a stella e snowflake",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Proprietà sistemi nosql",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "utilizzo di hbase",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parte PENTAHO",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "OLAP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modellazione concettuale data warehouse",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "realizzare in saiku roll up e roll down",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "document datastore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "column family",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Creare in saiku l'operazione slice e selezione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modellazione logica dei data ware house",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modellazione logica dei data ware house > 4 fasi della modellazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "imputation mismatching",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schema di HBase",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schema di HBase > disegnare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schema di HBase > nome delle componenti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schema di HBase > modi per interfacciarlo con il client",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema CAP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

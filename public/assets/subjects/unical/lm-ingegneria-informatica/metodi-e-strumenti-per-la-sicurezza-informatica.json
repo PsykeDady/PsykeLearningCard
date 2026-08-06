@@ -1,0 +1,242 @@
+[
+  {
+    "q": "XSS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CSRF",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Post scanning (varie domande su tcp scan, syn, ecc)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ASLR",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Mitigazione Relro e differenze tra Partial Relro e Full Relro",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Got, plt, got patching e perché ci sono due tabelle anziché una sola",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "XSS Dom-Based",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domanda sulla libc (quanti indirizzi ti servono per derandomizzare)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Mitigazioni di SQL injection",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "format string exploitation",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "arp poisoning e mitigazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "format string",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "xss > le differenze tra i vari tipi di xss",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ARP poisoning",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "port scanning",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "port scanning > FIN SCAN",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "port scanning > XMAS SCAN",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "port scanning > SYN SCAN",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ret2libc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ret2libc > perché è meno conveniente rispetto alla code reuse?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ret2libc > perché è meno conveniente rispetto alla code reuse? > Perché ret2libc non può essere utilizzata in caso di chiamate a due o più funzioni che posseggono uno o più parametri, mentre la code reuse sì",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Plt e got",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Canary",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Canary > perché si usa il carattere 0",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ropper",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Blind sql injection",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "per rompere ASLR basta solo un offset, detto in un altro modo supponiamo di avere l’indirizzo della printf questo basta per derandomizzare l’intero spazio degli indirizzi o serve altro?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "per rompere ASLR basta solo un offset, detto in un altro modo supponiamo di avere l’indirizzo della printf questo basta per derandomizzare l’intero spazio degli indirizzi o serve altro? > Per rompere ASLR basta trovare un solo indirizzo della libc in quanto poi l'offset tra le funzioni è sempre uguale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "<http://basicrce.challs.cyberchallenge.it/> risolvi la challenge edit: è andato down, la challenge consisteva in un form html che faceva una post all'indirizzo /ping dello stesso sito e ritornava semplicemente il codice di ritorno della shell linux collegata e il comando eseguito, altrimenti dava errore. Non c'era nient'altro, bisognava trovare la flag.txt da qualche parte nel sito.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "GOT e PLT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "gdb",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sito che ritorna un'immagine, come capisci le tabelle?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nmap port scanning",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nmap port scanning > fin scan",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nmap port scanning > udp scan",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nmap port scanning > syn scan",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nmap port scanning > null scan",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nmap port scanning > xmas scan",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "reflected, DOM Based e stored XSS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CSRF > chi genera il token",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ROP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ROP > come mai i tool automatizzati trovano tanti gadget mentre una scansione manuale ne trova pochi?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ROP > i gadget sono una serie di istruzioni. Perché ropper va a guardare l'esadecimale, parte da una ret e va all'indietro se una sotto sequenza è un'istruzione valida viene restituito il gadget. Ad esempio in esadecimale a3 aa bb cc 90 c3 è mov eax, 0x90aabbcc; ret, ma la sottosequenza 90 c3 è nop; ret. Sono entrambi gadget.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "buffer overflow",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "buffer overflow > mitigazioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "buffer overflow > generarlo senza utilizzare le funzioni vulnerabili",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "code reuse",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Mitigazioni SQL injection",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

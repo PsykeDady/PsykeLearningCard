@@ -1,4 +1,512 @@
 [
-    {"institute": "UniCZ", "category":"Psicologia", "subject":"Metodologia Nelle Scienze Del Comportamento", "qapath":"unicz/psicologia/metodologia.json"},
-    {"institute": "Unical", "category":"LT Ingegneria Informatica", "subject":"Algoritmi e Strutture Dati", "qapath":"unical/ltinginf/algstrdati.json"}
+  {
+    "institute": "UniCZ",
+    "category": "Psicologia",
+    "subject": "Metodologia Nelle Scienze Del Comportamento",
+    "qapath": "unicz/psicologia/metodologia.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Automazione",
+    "subject": "Teoria dei sistemi",
+    "qapath": "unical/lm-ingegneria-automazione/teoria-dei-sistemi.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Algoritmi di Crittografia",
+    "qapath": "unical/lm-ingegneria-informatica/algoritmi-di-crittografia.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Analisi di Social Network e Media",
+    "qapath": "unical/lm-ingegneria-informatica/analisi-di-social-network-e-media.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Architetture e programmazione dei sistemi di elaborazione",
+    "qapath": "unical/lm-ingegneria-informatica/architetture-e-programmazione-dei-sistemi-di-elaborazione.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Basi di Dati evolute",
+    "qapath": "unical/lm-ingegneria-informatica/basi-di-dati-evolute.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Business Intelligence",
+    "qapath": "unical/lm-ingegneria-informatica/business-intelligence.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Calcolo Numerico",
+    "qapath": "unical/lm-ingegneria-informatica/calcolo-numerico.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Crittografia e analisi reti sociali",
+    "qapath": "unical/lm-ingegneria-informatica/crittografia-e-analisi-reti-sociali.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Data Mining",
+    "qapath": "unical/lm-ingegneria-informatica/data-mining.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Economia Aziendale",
+    "qapath": "unical/lm-ingegneria-informatica/economia-aziendale.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Ethical Hacking",
+    "qapath": "unical/lm-ingegneria-informatica/ethical-hacking.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Informatica teorica",
+    "qapath": "unical/lm-ingegneria-informatica/informatica-teorica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Intelligenza Artificiale (6 CFU)",
+    "qapath": "unical/lm-ingegneria-informatica/intelligenza-artificiale-6-cfu.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Intelligenza Artificiale (9 CFU)",
+    "qapath": "unical/lm-ingegneria-informatica/intelligenza-artificiale-9-cfu.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Intelligenza Artificiale e rappresentazione della conoscenza (12 CFU)",
+    "qapath": "unical/lm-ingegneria-informatica/intelligenza-artificiale-e-rappresentazione-della-conoscenza-12-cfu.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "ISSTRA Ingegneria del software per sistemi real-time ed agenti",
+    "qapath": "unical/lm-ingegneria-informatica/isstra-ingegneria-del-software-per-sistemi-real-time-ed-agenti.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Knowledge Representation and Reasoning (6 CFU)",
+    "qapath": "unical/lm-ingegneria-informatica/knowledge-representation-and-reasoning-6-cfu.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Linguaggi Formali",
+    "qapath": "unical/lm-ingegneria-informatica/linguaggi-formali.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Machine e Deep Learning",
+    "qapath": "unical/lm-ingegneria-informatica/machine-e-deep-learning.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Metodi e Strumenti per la Sicurezza Informatica",
+    "qapath": "unical/lm-ingegneria-informatica/metodi-e-strumenti-per-la-sicurezza-informatica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Metodi Informatici per l'analisi dei Processi",
+    "qapath": "unical/lm-ingegneria-informatica/metodi-informatici-per-l-analisi-dei-processi.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Modelli e Tecniche per i Big Data",
+    "qapath": "unical/lm-ingegneria-informatica/modelli-e-tecniche-per-i-big-data.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Ottimizzazione",
+    "qapath": "unical/lm-ingegneria-informatica/ottimizzazione.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Sistemi Distribuiti e Cloud Computing (6 CFU e 9 CFU)",
+    "qapath": "unical/lm-ingegneria-informatica/sistemi-distribuiti-e-cloud-computing-6-cfu-e-9-cfu.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Sistemi Informativi",
+    "qapath": "unical/lm-ingegneria-informatica/sistemi-informativi.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Sistemi Informativi Ambientali",
+    "qapath": "unical/lm-ingegneria-informatica/sistemi-informativi-ambientali.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Software Security",
+    "qapath": "unical/lm-ingegneria-informatica/software-security.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Strategie e Politiche Aziendali",
+    "qapath": "unical/lm-ingegneria-informatica/strategie-e-politiche-aziendali.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Informatica",
+    "subject": "Valutazione delle prestazioni",
+    "qapath": "unical/lm-ingegneria-informatica/valutazione-delle-prestazioni.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Telecomunicazioni",
+    "subject": "IoT Security",
+    "qapath": "unical/lm-ingegneria-telecomunicazioni/iot-security.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LM Ingegneria Telecomunicazioni",
+    "subject": "Programmazione Dispositivi Mobili",
+    "qapath": "unical/lm-ingegneria-telecomunicazioni/programmazione-dispositivi-mobili.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Biomedica",
+    "subject": "Algebra Lineare",
+    "qapath": "unical/lt-ingegneria-biomedica/algebra-lineare.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Biomedica",
+    "subject": "Anatomia Umana",
+    "qapath": "unical/lt-ingegneria-biomedica/anatomia-umana.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Biomedica",
+    "subject": "Biochimica",
+    "qapath": "unical/lt-ingegneria-biomedica/biochimica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Biomedica",
+    "subject": "Fondamenti di Informatica",
+    "qapath": "unical/lt-ingegneria-biomedica/fondamenti-di-informatica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Biomedica",
+    "subject": "Sistemi Informativi Medici",
+    "qapath": "unical/lt-ingegneria-biomedica/sistemi-informativi-medici.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Analisi 1",
+    "qapath": "unical/lt-ingegneria-elettronica/analisi-1.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Analisi 2",
+    "qapath": "unical/lt-ingegneria-elettronica/analisi-2.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Automatica",
+    "qapath": "unical/lt-ingegneria-elettronica/automatica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Campi Elettromagnetici",
+    "qapath": "unical/lt-ingegneria-elettronica/campi-elettromagnetici.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Elettronica 1",
+    "qapath": "unical/lt-ingegneria-elettronica/elettronica-1.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Elettrotecnica",
+    "qapath": "unical/lt-ingegneria-elettronica/elettrotecnica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Fisica 1",
+    "qapath": "unical/lt-ingegneria-elettronica/fisica-1.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Fisica 2",
+    "qapath": "unical/lt-ingegneria-elettronica/fisica-2.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Fondamenti di Informatica 1",
+    "qapath": "unical/lt-ingegneria-elettronica/fondamenti-di-informatica-1.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Elettronica",
+    "subject": "Laboratorio di microcontrollori",
+    "qapath": "unical/lt-ingegneria-elettronica/laboratorio-di-microcontrollori.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Algebra lineare e matematica discreta",
+    "qapath": "unical/lt-ingegneria-informatica/algebra-lineare-e-matematica-discreta.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Algoritmi e strutture dati",
+    "qapath": "unical/lt-ingegneria-informatica/algoritmi-e-strutture-dati.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Ambienti di programmazione e programmazione mobile",
+    "qapath": "unical/lt-ingegneria-informatica/ambienti-di-programmazione-e-programmazione-mobile.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Ambienti di programmazione per il software di base",
+    "qapath": "unical/lt-ingegneria-informatica/ambienti-di-programmazione-per-il-software-di-base.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Analisi 1",
+    "qapath": "unical/lt-ingegneria-informatica/analisi-1.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Analisi Matematica 2",
+    "qapath": "unical/lt-ingegneria-informatica/analisi-matematica-2.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Basi di Dati",
+    "qapath": "unical/lt-ingegneria-informatica/basi-di-dati.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Calcolatori Elettronici",
+    "qapath": "unical/lt-ingegneria-informatica/calcolatori-elettronici.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Chimica",
+    "qapath": "unical/lt-ingegneria-informatica/chimica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Data Mining",
+    "qapath": "unical/lt-ingegneria-informatica/data-mining.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Elettromagnetismo",
+    "qapath": "unical/lt-ingegneria-informatica/elettromagnetismo.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Elettronica",
+    "qapath": "unical/lt-ingegneria-informatica/elettronica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Elettrotecnica",
+    "qapath": "unical/lt-ingegneria-informatica/elettrotecnica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Fisica 12CFU e 9CFU",
+    "qapath": "unical/lt-ingegneria-informatica/fisica-12cfu-e-9cfu.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Fondamenti di Automatica",
+    "qapath": "unical/lt-ingegneria-informatica/fondamenti-di-automatica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Fondamenti di informatica",
+    "qapath": "unical/lt-ingegneria-informatica/fondamenti-di-informatica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Fondamenti di informatica 2",
+    "qapath": "unical/lt-ingegneria-informatica/fondamenti-di-informatica-2.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Fondamenti di telecomunicazioni",
+    "qapath": "unical/lt-ingegneria-informatica/fondamenti-di-telecomunicazioni.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Ingegneria del software",
+    "qapath": "unical/lt-ingegneria-informatica/ingegneria-del-software.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Internet Computing",
+    "qapath": "unical/lt-ingegneria-informatica/internet-computing.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Laboratorio di automatica",
+    "qapath": "unical/lt-ingegneria-informatica/laboratorio-di-automatica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Laboratorio di ricerca operativa",
+    "qapath": "unical/lt-ingegneria-informatica/laboratorio-di-ricerca-operativa.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Laboratorio di Sistemi Informativi",
+    "qapath": "unical/lt-ingegneria-informatica/laboratorio-di-sistemi-informativi.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Matematica Computazionale",
+    "qapath": "unical/lt-ingegneria-informatica/matematica-computazionale.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Metodi matematici per l'ingegneria dell'informazione",
+    "qapath": "unical/lt-ingegneria-informatica/metodi-matematici-per-l-ingegneria-dell-informazione.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Metodi probabilistici della ricerca operativa",
+    "qapath": "unical/lt-ingegneria-informatica/metodi-probabilistici-della-ricerca-operativa.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Modelli e tecniche per i big data",
+    "qapath": "unical/lt-ingegneria-informatica/modelli-e-tecniche-per-i-big-data.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Piattaforme software per applicazioni web",
+    "qapath": "unical/lt-ingegneria-informatica/piattaforme-software-per-applicazioni-web.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Programmazione orientata ad Oggetti",
+    "qapath": "unical/lt-ingegneria-informatica/programmazione-orientata-ad-oggetti.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Programmazione orientata ad Oggetti 6 CFU",
+    "qapath": "unical/lt-ingegneria-informatica/programmazione-orientata-ad-oggetti-6-cfu.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Propagazione e Trasmissione",
+    "qapath": "unical/lt-ingegneria-informatica/propagazione-e-trasmissione.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Qualità del servizio",
+    "qapath": "unical/lt-ingegneria-informatica/qualita-del-servizio.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Reti di Calcolatori",
+    "qapath": "unical/lt-ingegneria-informatica/reti-di-calcolatori.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Reti di Telecomunicazione",
+    "qapath": "unical/lt-ingegneria-informatica/reti-di-telecomunicazione.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Reti Logiche e Calcolatori",
+    "qapath": "unical/lt-ingegneria-informatica/reti-logiche-e-calcolatori.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Ricerca Operativa",
+    "qapath": "unical/lt-ingegneria-informatica/ricerca-operativa.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Robotica",
+    "qapath": "unical/lt-ingegneria-informatica/robotica.json"
+  },
+  {
+    "institute": "Unical",
+    "category": "LT Ingegneria Informatica",
+    "subject": "Sistemi Operativi",
+    "qapath": "unical/lt-ingegneria-informatica/sistemi-operativi.json"
+  }
 ]

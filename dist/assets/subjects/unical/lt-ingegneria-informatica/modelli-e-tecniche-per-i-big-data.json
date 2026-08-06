@@ -1,0 +1,42 @@
+[
+  {
+    "q": "BSP in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esempi pratici di BSP (GraphX)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è una EdgeTriplet",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "UPC++ e il metodo Monte Carlo per piGreco",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "PGAS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "PGAS > APGAS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Efficienza e Speedup",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Efficienza Sovralineare (A volte l'efficienza può superare il 100% grazie a metodi come il caching)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

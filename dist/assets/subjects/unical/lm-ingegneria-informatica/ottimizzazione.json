@@ -1,0 +1,327 @@
+[
+  {
+    "q": "effetto orizzonte",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nucleolo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "semantica operazionale per la logica di default",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità ed espressività",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "anomalia di Sussman",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Bargaining Set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Iterative deepening",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo di Waltz",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Hill Climbing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Set covering",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Formulazione valida",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottima",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema di localizzazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rilassamento lagrangiano",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Se x è punto estremo => x appartiene ad S",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Argomento a piacere : Rilassato LaGrangiano",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di problema Rilassato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Duale LaGrangiano (perché farlo? obiettivi)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Vehicle Routing Problem formulazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "che ho a disposizione se voglio risolvere un problema piccolo con un algoritmo esatto ? (B&Bound)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa si intende per \"cut\" e quindi un algoritmo di branch and cut",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gomory, tutto il procedimento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché posso usare la funzione obiettivo in gomory per indurre un taglio?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si valuta un euristica? Lagrangiano",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definire duale di Lagrangiano",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Commesso viaggiatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Commesso viaggiatore > come calcolo un lowerbound ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Commesso viaggiatore > perché non si usa Lagrangiano?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Commesso viaggiatore > perché ha un numero esponenziale di cicli e molto probabilmente avrà sempre sottocicli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema del commesso viaggiatore non orientato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema del commesso viaggiatore non orientato > taglio con Branch and Cut",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema del commesso viaggiatore non orientato > oracolo di Separazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Formulazioni commesso viaggiatore sia orientato che non",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando una formulazione è ottimale? (matrice TUM)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Per quale problema ho una formulazione ottimale anche se non è TUM? problema del matching",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Set covering definizione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Commesso viaggiatore > perché è intrinsecamente combinatorio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Commesso viaggiatore > complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come risolvo il set-covering (max saving)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chvatal",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Vehicle routing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo clarke wright (massimo risparmio)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Epsilon approssimativo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Epsilon approssimativo > definizione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Epsilon approssimativo > TSP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Epsilon approssimativo > algoritmo dell'albero",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza Hamilton - eulero, con confronto tra i due",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di minkowsky",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottimizzazione unidimensionale non vincolata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ricerca lineare approssimata e esatta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SVM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "formulazione Hard Margin",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "armijo goldstein (scelta del passo)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SVR",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "kkt",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "smo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "soft margin e kkt",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "armijo con interpretazione geometrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodo di Newton",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodo Quasi Newton",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "formulazione SVR",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Generalmente fa tre domande, una sicura sulla parte di Machine Learning",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "svr > regressione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "l'algoritmo di Newton",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodo del gradiente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

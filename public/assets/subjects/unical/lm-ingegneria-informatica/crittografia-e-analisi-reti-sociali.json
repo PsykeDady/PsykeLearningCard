@@ -1,0 +1,252 @@
+[
+  {
+    "q": "Sicurezza Prg (tutte e tre le definizioni)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Puzzle Merkle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sicurezza puzzle merkle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "paradosso compleanno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "attacco alle funzioni hash (col paradosso del compleanno)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cifrario a flusso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "OTP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "PRG",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Shannon",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cifrari a blocchi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sicurezza semantica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "PRP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ECP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CBC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CBC+nonce",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CTR",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CTR+nonce",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "MAC (funzionamento sicurezza e challenge)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NMac",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "PMAC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "HMAC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ECBC MAC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "PAYLOAD",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "HASH (funzionamento sicurezza e challenge)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Paradosso compleanno + attacco hash (collisioni)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Merkle damgard",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Autenticazione cifrata (funzionamento sicurezza e challenge)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tre tipologie costruzione autenticazione cifrata (e than m, e and m, m then e) più differenze e sicurezza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza chiave simmetrica e asimmetrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principi chiave asimmetrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "RSA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Complessità attacco RSA per scoprire chiave segreta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità attacco RSA per un messaggio cifrato (differenza con sopra )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Merkle puzzle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "autorità di certificazione e firma digitale (molto in generale più schema)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "generazione rsa per calcolo chiavi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "generazione rsa per calcolo chiavi > come si cifra",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "generazione rsa per calcolo chiavi > come si decifra",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "rabin come si generano le chiavi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "rabin come si generano le chiavi > collegarsi alla fattorizzazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "rabin come si generano le chiavi > output di 4 messaggi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "rabin come si generano le chiavi > cattiva proprietà del sistema",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ElGamal su cosa è basato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ElGamal su cosa è basato > come si calcolano le chiavi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tutti i possibili attacchi di chiave che si muovono contro RSA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tutti i possibili attacchi di chiave che si muovono contro RSA > brute force",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tutti i possibili attacchi di chiave che si muovono contro RSA > euclide",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tutti i possibili attacchi di chiave che si muovono contro RSA > vari problemi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "puzzle di merkle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "introduzione key management e scenari utilizzo rsa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

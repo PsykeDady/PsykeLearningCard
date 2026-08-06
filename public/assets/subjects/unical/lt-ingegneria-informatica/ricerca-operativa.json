@@ -1,0 +1,587 @@
+[
+  {
+    "q": "Teorema fondamentale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teoremi di dualità (3+2 corollari )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di Ford and Fulkerson ( 3 enunciati )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Corrispondenza base-alberi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "TUM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Proprietà regione ammissibile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problema PL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problema PLI",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema fondamentale della PL e formulazione geometrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Regione ammissibile di un generico problema di PL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema della PLI e relazione con PL associato (rilassato lineare )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando esiste una soluzione ottima non di base? mostrarlo graficamente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando esiste una soluzione ottima non di base? mostrarlo graficamente > un esempio di unica soluzione ottima",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando esiste una soluzione ottima non di base? mostrarlo graficamente > infinite soluzioni ottime ( la soluzione sta tra due vertici, i punti son di base e ciò che sta in mezzo non di base )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando esiste una soluzione ottima non di base? mostrarlo graficamente > fare di entrambi la funzione obiettivo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa sono i coefficienti ridotti e come ricavarli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di soluzione di base",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando è più facile risolvere il PLI rispetto a PL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "disegnare regione ammissibile PLI",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando PLI è inammissibile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la regione ammissibile del PLI è convessa ? (no )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la regione ammissibile del PLI è chiusa ? ( no)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la regione ammissibile del PLI è chiusa ? ( no) > regione PLI è un insieme di punti senza proprietà matematica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "che relazione c'è tra z\\(pl) e z\\(pli)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrare che le matrici d'incidenza di un grafo siano TUM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema delle relazioni di complementarietà",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "coppia primale/duale simmetrica, forma e proprietà",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "formulazione problema di flusso di costo minimo e il suo duale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "se il primale è degenere il duale ammette infinite soluzioni ottime",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "caratterizzazioni delle basi del problema di flusso di costo minimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la soluzione ottima del max flusso è di base ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "criteri di bound per Branch&Bound",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "intervallo [L,U] a che serve",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "c'è un caso in cui l'algoritmo di b&B si ferma su nodo radice ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "c'è un caso in cui l'algoritmo di b&B si ferma su nodo radice ? > risposta si: se tutti gli estremi del poliero sono interi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "c'è un caso in cui l'algoritmo di b&B si ferma su nodo radice ? > A è tum",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "matrici tum",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema fondamentale PL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ipotesi della PL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ipotesi della PL > [ε1,ε2] una delle due può essere finita, dal punto di vista geometrico qual è il significato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ipotesi della PL > riposta: una è infinita quando la regione ammissibile è illimitata ( ci son altri esempi)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema debole e forte",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "formula del duale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "simplesso esponenziale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema ford and Fulkerson",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché il duale del massimo flusso ha variabili appartenenti a {0,1}",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dal continuo si passa a variabili {0,1} come mai ? (stessa domanda di sopra)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dal continuo si passa a variabili {0,1} come mai ? (stessa domanda di sopra) > grazie alla matrice TUM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "condizioni di arresto simplesso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Calcolo costi ridotti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "matrici TUM > importanza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema del commesso viaggiatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché l'insieme delle soluzioni ottime ha cardinalità 1 o inf se non vuoto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "s.a.b. <=> vertice per omega(P)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione del lemma : albero ricoprente → triangolare superiore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "base per flusso di rete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dualità forte",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dualità forte nel simplesso su rete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "(per calcolare i costi ridotti senza usare tableau come fare nell algoritmo del simplesso su rete–>pag7 simplesso su rete)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Formulare problema flusso minimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "simplesso su rete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sab in un problema di flusso su rete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sab in un problema di flusso su rete > albero ricoprente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "trasformazioni da Base ad albero e viceversa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione costi ridotti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo di Ford&F. con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domanda a piacere",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "validità del secondo e primo corollario del teorema della dualità nella rete di flusso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "parlare del problema di branch and bound",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "le ottimizzazioni applicate nel branch and bound di taglio di un ramo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di pl",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Prima fase del simplesso con caratteristiche del problema artificiale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema di flusso di costo minimo formulazione e perché rango\\<m-1",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dualità: da un PL in forma standard come si arriva al problema duale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione teorema dualità debole (passaggi inversi della domanda precedente)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Corollari della dualità debole (due)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema dualità forte e dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema fondamentale della PL (cenno collegato alla domanda di prima)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo del simplesso su rete applicato al flusso di costo minimo (secondo esercizio albero ricoprente)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema della caratterizzazione della basi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema fondamentale della PL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problemi che possono emergere con il cambio di base (regole anticiclaggio)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Formulazione problema del flusso di costo minimo e in cosa consiste (esempio reale)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Può dire che i flussi sono a componenti intere?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Condizione sufficiente di ottimalità, come ci si arriva",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo del simplesso su rete (come mai esso non fa uso esplicito dei coefficienti di costo ridotto)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Vincoli del duale del flusso di costo minimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Prima fase dell'algoritmo del simplesso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Formulazione problema artificiale, perché esiste sicuramente l'ottimo? perché si può fare lo scambio di base degenere?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa si intende per proprietà di interezza?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché se la matrice è TUM la soluzione del simplesso è a coordinate intere?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teo Scarti complementari+Dim",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dove l'abbiamo vista l'applicazione degli scarti complementari nel massimo flusso?(3° enunciato FF)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un cammino aumentante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Altri due enunciati FF",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema fondamentale della PL con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Similitudini simplesso e simplesso su rete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rassegna dei principali risultati della teoria della dualità (Da primale a duale, teo dualità debole + corollari, teo dualità forte+dim)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo del simplesso dal punto di vista del duale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Un algoritmo che è in grado di lavorare su soluzioni inammissibili, perché sarebbe particolarmente utile nella costruzione del metodo del branch&bound?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Criteri di arresto del metodo branch&bound",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Primo orale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Primo orale > Prima fase simplesso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Primo orale > teorema fondamentale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Primo orale > duale forte e debole",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Secondo orale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Secondo orale > Ford fulkerson e massimo flusso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Secondo orale > simplesso su rete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Secondo orale > teorema degli scarti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Secondo orale > Formulazione base",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Terzo orale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Terzo orale > Teorema fondamentale pl",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Terzo orale > Formulazione mcfp",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Terzo orale > Branch and bound condizioni di arresto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quarto orale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quarto orale > Teoria della dualità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quarto orale > Coeff di costo ridotto per mcfp",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

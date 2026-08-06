@@ -1,0 +1,332 @@
+[
+  {
+    "q": "quick sort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "edit distance",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scheduler attività",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "aciclicità di un grafo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "implementate con pseudo codice o python (preferibile)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dato un algoritmo A risolutore di un problema P, se la sua complessità è O(f(n)), la complessità intrinseca di P è O(f(n))",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dato un algoritmo A risolutore di un problema P, se la sua complessità è Omega(f(n)), la complessità intrinseca di P è Omega(f(n))",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità intrinseca ricerca di un problema di ricerca di un elemento in una sequenza disordinata è Omega(logn)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "equalTo(ALbero a,int x) numero nodi NON foglia che hanno entrambi figli con valore x",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "albero binario bilanciato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità migliore e peggiore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "risoluzione di 4T(n/2)+bn^3",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "risoluzione di 3T(n/6)+bn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kruskal",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Prim",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo di Dijkstra",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "correzione errori primo esercizio dello scritto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domanda su Floyd (pseudo algoritmo)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "correzione errori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "edit distance > riflessione sul poter invertire insert remove e sostituzione della edit distance",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grafi ( prim etc...)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grafi ( prim etc...) > pseudo codici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grafi ( prim etc...) > dimostrazioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grafi ( prim etc...) > edit distance",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodo boolean èDiRicerca(Albero a);",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grafo a ciclico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "su domande vero o falso: spiegazioni e altre domande",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come srotolare una ricorsione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema delle ricorrenze per il calcolo della complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Counting sort in Java . Avevo 28 come punteggio allo scritto e per aver saputo il codice non in Java mi ha dato 19",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cammino minimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cammino semplice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "aciclicita grafo non orientato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo di floyd",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Correzioni errori scritto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kruscal: cosa fa e pseudocodice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodo che calcola l’altezza di un albero + complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dato un codice scritto da lui, calcolare la complessità dell’algoritmo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "UnionFind",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Inserimento e rimozione negli heap con complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Edit distance, che problema risolve + pseudocodice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Complessità intrinseca definizione formale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dijkstra",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hashMap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodo che dato un albero binario verifica che sia di ricerca",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kruskal > complessità spiegata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Struttura union find e due implementazioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Heap descrizione e inserimento nodo ed estrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Scrivere algoritmo ricorsivo che verifica che l'albero passato sia un ABR",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Counting sort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio di backtracking",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione distanza tra stringhe",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "code di priorità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "heap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzionamento di prim",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "floyd",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è un grafo planare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "permutazioni di un vettore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "inserimento e deleteMin in un heap (sia priority queue che albero)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "colorazione di un grafo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fibonacci con la programmazione dinamica ed in generale altre implementazioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "horse tour",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "knapsack 01 con definizione matematica (e spiegazione funzionamento matrice)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prodotto di matrici (riserva)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hamiltonian path",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problemi np-completi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

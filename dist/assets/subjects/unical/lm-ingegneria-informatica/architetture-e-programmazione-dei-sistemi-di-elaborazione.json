@@ -1,0 +1,487 @@
+[
+  {
+    "q": "Schema stack lru",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Confronto tempi delle varie macchine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Macchina superscalare con ritiro in ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esempi di istruzioni su cui questa organizzazione funziona molto bene",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Clock fine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimensionamento del clock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ottimizzazione del controllo microprogrammato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rete di bypass",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Organizzazioni delle cache",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cache",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Politiche di sostituzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Unità di controllo monociclo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Segnali beta mono e multi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ottimizzazione controllo micro programmato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Disegno stack lru",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ottimizzazione controllo microprogrammato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "conflitti sui dati nella macchina pipeline",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "conflitti nella pipeline: inserimento circuito di uguaglianza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "conflitti sulla pipeline quali sono e come si risolvono",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CISC RISC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principi dei modelli di calcolatori di oggi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "UMA e NUMA con disegno della NUMA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "speculazione hardware come avviene e dove avviene",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "attacco spectre",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "c'è speculazione hardware nella pipeline? No, come vengono gestiti i salti?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Circuito di selezione degli indirizzi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "E disegno circuito di selezione degli indirizzi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Macchine parallele",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Nanoprogrammazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "circuito propagazione nella superscalare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "circuito propagazione nella superscalare > circuito di bypass",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NUMA e UMA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "conflitti sul controllo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Confronto prestazionale fra tutte le macchine viste nel corso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Speculazione hw e cosa cambia rispetto alle predizioni della pipeline",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cache multilivello e come cambia il calcolo del tempo medio di accesso alla memoria",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Legge di Moore e barriera energia",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Macchina multiciclo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottimizzazione unità di controllo (control store programmato )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Nano programmazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimensionamento del clock nella multi ciclo microprogrammata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenze macchine cisc e risc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principi di progettazione macchina risc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schema monociclo e tabella segnali alpha",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "conflitti sui dati pipeline",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "emissione fuori ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rsr",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "completamente fuori ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ritiro in ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "predizione dei salti a schema - branch prediction unità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "statistica a due bit con automa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "conflitti sulle super scalari",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "buffer di ordinamento macchina super scalare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "speculazione hardware (epr)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "completamento fuori ordine macchina super scalare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Macchina di Haswell",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cache completamente associativa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cache a k vie",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "politiche di sostituzione nella cache disegno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza uma e numa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "multithreading hw : grana fine e grana grossa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "vantaggi multithreading simultaneo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza multi threading hw e sw",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cpu vs gpu",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "riduzione parallela",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "open mp",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cache a mappatura diretta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tipi di threading",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "conflitti pipeline",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schema monociclo e segnali di controllo +1",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "multithreading",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grana fine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grana grossa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "vantaggi multithreading simultaneo (ogni thread a i suoi registri e PC )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza multithreading sw e multithread hw",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimensionamento clock multicolore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "statistica a 2 bit automa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tabella segnali alpha monociclo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "conflitti superscalari",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottimizzazione unità di controllo (control store )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "completamente fuori ordine e ritiro in ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "una numa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "macchina monociclo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimensionamento del clock della multi ciclo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottimizzazione della parte di controllo microprogrammata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "legge di moore e barriera dell'energia",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "speculazione nell'hardware",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "speculazione hw (epr)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "completamento fuori ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "numero di posizioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "predizione dei salti schema",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "politiche sostituzione della cache",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "disegno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "speculazione hardware macchina super scalare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "macchina Haswell",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenze CISC e RISC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principi di progettazione risc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

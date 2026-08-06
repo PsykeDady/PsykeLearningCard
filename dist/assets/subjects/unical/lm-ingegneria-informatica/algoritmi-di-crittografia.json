@@ -1,0 +1,222 @@
+[
+  {
+    "q": "puzzle di merkle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "analisi sicurezza puzzle merkle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "analisi sicurezza puzzle merkle > 3des e perché non usiamo 2des (analisi complessità attacco al 2des e come applicarlo al 3des)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "analisi sicurezza puzzle merkle > cos'è una funzione hash e come attaccarla",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "analisi sicurezza puzzle merkle > padding nel mac",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "analisi sicurezza puzzle merkle > definizione di sicurezza per generatori pseudocasuali e predicibilità con dimostrazione di predicibile=>non sicuro",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione con p1 e p2 computazionalmente indistinguibili",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione con p1 e p2 computazionalmente indistinguibili > AE quale è il più sicuro e quale non lo è (perché non lo è)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione con p1 e p2 computazionalmente indistinguibili > modi operativi MTK con il gioco dell'avversario",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione con p1 e p2 computazionalmente indistinguibili > proof of knowledge",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza e analogie tra rsa e rabin",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "diffie-helman",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra attaccante attivo e passivo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sicurezza dei modi operativi many time key",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa può fare l'attaccante attivo che scopre la chiave",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fiat shamir",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra attacco a forza bruta e attacco a forza bruta del paradosso del compleanno ( la risposta \"dovrebbe essere\" che lo spazio di ricerca è diverso )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "se l'avversario si aspetta un valore di e ma ne arriva un altro può correggere il tiro? ( la risposta \"dovrebbe essere\" che non può perché il calcolo ha complessità pari a radice modulare n )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "3des",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come decifrare con 3des ( se E(k1,k2,k3,m)=E(k1,D(k2,E(k3,m))) allora D(k1,k2,k3,m)=D(k3,E(k2,D(k1,c))) )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "attacco e complessità dell'attacco a 2des",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostra che l'attacco di 2des non si può fare su 3des",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "3 des funzionamento come si cifra e come si decifra",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "che costo ha des con ricerca esaustiva e con altri attacchi (complessità spaziale e temporale)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzioni hash e collisioni con l'attacco relativo (paradosso del compleanno)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Modi operativi many time key",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sicurezza modi operativi many time key",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "zero knowledge",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo che è capace di attaccare qualsiasi funzione hash e paradosso del compleanno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CBC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzioni hash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "merkel puzzle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "merkel puzzle > obiettivo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "merkel puzzle > problemi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "merkel puzzle > algoritmo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "One Time Pad",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "One Time Pad > decifratura e cifratura deterministica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "One Time Pad > decifratura e cifratura randomizzata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "One Time Pad > sicurezza per mandare messaggi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "One Time Pad > problemi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sicurezza Semantica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "probab adv dice 1 quando EXP1",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "PRG e definizioni sicurezza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "firma digitale e CA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

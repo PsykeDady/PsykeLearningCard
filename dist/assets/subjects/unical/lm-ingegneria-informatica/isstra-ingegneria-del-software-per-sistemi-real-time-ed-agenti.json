@@ -1,0 +1,57 @@
+[
+  {
+    "q": "tempo di blocco FPS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "conversione processo sporadico/periodico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ping Pong in Jade",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Grafo degli stati UPPAAL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Query In Uppaal",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Scrivere un parcheggio in reti di petri",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "template tTransaction pTransaction delle ptpn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "clock di UPPAAL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si rappresenta uno stato nel model state graph di uppaal",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "JSemaphore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parametro Lambda delle simulazioni ad attori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

@@ -1,0 +1,507 @@
+[
+  {
+    "q": "Principio a priori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Principio a priori > Algoritmo a priori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kmeans (con tutte le formule)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fuzzy Kmeans",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Bisect Kmeans",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DbScan",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Clustering gerarchico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Clustering agglomerativo (algoritmo e spiegazione e complessità)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Clustering divisivo (Algoritmo spiegazione e complessità)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Reti convoluzionali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gini index",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Canali nelle reti convoluzionali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "regressione Lineare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Regressione Logistica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metriche negli alberi decisionali (Accuracy precision e recall)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Entropia",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema universale delle reti neurali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kmeans++",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Knn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Classificatori bayesiani",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Discesa del gradiente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Discesa del gradiente stocastico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Xor problem, con grafici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Embedding",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Output in una rete shallow (dimensione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Backpropagation",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In generale chiede tutto e lo vuole con precisione, consiglio di fare al meglio tutti gli algoritmi che ci sono scritti, e di fare la complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le funzioni di attivazione più usate e fare il disegno (gradino, softMax, ecc..)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Misure di similarità per i cluster",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come comportarsi se un cluster diventa \"vuoto\"",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tecniche di Ensemble",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kmeans",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kmethod",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Km++",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Range dei valori di entropia",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Decision tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rnn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cnn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Shallow nn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Deep nn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Percettrone",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tutte queste domande da studiare con le formule",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tipi di Validation",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Varianti del KNN",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Percettrone > funzione non rappresentabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Percettrone > funzione non rappresentabile > come fa a capire se appartiene ad una classe",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Reti neurali + reti neurali multilivello",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SVM + backpropagation",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Regole associative",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo apriori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kmeans (frequente)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kmeans (frequente) > come si calcola il centroide",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kmeans (frequente) > come si calcola il centroide > algoritmo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kmeans (frequente) > come si calcola il centroide > algoritmo > complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DBSCAN > algoritmo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Bagging",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Boosting",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Boosting > probabilità di estrazione che cresce se il modello classifica in modo errato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Coefficiente silhouette (formula)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Random Forest",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Preprocessing e normalizzazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Grafico overfitting su alberi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Criteri di valutazione per il clustering",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Normalizzazione max min",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Alberi di decisione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In base a cosa preferiamo lo split su un criterio rispetto ad un altro",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Overfitting e underfitting",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodi di classificazione indiretta basati su regole",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Discretizzazione di un attributo continuo in uno discreto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Accuracy formula",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Precision formula",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Recall formula",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "classificatori bayesani (esempio con l'assunzione dell'indipendenza condizionale nel classificatore Naive, formula probabilità condizionale)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si gestiscono i valori mancanti nel training set (automatico, manuale e classificazione con knn)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema dei cluster vuoti nel KMeans",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Underfitting e Overfitting (grafico)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Training set e test set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Misure delle impurità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SVM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Discretizzazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Simple Matching Coefficient (Jaccard)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Misure di Similarità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Clustering",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cross-Validation",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Validation Set, quando è più comodo usarlo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Bisecting KMeans",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sequential covering",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Valutazione di un classificatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "F-Measure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché introduciamo la precision e la recall",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo di Hunt",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come scegliere il criterio di split sugli alberi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si gestiscono i dati mancanti in un dataset (elimino entry, rimpiazzo con la media o uso un classificatore)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Clustering col KMEANS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come assegnare i punti al cluster più vicino",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come aggiornare i centroidi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Pseudocodice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Campionamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché si usa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Criterio con il quale si campiona",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

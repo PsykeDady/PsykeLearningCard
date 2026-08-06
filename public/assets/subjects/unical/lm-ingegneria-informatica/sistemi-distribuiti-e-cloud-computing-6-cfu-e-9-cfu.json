@@ -1,0 +1,767 @@
+[
+  {
+    "q": "differenze tra paas e iaas",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "gram su globus e come funziona l'allocazione di macchine remote",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nfs: il file locking",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "consistenza causale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hdfs e nfs differenze",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "htcondor",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hdfs",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "weak consistency",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmi di elezione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "htcondor esempio classAds",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nfs",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "challenge response",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza grid e cloud",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "client centric",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "coerenza sequenziale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di lamport e algoritmo di lamport",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "iaas",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "kerberos",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tempo logico e fisico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primitive mpi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ruolo datanode, indexing in hdfs",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nfs callback",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "rpc, rpc in nfs",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Distributed Hash Table",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di lamport",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmi di mutua esclusione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grid",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "integrazione tra condor e globus",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come vengono raccolti i dati in un sistema distribuito",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modello di autenticazione challenge-response",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "con la scalabilità vengono introdotte soluzioni non scalabili?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "con la scalabilità vengono introdotte soluzioni non scalabili? > (Risposta: sì e avviene con la replicazione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Agente mobile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NFS e protocolli principale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NFS Delegation",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NFS Lock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Modelli Cloud a Servizi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "distributed garbage collector",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grid computing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Coda",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Coda > come gestisce le repliche",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Coda > mounting del file system",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "va nello specifico davvero di ogni tipologia di argomento chiedendo dettagli molto particolari e fini",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > ClassAds di HTCondor",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > ClassAds di HTCondor > cos'è e come viene usato il KDC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > ClassAds di HTCondor > algoritmi di elezione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > ClassAds di HTCondor > Eucalyptus",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > ClassAds di HTCondor > Match macker (ht condor)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > ClassAds di HTCondor > Locking nfs",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > ClassAds di HTCondor > Naming sistemi distribuiti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > MPI",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > Modello di autenticazione challenge-response a 5 messaggi a 3 e reflection Attack",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > File locking in NFS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > sistemi distribuiti in generale e proprietà",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > Coda",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > Needham Shroeder",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > Kdc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > RPC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > Globus Gram Home based",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > mutua esclusione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > NFS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > lamport",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > sincronizzazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > Htcondor",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > consistenza sequenziale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > seconda sessione di interrogazione > read your writes",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > terza sessione di interrogazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > terza sessione di interrogazione > Naming",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > terza sessione di interrogazione > Consistenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > quarta sessione di interrogazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > quarta sessione di interrogazione > Sistemi grid",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > quarta sessione di interrogazione > HT condor",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > quarta sessione di interrogazione > KDC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > quarta sessione di interrogazione > NFS lock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > quarta sessione di interrogazione > Strong mobility",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "componenti del Cloud Amazon",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tecniche di scalabilità dei sistemi distribuiti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Consistenza debole (synchronize)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Naming in generale e p2p",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo elezioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Client Side Consistency (Eventual Consistency)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "RPC (in prticolare RPC one-way)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Eucalyptus",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "release consistency",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenze EC2, S3 e DNS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "eukaliptus",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Naming in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "HT Condor",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Java Card",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Replicazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "COnsistenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "java rmi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Distributed garbage collection",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Distributed garbage collection > che vuol dire che è interface oriented",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Distributed garbage collection > lease time",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "storage in aws",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "docker",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "storage docker",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "aws",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "storage aws",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "table azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "table azure > vari tipi di table",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "storage differenti di aws",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "equals and hash code java rmi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "vantaggi di docker rispetto alle macchine virtuali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come creare oggetti in Java rmi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come vengono passati gli oggetti in Java rmi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "con quali operazioni viene caricato un oggetto in un registry",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "con quali operazioni viene caricato un oggetto in un registry > (risposta: bind e rebind)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "con quale operazione viene cercato un oggetto in un registry",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "con quale operazione viene cercato un oggetto in un registry > (risposta: lookup)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la struttura delle tabelle azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "meccanismi code Azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "meccanismi code Azure > 3 tipi di proprietà obbligatorie",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché si utilizza UnicastRemoteObject.exportObject e non si usa il metodo normale (lookup e rebind)?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché si utilizza UnicastRemoteObject.exportObject e non si usa il metodo normale (lookup e rebind)? > il meccanismo di Java obbliga a estendere la classe e questo dovrebbe farlo ogni client (soluzione scomoda)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > Map Reduce",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > La table di azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > dynamic class download",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > problema dell'equals in RMI e Remote Object",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > CDN",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima sessione di interrogazione > Combiner di MapReduce",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > Distributed Garbage Collector",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > storage di Azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > Docker in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > come aggiungere un altro layer ad un'immagine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > il vantaggio dei volumi sui bind mount",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > se esistono container con kernel Windows",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > differenze tra storage per oggetti e blocchi in aws",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > terza sessione di interrogazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > terza sessione di interrogazione > Map reduce con Disegno e spiegazione del Partitioner e Combiner",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > terza sessione di interrogazione > Garbage collector",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > terza sessione di interrogazione > Table di azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "seconda sessione di interrogazione > terza sessione di interrogazione > CND azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "equals in RMI",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tables di azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "json web token",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dynamic class download",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Oggetti attivabili",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Modulo combiner in map reduce",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "combiner",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "jwt",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "raw key e timestamp",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "MapReduce",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "distribuited garbage collector",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "riferimenti Java RMI",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tabelle Azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Storage di Azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fabric Controller di Azure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si passano i parametri in JAva RMI",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

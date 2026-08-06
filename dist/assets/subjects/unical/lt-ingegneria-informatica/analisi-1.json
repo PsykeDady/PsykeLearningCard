@@ -1,0 +1,332 @@
+[
+  {
+    "q": "Rolle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Weierstrass",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cauchy",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Lagrange",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "condizione necessaria di convergenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "convergenza integrali assoluta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "confronto asintotico integrali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "confronto serie semplici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "media integrale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fondamentale del calcolo integrale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "leibniz",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "criterio del rapporto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "criterio della radice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fermat",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Bolzano-Weierstrass",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "valori medi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "convergenza assoluta integrali impropri",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "criterio del confronto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Funzione inversa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema fondamentale del calcolo integrale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione lim x->0 sin(x)/x",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio sui limiti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Enunciato e dimostrazione gerarchia degli infiniti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Enunciato e dimostrazione criterio della radice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Limiti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando il limite della derivata non esiste",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Limiti Noteveli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Domanda del compito: Perché il limite va a 0",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando una Funzione è derivabile oppure no?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Argomento a piacere sulle funzioni derivabili",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una serie",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando converge o Diverge",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "I criteri di una serie",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si scrive il limite notevole di una funzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema Fondamentale del calcolo Integrale > In che altro modo si può rappresentare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema Fondamentale del calcolo Integrale > quale usi per calcolare gli integrali definiti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Il criterio della radice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Integrale Improprio quando Converge/Diverge",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che criteri abbiamo visto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema del confronto Asintotico x Serie o Integrali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Derivata usando la definizione (es e^x)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Criterio per serie Positive - Convergenza/Divergenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando una serie Diverge",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Funzione Illimitata e Funzione Limitata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come facciamo a far vedere se un punto è derivabile è anche continuo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esempio di funzione continua non derivabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Punti di non derivabilità di una funzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Punti Stazionari, cosa sono e definizione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tipi di punti stazionari, come si classificano",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Massimi e Minimi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Derivata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Punto di Flesso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Com'è fatta la funzione in un punto di massimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si calcola un massimo o un minimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che proprietà si studia per trovare il massimo o il minimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un Integrale definito e come si definisce, graficamente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un Integrale Indefinito, graficamente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Primitiva di una funzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Proprietà di una funzione G per dire che è una primitiva di F",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Regole di Derivazioni delle funzioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema del calcolo integrale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Derivata e^sin",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fare la derivata di un logaritmo composto con il coseno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di Lagrange con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema della sviluppabilità in serie di Taylor con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema della permanenza del segno con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

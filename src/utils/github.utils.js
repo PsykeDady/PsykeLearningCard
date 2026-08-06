@@ -27,8 +27,10 @@ const fetchJson = async (relativePath) => {
     throw lastError ?? new Error(`Unable to fetch ${relativePath} from GitHub`);
 };
 
-export const createSubjectSlug = (label = "") => {
-    const normalizedLabel = label
+export const createSubjectSlug = (...labels) => {
+    const normalizedLabel = labels
+        .filter(Boolean)
+        .join(" ")
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase()
@@ -42,7 +44,7 @@ export const getRemoteSubjects = async () => {
 
     return subjects.map(({ institute, category, subject, qapath }) => ({
         ...new Subject(institute, category, subject, qapath),
-        slug: createSubjectSlug(subject)
+        slug: createSubjectSlug(institute, category, subject)
     }));
 };
 

@@ -1,0 +1,642 @@
+[
+  {
+    "q": "Blockchain",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Calcolo dell' EstimatedRtt e perché cresce esponenzialmente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Protocollo 4.0 autenticazione dei messaggi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Nat",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Port forwarding",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "One time pad",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cifratura polialfabetica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fly finger e stabilize nel chord",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DIFFERENZA TRA CRITTOGRAFIA SIMMETRICA E ASIMMETRICA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esiste uno scenario per utilizzare in modo combinato entrambe le crittografie?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono gli aspetti positivi delle due crittografie, e quali quelli negativi?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "QUALI SONO I MODELLI DI DEPLOYEMENT DEL CLOUD COMPUTING??",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modelli di servizio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "utilizzatori tipici dei servizi cloud",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DHT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DHT > Complessità nelle DHT?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono le finger table in chord?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Per quale motivo la distanza cresce esponenzialmente nella finger table?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si calcola il prossimo round trip time e per quale motivo lo facciamo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SPIEGARE L'ANALISI DELLE FREQUENZE CHE SI USA NELLE CRITTOGRAFIE",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SPIEGARE L'ANALISI DELLE FREQUENZE CHE SI USA NELLE CRITTOGRAFIE > si può usare questa tecnica di analisi in ONE TIME PAD",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Spiegare la differenza tra multiplexing TCP e UDP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra risoluzione iterative e ricorsiva del DNS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra risoluzione iterative e ricorsiva del DNS > Quale delle due è la soluzione più vantaggiosa ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ICMP cos'è?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Traceroute funzionamento, cosa sono gli asterischi che possono uscire in un traceroute",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A che serve una CA?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A che serve una CA? > Cosa troviamo dentro una CA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "procedura di firma digitale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché la ricerca è in log2 in chord",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quanti sono i successori nella lista di successori in chord?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa ci permette di fare il gateway a livello applicazione che il firewall a filtraggio di pacchetto non permette?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Hot potato routing cos'è, è intra-AS o inter-AS?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "FIREWALL: Perché è necessario nel filtraggio di pacchetto un ordine ragionato e non randomico?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quale regola inseriamo per bloccare le connessioni in ingresso TCP?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché sarebbe sbagliato bloccare i pacchetti in ingresso con solo SYN pari a 1?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona la sostituzione poli-alfabetica?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "KDC come funziona ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "FTP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la GET condizionale?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra stop & Wait e Pipeline",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra selective e go back n e vantaggi e svantaggi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "MAC codice di autenticazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come evitare attacchi di playback?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Get condizionale?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa sono le hash crittografiche e quali sono le proprietà di cui devono godere?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos è il cloud Computing ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Vantaggio pipeline rispetto a stop and wait",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Codice autenticazione messaggi MAC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Attacchi payback",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Funzioni hash crittografiche",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di cloud computing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Lazy join in chord",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come mai è meglio p2p rispetto a client-server",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona l algoritmo RSA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "attacchi di rete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "smurfing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché go back n e selective repeat sono sia a livello di trasporto che a livello di collegamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chi tra go back n e selective repeat utilizza buffer in ricezione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "email sicura",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Funzionamento di bittorrent",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodi per inviare un form in http",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza in http tra connessioni persistenti e non persistenti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizioni di reti di calcolatori e dire una rete di computer interconessi che non sono indipendenti (spoiler: cluster)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "controllo di flusso TCP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Autenticazione con chiave simmetrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Multiplexing demultiplexing TCP e UDP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "WebServices",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Chord",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "email sicure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Chiave simmetrica e asimmetrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Protocollo ap4.0",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Protocollo ap4.0 > se il nonce rimane invariato che succede ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Go back",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Selective repeat",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Selective repeat > differenze tra i due",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Selective repeat > chi utilizza i buffer in ricezione e perché",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Selective repeat > cosa implementa tcp",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Selective repeat > similitudini con gbn e sr",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Bittorrent",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Peer to Peer",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "firewall",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chiave pubblica e privata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chiave pubblica e privata > teoria",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chiave pubblica e privata > esempio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "firma digitale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DNS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "go-back-n",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "RTT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tdm ed fdm",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "miglioramenti di http 2.0",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "aws em2",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "invio di mail sicure (autenticazione, integrità e segretezza)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "livello trasporto, segmenti tcp",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "go back n e selective repeat",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "crittografia con RSA e come ricavare la coppia di chiavi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "soap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schema di una rete chord con spiegazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "confrontare gli approcci p2p (con indice centrale, query flooding, dht)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "p2p approcci. Esistono p2p puri?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "BitTorrent dire cosa sono leecher e seeder e poi spiegare tutto il resto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "risoluzione iterativa e ricorsiva del dns",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "disegnare il grafico del provisioning delle risorse e spiegare le differenze tra underprovisioning, overprovisioning e cosa succede nel cloud computing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "http 2.0",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "imparare gli argomenti nuovi anche se il corso è stato seguito in passato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "smart contract",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hash > cosa sono, esempi e applicazioni su blockchain",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa è il blockchain",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come funziona il DES (n bit della chiave, iterazioni…)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schema invio messaggio garantendo sicurezza, integrità e autenticazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Chord (aggiunta/caduta nodi)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra container e macchina virtuale.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Blockchain: Algoritmo consenso, Struttura blocco, Proof of work.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Smart contract.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Processo per l'invio di mail sicure.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra Soap e Rest dei web service.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio scrivere un client che riceve un orario tramite UDP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cloud computing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio implementare una chat fra client e server",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Prendere l'header da una pagina",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Prendere il contenuto della pagina",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fare una get di qualcosa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fare una post di qualcosa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In più sui socket (capitati a me)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Chat multicast p2p",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Chat con due soli utenti TCP.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio in cui bisognava mandare tramite i socket una richiesta HTTP Post",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

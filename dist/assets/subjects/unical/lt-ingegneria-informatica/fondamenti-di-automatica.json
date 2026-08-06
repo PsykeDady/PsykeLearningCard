@@ -1,0 +1,452 @@
+[
+  {
+    "q": "(Domanda teorica) Precisione statica: asservimento di posizione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "(Esercizio) Risposta qualitativa al gradino di un sistema di ordine 3 con zero dominante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa comporta l'aggiunta di effetti integrali a un sistema?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la definizione di banda passante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "il grafico qualitativo della risposta a gradino di un sistema con 3 poli e uno zero a fase non minima",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio > y+2y'=u",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio > risposta al gradino con condizione iniziale y(0) a transitorio nullo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "luoghi a modulo costante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "pulsazione naturale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "smorzamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Criterio di Bode",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Routh con un dato K variabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Routh con un dato K variabile > situazioni patologiche (termine=0)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio sulla stabilità interna",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ascisse di convergenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Scomposizione della risposta in un sistema in risposta libera e forzata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema del valore iniziale e finale con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Modi di evoluzione libera",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Da una fdt calcola i modi di evoluzione libera",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Criterio di Routh",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Bibo stabilità con dimostrazione necessaria e sufficiente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema della risposta armonica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Forma di Bode",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Margine di Fase e di ampiezza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Interconnessioni elementari",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Banda passante (passa basso, passa alto e passa banda )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Diagramma di Nyquist",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Stabilità in retroazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Stabilità interna",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Precisione statica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "T(jw) data la f di anello",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sistemi del primo e del secondo ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Grafici con poli e zeri dominanti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tempo di assestamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tempo di salita e massima sovraelongazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sovraelongazione in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Punti di flesso nei sistemi del secondo ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Legame di pulsazione di banda passante e tempo di salita",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rete attenuatrice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ascissa di convergenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Luogo dei punti a modulo costante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come disegnare diagramma di Bode",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tempo di sovraelongazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tempo di salita sulla risposta al gradino",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio data una risposta in t",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio data una risposta in t > Ascissa di convergenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione scala logaritmica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di decibel",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione formale di L trasformabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio regione di convergenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sistemi del I e del II ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Legame tra tempo di salita e banda passante.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio su caratteristiche dei diagrammi di Bode",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "disegno approssimativo di un sistema del primo ordine a fase non minima",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "margine di fase",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "margine di ampiezza (nello specifico sul diagramma di Bode )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Precisione statica con diagrammi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizi su sistemi del secondo ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizi su sistemi del secondo ordine > determinare funzione di trasferimento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizi su sistemi del secondo ordine > grafico del sistema (approssimativo)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modifiche sul progetto ( matlab )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modifiche sul progetto ( matlab ) > risposta al gradino invece di rampa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modifiche sul progetto ( matlab ) > risposta al gradino più amplificatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio su risposta al gradino",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema valore finale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modi di evoluzione di un sistema",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "diagramma di nyquist in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tutto su bibo stabilità da scrivere su un foglio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio in retroazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modifiche sul progetto assegnato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modifiche sul progetto assegnato > cambiare risposta al gradino con rampa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modifiche sul progetto assegnato > come cambia gradino + amplificatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "margine di ampiezza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "filtri ( passa basso, banda, alto )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grafici sui sistemi con poli e zeri dominati",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "reti correttrici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Legame pulsazione di banda passante e tempo di salita",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scomposizione della risposta di un sistema in risposta libera e forzata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fase",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ampiezza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "laplace",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema valore iniziale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema risposta armonica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "costruire t(jw) data la funzione anello",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "banda passante (definizione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "bibo stabilita",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stabilita interna",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scrivere una fdt in forma di bode",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizioni di filtro ( passa alto, passa alto, passa banda )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

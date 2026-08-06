@@ -1,0 +1,82 @@
+[
+  {
+    "q": "gestione delle dimensioni degeneri",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "gerarchie dinamiche",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "a cosa serve attributo master nello scenario di verità storica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "a cosa servono le chiavi surrogate",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché non si usano i btree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "star index",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "join index",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando conviene fare snow flake",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "gerarchie incomplete e soluzioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "indici bitmap a confronto con btree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "molap e rolap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tutti i pro e tutti i contro dell'usare Chiavi surrogate",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Star index > quando non è efficiente usare lo star index",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "aggregatori olistici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "indici di bit-sliced",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "gerarchie ricorsive ( pro e contro delle 2 soluzioni)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

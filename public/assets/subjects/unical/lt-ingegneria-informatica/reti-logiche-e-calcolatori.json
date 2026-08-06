@@ -1,0 +1,267 @@
+[
+  {
+    "q": "Demux, schema interno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ram definizione e schema di una cella",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si usano i flag assembly",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principio di dualità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di implicante primo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "operatori funzionalmente completi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra mul e imul",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sistema controllo cablato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio: quadword in due registri",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "interruzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "segnali beta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "reti sequenziali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "flip flop",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principio dualità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "demux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "livello dei circuiti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "mux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ram",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "macchina a registri ( registro lr a 64bit con fetch )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "MBR",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Mappa di karnaugh",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Meccanismo interruzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schema circuitale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "implicante e proprietà",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzioni f",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "decoder",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "mintermine e maxtermine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "MAR",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ROM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parte Operativa (Struttura e indirizzi )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Reti combinatorie",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Reti sincrone e asincrone",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "parte di controllo e disegno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tavola rom esercizio RTL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzione irridondante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "implicanti e implicanti primi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "transcoder",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "codice operativo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "organizzazione 3 tipi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "bus",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ritardi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "full adder",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ritardo full adder",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "livelli full adder",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "alu + struttura",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "somma binaria con riporto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "overflow",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "rapport clock ritardo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo minimizzazione automa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Multiplexer",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ritardi Tau nelle reti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "addizionatore a n bit",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "parte di controllo cablata e micro programmata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

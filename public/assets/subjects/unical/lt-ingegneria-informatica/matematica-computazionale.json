@@ -1,0 +1,122 @@
+[
+  {
+    "q": "cos'è una formula soddisfacibile?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è una tautologia?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modus ponens, tollendo tollens",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A implica B or C or D implica Z, cos'è?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A implica B che implica C, cos'è?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è una formula ambigua? +esempio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "precedenza tra connettivi logici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A f, B v, C f... com'è questa formula sotto l'interpretazione?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A and B or C, com'è questa formula?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è una contraddizione?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A implica B implica Z",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A and B or C",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "(P and not Q) and not P (applicare la distributiva)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è una formula valida?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è un'interpretazione in logica del primo ordine?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione di calcolo proposizionale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizioni di logica del primo ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "proprietà trigonometriche",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazioni trigonometriche",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "proprietà equazioni logaritmiche esponenziali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "proprietà dei logaritmi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ellisse",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "formule chiuse e aperte",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

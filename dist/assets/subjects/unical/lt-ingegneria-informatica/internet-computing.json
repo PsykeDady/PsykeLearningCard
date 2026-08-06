@@ -1,0 +1,177 @@
+[
+  {
+    "q": "Gigafactory",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SETI@Home",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Grid computing e cloud computing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Raffreddamento a liquido dei datacenter",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Nat e violazione dell’end to end del livello trasporto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Chord, operazioni stabilize e fix fingers ( per voti alti sapere anche il codice non sarebbe male )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Certification authority",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Schema della soap request",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Certification authority con disegno delle slide",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Email sicure-PGP con schema",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "KDC + disegno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sap e nap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "http2",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chord + disegno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cache web + formula",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cookie + tipologie",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "email sicura",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "RTT + timer",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dos + attacchi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Blockchain",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dns",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dns dinamico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "AWS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Funzionamento DHT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenze tra POP3 e IMAP + disegno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "bittorrent",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "RSA + formule",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Frammentazione di pacchetti con MTU",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gnutella",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rdt 3.0",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "calcolo del round trip time (ricorsione) e perché è utile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "query flooding pro e contro e applicazioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "protocolli P2P",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chord, funzionamento e dimensione delle finger tablet",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Skype, approccio del supernodo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

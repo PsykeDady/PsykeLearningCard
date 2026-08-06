@@ -1,0 +1,252 @@
+[
+  {
+    "q": "Algoritmo Naive e Semi Naive",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sistemi di argomentazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Linguaggio ALC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Operatore conseguenze immediate",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza match e unificazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "proprietà safety (domain ind. + genericità, (anche per calcolo relazionale)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "safety anche per operatore disgiunzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "variabili libere e legate",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DL lite (definizione, cosa fa e differenza con altri description logics, come viene espresso il concetto e inclusione tra i ruoli)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tableaux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio Abox + Tbox",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Espressività dei modelli stabili (NP)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sistemi di argomentazione ha voluto tutto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nel baf se le definizioni di COMPLETEZZA, ACCEPTED, DEFEATED ECC variano oppure no",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "proof systems definizioni e proprietà",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "logica a tre valori e modelli stabili parziali, determinare se un modello è stabile parziale dato un programma",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "linguaggio delle dipendenze funzionali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "magic set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principio di sostituzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "significato della conseguenza logica e della derivazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Domain Indipendence e se c’è differenza con la safety",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra espressività e complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Complessità dei modelli stabili totali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esempio di programma stratificato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Nell'algoritmo tableau se incontriamo tipo >= r.A che succede?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo naive/semi-naive",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità ASP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sistemi di argomentazione in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sistemi di argomentazione in generale > Linguaggio ALC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si valuta il maggiore o uguale e minore o uguale nel tableau (nota: contatela come domanda fatta, non badate a quale anonimo sia stata fatta)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo punto fisso (con esempio di possibile applicazione) Quando può essere applicato questo algoritmo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Quando un interpretazione è stabile per un programma?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Cosa è un interpretazione? È un sottoinsieme della base di Herbrand.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Qual è la dimensione dell'universo di Herbrand?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Dimensione del ground di un programma.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Semantica della possibilità/Semantica della certezza.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Skeptical reasoning (definizione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In cosa consiste il problema della verifica? Cosa ha in Input? Che complessità ha? > Struttura dei modelli completi.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Argomentazione in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "I 3 problemi nell'ambito di argomentazione con le complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Spiegazione delle complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo semi-naïve in generale (cosa vogliamo ottenere) cosa abbiamo in input: una base di dati e un insieme di regole. Questo programma calcola il modello minimo per il programma P (insieme di regole)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esempio di applicazione dell'algoritmo. Con questo esempio dire che cosa fa l'algoritmo naïve e dove interviene quello semi-naïve.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa fa evalrule()? Dato l'esempio, generare l'espressione in algebra relazionale.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Description logic in generale.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Linguaggio ALC, descrizione.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché utilizziamo la description logic? Non potremmo usare le formule del calcolo dei predicati al suo posto? La domanda scaturisce dal fatto che qualunque formula la possiamo riscrivere con formule del calcolo dei predicati (FOL), e quindi perché utilizzare description logic?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tbox e Abox",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo naïve (la sua descrizione formale, anche ad alto livello)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

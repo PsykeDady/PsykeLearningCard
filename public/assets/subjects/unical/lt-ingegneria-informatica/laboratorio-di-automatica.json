@@ -1,0 +1,37 @@
+[
+  {
+    "q": "PID",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DFT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Filtri",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domanda 1",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domanda 1 > Precisione statica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domanda 2",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domanda 2 > Ricavare partendo dallo schema del sistema a retroazione generico, le diverse funzioni di sensitività e come le varie uscite si comportano a fronte di ingressi diversi.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

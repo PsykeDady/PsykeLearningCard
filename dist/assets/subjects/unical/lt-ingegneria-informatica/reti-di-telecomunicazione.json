@@ -1,0 +1,172 @@
+[
+  {
+    "q": "slow start e congestion avoidance+ formule della CWND",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sindrome silly window",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "protocolli arq",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "efficienza protocolli arq",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "distance vector e link state",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "pacchetto TCP e UDP (con differenze)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "multiplexing e demultiplexing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tecniche di accesso multiplo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fast recovery e retransmit",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Protocolli arq con dimostrazione di utilizzazione e efficienza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Protocolli arq con dimostrazione di utilizzazione e efficienza > con e senza errori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzionalità ipv4 e formato del pacchetto (ihl, tos, total length,...)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Slow start, congestion avoidance, con le formule",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Slow start, congestion avoidance, con le formule > spiegare perché nello slow start esce la formula con la serie geometrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ipv4 come funziona e l'unità dati come è fatta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "header del protocollo TCP com'è fatto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "slow start, congestion avoidance",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione efficienza go-back-n",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Jacobson come si ottiene RTO",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Slow Start",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Congestion Avoidance",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "TCP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "congestione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "media",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "varianza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "jacomson",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "karn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SRTT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fast retransmit",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fast recovery",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fast retransmit e fast recovery",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché nel calcolo RTT si tiene conto della deviazione media",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa succede ad RTT in caso di reti lente rispetto a veloci",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "partono dalla tesina e esplorano i protocolli usati",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

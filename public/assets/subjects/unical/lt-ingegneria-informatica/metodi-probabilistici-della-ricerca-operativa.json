@@ -1,0 +1,287 @@
+[
+  {
+    "q": "teorema di Bernoulli per la legge dei grandi numeri",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "inversione per esponenziale (formula nota e spiegazione passaggi)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "simulazione montecarlo (origini del nome + tempo medio di attesa in coda + intervallo di confidenza + cos'è l' IC e per cosa nasce)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzione tempo di attesa (forma generale e non)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "varianza campionaria",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problema di sincronia (usando problema del ritardo del professore, considera ritardo del prof e degli studenti + individuare l'area che corrisponde ad evento di interesse \"lo studente arriva dopo il professore\" + adattando funz di densità lineare, ma compresa tra 0 e 20 per il ritardo del prof, calcolare la probabilità dell'eventodi interesse)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "info su lezione 22 , parte 1 e 2 (ricordarsi che la 2^ parte del corso inizia da lez 20)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quesito di probabilistica fornito dal prof (approccio alternativo usando la congiunta)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domanda basata su slide lez 27.1 (ricordarsi metodo m - c)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra equazioni equiprobabili ed equidistanti (spiegare come se fossi tu ad insegnare l'argomento alla classe, prof incluso, perché ci tiene + guardare le slide in diretta e farsi domande su ciò che è scritto, anche se ciò che è scritto non è stato spiegato dal prof, e spiegarlo)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spiegare cos'è un problema di sincronia( +\"capire cosa si sta spiegando\" + spiegare il ritardo di sincronia)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "parlare di e spiegare funzioni traslate, con esempio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Lez 26.1(analizzare ciò che si vede e spiegarlo, ricordando che non tutto ciò che si deve spiegare riguardo il contenuto della slide è scritto lì)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "coefficiente di pearson( studiarlo e spiegarlo, anche se non è stato spiegato in tempo a lezione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sistemi poco congestionati e molto congestionati",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Prove di bernoulli (ipotesi)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Retta di regressione ( come ci si arriva)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Statistica ordinamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodo montecarlo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "correlazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problema del ritardo a lezione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "montecarlo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modello pc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "intervallo di confidenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "statistiche ordinamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "covarianza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prove di bernoulli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modelli di bernoulli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modello di erlang per sistemi m out of n",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio ( preso da prova scritta 2012 )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio ( preso da prova scritta 2012 ) > 3 server di 2 componenti in serie, calcolare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio ( preso da prova scritta 2012 ) > affidabilita",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio ( preso da prova scritta 2012 ) > probabilita",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio ( preso da prova scritta 2012 ) > successo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio ( preso da prova scritta 2012 ) > guasto del 3 server con la geometrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio ( preso da prova scritta 2012 ) > coefficiente di Pearson",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modello PC e considerazioni sul tempo di giacenza e tempo di soggiorno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modello PC e considerazioni sul tempo di giacenza e tempo di soggiorno > perché il tempo di giacenza è più influente?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modello PC e considerazioni sul tempo di giacenza e tempo di soggiorno > calcoli su excel",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modello di erlang e considerazioni sui grafici della erlang modulata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione coefficienti della retta di regressione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "valore atteso e distribuzione esponenziale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "diapositiva regressione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio su erlang con bernoulli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizioni di distribuzioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "curva di regressione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "statistiche di ordinamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio su m out of n e commutazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "foglio excel della correlazione produttore consumatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzioni di v.a.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "statistiche min e Max con funzione di distribuzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modello di erlang",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "commutazione perfetta e non",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "test sulla forma con foglio excel",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "test di ipotesi e test della differenza tra due media",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione della distribuzione totale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "distribuzione della somma di v.a.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

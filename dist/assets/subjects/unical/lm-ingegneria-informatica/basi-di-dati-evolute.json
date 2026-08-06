@@ -1,0 +1,47 @@
+[
+  {
+    "q": "protocollo zero knowledge",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo fiat shamir",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "proprietà funzioen hash firma digitale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "paradosso compleanno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "calcolo relazionale e definizione di linguaggio indipendente dal dominio di valutazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lock su database distribuiti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lock su database distribuiti > tecniche di assegnazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lock su database distribuiti > deadlock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lock su database distribuiti > deadlock > risposta: che se due transazioni richiedono il lock in scrittura sulla stessa risorsa e ci sono dei ritardi nella rete, nessuna delle due transazioni ottiene il lock e quindi si va in deadlock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

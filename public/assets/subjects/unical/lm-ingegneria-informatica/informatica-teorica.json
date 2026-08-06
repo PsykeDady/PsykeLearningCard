@@ -1,0 +1,1052 @@
+[
+  {
+    "q": "Dimostrazione NP incluso in PSPACE",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione che Knapsack ammette un FPTAS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che sono le classi di approssimabilitá",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rice con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "FPT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "FPT con vertex cover (con le due soluzioni)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrare che Subset Sum è NP-Hard",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NL con dimostrazione che è NP-Hard",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "vertex cover",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "indipendet set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hamiltonian cycle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NTM = DTM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "def di NP-complete (NP-HARD, NP)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "L appartiene ad NP se e solo se esiste una relazione caratteristica RL di L (parte \\<=) e (parte =>)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Bisaccia FPTAS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di problema np-completo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è una trasformazione polinomiale?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione del teorema di Rice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fixed parameter trattability",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è uno schema di approssimazione polinomiale?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrare che nap-sack é np-hard",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché usiamo trasformazioni polinomiali e non esponenziali?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrare che ld é ricorsivamente enumerabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di np-hard",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrare che Hamiltonian cycle é np-hard",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione linguaggio NTM==DTM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "caratterizzazione NP dimostrato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Indipendent Set dimostrato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cook",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NP dentro PSpace (dimostrazione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NP dentro PSpace (dimostrazione) > Risposta: Perché la definizione di NP dice che NP appartiene a Ptime, poiché Ptime è un sottoinsieme di Pspace allora anche NP è un sottoinsieme di Pspace",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di Rice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "np completo (definizione) e vantaggi nell'uso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di Cook",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di problema NP-complete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Domanda: come cambia la clas shortcut multicursorsse np complete se cambiamo la definizione di hardness considerando trasformazioni esponenziali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Domanda: come cambia la clas shortcut multicursorsse np complete se cambiamo la definizione di hardness considerando trasformazioni esponenziali > Risposta: poiché np-complete é l'intersezione di np-hard ed np, i problemi di tale classe rappresentano il sottoinsieme dei problemi più difficili tra quelli appartenenti ad np (risolvibili in p-time da una NTM). Se si cambia la definizione di hardness considerando trasformazioni esponenziali però si estende la classe a problemi exp-time, in quanto si altera il rapporto di complessità durante la riduzione che supporta la hardness: intuitivamente una trasformazione esponenziale trasferirebbe parte della complessità nella riduzione, permettendo poi di risolvere il problema risultante in tempo polinomiale, dunque tali problemi ricadrebbero in questa versione modificata di np-complete.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione di appartenenza di Hamiltonian Cycle a np-complete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione di non appartenenza di Ld a RE",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione di appartenenza di Lu a RE",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di riduzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Linguaggio Empty dimostrazione NP complete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "mostrazione Indipendent SET",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Knapsack intero e frazionario",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "subset sum",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Approssimabilità knapsack (algoritmo pseudo polinomiale e FPTAS)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "importanza della riduzione polinomiale tra problemi decisionali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità parametrizzata con definizione di xp e di ffpt",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problema np ha come definizione NP = {L| E R polinomialmente decidibile e bilanciata che caratterizza L} con PI1 R=L (dimostrazione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "FPTAS con costi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "FPT con VC e con knapsack",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "knapsack con programmazione dinamica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema Rice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema Cook",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "approssimabilità knapsack",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "approssimabilità knapsack > Algoritmo pseudo-polinomiale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "approssimabilità knapsack > FPTAS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione NP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione NP Hard",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione NP Complete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione indecidibilità Lu e non appartenenza a RE di Ld",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Importanza riduzione polinomiale tra problemi decisionali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché NP è incluso in PSpace con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità parametrizzata con definizione di XP e FP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo FPT del vertex Cover",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema 4.14.1 : un problema NP ha come definizione NP = {L|E R polinomialmente decidibile e bilanciata che caratterizza L } con Pl1 R=L (dimostrazione )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Linguaggio Empty",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione NP complete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione indipendent Set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di NP complete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Partendo dal fatto che un problema è np-hard se qualsiasi problema np si riduce ad esso in tempo polinomiale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Partendo dal fatto che un problema è np-hard se qualsiasi problema np si riduce ad esso in tempo polinomiale > domanda: come cambia la classe np-complete se cambiamo la definizione di hardness considerando trasformazioni esponenziali invece che polinomiali?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Partendo dal fatto che un problema è np-hard se qualsiasi problema np si riduce ad esso in tempo polinomiale > risposta: Poiché np-complete è l'intersezione di np-hard ed np, i problemi di tale classe rappresentano il sottoinsieme dei problemi più difficili tra quelli appartenenti ad np (risolvibili in p-time da una NTM). Se si cambia la definizione di hardness considerando trasformazioni esponenziali però si estende la classe a problemi exp-time, in quanto si altera il rapporto di complessità durante la riduzione che supporta la hardness: intuitivamente, una trasformazione esponenziale trasferirebbe parte della complessità nella riduzione, permettendo poi di risolvere il problema risultante in tempo polinomiale, dunque tali problemi ricadrebbero in questa versione modificata di np-complete.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizioni di problema Np, Np-hard, Np-complete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Pumping lemma linguaggi regolari",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Linguaggio e grammatiche ambigue",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione che NPSPACE contenuto in EXP (che equivale a dire PSPACE contenuto in EXP)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "NC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "L-uniformità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Riducibilità insiemi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Insieme TOT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A quale classe è equivalente la classe IP? (Shamir, pspace)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrare che i linguaggi regolari sono chiusi rispetto alla star di kleene",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le caratteristiche delle grammatiche che generano linguaggi di tipo 0, 1, 2, 3",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Domanda a piacere: IP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrare che un insieme è ricorsivo se e solo se l’insieme e il suo complementare sono ricorsivamente enumerabili",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Altra domanda a piacere: pumping lemma per CFL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché c’è la ripetizione di un non terminale?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra P ed NP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Con una produzione A -> epsilon come facciamo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "F\\<p1,p2> = guarda foto (è ricorsiva parziale)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dato che è ricorsiva parziale, com’è fatto l’algoritmo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di Karp",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Considerando NL, P, Sigma P2, Sigma P3, PSPACE qual è un problema completo per ognuna di queste classi?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema della forma normale di kleene",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrare che un insieme è ricorsivo se e solo se l’insieme e il suo complementare sono r.e.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa vuol dire per un problema di ottimizzazione di tipo massimo che un certo algoritmo che lo risolve… (1/k della soluzione ottimale)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "{x | phix(0) converge}",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra funzione primitiva (può essere espressa attraverso composizione combinazione esponenziazione e ripetizione) e totale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione AC^i ⊆ NC^d+1",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Pumping lemma LR",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di Savitch",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Mi dici una relazione propria fra due classi? P ⊊ EXP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A quale classe appartiene sat? (Esercitatore)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dove sta unsat? (Esercitatore, coNP)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "P^NP e P^coNP dove sono nella gerarchia polinomiale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché coP = P?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la relazione tra NP e coNP?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "D^P",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dato un linguaggio L delle codifiche delle macchine di Turing t.c. X è una macchina di Turing che riconosce un linguaggio infinito ma prima di accettare sposta la testina tre volte a destra (esercitatore)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Se abbiamo due grammatiche libere da contesto, come facciamo a verificare che generano lo stesso linguaggio?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di ricorsione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esempio di linguaggio di tipo 2 riconosciuto da automa a pila non det ma non da uno det?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "{\\<x,y> | per ogni z phix(z)=phiy(z)}",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Shannon",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gerarchia polinomiale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrare che date due grammatiche distinte queste generano lo stesso linguaggio (indecidibile)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenze nelle grammatiche L0 L1 L2 L3",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grammatiche ambigue",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando un linguaggio è intrinsecamente ambiguo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "pumping lemma per il linguaggi regolari e dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "K={(x,y)∣f(x)=f(y)} è ricorsivo o ricorsivamente enumerabile?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parlami della complessità di spazio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fammi un esempio di problema PSPACE completo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "classi di complessità di circuito",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è una famiglia di circuiti?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "{1k | k é la codifica di (M,x) tale che M si ferma su input x} appartiene a PPoly?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definiamo sigma P 2",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è una macchina di Turing con oracolo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è un insieme ricorsivamente enumerabile?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esempio di problema in sigma p 2",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione della classe NC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di Mayer",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione della classe IP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione di NPSPACE contenuto in EXPTIME",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grammatica in forma normale di Chomsky",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "L={<M>| M accetta numero antropomorfi}",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "L={<M>| M accetta numero antropomorfi} > antropomorfi=sono numeri tali che n e n quadro terminano con stesso numero (potrebbe non chiamarsi antropomorfo ma è importante la sua struttura appena definita, esercizio che fa parte dello scritto)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definire le composizioni.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Combinazioni, esponenziazioni e ripetizioni.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Insieme a zero.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Identità, successore e l'altro argomento correlato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Identità, successore e l'altro argomento correlato > Definire classe IP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Identità, successore e l'altro argomento correlato > Np complete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rice,",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione che automa è uguale a regex",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Una caratteristica dei context free",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione punto fisso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quanti sono i programmi di una funzione ricorsiva parziale data",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Funzione successore in quanti modi si può definire",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra funzioni e programmi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Il mapping tra programma e funzione è di 1 (ecco quante funzioni sa calcolare un programma)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Il numero di programmi che calcola una funzione sono aleph 0 (tanti quanti i numeri naturali) perché si possono aggiungere aggiungere istruzioni farlocche ma la funzione che esegue il programma non cambia.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "La proprietà è un predicato che individua un insieme di f ricorsive parziali.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A quale classe della gerarchia polinomiale equivale IP?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimmi un problema delta P2 completo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di rice e dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema del punto fisso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema della ricorsione e dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Classe delta p 2",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Classe epsilon p 2",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Classe NC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Classe IC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema dell' Isomorfismo tra grafi e sua classe",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "MaxSat e perché è DeltaP2Completo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "MaxCol e perché è DeltaP2CompletoLog",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Funzione di Ackerman",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Exp e Nexp",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esempio di problema PSpace Completo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di Post",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione di equivalenza tra le due definizioni di Ricorsivamente enumerabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è Ppoly",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ppoly contiene linguaggi indecidibili?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione che se L è unario allora è PPoly",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrare che NP è chiuso rispetto alla stella di kleeny",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di Toda",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è #P",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è IP? È equivalente a PSpace?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Simulare comportamento di una TM multi nastro con una multitraccia",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Pumping lemma per linguaggi ctx free",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Principio della piccionaia",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona la tecnica di riduzione per problemi indecidibili",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa sono i linguaggi regolari?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quali sono le caratteristiche dell automa di un linguaggio regolare?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quanti simboli leggo per volta?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "c è differenza di potenza di calcolo tra dfa e nfa? no, ma c'è differenza di? (risposta: taglia, dimensione, numero di stati)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di rice con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di Savitch con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "parliamo del concetto di approssimabilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "i problemi sono tutti approssimabili?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è la classe p/poly",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "classe di complessità IP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "legame che c'è tra complessità di circuito e di tempo nei linguaggi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "un insieme r.e. lo possiamo definire in più modi, come e in che modo sono equivalenti le def(dimostrazione che la seconda def è equivalente alla terza)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è la forma normale di Greinbach",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "classe di complessità NC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "confronta NCI con ACI",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "p/poly dove sta rispetto a NCI e ACI (non è sicuro sia questo confronto però è sicuro sia con p/poly)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nel linguaggio mini C non abbiamo l'if-than-else, riusciamo a realizzarlo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "se due linguaggi sono regolari la loro unione è regolare, dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "consideriamo l'insieme degli indici delle funzioni totali, è ricorsivo r.e. o non r.e.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "parliamo di p spazio e indichiamone un linguaggio completo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "data una macchina che dati n elementi in input si vuole stabilire se il numero di elementi dell array sia pari o dispari, che complessità ha nello spazio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esiste una forma normale per i problemi in PSPACE che è anche la codifica di un problema completo, com è fatto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domande su coPSPACE generiche",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di Toda (ultimo fatto nel corso)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostriamo che un automa a pila deterministico è sempre equivalente a uno a pila non deterministico, non è così in realtà, mi fai vedere un linguaggio che separa?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "consideriamo ww^R perché l automa a pila det non è sufficiente in questo caso, dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Abbiamo due forme di automi a pila accettanti per stato finale e per stato vuoto, dimostrazione equivalenza che i linguaggi riconosciuti da uno sono \"equivalenti\" a quelli dell altro",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

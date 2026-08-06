@@ -1,0 +1,447 @@
+[
+  {
+    "q": "Dimostrazione ottimalità A\\ su tree search e graph search",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione consistenza implica ammissibilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione funzione f è non decrescente con euristica consistente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Shapley Value",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Hyper Tree Decomposition",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo alfa beta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di Nucleolo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di core",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di grohe",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione dell'ottimalità di A\\ nella tree search",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa rappresenta la tree width minima",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Contributo marginale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Contributo singolo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos è lo shapley Value",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos è il nucleolo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos è il core",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Minmax con alpha betha pruning",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimosrrazione dell'ottimalitá di A\\ graph search",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo yannakaki",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Complessità dell'algoritmo di yannakaki",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione che se è ammissibile euristica allora a star è ottimale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione che euristica consistente implica ammissibile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Nucleolo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazioni A\\ ottimo sia per tree che per graph search",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo per calcolarlo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "il nucleolo è nel core se non è vuoto e motivazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione che se il core non è vuoto allora il nucleolo si trova nel core",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Nucleolo e metodo di PL che lo fa calcolare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Semantica di ASP con esempio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "A\\",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione ottimalità A\\",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è la soluzione ottima",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è la soluzione ottima > calcolo frontiera",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Equilibrio di Nash normale e misti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "core e nucleoli nella teoria dei giochi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CSP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Giochi di coalizione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un contributo marginale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dummy player, definizione formale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che tipo di algoritmi utilizziamo per i giochi con avversari?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "minimax con pruning",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "minimax con pruning > euristica di minimax con upper bound o lower bound",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "minimax con pruning > Questi giochi con avversari sono giochi a somma zero o arbitrari?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "minimax con pruning > col pruning abbiamo l'ottimalità (considerando upper bound,lower bound)?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un modello?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un modello? > programma logico dato come esempio, trovare i modelli e gli answer set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un modello? > Se dalla terza regola deduci C cosa succede?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "answer set da un programma logico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "un modello quando si dice answer set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrare che A\\ è corretto e completo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrare che A\\ è corretto e completo > tree search con spiegazione dell'ottimalità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione formale di ammissibilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "aste, second price",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "aste, second price > truthful",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Constraints satisfaction problem",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il forward checking?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema aciclico?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema aciclico? > ipergrafo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problemi binari o con arità maggiore.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un grafo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Equilibrio di nash, cos'è e definizione formale.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spiegazione di a\\, perché è ottimale?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è l'ammissibilità?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Depth first search",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Equilibrio di nash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Equilibrio di nash > che possiamo dire per l'esistenza di questi equilibri?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è il nucleolo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra core e nucleolo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dato un programma logico trovami gli answer set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un answer set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dato un programma logico, trovare il suo answer set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "riduzione programma logico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è il contributo marginale e il Contributo singolo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un dummy player e lo shapley value?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un dummy player e lo shapley value? > Esiste sempre lo shapley value?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Csp aciclici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Csp con struttura associata.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra tree search e graph search",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché su graph search non è ottimale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "coalizioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "core",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che tipo di algoritmi abbiamo fatto per i problemi di soddisfacimento dei vincoli,",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Core > se le due strutture sono acicliche che succede?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Core > Qual è il beneficio se la struttura è aciclica? (Alla fine della procedura possiamo sapere qualcosa)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un answer set?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Giochi strategici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di equilibrio di nash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa possiamo dire dell'esistenza invece nelle strategie miste?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Csp tree decomposition",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

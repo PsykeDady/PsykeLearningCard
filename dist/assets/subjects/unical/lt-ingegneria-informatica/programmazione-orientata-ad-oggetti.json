@@ -1,0 +1,437 @@
+[
+  {
+    "q": "ricerca binaria ricorsiva -disegnare un heap e un albero dati dei valori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Generici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "add su albero",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra abr e heap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "iteratore dell’albero",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Eccezioni di un Iterator",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando non è possibile fare una remove",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Polimorfismo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "heapsort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra algoritmo iterativo e ricorsivo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "visita inOrder da ricorsivo ad iterativo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ordinare una Linkedlist con il listIterator seguendo bubblesort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ordinare 2 liste con il merge",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "coda astratta, iteratore della coda, coda concreta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Regex",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "albero delle espressioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ricerca binaria ricorsiva",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "implementazione di uno stack generico con un array",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "visita a livelli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo per calcolare l'altezza di un albero ricorsiva",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodi di listIterator",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza file tipati e file binari",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come ordinare gli elementi all'interno di un file",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione regex",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "regex monomio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "visita post ordine albero",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità algoritmi bubble sort selection sort insertion sort e quale tra questi è il migliore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spiegazione heap e come rimuovere il minimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spiegazione albero binario di ricerca",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "verifica palindroma ricorsiva",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra gaus diagonale e gaus determinante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra file tipati e file di testo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra heap e abr",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quantificare gli spostamenti quando si aggiunge un nodo con ultimo livello pieno su heap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "valutare espressione con delle regex",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di backtracking",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "elencare i metodi di visita di un abr",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scrivere metodo visita per livelli di un abr",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità del merge sort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Scrivere costruttore classe Heap ed il metodo add",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scrivere il metodo heapsort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "elencare i metodi di random access file",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "che vuol dire classe base",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lista concatenata semplice in veste ricorsiva",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità di selection e bubble sort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "aggiunta elemento su abr con ricorsione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "elencare proprietà dei set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "calcolare indice lista tramite hashcode",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "liste di trabocco hashset",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di type erasure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodo generico ricorsivo che inserisce un elemento su una linked list mantenendo la lista ordinata usando listiterator",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "risolvere problema permutazioni, differenza tra permutazioni e disposizioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ordinare linkedlist con bubble sort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "serializzazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "peso della ricorsione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "da ricorsivo a iterativo tramite stack della visita inOrder su abr",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Operazioni di Visite sugli alberi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Calcolo determinante utilizzando il metodo di LaPlace",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ricerca Binaria su array A contenente oggetti T comparabili da implementare ricorsivamente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Lettura file interi con modifica in loco",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodi add/remove su LinkedList Ricorsiva",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodi add/remove/iterator su Heap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stack",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stack astratto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stack concatenato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione merge sort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "backtracking",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Nota molto importante: per l'orale di questo esame, rispetto ad altri esami in cui può sorgere il dubbio su cosa può essere chiesto all'orale, consiglio immensamente lo studio completo del libro perché toglie ogni tipo di dubbio su quale tematica può essere trattata. Il libro è la fonte principale per capire cosa mette all'appello scritto e orale. Non esiste altro metodo di studio migliore, in quanto il professore segue alla lettera il suo stesso libro che consiglia. Il libro è fondamentale per qualsiasi tipo di curiosità, si può dire che qualsiasi tipo di pagina può essere fonte di domanda all'orale.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Reverse (invertire l'ordine ) di una linked list con puntatore singolo e testa ricorsiva",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Equals di albero binario ricorsivo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "svolgere esercizi del compito",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "utilizzare backtracking",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scrivere i metodi salva e ripristina della classe agendina fatta a lezione sia come file di tipo testo che di tipo oggetto, scrivere a parte anche i metodi necessari (es. svuota(), aggiungi()). Fare attenzione alla signature dei metodi e delle classi.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ricerca in un albero binario di ricerca, di tipo infissa, postfissa e prefissa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "iteratore di una linked list",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodi per la gestione di una lista a puntatori espliciti (add, remove ecc.)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "le eccezioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "i generici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la serializzazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Implementare aggiungi,ricerca e remove su agendina dinamica sviluppata durante il corso che contiene nominativi su un array",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "iteratore su una lista concatenata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "add e remove con listaConcatenata ordinata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "visita prefissa ,infissa e postfissa su un ABR",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "salva , ripristina da file di testa e come object di un'agendina fatta durante il corso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa sono i generici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sfruttata interfaccia, classe astratta e concreta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodi ed attributi statici a cosa servono e cosa sono",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

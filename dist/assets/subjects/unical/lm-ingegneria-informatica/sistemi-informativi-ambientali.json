@@ -1,0 +1,57 @@
+[
+  {
+    "q": "cosa è un DEM?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza file shape vettoriale e file raster",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tecniche di geoprocessing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tutti i tipi di interpolatori (esatto,non esatto,locale,globale...)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa vuol dire la media o la varianza in un certo punto?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa rappresenta Z0? Ponendo Zi come i punti che hanno misura esatta con i>0",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa è una misura?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa è una misura? > lo strumento misura sicuramente bene",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa è un GCP?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come è fatto un file di tipo geografico?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come è fatto un file di tipo geografico? > numero delle righe,colonne,risoluzione,xcornern,ycornern...",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

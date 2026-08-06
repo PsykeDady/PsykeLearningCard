@@ -24,6 +24,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "import:oral-index": "node scripts/import-oral-index.mjs",
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",

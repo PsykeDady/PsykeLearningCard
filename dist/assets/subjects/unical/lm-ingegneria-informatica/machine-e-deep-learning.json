@@ -1,0 +1,87 @@
+[
+  {
+    "q": "VAE",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "GAN",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "agnostic PAC",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "learnability",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "svm",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Pac learnability in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Derivazione formula Agnostic Pac Learning",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stima di densità non parametrica, knn e KDE",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Vita, morte e miracoli dell’SVM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Model selection(sia con validation set, che SRM e MDL)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problemi di learning convesso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Discesa del gradiente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Predittori lineari in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Regressione logistica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quale proprietà ha la cross entropy loss? Risposta: è una funzione convessa, si può applicare l'algoritmo di discesa del gradiente)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Principal Component Analysis (PCA)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "(Di ogni argomento il professore richiede passaggi, formule matematiche ed eventuali grafici)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "q": "primo interrogato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > Semantica operazionale per DL",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > Insieme di regole d'inferenza corretto e completo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > Iterative deepening",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > secondo interrogato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > secondo interrogato > Algoritmo di Waltz",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > secondo interrogato > Algoritmo Bread First",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > secondo interrogato > Shapley Value",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > secondo interrogato > Complessità formalismi vs espressività",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > secondo interrogato > Abduzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > secondo interrogato > IDA\\",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > hill climb simulated annealing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > planning",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > nucleolo stable set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > regole inferenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > entailment in logica di default perché è Pi P2-C?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "primo interrogato > gsat wsat con random walking",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "secondo interrogato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "secondo interrogato > breadth first",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "secondo interrogato > Iterative broadening e come si fa con A\\",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "secondo interrogato > Nucleolo di nuovo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "secondo interrogato > Compilazione di conoscenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "secondo interrogato > datalog or not",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "terzo interrogato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "terzo interrogato > metodi di ricerca blind e metodi di ricerca informata: differenze",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "terzo interrogato > iterative deepening con vantaggi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "terzo interrogato > IDA\\",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "terzo interrogato > semantica alla reiter default logic",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "terzo interrogato > semantica brave default logic",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "terzo interrogato > verifica coerenza teoria di default (NP Hard)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "terzo interrogato > processo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "terzo interrogato > nucleolo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > iterative broadening",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > perché non usiamo A\\ per i giochi al posto di min max?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > hill climb simulated annealing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > modello stabile con negazione e disgiunzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > computer vision e algoritmo di waltz",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > planning",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > planning > quale sequenza di azioni va considerata?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > planning > perché la delete list deve essere vuota?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > stable set teoria giochi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quarto interrogato > N=1,2,3 v1=v2=v3=0 e la coalizione di taglia due hanno valore 2, la coalizione di tagla tre vale 5: c'è stable set?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > metodi olistici di riconoscimento ambiente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > pianificazione: Strips",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > pianificazione: Strips > Strips Assumption",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > pianificazione: Strips > A1:precondizione vuota, add list è P, delete list vuota,A2:precondizione vuota, add list not P, delete list vuota e stato iniziale vuoto. Risultato?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > concetti soluzione che danno equità, Shapley Value",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > effetto orizzonte",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > singolar extension",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > nodo quieto e nodo tattico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > A\\",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > modello stabile per datalog not",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > modello stabile per datalog not > intersezione tra modelli che provoca?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quinto interrogato > modello stabile per datalog not > semantica modelli perfetti o modell stabili",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > test turing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > Modus Ponens e completezza del modus ponens",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > Modus Ponens e completezza del modus ponens > esempio sound e non complete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > quanto costa capire se f può essere generato da modus ponens con F?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > versione arricchita del modus ponens Tp",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > di nuovo la cosa della add list di prima con riflessione su strips",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > waking sat",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > il numero dei GLB in una teoria CNF",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > bargening set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > algoritmo della famiglia minmax a cui si applica alfa-beta con valori +0.001 e -0.001 in questo caso si taglia l'albero?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sesto interrogato > regole di inferenza correttezza e completezza > algoritmo waltz",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "settimo interrogato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "settimo interrogato > numero GLB teoria di horn di dimensione n",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "settimo interrogato > come scende la complessità del caution reasoning?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "settimo interrogato > pure theory",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "settimo interrogato > se una teoria ha un estensione non calcolabile attraverso i processi cosa succede?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "settimo interrogato > A\\ con differenza best-first",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "settimo interrogato > A\\ con differenza best-first > la funzione euristica non esegue mai il backtracking?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "settimo interrogato > Core",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "settimo interrogato > algoritmo waltz",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottavo interrogato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottavo interrogato > numero dei GLB? la congiunzione degli UB è 1 (unico LUB congiunto), anche la congiunzione dei GLB è pure 1 solo se la teoria è di horn (esponenziale se teoria default)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottavo interrogato > kernel",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottavo interrogato > teoria di default che abbia un estensione che non possa essere calcolata dall'albero de processi?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottavo interrogato > IDA\\",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottavo interrogato > IDA\\ > a cosa serve il min?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottavo interrogato > programma datalog stratificato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Varie testimonianze 04/02/2021",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Descrizione algoritmo Iterative deepening",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Precisare come si può uscire dal ciclo quando non ci sono goal",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Precisare come si può uscire dal ciclo quando non ci sono goal > Risposta: la soluzione proposta dal prof è quella di utilizzare una variabile booleana (non sappiamo nel dettaglio come), un'altra soluzione è quella di uscire quando il cutting level sia pari all'altezza dell'albero ma costa troppo in termini temporali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Complessità di verificare la coerenza di una teoria in logica di default (ossia se ammette un'estensione), dimostrare almeno intuitivamente perché tale problema è almeno NP-hard",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Complessità di verificare la coerenza di una teoria in logica di default (ossia se ammette un'estensione), dimostrare almeno intuitivamente perché tale problema è almeno NP-hard > Risposta: intuitivamente se la complessità dell'entailment è CONP-c in logica proposizionale, poiché la logica di default ha sia una teoria proposizionale W che un'insieme di default D è facile capire che sarà almeno difficile quanto l'entailment è quindi ha almeno una sorgente di esponenzialità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Strips genera stati inconsistenti?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Strips genera stati inconsistenti? > Risposta:un esempio è {f, not(f)} in cui abbiamo uno stato con due fluenti con valore logico opposto, ma strips NON è un linguaggio logico, f e not f potrebbero essere chiamati pluto e paperino quindi no, non genera stati inconsistenti in quanto il concetto di incosistenza è associato a linguaggi logici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Esempio di teoria di default in cui non ci sia alcuna estensione che sia calcolabile con la semantica operazionale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "altri > Esempio di teoria di default in cui non ci sia alcuna estensione che sia calcolabile con la semantica operazionale > Risposta: basta usare una teoria incoerente, {TRUE:A/¬A } è l'esempio tipico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "GSAT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "espressività vs complessità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hill climb con simulated annealing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modello perfetto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Iterative Broadening (ordine di visita degli alberi )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Iterative Deepening",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "processi closed e successful",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "shapley value",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "wsat e gsat",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "estensioni di reiter",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "frame problem e perché strips non soffre del problema del frame",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "approssimazione lower bound-upperbound con calcolo greatest lower bound",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

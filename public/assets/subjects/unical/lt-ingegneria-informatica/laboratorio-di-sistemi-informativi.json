@@ -1,0 +1,182 @@
+[
+  {
+    "q": "Esercizio ricorsivo: calcolare I percorsi di un grafo sorgente a destinazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Trigger: trigger fatti durante le lezioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima chiede ad uno del team di condividere lo schermo con il progetto, poi chiede di vedere anche magari qualche tabella del database quando l'acquisto va a buon fine.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tecniche PERT e CPM differenze tra PERT e CPM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione (la vuole scritta) di t-late e t-early",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ricorsione: cos'è una CTE? ha fatto scrivere anche una query ricorsiva (ha chiesto sia quella del fattoriale sia quella della chiusa del grafo; vedi slide)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "trigger (ne fa anche scrivere uno semplice)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "operatori olap: pivot",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "slice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "drill through",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "roll up",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "drill down etc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "di pivot può chiedere in quale database si può fare direttamente (oracle) e se non si può fare direttamente come fare a mano (in realtà era domanda per la lode credo)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "poi chiede le metodologie di sviluppo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "xml",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "xml-schema",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Insomma può chiedere veramente di tutto ma è molto buono fa tante domande finché non sai qualcosa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "l'importante è fare il sito(o altro progetto) che rispetta la parte che hai deciso di implementare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ha chiesto a tutti inoltre se avevamo messo controlli sui campi di inserimento quindi controlli per vedere se un'email è ben formata durante la registrazione etc",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "l'unica cosa è vedere bene sql perché ti fa fare in diretta query ricorsive e trigger",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Schema a stella e fiocco di neve",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Schema a stella e fiocco di neve > come suddividere gli attributi in quello a fiocco di neve",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fase di assestment",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fase di assestment > cos'è il project management (visto che quando ho risposto ho detto che ne fa parte)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa é il Work breakdown structure",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa é il DFM dimensional fact model",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Costruisci una query ricorsiva che calcoli il fattoriale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Costruisci una query ricorsiva che percorre un grafo a partire dal nodo iniziale(applicato a diversi contesti, città, treni etc)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Operatori OLAP dice e slice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Operatori OLAP dice e slice > se io faccio k operazioni di slice le mie dimensioni dell'ipercubo di quanto variano?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Operatori OLAP dice e slice > La risposta é che se si effettuano k slice allora se la dimensione era n poi sará n-k",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Operatori OLAP drill through",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Operatori OLAP drill through > quali sono i requisiti per poterlo usare nel 2o livello?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Operatori OLAP drill through > perché nel 3o livello si puó fare invece a prescindere?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Operatori OLAP drill through > La risposta é che nel 2o livello vi é bisogno di operatori di reverse mapping rispetto a quelli ETL mentre nel 3o livello sono presenti i dati riconciliati e quindi non vi é bisogno di effettuare nessuna operazione per tornare ai dati operazionali.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

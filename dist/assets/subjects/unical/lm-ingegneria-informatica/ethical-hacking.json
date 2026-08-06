@@ -1,0 +1,602 @@
+[
+  {
+    "q": "Quali sono le vulnerabilità e i vettori di attacco legati a XML?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona e come si sfrutta una Server-Side Template Injection (SSTI)?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è e come si esegue un attacco Server-Side Request Forgery (SSRF)?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è e come si previene il Cross-Site Request Forgery (CSRF)?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il Cross-Site Scripting (XSS) classico e quali sono le differenze tra le sue tipologie?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quali azioni e controlli sposteresti/faresti una volta ottenuta una shell all'interno di una macchina Linux?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono i principali attacchi legati al protocollo Kerberos in Active Directory?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è il Kerberoasting e come si differenzia dall'AS-REP Roasting?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa sono i target nel contesto del Kerberoasting e quali differenze strutturali comportano?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano le Group Policy Object (GPO) in Active Directory e in che modo è possibile abusarne?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le vulnerabilità legate ad Active Directory Certificate Services (ADCS) e come si passa da un'errata configurazione ESC4 a una ESC1?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa comporta a livello di privilegi l'abuso dei certificati ESC1 e ESC4?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si sfruttano i privilegi specifici di un utente locale in Windows, come SeBackupPrivilege o SeImpersonatePrivilege?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si esegue un attacco sfruttando i Delegation Privilege?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quali tecniche si utilizzano per il Lateral Movement o l'autenticazione se non è possibile usare la password in chiaro?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano e quando si applicano le tecniche di Pass-the-Hash (PtH) e Pass-the-Ticket (PtT)?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa succede e come si aggira uno scenario in cui una GPO vieta l'autenticazione standard?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è un Golden Ticket, come si genera e in quale modo si collega alla compromissione totale di un ambiente Active Directory (anche tramite ADCS)?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si fa a creare l'ambiente isolato di docker",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "uso di docker",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Pass the hash e pass the ticket",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Pass the hash e pass the ticket > come si fa la privilege escalation?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Active Directory",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Active Directory > come si chiama il computer principale?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Active Directory > come si fa la privilege escalation?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Active Directory > cosa è?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Active Directory > è presente su un computer?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si esce da un ambiente docker?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come gestisci i servizi in linux?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kerberos",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "attacchi kerberos.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Mimikatz.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SSTI",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tool per rubare l'hash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Utente di dominio per Active directory",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "pass the hash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "docker",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "docker > ldap con attacchi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "docker > rbash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "docker > pass the ticket",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "docker > kerberoasting",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "docker > aes-reproasting",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "docker > Xss",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "docker > La configurazione rete per macchine virtuali e container",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Spiegazione csrf",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenze tra csrf e xss",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è kerberos",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "challenge SSRF presente sul sito di burp suite (in teoria vi registrate, andate in academy e poi nei vulnerability lab e cercate ssrf)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "pass the hash: descrizione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "challenge presente su natas numero 8",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Hash md5: come si riconosce?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof > psexec",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof > pass the ticket",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof > comandi vari del prompt o powershell",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof > rogue potato (e in generale da tenere sott'occhio qualsiasi cosa che sia potato, quindi juicy potato, hot potato...)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof > si hanno degli output di eseguibili di Windows (permessi di un eseguibile e le info di un eseguibile) e fra i permessi di questo eseguibile c'era git config e si poteva cambiare la configurazione per cambiare il /bin/path con una reverse shell",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof > query su un registro per vedere se era attivo il permesso su un utente (alwaysinstalledprivileged) e si poteva sfruttare per installare qualsiasi eseguibile come utente privilegiato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof > pass the hash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof > bind e reverse shell",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "siamo con una Macchina Windows e si devono rispondere alle seguenti domande poste dal prof > nishang",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "XML",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "XML > come funziona la direttiva system",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "XML > come è strutturato il linguaggio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SSRF",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DDL Hijacking",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ROP e mitigazioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "buffer overflow con diff tra x32 e x64 e possibili mitigazioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "challenge: file binario main, un file sorgente lib.c, hijack delle sharedlibrary consigliata da hacktricks",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kerberoasting.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kerberoasting. > Io ho prima introdotto kerberos, e poi gli ho parlato dell’attacco AS Rep Rosting.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Over pass the Hash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Over pass the Hash > Io non lo conoscevo e gli ho parlato di pass the hash.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa è necessario che sia presente per la tecnica pass the hash sulla macchina windows?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa è necessario che sia presente per la tecnica pass the hash sulla macchina windows? > è necessatio sia presente SMB. Se non è presente allora si usa la tecnica Over Pass the hash.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Conosci altri framework di post-exploitation oltre a mimikatz?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In windows gli hash vengono memorizzati dove?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In windows gli hash vengono memorizzati dove? > Ho risposto nel file SAM.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "C'è un ulteriore luogo dove vengono memorizzati. Dove?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "C'è un ulteriore luogo dove vengono memorizzati. Dove? > In un processo in memoria che prende il nome di LSASS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché l’ultima versione di powershell empire client-server è migliore rispetto alla vecchia versione monolitica?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché l’ultima versione di powershell empire client-server è migliore rispetto alla vecchia versione monolitica? > Perché, se c’è un target e la tua macchina, e tu riesci a prendere il controllo di una macchina intermedia sempre sulla stessa rete del target, che magari ha anche privileggi migliori rispetto a quelli che hai dalla tua macchina attaccante, puoi lanciare l’attacco di bruteforce (server) da questa seconda macchina, e sgravare (client) la tua macchina dal lavoro. Puoi pure chiuderla e ricollegarti giorni dopo, e la tua macchina non fa nessuno sforzo. Prima con la monolitica, dovevi lanciare l’attacco dalla tua macchina.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Empire for Pentester: Active Directory Enumeration",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tool per prelevare password (mimikatz)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dove vengono salvati gli hash delle password di windows?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dove vengono salvati gli hash delle password di windows? > i file importanti per le password hashate di windows (sam,lsas...)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dove vengono salvati gli hash delle password di windows? > come prelevi questi hash?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dove vengono salvati gli hash delle password di windows? > come prelevare password dal file sas?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dove vengono salvati gli hash delle password di windows? > pass the hash",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Reverse Shell e Bind Shell",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sql injection con script php (cosa è e cosa fa)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "challenge web con loose comparison",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenze attacchi x32 bit e x64 bit",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenze attacchi x32 bit e x64 bit > rop chain e bruteforce sull'indirizzo di ritorno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metasploit cosa è",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tool simili a metasploit per windows",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "challenge web che presentava degli endpoint e bisognava loggarsi come admin",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "challenge web con form di login e registrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "format string",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "privilege escalation windows: cosa faresti?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Kerberos: cosa è ed attacchi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Docker:cosa è, configurazioni e comandi, attacchi (soprattutto privilege escalation)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parte di privilege escalation disponibile su tryhackme (privesc)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metasploit: come usare i servizi e gli exploit",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "nc: cosa è e come funziona",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "XXE: cosa è, scenari d'uso, esempi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "XSS: cosa è, quali tipi ci sono, esempi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Laboratorio di attacco",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sudo con opzione -l",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Utente con Alcuni privilegi di root",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "LDAP nel particolare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come creare una sottorete con virtualbox e come collegare due macchine alla sottorete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come creare un laboratorio con virtualbox",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "LDAP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "LDAP > qualche attacco",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "LDAP > sfruttare il protocollo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "se tu penetri su un sistema con una shell, cosa usi per vedere il traffico?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "se tu penetri su un sistema con una shell, cosa usi per vedere il traffico? > tcpdump e comandi annessi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "se tu penetri su un sistema con una shell, cosa usi per vedere il traffico? > che traffico internet vedi? traffico mio ingresso/uscita",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodi privilege escalation e post exploitation",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "q": "Software libero e open source",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Software libero e open source > Ci sono limitazioni sulla possibilità di vendere il codice modificato?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Software libero e open source > Risposta: no, non è indicato nelle quattro libertà",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Symbolic links (hard e soft)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Symbolic links (hard e soft) > Cos'è un inode?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parlare del buffer overflow",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è cron? Parlare pure delle sottocartelle",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Broadcast Receiver",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ciclo di vita dell' Activity",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "in particolare onCreate() e onStart()",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Spiegazione Intent, espliciti ed Impliciti con esempi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Repository",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è APT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dove si trovano i sorgenti dei pacchetti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa fanno apt-get Upgrade e apt-get Update",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Domanda sul possibile uso di una callback in una parte dell'applicazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Distinzione tra JIT e AOT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Distinzione tra JIT e AOT > Risposta: è la stessa differenza che c'è tra l'esecuzione interpretata e compilata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Package freezed",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come gestire un file che dobbiamo salvare in locale( tipo invece di firebase in locale)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Riverpod a che serve",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "I widget come funzionano",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Isolates perché lo usiamo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Class extension di dart",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

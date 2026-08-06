@@ -1,0 +1,342 @@
+[
+  {
+    "q": "teorema moltiplicatori di Lagrange",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di Liouville",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema dei residui",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Liouville",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema residui",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "integrali curvilinei complessi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dini",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "c1 implica differenziabilita",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "serie di fourier",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Max modulo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spazio in R2",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prodotto scalare e norma",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si ricava la sviluppabilità in serie di Laurent",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "passaggio dalla serie alla trasformata di fourier",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "convergenza puntuale uniforme",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Liuoville",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "base della serie di fourier",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di Dini",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di Cauchy",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di unicità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si ricavano le condizioni di Cauchy-Riemann",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "integrale di superficie",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "argomento a piacere",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di Morera",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione che di funzione Analitica->olomorfa e viceversa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché rho tende a zero mentre theta non lo fa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "risolvere un problema di Cauchy con lo schema di Eulero",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come un calcolatore risolve le equazioni differenziali?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrare perché una equazione differenziale lineare con coefficienti f(x) costanti ha sempre una soluzione e quindi la condizione di Lipschitzianità vale sempre",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema del rotore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "limiti in coordinate polari",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chiede esercizi vari e soprattutto fate attenzione che può chiedere esercizi fatti agli appelli all'orale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa è una soluzione singolare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "calcolo di un Iperpiano tangente ad un campo scalare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema differenziale totale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "risoluzione di un'ode del terzo ordine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "risoluzione di un'ode del terzo ordine > che teorema applichi?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "prima mi ha dato una matrice con dei parametri e voleva sapere i valori da dargli per renderla Hessiana",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ricerca di massimi e minimi relativi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si arriva alla soluzione di un ODE",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si arriva alla soluzione di un ODE > come si arriva a all'esponenziale e elevato ad alfa x",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si trovano i coefficienti c1 e c2 della soluzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la lipschitzianità globale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la definizione con il rapporto incrementale con analoga applicazione ad un problema da lui assegnato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "proprietà matrice simmetrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "proprietà matrice simmetrica > hessiana e autovalori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "controllare se date due equazioni differenziali sono linearmente indipendenti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "controllare se date due equazioni differenziali sono linearmente indipendenti > in caso affermativo trovare una soluzione ode che soddisfi queste sue soluzioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "data una figura aperta calcolare il flusso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "teorema di Cauchy-Riemann con dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrare che le condizioni di Cauchy-Riemann sono armoniche coniugate",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "data la funzione f(x,y)=y²e^x vedere se è differenziabile ed eventuali punti di massimo, minimo o sella",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "data una superficie posta solo sul piano xy quindi con versore normale diretto lungo z e dato un campo vettoriale F=(x,y,z) trovare il flusso attraverso tale superficie (fa 0)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dati y1=e^3x ed y2=e^-3x verificare se fossero l.i. e trovare un'ode omogenea di cui fossero soluzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio preso dalle lezioni: Calcolare lo spettro delle frequenze della funzione definita da -T a T",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "calcolo del lavoro in un campo vettoriale data una curva qualsiasi e due punti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "irrotazionalità e campo conservativo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di rotore e uso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "data un'equazione differenziale che la soluzione in un punto dato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "verificare data un'eq differenziale che la soluzione in un punto dato è unica (verifica della lipschitzianità)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "concentrarsi sui teoremi inseriti messi nel teams, un PDF indica i teoremi spiegati e bisogna studiare quelli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "può chiedere esercizi da svolgere",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si arriva alla serie di Fourier?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sviluppare in serie di fourier la funzione f(x)= x e studiare la convergenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "studiare la convergenza di qualche serie di potenze",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "studiare la convergenza di qualche serie di potenze > criterio della radice o con criterio del rapporto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Lemma del grande cerchio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema della proiezione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

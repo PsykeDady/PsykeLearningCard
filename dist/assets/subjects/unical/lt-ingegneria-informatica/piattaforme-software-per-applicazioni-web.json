@@ -1,0 +1,292 @@
+[
+  {
+    "q": "Panoramica del progetto (2-3 minuti)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Principali funzionalità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quale tipo di lock utilizzereste e come",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa bisogna rendere thread-safe",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gestione delle immagini (URL esterni, ecc.)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Spring Security e Keycloak",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tipi di lock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa succede se l'utente prova ad avere più carrelli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Meglio non usare AI per la relazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DTO",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quali tipologie di utente ci sono (es. amministratore)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gestione dei lock: dove si possono creare race condition",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché è stato utilizzato Propagation.MANDATORY e cosa fa Spring se questi metodi vengono invocati fuori da una transazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Entity JPA oppure DTO",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Distinzione tra autenticazione e autorizzazione (una in Keycloak, l'altra no: perché?)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come è organizzato il database (schema dei dati)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Lato admin del frontend",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Angular Signals e JWT",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come viene gestito il JWT (interceptor, ecc.)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gestione verticale dei domini e motivazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Serializable: cosa implica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché è stato fatto il costruttore del controller",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gestione della concorrenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le chiavi primarie nel database",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Usando Keycloak si prende un po' di più sul voto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché sono stati usati sia lock ottimistici che pessimistici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Con una chiamata REST si potrebbero aggirare le limitazioni del frontend e bisogna tenerne conto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gestione dei DTO",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Soft delete",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "@PreAuthorize e sicurezza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come ignorare l'attesa di un file JSON",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "progetto ecommerce",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quale problema sorgerebbe se il prezzo di un prodotto cambiasse dopo averlo messo nel carrello?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si fa (nel back-end in Spring boot) a svuotare automaticamente e dopo un certo intervallo di tempo il carrello?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si fa (nel back-end in Spring boot) a svuotare automaticamente e dopo un certo intervallo di tempo il carrello? > si fa utilizzando l'annotazione @Scheduled",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come è stata fatta l'autenticazione/registrazione dell'utente? (spring security)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "routing",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ha chiesto il progetto progetto (ho fatto un sito di aste)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ha chiesto il progetto progetto (ho fatto un sito di aste) > ha voluto sapere come avessi implementato il sistema di offerte nei service.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ha chiesto come si dovrebbe fare in angular per implementare un modo che faccia visualizzare una pagina personalizzata per ogni prodotto, ma mi ha chiesto solo come si dovrebbe fare a livello teorico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gestione delle cose in flutter visto che è single threaded",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "gestione del token",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "mostrare il config dell'http request in backend",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "da fare: controllo sulle quantità in fase di checkout e non solo al carrello e al Lock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzionamento del Lock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzionamento del Lock > Pessimistico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzionamento del Lock > Ottimistico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzionamento del Lock > version",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "codice del frontend",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Stateful EJB",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "web services",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ajax",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stateful session bean",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "componenti angular",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lock nel progetto, come si fa? JSF o Angular",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "componente angular cosa contiene",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "controller e service piú importante del progetto, chiede di spiegare il funzionamento e fa alcune domande se alcune cose non vanno bene",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lock ottimistici, pessimistici e livelli di isolamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

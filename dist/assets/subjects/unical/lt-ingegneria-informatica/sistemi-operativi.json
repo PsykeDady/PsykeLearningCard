@@ -1,0 +1,1112 @@
+[
+  {
+    "q": "formula CPU burst",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Starvation e Aging",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Allocazione dei processi in Memoria Centrale (allocazione contigua, frammentazione, segmentazione, paginazione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Scheduling di Windows/solaris/linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Pcb",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra paginazione e paginazione con memoria virtuale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dischi raid",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "worm di morris",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "memoria virtuale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "mmu",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dma",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "page fault",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "si consiglia di consultare tale documentazione <http://www.swappa.it/wiki/Uni/SistemiOperativi#s5> ringrazio per la segnalazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "System Call",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza Starvation e Deadlock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Descrizione Vari Scheduler",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Condizioni affinché si verifichi il Deadlock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa succede quando si crea un file e la si inserisce in una cartella",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Syscall solaris",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scheduling della cpu",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scheduling solaris e multics",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fork vs clone linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spiegazione permesso minimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sistema permessi solaris e multics",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo banchiere",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "System Call? che interfaccia è?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "memoria condivisa scambio di messaggi (comunicazione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "diagramma di stato dei processi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "diagramma di stato dei processi > perché si passa da waiting a pronto?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "diagramma di stato dei processi > tempo di attesa come si calcola?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "paginazione gerarchica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scheduling del disco",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "mutua esclusione: gestione e soluzioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmi scheduling cpu Linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmi scheduling cpu",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmi scheduling cpu > come si ottimizza il tempo di attesa?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmi scheduling cpu > come si calcola la stima?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si muovono i processi su windows?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sostituzione pagine LRU",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lettori scrittori con semafori come si muovono?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "round robin",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fat e come viene conservata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "starvation e sua soluzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "monitor residente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "I/O sincrono e asincrono",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzionamento dual mode",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "funzionamento dual mode > come gestisce la system call?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dispatcher",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "privilegio minimo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scheduler",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "domini in multics",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grafo di stato dei processi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "semafori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "process Control Block",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "File Control Block",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Gestione di un caso semplice di deadlock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "risoluzione di deadlock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stato sicuro di un sistema",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo di Lamport",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "matrice di accesso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmi di scheduling",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "allocazione contigua e indicizzata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Macchine virtuali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scheduler a lungo termine e breve termine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "segmentazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "matrice d'accesso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cpu burst",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "anomalia di belady",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "paginazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tabelle delle pagine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tabelle delle pagine > anche invertita",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scheduling di windows",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "system call e passaggio dei loro parametri",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modalità kernel e modalità utente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fat",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ottimizzazione scheduling cpu",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scheduling in windows unix e solaris",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "swap in generale e unix",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stato sicuro",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo del fornaio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esempi di scheduling con prelazione e senza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quale dispositivo hardware segnala che non esiste memoria ram allocata a una pagina virtual MMU",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tabella pagina invertite e come funziona in quel caso l'indirizzamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo di peterson per la sezione critica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dischi raid e spiegazione di tutti i livelli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo seconda chance",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stati dei processi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "interrupt",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "thread e processi differenze e kernel e user thread",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Memoria virtuale e paginazione degenere",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "File System in generale e Linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Priorità in generale e in linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "stati in cui può trovarsi un processo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando un processo può passare da un running a ready ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è la prelazione e dove si può usare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quale scheduling usa il quanto di tempo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "parlare della directory e delle loro strutture ( livello singolo doppio albero e grafo )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "File System",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Se collego una tastiera nuova ad un pc vecchio come fa a riconoscerlo (sottosistema di IO )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ready queue e code multiple",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "paginazione su richiesta come avviene",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sistemi real-time in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "scheduling EDF dei sistemi realtime",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Disegno dell'architettura della paginazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra frammentazione interna e esterna",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "che tipo di frammentazione può verificarsi con la segmentazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "indicizzazione dei file",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si stila la lunghezza del prossimo CPU burst nell'algoritmo di scheduling SJF",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra scheduler a lungo termine e breve termine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "allocazione indicizzata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "paginazione a due livelli e clone in linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Context switch",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Context switch > come funziona su linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "DEADLOCK",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "paginazione su richiesta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "caratteristiche di ottimizzazione dello scheduling",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "clone unix",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "fork linux",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "protezione in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "protezione di IO",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SystemCall e passaggio dei parametri",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Lettori scrittori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "File System: allocazione concatenata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Struttura Raid e bit di parità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sistem Call",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "frammentazione della memoria e metodi per evitarla",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "kernel modulare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "micro kernel",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "produttore-consumatore in java",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizi sulla precedenza dei processi con i semafori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come Linux implementasse non ricordo che, forse la gestione dei processi, e sicuramente come vengono gestite le priorità tra processi real time e no, non ricordo dove xD",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Standard POSIX",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Test&Set",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Legge di Amdahl",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Inventare grafo con deadlock che si risolve",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tabella delle pagine implementata con gli hash (+ disegno dello schema)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Confronto segmentazione / paginazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Schema della memoria virtuale in IA-32",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo della seconda chance (versione con 2 bit)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "raid 10 e 01",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ssd",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "disegnare le varie implementazioni della tabella delle pagine (hash, normale e invertita)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esempio grafo assegnazione risorse dove c'è un ciclo ma non c'è deadlock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "argomento a piacere",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "le varie generazioni dei sistemi operativi (primo ppt)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "anomalia di belady cos'è",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lettori e scrittori in lock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "implementare esercizio produttori e consumatori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lettori-scrittori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "diagramma dei thread di java",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio ABABBABBBABBBBA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio sui semafori con sequenza A e B",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "legge di Moore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Stampare tramite thread la stringa ABBA (esercizi sulle slide )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema Produttore -Consumatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "5 filosofi con semafori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "5 filosofi con lock and condition",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "a partire da un esercizio svolto: cosa succede alla politica di Hansen e cosa con la politica di Hoare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "implementazione dei lock a lettore/consumatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodi prendiBacchette e rilasciaBacchette dei 5 filosofi con lock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si fa una wait a basso livello",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "monitor di hansen e hoare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dati tre thread a b e c fermi su delle istruzioni dire comportamento secondo Hansen, Hoare e in java",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa fa la yield e perché non va usata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa fa la set priority e perché non va usata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "legge di Amdhal",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Barbiere addormentato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa succede quando si chiama un await",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa succede quando si chiama una signal",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come garantire ordine FIFO nei thread",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spiegazione del problema dei lettori-scrittori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodi synchronized teoria e produttore-consumatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "modifica di una lista in parallelo problemi e ConcurrentModificationExcption",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Produttore-Consumatore usando una lista (con lock )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Interleaving (con esempio)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa succede a basso livello quando si incrementa una variabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "diagramma di stato nei thread di java",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Due Thread tipo A e tipo B che stampano AB AAB AAAB AAAAB",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "race condition",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problemi interleaving",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "collezioni non sincronizzate",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio sui semafori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos’è il Compare and Swap e dove l’abbiamo visto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Monitor nativi in java",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio lettori e scrittori con i monitor nativi e ordine di risveglio FIFO",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Politiche di risveglio Hansen&Hoare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "struttura logica dei semafori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "thread demone",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "deadlock > tra 2 semafori con pseudocodice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Codice Produttore-Consumatore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Codice Sequenza AAB",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza Monitor Hansen e Monitor Hoare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza Monitor Espliciti e Monitor Impliciti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Ciclo di vita di un Thread Java",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa fa la signalAll e a cosa viene usata negli esercizi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio lettori scrittori usando lock e condition",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "compare and swap (cas) cos'è",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza monitor di hansen e di hoare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quali sono le 3 caratteristiche che rendono i monitor di hansen in java simili a quelli di hoare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa sono concorrenza e parallelismo e cosa implica cosa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "thread-safety cos'è",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la yield() cosa fa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "not runnable quali stati comprende",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando si va in blocked",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "collezioni sincronizzate e concorrenti (anche col codice e come vanno inizializzate)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra hashmap concorrente e sincronizzata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cosa vuol dire rientrante per i lucchetti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "monitor nativi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "grafo allocazione delle risorse e condizioni affinché ci sia deadlock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "implementare una sequenza simile a quelle viste a lezione (abc abbc abbbc ...)con i semafori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "implementare una soluzione al problema dei 5 filosofi che non ammetta starvation (è ammesso im deadlock )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "implementare una soluzione ai 5 filosofi senza deadlock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "problema dei lettori e scrittori implementazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "blocchi e metodi sincronizzati differenze e cosa sono",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "race condition,interleaving , tipi atomici e sezione critica come accederci",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "lamport , dijkstra e peterson",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come funziona la fairness dei semafori e dei lock",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "contrario di fairness? (barging)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché non basta la fairness dei lock e dobbiamo usare anche le linkedlist",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "legge di Amdahl e considerazioni casi limite",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra processo e thread",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "code associate ai monitor come funzionano? (diff hansen e hoare)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

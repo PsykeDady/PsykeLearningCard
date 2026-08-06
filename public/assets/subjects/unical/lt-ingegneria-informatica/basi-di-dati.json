@@ -1,0 +1,472 @@
+[
+  {
+    "q": "schedule serializzabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "protocollo 2pl",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "condizione di recuperabilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "strong e strong strict 2pl",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esempio di schedule serializzabile ma non view",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Schedule serializzabile ma non view serializable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di schedule serializzabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di schedule seriale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "recuperabilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione formale di dipendenza funzionale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hashing lineare dinamico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "serializzabilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esempio di schedule view-serializable ma non conflict-serializable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esempio di schedule serializable ma non view-serializable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando uno schedule è serializzabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione two face looking implica conflict serializable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Scrivere schedule non view serializable ma serializzabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Scrivere schedule non conflict serializable ma view serializable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Se il two face looking garantisce la cascadeless e la recuperabilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché non implica la cascadeless e la recuperabilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come garantire la cascadeless e la recuperabilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è una phantom read",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Si possono leggere meno dati in una phantom read?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa significa che due schedule sono equivalent",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è la strong 2pl",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è la strong strict 2pl",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parlare della 2pl",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Phantom read, quando uno schedule è serializzabile ed 2pl che proprietà garantisce e perché",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché non viene garantita in 2pl la cascadeless",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "condizione per essere serializzabile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schedule cascadeless e recoverable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chiede due domande tra le tre essenziali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chiede due domande tra le tre essenziali > dipendenza funzionale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chiede due domande tra le tre essenziali > chiave primaria",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chiede due domande tra le tre essenziali > chiave candidata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra bree e bplus tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando due schedule sono serializzabili",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando due transizioni sono in conflitto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Filippo Furfaro",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "agglomerazione primaria",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schedule seriale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Phantom read",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione 2pl implica conflict equivalence",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di dipendenza funzionale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hashing estendibile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "schedule con proprietà recoverable e cascadeless",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tecnica di hashing statico e indirizzamento aperto",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esempio di schedule view serializzable ma non conflict serializzable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esempio schedule view serializzable ma non conflict serializzable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "2PL cosa implica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cascadeless con esempio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hashing lineare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "livelli di isolamento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di Schedule Serializzable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esempio di schedule non vs ma serializzable",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione 2PL => CS",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "read commited",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Chiave esterna, definizione formale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodi di Hashing lineare ( indicizzazione su Disco )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Hashing estendibile ( indicizzazione su Disco )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di chiave primaria",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra btree e b+tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "metodo di inserimento nel btree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "btree e b+tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "btree e b+tree > differenze",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "btree e b+tree > dove sono i puntatori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "btree e b+tree > dov'è il contenuto informativo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "chiave esterna",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "B-tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "procedura inserimento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come è formato un nodo all'interno del b-tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Procedura di inserimento in un B-Tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "btree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione chiave esterna",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizioni di chiave esterna, chiave candidata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "inserimento/rimozione nel btree con esempio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hashing virtuale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra hashing e btree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di chiave candidata",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Parlare dell'hashing estendibile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "B-tree plus",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché si usa il B-tree plus",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Problema dell'agglomerazione primaria",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona la rimozione nel b-tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra hashing e b-tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Hashing dinamico lineare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Una delle tre definizioni formali tra chiave candidata, chiave esterna e schedule serializzabile ( Se capitate con nardiello imparare l'esatte parole del libro formali o vi boccia anche se sapete il concetto )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rimozione di una chiave in un b-tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Struttura di un nodo di un b-tree",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra hashing statico e dinamico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "hashing virtuale > definizione e rappresentazione grafica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "una delle tre definizioni formali chiave, chiave esterna, dipendenza funzionale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra hashing statico e dinamico ed in particolare hashing estendibile",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "B-tree e inserimento di un elemento con nodo foglia pieno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

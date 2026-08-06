@@ -1,0 +1,177 @@
+[
+  {
+    "q": "community classification con gcn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "community detection avendo feature dei nodi estratte da una gcn come e cosa modifichiamo delle tecniche che conosciamo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quanti tipi di bridge ho? come li uso per la community detection?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "topological overlap?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "in un social media come prestigio uso piu katz o pagerank?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "facebook vuole favorire o sfavorire le eco chambers?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "facebook quindi usa una eco chambers o meno?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "louvain e leiden formule",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "small world, quella creazione degli archi con probab p indipendente tra loro, cosa ricorda? (configuration model)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "louvain + complessità + formula scritta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "leiden differenza con louvain",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come affronteresti un problema di polarizzazione a due vie? Voglio che mi formalizzi la funzione obiettivo.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "small-word model + formule + differenza con gli altri modelli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come facciamo a stabilire come approssimare l'average path length? (test di smirnovn, quella della goodness of fit.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come ci mettiamo nel range di valori, tra il grafo regolare e il random graf? (intervallo 1-10%)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "infomap + formule (tutte) (tira fuori più community louvain o infomap?)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come possiamo usare i kg per condizionare quello che è un llm?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tim (algoritmo sketch based)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Modularità, Louvain con formule",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Infomap con formule",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Katz centrality",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Perché la soluzione di bonacich e loyd differisce da quella di katz di una costante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SimRank",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "SimRank > qual è la sua ratio, ossia perché ci piace fare la media dei simRank dei vicini e che legame c’è con la katz centrality",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "simPath",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa introduce il Page Rank rispetto alla Katz Centrality",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "concentrarsi molto sul significato delle formule e anche sulla memorizzazione della formula stessa (di qualsiasi difficoltà)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "RIS di influence maximization",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodo Montecarlo per l'influence maximization",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "CNM community detection",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza tra small world e scale free",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmo di Louvian",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodi Girvan Newman",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Small world e come si comporta il modello al variare del parametro beta",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Preferential Attachment model",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

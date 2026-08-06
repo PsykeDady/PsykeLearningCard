@@ -1,0 +1,197 @@
+[
+  {
+    "q": "ricerca binaria in maniera ricorsiva",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "creare una funzione ricorsiva che, dati due numeri, restituisce la moltiplicazione di tutti i numeri compresi (estremi inclusi)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "somma della diagonale principale di una matrice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Record d'attivazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Costo computazionale (O Grande, theta, Omega)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Algoritmi di ordinamento in dettaglio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ricerca binaria",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "saper svolgere esercizi tipo esame",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "mostrare homework ( se non fuziona la versione inviata )",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrare merge sort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Fondamenti informatica con Scarcello",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "HashMap",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Hashcode",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Record di ativazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità spaziale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmi di ordinamento e complessità relative",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità temporale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "compilatore (Cos'è)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenze tra java e python",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "definizione di O(n)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità asintotica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Bubble sort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio compito modificato",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio con matrici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra aliasing, shallow copy e deep copy (esempio e spiegazione)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra passaggio di parametro per valore e per riferimento",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio ricorsivo: trovare il minore di una LinkedList di interi.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità computazionale di merge sort e quick sort e spiegarne il motivo.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio ricorsivo: verificare se una LinkedList di interi è simmetrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità computazionale del quick sort e spiegarne il motivo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra statico e dinamico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "complessità computazionale del merge sort e spiegarne il motivo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio ricorsivo: date 2 linkedlist l1, l2. Creare una linkedlist che contiene tutti gli elementi tali che l1[i] != l2[i]. in tal caso aggiungere alla linkedlist prima l1[i] e poi l2[i]. se le due linkedlist list hanno diversa dimensione, allorché si giunge alla fine di quella più piccola, aggiungere alla linkedlist da restituire gli elementi rimanenti di quella più grande",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio ricorsivo: trovare la somma degli elementi in posizione pari che si anche trovano nella posizione simmetrica di un’altra lista",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio ricorsivo: unire due linkedlist",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "costo merge sort",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "la differenza tra shallow copy e in depth copycon esempi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "gli algoritmi di ordinamento fatti a lezione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "un esercizio solitamente ricorsivo con gli iteratori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

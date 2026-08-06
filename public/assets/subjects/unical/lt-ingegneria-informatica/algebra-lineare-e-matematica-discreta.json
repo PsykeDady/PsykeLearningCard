@@ -1,0 +1,622 @@
+[
+  {
+    "q": "base",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "ker",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "vettore nullo fa parte della base?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dipendenza e indipendenza lineare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizio su determinante di una matrice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione delle leggi di demorgan (insiemi)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione di tangente",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principio di skolemizzazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "principio di generalizzazione universale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "proprietà logaritmi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "append in prolog",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "MCD in prolog",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Valore assoluto in prolog",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Lenght in prolog",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "member in prolog",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione del teorema della dimensione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "combinazioni semplici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "checosa sono i sistemi lineari a scala e come vengono trattati ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "che cosa succede quando il numero di colonne è superiore al numero di righe in una matrice a scala ? ( anche dal punto di vista algoritmico)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono i numeri primi?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Idea dell'algoritmo di euclide",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa è il principio di induzione ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Calcolo combinatorio in generale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Disposizioni con ripetizione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una base di uno spazio vettoriale?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si può costruire una base per uno spazio vettoriale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Se abbiamo i vettori e vogliamo completare la base?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Se abbiamo i vettori e vogliamo completare la base? > anche processo inverso",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Variabili libere e variabili dipendenti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono i generatori?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Combinazione lineare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Metodi di dimostrazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Leggi di De Morgan",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono i diagrammi di Venn",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Disegni un insieme B tale che l'intersezione non sia vuota",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Disegni il complementare all'unione di due insiemi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono autovalori autovettori ed endomorfismo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Molteplicità algebriche e geometriche di un autovalore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono le combinazioni semplici ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di Rouché-Capelli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa è e come si calcola il determinante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Proprieta determinante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Regola del prodotto o della somma del calcolo combinatorio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Spazi lineari dei polinomi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenze tra combinazioni con e senza ripetizioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa e uno spazio vettoriale?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Elementi pivotali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "legame elementi di pivot e determinati",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Base di uno spazio di polinomi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Una base infinita",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In che modo e legato il calcolo combinatorio al calcolo del determinante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema degli orlati",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Matrice quadrata invertibile e trovare la sua inversa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Numero di combinazioni semplici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "In che modo avendo dei vettori si puà trovare uno",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spazio generato da questi vettori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa e la dimensione ?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Regola di laplace",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sviluppo rispetto alle righe?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come possiamo trovare una base generata da vettori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "sapendo che la base è un sottoinsieme di questi vettori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come possiamo trovare una base generata da vettori sapendo che la base è un sottoinsieme di dati vettori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come possiamo trovare una base generata da vettori sapendo che la base è un sottoinsieme di dati vettori > oppure che non è un sottoinsieme di dati vettori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Eliminazione Gauss",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Complementi algebrici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimostrazione per contrapposizione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "che cosa sono gli spazi euclidei",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che funzione deve essere definita su spazi euclidei?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si può affermare un'affermazione universale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Applicazioni lineari",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Differenza metodo, contrapposizione e assurdo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Assiomi di piano",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché la radice di 2 non è razionale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema dimensioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa è il ker",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "iniettività, suriettività e biiettività",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Rango di una matrice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "basi, applicazioni e spazi vettoriali",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizi di calcolo combinatorio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "esercizi di insiemistica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazioni per assurdo e/o contrapposizione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "dimostrazione del teorema delle dimensioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sottospazio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spazio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "immagine e nucleo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "correlazione rango e determinante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come si trova il determinante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come trovare il determinante usando laplace",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "data una matrice dire se possibile trovare il determinante senza usare una formula come laplace o sarrus",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione spazio e sottospazio vettoriale.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando una matrice si dice invertibile.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Calcolare l'inversa di una matrice.",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esercizio con autovalori e autovettori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Teorema di Rouche Capelli",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos’è la matrice inversa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Condizioni di invertibilità di una matrice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos’è il rango",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos’è il determinante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come varia la matrice se il determinante è uguale a 0",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos’è uno spazio vettoriale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos’è il nucleo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos’è l’immagine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos’è la controimmagine",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di indipendenza lineare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come calcolare una combinazione lineare di un vettore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos’è una matrice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Condizioni per effettuare operazioni di somma e prodotto fra matrici",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come si calcola il determinante con Gauss",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Tenere conto degli scambi di righe effettuati al fine di sapere il segno del determinante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cosa sono autovalori e autovettori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Matrice diagonale e diagonalizzante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Dimensione base",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Quando facciamo C^-1 per un vettore cosa otteniamo?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "L'insieme delle parti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Lo spazio generato da una serie di vettori",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Combinazioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Cos'è il nucleo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Coefficiente di combinazione di un vettore in un sottospazio vettoriale",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Come è legato il determinante ad una matrice a scala",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Significato geometrico del determinante",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Immagine e controimmagine cos'è e come si esprime (formula)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Definizione di autovalore",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Polinomio caratteristico",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "La matrice inversa",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

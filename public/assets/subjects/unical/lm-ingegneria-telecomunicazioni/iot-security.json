@@ -1,0 +1,232 @@
+[
+  {
+    "q": "a che livelli possiamo fare un attacco e quali sono i costi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quali sono gli attacchi a livello software",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "perché è meglio usare protocolli standard rispetto quelli custom",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "parlare della crittografia a curve ellittiche",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza curve ellittiche e aes",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "algoritmo di hellman",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "block chain e iot come si possono collegare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "possono i dispositivi iot tenere la history della block chain",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra crittografia simmetrica e asimmetrica",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "che cosa ci dice che la crittografia asimmetrica è sicura",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Diffie-Hellman e algoritmi di crittografia",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "tipi di attacchi fisici sulle board e sui chip",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra des, 2des, 3des",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra RSA e ElGamal",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra algoritmi simmetrici e asimmetrici per la crittografia",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "spiega i tipi di attacco (chip level, board level, software level)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Blockchain",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "crittografia asimmetrica usata in iot",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "parlare di jtag come funziona quali sono i pin e a cosa serve",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come vengono collegati i chip spi e le due configurazioni",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come faccio a sapere quando arrivano i dati allo slave in una configurazione daisy chain",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "binari linkati dinamicamente e staticamente come vengono emulati differentemente con qemu",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quali sono le soluzioni che posso essere implementate quando vogliamo analizzare un dispositivo e ha un addon che non possiamo emulare",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "port scanning e vari metodi di farlo e come identifichiamo i servizi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come capiamo le porte aperte con UDP",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra binari linkati dinamicamente e staticamente, e perché ci interessano quando emuliamo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando emuliamo un firmware e ci sono vari sistemi hardware collegati, come emuliamo il firmware in full system mode?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quando emuliamo un firmware e ci sono vari sistemi hardware collegati, come emuliamo il firmware in full system mode? > quali sono le opzioni per emulare senza avere tutto l'hardware?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "arp spoofing e come fai a leggere i pacchetti? (perché il tuo PC li droppa e quindi devi metterti in modalità promiscua)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come riconosci un EPROM, quali sono i pin di un EPROM SPI",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "a cosa serve il marcatore sui chip integrati",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come collegarsi agli spi, mqtt è un protocollo affidabile?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cross compilation cos'è, che cos'è una sessione nel protocollo mqtt",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza durable session e non durable session in mqtt",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "a che serve firmadyne",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "come riconosciamo una uart",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "qemu e le sue modalità (QEMU User Mode Emulation e QEMU System Mode Emulation)",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "quale modalità di qemu usa firmadyne",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è quemu e quali sono i suoi modi di esecuzione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è il protocollo mqtt e i modi in cui garantisce il messaggio",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Uart come identifichi i pin e perché è importante come protocollo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "cos'è un firmware e quali sono le sue parti",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "se ho un firmware e ha un binario, come capisco la sua architettura?",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "protocollo spi",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "differenza tra spi flash ed EPROM",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "protocollo mqtt e cos'è il retain nel protocollo",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]

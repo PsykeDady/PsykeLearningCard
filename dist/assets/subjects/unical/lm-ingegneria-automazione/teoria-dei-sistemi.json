@@ -1,0 +1,62 @@
+[
+  {
+    "q": "Linearizzazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Taratura modelli ARMA",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Analisi in frequenza",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Risposta Libera",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Esponenziale di matrice",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Sylvester",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Raggiungibilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Osservabilità",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Partizione alla Kalman",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "Trasferimento Energia minima",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "retroazione",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  },
+  {
+    "q": "retroazione dead beat",
+    "a": "Risposta non disponibile",
+    "t": "QA"
+  }
+]
