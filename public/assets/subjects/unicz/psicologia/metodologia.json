@@ -154,7 +154,7 @@
 	},
 	{
 		"q": "Un approccio multimetodo alla ricerca sui fenomeni psicologici suppone che un particolare metodo o strumento di misura del comportamento siano incompleti",
-		"a": "Falso",
+		"a": "Vero",
 		"t": "QA"
 	},
 	{
@@ -259,11 +259,11 @@
 	},
 	{
 		"q": "L’attendibilità della misurazione si riferisce alla coerenza, la validità della misurazione si riferisce alla veridicità.",
-		"a": "Falso",
+		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "Nella scienza l’ingrediente essenziale è;",
+		"q": "Nella scienza l’ingrediente essenziale è",
 		"a": "Il controllo",
 		"t": "QA"
 	},
@@ -318,7 +318,7 @@
 		"t": "QA"
 	},
 	{
-		"q": "“Più una persona è estroversa, più è portata a praticare sport di squadra”. Questa affermazione definisce che;",
+		"q": "“Più una persona è estroversa, più è portata a praticare sport di squadra”. Questa affermazione definisce che",
 		"a": "Le due variabili sono tra loro associate",
 		"t": "QA"
 	},
@@ -338,7 +338,7 @@
 		"t": "QA"
 	},
 	{
-		"q": "La definizione operativa di un costrutto è;",
+		"q": "La definizione operativa di un costrutto è",
 		"a": "una procedura specifica per far emergere o per misurare il costrutto",
 		"t": "QA"
 	},
@@ -368,7 +368,7 @@
 		"t": "QA"
 	},
 	{
-		"q": "Quando i ricercatori riportano i loro risultati descrivono;",
+		"q": "Quando i ricercatori riportano i loro risultati descrivono",
 		"a": "solo quello che hanno osservato.",
 		"t": "QA"
 	},
@@ -393,292 +393,262 @@
 		"t": "QA"
 	},
 	{
-		"q": "La ricerca che ha come obiettivo il cambiamento del comportamento delle persone nella vita quotidiana è:;",
+		"q": "La ricerca che ha come obiettivo il cambiamento del comportamento delle persone nella vita quotidiana è:",
 		"a": "applicata",
 		"t": "QA"
 	},
 	{
-		"q": "La validità predittiva e la validità concorrente sono entrambe;",
+		"q": "La validità predittiva e la validità concorrente sono entrambe",
 		"a": "validità legate a un criterio",
 		"t": "QA"
 	},
 	{
-		"q": "La checklist misura le opinioni delle persone;",
+		"q": "La checklist misura le opinioni delle persone",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "Da un punto di vista statistico, quali tra le seguenti operazioni è possibile compiere su una scala nominale?;",
+		"q": "Da un punto di vista statistico, quali tra le seguenti operazioni è possibile compiere su una scala nominale?",
 		"a": "conteggio delle frequenze dei soggetti in ciascuna classe",
 		"t": "QA"
 	},
 	{
-		"q": "Secondo la teoria dell’errore casuale il punteggio osservato indica;",
+		"q": "Secondo la teoria dell’errore casuale il punteggio osservato indica",
 		"a": "La somma del punteggio vero e dell’errore",
 		"t": "QA"
 	},
 	{
-		"q": "Il termine operazionalizzazione deriva da;",
+		"q": "Il termine operazionalizzazione deriva da",
 		"a": "l’operazionismo, teoria che afferma che il significato di un concetto è dato dall’insieme di operazioni e processi mediante i quali esso è applicato alla realtà",
 		"t": "QA"
 	},
 	{
-		"q": "La variabile “voto all’esame” può essere trasformata in una variabile nominale con tre categorie?;",
-		"a": "No, se una variabile è espressa in numeri non può essere modificata",
+		"q": "La variabile “voto all’esame” può essere trasformata in una variabile nominale con tre categorie?",
+		"a": "Sì: una variabile può sempre essere ricondotta a un livello di misura più basso (per esempio insufficiente / sufficiente / ottimo)",
 		"t": "QA"
 	},
 	{
-		"q": "L’attendibilità non può essere stabilita sulla base di indici statistici.;",
+		"q": "L’attendibilità non può essere stabilita sulla base di indici statistici.",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "Un ricercatore vuole indagare i nuovi stili comunicativi tra colleghi di lavoro. Per fare questo, dopo aver ottenuto il consenso informato da ciascun partecipante, analizza le chat che un gruppo di 8 colleghi si scambia nel corso della giornata. Il numero di volte in cui compare un “emoticon” :-) è una variabile;",
+		"q": "Un ricercatore vuole indagare i nuovi stili comunicativi tra colleghi di lavoro. Per fare questo, dopo aver ottenuto il consenso informato da ciascun partecipante, analizza le chat che un gruppo di 8 colleghi si scambia nel corso della giornata. Il numero di volte in cui compare un “emoticon” :-) è una variabile",
 		"a": "a rapporti equivalenti",
 		"t": "QA"
 	},
 	{
-		"q": "Se lo strumento è costruito bene, l’errore sistematico sarà pari a 0.;",
+		"q": "Se lo strumento è costruito bene, l’errore sistematico sarà pari a 0.",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "Il terzo parametro che caratterizza la domanda/item nella teoria dei tratti latenti e che ci dice la probabilità di risposta corretta quando si risponde a caso alla domanda è detto;",
+		"q": "Il terzo parametro che caratterizza la domanda/item nella teoria dei tratti latenti e che ci dice la probabilità di risposta corretta quando si risponde a caso alla domanda è detto",
 		"a": "GUESSING",
 		"t": "QA"
 	},
 	{
-		"q": "I punteggi ottenuti da due questionari che misurano costrutti diversi dovrebbero mostrare una bassa correlazione.;",
+		"q": "I punteggi ottenuti da due questionari che misurano costrutti diversi dovrebbero mostrare una bassa correlazione.",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "Quando le variabili sono manifestazioni di un costrutto vengono chiamate;",
+		"q": "Quando le variabili sono manifestazioni di un costrutto vengono chiamate",
 		"a": "indicatori riflettivi",
 		"t": "QA"
 	},
 	{
-		"q": "Chi ha proposto i quattro livelli di misurazione, detti anche scale di misura?;",
+		"q": "Chi ha proposto i quattro livelli di misurazione, detti anche scale di misura?",
 		"a": "Stevens",
 		"t": "QA"
 	},
 	{
-		"q": "Operazionalizzare un costrutto significa individuare gli indicatori osservabili che lo possono misurare.;",
+		"q": "Operazionalizzare un costrutto significa individuare gli indicatori osservabili che lo possono misurare.",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "In generale, l’attendibilità di un test accresce all’aumentare del numero di item che lo compongono.;",
+		"q": "In generale, l’attendibilità di un test accresce all’aumentare del numero di item che lo compongono.",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "L’attendibilità è;",
+		"q": "L’attendibilità è",
 		"a": "la coerenza tra misurazioni indipendenti dello stesso costrutto",
 		"t": "QA"
 	},
 	{
-		"q": "La teoria classica dell’errore è detta anche;",
+		"q": "La teoria classica dell’errore è detta anche",
 		"a": "teoria classica dei test",
 		"t": "QA"
 	},
 	{
-		"q": "La variabile “voto all’esame” può essere trasformata in una variabile nominale con tre categorie?;",
-		"a": "Si",
-		"t": "QA"
-	},
-	{
-		"q": "Nella formula della k di Cohen, al numeratore si sottrae la proporzione di accordo osservato alla popolazione di accordo atteso, mentre al denominatore la proporzione di accordo atteso viene sottratta al valore 1.;",
+		"q": "Nella formula della k di Cohen, al numeratore si sottrae la proporzione di accordo osservato alla popolazione di accordo atteso, mentre al denominatore la proporzione di accordo atteso viene sottratta al valore 1.",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "L’errore standard di misurazione viene calcolato facendo la somma della varianza d’errore di misurazione;",
+		"q": "L’errore standard di misurazione viene calcolato facendo la somma della varianza d’errore di misurazione",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "Lo standard aritmetico delle operazioni di addizione, moltiplicazione, sottrazione e divisione può essere eseguito su dati misurati almeno su una scala;",
+		"q": "Lo standard aritmetico delle operazioni di addizione, moltiplicazione, sottrazione e divisione può essere eseguito su dati misurati almeno su una scala",
 		"a": "a intervalli equivalenti",
 		"t": "QA"
 	},
 	{
-		"q": "Una variabile a un livello di misura più basso può essere trasformata in una variabile a un livello di misura più alto;",
+		"q": "Una variabile a un livello di misura più basso può essere trasformata in una variabile a un livello di misura più alto",
 		"a": "MAI",
 		"t": "QA"
 	},
 	{
-		"q": "Per valutare la precisione e l’accuratezza di una misura occorre essere in grado di rilevare la distanza tra le frecce che colpiscono un bersaglio;",
+		"q": "Per valutare la precisione e l’accuratezza di una misura occorre essere in grado di rilevare la distanza tra le frecce che colpiscono un bersaglio",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "La validità di facciata non è una validità di costrutto effettiva;",
+		"q": "La validità di facciata non è una validità di costrutto effettiva",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "Per errore sistematico di misurazione s’intende;",
+		"q": "Per errore sistematico di misurazione s’intende",
 		"a": "un errore che influenza sistematicamente tutti i dati raccolti",
 		"t": "QA"
 	},
 	{
-		"q": "In una staffetta 4X100, il tempo impiegato da ogni squadra è una variabile misurabile attraverso una scala;",
+		"q": "In una staffetta 4X100, il tempo impiegato da ogni squadra è una variabile misurabile attraverso una scala",
 		"a": "a rapporti equivalenti",
 		"t": "QA"
 	},
 	{
-		"q": "La precisione di una misura si riferisce a;",
-		"a": "la corrispondenza tra il costrutto e la realtà",
+		"q": "La precisione di una misura si riferisce a",
+		"a": "quanto sono vicine tra loro misurazioni ripetute dello stesso oggetto, cioè al grado di dispersione della misura (l'accuratezza riguarda invece la corrispondenza con il valore vero)",
 		"t": "QA"
 	},
 	{
-		"q": "La scala a intervalli equivalenti e la scala a rapporti equivalenti sono entrambe quantitative;",
+		"q": "La scala a intervalli equivalenti e la scala a rapporti equivalenti sono entrambe quantitative",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "Un nuovo questionario sull’autostima mostrava un’alta correlazione con una misura ben consolidata sull’autostima e una bassa correlazione con una misura sulla desiderabilità sociale. Basandosi su questo aspetto possiamo dire che la nuova misura sull’autostima dimostra una buona;",
-		"a": "ognuna delle risposte precedenti",
+		"q": "Un nuovo questionario sull’autostima mostrava un’alta correlazione con una misura ben consolidata sull’autostima e una bassa correlazione con una misura sulla desiderabilità sociale. Basandosi su questo aspetto possiamo dire che la nuova misura sull’autostima dimostra una buona",
+		"a": "validità di costrutto: l'alta correlazione con una misura consolidata dello stesso costrutto è validità convergente, la bassa correlazione con la desiderabilità sociale è validità discriminante",
 		"t": "QA"
 	},
 	{
-		"q": "Un valore di alpha minore di .90 è cosiderato ottimo;",
+		"q": "Un valore di alpha minore di .90 è considerato ottimo",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "L’errore _______ influenza l’accuratezza della misura;",
+		"q": "L’errore _______ influenza l’accuratezza della misura",
 		"a": "SISTEMATICO",
 		"t": "QA"
 	},
 	{
-		"q": "Il livello più basso di misurazione è la scala nominale;",
+		"q": "Il livello più basso di misurazione è la scala nominale",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "L’errore ______ varia in ogni misura;",
+		"q": "L’errore ______ varia in ogni misura",
 		"a": "CASUALE",
 		"t": "QA"
 	},
 	{
-		"q": "La validità di contenuto può essere valutata attraverso;",
-		"a": "la valutazione di giudici indipendenti esperti;",
+		"q": "La validità di contenuto può essere valutata attraverso",
+		"a": "la valutazione di giudici indipendenti esperti",
 		"t": "QA"
 	},
 	{
-		"q": "Un’elevata correlazione tra due misure di due costrutti diversi è indice di un’alta validità convergente;",
+		"q": "Un’elevata correlazione tra due misure di due costrutti diversi è indice di un’alta validità convergente",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "Secondo la teoria dei tratti latenti, la probabilità di rispondere correttamente a una domanda è data dall’abilità della persona e dalle caratteristiche della domanda stessa;",
+		"q": "Secondo la teoria dei tratti latenti, la probabilità di rispondere correttamente a una domanda è data dall’abilità della persona e dalle caratteristiche della domanda stessa",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "Gli studiosi non sono concordi sulle statistiche da utilizzare per misurare la validità di costrutto;",
+		"q": "Gli studiosi non sono concordi sulle statistiche da utilizzare per misurare la validità di costrutto",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "Per errore casuale di misurazione s’intende;",
+		"q": "Per errore casuale di misurazione s’intende",
 		"a": "un errore che è diverso per ogni misurazione",
 		"t": "QA"
 	},
 	{
-		"q": "Per effettuare la taratura di un test, esso va somministrato a un campione ad hoc tratto dalla popolazione;",
+		"q": "Per effettuare la taratura di un test, esso va somministrato a un campione ad hoc tratto dalla popolazione",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "Uno strumento è attendibile se;",
+		"q": "Uno strumento è attendibile se",
 		"a": "presenta una elevata coerenza interna ed è stabile nel tempo",
 		"t": "QA"
 	},
 	{
-		"q": "Le scale di misura possono essere distinte in;",
+		"q": "Le scale di misura possono essere distinte in",
 		"a": "scale nominali, scale ordinali, scale ad intervalli equivalenti e scale a rapporti equivalenti",
 		"t": "QA"
 	},
 	{
-		"q": "La matrice multi-tratto multi-metodo non dà indicazioni sulla precisione di uno strumento;",
+		"q": "La matrice multi-tratto multi-metodo non dà indicazioni sulla precisione di uno strumento",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "In una staffetta 4X100, la classifica finale delle squadre può essere espressa con una scala;",
+		"q": "In una staffetta 4X100, la classifica finale delle squadre può essere espressa con una scala",
 		"a": "Ordinale",
 		"t": "QA"
 	},
 	{
-		"q": "Una K di Cohen maggiore di .70 è considerata accettabile;",
+		"q": "Una K di Cohen maggiore di .70 è considerata accettabile",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "L’attendibilità non può essere stabilita sulla base di indici statistici;",
+		"q": "L’attendibilità non può essere stabilita sulla base di indici statistici",
 		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "In generale, l’attendibilità di un test accresce all’aumentare del numero di item che lo compongono;",
+		"q": "In generale, l’attendibilità di un test accresce all’aumentare del numero di item che lo compongono",
 		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "La teoria classica dell’errore è detta anche;",
-		"a": "teoria classica dei test",
-		"t": "QA"
-	},
-	{
-		"q": "Quando le variabili definiscono un costrutto non osservabile vengono chiamate;",
+		"q": "Quando le variabili definiscono un costrutto non osservabile vengono chiamate",
 		"a": "Indicatori formativi",
 		"t": "QA"
 	},
 	{
-		"q": "Cos’è un costrutto psicologico?;",
+		"q": "Cos’è un costrutto psicologico?",
 		"a": "Un concetto astratto non osservabile direttamente",
 		"t": "QA"
 	},
 	{
-		"q": "Una K di Cohen maggiore di .70 è considerata accettabile;",
-		"a": "Vero",
-		"t": "QA"
-	},
-	{
-		"q": "L’accuratezza si riferisce a;",
+		"q": "L’accuratezza si riferisce a",
 		"a": "la corrispondenza tra il costrutto e la realtà",
 		"t": "QA"
 	},
 	{
-		"q": "Da un punto di vista statistico, quali tra le seguenti operazioni è possibile compiere su una scala nominale?;",
-		"a": "conteggio delle frequenze dei soggetti in ciascuna classe",
-		"t": "QA"
-	},
-	{
-		"q": "Per effettuare la taratura di un test, esso va somministrato a un campione ad hoc tratto dalla popolazione;",
-		"a": "Falso",
-		"t": "QA"
-	},
-	{
-		"q": "Un’elevata correlazione tra due misure di due costrutti diversi è indice di un’alta validità convergente;",
-		"a": "Falso",
-		"t": "QA"
-	},
-	{
-		"q": "Il test- retest si riferisce a;",
+		"q": "Il test- retest si riferisce a",
 		"a": "la correlazione tra i punteggi di due somministrazioni di uno stesso strumento misura",
 		"t": "QA"
 	},
 	{
-		"q": "Cosa differenzia la scala a rapporti equivalenti dalle altre?;",
+		"q": "Cosa differenzia la scala a rapporti equivalenti dalle altre?",
 		"a": "un punto zero significativo",
 		"t": "QA"
 	},
 	{
-		"q": "L’errore standard di misurazione è;",
+		"q": "L’errore standard di misurazione è",
 		"a": "LA DEVIAZIONE STANDARD",
 		"t": "QA"
 	},
@@ -698,18 +668,18 @@
 		"t": "QA"
 	},
 	{
-		"q": "Il modulo per il consenso informato deve includere le informazioni che spiegano ai partecipanti che si possono ritirare in qualsiasi momento dalla ricerca, senza nessuna penale;",
-		"a": "true",
+		"q": "Il modulo per il consenso informato deve includere le informazioni che spiegano ai partecipanti che si possono ritirare in qualsiasi momento dalla ricerca, senza nessuna penale",
+		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "La questione primaria associata al rapporto tra costo/beneficio è:lo studio contribuirà con importanti conclusioni?;",
-		"a": "false",
+		"q": "La questione primaria associata al rapporto tra costo/beneficio è:lo studio contribuirà con importanti conclusioni?",
+		"a": "Falso",
 		"t": "QA"
 	},
 	{
-		"q": "Nelle ricerche psicologiche non è mai ammesso l’uso dell’inganno.;",
-		"a": "false",
+		"q": "Nelle ricerche psicologiche non è mai ammesso l’uso dell’inganno.",
+		"a": "Falso",
 		"t": "QA"
 	},
 	{
@@ -724,12 +694,12 @@
 	},
 	{
 		"q": "I partecipanti sono considerati “a rischio” quando i potenziali danni in un progetto di ricerca superano i danni associati alle attività quotidiane.",
-		"a": "true",
+		"a": "Vero",
 		"t": "QA"
 	},
 	{
-		"q": "La questione primaria associata al rapporto tra costo/beneficio è: lo studio contribuirà con importanti conclusioni?;",
-		"a": "false",
+		"q": "La questione primaria associata al rapporto tra costo/beneficio è: lo studio contribuirà con importanti conclusioni?",
+		"a": "Falso",
 		"t": "QA"
 	},
 	{
@@ -739,7 +709,7 @@
 	},
 	{
 		"q": "Il plagio si verifica quando gli autori non riconoscono il lavoro degli altri e non riportano adeguatamente citazioni e riferimenti.",
-		"a": "Falso",
+		"a": "Vero",
 		"t": "QA"
 	},
 	{
@@ -758,7 +728,7 @@
 		"t": "QA"
 	},
 	{
-		"q": "Gli animali possono essere feriti o uccisi nella ricerca, quando il riceratore pensa sia necessario per conseguire gli obiettivi della ricerca stessa.",
+		"q": "Gli animali possono essere feriti o uccisi nella ricerca, quando il ricercatore pensa sia necessario per conseguire gli obiettivi della ricerca stessa.",
 		"a": "Falso",
 		"t": "QA"
 	},
@@ -783,23 +753,13 @@
 		"t": "QA"
 	},
 	{
-		"q": "Una proposta di ricerca verrà approvata solo quando i benefici sono uguali ai costi.",
-		"a": "Falso",
-		"t": "QA"
-	},
-	{
 		"q": "Quando un soggetto partecipa ad una ricerca ha la possibilità di ritirarsi:",
 		"a": "in qualunque momento.",
 		"t": "QA"
 	},
 	{
-		"q": "I ricercatori devono adottare specifiche misure di tutela della sicurezza per i partecipanti umani, quando:",
-		"a": "è presente più di un rischio minimo;",
-		"t": "QA"
-	},
-	{
 		"q": "Gli standard etici del Codice etico dell’APA:",
-		"a": "sono principi etici generali che i ricercatori applicano alle loro e personali situazioni di ricerca;",
+		"a": "sono principi etici generali che i ricercatori applicano alle loro e personali situazioni di ricerca",
 		"t": "QA"
 	},
 	{
@@ -808,58 +768,13 @@
 		"t": "QA"
 	},
 	{
-		"q": "La privacy si riferisce al diritto che gli individui o i gruppi hanno di decidere come diffondere le informazioni.",
-		"a": "Falso",
-		"t": "QA"
-	},
-	{
-		"q": "La questione primaria associata al rapporto tra costo/beneficio è: lo studio contribuirà con importanti conclusioni?",
-		"a": "Falso",
-		"t": "QA"
-	},
-	{
-		"q": "La principale questione etica, associata alla ricerca on-line, è il consenso informato.",
-		"a": "Vero",
-		"t": "QA"
-	},
-	{
-		"q": "I ricercatori possono evitare ai partecipanti potenziali lesioni sociali o rischi nel loro progetto di ricerca se:",
-		"a": "tutelano la riservatezza delle risposte fornite dai partecipanti;",
-		"t": "QA"
-	},
-	{
 		"q": "Prendere una decisione etica richiede:",
-		"a": "l’identificazione degli orientamenti etici rilevanti nella situazione e l’individuazione di quale sia la “posta in gioco” per le parti coinvolte;",
+		"a": "l’identificazione degli orientamenti etici rilevanti nella situazione e l’individuazione di quale sia la “posta in gioco” per le parti coinvolte",
 		"t": "QA"
 	},
 	{
 		"q": "In generale, gli individui sono meno a rischio quando partecipano a ricerche via Internet, piuttosto che quando vi partecipano di persona.",
 		"a": "Falso",
-		"t": "QA"
-	},
-	{
-		"q": "I partecipanti sono considerati “a rischio” quando i potenziali danni in un progetto di ricerca superano i danni associati alle attività quotidiane.",
-		"a": "Vero",
-		"t": "QA"
-	},
-	{
-		"q": "Prendere una decisione etica richiede:",
-		"a": "l’identificazione degli orientamenti etici rilevanti nella situazione e l’individuazione di quale sia la “posta in gioco” per le parti coinvolte;",
-		"t": "QA"
-	},
-	{
-		"q": "Gli standard etici del Codice etico dell’APA:",
-		"a": "sono principi etici generali che i ricercatori applicano alle loro e personali situazioni di ricerca;",
-		"t": "QA"
-	},
-	{
-		"q": "Nella ricerca psicologica, quale dei seguenti aspetti non costituisce un potenziale tipo di rischio?",
-		"a": "ECONOMICO",
-		"t": "QA"
-	},
-	{
-		"q": "I ricercatori possono evitare ai partecipanti potenziali lesioni sociali o rischi nel loro progetto di ricerca se:",
-		"a": "tutelano la riservatezza delle risposte fornite dai partecipanti;",
 		"t": "QA"
 	},
 	{
@@ -884,12 +799,12 @@
 	},
 	{
 		"q": "Nel processo di riduzione dei dati, quali delle seguenti procedure potrebbe essere un esempio di codifica?",
-		"a": "la classificazione dei record osservati in base a criteri specifici;",
+		"a": "la classificazione dei record osservati in base a criteri specifici",
 		"t": "QA"
 	},
 	{
 		"q": "Un ricercatore ha lasciato dei piccoli pezzi di carta nei libri a disposizione dei bambini per determinare quali libri i bambini aprono e scelgono. Il ricercatore ha analizzato i pezzi di carta che sono caduti fuori dal libro, essi sono ________.",
-		"a": "gli indizi di uso controllato;",
+		"a": "gli indizi di uso controllato",
 		"t": "QA"
 	}
 ]

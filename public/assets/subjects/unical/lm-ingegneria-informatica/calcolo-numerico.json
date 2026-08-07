@@ -126,7 +126,7 @@
   },
   {
     "q": "Qual è l'errore dell'interpolazione polinomiale?",
-    "a": "Se f ha n+1 derivate, f(x)−p_n(x)=f^(n+1)(ξ)/(n+1)!\n\n∏ᵢ(x−xᵢ) per qualche ξ nell'intervallo.\n\nL'errore dipende sia dalla regolarità di f sia dalla disposizione dei nodi, non soltanto dal grado.",
+    "a": "Se f ha n+1 derivate, f(x)−p_n(x)=[f^(n+1)(ξ)/(n+1)!]·∏ᵢ(x−xᵢ) per qualche ξ nell'intervallo.\n\nL'errore dipende sia dalla regolarità di f sia dalla disposizione dei nodi, non soltanto dal grado.",
     "t": "QA"
   },
   {

@@ -111,7 +111,7 @@
   },
   {
     "q": "Che cos'è lo Shapley value?",
-    "a": "Assegna a ogni giocatore il contributo marginale medio su tutti gli ordini di ingresso: φᵢ(v)=Σ_{S⊆N\\{i}} |S|!(\n\nn−|S|−1)!\n\n/n!\n\n·[v(S∪{i})−v(S)].\n\nEsiste ed è unico rispetto agli assiomi di efficienza, simmetria, dummy e additività.",
+    "a": "Assegna a ogni giocatore il contributo marginale medio su tutti gli ordini di ingresso: φᵢ(v)=Σ_{S⊆N\\{i}} [|S|!·(n−|S|−1)!/n!]·[v(S∪{i})−v(S)].\n\nEsiste ed è unico rispetto agli assiomi di efficienza, simmetria, dummy e additività.",
     "t": "QA"
   },
   {
