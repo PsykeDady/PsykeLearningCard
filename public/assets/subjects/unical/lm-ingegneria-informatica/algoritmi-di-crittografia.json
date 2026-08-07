@@ -1,7 +1,7 @@
 [
   {
     "q": "Qual è l'obiettivo dei puzzle di Merkle e come funziona il protocollo?",
-    "a": "Permettono a due parti prive di un segreto condiviso di concordare una chiave su un canale pubblico.\n\nAlice genera molti puzzle, ciascuno cifrato con una chiave deliberatamente debole e contenente identificatore e segreto; Bob ne risolve uno e comunica l'identificatore.\n\nAlice recupera il segreto corrispondente.\n\nUn partecipante esegue circa N operazioni, mentre un intercettatore deve risolvere circa N puzzle, per un costo complessivo quadratico.",
+    "a": "Permettono a due parti prive di un segreto condiviso di concordare una chiave su un canale pubblico.\n\nAlice genera molti puzzle, ciascuno cifrato con una chiave deliberatamente debole e contenente identificatore e segreto; Bob ne risolve uno e comunica l'identificatore.\n\nAlice recupera il segreto corrispondente.\n\nUn partecipante esegue circa $N$ operazioni, mentre un intercettatore deve risolvere circa $N$ puzzle, per un costo complessivo quadratico.",
     "t": "QA"
   },
   {
@@ -11,32 +11,32 @@
   },
   {
     "q": "Come funziona 3DES in modalità EDE e come si decifra?",
-    "a": "Con tre chiavi, la cifratura è C=E_K3(D_K2(E_K1(M))); la decifratura inverte ordine e operazioni: M=D_K1(E_K2(D_K3(C))).\n\nLa variante EDE mantiene compatibilità con DES ponendo K1=K2=K3.",
+    "a": "Con tre chiavi la cifratura è $$C=E_{K_3}(D_{K_2}(E_{K_1}(M)))$$ la decifratura inverte ordine e operazioni: $$M=D_{K_1}(E_{K_2}(D_{K_3}(C)))$$\n\nLa variante EDE mantiene compatibilità con DES ponendo $K_1=K_2=K_3$.",
     "t": "QA"
   },
   {
     "q": "Perché il doppio DES non offre una sicurezza di 112 bit?",
-    "a": "L'attacco meet-in-the-middle calcola e memorizza E_K1(M) per tutte le 2^56 chiavi e cerca corrispondenze con D_K2(C).\n\nRichiede circa 2^57 operazioni e 2^56 valori di memoria; ulteriori coppie noto-chiaro/cifrato eliminano le corrispondenze spurie.",
+    "a": "L'attacco meet-in-the-middle calcola e memorizza $E_{K_1}(M)$ per tutte le $2^{56}$ chiavi e cerca corrispondenze con $D_{K_2}(C)$.\n\nRichiede circa $2^{57}$ operazioni e $2^{56}$ valori di memoria; ulteriori coppie noto-chiaro/cifrato eliminano le corrispondenze spurie.",
     "t": "QA"
   },
   {
     "q": "Perché l'attacco meet-in-the-middle elementare a 2DES non si applica direttamente a 3DES con tre chiavi?",
-    "a": "In 2DES una singola uguaglianza intermedia separa le due chiavi e consente due tabelle da 2^56.\n\nIn 3DES rimane una terza chiave ignota: fissarne una e applicare meet-in-the-middle alle altre porta a circa 2^112 lavoro, non 2^57.\n\nCiò non significa che 3DES abbia 168 bit di sicurezza: genericamente è limitato a circa 112 bit ed esistono vincoli pratici sui volumi di dati.",
+    "a": "In 2DES una singola uguaglianza intermedia separa le due chiavi e consente due tabelle da $2^{56}$.\n\nIn 3DES rimane una terza chiave ignota: fissarne una e applicare meet-in-the-middle alle altre porta a circa $2^{112}$ lavoro, non $2^{57}$.\n\nCiò non significa che 3DES abbia 168 bit di sicurezza: genericamente è limitato a circa 112 bit ed esistono vincoli pratici sui volumi di dati.",
     "t": "QA"
   },
   {
     "q": "Qual è il costo della ricerca esaustiva contro DES?",
-    "a": "DES usa chiavi effettive di 56 bit: nel caso peggiore si provano 2^56 chiavi e in media circa 2^55, con memoria costante se ogni chiave viene verificata subito.\n\nIl piccolo spazio delle chiavi rende oggi DES insicuro anche se non si sfruttano debolezze strutturali.",
+    "a": "DES usa chiavi effettive di 56 bit: nel caso peggiore si provano $2^{56}$ chiavi e in media circa $2^{55}$, con memoria costante se ogni chiave viene verificata subito.\n\nIl piccolo spazio delle chiavi rende oggi DES insicuro anche se non si sfruttano debolezze strutturali.",
     "t": "QA"
   },
   {
     "q": "Quali proprietà di sicurezza si richiedono a una funzione hash crittografica?",
-    "a": "Resistenza alla preimmagine: dato h è difficile trovare m con H(m)=h; alla seconda preimmagine: dato m è difficile trovare m'≠m con lo stesso hash; alle collisioni: è difficile trovare una qualunque coppia distinta con uguale hash.\n\nPer un digest di n bit gli attacchi generici costano circa 2^n per preimmagini e 2^(n/2) per collisioni.",
+    "a": "Resistenza alla preimmagine: dato $h$ è difficile trovare $m$ con $H(m)=h$; alla seconda preimmagine: dato $m$ è difficile trovare $m'\\ne m$ con lo stesso hash; alle collisioni: è difficile trovare una qualunque coppia distinta con uguale hash.\n\nPer un digest di $n$ bit gli attacchi generici costano circa $2^n$ per preimmagini e $2^{n/2}$ per collisioni.",
     "t": "QA"
   },
   {
     "q": "Come trova collisioni l'attacco del compleanno?",
-    "a": "Valuta l'hash su messaggi distinti e cerca due digest uguali.\n\nIn uno spazio di 2^n digest, dopo circa 2^(n/2) campioni la probabilità di collisione diventa significativa.\n\nÈ un attacco generico: non dipende dalla struttura interna della funzione.",
+    "a": "Valuta l'hash su messaggi distinti e cerca due digest uguali.\n\nIn uno spazio di $2^n$ digest, dopo circa $2^{n/2}$ campioni la probabilità di collisione diventa significativa.\n\nÈ un attacco generico: non dipende dalla struttura interna della funzione.",
     "t": "QA"
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "q": "Che significa che due distribuzioni sono computazionalmente indistinguibili?",
-    "a": "Due ensemble X e Y sono computazionalmente indistinguibili se, per ogni distinguisher probabilistico in tempo polinomiale, |Pr[D(X)=1]−Pr[D(Y)=1]| è trascurabile nel parametro di sicurezza.\n\nNon devono essere statisticamente uguali: basta che nessun algoritmo efficiente distingua i due casi con vantaggio significativo.",
+    "a": "Due ensemble $X$ e $Y$ sono computazionalmente indistinguibili se, per ogni distinguisher probabilistico in tempo polinomiale, $\\big|\\Pr[D(X)=1]-\\Pr[D(Y)=1]\\big|$ è trascurabile nel parametro di sicurezza.\n\nNon devono essere statisticamente uguali: basta che nessun algoritmo efficiente distingua i due casi con vantaggio significativo.",
     "t": "QA"
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "q": "Come si misura il vantaggio di un avversario in un esperimento di indistinguibilità?",
-    "a": "Se viene scelto un bit segreto b e l'avversario restituisce b', il vantaggio si può scrivere |Pr[b'=b]−1/2|, oppure con la convenzione equivalente |Pr[A(Exp₁)=1]−Pr[A(Exp₀)=1]|.\n\nUno schema è sicuro quando il vantaggio è trascurabile.",
+    "a": "Se viene scelto un bit segreto $b$ e l'avversario restituisce $b'$, il vantaggio si può scrivere $\\big|\\Pr[b'=b]-\\tfrac{1}{2}\\big|$, oppure con la convenzione equivalente $\\big|\\Pr[A(\\mathrm{Exp}_1)=1]-\\Pr[A(\\mathrm{Exp}_0)=1]\\big|$.\n\nUno schema è sicuro quando il vantaggio è trascurabile.",
     "t": "QA"
   },
   {
@@ -76,22 +76,22 @@
   },
   {
     "q": "Come funziona il One-Time Pad e quale sicurezza offre?",
-    "a": "Si sceglie una chiave uniforme K lunga quanto il messaggio, si cifra C=M⊕K e si decifra M=C⊕K.\n\nSe la chiave è davvero uniforme, segreta e mai riutilizzata, offre segretezza perfetta: il cifrato è compatibile con ogni messaggio della stessa lunghezza.",
+    "a": "Si sceglie una chiave uniforme $K$ lunga quanto il messaggio, si cifra $C=M\\oplus K$ e si decifra $M=C\\oplus K$.\n\nSe la chiave è davvero uniforme, segreta e mai riutilizzata, offre segretezza perfetta: il cifrato è compatibile con ogni messaggio della stessa lunghezza.",
     "t": "QA"
   },
   {
     "q": "Quali problemi pratici presenta il One-Time Pad?",
-    "a": "Richiede distribuire e conservare in modo sicuro chiavi casuali lunghe quanto tutti i messaggi e non riutilizzarle mai.\n\nRiutilizzare la chiave rivela C₁⊕C₂=M₁⊕M₂.\n\nInoltre il protocollo non fornisce autenticità: un attaccante può modificare prevedibilmente bit del testo decifrato.",
+    "a": "Richiede distribuire e conservare in modo sicuro chiavi casuali lunghe quanto tutti i messaggi e non riutilizzarle mai.\n\nRiutilizzare la chiave rivela $C_1\\oplus C_2=M_1\\oplus M_2$.\n\nInoltre il protocollo non fornisce autenticità: un attaccante può modificare prevedibilmente bit del testo decifrato.",
     "t": "QA"
   },
   {
     "q": "Come funziona lo scambio di chiavi Diffie–Hellman?",
-    "a": "In un gruppo ciclico con generatore g, Alice pubblica g^a e Bob g^b; entrambi calcolano g^(ab).\n\nUn osservatore dovrebbe risolvere il problema computazionale Diffie–Hellman per ricavare il segreto.\n\nIl protocollo base non autentica le parti ed è vulnerabile a man-in-the-middle.",
+    "a": "In un gruppo ciclico con generatore $g$, Alice pubblica $g^a$ e Bob $g^b$; entrambi calcolano $g^{ab}$.\n\nUn osservatore dovrebbe risolvere il problema computazionale Diffie–Hellman per ricavare il segreto.\n\nIl protocollo base non autentica le parti ed è vulnerabile a man-in-the-middle.",
     "t": "QA"
   },
   {
     "q": "Quali analogie e differenze ci sono tra RSA e Rabin?",
-    "a": "Entrambi operano modulo n=pq e basano la trapdoor sulla fattorizzazione.\n\nRSA eleva a un esponente e ha decifratura univoca con l'esponente privato; Rabin usa il quadrato modulo n, è dimostrabilmente legato alla fattorizzazione ma produce quattro radici candidate, da disambiguare con ridondanza e padding sicuro.",
+    "a": "Entrambi operano modulo $n=pq$ e basano la trapdoor sulla fattorizzazione.\n\nRSA eleva a un esponente e ha decifratura univoca con l'esponente privato; Rabin usa il quadrato modulo n, è dimostrabilmente legato alla fattorizzazione ma produce quattro radici candidate, da disambiguare con ridondanza e padding sicuro.",
     "t": "QA"
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "q": "Come funziona CBC e quali condizioni ne garantiscono la sicurezza?",
-    "a": "Si pone C₀=IV e Cᵢ=E_K(Mᵢ⊕Cᵢ₋₁); in decifratura Mᵢ=D_K(Cᵢ)⊕Cᵢ₋₁.\n\nPer IND-CPA l'IV deve essere nuovo e imprevedibile e il messaggio va paddato senza ambiguità.\n\nCBC non autentica: va combinato correttamente con un MAC o sostituito da una modalità AEAD.",
+    "a": "Si pone $C_0=IV$ e $C_i=E_K(M_i\\oplus C_{i-1})$; in decifratura $M_i=D_K(C_i)\\oplus C_{i-1}$.\n\nPer IND-CPA l'IV deve essere nuovo e imprevedibile e il messaggio va paddato senza ambiguità.\n\nCBC non autentica: va combinato correttamente con un MAC o sostituito da una modalità AEAD.",
     "t": "QA"
   },
   {
@@ -121,7 +121,7 @@
   },
   {
     "q": "Come funziona il protocollo di identificazione Fiat–Shamir?",
-    "a": "Il prover pubblica v=s² mod n.\n\nIn ogni round invia x=r², riceve e∈{0,1}, risponde y=r·s^e e il verifier controlla y²≡xv^e mod n.\n\nChi prepara risposte valide per entrambe le sfide può rivelare il segreto; ripetere i round rende trascurabile la probabilità di frode.",
+    "a": "Il prover pubblica $v=s^2 \\bmod n$.\n\nIn ogni round invia $x=r^2$, riceve $e\\in\\{0,1\\}$, risponde $y=r\\cdot s^e$ e il verifier controlla $y^2\\equiv x\\,v^e \\pmod n$.\n\nChi prepara risposte valide per entrambe le sfide può rivelare il segreto; ripetere i round rende trascurabile la probabilità di frode.",
     "t": "QA"
   },
   {

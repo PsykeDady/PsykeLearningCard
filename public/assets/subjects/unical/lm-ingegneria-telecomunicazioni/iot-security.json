@@ -31,7 +31,7 @@
   },
   {
     "q": "Come funziona l'accordo di chiave Diffie–Hellman?",
-    "a": "Alice pubblica g^a e Bob g^b in un gruppo appropriato; entrambi derivano g^(ab) senza inviare il segreto.\n\nLa sicurezza si basa sulla difficoltà dei problemi Diffie–Hellman/logaritmo discreto. Il protocollo base non autentica le parti ed è vulnerabile a man-in-the-middle, quindi va inserito in un protocollo autenticato.",
+    "a": "Alice pubblica $g^a$ e Bob $g^b$ in un gruppo appropriato; entrambi derivano $g^{ab}$ senza inviare il segreto.\n\nLa sicurezza si basa sulla difficoltà dei problemi Diffie–Hellman/logaritmo discreto. Il protocollo base non autentica le parti ed è vulnerabile a man-in-the-middle, quindi va inserito in un protocollo autenticato.",
     "t": "QA"
   },
   {

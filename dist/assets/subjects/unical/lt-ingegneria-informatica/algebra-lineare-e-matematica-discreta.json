@@ -1,32 +1,152 @@
 [
-  {"q":"Che cos'è uno spazio vettoriale e che cos'è un sottospazio?","a":"Uno spazio vettoriale è un insieme con somma e prodotto per scalare che soddisfano gli assiomi lineari.\n\nUn sottoinsieme non vuoto è sottospazio se è chiuso rispetto a somma e prodotto per scalare, equivalentemente rispetto a ogni combinazione lineare.","t":"QA"},
-  {"q":"Che cosa sono combinazione lineare, insieme generatore e spazio generato?","a":"Una combinazione lineare è Σαᵢvᵢ. Lo span di un insieme è l'insieme di tutte queste combinazioni ed è il più piccolo sottospazio che contiene i vettori.\n\nL'insieme è generatore di V se il suo span coincide con V.","t":"QA"},
-  {"q":"Quando dei vettori sono linearmente indipendenti?","a":"Quando Σαᵢvᵢ=0 implica che tutti i coefficienti siano zero.\n\nSono dipendenti se almeno un vettore è combinazione degli altri; un insieme contenente il vettore nullo è sempre dipendente.","t":"QA"},
-  {"q":"Che cos'è una base e come si costruisce da un insieme di generatori?","a":"Una base è un insieme indipendente che genera lo spazio. Da generatori dati si eliminano progressivamente i vettori dipendenti, oppure si riduce la matrice che li ha come colonne e si scelgono le colonne originali corrispondenti ai pivot.","t":"QA"},
-  {"q":"Come si completa un insieme indipendente a una base?","a":"Si aggiungono vettori dello spazio che non appartengono allo span corrente finché si raggiunge la dimensione di V.\n\nIl processo inverso estrae una base da un insieme generatore eliminando vettori ridondanti.","t":"QA"},
-  {"q":"Che cos'è la dimensione e che cosa afferma il teorema della dimensione?","a":"La dimensione di uno spazio finitamente generato è il numero di vettori di qualunque sua base.\n\nPer T:V→W, dim V=dim ker T+dim im T: nullità più rango.","t":"QA"},
-  {"q":"Che cosa sono kernel, immagine e controimmagine?","a":"ker T={v|T(v)=0}; im T={T(v)|v∈V}; per B⊆W, T⁻¹(B)={v∈V|T(v)∈B}.\n\nKernel e immagine di un'applicazione lineare sono sottospazi; la controimmagine non indica necessariamente una funzione inversa.","t":"QA"},
-  {"q":"Quando un'applicazione lineare è iniettiva, suriettiva o biiettiva?","a":"È iniettiva se ker T={0}; suriettiva se im T=W; biiettiva se entrambe.\n\nIn dimensioni finite uguali, iniettività, suriettività, rango pieno e invertibilità della matrice sono equivalenti.","t":"QA"},
-  {"q":"Che cos'è il rango di una matrice?","a":"È la dimensione dello spazio delle colonne, uguale a quella dello spazio delle righe e al numero di pivot della forma a scala.\n\nÈ anche il massimo ordine di un minore non nullo.","t":"QA"},
-  {"q":"Come si risolve un sistema lineare con eliminazione di Gauss?","a":"Operazioni elementari di riga portano la matrice aumentata in forma a scala; si identificano pivot e variabili libere e si usa sostituzione all'indietro.\n\nPiù colonne incognite che righe implica almeno una variabile libera se il sistema è compatibile, ma non garantisce compatibilità.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Rouché–Capelli?","a":"Ax=b è compatibile se e solo se rank(A)=rank([A|b]). Se il rango comune è uguale al numero di incognite, la soluzione è unica; se è minore, esistono infinite soluzioni con altrettanti parametri liberi.","t":"QA"},
-  {"q":"Che cos'è il determinante e qual è il suo significato geometrico?","a":"È uno scalare associato a una matrice quadrata, multilineare e alternante nelle righe/colonne, con det I=1.\n\nIl valore assoluto è il fattore di scala di volumi; il segno indica l'orientazione. Determinante zero significa trasformazione non invertibile.","t":"QA"},
-  {"q":"Come cambia il determinante con le operazioni elementari di riga?","a":"Scambiare due righe cambia segno; moltiplicare una riga per c moltiplica il determinante per c; aggiungere a una riga un multiplo di un'altra non lo cambia.\n\nCon Gauss, il determinante è il prodotto della diagonale triangolare corretto per scambi e scalature.","t":"QA"},
-  {"q":"Come funziona lo sviluppo di Laplace?","a":"Lungo la riga i, det A=Σ_j a_ij C_ij, con C_ij=(−1)^{i+j}det M_ij; analogamente per una colonna.\n\nÈ utile con molte entrate nulle ma esponenziale come algoritmo generale.","t":"QA"},
-  {"q":"Quando una matrice quadrata è invertibile?","a":"Sono equivalenti: det A≠0, rank A=n, kernel nullo, colonne base, sistema Ax=b con soluzione unica per ogni b e zero non autovalore.\n\nL'inversa può essere calcolata riducendo [A|I] a [I|A⁻¹] o tramite fattorizzazioni.","t":"QA"},
-  {"q":"Che cosa sono autovalori e autovettori?","a":"v≠0 è autovettore di A con autovalore λ se Av=λv. Gli autovalori sono le radici del polinomio caratteristico det(A−λI); l'autospazio è ker(A−λI).\n","t":"QA"},
-  {"q":"Qual è la differenza tra molteplicità algebrica e geometrica?","a":"La molteplicità algebrica è quella di λ nel polinomio caratteristico; la geometrica è dim ker(A−λI).\n\nVale 1≤m_g≤m_a. A è diagonalizzabile se la somma delle dimensioni degli autospazi è n.","t":"QA"},
-  {"q":"Che cosa significa diagonalizzare una matrice?","a":"Trovare una matrice invertibile C di autovettori e una diagonale D tali che A=CDC⁻¹.\n\nC⁻¹v restituisce le coordinate di v nella base formata dalle colonne di C.","t":"QA"},
-  {"q":"Che cos'è uno spazio euclideo?","a":"È uno spazio vettoriale reale finito-dimensionale dotato di prodotto interno positivo definito.\n\nIl prodotto interno induce norma, distanza, angoli e ortogonalità e consente proiezioni e basi ortonormali.","t":"QA"},
-  {"q":"Che cos'è il principio di induzione matematica?","a":"Per provare P(n) per ogni n≥n₀ si dimostra il caso base P(n₀) e il passo P(k)⇒P(k+1).\n\nL'induzione forte assume tutti i casi da n₀ a k; è equivalente a quella ordinaria.","t":"QA"},
-  {"q":"Qual è la differenza tra dimostrazione diretta, contrapposizione e assurdo?","a":"La diretta deriva Q da P; la contrapposizione prova ¬Q⇒¬P, equivalente a P⇒Q; l'assurdo assume la negazione della tesi e deriva una contraddizione.\n\nLa generalizzazione universale è lecita solo se l'elemento scelto è arbitrario.","t":"QA"},
-  {"q":"Come si dimostra che √2 è irrazionale?","a":"Si suppone √2=p/q in minimi termini. Da p²=2q² segue p pari, quindi p=2k; allora q²=2k² e anche q è pari.\n\nCiò contraddice la coprimalità di p e q.","t":"QA"},
-  {"q":"Quali sono le leggi di De Morgan per insiemi?","a":"(A∪B)^c=A^c∩B^c e (A∩B)^c=A^c∪B^c.\n\nSeguono verificando l'appartenenza di un elemento e applicando la negazione a “oppure” e “e”; i diagrammi di Venn ne illustrano le regioni.","t":"QA"},
-  {"q":"Che cos'è l'insieme delle parti?","a":"P(A) è l'insieme di tutti i sottoinsiemi di A, inclusi ∅ e A. Se |A|=n finito, |P(A)|=2^n perché ogni elemento può essere incluso o escluso indipendentemente.","t":"QA"},
-  {"q":"Che cosa sono i numeri primi e come funziona l'algoritmo di Euclide?","a":"Un primo è un intero maggiore di 1 con soli divisori positivi 1 e sé stesso.\n\nEuclide calcola MCD(a,b) ripetendo (a,b)←(b,a mod b) finché b=0; l'ultimo a è il MCD.","t":"QA"},
-  {"q":"Quali sono le regole della somma e del prodotto nel calcolo combinatorio?","a":"Se casi mutuamente esclusivi hanno m e n possibilità, l'alternativa ne ha m+n. Se una scelta in m modi è seguita indipendentemente da una in n, le sequenze sono mn.\n\nQuesti principi costruiscono formule per disposizioni e combinazioni.","t":"QA"},
-  {"q":"Quante sono disposizioni e combinazioni semplici?","a":"Le disposizioni ordinate di k elementi distinti scelti da n sono n!/(n−k)!; le combinazioni non ordinate sono C(n,k)=n!/[k!(n−k)!].\n\nCon ripetizione, le sequenze di lunghezza k su n simboli sono n^k e le combinazioni sono C(n+k−1,k).\n","t":"QA"},
-  {"q":"Che cos'è la skolemizzazione?","a":"Elimina quantificatori esistenziali introducendo costanti o funzioni di Skolem dipendenti dalle variabili universali nello scope.\n\nPreserva la soddisfacibilità, non necessariamente l'equivalenza logica della formula nel vocabolario esteso.","t":"QA"},
-  {"q":"Come si definiscono in Prolog member, append e length?","a":"`member(X,[X|_]). member(X,[_|T]):-member(X,T).`\n\n`append([],L,L). append([H|T],L,[H|R]):-append(T,L,R).`\n\n`length([],0). length([_|T],N):-length(T,M),N is M+1.` Le modalità d'uso influenzano terminazione e generazione.","t":"QA"},
-  {"q":"Come si definiscono MCD e valore assoluto in Prolog?","a":"`mcd(A,0,G):-G is abs(A). mcd(A,B,G):-B=\\=0,R is A mod B,mcd(B,R,G).`\n\n`valass(X,Y):- (X>=0 -> Y=X ; Y is -X).` Occorre dichiarare dominio e comportamento per valori non istanziati.","t":"QA"}
+  {
+    "q": "Che cos'è uno spazio vettoriale e che cos'è un sottospazio?",
+    "a": "Uno spazio vettoriale è un insieme con somma e prodotto per scalare che soddisfano gli assiomi lineari.\n\nUn sottoinsieme non vuoto è sottospazio se è chiuso rispetto a somma e prodotto per scalare, equivalentemente rispetto a ogni combinazione lineare.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono combinazione lineare, insieme generatore e spazio generato?",
+    "a": "Una combinazione lineare è $\\sum_i\\alpha_i v_i$. Lo span di un insieme è l'insieme di tutte queste combinazioni ed è il più piccolo sottospazio che contiene i vettori.\n\nL'insieme è generatore di V se il suo span coincide con V.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando dei vettori sono linearmente indipendenti?",
+    "a": "Quando $\\sum_i\\alpha_i v_i=0$ implica che tutti i coefficienti siano zero.\n\nSono dipendenti se almeno un vettore è combinazione degli altri; un insieme contenente il vettore nullo è sempre dipendente.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una base e come si costruisce da un insieme di generatori?",
+    "a": "Una base è un insieme indipendente che genera lo spazio. Da generatori dati si eliminano progressivamente i vettori dipendenti, oppure si riduce la matrice che li ha come colonne e si scelgono le colonne originali corrispondenti ai pivot.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si completa un insieme indipendente a una base?",
+    "a": "Si aggiungono vettori dello spazio che non appartengono allo span corrente finché si raggiunge la dimensione di V.\n\nIl processo inverso estrae una base da un insieme generatore eliminando vettori ridondanti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la dimensione e che cosa afferma il teorema della dimensione?",
+    "a": "La dimensione di uno spazio finitamente generato è il numero di vettori di qualunque sua base.\n\nPer $T:V\\to W$: $\\dim V=\\dim\\ker T+\\dim\\operatorname{im}T$, cioè nullità più rango.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono kernel, immagine e controimmagine?",
+    "a": "$\\ker T=\\{v \\mid T(v)=0\\}$; $\\operatorname{im}T=\\{T(v)\\mid v\\in V\\}$; per $B\\subseteq W$, $T^{-1}(B)=\\{v\\in V\\mid T(v)\\in B\\}$.\n\nKernel e immagine di un'applicazione lineare sono sottospazi; la controimmagine non indica necessariamente una funzione inversa.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando un'applicazione lineare è iniettiva, suriettiva o biiettiva?",
+    "a": "È iniettiva se ker T={0}; suriettiva se im T=W; biiettiva se entrambe.\n\nIn dimensioni finite uguali, iniettività, suriettività, rango pieno e invertibilità della matrice sono equivalenti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il rango di una matrice?",
+    "a": "È la dimensione dello spazio delle colonne, uguale a quella dello spazio delle righe e al numero di pivot della forma a scala.\n\nÈ anche il massimo ordine di un minore non nullo.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si risolve un sistema lineare con eliminazione di Gauss?",
+    "a": "Operazioni elementari di riga portano la matrice aumentata in forma a scala; si identificano pivot e variabili libere e si usa sostituzione all'indietro.\n\nPiù colonne incognite che righe implica almeno una variabile libera se il sistema è compatibile, ma non garantisce compatibilità.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Rouché–Capelli?",
+    "a": "Ax=b è compatibile se e solo se rank(A)=rank([A|b]). Se il rango comune è uguale al numero di incognite, la soluzione è unica; se è minore, esistono infinite soluzioni con altrettanti parametri liberi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il determinante e qual è il suo significato geometrico?",
+    "a": "È uno scalare associato a una matrice quadrata, multilineare e alternante nelle righe/colonne, con det I=1.\n\nIl valore assoluto è il fattore di scala di volumi; il segno indica l'orientazione. Determinante zero significa trasformazione non invertibile.",
+    "t": "QA"
+  },
+  {
+    "q": "Come cambia il determinante con le operazioni elementari di riga?",
+    "a": "Scambiare due righe cambia segno; moltiplicare una riga per c moltiplica il determinante per c; aggiungere a una riga un multiplo di un'altra non lo cambia.\n\nCon Gauss, il determinante è il prodotto della diagonale triangolare corretto per scambi e scalature.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona lo sviluppo di Laplace?",
+    "a": "Lungo la riga $i$: $$\\det A=\\sum_j a_{ij}C_{ij},\\qquad C_{ij}=(-1)^{i+j}\\det M_{ij}$$\n\nAnalogamente per una colonna.\n\nÈ utile con molte entrate nulle ma esponenziale come algoritmo generale.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando una matrice quadrata è invertibile?",
+    "a": "Sono equivalenti: det A≠0, rank A=n, kernel nullo, colonne base, sistema Ax=b con soluzione unica per ogni b e zero non autovalore.\n\nL'inversa può essere calcolata riducendo [A|I] a [I|A⁻¹] o tramite fattorizzazioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono autovalori e autovettori?",
+    "a": "$v\\ne 0$ è autovettore di $A$ con autovalore $\\lambda$ se $Av=\\lambda v$. Gli autovalori sono le radici del polinomio caratteristico $\\det(A-\\lambda I)$; l'autospazio è $\\ker(A-\\lambda I)$.\n",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra molteplicità algebrica e geometrica?",
+    "a": "La molteplicità algebrica è quella di λ nel polinomio caratteristico; la geometrica è $\\dim\\ker(A-\\lambda I)$.\n\nVale $1\\le m_g\\le m_a$. A è diagonalizzabile se la somma delle dimensioni degli autospazi è n.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa significa diagonalizzare una matrice?",
+    "a": "Trovare una matrice invertibile $C$ di autovettori e una diagonale $D$ tali che $A=CDC^{-1}$.\n\n$C^{-1}v$ restituisce le coordinate di v nella base formata dalle colonne di C.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è uno spazio euclideo?",
+    "a": "È uno spazio vettoriale reale finito-dimensionale dotato di prodotto interno positivo definito.\n\nIl prodotto interno induce norma, distanza, angoli e ortogonalità e consente proiezioni e basi ortonormali.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il principio di induzione matematica?",
+    "a": "Per provare $P(n)$ per ogni $n\\ge n_0$ si dimostra il caso base $P(n_0)$ e il passo $P(k)\\Rightarrow P(k+1)$.\n\nL'induzione forte assume tutti i casi da n₀ a k; è equivalente a quella ordinaria.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra dimostrazione diretta, contrapposizione e assurdo?",
+    "a": "La diretta deriva Q da P; la contrapposizione prova ¬Q⇒¬P, equivalente a P⇒Q; l'assurdo assume la negazione della tesi e deriva una contraddizione.\n\nLa generalizzazione universale è lecita solo se l'elemento scelto è arbitrario.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si dimostra che √2 è irrazionale?",
+    "a": "Si suppone $\\sqrt{2}=p/q$ in minimi termini. Da $p^2=2q^2$ segue $p$ pari, quindi $p=2k$; allora $q^2=2k^2$ e anche $q$ è pari.\n\nCiò contraddice la coprimalità di p e q.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le leggi di De Morgan per insiemi?",
+    "a": "$$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c$$\n\nSeguono verificando l'appartenenza di un elemento e applicando la negazione a “oppure” e “e”; i diagrammi di Venn ne illustrano le regioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è l'insieme delle parti?",
+    "a": "P(A) è l'insieme di tutti i sottoinsiemi di A, inclusi ∅ e A. Se $|A|=n$ finito, $|\\mathcal{P}(A)|=2^n$ perché ogni elemento può essere incluso o escluso indipendentemente.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono i numeri primi e come funziona l'algoritmo di Euclide?",
+    "a": "Un primo è un intero maggiore di 1 con soli divisori positivi 1 e sé stesso.\n\nEuclide calcola $\\mathrm{MCD}(a,b)$ ripetendo $(a,b)\\leftarrow(b,\\ a \\bmod b)$ finché $b=0$; l'ultimo $a$ è il MCD.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le regole della somma e del prodotto nel calcolo combinatorio?",
+    "a": "Se casi mutuamente esclusivi hanno m e n possibilità, l'alternativa ne ha m+n. Se una scelta in m modi è seguita indipendentemente da una in n, le sequenze sono mn.\n\nQuesti principi costruiscono formule per disposizioni e combinazioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Quante sono disposizioni e combinazioni semplici?",
+    "a": "Le disposizioni ordinate di $k$ elementi distinti scelti da $n$ sono $\\dfrac{n!}{(n-k)!}$; le combinazioni non ordinate sono $\\binom{n}{k}=\\dfrac{n!}{k!(n-k)!}$.\n\nCon ripetizione, le sequenze di lunghezza $k$ su $n$ simboli sono $n^k$ e le combinazioni sono $\\binom{n+k-1}{k}$.\n",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la skolemizzazione?",
+    "a": "Elimina quantificatori esistenziali introducendo costanti o funzioni di Skolem dipendenti dalle variabili universali nello scope.\n\nPreserva la soddisfacibilità, non necessariamente l'equivalenza logica della formula nel vocabolario esteso.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si definiscono in Prolog member, append e length?",
+    "a": "`member(X,[X|_]). member(X,[_|T]):-member(X,T).`\n\n`append([],L,L). append([H|T],L,[H|R]):-append(T,L,R).`\n\n`length([],0). length([_|T],N):-length(T,M),N is M+1.` Le modalità d'uso influenzano terminazione e generazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si definiscono MCD e valore assoluto in Prolog?",
+    "a": "`mcd(A,0,G):-G is abs(A). mcd(A,B,G):-B=\\=0,R is A mod B,mcd(B,R,G).`\n\n`valass(X,Y):- (X>=0 -> Y=X ; Y is -X).` Occorre dichiarare dominio e comportamento per valori non istanziati.",
+    "t": "QA"
+  }
 ]

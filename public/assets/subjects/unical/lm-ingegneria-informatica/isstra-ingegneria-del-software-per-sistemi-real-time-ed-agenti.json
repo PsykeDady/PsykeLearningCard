@@ -1,7 +1,7 @@
 [
   {
     "q": "Che cos'è il tempo di blocco nell'analisi di schedulabilità FPS?",
-    "a": "Nel Fixed-Priority Scheduling, B_i è il massimo tempo per cui il task τ_i può essere bloccato da task a priorità inferiore che trattengono una risorsa condivisa.\n\nEntra nella response-time analysis: R_i=C_i+B_i+Σ_{j∈hp(i)}⌈R_i/T_j⌉C_j, con eventuali termini aggiuntivi per jitter e overhead.",
+    "a": "Nel Fixed-Priority Scheduling, B_i è il massimo tempo per cui il task τ_i può essere bloccato da task a priorità inferiore che trattengono una risorsa condivisa.\n\nEntra nella response-time analysis: $$R_i=C_i+B_i+\\sum_{j\\in hp(i)}\\Big\\lceil\\frac{R_i}{T_j}\\Big\\rceil C_j$$\n\nCi possono essere termini aggiuntivi per jitter e overhead.",
     "t": "QA"
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "q": "Che cosa rappresenta il parametro λ nelle simulazioni ad attori?",
-    "a": "Tipicamente λ è il tasso di arrivo di un processo di Poisson: gli inter-arrivi sono esponenziali con media 1/λ.\n\nAumentare λ aumenta il carico offerto.\n\nIl significato esatto va comunque verificato nel modello, perché λ può parametrizzare altre distribuzioni o transizioni.",
+    "a": "Tipicamente $\\lambda$ è il tasso di arrivo di un processo di Poisson: gli inter-arrivi sono esponenziali con media $1/\\lambda$.\n\nAumentare $\\lambda$ aumenta il carico offerto.\n\nIl significato esatto va comunque verificato nel modello, perché λ può parametrizzare altre distribuzioni o transizioni.",
     "t": "QA"
   }
 ]

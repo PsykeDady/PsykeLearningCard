@@ -6,12 +6,12 @@
   },
   {
     "q": "Come funzionano i puzzle di Merkle e quale sicurezza offrono?",
-    "a": "Alice pubblica molti puzzle cifrati con chiavi deboli, ciascuno contenente identificatore e segreto.\n\nBob ne risolve uno e comunica l'identificatore; Alice recupera il segreto.\n\nGli utenti svolgono circa N lavoro, un intercettatore circa N²: è una separazione quadratica, vulnerabile anche ad attaccanti attivi.",
+    "a": "Alice pubblica molti puzzle cifrati con chiavi deboli, ciascuno contenente identificatore e segreto.\n\nBob ne risolve uno e comunica l'identificatore; Alice recupera il segreto.\n\nGli utenti svolgono circa $N$ lavoro, un intercettatore circa $N^2$: è una separazione quadratica, vulnerabile anche ad attaccanti attivi.",
     "t": "QA"
   },
   {
     "q": "Perché un hash di n bit offre circa n/2 bit di sicurezza contro collisioni?",
-    "a": "Per l'effetto compleanno, dopo circa 2^(n/2) digest casuali una collisione diventa probabile.\n\nL'attacco memorizza e confronta hash di messaggi distinti.\n\nPreimmagini e seconde preimmagini generiche richiedono invece circa 2^n tentativi.",
+    "a": "Per l'effetto compleanno, dopo circa $2^{n/2}$ digest casuali una collisione diventa probabile.\n\nL'attacco memorizza e confronta hash di messaggi distinti.\n\nPreimmagini e seconde preimmagini generiche richiedono invece circa $2^n$ tentativi.",
     "t": "QA"
   },
   {
@@ -21,12 +21,12 @@
   },
   {
     "q": "Quali condizioni rendono sicuro il One-Time Pad?",
-    "a": "C=M⊕K offre segretezza perfetta se K è uniforme, segreta, lunga quanto M e usata una sola volta.\n\nLa chiave è difficile da distribuire su larga scala e il sistema non autentica: modificare un bit del cifrato modifica lo stesso bit del messaggio.",
+    "a": "$C=M\\oplus K$ offre segretezza perfetta se $K$ è uniforme, segreta, lunga quanto $M$ e usata una sola volta.\n\nLa chiave è difficile da distribuire su larga scala e il sistema non autentica: modificare un bit del cifrato modifica lo stesso bit del messaggio.",
     "t": "QA"
   },
   {
     "q": "Che cosa stabilisce la teoria di Shannon sulla segretezza perfetta?",
-    "a": "Un cifrario ha segretezza perfetta se la distribuzione del messaggio non cambia osservando il cifrato, cioè P(M=m|C=c)=P(M=m).\n\nPer ottenerla in generale l'entropia della chiave deve essere almeno quella del messaggio; il One-Time Pad soddisfa il requisito.",
+    "a": "Un cifrario ha segretezza perfetta se la distribuzione del messaggio non cambia osservando il cifrato, cioè $\\Pr(M=m\\mid C=c)=\\Pr(M=m)$.\n\nPer ottenerla in generale l'entropia della chiave deve essere almeno quella del messaggio; il One-Time Pad soddisfa il requisito.",
     "t": "QA"
   },
   {
@@ -46,17 +46,17 @@
   },
   {
     "q": "Come funziona ECB e perché non è semanticamente sicuro?",
-    "a": "ECB cifra ogni blocco indipendentemente: Cᵢ=E_K(Mᵢ).\n\nBlocchi uguali producono cifrati uguali e rivelano pattern e struttura; inoltre consente riordinamenti.\n\nVa evitato per dati strutturati o messaggi di più blocchi.",
+    "a": "ECB cifra ogni blocco indipendentemente: $C_i=E_K(M_i)$.\n\nBlocchi uguali producono cifrati uguali e rivelano pattern e struttura; inoltre consente riordinamenti.\n\nVa evitato per dati strutturati o messaggi di più blocchi.",
     "t": "QA"
   },
   {
     "q": "Come funziona CBC e quale IV richiede?",
-    "a": "C₀=IV e Cᵢ=E_K(Mᵢ⊕Cᵢ₋₁); Mᵢ=D_K(Cᵢ)⊕Cᵢ₋₁.\n\nPer IND-CPA l'IV deve essere nuovo e imprevedibile e il padding non ambiguo.\n\nCBC non autentica, perciò deve essere abbinato correttamente a un MAC.",
+    "a": "$C_0=IV$ e $C_i=E_K(M_i\\oplus C_{i-1})$; $M_i=D_K(C_i)\\oplus C_{i-1}$.\n\nPer IND-CPA l'IV deve essere nuovo e imprevedibile e il padding non ambiguo.\n\nCBC non autentica, perciò deve essere abbinato correttamente a un MAC.",
     "t": "QA"
   },
   {
     "q": "Come funziona CTR e quale requisito ha il nonce?",
-    "a": "Genera blocchi di keystream E_K(nonce||counterᵢ) e calcola Cᵢ=Mᵢ⊕keystreamᵢ.\n\nÈ parallelizzabile e non richiede padding.\n\nIl nonce deve essere unico per chiave: riutilizzarlo riusa il keystream e compromette la confidenzialità.",
+    "a": "Genera blocchi di keystream $E_K(\\mathrm{nonce}\\,\\|\\,\\mathrm{counter}_i)$ e calcola $C_i=M_i\\oplus \\mathrm{keystream}_i$.\n\nÈ parallelizzabile e non richiede padding.\n\nIl nonce deve essere unico per chiave: riutilizzarlo riusa il keystream e compromette la confidenzialità.",
     "t": "QA"
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "q": "Come funzionano NMAC e HMAC?",
-    "a": "NMAC applica un hash iterato interno con una chiave e poi un hash esterno con un'altra.\n\nHMAC deriva i due domini da una chiave e usa H((K⊕opad)||H((K⊕ipad)||M)).\n\nLa doppia struttura evita length-extension e consente MAC sicuri da hash iterati appropriati.",
+    "a": "NMAC applica un hash iterato interno con una chiave e poi un hash esterno con un'altra.\n\nHMAC deriva i due domini da una chiave e usa $$H\\big((K\\oplus\\mathrm{opad})\\,\\|\\,H((K\\oplus\\mathrm{ipad})\\,\\|\\,M)\\big)$$\n\nLa doppia struttura evita length-extension e consente MAC sicuri da hash iterati appropriati.",
     "t": "QA"
   },
   {
@@ -76,17 +76,17 @@
   },
   {
     "q": "Come funziona ECBC-MAC e perché serve una chiave finale distinta?",
-    "a": "Si calcola CBC-MAC sui blocchi con una chiave K₁ e si cifra il risultato con K₂.\n\nLa separazione finale rende sicura la costruzione anche per messaggi di lunghezza variabile se la codifica è prefissa/non ambigua; il CBC-MAC semplice è sicuro soltanto per lunghezza fissa.",
+    "a": "Si calcola CBC-MAC sui blocchi con una chiave $K_1$ e si cifra il risultato con $K_2$.\n\nLa separazione finale rende sicura la costruzione anche per messaggi di lunghezza variabile se la codifica è prefissa/non ambigua; il CBC-MAC semplice è sicuro soltanto per lunghezza fissa.",
     "t": "QA"
   },
   {
     "q": "Come funziona la costruzione Merkle–Damgård?",
-    "a": "Dopo un padding che include la lunghezza, una funzione di compressione elabora i blocchi concatenando lo stato: hᵢ=f(hᵢ₋₁,mᵢ).\n\nSe la compressione è collision resistant, lo è anche l'hash costruito.\n\nLa struttura base è soggetta a length-extension e richiede domini appropriati per l'uso come MAC.",
+    "a": "Dopo un padding che include la lunghezza, una funzione di compressione elabora i blocchi concatenando lo stato: $h_i=f(h_{i-1},m_i)$.\n\nSe la compressione è collision resistant, lo è anche l'hash costruito.\n\nLa struttura base è soggetta a length-extension e richiede domini appropriati per l'uso come MAC.",
     "t": "QA"
   },
   {
     "q": "Quali proprietà definiscono la sicurezza di una funzione hash?",
-    "a": "Resistenza a preimmagine, seconda preimmagine e collisioni.\n\nI relativi giochi chiedono di invertire un digest, trovare un secondo messaggio per uno dato o trovare una qualsiasi coppia collidente.\n\nPer n bit, i costi generici sono circa 2^n, 2^n e 2^(n/2).",
+    "a": "Resistenza a preimmagine, seconda preimmagine e collisioni.\n\nI relativi giochi chiedono di invertire un digest, trovare un secondo messaggio per uno dato o trovare una qualsiasi coppia collidente.\n\nPer $n$ bit i costi generici sono circa $2^n$, $2^n$ e $2^{n/2}$.",
     "t": "QA"
   },
   {
@@ -111,12 +111,12 @@
   },
   {
     "q": "Come si generano le chiavi RSA e come avvengono cifratura e decifratura?",
-    "a": "Si scelgono primi p,q, n=pq e un e coprimo con φ(n) o λ(n); si calcola d=e⁻¹ modulo tale valore.\n\nLa chiave pubblica è (n,e), quella privata d e spesso p,q.\n\nNel modello elementare c=m^e mod n e m=c^d mod n, ma nella pratica servono OAEP per cifrare e PSS per firmare.",
+    "a": "Si scelgono primi $p,q$, $n=pq$ e un $e$ coprimo con $\\varphi(n)$ o $\\lambda(n)$; si calcola $d=e^{-1}$ modulo tale valore.\n\nLa chiave pubblica è $(n,e)$, quella privata $d$ e spesso $p,q$.\n\nNel modello elementare $c=m^e \\bmod n$ e $m=c^d \\bmod n$, ma nella pratica servono OAEP per cifrare e PSS per firmare.",
     "t": "QA"
   },
   {
     "q": "Qual è la relazione tra attaccare la chiave RSA e invertire un singolo cifrato?",
-    "a": "Fattorizzare n consente di calcolare la chiave privata e decifrare tutti i cifrati.\n\nInvertire un singolo c significa calcolare una radice e-esima modulo n; non è noto in generale se questo sia equivalente alla fattorizzazione per RSA.\n\nAttacchi pratici spesso sfruttano padding, implementazione o parametri, non il brute force diretto.",
+    "a": "Fattorizzare $n$ consente di calcolare la chiave privata e decifrare tutti i cifrati.\n\nInvertire un singolo $c$ significa calcolare una radice $e$-esima modulo $n$; non è noto in generale se questo sia equivalente alla fattorizzazione per RSA.\n\nAttacchi pratici spesso sfruttano padding, implementazione o parametri, non il brute force diretto.",
     "t": "QA"
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "q": "Come funziona il crittosistema di Rabin e perché produce quattro candidati?",
-    "a": "La chiave pubblica è n=pq e si cifra c=m² mod n.\n\nCon p e q si calcolano due radici modulo ciascun primo e il teorema cinese le combina in quattro radici modulo n.\n\nRidondanza e padding identificano il messaggio corretto; senza di essi la decifratura è ambigua e il sistema è malleabile.",
+    "a": "La chiave pubblica è $n=pq$ e si cifra $c=m^2 \\bmod n$.\n\nCon $p$ e $q$ si calcolano due radici modulo ciascun primo e il teorema cinese le combina in quattro radici modulo n.\n\nRidondanza e padding identificano il messaggio corretto; senza di essi la decifratura è ambigua e il sistema è malleabile.",
     "t": "QA"
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "q": "Come funziona la cifratura ElGamal?",
-    "a": "In un gruppo con generatore g, la chiave privata è x e la pubblica y=g^x.\n\nPer cifrare m si sceglie r casuale e si invia (g^r, m·y^r); si decifra dividendo il secondo elemento per (g^r)^x.\n\nLa sicurezza si basa su Diffie–Hellman e ogni cifratura richiede casualità nuova.",
+    "a": "In un gruppo con generatore $g$, la chiave privata è $x$ e la pubblica $y=g^x$.\n\nPer cifrare $m$ si sceglie $r$ casuale e si invia $(g^r,\\ m\\cdot y^r)$; si decifra dividendo il secondo elemento per $(g^r)^x$.\n\nLa sicurezza si basa su Diffie–Hellman e ogni cifratura richiede casualità nuova.",
     "t": "QA"
   },
   {

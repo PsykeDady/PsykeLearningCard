@@ -1,16 +1,72 @@
 [
-  {"q":"Quando una formula proposizionale è soddisfacibile?","a":"È soddisfacibile se esiste almeno un'interpretazione delle variabili che la rende vera. È insoddisfacibile, o una contraddizione, se risulta falsa per ogni interpretazione.","t":"QA"},
-  {"q":"Qual è la differenza tra tautologia e formula valida?","a":"Nel calcolo proposizionale una tautologia è vera per ogni assegnazione di verità. Più in generale, una formula è valida se è vera in ogni interpretazione della logica considerata. Si scrive ⊨φ.","t":"QA"},
-  {"q":"Che cosa sono modus ponens e modus tollens?","a":"Modus ponens: da P e P→Q si deduce Q. Modus tollens: da P→Q e ¬Q si deduce ¬P. Sono regole d'inferenza valide; il secondo usa la contrapposizione.","t":"QA"},
-  {"q":"Come si associa una catena di implicazioni come A→B→C?","a":"Per convenzione l'implicazione è associativa a destra: A→(B→C), equivalente a (A∧B)→C. Non coincide in generale con (A→B)→C, quindi le parentesi eliminano ambiguità.","t":"QA"},
-  {"q":"Qual è la precedenza usuale dei connettivi logici?","a":"Dalla più alta alla più bassa: negazione ¬, congiunzione ∧, disgiunzione ∨, implicazione →, equivalenza ↔. Le convenzioni possono variare: conviene usare parentesi quando la lettura non è immediata.","t":"QA"},
-  {"q":"Quando una formula è sintatticamente ambigua?","a":"È ambigua quando la sua scrittura ammette più alberi sintattici e quindi più letture. Per esempio P∧Q∨R può indicare (P∧Q)∨R oppure P∧(Q∨R) senza convenzioni di precedenza.","t":"QA"},
-  {"q":"Come si valuta una formula sotto un'interpretazione?","a":"Si assegnano valori di verità alle proposizioni atomiche e si calcola dal sottoalbero più interno verso l'esterno usando le tavole dei connettivi. P→Q è falsa soltanto quando P è vera e Q falsa.","t":"QA"},
-  {"q":"Come si dimostra semanticamente una formula proposizionale?","a":"Per dimostrare validità si può costruire la tavola di verità e verificare che l'ultima colonna sia sempre vera, oppure mostrare che la negazione è insoddisfacibile. Una dimostrazione sintattica usa invece assiomi e regole di inferenza.","t":"QA"},
-  {"q":"Che cos'è un'interpretazione nella logica del primo ordine?","a":"È composta da un dominio non vuoto e da un'assegnazione di significato: elementi alle costanti, funzioni alle lettere funzionali e relazioni ai predicati. Un ambiente assegna inoltre elementi alle variabili libere.","t":"QA"},
-  {"q":"Qual è la differenza tra variabile libera e vincolata, formula aperta e chiusa?","a":"Un'occorrenza è vincolata se cade nel campo di un quantificatore che lega quella variabile; altrimenti è libera. Una formula senza variabili libere è chiusa o enunciato e ha un valore di verità nell'interpretazione; una formula aperta dipende anche dall'assegnazione.","t":"QA"},
-  {"q":"Quali sono le principali identità trigonometriche?","a":"sin²x+cos²x=1; tan x=sin x/cos x; sin(a±b)=sin a cos b±cos a sin b; cos(a±b)=cos a cos b∓sin a sin b. Da queste derivano formule di duplicazione e bisezione.","t":"QA"},
-  {"q":"Quali proprietà si usano con logaritmi ed esponenziali?","a":"Per basi a>0, a≠1: logₐ(xy)=logₐx+logₐy, logₐ(x/y)=logₐx-logₐy, logₐ(x^r)=r logₐx e a^{logₐx}=x. Il dominio del logaritmo richiede argomento positivo.","t":"QA"},
-  {"q":"Come si risolvono equazioni esponenziali e logaritmiche?","a":"Si tenta di ricondurre i membri alla stessa base o si applica un logaritmo, che è iniettivo sul dominio. Nelle equazioni logaritmiche si impongono prima argomenti positivi e si scartano le soluzioni estranee.","t":"QA"},
-  {"q":"Qual è l'equazione canonica di un'ellisse e quali sono i suoi elementi?","a":"Con centro nell'origine e a≥b>0: x²/a²+y²/b²=1. I semiassi sono a e b; i fuochi sono (±c,0), con c²=a²-b²; l'eccentricità e=c/a è compresa tra 0 e 1.","t":"QA"}
+  {
+    "q": "Quando una formula proposizionale è soddisfacibile?",
+    "a": "È soddisfacibile se esiste almeno un'interpretazione delle variabili che la rende vera. È insoddisfacibile, o una contraddizione, se risulta falsa per ogni interpretazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra tautologia e formula valida?",
+    "a": "Nel calcolo proposizionale una tautologia è vera per ogni assegnazione di verità. Più in generale, una formula è valida se è vera in ogni interpretazione della logica considerata. Si scrive $\\models\\varphi$.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono modus ponens e modus tollens?",
+    "a": "Modus ponens: da $P$ e $P\\to Q$ si deduce $Q$. Modus tollens: da $P\\to Q$ e $\\neg Q$ si deduce $\\neg P$. Sono regole d'inferenza valide; il secondo usa la contrapposizione.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si associa una catena di implicazioni come A→B→C?",
+    "a": "Per convenzione l'implicazione è associativa a destra: $A\\to(B\\to C)$, equivalente a $(A\\wedge B)\\to C$. Non coincide in generale con $(A\\to B)\\to C$, quindi le parentesi eliminano ambiguità.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la precedenza usuale dei connettivi logici?",
+    "a": "Dalla più alta alla più bassa: negazione ¬, congiunzione ∧, disgiunzione ∨, implicazione →, equivalenza ↔. Le convenzioni possono variare: conviene usare parentesi quando la lettura non è immediata.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando una formula è sintatticamente ambigua?",
+    "a": "È ambigua quando la sua scrittura ammette più alberi sintattici e quindi più letture. Per esempio $P\\wedge Q\\vee R$ può indicare $(P\\wedge Q)\\vee R$ oppure $P\\wedge(Q\\vee R)$ senza convenzioni di precedenza.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si valuta una formula sotto un'interpretazione?",
+    "a": "Si assegnano valori di verità alle proposizioni atomiche e si calcola dal sottoalbero più interno verso l'esterno usando le tavole dei connettivi. $P\\to Q$ è falsa soltanto quando $P$ è vera e $Q$ falsa.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si dimostra semanticamente una formula proposizionale?",
+    "a": "Per dimostrare validità si può costruire la tavola di verità e verificare che l'ultima colonna sia sempre vera, oppure mostrare che la negazione è insoddisfacibile. Una dimostrazione sintattica usa invece assiomi e regole di inferenza.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un'interpretazione nella logica del primo ordine?",
+    "a": "È composta da un dominio non vuoto e da un'assegnazione di significato: elementi alle costanti, funzioni alle lettere funzionali e relazioni ai predicati. Un ambiente assegna inoltre elementi alle variabili libere.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra variabile libera e vincolata, formula aperta e chiusa?",
+    "a": "Un'occorrenza è vincolata se cade nel campo di un quantificatore che lega quella variabile; altrimenti è libera. Una formula senza variabili libere è chiusa o enunciato e ha un valore di verità nell'interpretazione; una formula aperta dipende anche dall'assegnazione.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le principali identità trigonometriche?",
+    "a": "$$\\sin^2x+\\cos^2x=1,\\qquad \\tan x=\\frac{\\sin x}{\\cos x}$$ $$\\sin(a\\pm b)=\\sin a\\cos b\\pm\\cos a\\sin b,\\qquad \\cos(a\\pm b)=\\cos a\\cos b\\mp\\sin a\\sin b$$ Da queste derivano formule di duplicazione e bisezione.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali proprietà si usano con logaritmi ed esponenziali?",
+    "a": "Per basi $a>0$, $a\\ne 1$: $$\\log_a(xy)=\\log_a x+\\log_a y,\\quad \\log_a\\frac{x}{y}=\\log_a x-\\log_a y,\\quad \\log_a(x^r)=r\\log_a x,\\quad a^{\\log_a x}=x$$ Il dominio del logaritmo richiede argomento positivo.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si risolvono equazioni esponenziali e logaritmiche?",
+    "a": "Si tenta di ricondurre i membri alla stessa base o si applica un logaritmo, che è iniettivo sul dominio. Nelle equazioni logaritmiche si impongono prima argomenti positivi e si scartano le soluzioni estranee.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è l'equazione canonica di un'ellisse e quali sono i suoi elementi?",
+    "a": "Con centro nell'origine e $a\\ge b>0$: $$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$$ I semiassi sono $a$ e $b$; i fuochi sono $(\\pm c,0)$, con $c^2=a^2-b^2$; l'eccentricità $e=c/a$ è compresa tra 0 e 1.",
+    "t": "QA"
+  }
 ]

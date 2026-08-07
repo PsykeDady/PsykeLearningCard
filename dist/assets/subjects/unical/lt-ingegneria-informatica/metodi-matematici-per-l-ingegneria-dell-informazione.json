@@ -1,4 +1,12 @@
 [
-  {"q":"Che cosa afferma il teorema di Dini sulle funzioni implicite?","a":"Se F(x₀,y₀)=0, F è continuamente differenziabile vicino al punto e la derivata parziale Fᵧ(x₀,y₀) è diversa da zero, allora vicino a x₀ esiste un'unica funzione y=f(x) continuamente differenziabile tale che F(x,f(x))=0. Inoltre f'(x)=-Fₓ/Fᵧ.","t":"QA"},
-  {"q":"Che cos'è una serie di Laurent e dove converge?","a":"È uno sviluppo f(z)=Σ da n=-∞ a +∞ di aₙ(z-z₀)^n, composto da parte regolare e principale. Per una funzione olomorfa in un anello r<|z-z₀|<R, lo sviluppo esiste ed è unico; aₙ=(1/2πi)∮f(ζ)/(ζ-z₀)^{n+1}dζ.","t":"QA"}
+  {
+    "q": "Che cosa afferma il teorema di Dini sulle funzioni implicite?",
+    "a": "Se $F(x_0,y_0)=0$, $F$ è continuamente differenziabile vicino al punto e la derivata parziale $F_y(x_0,y_0)$ è diversa da zero, allora vicino a $x_0$ esiste un'unica funzione $y=f(x)$ continuamente differenziabile tale che $F(x,f(x))=0$. Inoltre $f'(x)=-F_x/F_y$.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una serie di Laurent e dove converge?",
+    "a": "È uno sviluppo $$f(z)=\\sum_{n=-\\infty}^{+\\infty}a_n(z-z_0)^n$$ composto da parte regolare e principale. Per una funzione olomorfa in un anello $r<|z-z_0|<R$, lo sviluppo esiste ed è unico: $$a_n=\\frac{1}{2\\pi i}\\oint\\frac{f(\\zeta)}{(\\zeta-z_0)^{n+1}}\\,d\\zeta$$",
+    "t": "QA"
+  }
 ]

@@ -1,6 +1,6 @@
 [
   {"q":"Che cos'è una base di uno spazio vettoriale?","a":"È un insieme di vettori linearmente indipendenti che genera tutto lo spazio.\n\nOgni vettore dello spazio si rappresenta in modo unico come combinazione lineare dei vettori della base; il numero di elementi è la dimensione.","t":"QA"},
-  {"q":"Che cos'è il kernel di un'applicazione lineare?","a":"Per T:V→W, ker T={v∈V | T(v)=0}. È un sottospazio di V e misura le direzioni annullate da T.\n\nT è iniettiva se e solo se ker T={0}; rango e nullità soddisfano dim V=rank T+nullity T.","t":"QA"},
+  {"q":"Che cos'è il kernel di un'applicazione lineare?","a":"Per $T:V\\to W$: $\\ker T=\\{v\\in V \\mid T(v)=0\\}$. È un sottospazio di $V$ e misura le direzioni annullate da $T$.\n\n$T$ è iniettiva se e solo se $\\ker T=\\{0\\}$; rango e nullità soddisfano $\\dim V=\\operatorname{rank}T+\\operatorname{nullity}T$.","t":"QA"},
   {"q":"Può il vettore nullo appartenere a una base?","a":"No. Un insieme contenente il vettore nullo è linearmente dipendente, perché una combinazione con coefficiente non nullo sullo zero dà comunque il vettore nullo.","t":"QA"},
-  {"q":"Quando un insieme di vettori è linearmente indipendente?","a":"È indipendente se l'equazione Σᵢαᵢvᵢ=0 ammette soltanto αᵢ=0 per tutti gli indici.\n\nÈ dipendente se almeno un vettore è combinazione degli altri, equivalentemente esiste una combinazione nulla con coefficienti non tutti nulli.","t":"QA"}
+  {"q":"Quando un insieme di vettori è linearmente indipendente?","a":"È indipendente se l'equazione $\\sum_i\\alpha_i v_i=0$ ammette soltanto $\\alpha_i=0$ per tutti gli indici.\n\nÈ dipendente se almeno un vettore è combinazione degli altri, equivalentemente esiste una combinazione nulla con coefficienti non tutti nulli.","t":"QA"}
 ]

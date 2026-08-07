@@ -6,7 +6,7 @@
   },
   {
     "q": "Come funziona il protocollo di identificazione Fiat–Shamir?",
-    "a": "Il prover pubblica v=s² mod n e mantiene segreto s.\n\nPer ogni round invia x=r² mod n, riceve una sfida casuale e∈{0,1} e risponde y=r·s^e mod n.\n\nIl verifier controlla y²≡x·v^e mod n.\n\nRipetere i round riduce la probabilità di impersonificazione; la sicurezza si basa sulla difficoltà di estrarre radici quadrate modulo un composto di fattorizzazione ignota.",
+    "a": "Il prover pubblica $v=s^2 \\bmod n$ e mantiene segreto $s$.\n\nPer ogni round invia $x=r^2 \\bmod n$, riceve una sfida casuale $e\\in\\{0,1\\}$ e risponde $y=r\\cdot s^e \\bmod n$.\n\nIl verifier controlla $y^2\\equiv x\\cdot v^e \\pmod n$.\n\nRipetere i round riduce la probabilità di impersonificazione; la sicurezza si basa sulla difficoltà di estrarre radici quadrate modulo un composto di fattorizzazione ignota.",
     "t": "QA"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "q": "Che cosa afferma il paradosso del compleanno e perché è rilevante per gli hash?",
-    "a": "In uno spazio di N valori, una collisione tra valori casuali diventa probabile dopo circa √N tentativi.\n\nPer un hash di n bit servono quindi circa 2^(n/2) valutazioni per trovare una collisione generica, non 2^n; per una sicurezza di 128 bit contro collisioni occorre tipicamente un digest di 256 bit.",
+    "a": "In uno spazio di $N$ valori, una collisione tra valori casuali diventa probabile dopo circa $\\sqrt{N}$ tentativi.\n\nPer un hash di $n$ bit servono quindi circa $2^{n/2}$ valutazioni per trovare una collisione generica, non $2^n$; per una sicurezza di 128 bit contro collisioni occorre tipicamente un digest di 256 bit.",
     "t": "QA"
   },
   {

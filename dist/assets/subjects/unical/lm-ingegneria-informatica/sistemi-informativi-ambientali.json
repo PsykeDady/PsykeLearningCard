@@ -21,12 +21,12 @@
   },
   {
     "q": "Che cosa rappresentano media e varianza di una variabile spaziale in un punto?",
-    "a": "La media, o valore atteso, rappresenta il valore centrale previsto della variabile aleatoria Z(s) nella posizione s.\n\nLa varianza misura la dispersione attorno a tale media. Nel kriging, la varianza di stima quantifica invece l'incertezza della previsione e dipende dalla geometria del campionamento e dal variogramma.",
+    "a": "La media, o valore atteso, rappresenta il valore centrale previsto della variabile aleatoria $Z(s)$ nella posizione $s$.\n\nLa varianza misura la dispersione attorno a tale media. Nel kriging, la varianza di stima quantifica invece l'incertezza della previsione e dipende dalla geometria del campionamento e dal variogramma.",
     "t": "QA"
   },
   {
     "q": "Che cosa rappresentano Z(s₀) e Z(sᵢ) nell'interpolazione spaziale?",
-    "a": "Z(sᵢ), con i>0, indica il valore osservato nelle posizioni campionate sᵢ; Z(s₀) è il valore ignoto nella posizione in cui si vuole prevedere il fenomeno.\n\nUna stima lineare assume spesso la forma Ẑ(s₀)=ΣᵢλᵢZ(sᵢ), con pesi determinati dal metodo scelto.",
+    "a": "$Z(s_i)$, con $i>0$, indica il valore osservato nelle posizioni campionate $s_i$; $Z(s_0)$ è il valore ignoto nella posizione in cui si vuole prevedere il fenomeno.\n\nUna stima lineare assume spesso la forma $\\hat{Z}(s_0)=\\sum_i\\lambda_i Z(s_i)$, con pesi determinati dal metodo scelto.",
     "t": "QA"
   },
   {

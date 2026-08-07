@@ -2,7 +2,11 @@ import { useEffect, useState } from "react"
 import Question, { MULTIPLA, QA, RIORDINA } from "../../models/question.model"
 import {formatText} from "../../utils/stringutils" 
 
-function Card({question=new Question(), outFlagFlip=(flip=false)=>{}}) {
+// identità stabile: se fosse una arrow inline entrerebbe nelle dipendenze
+// dell'effect a ogni render, riazzerando il flip appena avvenuto
+const nessunFlip = () => {}
+
+function Card({question=new Question(), outFlagFlip=nessunFlip}) {
 	const getRandomValue = () => {
 		const values = new Uint32Array(1)
 		crypto.getRandomValues(values)
@@ -34,35 +38,48 @@ function Card({question=new Question(), outFlagFlip=(flip=false)=>{}}) {
 		outFlagFlip(true)
     }
 
-	const unSort = (type=QA) => {
-		let unsorted = type===MULTIPLA ? [...question.a].map(riga => riga.split(";")[1]) : [...question.a];
+	const tipo = (question.t ?? QA).toUpperCase()
+
+	// una riga MULTIPLA ha forma "SI;testo" oppure "NO;testo"
+	const dividiRiga = (riga) => {
+		const separatore = riga.indexOf(";")
+
+		if (separatore < 0) return {corretta: false, testo: riga}
+
+		return {
+			corretta: riga.slice(0, separatore).trim().toUpperCase() === "SI",
+			testo: riga.slice(separatore + 1)
+		}
+	}
+
+	const unSort = () => {
+		let unsorted = tipo===MULTIPLA ? question.a.map(riga => dividiRiga(riga).testo) : [...question.a];
 
 		unsorted = shuffleItems(unsorted)
-		
+
 		return <>
-			<span dangerouslySetInnerHTML={{__html:formatText(unsorted)}}> 
+			<span dangerouslySetInnerHTML={{__html:formatText(unsorted)}}>
 			</span>
 			<hr className="text-muted"/>
 			<small className="text-muted"> Tocca per visualizzare la risposta </small>
 		</>
 	}
 
-	const trueAnswer = (answer, type) => {
-		if(type===MULTIPLA){
-			answer=answer.filter(riga=>riga.split(";")[0]==="SI")
-		}
-		return answer
+	const trueAnswer = (answer) => {
+		if(tipo!==MULTIPLA) return answer
+
+		return answer.map(dividiRiga).filter(riga => riga.corretta).map(riga => riga.testo)
 	}
 
-    let retroC = <span dangerouslySetInnerHTML={{__html:formatText(trueAnswer(question.a))}}> 
+    let retroC = <span dangerouslySetInnerHTML={{__html:formatText(trueAnswer(question.a))}}>
     </span>
 
 	let cardContent = <span className="small text-muted">{"Clicca qui per mostrare la risposta"}</span>
 
 	if (flipped) {
 		cardContent = <strong className="text-success">{retroC}</strong>
-	} else if (question.t.toUpperCase()===RIORDINA || question.t.toUpperCase()===MULTIPLA) {
-		cardContent = unSort(question.t)
+	} else if (tipo===RIORDINA || tipo===MULTIPLA) {
+		cardContent = unSort()
 	}
 
 	return <div className="learning-card rounded bg-white p-3 shadow">

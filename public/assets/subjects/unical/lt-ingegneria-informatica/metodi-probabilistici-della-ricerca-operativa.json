@@ -1,24 +1,112 @@
 [
-  {"q":"Quali ipotesi definiscono prove di Bernoulli?","a":"Sono prove indipendenti e identicamente distribuite, ciascuna con due esiti, successo e insuccesso, e probabilità di successo costante p. Il numero di successi in n prove segue una binomiale B(n,p), con media np e varianza np(1-p).","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Bernoulli, forma debole della legge dei grandi numeri?","a":"Per prove di Bernoulli indipendenti con probabilità p, la frequenza relativa Sₙ/n converge in probabilità a p: per ogni ε>0, P(|Sₙ/n-p|≥ε)→0. Segue per esempio dalla disuguaglianza di Chebyshev, poiché Var(Sₙ/n)=p(1-p)/n.","t":"QA"},
-  {"q":"Come si genera una variabile esponenziale con il metodo dell'inversione?","a":"Se U è uniforme in (0,1), per F(x)=1-e^{-λx} si pone U=F(X) e si ottiene X=-ln(1-U)/λ. Poiché anche 1-U è uniforme, si usa spesso X=-ln U/λ.","t":"QA"},
-  {"q":"Quali proprietà ha la distribuzione esponenziale?","a":"Per X~Exp(λ), f(x)=λe^{-λx} per x≥0, F(x)=1-e^{-λx}, E[X]=1/λ e Var(X)=1/λ². È priva di memoria: P(X>s+t|X>s)=P(X>t). Modella tempi tra eventi di un processo di Poisson.","t":"QA"},
-  {"q":"In che cosa consiste una simulazione Monte Carlo?","a":"Usa campioni pseudocasuali per stimare quantità espresse come valori attesi o probabilità. Si definiscono modello e variabili, si generano repliche indipendenti, si calcola una statistica e se ne misura l'incertezza. Il nome richiama il gioco d'azzardo di Monte Carlo.","t":"QA"},
-  {"q":"Che cos'è un intervallo di confidenza per una media?","a":"È una procedura casuale che, ripetuta su molti campioni, contiene il parametro con frequenza 1-α. Con varianza ignota e campione normale: media campionaria ± t_{1-α/2,n-1}·S/√n. Non significa che, dopo aver osservato l'intervallo, il parametro fisso abbia quella probabilità.","t":"QA"},
-  {"q":"Perché la varianza campionaria usa il denominatore n-1?","a":"S²=Σ(Xᵢ-X̄)²/(n-1) è uno stimatore non distorto della varianza della popolazione. Stimare la media dal medesimo campione consuma un grado di libertà; usando n si sottostimerebbe in media la varianza.","t":"QA"},
-  {"q":"Che cosa sono covarianza e correlazione di Pearson?","a":"Cov(X,Y)=E[(X-E X)(Y-E Y)] misura associazione lineare ma dipende dalle scale. Pearson ρ=Cov(X,Y)/(σXσY) la normalizza tra -1 e 1. Correlazione zero non implica indipendenza, salvo casi particolari come il normale congiunto.","t":"QA"},
-  {"q":"Come si ricavano i coefficienti della retta di regressione lineare semplice?","a":"Si minimizza Σ(yᵢ-a-bxᵢ)². Ponendo a zero le derivate si ottengono b=Sxy/Sxx e a=ȳ-bx̄. Il coefficiente b descrive la variazione media prevista di Y per un'unità di X, non prova causalità.","t":"QA"},
-  {"q":"Qual è la differenza tra curva di regressione e retta di regressione?","a":"La curva di regressione teorica è m(x)=E[Y|X=x] e può essere non lineare. La retta dei minimi quadrati è la migliore approssimazione affine nel senso dell'errore quadratico; coincide con la media condizionata solo in modelli appropriati.","t":"QA"},
-  {"q":"Che cosa sono le statistiche d'ordine?","a":"Sono i valori campionari ordinati X_(1)≤…≤X_(n). X_(1) e X_(n) sono minimo e massimo; mediana e quantili sono altre statistiche d'ordine. Per variabili continue iid, la loro distribuzione deriva contando quanti campioni cadono sotto una soglia.","t":"QA"},
-  {"q":"Quali sono le distribuzioni di minimo e massimo di un campione iid?","a":"Se ogni osservazione ha CDF F, allora P(X_(n)≤x)=F(x)^n. Per il minimo, P(X_(1)>x)=[1-F(x)]^n, dunque F_min(x)=1-[1-F(x)]^n.","t":"QA"},
-  {"q":"Come si ottiene la distribuzione di una somma di variabili indipendenti?","a":"Per variabili continue la densità della somma è la convoluzione: f_{X+Y}(z)=∫fX(x)fY(z-x)dx. Per variabili discrete si usa la somma analoga. Le funzioni generatrici o caratteristiche trasformano la convoluzione in un prodotto.","t":"QA"},
-  {"q":"Come si ricava una distribuzione trasformata Y=g(X)?","a":"Se g è monotona, F_Y(y)=P(g(X)≤y) e la densità è fY(y)=fX(g^{-1}(y))·|d g^{-1}/dy|. Se più valori di x producono lo stesso y, si sommano i contributi di tutti i rami inversi.","t":"QA"},
-  {"q":"Che cos'è un problema di sincronia tra due arrivi?","a":"Si modellano i tempi di arrivo X e Y con una densità congiunta. Eventi come «lo studente arriva dopo il docente» corrispondono alla regione y>x; la probabilità è l'integrale della densità congiunta su tale area. Con indipendenza la congiunta fattorizza in fX(x)fY(y).","t":"QA"},
-  {"q":"Come cambia una densità quando una variabile aleatoria viene traslata?","a":"Se Y=X+c, allora F_Y(y)=F_X(y-c) e f_Y(y)=f_X(y-c). La forma non cambia, ma media e supporto si spostano di c; la varianza resta invariata.","t":"QA"},
-  {"q":"Che cosa modella una distribuzione di Erlang?","a":"È la somma di k esponenziali indipendenti con lo stesso tasso λ, quindi il tempo fino al k-esimo evento di un processo di Poisson. Ha media k/λ e varianza k/λ²; per k intero è un caso particolare della Gamma.","t":"QA"},
-  {"q":"Come si calcola l'affidabilità di un sistema m-out-of-n?","a":"Il sistema funziona se almeno m degli n componenti funzionano. Con componenti indipendenti e affidabilità identica p: R=Σ da k=m a n di C(n,k)p^k(1-p)^{n-k}. Con probabilità differenti si usa una Poisson-binomiale o enumerazione/convoluzione.","t":"QA"},
-  {"q":"Qual è la differenza tra commutazione perfetta e imperfetta in un sistema ridondante?","a":"Con commutazione perfetta, quando un componente attivo guasta il ricambio disponibile viene attivato con probabilità 1. Con commutazione imperfetta l'operazione riesce con probabilità c<1, che moltiplica i percorsi di affidabilità che richiedono lo switch.","t":"QA"},
-  {"q":"Come si distinguono tempo di attesa, giacenza e soggiorno in una coda?","a":"Il tempo di attesa è trascorso prima del servizio; il tempo di servizio è la lavorazione; il tempo di soggiorno è la loro somma. In alcuni modelli la giacenza indica il tempo complessivo nel sistema: va verificata la convenzione usata.","t":"QA"},
-  {"q":"Come cambiano i sistemi di coda poco e molto congestionati?","a":"A basso utilizzo gli arrivi trovano spesso il server libero e l'attesa è piccola. Quando l'utilizzazione ρ si avvicina a 1, code e tempi medi crescono rapidamente; oltre la capacità stabile possono divergere. Per M/M/1, W=1/(μ-λ), con λ<μ.","t":"QA"},
-  {"q":"Come si imposta un test d'ipotesi sulla differenza tra due medie?","a":"Si formulano H₀:μ₁-μ₂=Δ₀ e un'alternativa, si sceglie α e una statistica standardizzata. Con campioni indipendenti e varianze ignote si usa spesso il t-test di Welch. Si rifiuta H₀ se il p-value≤α, riportando anche intervallo ed effetto.","t":"QA"}
+  {
+    "q": "Quali ipotesi definiscono prove di Bernoulli?",
+    "a": "Sono prove indipendenti e identicamente distribuite, ciascuna con due esiti, successo e insuccesso, e probabilità di successo costante p. Il numero di successi in $n$ prove segue una binomiale $B(n,p)$, con media $np$ e varianza $np(1-p)$.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Bernoulli, forma debole della legge dei grandi numeri?",
+    "a": "Per prove di Bernoulli indipendenti con probabilità $p$, la frequenza relativa $S_n/n$ converge in probabilità a $p$: per ogni $\\varepsilon>0$, $\\Pr(|S_n/n-p|\\ge\\varepsilon)\\to 0$. Segue per esempio dalla disuguaglianza di Chebyshev, poiché $\\operatorname{Var}(S_n/n)=p(1-p)/n$.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si genera una variabile esponenziale con il metodo dell'inversione?",
+    "a": "Se $U$ è uniforme in $(0,1)$, per $F(x)=1-e^{-\\lambda x}$ si pone $U=F(X)$ e si ottiene $X=-\\ln(1-U)/\\lambda$. Poiché anche $1-U$ è uniforme, si usa spesso $X=-\\ln U/\\lambda$.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali proprietà ha la distribuzione esponenziale?",
+    "a": "Per $X\\sim\\mathrm{Exp}(\\lambda)$: $f(x)=\\lambda e^{-\\lambda x}$ per $x\\ge 0$, $F(x)=1-e^{-\\lambda x}$, $E[X]=1/\\lambda$ e $\\operatorname{Var}(X)=1/\\lambda^2$. È priva di memoria: $\\Pr(X>s+t\\mid X>s)=\\Pr(X>t)$. Modella tempi tra eventi di un processo di Poisson.",
+    "t": "QA"
+  },
+  {
+    "q": "In che cosa consiste una simulazione Monte Carlo?",
+    "a": "Usa campioni pseudocasuali per stimare quantità espresse come valori attesi o probabilità. Si definiscono modello e variabili, si generano repliche indipendenti, si calcola una statistica e se ne misura l'incertezza. Il nome richiama il gioco d'azzardo di Monte Carlo.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un intervallo di confidenza per una media?",
+    "a": "È una procedura casuale che, ripetuta su molti campioni, contiene il parametro con frequenza 1-α. Con varianza ignota e campione normale: $\\bar{X}\\pm t_{1-\\alpha/2,\\,n-1}\\dfrac{S}{\\sqrt{n}}$. Non significa che, dopo aver osservato l'intervallo, il parametro fisso abbia quella probabilità.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché la varianza campionaria usa il denominatore n-1?",
+    "a": "$S^2=\\dfrac{\\sum_i(X_i-\\bar{X})^2}{n-1}$ è uno stimatore non distorto della varianza della popolazione. Stimare la media dal medesimo campione consuma un grado di libertà; usando n si sottostimerebbe in media la varianza.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono covarianza e correlazione di Pearson?",
+    "a": "$\\operatorname{Cov}(X,Y)=E[(X-EX)(Y-EY)]$ misura associazione lineare ma dipende dalle scale. Pearson $\\rho=\\dfrac{\\operatorname{Cov}(X,Y)}{\\sigma_X\\sigma_Y}$ la normalizza tra $-1$ e $1$. Correlazione zero non implica indipendenza, salvo casi particolari come il normale congiunto.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si ricavano i coefficienti della retta di regressione lineare semplice?",
+    "a": "Si minimizza $\\sum_i(y_i-a-bx_i)^2$. Ponendo a zero le derivate si ottengono $b=S_{xy}/S_{xx}$ e $a=\\bar{y}-b\\bar{x}$. Il coefficiente b descrive la variazione media prevista di Y per un'unità di X, non prova causalità.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra curva di regressione e retta di regressione?",
+    "a": "La curva di regressione teorica è $m(x)=E[Y\\mid X=x]$ e può essere non lineare. La retta dei minimi quadrati è la migliore approssimazione affine nel senso dell'errore quadratico; coincide con la media condizionata solo in modelli appropriati.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono le statistiche d'ordine?",
+    "a": "Sono i valori campionari ordinati $X_{(1)}\\le\\dots\\le X_{(n)}$. $X_{(1)}$ e $X_{(n)}$ sono minimo e massimo; mediana e quantili sono altre statistiche d'ordine. Per variabili continue iid, la loro distribuzione deriva contando quanti campioni cadono sotto una soglia.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le distribuzioni di minimo e massimo di un campione iid?",
+    "a": "Se ogni osservazione ha CDF $F$, allora $\\Pr(X_{(n)}\\le x)=F(x)^n$. Per il minimo, $\\Pr(X_{(1)}>x)=[1-F(x)]^n$, dunque $F_{\\min}(x)=1-[1-F(x)]^n$.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si ottiene la distribuzione di una somma di variabili indipendenti?",
+    "a": "Per variabili continue la densità della somma è la convoluzione: $$f_{X+Y}(z)=\\int f_X(x)f_Y(z-x)\\,dx$$ Per variabili discrete si usa la somma analoga. Le funzioni generatrici o caratteristiche trasformano la convoluzione in un prodotto.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si ricava una distribuzione trasformata Y=g(X)?",
+    "a": "Se $g$ è monotona, $F_Y(y)=\\Pr(g(X)\\le y)$ e la densità è $f_Y(y)=f_X(g^{-1}(y))\\cdot\\big|\\tfrac{d}{dy}g^{-1}(y)\\big|$. Se più valori di x producono lo stesso y, si sommano i contributi di tutti i rami inversi.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un problema di sincronia tra due arrivi?",
+    "a": "Si modellano i tempi di arrivo X e Y con una densità congiunta. Eventi come «lo studente arriva dopo il docente» corrispondono alla regione $y>x$; la probabilità è l'integrale della densità congiunta su tale area. Con indipendenza la congiunta fattorizza in $f_X(x)f_Y(y)$.",
+    "t": "QA"
+  },
+  {
+    "q": "Come cambia una densità quando una variabile aleatoria viene traslata?",
+    "a": "Se $Y=X+c$, allora $F_Y(y)=F_X(y-c)$ e $f_Y(y)=f_X(y-c)$. La forma non cambia, ma media e supporto si spostano di $c$; la varianza resta invariata.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa modella una distribuzione di Erlang?",
+    "a": "È la somma di $k$ esponenziali indipendenti con lo stesso tasso $\\lambda$, quindi il tempo fino al $k$-esimo evento di un processo di Poisson. Ha media $k/\\lambda$ e varianza $k/\\lambda^2$; per k intero è un caso particolare della Gamma.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si calcola l'affidabilità di un sistema m-out-of-n?",
+    "a": "Il sistema funziona se almeno $m$ degli $n$ componenti funzionano. Con componenti indipendenti e affidabilità identica $p$: $$R=\\sum_{k=m}^{n}\\binom{n}{k}p^k(1-p)^{n-k}$$ Con probabilità differenti si usa una Poisson-binomiale o enumerazione/convoluzione.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra commutazione perfetta e imperfetta in un sistema ridondante?",
+    "a": "Con commutazione perfetta, quando un componente attivo guasta il ricambio disponibile viene attivato con probabilità 1. Con commutazione imperfetta l'operazione riesce con probabilità $c<1$, che moltiplica i percorsi di affidabilità che richiedono lo switch.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si distinguono tempo di attesa, giacenza e soggiorno in una coda?",
+    "a": "Il tempo di attesa è trascorso prima del servizio; il tempo di servizio è la lavorazione; il tempo di soggiorno è la loro somma. In alcuni modelli la giacenza indica il tempo complessivo nel sistema: va verificata la convenzione usata.",
+    "t": "QA"
+  },
+  {
+    "q": "Come cambiano i sistemi di coda poco e molto congestionati?",
+    "a": "A basso utilizzo gli arrivi trovano spesso il server libero e l'attesa è piccola. Quando l'utilizzazione $\\rho$ si avvicina a 1, code e tempi medi crescono rapidamente; oltre la capacità stabile possono divergere. Per M/M/1, $W=\\dfrac{1}{\\mu-\\lambda}$ con $\\lambda<\\mu$.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si imposta un test d'ipotesi sulla differenza tra due medie?",
+    "a": "Si formulano $H_0:\\mu_1-\\mu_2=\\Delta_0$ e un'alternativa, si sceglie $\\alpha$ e una statistica standardizzata. Con campioni indipendenti e varianze ignote si usa spesso il t-test di Welch. Si rifiuta $H_0$ se il p-value $\\le\\alpha$, riportando anche intervallo ed effetto.",
+    "t": "QA"
+  }
 ]

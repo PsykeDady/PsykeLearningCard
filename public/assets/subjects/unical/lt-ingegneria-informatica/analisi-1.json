@@ -1,26 +1,122 @@
 [
-  {"q":"Che cosa afferma il teorema di Rolle?","a":"Se f è continua su [a,b], derivabile su (a,b) e f(a)=f(b), esiste c∈(a,b) con f'(c)=0.\n\nÈ un caso particolare del teorema di Lagrange e garantisce una tangente orizzontale.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Lagrange e come si dimostra?","a":"Se f è continua su [a,b] e derivabile su (a,b), esiste c con f'(c)=[f(b)−f(a)]/(b−a).\n\nSi sottrae a f la retta secante tra gli estremi e si applica Rolle alla funzione risultante.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Cauchy del valor medio?","a":"Se f e g sono continue su [a,b] e derivabili su (a,b), esiste c tale che [f(b)−f(a)]g'(c)=[g(b)−g(a)]f'(c).\n\nGeneralizza Lagrange ed è alla base della regola di de l'Hôpital.","t":"QA"},
-  {"q":"Che cosa affermano i teoremi di Fermat e Weierstrass?","a":"Fermat: in un estremo locale interno, se f è derivabile, f'=0. Weierstrass: una funzione continua su un compatto raggiunge massimo e minimo assoluti.\n\nFermat dà una condizione necessaria, non sufficiente; Weierstrass garantisce esistenza.","t":"QA"},
-  {"q":"Che cosa afferma Bolzano–Weierstrass?","a":"Ogni successione limitata in ℝ^n possiede una sottosuccessione convergente.\n\nEquivalentemente, ogni insieme infinito limitato ha almeno un punto di accumulazione; il limite della sottosuccessione può non essere unico per la successione intera.","t":"QA"},
-  {"q":"Che cosa sono limite e permanenza del segno?","a":"lim_{x→x₀}f(x)=L se f(x) entra in ogni intorno di L quando x è sufficientemente vicino a x₀.\n\nSe L>0, allora f(x)>0 in un intorno bucato del punto; analogamente per L<0. Il limite, se esiste, è unico.","t":"QA"},
-  {"q":"Perché lim_{x→0} sin x/x=1?","a":"Per 0<x<π/2, dalla geometria del cerchio si ottiene cos x≤sin x/x≤1.\n\nFacendo tendere x a zero e usando il confronto, entrambi gli estremi tendono a 1; la parità estende il risultato da sinistra.","t":"QA"},
-  {"q":"Quali sono alcuni limiti notevoli fondamentali?","a":"sin x/x→1, (e^x−1)/x→1, log(1+x)/x→1 per x→0 e (1+1/n)^n→e.\n\nCon sostituzioni equivalenti si trattano composizioni, purché l'argomento interno tenda al punto richiesto.","t":"QA"},
-  {"q":"Qual è la gerarchia degli infiniti?","a":"Per x→+∞ e parametri positivi, log^a x=o(x^b), x^b=o(c^x) per c>1 ed esponenziali sono dominati da crescite ancora più rapide come x^x.\n\nSi dimostra con de l'Hôpital, logaritmi o confronti di rapporti.","t":"QA"},
-  {"q":"Che cos'è la derivata e perché derivabilità implica continuità?","a":"f'(x₀)=lim_{h→0}[f(x₀+h)−f(x₀)]/h. Se esiste finita, f(x₀+h)−f(x₀)=h[f'(x₀)+o(1)]→0, quindi f è continua.\n\nIl contrario è falso, per esempio |x| in zero.","t":"QA"},
-  {"q":"Quali tipi di punti di non derivabilità esistono?","a":"Punto angoloso: derivate laterali finite diverse; cuspide: laterali infinite di segno opposto; tangente verticale: derivate infinite dello stesso segno.\n\nAnche una discontinuità impedisce la derivabilità.","t":"QA"},
-  {"q":"Quali sono le principali regole di derivazione?","a":"Linearità, prodotto (fg)'=f'g+fg', quoziente (f/g)'=(f'g−fg')/g² e catena (f∘g)'=f'(g)g'.\n\nPer esempio (e^{sin x})'=e^{sin x}cos x e [log(cos x)]'=−tan x dove definita.","t":"QA"},
-  {"q":"Quando una funzione inversa è derivabile?","a":"Se f è localmente invertibile, derivabile in x₀ e f'(x₀)≠0, allora (f⁻¹)'(f(x₀))=1/f'(x₀).\n\nMonotonia stretta garantisce l'invertibilità globale su un intervallo, ma la derivabilità richiede le ipotesi locali.","t":"QA"},
-  {"q":"Come si classificano punti stazionari, massimi, minimi e flessi?","a":"I punti stazionari soddisfano f'=0. Il cambio di segno di f' da + a − dà massimo, da − a + minimo; senza cambio può esserci un flesso orizzontale.\n\nUn flesso richiede cambio di concavità, non soltanto f''=0.","t":"QA"},
-  {"q":"Che cosa afferma la formula di Taylor?","a":"Se f è sufficientemente derivabile vicino ad a, f(x)=Σ_{k=0}^n f^{(k)}(a)(x−a)^k/k!+R_n(x).\n\nCon resto di Peano R_n=o((x−a)^n); con Lagrange R_n=f^{(n+1)}(ξ)(x−a)^{n+1}/(n+1)!.","t":"QA"},
-  {"q":"Che cos'è una serie e qual è una condizione necessaria di convergenza?","a":"La serie Σa_n converge se la successione delle somme parziali ha limite finito. Necessariamente a_n→0; se il termine non tende a zero la serie diverge.\n\nLa condizione è necessaria ma non sufficiente, come mostra la serie armonica.","t":"QA"},
-  {"q":"Come funzionano confronto e confronto asintotico per serie positive?","a":"Se 0≤a_n≤b_n definitivamente e Σb_n converge, converge Σa_n; se Σa_n diverge, diverge Σb_n.\n\nSe a_n/b_n→L con 0<L<∞, le due serie hanno lo stesso carattere.","t":"QA"},
-  {"q":"Come funzionano i criteri della radice e del rapporto?","a":"Per L=limsup |a_n|^{1/n}, la serie converge assolutamente se L<1 e diverge se L>1. Analogo criterio usa |a_{n+1}/a_n|.\n\nSe L=1 entrambi sono inconcludenti.","t":"QA"},
-  {"q":"Come funziona il criterio di Leibniz?","a":"Una serie alternata Σ(−1)^n b_n converge se b_n≥0, decresce definitivamente e tende a zero.\n\nIl resto dopo n termini ha modulo al più b_{n+1}; la convergenza può essere condizionata, non assoluta.","t":"QA"},
-  {"q":"Che cos'è un integrale definito e che cos'è una primitiva?","a":"L'integrale definito è il limite delle somme di Riemann e rappresenta area orientata/accumulazione.\n\nF è primitiva di f se F'=f; l'integrale indefinito è la famiglia F+C, non un'area con estremi variabili.","t":"QA"},
-  {"q":"Che cosa afferma il teorema fondamentale del calcolo integrale?","a":"Se f è continua e G(x)=∫_a^x f(t)dt, allora G'=f. Se F è una primitiva, ∫_a^b f=F(b)−F(a).\n\nLa prima parte deriva l'accumulazione; la seconda calcola integrali definiti.","t":"QA"},
-  {"q":"Che cosa afferma il teorema della media integrale?","a":"Se f è continua su [a,b], esiste c∈[a,b] tale che ∫_a^b f(x)dx=f(c)(b−a).\n\nIl valore medio è quindi (1/(b−a))∫_a^b f.","t":"QA"},
-  {"q":"Quando converge un integrale improprio?","a":"Si sostituisce l'estremo infinito o la singolarità con un limite di integrali propri. Converge se tale limite è finito.\n\nLa convergenza assoluta di ∫|f| implica quella di ∫f, ma non viceversa.","t":"QA"},
-  {"q":"Come funzionano confronto e confronto asintotico per integrali impropri?","a":"Per 0≤f≤g, la convergenza di ∫g implica quella di ∫f e la divergenza di ∫f implica quella di ∫g.\n\nSe f/g→L∈(0,∞) presso il punto improprio, i due integrali hanno lo stesso carattere.","t":"QA"}
+  {
+    "q": "Che cosa afferma il teorema di Rolle?",
+    "a": "Se $f$ è continua su $[a,b]$, derivabile su $(a,b)$ e $f(a)=f(b)$, esiste $c\\in(a,b)$ con $f'(c)=0$.\n\nÈ un caso particolare del teorema di Lagrange e garantisce una tangente orizzontale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Lagrange e come si dimostra?",
+    "a": "Se $f$ è continua su $[a,b]$ e derivabile su $(a,b)$, esiste $c$ con $$f'(c)=\\frac{f(b)-f(a)}{b-a}$$\n\nSi sottrae a f la retta secante tra gli estremi e si applica Rolle alla funzione risultante.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Cauchy del valor medio?",
+    "a": "Se $f$ e $g$ sono continue su $[a,b]$ e derivabili su $(a,b)$, esiste $c$ tale che $$[f(b)-f(a)]g'(c)=[g(b)-g(a)]f'(c)$$\n\nGeneralizza Lagrange ed è alla base della regola di de l'Hôpital.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa affermano i teoremi di Fermat e Weierstrass?",
+    "a": "Fermat: in un estremo locale interno, se $f$ è derivabile, $f'=0$. Weierstrass: una funzione continua su un compatto raggiunge massimo e minimo assoluti.\n\nFermat dà una condizione necessaria, non sufficiente; Weierstrass garantisce esistenza.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma Bolzano–Weierstrass?",
+    "a": "Ogni successione limitata in $\\mathbb{R}^n$ possiede una sottosuccessione convergente.\n\nEquivalentemente, ogni insieme infinito limitato ha almeno un punto di accumulazione; il limite della sottosuccessione può non essere unico per la successione intera.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono limite e permanenza del segno?",
+    "a": "$\\lim_{x\\to x_0}f(x)=L$ se $f(x)$ entra in ogni intorno di $L$ quando $x$ è sufficientemente vicino a $x_0$.\n\nSe $L>0$, allora $f(x)>0$ in un intorno bucato del punto; analogamente per $L<0$. Il limite, se esiste, è unico.",
+    "t": "QA"
+  },
+  {
+    "q": "Perché lim_{x→0} sin x/x=1?",
+    "a": "Per $0<x<\\pi/2$, dalla geometria del cerchio si ottiene $\\cos x\\le\\dfrac{\\sin x}{x}\\le 1$.\n\nFacendo tendere $x$ a zero e usando il confronto, entrambi gli estremi tendono a 1; la parità estende il risultato da sinistra.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono alcuni limiti notevoli fondamentali?",
+    "a": "$$\\frac{\\sin x}{x}\\to 1,\\qquad \\frac{e^x-1}{x}\\to 1,\\qquad \\frac{\\log(1+x)}{x}\\to 1\\ \\ (x\\to 0),\\qquad \\Big(1+\\frac{1}{n}\\Big)^n\\to e$$\n\nCon sostituzioni equivalenti si trattano composizioni, purché l'argomento interno tenda al punto richiesto.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la gerarchia degli infiniti?",
+    "a": "Per $x\\to+\\infty$ e parametri positivi, $\\log^a x=o(x^b)$, $x^b=o(c^x)$ per $c>1$ ed esponenziali sono dominati da crescite ancora più rapide come $x^x$.\n\nSi dimostra con de l'Hôpital, logaritmi o confronti di rapporti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è la derivata e perché derivabilità implica continuità?",
+    "a": "$$f'(x_0)=\\lim_{h\\to 0}\\frac{f(x_0+h)-f(x_0)}{h}$$ Se esiste finita, $f(x_0+h)-f(x_0)=h[f'(x_0)+o(1)]\\to 0$, quindi $f$ è continua.\n\nIl contrario è falso, per esempio $|x|$ in zero.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali tipi di punti di non derivabilità esistono?",
+    "a": "Punto angoloso: derivate laterali finite diverse; cuspide: laterali infinite di segno opposto; tangente verticale: derivate infinite dello stesso segno.\n\nAnche una discontinuità impedisce la derivabilità.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le principali regole di derivazione?",
+    "a": "Linearità, prodotto $(fg)'=f'g+fg'$, quoziente $(f/g)'=\\dfrac{f'g-fg'}{g^2}$ e catena $(f\\circ g)'=f'(g)g'$.\n\nPer esempio $(e^{\\sin x})'=e^{\\sin x}\\cos x$ e $[\\log(\\cos x)]'=-\\tan x$ dove definita.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando una funzione inversa è derivabile?",
+    "a": "Se $f$ è localmente invertibile, derivabile in $x_0$ e $f'(x_0)\\ne 0$, allora $(f^{-1})'(f(x_0))=1/f'(x_0)$.\n\nMonotonia stretta garantisce l'invertibilità globale su un intervallo, ma la derivabilità richiede le ipotesi locali.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si classificano punti stazionari, massimi, minimi e flessi?",
+    "a": "I punti stazionari soddisfano $f'=0$. Il cambio di segno di $f'$ da $+$ a $-$ dà massimo, da $-$ a $+$ minimo; senza cambio può esserci un flesso orizzontale.\n\nUn flesso richiede cambio di concavità, non soltanto $f''=0$.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma la formula di Taylor?",
+    "a": "Se $f$ è sufficientemente derivabile vicino ad $a$: $$f(x)=\\sum_{k=0}^{n}\\frac{f^{(k)}(a)}{k!}(x-a)^k+R_n(x)$$\n\nCon resto di Peano $R_n=o((x-a)^n)$; con Lagrange $R_n=\\dfrac{f^{(n+1)}(\\xi)}{(n+1)!}(x-a)^{n+1}$.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una serie e qual è una condizione necessaria di convergenza?",
+    "a": "La serie $\\sum a_n$ converge se la successione delle somme parziali ha limite finito. Necessariamente $a_n\\to 0$; se il termine non tende a zero la serie diverge.\n\nLa condizione è necessaria ma non sufficiente, come mostra la serie armonica.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano confronto e confronto asintotico per serie positive?",
+    "a": "Se $0\\le a_n\\le b_n$ definitivamente e $\\sum b_n$ converge, converge $\\sum a_n$; se $\\sum a_n$ diverge, diverge $\\sum b_n$.\n\nSe $a_n/b_n\\to L$ con $0<L<\\infty$, le due serie hanno lo stesso carattere.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano i criteri della radice e del rapporto?",
+    "a": "Per $L=\\limsup|a_n|^{1/n}$, la serie converge assolutamente se $L<1$ e diverge se $L>1$. Analogo criterio usa $|a_{n+1}/a_n|$.\n\nSe $L=1$ entrambi sono inconcludenti.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il criterio di Leibniz?",
+    "a": "Una serie alternata $\\sum(-1)^n b_n$ converge se $b_n\\ge 0$, decresce definitivamente e tende a zero.\n\nIl resto dopo $n$ termini ha modulo al più $b_{n+1}$; la convergenza può essere condizionata, non assoluta.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è un integrale definito e che cos'è una primitiva?",
+    "a": "L'integrale definito è il limite delle somme di Riemann e rappresenta area orientata/accumulazione.\n\n$F$ è primitiva di $f$ se $F'=f$; l'integrale indefinito è la famiglia $F+C$, non un'area con estremi variabili.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema fondamentale del calcolo integrale?",
+    "a": "Se $f$ è continua e $G(x)=\\int_a^x f(t)\\,dt$, allora $G'=f$. Se $F$ è una primitiva, $\\int_a^b f=F(b)-F(a)$.\n\nLa prima parte deriva l'accumulazione; la seconda calcola integrali definiti.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema della media integrale?",
+    "a": "Se $f$ è continua su $[a,b]$, esiste $c\\in[a,b]$ tale che $\\int_a^b f(x)\\,dx=f(c)(b-a)$.\n\nIl valore medio è quindi $\\dfrac{1}{b-a}\\int_a^b f$.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando converge un integrale improprio?",
+    "a": "Si sostituisce l'estremo infinito o la singolarità con un limite di integrali propri. Converge se tale limite è finito.\n\nLa convergenza assoluta di $\\int|f|$ implica quella di $\\int f$, ma non viceversa.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano confronto e confronto asintotico per integrali impropri?",
+    "a": "Per $0\\le f\\le g$, la convergenza di $\\int g$ implica quella di $\\int f$ e la divergenza di $\\int f$ implica quella di $\\int g$.\n\nSe $f/g\\to L\\in(0,\\infty)$ presso il punto improprio, i due integrali hanno lo stesso carattere.",
+    "t": "QA"
+  }
 ]

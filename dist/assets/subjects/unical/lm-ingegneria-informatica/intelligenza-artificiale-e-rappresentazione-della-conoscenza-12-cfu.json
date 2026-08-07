@@ -1,12 +1,12 @@
 [
   {
     "q": "Qual è la differenza tra correttezza e completezza di un sistema di inferenza?",
-    "a": "È corretto, o sound, se tutto ciò che deriva sintatticamente è conseguenza semantica: Γ⊢φ implica Γ⊨φ.\n\nÈ completo se ogni conseguenza semantica è derivabile: Γ⊨φ implica Γ⊢φ.\n\nCorrettezza evita conclusioni false; completezza evita di perdere conclusioni valide.",
+    "a": "È corretto, o sound, se tutto ciò che deriva sintatticamente è conseguenza semantica: $\\Gamma\\vdash\\varphi$ implica $\\Gamma\\models\\varphi$.\n\nÈ completo se ogni conseguenza semantica è derivabile: $\\Gamma\\models\\varphi$ implica $\\Gamma\\vdash\\varphi$.\n\nCorrettezza evita conclusioni false; completezza evita di perdere conclusioni valide.",
     "t": "QA"
   },
   {
     "q": "Il modus ponens è una regola corretta e completa?",
-    "a": "Da P e P→Q dedurre Q è corretto.\n\nCome unica regola sul linguaggio proposizionale generale non è completa, perché molte conseguenze richiedono altre trasformazioni o regole.\n\nPer programmi Horn, una versione generalizzata tramite immediate consequence operator è completa per le conseguenze atomiche.",
+    "a": "Da $P$ e $P\\to Q$ dedurre $Q$ è corretto.\n\nCome unica regola sul linguaggio proposizionale generale non è completa, perché molte conseguenze richiedono altre trasformazioni o regole.\n\nPer programmi Horn, una versione generalizzata tramite immediate consequence operator è completa per le conseguenze atomiche.",
     "t": "QA"
   },
   {
@@ -21,17 +21,17 @@
   },
   {
     "q": "Che cos'è l'abduzione?",
-    "a": "Dato background T e osservazione O, cerca un'ipotesi H tale che T∪H sia coerente e implichi O.\n\nLe spiegazioni vengono spesso richieste minime o preferite secondo un costo.\n\nA differenza della deduzione, risale da un effetto possibile a cause plausibili e non necessariamente uniche.",
+    "a": "Dato background $T$ e osservazione $O$, cerca un'ipotesi $H$ tale che $T\\cup H$ sia coerente e implichi $O$.\n\nLe spiegazioni vengono spesso richieste minime o preferite secondo un costo.\n\nA differenza della deduzione, risale da un effetto possibile a cause plausibili e non necessariamente uniche.",
     "t": "QA"
   },
   {
     "q": "Come funziona breadth-first search?",
-    "a": "Espande i nodi per profondità crescente tramite una coda.\n\nÈ completa con branching finito e ottima con costi unitari, ma richiede tempo e memoria O(b^d).\n\nNon usa informazioni euristiche.",
+    "a": "Espande i nodi per profondità crescente tramite una coda.\n\nÈ completa con branching finito e ottima con costi unitari, ma richiede tempo e memoria $O(b^d)$.\n\nNon usa informazioni euristiche.",
     "t": "QA"
   },
   {
     "q": "Come funziona iterative deepening e quando termina senza goal?",
-    "a": "Ripete depth-limited DFS aumentando il limite.\n\nPer uno spazio finito può terminare quando un'iterazione non incontra cutoff, segnalando che non esistono nodi oltre il limite e quindi nessun goal raggiungibile.\n\nConserva memoria O(bd) e ottimalità per costi unitari.",
+    "a": "Ripete depth-limited DFS aumentando il limite.\n\nPer uno spazio finito può terminare quando un'iterazione non incontra cutoff, segnalando che non esistono nodi oltre il limite e quindi nessun goal raggiungibile.\n\nConserva memoria $O(bd)$ e ottimalità per costi unitari.",
     "t": "QA"
   },
   {
@@ -41,17 +41,17 @@
   },
   {
     "q": "Come funziona IDA*?",
-    "a": "Esegue DFS con soglia su f=g+h.\n\nIn ogni iterazione la soglia successiva è il minimo valore f che ha superato quella corrente, così include almeno un nuovo nodo.\n\nUsa memoria lineare nella profondità ed è ottimo con euristica ammissibile, ma può riespandere molti stati.",
+    "a": "Esegue DFS con soglia su $f=g+h$.\n\nIn ogni iterazione la soglia successiva è il minimo valore $f$ che ha superato quella corrente, così include almeno un nuovo nodo.\n\nUsa memoria lineare nella profondità ed è ottimo con euristica ammissibile, ma può riespandere molti stati.",
     "t": "QA"
   },
   {
     "q": "Qual è la differenza tra A* e greedy best-first search?",
-    "a": "A* ordina per f=g+h e considera costo già sostenuto e stimato; greedy ordina soltanto per h.\n\nGreedy può raggiungere rapidamente un goal ma non è in generale ottimo; A* è ottimo con le condizioni appropriate sull'euristica e sulla gestione dei duplicati.",
+    "a": "A* ordina per $f=g+h$ e considera costo già sostenuto e stimato; greedy ordina soltanto per $h$.\n\nGreedy può raggiungere rapidamente un goal ma non è in generale ottimo; A* è ottimo con le condizioni appropriate sull'euristica e sulla gestione dei duplicati.",
     "t": "QA"
   },
   {
     "q": "Come funzionano hill climbing e simulated annealing?",
-    "a": "Hill climbing accetta soltanto mosse migliorative e può bloccarsi in ottimi locali o plateau.\n\nSimulated annealing accetta anche peggioramenti con probabilità e^(−Δ/T); una temperatura inizialmente alta favorisce esplorazione e viene poi ridotta per stabilizzare la ricerca.",
+    "a": "Hill climbing accetta soltanto mosse migliorative e può bloccarsi in ottimi locali o plateau.\n\nSimulated annealing accetta anche peggioramenti con probabilità $e^{-\\Delta/T}$; una temperatura inizialmente alta favorisce esplorazione e viene poi ridotta per stabilizzare la ricerca.",
     "t": "QA"
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "q": "Quando alpha–beta può potare un ramo?",
-    "a": "Quando il bound del nodo dimostra che non può migliorare la scelta dell'antenato: in forma standard si pota se α≥β.\n\nI valori assoluti, come 0,001 o −0,001, non bastano; occorre confrontarli con i bound accumulati lungo il cammino.",
+    "a": "Quando il bound del nodo dimostra che non può migliorare la scelta dell'antenato: in forma standard si pota se $\\alpha\\ge\\beta$.\n\nI valori assoluti, come 0,001 o −0,001, non bastano; occorre confrontarli con i bound accumulati lungo il cammino.",
     "t": "QA"
   },
   {
     "q": "Come rappresenta azioni e stati STRIPS?",
-    "a": "Uno stato è un insieme di fatti.\n\nUn'azione ha precondizioni, add list e delete list; applicandola si ottiene (S−Del)∪Add.\n\nSTRIPS usa inerzia implicita per i fatti non menzionati, risolvendo pragmaticamente il frame problem nel dominio rappresentato.",
+    "a": "Uno stato è un insieme di fatti.\n\nUn'azione ha precondizioni, add list e delete list; applicandola si ottiene $(S\\setminus \\mathrm{Del})\\cup \\mathrm{Add}$.\n\nSTRIPS usa inerzia implicita per i fatti non menzionati, risolvendo pragmaticamente il frame problem nel dominio rappresentato.",
     "t": "QA"
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "q": "Che cos'è un modello stabile di un programma con negazione?",
-    "a": "Dato un insieme candidato M, il ridotto di Gelfond–Lifschitz elimina regole il cui corpo contiene not a con a∈M e rimuove le negazioni restanti.\n\nM è stabile se è un modello minimale del ridotto; per programmi normali positivi coincide con il minimo modello.",
+    "a": "Dato un insieme candidato M, il ridotto di Gelfond–Lifschitz elimina regole il cui corpo contiene $\\mathrm{not}\\ a$ con $a\\in M$ e rimuove le negazioni restanti.\n\nM è stabile se è un modello minimale del ridotto; per programmi normali positivi coincide con il minimo modello.",
     "t": "QA"
   },
   {

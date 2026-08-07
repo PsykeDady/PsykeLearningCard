@@ -1,4 +1,4 @@
 [
-  {"q":"Come si definiscono le coordinate polari nel piano?","a":"x=r cos θ e y=r sin θ, con r≥0; inversamente r=√(x²+y²) e θ determinato con atan2(y,x).\n\nI versori dipendono da θ e l'elemento di area è dA=r dr dθ.","t":"QA"},
-  {"q":"Che cosa afferma il teorema dell'energia cinetica?","a":"Il lavoro totale delle forze lungo lo spostamento è uguale alla variazione dell'energia cinetica: W_tot=ΔK, con K=mv²/2.\n\nDeriva da F=ma e vale anche con forze non conservative; per un sistema si includono correttamente lavori esterni e interni.","t":"QA"}
+  {"q":"Come si definiscono le coordinate polari nel piano?","a":"$x=r\\cos\\theta$ e $y=r\\sin\\theta$, con $r\\ge 0$; inversamente $r=\\sqrt{x^2+y^2}$ e $\\theta$ determinato con $\\mathrm{atan2}(y,x)$.\n\nI versori dipendono da $\\theta$ e l'elemento di area è $dA=r\\,dr\\,d\\theta$.","t":"QA"},
+  {"q":"Che cosa afferma il teorema dell'energia cinetica?","a":"Il lavoro totale delle forze lungo lo spostamento è uguale alla variazione dell'energia cinetica: $W_{tot}=\\Delta K$, con $K=\\tfrac{1}{2}mv^2$.\n\nDeriva da $F=ma$ e vale anche con forze non conservative; per un sistema si includono correttamente lavori esterni e interni.","t":"QA"}
 ]

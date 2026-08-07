@@ -1,7 +1,7 @@
 [
   {
     "q": "Che cos'è la linearizzazione di un sistema non lineare attorno a un punto di equilibrio?",
-    "a": "È l'approssimazione locale ottenuta sviluppando le equazioni di stato e di uscita al primo ordine.\n\nSe ẋ=f(x,u) e y=h(x,u), attorno a (xₑ,uₑ) si ottiene δẋ=Aδx+Bδu e δy=Cδx+Dδu, dove A, B, C e D sono le rispettive matrici Jacobiane valutate nel punto di equilibrio.",
+    "a": "È l'approssimazione locale ottenuta sviluppando le equazioni di stato e di uscita al primo ordine.\n\nSe $\\dot{x}=f(x,u)$ e $y=h(x,u)$, attorno a $(x_e,u_e)$ si ottiene $$\\delta\\dot{x}=A\\,\\delta x+B\\,\\delta u,\\qquad \\delta y=C\\,\\delta x+D\\,\\delta u$$ dove $A$, $B$, $C$ e $D$ sono le rispettive matrici Jacobiane valutate nel punto di equilibrio.",
     "t": "QA"
   },
   {
@@ -11,32 +11,32 @@
   },
   {
     "q": "In cosa consiste l'analisi in frequenza di un sistema LTI?",
-    "a": "Studia la risposta sinusoidale a regime tramite G(jω).\n\nModulo e fase descrivono come ogni frequenza viene amplificata e sfasata; diagrammi di Bode, Nyquist o Nichols permettono inoltre di valutare banda, risonanza e margini di stabilità.",
+    "a": "Studia la risposta sinusoidale a regime tramite $G(j\\omega)$.\n\nModulo e fase descrivono come ogni frequenza viene amplificata e sfasata; diagrammi di Bode, Nyquist o Nichols permettono inoltre di valutare banda, risonanza e margini di stabilità.",
     "t": "QA"
   },
   {
     "q": "Qual è la risposta libera di un sistema LTI continuo nello spazio di stato?",
-    "a": "Con ingresso nullo e stato iniziale x(0), la risposta di stato è x(t)=e^(At)x(0).\n\nL'uscita libera è y(t)=Ce^(At)x(0), assumendo il modello y=Cx+Du.",
+    "a": "Con ingresso nullo e stato iniziale $x(0)$, la risposta di stato è $x(t)=e^{At}x(0)$.\n\nL'uscita libera è $y(t)=Ce^{At}x(0)$, assumendo il modello $y=Cx+Du$.",
     "t": "QA"
   },
   {
     "q": "Come si definisce e come si può calcolare l'esponenziale di una matrice?",
-    "a": "Si definisce e^(At)=Σₖ₌₀∞(At)^k/k!.\n\nSi può calcolare mediante diagonalizzazione A=VΛV⁻¹, ottenendo Ve^(Λt)V⁻¹, oppure con forma di Jordan, teorema di Cayley-Hamilton o metodi numerici.\n\nÈ la matrice di transizione dello stato di ẋ=Ax.",
+    "a": "Si definisce $$e^{At}=\\sum_{k=0}^{\\infty}\\frac{(At)^k}{k!}$$\n\nSi può calcolare mediante diagonalizzazione $A=V\\Lambda V^{-1}$, ottenendo $Ve^{\\Lambda t}V^{-1}$, oppure con forma di Jordan, teorema di Cayley-Hamilton o metodi numerici.\n\nÈ la matrice di transizione dello stato di $\\dot{x}=Ax$.",
     "t": "QA"
   },
   {
     "q": "Che cos'è l'equazione di Sylvester e quando ammette soluzione unica?",
-    "a": "Nella forma AX+XB=C, ammette un'unica soluzione X per ogni C se e solo se A e −B non hanno autovalori in comune.\n\nEquazioni di Lyapunov come AX+XAᵀ=C ne sono un caso particolare.",
+    "a": "Nella forma $AX+XB=C$ ammette un'unica soluzione $X$ per ogni $C$ se e solo se $A$ e $-B$ non hanno autovalori in comune.\n\nEquazioni di Lyapunov come $AX+XA^{\\mathsf{T}}=C$ ne sono un caso particolare.",
     "t": "QA"
   },
   {
     "q": "Quando un sistema LTI è completamente raggiungibile?",
-    "a": "Il sistema ẋ=Ax+Bu di ordine n è completamente raggiungibile se la matrice [B AB … A^(n−1)B] ha rango n.\n\nEquivalentemente, ogni stato può essere raggiunto da qualunque stato iniziale in un tempo finito mediante un ingresso opportuno.",
+    "a": "Il sistema $\\dot{x}=Ax+Bu$ di ordine $n$ è completamente raggiungibile se la matrice $\\big[\\,B\\ \\ AB\\ \\ \\dots\\ \\ A^{n-1}B\\,\\big]$ ha rango $n$.\n\nEquivalentemente, ogni stato può essere raggiunto da qualunque stato iniziale in un tempo finito mediante un ingresso opportuno.",
     "t": "QA"
   },
   {
     "q": "Quando un sistema LTI è completamente osservabile?",
-    "a": "Il sistema è completamente osservabile se lo stato iniziale può essere ricostruito dall'ingresso e dall'uscita in un intervallo finito.\n\nPer un sistema di ordine n ciò equivale ad avere rango n per [C; CA; …; CA^(n−1)].",
+    "a": "Il sistema è completamente osservabile se lo stato iniziale può essere ricostruito dall'ingresso e dall'uscita in un intervallo finito.\n\nPer un sistema di ordine $n$ ciò equivale ad avere rango $n$ per $\\big[\\,C;\\ CA;\\ \\dots;\\ CA^{n-1}\\,\\big]$.",
     "t": "QA"
   },
   {
@@ -46,17 +46,17 @@
   },
   {
     "q": "Qual è il controllo a energia minima per trasferire lo stato di un sistema LTI?",
-    "a": "Per ẋ=Ax+Bu, trasferimento da x₀ a x_f al tempo T e Gramiano W(T)=∫₀ᵀe^(Aτ)BBᵀe^(Aᵀτ)dτ invertibile, il controllo minimo è u*(t)=Bᵀe^(Aᵀ(T−t))W(T)⁻¹[x_f−e^(AT)x₀].\n\nL'energia minima è il corrispondente prodotto quadratico con W(T)⁻¹.",
+    "a": "Per $\\dot{x}=Ax+Bu$, trasferimento da $x_0$ a $x_f$ al tempo $T$ e Gramiano $$W(T)=\\int_0^T e^{A\\tau}BB^{\\mathsf{T}}e^{A^{\\mathsf{T}}\\tau}\\,d\\tau$$ invertibile, il controllo minimo è $$u^*(t)=B^{\\mathsf{T}}e^{A^{\\mathsf{T}}(T-t)}W(T)^{-1}\\big[x_f-e^{AT}x_0\\big]$$\n\nL'energia minima è il corrispondente prodotto quadratico con $W(T)^{-1}$.",
     "t": "QA"
   },
   {
     "q": "Che effetto ha la retroazione dello stato u=−Kx+r sui poli di un sistema?",
-    "a": "La dinamica in anello chiuso diventa ẋ=(A−BK)x+Br.\n\nSe (A,B) è raggiungibile, K può essere scelto per assegnare arbitrariamente i poli di A−BK; il riferimento e un eventuale precompensatore determinano invece il comportamento statico dell'uscita.",
+    "a": "La dinamica in anello chiuso diventa $\\dot{x}=(A-BK)x+Br$.\n\nSe $(A,B)$ è raggiungibile, $K$ può essere scelto per assegnare arbitrariamente i poli di $A-BK$; il riferimento e un eventuale precompensatore determinano invece il comportamento statico dell'uscita.",
     "t": "QA"
   },
   {
     "q": "Che cos'è una retroazione deadbeat in un sistema a tempo discreto?",
-    "a": "È una retroazione che porta l'errore esattamente a zero in un numero finito di campioni.\n\nCon u[k]=−Kx[k], si scelgono tutti i poli di A−BK nell'origine, rendendo la matrice in anello chiuso nilpotente; è possibile mediante assegnazione dei poli se il sistema è raggiungibile.",
+    "a": "È una retroazione che porta l'errore esattamente a zero in un numero finito di campioni.\n\nCon $u[k]=-Kx[k]$ si scelgono tutti i poli di $A-BK$ nell'origine, rendendo la matrice in anello chiuso nilpotente; è possibile mediante assegnazione dei poli se il sistema è raggiungibile.",
     "t": "QA"
   }
 ]

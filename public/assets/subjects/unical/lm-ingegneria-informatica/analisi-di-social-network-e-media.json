@@ -1,7 +1,7 @@
 [
   {
     "q": "Come si usa una GCN per classificare i nodi o le comunità di una rete?",
-    "a": "Una Graph Convolutional Network aggrega a ogni livello le feature dei vicini, normalmente con H^(l+1)=σ(D̃^−1/2 Ã D̃^−1/2 H^l W^l).\n\nAddestrata con etichette su parte dei nodi, produce embedding e probabilità di classe; per classificare comunità si aggregano gli embedding dei nodi oppure si usa un pooling di grafo.",
+    "a": "Una Graph Convolutional Network aggrega a ogni livello le feature dei vicini, normalmente $$H^{(l+1)}=\\sigma\\big(\\tilde{D}^{-1/2}\\tilde{A}\\tilde{D}^{-1/2}H^{(l)}W^{(l)}\\big)$$\n\nAddestrata con etichette su parte dei nodi, produce embedding e probabilità di classe; per classificare comunità si aggregano gli embedding dei nodi oppure si usa un pooling di grafo.",
     "t": "QA"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "q": "Che cos'è il topological overlap tra due nodi?",
-    "a": "Misura quanto si sovrappongono i loro vicinati.\n\nUna forma comune è TOM(i,j)=[|N(i)∩N(j)|+aᵢⱼ]/[min(kᵢ,kⱼ)+1−aᵢⱼ].\n\nValori alti indicano nodi inseriti nello stesso contesto locale ed è quindi utile per clustering e rilevamento di comunità robuste.",
+    "a": "Misura quanto si sovrappongono i loro vicinati.\n\nUna forma comune è $$\\mathrm{TOM}(i,j)=\\frac{|N(i)\\cap N(j)|+a_{ij}}{\\min(k_i,k_j)+1-a_{ij}}$$\n\nValori alti indicano nodi inseriti nello stesso contesto locale ed è quindi utile per clustering e rilevamento di comunità robuste.",
     "t": "QA"
   },
   {
@@ -31,12 +31,12 @@
   },
   {
     "q": "Come definisce la modularità la qualità di una partizione?",
-    "a": "Q=(1/2m)Σᵢⱼ[Aᵢⱼ−kᵢkⱼ/(2m)]δ(cᵢ,cⱼ).\n\nConfronta gli archi interni osservati con quelli attesi nel configuration model a parità di gradi.\n\nQ elevata indica più connessioni interne del previsto, ma la misura soffre di resolution limit.",
+    "a": "$$Q=\\frac{1}{2m}\\sum_{ij}\\Big[A_{ij}-\\frac{k_ik_j}{2m}\\Big]\\delta(c_i,c_j)$$\n\nConfronta gli archi interni osservati con quelli attesi nel configuration model a parità di gradi.\n\n$Q$ elevata indica più connessioni interne del previsto, ma la misura soffre di resolution limit.",
     "t": "QA"
   },
   {
     "q": "Come funziona l'algoritmo di Louvain e qual è la sua complessità?",
-    "a": "Alterna spostamenti greedy dei nodi nella comunità vicina che massimizza ΔQ e aggregazione delle comunità in supernodi, ripetendo fino a convergenza.\n\nÈ molto veloce e quasi lineare nella pratica su grafi sparsi, ma non ha un limite stretto universalmente lineare e può produrre comunità disconnesse.",
+    "a": "Alterna spostamenti greedy dei nodi nella comunità vicina che massimizza $\\Delta Q$ e aggregazione delle comunità in supernodi, ripetendo fino a convergenza.\n\nÈ molto veloce e quasi lineare nella pratica su grafi sparsi, ma non ha un limite stretto universalmente lineare e può produrre comunità disconnesse.",
     "t": "QA"
   },
   {
@@ -46,12 +46,12 @@
   },
   {
     "q": "Come si può formalizzare un intervento contro la polarizzazione tra due gruppi?",
-    "a": "Una formulazione sceglie un insieme S di al più k interventi o archi per minimizzare una misura P(G_S), ad esempio distanza tra le medie delle opinioni o controversia random-walk: min_{S⊆C, |S|≤k} P(G_S), eventualmente con vincoli di costo e rilevanza.\n\nLa funzione va scelta in base al modello di diffusione e al significato desiderato di polarizzazione.",
+    "a": "Una formulazione sceglie un insieme S di al più k interventi o archi per minimizzare una misura $P(G_S)$, ad esempio distanza tra le medie delle opinioni o controversia random-walk: $$\\min_{S\\subseteq C,\\ |S|\\le k} P(G_S)$$\n\nEventualmente si aggiungono vincoli di costo e rilevanza.\n\nLa funzione va scelta in base al modello di diffusione e al significato desiderato di polarizzazione.",
     "t": "QA"
   },
   {
     "q": "Come funziona il modello small-world di Watts–Strogatz?",
-    "a": "Si parte da un anello regolare con n nodi e grado k e si ricabla ciascun arco con probabilità β.\n\nPer β=0 si hanno alto clustering e cammini lunghi; per piccoli β i cammini si accorciano molto mantenendo alto clustering; per β≈1 il grafo è quasi casuale.\n\nLa regione small-world sta tra i due estremi, non in un intervallo percentuale universale.",
+    "a": "Si parte da un anello regolare con $n$ nodi e grado $k$ e si ricabla ciascun arco con probabilità $\\beta$.\n\nPer $\\beta=0$ si hanno alto clustering e cammini lunghi; per piccoli $\\beta$ i cammini si accorciano molto mantenendo alto clustering; per $\\beta\\approx 1$ il grafo è quasi casuale.\n\nLa regione small-world sta tra i due estremi, non in un intervallo percentuale universale.",
     "t": "QA"
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "q": "Come funziona Infomap e qual è la map equation?",
-    "a": "Infomap cerca la partizione che comprime meglio la traiettoria di un random walk.\n\nMinimizza L(M)=q↷H(Q)+Σᵢ pᵢ↻H(Pᵢ), somma del codice per gli spostamenti tra moduli e dei codici interni.\n\nFavorisce gruppi in cui il random walker resta a lungo; non esiste una regola generale secondo cui produca sempre più comunità di Louvain.",
+    "a": "Infomap cerca la partizione che comprime meglio la traiettoria di un random walk.\n\nMinimizza $$L(M)=q_{\\curvearrowright}H(Q)+\\sum_i p_{i\\circlearrowright}H(P^i)$$ somma del codice per gli spostamenti tra moduli e dei codici interni.\n\nFavorisce gruppi in cui il random walker resta a lungo; non esiste una regola generale secondo cui produca sempre più comunità di Louvain.",
     "t": "QA"
   },
   {
@@ -81,17 +81,17 @@
   },
   {
     "q": "Come si definisce la Katz centrality?",
-    "a": "x=αAx+β1, quindi x=β(I−αA)^−1 1=βΣₗ≥0 α^l A^l1, con α<1/ρ(A).\n\nConta i cammini che terminano in ogni nodo, attenuando quelli più lunghi; β assegna una centralità di base anche ai nodi senza cammini entranti.",
+    "a": "$$x=\\alpha Ax+\\beta\\mathbf{1}=\\beta(I-\\alpha A)^{-1}\\mathbf{1}=\\beta\\sum_{l\\ge 0}\\alpha^l A^l\\mathbf{1},\\qquad \\alpha<\\frac{1}{\\rho(A)}$$\n\nConta i cammini che terminano in ogni nodo, attenuando quelli più lunghi; $\\beta$ assegna una centralità di base anche ai nodi senza cammini entranti.",
     "t": "QA"
   },
   {
     "q": "Perché alcune formulazioni della centralità di Bonacich differiscono da Katz per una costante?",
-    "a": "Le equazioni possono usare un termine esogeno diverso: Katz impiega tipicamente β1, mentre una formulazione di Bonacich può porre x=αAx+βA1 o cambiare normalizzazione.\n\nA parità di matrice risolvente, questa scelta moltiplica o trasla i punteggi; per il ranking una costante positiva comune spesso non cambia l'ordine.",
+    "a": "Le equazioni possono usare un termine esogeno diverso: Katz impiega tipicamente $\\beta\\mathbf{1}$, mentre una formulazione di Bonacich può porre $x=\\alpha Ax+\\beta A\\mathbf{1}$ o cambiare normalizzazione.\n\nA parità di matrice risolvente, questa scelta moltiplica o trasla i punteggi; per il ranking una costante positiva comune spesso non cambia l'ordine.",
     "t": "QA"
   },
   {
     "q": "Come si definisce SimRank e qual è la sua intuizione?",
-    "a": "Due nodi sono simili se sono collegati a nodi simili.\n\nPer a≠b, s(a,b)=C/(|I(a)||I(b)|) Σ_{i∈I(a)}Σ_{j∈I(b)}s(i,j), con s(a,a)=1.\n\nÈ interpretabile tramite incontri di random walk inversi; la media evita che nodi di alto grado risultino simili soltanto per il numero di vicini.",
+    "a": "Due nodi sono simili se sono collegati a nodi simili.\n\nPer $a\\ne b$: $$s(a,b)=\\frac{C}{|I(a)||I(b)|}\\sum_{i\\in I(a)}\\sum_{j\\in I(b)}s(i,j),\\qquad s(a,a)=1$$\n\nÈ interpretabile tramite incontri di random walk inversi; la media evita che nodi di alto grado risultino simili soltanto per il numero di vicini.",
     "t": "QA"
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "q": "Come funziona il preferential attachment di Barabási–Albert?",
-    "a": "Si aggiungono nodi uno alla volta e ciascun nuovo arco sceglie il nodo i con probabilità proporzionale al suo grado, P(i)=kᵢ/Σⱼkⱼ.\n\nIl meccanismo rich-get-richer genera hub e una distribuzione dei gradi asintoticamente a legge di potenza, ma il modello base ha clustering e dinamiche meno realistici di molte reti reali.",
+    "a": "Si aggiungono nodi uno alla volta e ciascun nuovo arco sceglie il nodo $i$ con probabilità proporzionale al suo grado: $P(i)=k_i/\\sum_j k_j$.\n\nIl meccanismo rich-get-richer genera hub e una distribuzione dei gradi asintoticamente a legge di potenza, ma il modello base ha clustering e dinamiche meno realistici di molte reti reali.",
     "t": "QA"
   }
 ]

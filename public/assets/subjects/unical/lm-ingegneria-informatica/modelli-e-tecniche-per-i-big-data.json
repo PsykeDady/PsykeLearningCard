@@ -11,7 +11,7 @@
   },
   {
     "q": "Come si stima π con Monte Carlo in UPC++?",
-    "a": "Ogni rank genera punti casuali indipendenti nel quadrato [−1,1]², conta quelli con x²+y²≤1 e riduce i conteggi globalmente.\n\nLa stima è 4·inside/total.\n\nServono seed indipendenti, riduzione asincrona/sincrona corretta e abbastanza campioni; l'errore cala come O(1/√N).",
+    "a": "Ogni rank genera punti casuali indipendenti nel quadrato $[-1,1]^2$, conta quelli con $x^2+y^2\\le 1$ e riduce i conteggi globalmente.\n\nLa stima è $4\\cdot\\mathrm{inside}/\\mathrm{total}$.\n\nServono seed indipendenti, riduzione asincrona/sincrona corretta e abbastanza campioni; l'errore cala come $O(1/\\sqrt{N})$.",
     "t": "QA"
   },
   {
@@ -21,22 +21,22 @@
   },
   {
     "q": "Che cosa afferma la legge di Amdahl?",
-    "a": "Con frazione seriale s e p processori, speedup S(p)≤1/[s+(1−s)/p]; per p→∞ il limite è 1/s.\n\nAssume workload fisso e non include overhead.\n\nGustafson descrive meglio workload che cresce con le risorse.",
+    "a": "Con frazione seriale $s$ e $p$ processori: $$S(p)\\le\\frac{1}{s+\\frac{1-s}{p}}$$ per $p\\to\\infty$ il limite è $1/s$.\n\nAssume workload fisso e non include overhead.\n\nGustafson descrive meglio workload che cresce con le risorse.",
     "t": "QA"
   },
   {
     "q": "Che cos'è uno speedup superlineare?",
-    "a": "Si ha S(p)>p.\n\nPuò derivare da cache/memoria aggregata che riduce I/O o paging, ricerca che trova prima una soluzione, o confronto con una baseline sfavorevole.\n\nNon viola Amdahl: cambiano costi effettivi o quantità di lavoro rispetto alle sue ipotesi.",
+    "a": "Si ha $S(p)>p$.\n\nPuò derivare da cache/memoria aggregata che riduce I/O o paging, ricerca che trova prima una soluzione, o confronto con una baseline sfavorevole.\n\nNon viola Amdahl: cambiano costi effettivi o quantità di lavoro rispetto alle sue ipotesi.",
     "t": "QA"
   },
   {
     "q": "Come si misurano speedup ed efficienza parallela?",
-    "a": "Speedup S_p=T_1/T_p ed efficienza E_p=S_p/p.\n\nSi specificano hardware, input, algoritmo seriale di riferimento, tempi wall-clock e variabilità.\n\nStrong scaling mantiene fisso il problema; weak scaling mantiene circa fisso il lavoro per processore.",
+    "a": "Speedup $S_p=T_1/T_p$ ed efficienza $E_p=S_p/p$.\n\nSi specificano hardware, input, algoritmo seriale di riferimento, tempi wall-clock e variabilità.\n\nStrong scaling mantiene fisso il problema; weak scaling mantiene circa fisso il lavoro per processore.",
     "t": "QA"
   },
   {
     "q": "Che cos'è il modello Bulk Synchronous Parallel?",
-    "a": "La computazione procede in superstep: calcolo locale, comunicazione e barriera globale.\n\nUn costo comune per superstep è w+h·g+l, con lavoro locale massimo w, massimo volume h, costo per parola g e latenza/barriera l; il costo totale somma i superstep.",
+    "a": "La computazione procede in superstep: calcolo locale, comunicazione e barriera globale.\n\nUn costo comune per superstep è $w+h\\cdot g+l$, con lavoro locale massimo $w$, massimo volume $h$, costo per parola $g$ e latenza/barriera $l$; il costo totale somma i superstep.",
     "t": "QA"
   },
   {

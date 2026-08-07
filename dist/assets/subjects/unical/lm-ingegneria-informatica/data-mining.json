@@ -6,7 +6,7 @@
   },
   {
     "q": "Che cos'è l'entropia e come viene usata negli alberi decisionali?",
-    "a": "Per una distribuzione di classi pᵢ, H=−Σᵢpᵢlog₂pᵢ misura l'incertezza: vale zero in un nodo puro e cresce con la mescolanza.\n\nL'information gain di uno split è l'entropia del padre meno la media pesata di quelle dei figli; l'albero preferisce split che riducono maggiormente l'incertezza.",
+    "a": "Per una distribuzione di classi $p_i$: $H=-\\sum_i p_i\\log_2 p_i$ misura l'incertezza: vale zero in un nodo puro e cresce con la mescolanza.\n\nL'information gain di uno split è l'entropia del padre meno la media pesata di quelle dei figli; l'albero preferisce split che riducono maggiormente l'incertezza.",
     "t": "QA"
   },
   {

@@ -1,5 +1,17 @@
 [
-  {"q":"Che cosa afferma il teorema di Stokes, o del rotore?","a":"Per una superficie orientata regolare S con bordo ∂S coerentemente orientato, ∮_{∂S}F·dr=∬_S(∇×F)·n dS.\n\nLa circuitazione sul bordo coincide col flusso del rotore attraverso la superficie; servono regolarità e orientazioni compatibili.","t":"QA"},
-  {"q":"Come si classificano i punti critici di una funzione di due variabili?","a":"Si risolve ∇f=0. Con Hessiana H, D=f_xx f_yy−f_xy²: D>0 e f_xx>0 dà minimo locale; D>0 e f_xx<0 massimo; D<0 sella; D=0 è inconcludente.\n\nSu domini vincolati vanno analizzati anche bordo e punti non regolari.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Schwarz sulle derivate miste?","a":"Se le derivate seconde miste sono continue in un intorno del punto, allora ∂²f/∂x∂y=∂²f/∂y∂x.\n\nEsistono ipotesi più deboli, ma la sola esistenza puntuale delle due derivate non basta in generale.","t":"QA"}
+  {
+    "q": "Che cosa afferma il teorema di Stokes, o del rotore?",
+    "a": "Per una superficie orientata regolare $S$ con bordo $\\partial S$ coerentemente orientato: $$\\oint_{\\partial S}F\\cdot dr=\\iint_S(\\nabla\\times F)\\cdot n\\,dS$$\n\nLa circuitazione sul bordo coincide col flusso del rotore attraverso la superficie; servono regolarità e orientazioni compatibili.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si classificano i punti critici di una funzione di due variabili?",
+    "a": "Si risolve $\\nabla f=0$. Con Hessiana $H$, $D=f_{xx}f_{yy}-f_{xy}^2$: $D>0$ e $f_{xx}>0$ dà minimo locale; $D>0$ e $f_{xx}<0$ massimo; $D<0$ sella; $D=0$ è inconcludente.\n\nSu domini vincolati vanno analizzati anche bordo e punti non regolari.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Schwarz sulle derivate miste?",
+    "a": "Se le derivate seconde miste sono continue in un intorno del punto, allora $\\dfrac{\\partial^2 f}{\\partial x\\,\\partial y}=\\dfrac{\\partial^2 f}{\\partial y\\,\\partial x}$.\n\nEsistono ipotesi più deboli, ma la sola esistenza puntuale delle due derivate non basta in generale.",
+    "t": "QA"
+  }
 ]

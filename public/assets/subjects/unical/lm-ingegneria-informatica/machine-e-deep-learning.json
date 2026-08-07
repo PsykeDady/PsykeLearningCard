@@ -1,22 +1,22 @@
 [
   {
     "q": "Come funziona un Variational Autoencoder?",
-    "a": "L'encoder approssima qφ(z|x), normalmente gaussiana, e il decoder modella pθ(x|z).\n\nSi massimizza l'ELBO: E_q[log pθ(x|z)]−KL(qφ(z|x)||p(z)).\n\nIl reparameterization trick z=μ+σ⊙ε permette backpropagation attraverso il campionamento.",
+    "a": "L'encoder approssima $q_\\phi(z\\mid x)$, normalmente gaussiana, e il decoder modella $p_\\theta(x\\mid z)$.\n\nSi massimizza l'ELBO: $$\\mathbb{E}_q[\\log p_\\theta(x\\mid z)]-\\mathrm{KL}\\big(q_\\phi(z\\mid x)\\,\\|\\,p(z)\\big)$$\n\nIl reparameterization trick $z=\\mu+\\sigma\\odot\\varepsilon$ permette backpropagation attraverso il campionamento.",
     "t": "QA"
   },
   {
     "q": "Come funziona una Generative Adversarial Network?",
-    "a": "Un generatore G trasforma rumore in campioni e un discriminatore D distingue dati reali da generati.\n\nIl gioco minimax originale è min_G max_D E_data log D(x)+E_z log(1−D(G(z))).\n\nL'addestramento può soffrire instabilità, vanishing gradient e mode collapse.",
+    "a": "Un generatore G trasforma rumore in campioni e un discriminatore D distingue dati reali da generati.\n\nIl gioco minimax originale è $$\\min_G\\max_D\\ \\mathbb{E}_{data}\\log D(x)+\\mathbb{E}_z\\log(1-D(G(z)))$$\n\nL'addestramento può soffrire instabilità, vanishing gradient e mode collapse.",
     "t": "QA"
   },
   {
     "q": "Che cosa significa PAC-learnability?",
-    "a": "Una classe è PAC-apprendibile se, per ogni distribuzione e ogni ε,δ, l'algoritmo produce con probabilità almeno 1−δ un'ipotesi con errore al più ε usando campioni e tempo polinomiali.\n\nNel caso realizable si assume che la classe contenga un predittore senza errore.",
+    "a": "Una classe è PAC-apprendibile se, per ogni distribuzione e ogni $\\varepsilon,\\delta$, l'algoritmo produce con probabilità almeno $1-\\delta$ un'ipotesi con errore al più $\\varepsilon$ usando campioni e tempo polinomiali.\n\nNel caso realizable si assume che la classe contenga un predittore senza errore.",
     "t": "QA"
   },
   {
     "q": "Che cos'è l'agnostic PAC learning?",
-    "a": "Non assume che il vero predittore appartenga alla classe H.\n\nL'algoritmo deve restituire, con probabilità almeno 1−δ, h con rischio R(h)≤inf_{g∈H}R(g)+ε.\n\nPer classe finita, uniform convergence richiede un numero di campioni dell'ordine di (log|H|+log(1/δ))/ε².",
+    "a": "Non assume che il vero predittore appartenga alla classe H.\n\nL'algoritmo deve restituire, con probabilità almeno $1-\\delta$, $h$ con rischio $R(h)\\le\\inf_{g\\in H}R(g)+\\varepsilon$.\n\nPer classe finita, uniform convergence richiede un numero di campioni dell'ordine di $\\dfrac{\\log|H|+\\log(1/\\delta)}{\\varepsilon^2}$.",
     "t": "QA"
   },
   {
@@ -26,17 +26,17 @@
   },
   {
     "q": "Come funziona una Support Vector Machine lineare?",
-    "a": "Cerca l'iperpiano w·x+b=0 con margine massimo.\n\nNel soft margin minimizza 1/2||w||²+CΣξ_i con y_i(w·x_i+b)≥1−ξ_i.\n\nIl duale dipende da prodotti scalari e consente kernel; solo i support vector hanno moltiplicatori non nulli.",
+    "a": "Cerca l'iperpiano $w\\cdot x+b=0$ con margine massimo.\n\nNel soft margin minimizza $\\tfrac{1}{2}\\|w\\|^2+C\\sum_i\\xi_i$ con $y_i(w\\cdot x_i+b)\\ge 1-\\xi_i$.\n\nIl duale dipende da prodotti scalari e consente kernel; solo i support vector hanno moltiplicatori non nulli.",
     "t": "QA"
   },
   {
     "q": "Che cosa fa il kernel trick nelle SVM?",
-    "a": "Sostituisce x·x' con un kernel K(x,x') equivalente a un prodotto scalare in uno spazio di feature, senza costruirlo esplicitamente.\n\nUn kernel valido deve essere simmetrico e positivo semidefinito.\n\nScelta e iperparametri controllano la complessità della frontiera.",
+    "a": "Sostituisce $x\\cdot x'$ con un kernel $K(x,x')$ equivalente a un prodotto scalare in uno spazio di feature, senza costruirlo esplicitamente.\n\nUn kernel valido deve essere simmetrico e positivo semidefinito.\n\nScelta e iperparametri controllano la complessità della frontiera.",
     "t": "QA"
   },
   {
     "q": "Come funzionano k-NN density estimation e KDE?",
-    "a": "In k-NN si adatta il volume V(x) fino a contenere k campioni e si stima p(x)≈k/(nV(x)); in KDE si fissa una bandwidth h e si sommano kernel centrati sui dati. k o h bilanciano bias e varianza; in alta dimensione entrambe soffrono sparsità.",
+    "a": "In k-NN si adatta il volume $V(x)$ fino a contenere $k$ campioni e si stima $p(x)\\approx\\dfrac{k}{nV(x)}$; in KDE si fissa una bandwidth $h$ e si sommano kernel centrati sui dati. k o h bilanciano bias e varianza; in alta dimensione entrambe soffrono sparsità.",
     "t": "QA"
   },
   {
@@ -51,17 +51,17 @@
   },
   {
     "q": "Come funziona la discesa del gradiente?",
-    "a": "Aggiorna θ_{t+1}=θ_t−η_t∇L(θ_t).\n\nIl learning rate controlla stabilità e velocità; batch, stochastic e mini-batch gradient differiscono per il campione usato nella stima.\n\nPer funzioni lisce convesse condizioni appropriate su η garantiscono convergenza.",
+    "a": "Aggiorna $\\theta_{t+1}=\\theta_t-\\eta_t\\nabla L(\\theta_t)$.\n\nIl learning rate controlla stabilità e velocità; batch, stochastic e mini-batch gradient differiscono per il campione usato nella stima.\n\nPer funzioni lisce convesse condizioni appropriate su η garantiscono convergenza.",
     "t": "QA"
   },
   {
     "q": "Che cos'è un predittore lineare?",
-    "a": "Calcola f(x)=w·x+b; in regressione usa direttamente il valore, in classificazione una soglia o link probabilistico.\n\nÈ interpretabile ed efficiente, ma rappresenta frontiere lineari nelle feature; trasformazioni e kernel ne aumentano l'espressività.",
+    "a": "Calcola $f(x)=w\\cdot x+b$; in regressione usa direttamente il valore, in classificazione una soglia o link probabilistico.\n\nÈ interpretabile ed efficiente, ma rappresenta frontiere lineari nelle feature; trasformazioni e kernel ne aumentano l'espressività.",
     "t": "QA"
   },
   {
     "q": "Come funziona la regressione logistica?",
-    "a": "Modella P(y=1|x)=σ(w·x+b), con σ(z)=1/(1+e^−z).\n\nSi minimizza la negative log-likelihood, equivalente alla binary cross-entropy, spesso con regolarizzazione L1 o L2.\n\nLa frontiera a probabilità 1/2 è lineare.",
+    "a": "Modella $P(y=1\\mid x)=\\sigma(w\\cdot x+b)$, con $\\sigma(z)=\\dfrac{1}{1+e^{-z}}$.\n\nSi minimizza la negative log-likelihood, equivalente alla binary cross-entropy, spesso con regolarizzazione L1 o L2.\n\nLa frontiera a probabilità $1/2$ è lineare.",
     "t": "QA"
   },
   {

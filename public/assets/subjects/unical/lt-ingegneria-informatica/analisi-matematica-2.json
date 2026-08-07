@@ -1,29 +1,137 @@
 [
-  {"q":"Come si definiscono spazio, prodotto scalare e norma in ℝⁿ?","a":"Il prodotto scalare standard è x·y=Σxᵢyᵢ e induce norma ||x||=√(x·x) e distanza ||x−y||.\n\nSoddisfa positività, simmetria, linearità e Cauchy–Schwarz; basi ortonormali semplificano coordinate e proiezioni.","t":"QA"},
-  {"q":"Quando una funzione di più variabili è differenziabile?","a":"f è differenziabile in x₀ se f(x₀+h)=f(x₀)+Df(x₀)h+o(||h||), con applicazione lineare Df.\n\nL'esistenza e continuità delle derivate parziali in un intorno, cioè f∈C¹, è una condizione sufficiente ma non necessaria.","t":"QA"},
-  {"q":"Come si trova il piano tangente al grafico z=f(x,y)?","a":"Nel punto (x₀,y₀,z₀), z−z₀=f_x(x₀,y₀)(x−x₀)+f_y(x₀,y₀)(y−y₀).\n\nPer una superficie implicita F=0 con ∇F≠0, il piano è ∇F(p)·(x−p)=0.","t":"QA"},
-  {"q":"Che cosa afferma il teorema di Dini per funzioni implicite?","a":"Se F(x₀,y₀)=0, F è C¹ e ∂F/∂y≠0, localmente l'equazione definisce y=φ(x), con φ'(x)=−F_x/F_y.\n\nIn più dimensioni la Jacobiana rispetto alle variabili risolte deve essere invertibile.","t":"QA"},
-  {"q":"Come si classificano i punti critici di una funzione di più variabili?","a":"Si risolve ∇f=0 e si studia la Hessiana. Positiva definita dà minimo stretto, negativa definita massimo, indefinita sella; semidefinita è inconcludente.\n\nPer due variabili si usa D=f_xx f_yy−f_xy².","t":"QA"},
-  {"q":"Come funzionano i moltiplicatori di Lagrange?","a":"Per estremizzare f con vincolo g=c e ∇g≠0, nei punti regolari vale ∇f=λ∇g.\n\nSi risolve il sistema con il vincolo e si confrontano i candidati; con più vincoli si combinano i rispettivi gradienti.","t":"QA"},
-  {"q":"Come si studia un limite in due variabili con coordinate polari?","a":"Si pone x=r cosθ, y=r sinθ e si studia r→0 uniformemente rispetto a θ.\n\nSe il bound dipende solo da r e tende a zero, il limite esiste; trovare cammini con limiti diversi prova la non esistenza, ma verificarne alcuni non basta.","t":"QA"},
-  {"q":"Che cosa sono integrale curvilineo e lavoro di un campo?","a":"Per una curva γ, il lavoro è ∫_γF·dr=∫_a^bF(γ(t))·γ'(t)dt.\n\nSe F=∇φ su un dominio appropriato, dipende solo dagli estremi ed è φ(B)−φ(A); su una curva chiusa vale zero.","t":"QA"},
-  {"q":"Qual è la relazione tra campo conservativo e irrotazionale?","a":"Un campo C¹ conservativo ha rotore nullo. Il contrario vale su domini semplicemente connessi, con ipotesi regolari.\n\nSu domini con buchi un campo irrotazionale può avere circuitazione non nulla e non possedere potenziale globale.","t":"QA"},
-  {"q":"Che cosa affermano i teoremi di Stokes e della divergenza?","a":"Stokes: ∮_{∂S}F·dr=∬_S(∇×F)·n dS. Gauss: ∬_{∂V}F·n dS=∭_V∇·F dV.\n\nEntrambi richiedono regolarità e orientazioni coerenti e trasformano integrali su bordo in integrali interni.","t":"QA"},
-  {"q":"Come si calcola il flusso attraverso una superficie?","a":"Per parametrizzazione r(u,v), Φ=∬F(r(u,v))·(r_u×r_v)dudv, scegliendo l'orientazione.\n\nSe la superficie giace nel piano xy con normale z e F=(x,y,z), il flusso è zero perché z=0 sulla superficie.","t":"QA"},
-  {"q":"Quando un problema di Cauchy per ODE ha soluzione unica?","a":"Per y'=f(t,y), y(t₀)=y₀, continuità di f dà esistenza locale; Lipschitz locale rispetto a y dà unicità secondo Picard–Lindelöf.\n\nUna derivata ∂f/∂y continua e limitata localmente implica Lipschitz locale.","t":"QA"},
-  {"q":"Come si risolve un'ODE lineare omogenea a coefficienti costanti?","a":"Per a_ny^{(n)}+…+a₀y=0 si cerca y=e^{λx} e si risolve il polinomio caratteristico.\n\nRadici reali distinte danno e^{λx}; ripetute aggiungono potenze di x; coppie complesse producono e^{αx}(C cosβx+D sinβx).\n","t":"QA"},
-  {"q":"Come si verifica l'indipendenza di soluzioni di un'ODE?","a":"Si calcola il Wronskiano W(y₁,…,y_n). Se è non nullo in un punto, le funzioni sono linearmente indipendenti.\n\nPer y₁=e^{3x}, y₂=e^{−3x}, W=−6≠0 e sono soluzioni di y''−9y=0.","t":"QA"},
-  {"q":"Come funziona il metodo di Eulero per un problema di Cauchy?","a":"Con passo h, t_{n+1}=t_n+h e y_{n+1}=y_n+h f(t_n,y_n).\n\nÈ esplicito, con errore locale O(h²) e globale O(h); passi piccoli migliorano accuratezza ma non risolvono problemi di stabilità per ODE stiff.","t":"QA"},
-  {"q":"Qual è la differenza tra convergenza puntuale e uniforme?","a":"Puntuale: per ogni x, f_n(x)→f(x), con indice dipendente da x. Uniforme: sup_x|f_n−f|→0, quindi un unico indice funziona su tutto il dominio.\n\nIl limite uniforme di funzioni continue è continuo; quello puntuale può non esserlo.","t":"QA"},
-  {"q":"Come si costruisce la serie di Fourier di una funzione periodica?","a":"Si proietta f sulla base ortogonale 1, cos(nω₀x), sin(nω₀x), calcolando coefficienti tramite integrali su un periodo.\n\nSotto condizioni di Dirichlet converge al valore nei punti continui e alla media dei limiti laterali nei salti.","t":"QA"},
-  {"q":"Qual è la serie di Fourier di f(x)=x su (−π,π)?","a":"Essendo dispari contiene solo seni: x=2Σ_{n≥1}(−1)^{n+1}sin(nx)/n per −π<x<π.\n\nLa sua estensione periodica converge a zero nei punti di salto ±π, media dei limiti laterali.","t":"QA"},
-  {"q":"Come si passa concettualmente dalla serie alla trasformata di Fourier?","a":"Aumentando il periodo, le frequenze discrete diventano fitte e la somma dei coefficienti tende a un integrale continuo.\n\nCon convenzione scelta, F(ω)=∫f(t)e^{−iωt}dt e f(t)=(1/2π)∫F(ω)e^{iωt}dω.","t":"QA"},
-  {"q":"Quando converge una serie di potenze?","a":"Σa_n(z−z₀)^n converge assolutamente per |z−z₀|<R e diverge per |z−z₀|>R, con 1/R=limsup|a_n|^{1/n}.\n\nSul bordo occorre studiare i singoli punti; dentro il disco si può derivare e integrare termine a termine.","t":"QA"},
-  {"q":"Quali sono le condizioni di Cauchy–Riemann?","a":"Per f=u+iv olomorfa, u_x=v_y e u_y=−v_x. Se le derivate parziali sono continue e soddisfano tali equazioni in un intorno, f è olomorfa.\n\nLe parti reale e immaginaria sono armoniche coniugate e soddisfano l'equazione di Laplace.","t":"QA"},
-  {"q":"Qual è la relazione tra funzione olomorfa e analitica?","a":"Nel piano complesso le nozioni coincidono: ogni funzione rappresentabile localmente da una serie di potenze è olomorfa e ogni olomorfa è analitica.\n\nLa seconda implicazione deriva dalla formula integrale di Cauchy.","t":"QA"},
-  {"q":"Che cosa affermano il teorema di Cauchy e quello di Morera?","a":"Cauchy: l'integrale di una funzione olomorfa su curve chiuse omologhe a zero in un dominio appropriato è nullo.\n\nMorera è una conversa: una funzione continua con integrale nullo su ogni triangolo è olomorfa.","t":"QA"},
-  {"q":"Che cosa affermano Liouville e il principio del massimo modulo?","a":"Liouville: una funzione intera e limitata è costante. Il massimo modulo: una olomorfa non costante non raggiunge un massimo locale interno di |f|.\n\nInsieme permettono, tra l'altro, una prova del teorema fondamentale dell'algebra.","t":"QA"},
-  {"q":"Che cos'è una serie di Laurent?","a":"Su un anello r<|z−z₀|<R, una funzione olomorfa si sviluppa come Σ_{n=−∞}^{∞}a_n(z−z₀)^n.\n\nI coefficienti sono integrali di Cauchy; la parte principale con potenze negative classifica la singolarità.","t":"QA"},
-  {"q":"Che cosa afferma il teorema dei residui?","a":"Per f meromorfa e curva chiusa che non attraversa singolarità, ∮f(z)dz=2πiΣRes(f,z_k) con indici di avvolgimento appropriati.\n\nIl residuo è il coefficiente di (z−z_k)^{-1} nella serie di Laurent.","t":"QA"},
-  {"q":"Che cos'è il lemma del grande cerchio?","a":"È una stima usata negli integrali complessi per mostrare che il contributo dell'arco di raggio R tende a zero.\n\nSi applica ML: |∫_γf dz|≤lunghezza(γ)·max_γ|f|; il decadimento dell'integranda deve battere la crescita dell'arco.","t":"QA"}
+  {
+    "q": "Come si definiscono spazio, prodotto scalare e norma in ℝⁿ?",
+    "a": "Il prodotto scalare standard è $x\\cdot y=\\sum_i x_iy_i$ e induce norma $\\|x\\|=\\sqrt{x\\cdot x}$ e distanza $\\|x-y\\|$.\n\nSoddisfa positività, simmetria, linearità e Cauchy–Schwarz; basi ortonormali semplificano coordinate e proiezioni.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando una funzione di più variabili è differenziabile?",
+    "a": "$f$ è differenziabile in $x_0$ se $f(x_0+h)=f(x_0)+Df(x_0)h+o(\\|h\\|)$, con applicazione lineare $Df$.\n\nL'esistenza e continuità delle derivate parziali in un intorno, cioè $f\\in C^1$, è una condizione sufficiente ma non necessaria.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si trova il piano tangente al grafico z=f(x,y)?",
+    "a": "Nel punto $(x_0,y_0,z_0)$: $$z-z_0=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)$$\n\nPer una superficie implicita $F=0$ con $\\nabla F\\ne 0$, il piano è $\\nabla F(p)\\cdot(x-p)=0$.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema di Dini per funzioni implicite?",
+    "a": "Se $F(x_0,y_0)=0$, $F$ è $C^1$ e $\\partial F/\\partial y\\ne 0$, localmente l'equazione definisce $y=\\varphi(x)$, con $\\varphi'(x)=-F_x/F_y$.\n\nIn più dimensioni la Jacobiana rispetto alle variabili risolte deve essere invertibile.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si classificano i punti critici di una funzione di più variabili?",
+    "a": "Si risolve $\\nabla f=0$ e si studia la Hessiana. Positiva definita dà minimo stretto, negativa definita massimo, indefinita sella; semidefinita è inconcludente.\n\nPer due variabili si usa $D=f_{xx}f_{yy}-f_{xy}^2$.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funzionano i moltiplicatori di Lagrange?",
+    "a": "Per estremizzare $f$ con vincolo $g=c$ e $\\nabla g\\ne 0$, nei punti regolari vale $\\nabla f=\\lambda\\nabla g$.\n\nSi risolve il sistema con il vincolo e si confrontano i candidati; con più vincoli si combinano i rispettivi gradienti.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si studia un limite in due variabili con coordinate polari?",
+    "a": "Si pone $x=r\\cos\\theta$, $y=r\\sin\\theta$ e si studia $r\\to 0$ uniformemente rispetto a $\\theta$.\n\nSe il bound dipende solo da $r$ e tende a zero, il limite esiste; trovare cammini con limiti diversi prova la non esistenza, ma verificarne alcuni non basta.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa sono integrale curvilineo e lavoro di un campo?",
+    "a": "Per una curva $\\gamma$, il lavoro è $$\\int_\\gamma F\\cdot dr=\\int_a^b F(\\gamma(t))\\cdot\\gamma'(t)\\,dt$$\n\nSe $F=\\nabla\\varphi$ su un dominio appropriato, dipende solo dagli estremi ed è $\\varphi(B)-\\varphi(A)$; su una curva chiusa vale zero.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la relazione tra campo conservativo e irrotazionale?",
+    "a": "Un campo C¹ conservativo ha rotore nullo. Il contrario vale su domini semplicemente connessi, con ipotesi regolari.\n\nSu domini con buchi un campo irrotazionale può avere circuitazione non nulla e non possedere potenziale globale.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa affermano i teoremi di Stokes e della divergenza?",
+    "a": "Stokes: $$\\oint_{\\partial S}F\\cdot dr=\\iint_S(\\nabla\\times F)\\cdot n\\,dS$$ Gauss: $$\\iint_{\\partial V}F\\cdot n\\,dS=\\iiint_V \\nabla\\cdot F\\,dV$$\n\nEntrambi richiedono regolarità e orientazioni coerenti e trasformano integrali su bordo in integrali interni.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si calcola il flusso attraverso una superficie?",
+    "a": "Per parametrizzazione $r(u,v)$: $$\\Phi=\\iint F(r(u,v))\\cdot(r_u\\times r_v)\\,du\\,dv$$ scegliendo l'orientazione.\n\nSe la superficie giace nel piano $xy$ con normale $z$ e $F=(x,y,z)$, il flusso è zero perché $z=0$ sulla superficie.",
+    "t": "QA"
+  },
+  {
+    "q": "Quando un problema di Cauchy per ODE ha soluzione unica?",
+    "a": "Per $y'=f(t,y)$, $y(t_0)=y_0$, continuità di $f$ dà esistenza locale; Lipschitz locale rispetto a $y$ dà unicità secondo Picard–Lindelöf.\n\nUna derivata $\\partial f/\\partial y$ continua e limitata localmente implica Lipschitz locale.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si risolve un'ODE lineare omogenea a coefficienti costanti?",
+    "a": "Per $a_ny^{(n)}+\\dots+a_0y=0$ si cerca $y=e^{\\lambda x}$ e si risolve il polinomio caratteristico.\n\nRadici reali distinte danno $e^{\\lambda x}$; ripetute aggiungono potenze di $x$; coppie complesse producono $e^{\\alpha x}(C\\cos\\beta x+D\\sin\\beta x)$.\n",
+    "t": "QA"
+  },
+  {
+    "q": "Come si verifica l'indipendenza di soluzioni di un'ODE?",
+    "a": "Si calcola il Wronskiano $W(y_1,\\dots,y_n)$. Se è non nullo in un punto, le funzioni sono linearmente indipendenti.\n\nPer $y_1=e^{3x}$, $y_2=e^{-3x}$, $W=-6\\ne 0$ e sono soluzioni di $y''-9y=0$.",
+    "t": "QA"
+  },
+  {
+    "q": "Come funziona il metodo di Eulero per un problema di Cauchy?",
+    "a": "Con passo $h$: $t_{n+1}=t_n+h$ e $y_{n+1}=y_n+h\\,f(t_n,y_n)$.\n\nÈ esplicito, con errore locale $O(h^2)$ e globale $O(h)$; passi piccoli migliorano accuratezza ma non risolvono problemi di stabilità per ODE stiff.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la differenza tra convergenza puntuale e uniforme?",
+    "a": "Puntuale: per ogni $x$, $f_n(x)\\to f(x)$, con indice dipendente da $x$. Uniforme: $\\sup_x|f_n-f|\\to 0$, quindi un unico indice funziona su tutto il dominio.\n\nIl limite uniforme di funzioni continue è continuo; quello puntuale può non esserlo.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si costruisce la serie di Fourier di una funzione periodica?",
+    "a": "Si proietta $f$ sulla base ortogonale $1$, $\\cos(n\\omega_0x)$, $\\sin(n\\omega_0x)$, calcolando coefficienti tramite integrali su un periodo.\n\nSotto condizioni di Dirichlet converge al valore nei punti continui e alla media dei limiti laterali nei salti.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la serie di Fourier di f(x)=x su (−π,π)?",
+    "a": "Essendo dispari contiene solo seni: $$x=2\\sum_{n\\ge 1}\\frac{(-1)^{n+1}\\sin(nx)}{n},\\qquad -\\pi<x<\\pi$$\n\nLa sua estensione periodica converge a zero nei punti di salto $\\pm\\pi$, media dei limiti laterali.",
+    "t": "QA"
+  },
+  {
+    "q": "Come si passa concettualmente dalla serie alla trasformata di Fourier?",
+    "a": "Aumentando il periodo, le frequenze discrete diventano fitte e la somma dei coefficienti tende a un integrale continuo.\n\nCon convenzione scelta: $$F(\\omega)=\\int f(t)e^{-i\\omega t}\\,dt,\\qquad f(t)=\\frac{1}{2\\pi}\\int F(\\omega)e^{i\\omega t}\\,d\\omega$$",
+    "t": "QA"
+  },
+  {
+    "q": "Quando converge una serie di potenze?",
+    "a": "$\\sum a_n(z-z_0)^n$ converge assolutamente per $|z-z_0|<R$ e diverge per $|z-z_0|>R$, con $1/R=\\limsup|a_n|^{1/n}$.\n\nSul bordo occorre studiare i singoli punti; dentro il disco si può derivare e integrare termine a termine.",
+    "t": "QA"
+  },
+  {
+    "q": "Quali sono le condizioni di Cauchy–Riemann?",
+    "a": "Per $f=u+iv$ olomorfa, $u_x=v_y$ e $u_y=-v_x$. Se le derivate parziali sono continue e soddisfano tali equazioni in un intorno, f è olomorfa.\n\nLe parti reale e immaginaria sono armoniche coniugate e soddisfano l'equazione di Laplace.",
+    "t": "QA"
+  },
+  {
+    "q": "Qual è la relazione tra funzione olomorfa e analitica?",
+    "a": "Nel piano complesso le nozioni coincidono: ogni funzione rappresentabile localmente da una serie di potenze è olomorfa e ogni olomorfa è analitica.\n\nLa seconda implicazione deriva dalla formula integrale di Cauchy.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa affermano il teorema di Cauchy e quello di Morera?",
+    "a": "Cauchy: l'integrale di una funzione olomorfa su curve chiuse omologhe a zero in un dominio appropriato è nullo.\n\nMorera è una conversa: una funzione continua con integrale nullo su ogni triangolo è olomorfa.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa affermano Liouville e il principio del massimo modulo?",
+    "a": "Liouville: una funzione intera e limitata è costante. Il massimo modulo: una olomorfa non costante non raggiunge un massimo locale interno di $|f|$.\n\nInsieme permettono, tra l'altro, una prova del teorema fondamentale dell'algebra.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è una serie di Laurent?",
+    "a": "Su un anello $r<|z-z_0|<R$, una funzione olomorfa si sviluppa come $$\\sum_{n=-\\infty}^{\\infty}a_n(z-z_0)^n$$\n\nI coefficienti sono integrali di Cauchy; la parte principale con potenze negative classifica la singolarità.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cosa afferma il teorema dei residui?",
+    "a": "Per $f$ meromorfa e curva chiusa che non attraversa singolarità, $$\\oint f(z)\\,dz=2\\pi i\\sum_k \\operatorname{Res}(f,z_k)$$ con indici di avvolgimento appropriati.\n\nIl residuo è il coefficiente di $(z-z_k)^{-1}$ nella serie di Laurent.",
+    "t": "QA"
+  },
+  {
+    "q": "Che cos'è il lemma del grande cerchio?",
+    "a": "È una stima usata negli integrali complessi per mostrare che il contributo dell'arco di raggio R tende a zero.\n\nSi applica ML: $\\big|\\int_\\gamma f\\,dz\\big|\\le \\text{lunghezza}(\\gamma)\\cdot\\max_\\gamma|f|$; il decadimento dell'integranda deve battere la crescita dell'arco.",
+    "t": "QA"
+  }
 ]

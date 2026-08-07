@@ -21,12 +21,12 @@
   },
   {
     "q": "Che cos'è Set Cover e qual è l'approssimazione greedy di Chvátal?",
-    "a": "Si scelgono insiemi di costo minimo che coprano tutti gli elementi.\n\nIl greedy seleziona l'insieme col minimo rapporto costo/nuovi elementi coperti; garantisce fattore H_n≤ln n+1.\n\nLa variante non pesata sceglie il massimo numero di elementi nuovi.",
+    "a": "Si scelgono insiemi di costo minimo che coprano tutti gli elementi.\n\nIl greedy seleziona l'insieme col minimo rapporto costo/nuovi elementi coperti; garantisce fattore $H_n\\le\\ln n+1$.\n\nLa variante non pesata sceglie il massimo numero di elementi nuovi.",
     "t": "QA"
   },
   {
     "q": "Che cos'è un problema di localizzazione di impianti?",
-    "a": "Decide quali facility aprire e come assegnare clienti minimizzando costi fissi e di servizio, con eventuali capacità.\n\nVariabili binarie y_j indicano aperture e x_ij assegnazioni; vincoli x_ij≤y_j collegano servizio e apertura.",
+    "a": "Decide quali facility aprire e come assegnare clienti minimizzando costi fissi e di servizio, con eventuali capacità.\n\nVariabili binarie $y_j$ indicano aperture e $x_{ij}$ assegnazioni; vincoli $x_{ij}\\le y_j$ collegano servizio e apertura.",
     "t": "QA"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "q": "Come funziona il rilassamento lagrangiano?",
-    "a": "Vincoli difficili Ax≤b vengono penalizzati nell'obiettivo con moltiplicatori λ≥0.\n\nPer minimizzazione, L(λ)=min_{x∈X}[c(x)+λᵀ(Ax−b)] fornisce lower bound.\n\nSi massimizza L(λ) sui moltiplicatori ottenendo il duale lagrangiano.",
+    "a": "Vincoli difficili $Ax\\le b$ vengono penalizzati nell'obiettivo con moltiplicatori $\\lambda\\ge 0$.\n\nPer minimizzazione, $$L(\\lambda)=\\min_{x\\in X}\\big[c(x)+\\lambda^{\\mathsf{T}}(Ax-b)\\big]$$ fornisce lower bound.\n\nSi massimizza $L(\\lambda)$ sui moltiplicatori ottenendo il duale lagrangiano.",
     "t": "QA"
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "q": "Come si valuta un'euristica usando bound?",
-    "a": "Per minimizzazione, se H è il costo della soluzione feasible e LB un lower bound, gap=(H−LB)/|H| o rispetto a |LB| secondo convenzione.\n\nUn gap piccolo certifica vicinanza all'ottimo; confronti empirici richiedono istanze, tempi e baseline comuni.",
+    "a": "Per minimizzazione, se $H$ è il costo della soluzione feasible e $LB$ un lower bound, $\\mathrm{gap}=\\dfrac{H-LB}{|H|}$ o rispetto a $|LB|$ secondo convenzione.\n\nUn gap piccolo certifica vicinanza all'ottimo; confronti empirici richiedono istanze, tempi e baseline comuni.",
     "t": "QA"
   },
   {
@@ -66,12 +66,12 @@
   },
   {
     "q": "Come si formula il TSP simmetrico con cutset constraints?",
-    "a": "Variabili x_e∈{0,1}, grado Σ_{e∈δ(v)}x_e=2 per ogni v e subtour elimination Σ_{e∈δ(S)}x_e≥2 per ogni insieme non vuoto proprio S.\n\nSi minimizza Σc_ex_e.\n\nI vincoli esponenziali vengono separati dinamicamente.",
+    "a": "Variabili $x_e\\in\\{0,1\\}$, grado $\\sum_{e\\in\\delta(v)}x_e=2$ per ogni $v$ e subtour elimination $\\sum_{e\\in\\delta(S)}x_e\\ge 2$ per ogni insieme non vuoto proprio $S$.\n\nSi minimizza $\\sum_e c_ex_e$.\n\nI vincoli esponenziali vengono separati dinamicamente.",
     "t": "QA"
   },
   {
     "q": "Che cos'è un oracolo di separazione per il TSP?",
-    "a": "Dato un punto frazionario, trova una cutset constraint violata oppure certifica che non ce ne sono.\n\nPer i tagli di sottotour simmetrici si calcola un global minimum cut sulle capacità x_e: se il valore è sotto 2, il relativo insieme produce un taglio violato.",
+    "a": "Dato un punto frazionario, trova una cutset constraint violata oppure certifica che non ce ne sono.\n\nPer i tagli di sottotour simmetrici si calcola un global minimum cut sulle capacità $x_e$: se il valore è sotto 2, il relativo insieme produce un taglio violato.",
     "t": "QA"
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "q": "Quale approssimazione basata su MST esiste per metric TSP?",
-    "a": "Il double-tree algorithm calcola un MST, raddoppia gli archi ottenendo un tour euleriano e fa shortcut usando la disuguaglianza triangolare.\n\nProduce un tour di costo ≤2·OPT.\n\nSenza metrica il shortcut non preserva il bound.",
+    "a": "Il double-tree algorithm calcola un MST, raddoppia gli archi ottenendo un tour euleriano e fa shortcut usando la disuguaglianza triangolare.\n\nProduce un tour di costo $\\le 2\\cdot\\mathrm{OPT}$.\n\nSenza metrica il shortcut non preserva il bound.",
     "t": "QA"
   },
   {
@@ -96,12 +96,12 @@
   },
   {
     "q": "Come funziona l'euristica dei risparmi Clarke–Wright?",
-    "a": "Parte da una rotta deposito-cliente-deposito per ogni cliente.\n\nIl risparmio nel collegare i e j è s_ij=c_0i+c_0j−c_ij; si elaborano risparmi decrescenti e si fondono rotte se i,j sono estremi compatibili e capacità/vincoli restano soddisfatti.",
+    "a": "Parte da una rotta deposito-cliente-deposito per ogni cliente.\n\nIl risparmio nel collegare $i$ e $j$ è $s_{ij}=c_{0i}+c_{0j}-c_{ij}$; si elaborano risparmi decrescenti e si fondono rotte se i,j sono estremi compatibili e capacità/vincoli restano soddisfatti.",
     "t": "QA"
   },
   {
     "q": "Che cos'è un ε-approssimazione?",
-    "a": "Per minimizzazione, una soluzione è entro fattore 1+ε se ALG≤(1+ε)OPT; per massimizzazione si usa ALG≥(1−ε)OPT o una convenzione equivalente.\n\nUn PTAS produce tale soluzione per ogni ε fissato in tempo polinomiale nella dimensione.",
+    "a": "Per minimizzazione, una soluzione è entro fattore $1+\\varepsilon$ se $\\mathrm{ALG}\\le(1+\\varepsilon)\\mathrm{OPT}$; per massimizzazione si usa $\\mathrm{ALG}\\ge(1-\\varepsilon)\\mathrm{OPT}$ o una convenzione equivalente.\n\nUn PTAS produce tale soluzione per ogni ε fissato in tempo polinomiale nella dimensione.",
     "t": "QA"
   },
   {
@@ -111,27 +111,27 @@
   },
   {
     "q": "Qual è la differenza tra ricerca lineare esatta e inesatta?",
-    "a": "L'esatta minimizza f(x+αd) rispetto ad α, spesso costosa.\n\nL'inesatta sceglie rapidamente un passo che soddisfa condizioni di sufficiente diminuzione e curvatura, come Armijo o Wolfe, garantendo progresso senza risolvere un sottoproblema preciso.",
+    "a": "L'esatta minimizza $f(x+\\alpha d)$ rispetto ad $\\alpha$, spesso costosa.\n\nL'inesatta sceglie rapidamente un passo che soddisfa condizioni di sufficiente diminuzione e curvatura, come Armijo o Wolfe, garantendo progresso senza risolvere un sottoproblema preciso.",
     "t": "QA"
   },
   {
     "q": "Che cosa esprimono le condizioni di Armijo e Wolfe/Goldstein?",
-    "a": "Armijo richiede f(x+αd)≤f(x)+c₁α∇f(x)ᵀd.\n\nWolfe aggiunge una condizione sulla derivata direzionale che evita passi troppo corti; Goldstein pone limiti superiore e inferiore sulla diminuzione.\n\nI parametri sono scelti tra 0 e 1 con relazioni appropriate.",
+    "a": "Armijo richiede $f(x+\\alpha d)\\le f(x)+c_1\\alpha\\nabla f(x)^{\\mathsf{T}}d$.\n\nWolfe aggiunge una condizione sulla derivata direzionale che evita passi troppo corti; Goldstein pone limiti superiore e inferiore sulla diminuzione.\n\nI parametri sono scelti tra 0 e 1 con relazioni appropriate.",
     "t": "QA"
   },
   {
     "q": "Come funziona il metodo del gradiente?",
-    "a": "Sceglie d_k=−∇f(x_k) e x_{k+1}=x_k+α_kd_k.\n\nCon passo o line search appropriati converge a punti stazionari; su funzioni fortemente convesse converge al minimo unico ma può essere lento in valli mal condizionate.",
+    "a": "Sceglie $d_k=-\\nabla f(x_k)$ e $x_{k+1}=x_k+\\alpha_k d_k$.\n\nCon passo o line search appropriati converge a punti stazionari; su funzioni fortemente convesse converge al minimo unico ma può essere lento in valli mal condizionate.",
     "t": "QA"
   },
   {
     "q": "Come funziona il metodo di Newton per ottimizzazione?",
-    "a": "Risolve ∇²f(x_k)d_k=−∇f(x_k) e aggiorna x+αd.\n\nVicino a un minimo con Hessiana positiva definita ha convergenza quadratica; lontano può non essere direzione di discesa, perciò si usano damping, trust region o Hessiane modificate.",
+    "a": "Risolve $\\nabla^2 f(x_k)d_k=-\\nabla f(x_k)$ e aggiorna $x+\\alpha d$.\n\nVicino a un minimo con Hessiana positiva definita ha convergenza quadratica; lontano può non essere direzione di discesa, perciò si usano damping, trust region o Hessiane modificate.",
     "t": "QA"
   },
   {
     "q": "Che cosa sono i metodi quasi-Newton?",
-    "a": "Approssimano Hessiana o inversa usando differenze di gradienti, evitando seconde derivate.\n\nBFGS mantiene una matrice positiva definita se sᵀy>0 e, con line search, offre rapida convergenza; L-BFGS conserva poche coppie per problemi grandi.",
+    "a": "Approssimano Hessiana o inversa usando differenze di gradienti, evitando seconde derivate.\n\nBFGS mantiene una matrice positiva definita se $s^{\\mathsf{T}}y>0$ e, con line search, offre rapida convergenza; L-BFGS conserva poche coppie per problemi grandi.",
     "t": "QA"
   },
   {
@@ -141,22 +141,22 @@
   },
   {
     "q": "Qual è la formulazione hard-margin di una SVM?",
-    "a": "Minimizza 1/2||w||² soggetto a y_i(w·x_i+b)≥1.\n\nÈ applicabile se i dati sono linearmente separabili.\n\nLe KKT mostrano che i punti sul margine hanno moltiplicatori positivi e determinano l'iperpiano.",
+    "a": "Minimizza $\\tfrac{1}{2}\\|w\\|^2$ soggetto a $y_i(w\\cdot x_i+b)\\ge 1$.\n\nÈ applicabile se i dati sono linearmente separabili.\n\nLe KKT mostrano che i punti sul margine hanno moltiplicatori positivi e determinano l'iperpiano.",
     "t": "QA"
   },
   {
     "q": "Come cambia la SVM soft-margin?",
-    "a": "Introduce slack ξ_i≥0 e minimizza 1/2||w||²+CΣξ_i con y_i(w·x_i+b)≥1−ξ_i.\n\nC bilancia margine ampio e violazioni.\n\nIl duale limita 0≤α_i≤C.",
+    "a": "Introduce slack $\\xi_i\\ge 0$ e minimizza $$\\tfrac{1}{2}\\|w\\|^2+C\\sum_i\\xi_i \\quad\\text{con}\\quad y_i(w\\cdot x_i+b)\\ge 1-\\xi_i$$\n\n$C$ bilancia margine ampio e violazioni.\n\nIl duale limita $0\\le\\alpha_i\\le C$.",
     "t": "QA"
   },
   {
     "q": "Come funziona Sequential Minimal Optimization?",
-    "a": "SMO risolve il duale SVM aggiornando due moltiplicatori alla volta, il minimo necessario per rispettare il vincolo Σα_iy_i=0.\n\nOgni sottoproblema ha soluzione analitica; euristiche scelgono coppie che violano maggiormente le KKT.",
+    "a": "SMO risolve il duale SVM aggiornando due moltiplicatori alla volta, il minimo necessario per rispettare il vincolo $\\sum_i\\alpha_iy_i=0$.\n\nOgni sottoproblema ha soluzione analitica; euristiche scelgono coppie che violano maggiormente le KKT.",
     "t": "QA"
   },
   {
     "q": "Come si formula Support Vector Regression?",
-    "a": "Minimizza 1/2||w||²+CΣ(ξ_i+ξ_i*) imponendo |y_i−(w·x_i+b)|≤ε salvo slack.\n\nLa ε-insensitive loss ignora errori nella fascia ε; nel duale solo punti fuori o sul tubo diventano support vector.",
+    "a": "Minimizza $\\tfrac{1}{2}\\|w\\|^2+C\\sum_i(\\xi_i+\\xi_i^*)$ imponendo $|y_i-(w\\cdot x_i+b)|\\le\\varepsilon$ salvo slack.\n\nLa $\\varepsilon$-insensitive loss ignora errori nella fascia $\\varepsilon$; nel duale solo punti fuori o sul tubo diventano support vector.",
     "t": "QA"
   },
   {

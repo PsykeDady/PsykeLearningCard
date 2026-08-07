@@ -6,7 +6,7 @@
   },
   {
     "q": "Come si caratterizza NP mediante certificati e relazioni bilanciate?",
-    "a": "L∈NP se esiste una relazione R(x,y) decidibile in tempo polinomiale e un polinomio p tali che x∈L se e solo se esiste y, |y|≤p(|x|), con R(x,y).\n\nDa una computazione accettante si ricava y; viceversa una NTM indovina y e verifica R.",
+    "a": "$L\\in\\mathrm{NP}$ se esiste una relazione $R(x,y)$ decidibile in tempo polinomiale e un polinomio $p$ tali che $$x\\in L \\iff \\exists y,\\ |y|\\le p(|x|),\\ R(x,y)$$\n\nDa una computazione accettante si ricava $y$; viceversa una NTM indovina $y$ e verifica $R$.",
     "t": "QA"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "q": "Che cos'è una riduzione many-one polinomiale?",
-    "a": "È una funzione f calcolabile in tempo polinomiale tale che x∈A se e solo se f(x)∈B.\n\nSe A≤pB e B∈P allora A∈P; se A è NP-hard e A≤pB, allora B è NP-hard.\n\nPreserva la difficoltà senza nasconderla in una trasformazione costosa.",
+    "a": "È una funzione $f$ calcolabile in tempo polinomiale tale che $x\\in A \\iff f(x)\\in B$.\n\nSe $A\\le_p B$ e $B\\in\\mathrm{P}$ allora $A\\in\\mathrm{P}$; se $A$ è NP-hard e $A\\le_p B$, allora $B$ è NP-hard.\n\nPreserva la difficoltà senza nasconderla in una trasformazione costosa.",
     "t": "QA"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "q": "Qual è la relazione tra Vertex Cover e Independent Set?",
-    "a": "In un grafo G=(V,E), C è vertex cover se e solo se V\\C è independent set.\n\nQuindi esiste una cover di taglia ≤k se e solo se esiste un independent set di taglia ≥|V|−k.\n\nQuesta trasformazione trasferisce NP-completezza tra le versioni decisionali.",
+    "a": "In un grafo $G=(V,E)$, $C$ è vertex cover se e solo se $V\\setminus C$ è independent set.\n\nQuindi esiste una cover di taglia $\\le k$ se e solo se esiste un independent set di taglia $\\ge|V|-k$.\n\nQuesta trasformazione trasferisce NP-completezza tra le versioni decisionali.",
     "t": "QA"
   },
   {
@@ -51,32 +51,32 @@
   },
   {
     "q": "Perché la programmazione dinamica per knapsack è pseudo-polinomiale?",
-    "a": "La tabella richiede tempo O(nW), dove W è la capacità numerica.\n\nLa dimensione binaria di W è log W, quindi O(nW) può essere esponenziale nella lunghezza dell'input.\n\nÈ polinomiale rispetto al valore numerico, non alla sua codifica.",
+    "a": "La tabella richiede tempo $O(nW)$, dove $W$ è la capacità numerica.\n\nLa dimensione binaria di $W$ è $\\log W$, quindi $O(nW)$ può essere esponenziale nella lunghezza dell'input.\n\nÈ polinomiale rispetto al valore numerico, non alla sua codifica.",
     "t": "QA"
   },
   {
     "q": "Che differenza c'è tra PTAS e FPTAS?",
-    "a": "Un PTAS produce per ogni ε>0 una soluzione entro 1±ε in tempo polinomiale nella dimensione dell'input, ma l'esponente può dipendere da 1/ε.\n\nUn FPTAS è polinomiale anche in 1/ε, quindi ha dipendenza più controllata dalla precisione.",
+    "a": "Un PTAS produce per ogni $\\varepsilon>0$ una soluzione entro $1\\pm\\varepsilon$ in tempo polinomiale nella dimensione dell'input, ma l'esponente può dipendere da $1/\\varepsilon$.\n\nUn FPTAS è polinomiale anche in $1/\\varepsilon$, quindi ha dipendenza più controllata dalla precisione.",
     "t": "QA"
   },
   {
     "q": "Come si ottiene un FPTAS per knapsack?",
-    "a": "Si scala e arrotonda i valori con fattore K proporzionale a ε·v_max/n, poi si esegue una DP pseudo-polinomiale sui valori scalati.\n\nLa tabella diventa polinomiale in n e 1/ε e la perdita totale dovuta all'arrotondamento è al più una frazione ε dell'ottimo.",
+    "a": "Si scala e arrotonda i valori con fattore $K$ proporzionale a $\\varepsilon\\,v_{\\max}/n$, poi si esegue una DP pseudo-polinomiale sui valori scalati.\n\nLa tabella diventa polinomiale in $n$ e $1/\\varepsilon$ e la perdita totale dovuta all'arrotondamento è al più una frazione $\\varepsilon$ dell'ottimo.",
     "t": "QA"
   },
   {
     "q": "Come si classificano algoritmi di approssimazione per problemi di massimo?",
-    "a": "Un algoritmo ha rapporto α≤1 se restituisce valore ALG≥α·OPT; equivalentemente si usa talvolta un fattore ρ≥1 con OPT/ALG≤ρ.\n\nLa convenzione va dichiarata.\n\nNon tutti i problemi ammettono approssimazioni non banali salvo collassi di classi di complessità.",
+    "a": "Un algoritmo ha rapporto $\\alpha\\le 1$ se restituisce valore $\\mathrm{ALG}\\ge\\alpha\\cdot\\mathrm{OPT}$; equivalentemente si usa talvolta un fattore $\\rho\\ge 1$ con $\\mathrm{OPT}/\\mathrm{ALG}\\le\\rho$.\n\nLa convenzione va dichiarata.\n\nNon tutti i problemi ammettono approssimazioni non banali salvo collassi di classi di complessità.",
     "t": "QA"
   },
   {
     "q": "Che cosa sono FPT e XP nella complessità parametrizzata?",
-    "a": "Un problema con parametro k è FPT se si risolve in f(k)·n^c, con c costante indipendente da k.\n\nÈ in XP se si risolve in n^{f(k)}.\n\nFPT separa l'esplosione nel solo parametro; XP è polinomiale per ogni k fissato ma può avere esponente crescente.",
+    "a": "Un problema con parametro $k$ è FPT se si risolve in $f(k)\\cdot n^c$, con $c$ costante indipendente da $k$.\n\nÈ in XP se si risolve in $n^{f(k)}$.\n\nFPT separa l'esplosione nel solo parametro; XP è polinomiale per ogni k fissato ma può avere esponente crescente.",
     "t": "QA"
   },
   {
     "q": "Qual è un algoritmo FPT per Vertex Cover parametrizzato da k?",
-    "a": "Si sceglie un arco {u,v}: ogni cover deve contenere u oppure v.\n\nSi ramifica rimuovendo u o v e decrementando k, ottenendo O(2^k·poly(n)); si accetta quando non restano archi e si rifiuta se k<0.\n\nKernelization può prima ridurre l'istanza.",
+    "a": "Si sceglie un arco $\\{u,v\\}$: ogni cover deve contenere $u$ oppure $v$.\n\nSi ramifica rimuovendo $u$ o $v$ e decrementando $k$, ottenendo $O(2^k\\cdot\\mathrm{poly}(n))$; si accetta quando non restano archi e si rifiuta se $k<0$.\n\nKernelization può prima ridurre l'istanza.",
     "t": "QA"
   },
   {
@@ -86,12 +86,12 @@
   },
   {
     "q": "Che cosa afferma il teorema di Savitch?",
-    "a": "Per s(n)≥log n, NSPACE(s(n))⊆DSPACE(s(n)²).\n\nDecide la raggiungibilità tra configurazioni dividendo ricorsivamente un cammino in due metà e provando configurazioni intermedie.\n\nNe segue PSPACE=NPSPACE.",
+    "a": "Per $s(n)\\ge\\log n$: $$\\mathrm{NSPACE}(s(n))\\subseteq\\mathrm{DSPACE}(s(n)^2)$$\n\nDecide la raggiungibilità tra configurazioni dividendo ricorsivamente un cammino in due metà e provando configurazioni intermedie.\n\nNe segue PSPACE=NPSPACE.",
     "t": "QA"
   },
   {
     "q": "Perché PSPACE è contenuta in EXPTIME?",
-    "a": "Una macchina che usa p(n) celle ha al più esponenzialmente molte configurazioni distinte.\n\nSe decide, non deve ripetere indefinitamente configurazioni; simulandone la computazione o esplorando il grafo delle configurazioni si ottiene tempo 2^{poly(n)}.",
+    "a": "Una macchina che usa $p(n)$ celle ha al più esponenzialmente molte configurazioni distinte.\n\nSe decide, non deve ripetere indefinitamente configurazioni; simulandone la computazione o esplorando il grafo delle configurazioni si ottiene tempo $2^{\\mathrm{poly}(n)}$.",
     "t": "QA"
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "q": "Che cos'è la gerarchia polinomiale?",
-    "a": "Σ₀^P=Π₀^P=P; Σ_{k+1}^P=NP^{Σ_k^P} e Π_{k+1}^P=coNP^{Σ_k^P}.\n\nEquivalentemente usa k alternanze di quantificatori polinomialmente limitati.\n\nPH è l'unione dei livelli; Δ₂^P=P^NP.",
+    "a": "$$\\Sigma_0^P=\\Pi_0^P=\\mathrm{P},\\qquad \\Sigma_{k+1}^P=\\mathrm{NP}^{\\Sigma_k^P},\\qquad \\Pi_{k+1}^P=\\mathrm{coNP}^{\\Sigma_k^P}$$\n\nEquivalentemente usa $k$ alternanze di quantificatori polinomialmente limitati.\n\nPH è l'unione dei livelli; $\\Delta_2^P=\\mathrm{P}^{\\mathrm{NP}}$.",
     "t": "QA"
   },
   {
@@ -116,12 +116,12 @@
   },
   {
     "q": "Che cos'è la classe DP?",
-    "a": "DP={L₁∩L₂ | L₁∈NP e L₂∈coNP}, primo livello della gerarchia booleana su NP.\n\nNon significa deterministic polynomial time.\n\nUn problema canonico è SAT-UNSAT: una formula è soddisfacibile e un'altra è insoddisfacibile.",
+    "a": "$\\mathrm{DP}=\\{L_1\\cap L_2 \\mid L_1\\in\\mathrm{NP},\\ L_2\\in\\mathrm{coNP}\\}$, primo livello della gerarchia booleana su NP.\n\nNon significa deterministic polynomial time.\n\nUn problema canonico è SAT-UNSAT: una formula è soddisfacibile e un'altra è insoddisfacibile.",
     "t": "QA"
   },
   {
     "q": "Che cosa afferma il teorema di Toda?",
-    "a": "L'intera gerarchia polinomiale è contenuta in P^#P.\n\nSignifica che un algoritmo polinomiale con oracolo capace di contare soluzioni NP può risolvere tutti i livelli di PH, mostrando la grande potenza del counting.",
+    "a": "L'intera gerarchia polinomiale è contenuta in $\\mathrm{P}^{\\#\\mathrm{P}}$.\n\nSignifica che un algoritmo polinomiale con oracolo capace di contare soluzioni NP può risolvere tutti i livelli di PH, mostrando la grande potenza del counting.",
     "t": "QA"
   },
   {
@@ -131,12 +131,12 @@
   },
   {
     "q": "Che cosa sono circuiti NC e AC?",
-    "a": "NC^i usa famiglie uniformi di circuiti di profondità O(log^i n), dimensione polinomiale e fan-in limitato.\n\nAC^i consente fan-in illimitato per AND/OR con profondità O(log^i n).\n\nNC è l'unione degli NC^i e formalizza calcolo efficientemente parallelizzabile.",
+    "a": "$\\mathrm{NC}^i$ usa famiglie uniformi di circuiti di profondità $O(\\log^i n)$, dimensione polinomiale e fan-in limitato.\n\n$\\mathrm{AC}^i$ consente fan-in illimitato per AND/OR con profondità $O(\\log^i n)$.\n\nNC è l'unione degli $\\mathrm{NC}^i$ e formalizza calcolo efficientemente parallelizzabile.",
     "t": "QA"
   },
   {
     "q": "Che cos'è l'uniformità di una famiglia di circuiti?",
-    "a": "Richiede che i circuiti C_n non siano scelti arbitrariamente ma generabili in modo efficiente da 1^n, per esempio in spazio logaritmico nella L-uniformità.\n\nSenza uniformità la famiglia può incorporare informazione non computabile come advice.",
+    "a": "Richiede che i circuiti $C_n$ non siano scelti arbitrariamente ma generabili in modo efficiente da $1^n$, per esempio in spazio logaritmico nella L-uniformità.\n\nSenza uniformità la famiglia può incorporare informazione non computabile come advice.",
     "t": "QA"
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "q": "Che cos'è una macchina di Turing con oracolo?",
-    "a": "È una TM con una query tape e un'operazione che decide in un passo l'appartenenza a un linguaggio oracolo.\n\nClassi come P^NP misurano la potenza di algoritmi polinomiali che possono fare query adattive a problemi NP.",
+    "a": "È una TM con una query tape e un'operazione che decide in un passo l'appartenenza a un linguaggio oracolo.\n\nClassi come $\\mathrm{P}^{\\mathrm{NP}}$ misurano la potenza di algoritmi polinomiali che possono fare query adattive a problemi NP.",
     "t": "QA"
   },
   {
@@ -171,17 +171,17 @@
   },
   {
     "q": "Quando un insieme è ricorsivo usando il suo complementare?",
-    "a": "A è ricorsivo se e solo se sia A sia il complementare Ā sono r.e.\n\nSe entrambi hanno riconoscitori, li si esegue in dovetailing: uno dei due accetterà e decide l'input.\n\nL'altra direzione segue chiudendo i decidibili per complemento.",
+    "a": "$A$ è ricorsivo se e solo se sia $A$ sia il complementare $\\bar{A}$ sono r.e.\n\nSe entrambi hanno riconoscitori, li si esegue in dovetailing: uno dei due accetterà e decide l'input.\n\nL'altra direzione segue chiudendo i decidibili per complemento.",
     "t": "QA"
   },
   {
     "q": "Che cosa sono il linguaggio universale Lᵤ e il linguaggio diagonale?",
-    "a": "Lᵤ={⟨M,x⟩ | M accetta x} è r.e. ma indecidibile: una macchina universale simula M.\n\nIl complemento non è r.e.\n\nLa notazione L_d varia nei corsi; per il linguaggio diagonale standard {x | M_x non accetta x}, esso non è r.e., mentre il suo complemento è r.e.",
+    "a": "$L_u=\\{\\langle M,x\\rangle \\mid M \\text{ accetta } x\\}$ è r.e. ma indecidibile: una macchina universale simula $M$.\n\nIl complemento non è r.e.\n\nLa notazione L_d varia nei corsi; per il linguaggio diagonale standard $\\{x \\mid M_x \\text{ non accetta } x\\}$, esso non è r.e., mentre il suo complemento è r.e.",
     "t": "QA"
   },
   {
     "q": "Che cos'è l'insieme TOT?",
-    "a": "TOT={e | φ_e è definita su ogni input}.\n\nNon è ricorsivo né r.e.; si trova al livello Π₂ della gerarchia aritmetica.\n\nLa totalità richiede una condizione universale sugli input seguita dall'esistenza di un tempo di arresto.",
+    "a": "$\\mathrm{TOT}=\\{e \\mid \\varphi_e \\text{ è definita su ogni input}\\}$.\n\nNon è ricorsivo né r.e.; si trova al livello $\\Pi_2$ della gerarchia aritmetica.\n\nLa totalità richiede una condizione universale sugli input seguita dall'esistenza di un tempo di arresto.",
     "t": "QA"
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "q": "Che cosa afferma il pumping lemma per linguaggi regolari?",
-    "a": "Se L è regolare, esiste p tale che ogni w∈L con |w|≥p si scrive xyz con |xy|≤p, |y|>0 e xy^iz∈L per ogni i≥0.\n\nÈ una condizione necessaria, usata per provare non regolarità; soddisfarla non basta a provare regolarità.",
+    "a": "Se $L$ è regolare, esiste $p$ tale che ogni $w\\in L$ con $|w|\\ge p$ si scrive $w=xyz$ con $|xy|\\le p$, $|y|>0$ e $xy^iz\\in L$ per ogni $i\\ge 0$.\n\nÈ una condizione necessaria, usata per provare non regolarità; soddisfarla non basta a provare regolarità.",
     "t": "QA"
   },
   {
@@ -221,7 +221,7 @@
   },
   {
     "q": "Che cosa sono forma normale di Chomsky e di Greibach?",
-    "a": "In CNF le produzioni sono A→BC o A→a, più eventualmente S→ε; in GNF sono A→aα con α sequenza di nonterminali.\n\nOgni CFL, con le usuali eccezioni per ε, ammette forme equivalenti; servono in prove e algoritmi di parsing.",
+    "a": "In CNF le produzioni sono $A\\to BC$ o $A\\to a$, più eventualmente $S\\to\\varepsilon$; in GNF sono $A\\to a\\alpha$ con $\\alpha$ sequenza di nonterminali.\n\nOgni CFL, con le usuali eccezioni per ε, ammette forme equivalenti; servono in prove e algoritmi di parsing.",
     "t": "QA"
   },
   {
@@ -231,12 +231,12 @@
   },
   {
     "q": "Che cosa afferma il pumping lemma per linguaggi context-free?",
-    "a": "Esiste p tale che ogni z abbastanza lunga in L si scrive uvwxy con |vwx|≤p, |vx|>0 e uv^iwx^iy∈L per ogni i≥0.\n\nLa ripetizione deriva da un nonterminale ripetuto lungo un cammino sufficientemente alto del parse tree.",
+    "a": "Esiste $p$ tale che ogni $z$ abbastanza lunga in $L$ si scrive $z=uvwxy$ con $|vwx|\\le p$, $|vx|>0$ e $uv^iwx^iy\\in L$ per ogni $i\\ge 0$.\n\nLa ripetizione deriva da un nonterminale ripetuto lungo un cammino sufficientemente alto del parse tree.",
     "t": "QA"
   },
   {
     "q": "Qual è la differenza di potenza tra PDA deterministici e non deterministici?",
-    "a": "I DPDA riconoscono i deterministic CFL, sottoinsieme proprio dei CFL riconosciuti dagli NPDA.\n\nUn esempio di separazione è {ww^R | w∈{0,1}*}: senza marcatore centrale un DPDA non sa determinare deterministicamente dove iniziare il confronto, mentre un NPDA può indovinarlo.",
+    "a": "I DPDA riconoscono i deterministic CFL, sottoinsieme proprio dei CFL riconosciuti dagli NPDA.\n\nUn esempio di separazione è $\\{ww^R \\mid w\\in\\{0,1\\}^*\\}$: senza marcatore centrale un DPDA non sa determinare deterministicamente dove iniziare il confronto, mentre un NPDA può indovinarlo.",
     "t": "QA"
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "q": "Qual è il principio generale delle riduzioni per dimostrare indecidibilità?",
-    "a": "Si parte da un problema indecidibile A e si trasforma computabilmente ogni istanza x in f(x) tale che x∈A se e solo se f(x)∈B.\n\nSe B fosse decidibile, lo sarebbe A: contraddizione.\n\nLa direzione della riduzione è quindi A≤B, dal problema noto al nuovo.",
+    "a": "Si parte da un problema indecidibile $A$ e si trasforma computabilmente ogni istanza $x$ in $f(x)$ tale che $x\\in A \\iff f(x)\\in B$.\n\nSe $B$ fosse decidibile, lo sarebbe $A$: contraddizione.\n\nLa direzione della riduzione è quindi $A\\le B$, dal problema noto al nuovo.",
     "t": "QA"
   }
 ]

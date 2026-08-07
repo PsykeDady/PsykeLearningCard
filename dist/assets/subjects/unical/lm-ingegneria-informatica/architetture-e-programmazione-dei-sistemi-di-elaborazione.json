@@ -6,7 +6,7 @@
   },
   {
     "q": "Come si confrontano le prestazioni di macchine monociclo, multiciclo, pipeline e superscalari?",
-    "a": "Il tempo CPU è IC×CPI×Tclock.\n\nLa monociclo ha CPI=1 ma clock lungo; la multiciclo accorcia il clock ma usa più cicli per istruzione; la pipeline punta a CPI≈1 con clock corto ma subisce hazard; una superscalare può avere CPI<1 emettendo più istruzioni per ciclo, limitata da dipendenze, salti e risorse.",
+    "a": "Il tempo CPU è $\\mathrm{IC}\\times\\mathrm{CPI}\\times T_{clock}$.\n\nLa monociclo ha $\\mathrm{CPI}=1$ ma clock lungo; la multiciclo accorcia il clock ma usa più cicli per istruzione; la pipeline punta a CPI≈1 con clock corto ma subisce hazard; una superscalare può avere $\\mathrm{CPI}<1$ emettendo più istruzioni per ciclo, limitata da dipendenze, salti e risorse.",
     "t": "QA"
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "q": "Come si dimensiona il periodo di clock di una macchina sincrona?",
-    "a": "Deve coprire il cammino combinatorio peggiore tra due registri: Tclock≥t_clk→Q+t_logic,max+t_setup, includendo skew e margini.\n\nNella monociclo il percorso dell'istruzione più lenta domina; nella multiciclo domina la micro-operazione più lenta; nella pipeline domina lo stadio più lento più l'overhead dei registri.",
+    "a": "Deve coprire il cammino combinatorio peggiore tra due registri: $T_{clock}\\ge t_{clk\\to Q}+t_{logic,\\max}+t_{setup}$, includendo skew e margini.\n\nNella monociclo il percorso dell'istruzione più lenta domina; nella multiciclo domina la micro-operazione più lenta; nella pipeline domina lo stadio più lento più l'overhead dei registri.",
     "t": "QA"
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "q": "Come si calcola l'AMAT con una cache multilivello?",
-    "a": "Per due livelli: AMAT=T_L1+MR_L1×(T_L2+MR_L2×P_mem), dove MR_L2 è normalmente il local miss rate.\n\nSi estende annidando gli altri livelli.\n\nOccorre distinguere hit time, miss rate locale e miss penalty ed eventualmente includere write buffer e contese.",
+    "a": "Per due livelli: $$\\mathrm{AMAT}=T_{L1}+\\mathrm{MR}_{L1}\\times\\big(T_{L2}+\\mathrm{MR}_{L2}\\times P_{mem}\\big)$$ dove $\\mathrm{MR}_{L2}$ è normalmente il local miss rate.\n\nSi estende annidando gli altri livelli.\n\nOccorre distinguere hit time, miss rate locale e miss penalty ed eventualmente includere write buffer e contese.",
     "t": "QA"
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "q": "Come si determina il numero di posizioni di una memoria o struttura hardware?",
-    "a": "Dipende dai bit di indice o indirizzo: con b bit si selezionano 2^b posizioni.\n\nIn una cache, numero di set=capacità/(dimensione blocco×numero di vie); i bit di offset selezionano il byte nel blocco, quelli di indice il set e i rimanenti formano il tag.",
+    "a": "Dipende dai bit di indice o indirizzo: con $b$ bit si selezionano $2^b$ posizioni.\n\nIn una cache: $$\\text{numero di set}=\\frac{\\text{capacità}}{\\text{dimensione blocco}\\times\\text{numero di vie}}$$\n\nI bit di offset selezionano il byte nel blocco, quelli di indice il set e i rimanenti formano il tag.",
     "t": "QA"
   },
   {
@@ -181,7 +181,7 @@
   },
   {
     "q": "Come funziona una riduzione parallela?",
-    "a": "Combina n elementi con un'operazione associativa mediante un albero: le coppie vengono ridotte in parallelo per log₂n livelli.\n\nIl lavoro totale resta O(n), mentre la profondità ideale è O(log n).\n\nSincronizzazione, locality e associatività numerica influenzano l'implementazione.",
+    "a": "Combina $n$ elementi con un'operazione associativa mediante un albero: le coppie vengono ridotte in parallelo per $\\log_2 n$ livelli.\n\nIl lavoro totale resta $O(n)$, mentre la profondità ideale è $O(\\log n)$.\n\nSincronizzazione, locality e associatività numerica influenzano l'implementazione.",
     "t": "QA"
   },
   {

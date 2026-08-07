@@ -61,22 +61,22 @@
   },
   {
     "q": "Come si verifica in Prolog se una lista è palindroma?",
-    "a": "Una definizione dichiarativa è `palindroma(L) :- reverse(L,L).\n\n` Se non si usa reverse predefinito, lo si implementa con accumulatore.\n\nIl predicato confronta struttura ed elementi e non modifica la lista.",
+    "a": "Una definizione dichiarativa è `palindroma(L) :- reverse(L,L).`\n\nSe non si usa reverse predefinito, lo si implementa con accumulatore.\n\nIl predicato confronta struttura ed elementi e non modifica la lista.",
     "t": "QA"
   },
   {
     "q": "Come si uniscono due liste ordinate in Prolog mantenendo ordine e occorrenze?",
-    "a": "`merge([],L,L). merge(L,[],L). merge([X|Xs],[Y|Ys],[X|Z]):-X=<Y,!,merge(Xs,[Y|Ys],Z). merge([X|Xs],[Y|Ys],[Y|Z]):-merge([X|Xs],Ys,Z).\n\n` Il cut rende mutuamente esclusivi i casi numerici.",
+    "a": "`merge([],L,L). merge(L,[],L). merge([X|Xs],[Y|Ys],[X|Z]):-X=<Y,!,merge(Xs,[Y|Ys],Z). merge([X|Xs],[Y|Ys],[Y|Z]):-merge([X|Xs],Ys,Z).`\n\nIl cut rende mutuamente esclusivi i casi numerici.",
     "t": "QA"
   },
   {
     "q": "Come si calcola una lista di somme prefisse in Prolog?",
-    "a": "Si usa un accumulatore: `adduplist(L,K):-prefix(L,0,K). prefix([],_,[]). prefix([X|Xs],A,[S|Ss]):-S is A+X,prefix(Xs,S,Ss).\n\n` Per `[1,2,3,4]` produce `[1,3,6,10]`.",
+    "a": "Si usa un accumulatore: `adduplist(L,K):-prefix(L,0,K). prefix([],_,[]). prefix([X|Xs],A,[S|Ss]):-S is A+X,prefix(Xs,S,Ss).`\n\nPer `[1,2,3,4]` produce `[1,3,6,10]`.",
     "t": "QA"
   },
   {
     "q": "Come si definisce Fibonacci in Prolog secondo f(0)=f(1)=1?",
-    "a": "`fib(0,1). fib(1,1). fib(N,F):-N>1,N1 is N-1,N2 is N-2,fib(N1,F1),fib(N2,F2),F is F1+F2.\n\n` È corretta ma esponenziale; accumulazione o tabling evitano ricalcoli.",
+    "a": "`fib(0,1). fib(1,1). fib(N,F):-N>1,N1 is N-1,N2 is N-2,fib(N1,F1),fib(N2,F2),F is F1+F2.`\n\nÈ corretta ma esponenziale; accumulazione o tabling evitano ricalcoli.",
     "t": "QA"
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "q": "Come si separano gli elementi di L1 presenti e assenti da L2 in Prolog?",
-    "a": "`split([],_,[],[]). split([X|Xs],L2,[X|In],Out):-memberchk(X,L2),!,split(Xs,L2,In,Out). split([X|Xs],L2,In,[X|Out]):-split(Xs,L2,In,Out).\n\n` Mantiene ordine e occorrenze di L1; per semantica insiemistica occorre anche rimuovere duplicati.",
+    "a": "`split([],_,[],[]). split([X|Xs],L2,[X|In],Out):-memberchk(X,L2),!,split(Xs,L2,In,Out). split([X|Xs],L2,In,[X|Out]):-split(Xs,L2,In,Out).`\n\nMantiene ordine e occorrenze di L1; per semantica insiemistica occorre anche rimuovere duplicati.",
     "t": "QA"
   },
   {
@@ -96,22 +96,22 @@
   },
   {
     "q": "Come si definisce il numero di occorrenze di X in una lista Prolog?",
-    "a": "`occurrences(_,[],0). occurrences(X,[Y|Ys],N):-occurrences(X,Ys,N0),(X==Y->N is N0+1;N=N0).\n\n` Il confronto scelto determina se si vogliono identità, unificazione o uguaglianza aritmetica.",
+    "a": "`occurrences(_,[],0). occurrences(X,[Y|Ys],N):-occurrences(X,Ys,N0),(X==Y->N is N0+1;N=N0).`\n\nIl confronto scelto determina se si vogliono identità, unificazione o uguaglianza aritmetica.",
     "t": "QA"
   },
   {
     "q": "Come si ottiene l'elemento in posizione N di una lista Prolog?",
-    "a": "Con indici da uno: `occurs([X|_],1,X). occurs([_|Xs],N,X):-N>1,N1 is N-1,occurs(Xs,N1,X).\n\n` Il predicato fallisce per indice non positivo o oltre la lunghezza.",
+    "a": "Con indici da uno: `occurs([X|_],1,X). occurs([_|Xs],N,X):-N>1,N1 is N-1,occurs(Xs,N1,X).`\n\nIl predicato fallisce per indice non positivo o oltre la lunghezza.",
     "t": "QA"
   },
   {
     "q": "Come si trova il successore di X in una lista Prolog?",
-    "a": "`successivo(X,[X,Y|_],Y). successivo(X,[_|Xs],Y):-successivo(X,Xs,Y).\n\n` In backtracking restituisce i successori di tutte le occorrenze di X che non siano l'ultimo elemento.",
+    "a": "`successivo(X,[X,Y|_],Y). successivo(X,[_|Xs],Y):-successivo(X,Xs,Y).`\n\nIn backtracking restituisce i successori di tutte le occorrenze di X che non siano l'ultimo elemento.",
     "t": "QA"
   },
   {
     "q": "Come si rimuovono gli elementi in posizione pari da una lista Prolog?",
-    "a": "`dispari([],[]). dispari([X],[X]). dispari([X,_|Xs],[X|Ys]):-dispari(Xs,Ys).\n\n` Conserva le posizioni 1,3,5,… assumendo indicizzazione da uno.",
+    "a": "`dispari([],[]). dispari([X],[X]). dispari([X,_|Xs],[X|Ys]):-dispari(Xs,Ys).`\n\nConserva le posizioni 1,3,5,… assumendo indicizzazione da uno.",
     "t": "QA"
   },
   {
